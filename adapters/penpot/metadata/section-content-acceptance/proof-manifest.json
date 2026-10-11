@@ -1,0 +1,124 @@
+{
+  "task": "TASK-015",
+  "scope": "native-section-content-subtask",
+  "status": "PASS",
+  "fullTask015Acceptance": false,
+  "files": [
+    {
+      "path": "adapters/penpot/compiler.py",
+      "sha256": "67c68aa98a7eed329e7377fe0d93dddc3ae6ca06c3ef9f8674d95297025bbb32"
+    },
+    {
+      "path": "adapters/penpot/content.py",
+      "sha256": "6b45561c6fd974314b4fa68353a86866f44420b0b3d8676f6c8223580dc6613f"
+    },
+    {
+      "path": "adapters/penpot/content_runtime.js",
+      "sha256": "61d183f6ec72c584ef5040a9436f43464a8b61f10eac0cbe0b3f5e3c03f5395d"
+    },
+    {
+      "path": "adapters/penpot/host/section_server.py",
+      "sha256": "e2f62a0b07268fe454d330b2091e00fd4b96e9bdf9ebb8de6d315d4cd0aaa9b2"
+    },
+    {
+      "path": "adapters/penpot/host/server.py",
+      "sha256": "d949a3878a9f189edd8745e700ba80a06330c7610ae72fef6fa47916e4721b58"
+    },
+    {
+      "path": "adapters/penpot/metadata/component-bindings.json",
+      "sha256": "f88ca501a5e716bdd5d80bf047cb44597ac3568678ca01779ad0a97a5f9dcc63"
+    },
+    {
+      "path": "adapters/penpot/metadata/native-fidelity.json",
+      "sha256": "b2bf23728e02bd1f7f7b94e98748a95954a403d9ec492e9114d9783ca35e58ac"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/after-capture.json",
+      "sha256": "314a981a4486559c20887c977825d3bf887b452b5e3021df9c55d1c4e88f9d3c"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/after-export-failure.json",
+      "sha256": "d4622f4e1c1ebba933f003f6fb2562b07d1deda05a0e9da2a0cbe5a25919ffae"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/after-native.png",
+      "sha256": "6597b57ad6725c088f09470bbc2711c309701ca4cfd179d6c08370f151be6bf9"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/baseline.json",
+      "sha256": "414d6d3d66863d922d159d7d5a79733acd96d2ce4bbbd5bbbc5bfe383243836d"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/baselineUiIr.json",
+      "sha256": "c93777c8ef4afd28b139e56c15e82a72483f4364fcd0dc5845912ce7d48473cf"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/before-capture.json",
+      "sha256": "3cda93b3cd28457b3696486d2370dd1b555f7d797d16d72a338199739537fd36"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/before-native.png",
+      "sha256": "e41dcc6dd820ebed6b7d4f6a159bae6bcfabc4aa9a34199aac16304c086c6b78"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/execution.json",
+      "sha256": "761af643418a8a7c1ed1b8d61f8b1060e5902a6bdff5b6e0c3576fa2f32c2845"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/expected-content.json",
+      "sha256": "0b1f5d0b34b170b15f1a99e9eeceb0e81dc1e1cc98606542aa9ba0978e9055fe"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/initial-patch-rejection.json",
+      "sha256": "7c994f36d664fc99072e4db87b7f7781a4f9f620820796f04d4a4d35e9e7c2fe"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/native-content-qa.json",
+      "sha256": "0f89db4b8fafbde22f1c06bc48683bc4892177c438117d883ff3c18df951b2a5"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/patch.json",
+      "sha256": "c8d80694b762a6fe2dd563fe6a64b7bf579e7e8766f69cd6fb3f38758e2d55ca"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/served-plugin.js",
+      "sha256": "a04218eacc0e7ad9cfb95496bd4a0bf3bb25d6ea961740d062e188d3ddf32a27"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/updated.json",
+      "sha256": "d67471d2282cd9337d94887128dde287ed11f6eb2eda061afe877f352a4af510"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/updatedUiIr.json",
+      "sha256": "a04c7c7ac47ca62b70d328f372cc8516900eb813a2fa0279191f999f1d5a177c"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/visual-review.json",
+      "sha256": "e44278f272e6b613d5e6aeba23b59d2f769624d06940fc00a9fc0497837fe861"
+    },
+    {
+      "path": "adapters/penpot/metadata/section-content-acceptance/workspace.png",
+      "sha256": "95cd672447e88aaf14e7648cf034053e616806034130446b935a84ab57d2282f"
+    },
+    {
+      "path": "adapters/penpot/runtime.js",
+      "sha256": "a36b85cf6687048d2d2bdff2678354a56b1c8082d441f3b3dc212f200dfa9aac"
+    },
+    {
+      "path": "adapters/penpot/section_patch.js",
+      "sha256": "79a5dd6848b493c542545433696439ab857ec3db00574db8c0d0a5ab46ebe238"
+    },
+    {
+      "path": "adapters/penpot/section_patch_qa.py",
+      "sha256": "60add4c40b143186cb5841b753a86afb8a9232d12588c837793ed1be12d42c50"
+    },
+    {
+      "path": "examples/adapter-fidelity-acceptance.ui-ir.json",
+      "sha256": "62e69bfaf7aa499d6478b20c3513abea3925061a784e4ba5b6cbc361a252a17f"
+    },
+    {
+      "path": "registries/components/catalog.json",
+      "sha256": "01dd0c6cf055e27a03b0980c78319b1e7657296581e57bfdc5a9de5cc5ec07a3"
+    }
+  ]
+}

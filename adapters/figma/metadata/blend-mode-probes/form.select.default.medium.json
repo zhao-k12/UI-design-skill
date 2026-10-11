@@ -1,0 +1,1135 @@
+{
+  "scope": "figma_text_blend_mode_experiment",
+  "status": "PASS",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "0:1",
+  "componentReference": "12:15",
+  "logicalId": "form.select.default.medium",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [
+    "12:13",
+    "12:14"
+  ],
+  "restoredNodeIds": [
+    "12:13",
+    "12:14"
+  ],
+  "observations": {
+    "before": [
+      {
+        "reference": "12:15",
+        "type": "COMPONENT",
+        "parentReference": "0:1",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            964
+          ],
+          [
+            0,
+            1,
+            80
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 964,
+          "y": 80,
+          "width": 240,
+          "height": 32
+        },
+        "properties": {
+          "name": "candidate/form.select.default.medium",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:10",
+        "type": "FRAME",
+        "parentReference": "12:15",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            964
+          ],
+          [
+            0,
+            1,
+            80
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 964,
+          "y": 80,
+          "width": 240,
+          "height": 32
+        },
+        "properties": {
+          "name": "source/0.0",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8627451062202454,
+                "g": 0.8705882430076599,
+                "b": 0.886274516582489
+              },
+              "boundVariables": {}
+            }
+          ],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 4,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:11",
+        "type": "FRAME",
+        "parentReference": "12:10",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            965
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 965,
+          "y": 81,
+          "width": 238,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/0.0.1",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:12",
+        "type": "FRAME",
+        "parentReference": "12:11",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            965
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 965,
+          "y": 81,
+          "width": 238,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/selected-value",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 24,
+          "paddingBottom": 0,
+          "paddingLeft": 8,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:13",
+        "type": "TEXT",
+        "parentReference": "12:12",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            973
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 973,
+          "y": 81,
+          "width": 28,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/selected-value-text",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3176470696926117,
+                "g": 0.3529411852359772,
+                "b": 0.4313725531101227
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "HUG",
+          "layoutSizingVertical": "HUG",
+          "characters": "启用",
+          "fontName": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "fontSize": 14,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 30
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT"
+        }
+      },
+      {
+        "reference": "12:14",
+        "type": "TEXT",
+        "parentReference": "12:11",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            1181
+          ],
+          [
+            0,
+            1,
+            89
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 1181,
+          "y": 89,
+          "width": 14,
+          "height": 14
+        },
+        "properties": {
+          "name": "source/ionicons-arrow",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.501960813999176,
+                "g": 0.5254902243614197,
+                "b": 0.5843137502670288
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "layoutPositioning": "ABSOLUTE",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "characters": "",
+          "fontName": {
+            "family": "Ionicons",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "fontSize": 14,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 14
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "NONE"
+        }
+      }
+    ],
+    "normal": [
+      {
+        "reference": "12:15",
+        "type": "COMPONENT",
+        "parentReference": "0:1",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            964
+          ],
+          [
+            0,
+            1,
+            80
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 964,
+          "y": 80,
+          "width": 240,
+          "height": 32
+        },
+        "properties": {
+          "name": "candidate/form.select.default.medium",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:10",
+        "type": "FRAME",
+        "parentReference": "12:15",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            964
+          ],
+          [
+            0,
+            1,
+            80
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 964,
+          "y": 80,
+          "width": 240,
+          "height": 32
+        },
+        "properties": {
+          "name": "source/0.0",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8627451062202454,
+                "g": 0.8705882430076599,
+                "b": 0.886274516582489
+              },
+              "boundVariables": {}
+            }
+          ],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 4,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:11",
+        "type": "FRAME",
+        "parentReference": "12:10",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            965
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 965,
+          "y": 81,
+          "width": 238,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/0.0.1",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:12",
+        "type": "FRAME",
+        "parentReference": "12:11",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            965
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 965,
+          "y": 81,
+          "width": 238,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/selected-value",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 24,
+          "paddingBottom": 0,
+          "paddingLeft": 8,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:13",
+        "type": "TEXT",
+        "parentReference": "12:12",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            973
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 973,
+          "y": 81,
+          "width": 28,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/selected-value-text",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3176470696926117,
+                "g": 0.3529411852359772,
+                "b": 0.4313725531101227
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "HUG",
+          "layoutSizingVertical": "HUG",
+          "characters": "启用",
+          "fontName": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "fontSize": 14,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 30
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT"
+        }
+      },
+      {
+        "reference": "12:14",
+        "type": "TEXT",
+        "parentReference": "12:11",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            1181
+          ],
+          [
+            0,
+            1,
+            89
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 1181,
+          "y": 89,
+          "width": 14,
+          "height": 14
+        },
+        "properties": {
+          "name": "source/ionicons-arrow",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.501960813999176,
+                "g": 0.5254902243614197,
+                "b": 0.5843137502670288
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "layoutPositioning": "ABSOLUTE",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "characters": "",
+          "fontName": {
+            "family": "Ionicons",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "fontSize": 14,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 14
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "NONE"
+        }
+      }
+    ],
+    "restored": [
+      {
+        "reference": "12:15",
+        "type": "COMPONENT",
+        "parentReference": "0:1",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            964
+          ],
+          [
+            0,
+            1,
+            80
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 964,
+          "y": 80,
+          "width": 240,
+          "height": 32
+        },
+        "properties": {
+          "name": "candidate/form.select.default.medium",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:10",
+        "type": "FRAME",
+        "parentReference": "12:15",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            964
+          ],
+          [
+            0,
+            1,
+            80
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 964,
+          "y": 80,
+          "width": 240,
+          "height": 32
+        },
+        "properties": {
+          "name": "source/0.0",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8627451062202454,
+                "g": 0.8705882430076599,
+                "b": 0.886274516582489
+              },
+              "boundVariables": {}
+            }
+          ],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 4,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:11",
+        "type": "FRAME",
+        "parentReference": "12:10",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            965
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 965,
+          "y": 81,
+          "width": 238,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/0.0.1",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:12",
+        "type": "FRAME",
+        "parentReference": "12:11",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            965
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 965,
+          "y": 81,
+          "width": 238,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/selected-value",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "clipsContent": true,
+          "cornerRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 0,
+          "paddingTop": 0,
+          "paddingRight": 24,
+          "paddingBottom": 0,
+          "paddingLeft": 8,
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      {
+        "reference": "12:13",
+        "type": "TEXT",
+        "parentReference": "12:12",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            973
+          ],
+          [
+            0,
+            1,
+            81
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 973,
+          "y": 81,
+          "width": 28,
+          "height": 30
+        },
+        "properties": {
+          "name": "source/selected-value-text",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3176470696926117,
+                "g": 0.3529411852359772,
+                "b": 0.4313725531101227
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "layoutPositioning": "AUTO",
+          "layoutSizingHorizontal": "HUG",
+          "layoutSizingVertical": "HUG",
+          "characters": "启用",
+          "fontName": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "fontSize": 14,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 30
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT"
+        }
+      },
+      {
+        "reference": "12:14",
+        "type": "TEXT",
+        "parentReference": "12:11",
+        "absoluteTransform": [
+          [
+            1,
+            0,
+            1181
+          ],
+          [
+            0,
+            1,
+            89
+          ]
+        ],
+        "absoluteBounds": {
+          "x": 1181,
+          "y": 89,
+          "width": 14,
+          "height": 14
+        },
+        "properties": {
+          "name": "source/ionicons-arrow",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.501960813999176,
+                "g": 0.5254902243614197,
+                "b": 0.5843137502670288
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "isMask": false,
+          "rotation": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "layoutPositioning": "ABSOLUTE",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "characters": "",
+          "fontName": {
+            "family": "Ionicons",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "fontSize": 14,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 14
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "NONE"
+        }
+      }
+    ]
+  },
+  "rasters": {
+    "before": {
+      "format": "PNG",
+      "scale": 1,
+      "encoding": "base64",
+      "data": "iVBORw0KGgoAAAANSUhEUgAAAPAAAAAgCAYAAAAsa/W9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAA4tJREFUeAHt3UloE1Ecx/HfpClNGpqOSz3UtS4H9x6kehHRk56sehBccAM9VepFBBcQBb24gBcFV1zAg1hRqCfXU6tirWJxHeNyaW073dJWNOP8RzMmadLOtAcz7e8DgcnLm9y+vDeThCgwNTRoU3Lzci6Yh6XmQwURZS3FQJWi+CunTi2OKH/jfT5KDatqYQF8Ph+IKDvFYjG0d3SiuUXXfcgt9ecG/CfGjipUC814iSi7yQKrFoYRM2Jqq95x0QfDKC8oCIGIvEMNh2G2W2rtl7ltJvKWP80qKssl8jAGTORhDJjIwxgwkYcNKeCap/XQIl9BRP+HH0PQ2NSCO3cf4tC+in7n7ag8CCe2bViFsgXzQETOuAr46PGz0D5/SxprMiNODTQ1RJlz+uQB+/md6odo/N6CrRtX2WPnL99EV7QbROScq4AlsJ3b12H2rBkZ55w6czVtiOOKxtjHoVAQoe5gnzEicmdIW2g3rt+oto9fNby3Ik8c0yLfMGfmdBANZw8eP8GisnkI5OUljff09qKm9gWWLC6DG64DPnflJkL5mVdL2WIzRKK+enp6UfeyAW/eati0YaUdscR76UoVunt/YP7cmVBV579LcB3w2tXLUTJ5fL9z0m2H165Z8e+JufLKNXDimDwnGs4CgTxsXleOi9eqzGBvWRGLeLzympt4hetr4HFFo5OuXZ1KDLSrq9t6pI4RDXeqGk6KGDAGHa9wFbAEJ/HuP3yq3xVzz65t5io9wTqOhynnxEUzjC1cMBdEw11ixIAy6HiF44AlRMWAdf0r8R7aW2GtxqkkymjCaipzSyaNx7Eju+2x63+30BU71ttjcveaaKSIRywBDzZe4Tjg2mf1mD2Im1OfIl9RlCZ0opFOIh4qxwHfe1SLpQm3uOVuc1OabXTqZ8Cp52XCa2Ai9xwFXPu03vo21bIlC+0x2Qan+zgp8dr41et3fc4T+eZ5oeCfc+PX07LtTvxmFhENTHn/8bMxrWTigBMbm5rtu8+3qx9YUaYL+P6jGmurHZ/bFY2a8/Izvq+8Lquv9e2sfuYRUbIP2hfnARNRdpGA+XtgIg9jwEQexoCJPIwBE3mYBKzL3zUQkXfEm/VBUer09g4QkXe0d3Zaf3Lmy8HPLa2t7XpbWye4EhNlN2m0pbUNzc26Hgz6KxUZ1DRtyi/knICBchBRFjN0QKnLD/g3FxcXR34D+5tlZqS9oxUAAAAASUVORK5CYII="
+    },
+    "normal": {
+      "format": "PNG",
+      "scale": 1,
+      "encoding": "base64",
+      "data": "iVBORw0KGgoAAAANSUhEUgAAAPAAAAAgCAYAAAAsa/W9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAA4tJREFUeAHt3UloE1Ecx/HfpClNGpqOSz3UtS4H9x6kehHRk56sehBccAM9VepFBBcQBb24gBcFV1zAg1hRqCfXU6tirWJxHeNyaW073dJWNOP8RzMmadLOtAcz7e8DgcnLm9y+vDeThCgwNTRoU3Lzci6Yh6XmQwURZS3FQJWi+CunTi2OKH/jfT5KDatqYQF8Ph+IKDvFYjG0d3SiuUXXfcgt9ecG/CfGjipUC814iSi7yQKrFoYRM2Jqq95x0QfDKC8oCIGIvEMNh2G2W2rtl7ltJvKWP80qKssl8jAGTORhDJjIwxgwkYcNKeCap/XQIl9BRP+HH0PQ2NSCO3cf4tC+in7n7ag8CCe2bViFsgXzQETOuAr46PGz0D5/SxprMiNODTQ1RJlz+uQB+/md6odo/N6CrRtX2WPnL99EV7QbROScq4AlsJ3b12H2rBkZ55w6czVtiOOKxtjHoVAQoe5gnzEicmdIW2g3rt+oto9fNby3Ik8c0yLfMGfmdBANZw8eP8GisnkI5OUljff09qKm9gWWLC6DG64DPnflJkL5mVdL2WIzRKK+enp6UfeyAW/eati0YaUdscR76UoVunt/YP7cmVBV579LcB3w2tXLUTJ5fL9z0m2H165Z8e+JufLKNXDimDwnGs4CgTxsXleOi9eqzGBvWRGLeLzympt4hetr4HFFo5OuXZ1KDLSrq9t6pI4RDXeqGk6KGDAGHa9wFbAEJ/HuP3yq3xVzz65t5io9wTqOhynnxEUzjC1cMBdEw11ixIAy6HiF44AlRMWAdf0r8R7aW2GtxqkkymjCaipzSyaNx7Eju+2x63+30BU71ttjcveaaKSIRywBDzZe4Tjg2mf1mD2Im1OfIl9RlCZ0opFOIh4qxwHfe1SLpQm3uOVuc1OabXTqZ8Cp52XCa2Ai9xwFXPu03vo21bIlC+0x2Qan+zgp8dr41et3fc4T+eZ5oeCfc+PX07LtTvxmFhENTHn/8bMxrWTigBMbm5rtu8+3qx9YUaYL+P6jGmurHZ/bFY2a8/Izvq+8Lquv9e2sfuYRUbIP2hfnARNRdpGA+XtgIg9jwEQexoCJPIwBE3mYBKzL3zUQkXfEm/VBUer09g4QkXe0d3Zaf3Lmy8HPLa2t7XpbWye4EhNlN2m0pbUNzc26Hgz6KxUZ1DRtyi/knICBchBRFjN0QKnLD/g3FxcXR34D+5tlZqS9oxUAAAAASUVORK5CYII="
+    },
+    "restored": {
+      "format": "PNG",
+      "scale": 1,
+      "encoding": "base64",
+      "data": "iVBORw0KGgoAAAANSUhEUgAAAPAAAAAgCAYAAAAsa/W9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAA4tJREFUeAHt3UloE1Ecx/HfpClNGpqOSz3UtS4H9x6kehHRk56sehBccAM9VepFBBcQBb24gBcFV1zAg1hRqCfXU6tirWJxHeNyaW073dJWNOP8RzMmadLOtAcz7e8DgcnLm9y+vDeThCgwNTRoU3Lzci6Yh6XmQwURZS3FQJWi+CunTi2OKH/jfT5KDatqYQF8Ph+IKDvFYjG0d3SiuUXXfcgt9ecG/CfGjipUC814iSi7yQKrFoYRM2Jqq95x0QfDKC8oCIGIvEMNh2G2W2rtl7ltJvKWP80qKssl8jAGTORhDJjIwxgwkYcNKeCap/XQIl9BRP+HH0PQ2NSCO3cf4tC+in7n7ag8CCe2bViFsgXzQETOuAr46PGz0D5/SxprMiNODTQ1RJlz+uQB+/md6odo/N6CrRtX2WPnL99EV7QbROScq4AlsJ3b12H2rBkZ55w6czVtiOOKxtjHoVAQoe5gnzEicmdIW2g3rt+oto9fNby3Ik8c0yLfMGfmdBANZw8eP8GisnkI5OUljff09qKm9gWWLC6DG64DPnflJkL5mVdL2WIzRKK+enp6UfeyAW/eati0YaUdscR76UoVunt/YP7cmVBV579LcB3w2tXLUTJ5fL9z0m2H165Z8e+JufLKNXDimDwnGs4CgTxsXleOi9eqzGBvWRGLeLzympt4hetr4HFFo5OuXZ1KDLSrq9t6pI4RDXeqGk6KGDAGHa9wFbAEJ/HuP3yq3xVzz65t5io9wTqOhynnxEUzjC1cMBdEw11ixIAy6HiF44AlRMWAdf0r8R7aW2GtxqkkymjCaipzSyaNx7Eju+2x63+30BU71ttjcveaaKSIRywBDzZe4Tjg2mf1mD2Im1OfIl9RlCZ0opFOIh4qxwHfe1SLpQm3uOVuc1OabXTqZ8Cp52XCa2Ai9xwFXPu03vo21bIlC+0x2Qan+zgp8dr41et3fc4T+eZ5oeCfc+PX07LtTvxmFhENTHn/8bMxrWTigBMbm5rtu8+3qx9YUaYL+P6jGmurHZ/bFY2a8/Izvq+8Lquv9e2sfuYRUbIP2hfnARNRdpGA+XtgIg9jwEQexoCJPIwBE3mYBKzL3zUQkXfEm/VBUer09g4QkXe0d3Zaf3Lmy8HPLa2t7XpbWye4EhNlN2m0pbUNzc26Hgz6KxUZ1DRtyi/knICBchBRFjN0QKnLD/g3FxcXR34D+5tlZqS9oxUAAAAASUVORK5CYII="
+    }
+  },
+  "issues": [],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "originalObservedStateRestored": true
+}

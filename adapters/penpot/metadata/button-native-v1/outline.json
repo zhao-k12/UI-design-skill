@@ -1,0 +1,85 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "OBSERVED",
+    "platform": "penpot",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+    "textReference": "10f3de97-3a09-806f-8008-c0aff49d61db",
+    "diagnosticOrigin": {
+      "x": 400,
+      "y": 80
+    },
+    "originalText": {
+      "reference": "10f3de97-3a09-806f-8008-c0aff49d61db",
+      "parentReference": "10f3de97-3a09-806f-8008-c0aff4723ada",
+      "x": 96,
+      "y": 85.5,
+      "width": 28,
+      "height": 21,
+      "characters": "查询",
+      "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+      "fontVariantId": "normal-400",
+      "fontSize": "14",
+      "fontWeight": "400",
+      "lineHeight": "1.5",
+      "letterSpacing": "0"
+    },
+    "originalEditableTextUnchanged": true,
+    "createdNodeIds": [
+      "10f3de97-3a09-806f-8008-c0b2902b75c6"
+    ],
+    "mutatedNodeIds": [],
+    "observations": [
+      {
+        "reference": "10f3de97-3a09-806f-8008-c0b2902b75c6",
+        "type": "path",
+        "x": 400,
+        "y": 80,
+        "width": 28,
+        "height": 21,
+        "d": "M400,80L428,80L428,101L400,101L400,80",
+        "commands": [
+          {
+            "command": "move-to",
+            "params": {
+              "y": 80,
+              "x": 400
+            }
+          },
+          {
+            "command": "line-to",
+            "params": {
+              "y": 80,
+              "x": 428
+            }
+          },
+          {
+            "command": "line-to",
+            "params": {
+              "y": 101,
+              "x": 428
+            }
+          },
+          {
+            "command": "line-to",
+            "params": {
+              "y": 101,
+              "x": 400
+            }
+          },
+          {
+            "command": "line-to",
+            "params": {
+              "y": 80,
+              "x": 400
+            }
+          }
+        ]
+      }
+    ],
+    "admissionEligible": false,
+    "fidelityGate": "NOT_RUN"
+  }
+}

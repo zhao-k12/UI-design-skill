@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "reviewedBy": "codex-visual-inspection",
+  "nativePngSha256": "961c3f255eeface6788f05e59a823e0eaf6928cdfa62e5ff446ec9c6cdbbcb8a",
+  "checks": [
+    "Full native 1440x488 page inspected",
+    "Approved header/query/list sections and all nine semantic items visible",
+    "Name/status/role columns and three frozen records visible",
+    "Settings and download icons visible",
+    "No overlap, clipping, missing controls or substituted components"
+  ],
+  "scope": "approved-frozen-static-list"
+}

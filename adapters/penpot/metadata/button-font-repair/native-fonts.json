@@ -1,0 +1,51 @@
+{
+  "status": "OBSERVED",
+  "evidenceKind": "native-pdf-font-observation",
+  "pdfSha256": "1581086fb35982686c94a32c5ff75fa9ed3601e0d7daa47038003bb9fc980350",
+  "fonts": [
+    {
+      "page": 0,
+      "resource": "/F4",
+      "baseFont": "AAAAAA+PingFangSC-Regular",
+      "postscriptName": "PingFangSC-Regular",
+      "embedded": [],
+      "subtype": "/Type3",
+      "nativeGlyphStreams": [
+        {
+          "glyphName": "/g0",
+          "bytes": 18,
+          "sha256": "2ac0b066c6cf1d0b8ea4f7197e5239c52175674cc0c06303dfc75dd1ca616169"
+        },
+        {
+          "glyphName": "/gEB1",
+          "bytes": 537,
+          "sha256": "a25cd6fec3f84b0bb24508c71fc4c82064b6c5b7c25862f5e74c8e9491fb3a76"
+        }
+      ]
+    },
+    {
+      "page": 0,
+      "resource": "/F5",
+      "baseFont": "AAAAAA+PingFangSC-Regular",
+      "postscriptName": "PingFangSC-Regular",
+      "embedded": [],
+      "subtype": "/Type3",
+      "nativeGlyphStreams": [
+        {
+          "glyphName": "/g0",
+          "bytes": 18,
+          "sha256": "2ac0b066c6cf1d0b8ea4f7197e5239c52175674cc0c06303dfc75dd1ca616169"
+        },
+        {
+          "glyphName": "/g19C3",
+          "bytes": 752,
+          "sha256": "d1fcb3b893a0f9e71198917160aecf8326ba1ecd55d23a1df72c6d761e8ed52a"
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "admissionEligible": false,
+  "glyphGeometryVerified": false,
+  "nativePngVerified": false
+}

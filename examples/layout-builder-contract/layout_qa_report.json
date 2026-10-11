@@ -1,0 +1,319 @@
+{
+  "stage": "layout-qa",
+  "status": "PASS",
+  "readyForMapping": false,
+  "structureReport": {
+    "version": "0.1.0",
+    "stage": "structure-qa",
+    "status": "PASS",
+    "readyForLayout": true,
+    "analysisSha256": "e20dc52efbff33b6f322e7af2a25e7c95d9687c78063098f83b362b479dcfc60",
+    "pageTreeSha256": "6efdf8b4ce93e21d9dc060a464530f6a9deb09046f7940a9edea0dd2a79d9134",
+    "reviewSha256": "eb5d6c4e4676a4446cf7043c3f7a2c03f6bb08f269daedd561b3e129f73ce9d8",
+    "issues": [],
+    "reviewReasons": [],
+    "freeze": {
+      "pageTreeSha256": "6efdf8b4ce93e21d9dc060a464530f6a9deb09046f7940a9edea0dd2a79d9134",
+      "analysisSha256": "e20dc52efbff33b6f322e7af2a25e7c95d9687c78063098f83b362b479dcfc60"
+    }
+  },
+  "pageTreeSha256": "6efdf8b4ce93e21d9dc060a464530f6a9deb09046f7940a9edea0dd2a79d9134",
+  "planSha256": "21c945e308c4b555f2a84b0b82260bc04fde52c65e99abc1f97ac1c2ebecf050",
+  "rulesSha256": "5e995ec984a07cd12feb31f11b9043a4226066dc8df190e50a8b126549b2dd6e",
+  "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+  "issues": [],
+  "testFixture": true,
+  "engineReport": {
+    "scope": "layout",
+    "status": "PASS",
+    "engineVersion": "0.1.0",
+    "tokenRegistryVersion": "0.1.0",
+    "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+    "pattern": "list-page",
+    "skeleton": {
+      "id": "pattern.page",
+      "type": "Page",
+      "box": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1440.0,
+        "height": 344.0
+      },
+      "children": [
+        {
+          "id": "pattern.header",
+          "type": "Section",
+          "box": {
+            "x": 24.0,
+            "y": 24.0,
+            "width": 1392.0,
+            "height": 32.0
+          },
+          "children": [
+            {
+              "id": "layout.item.3.0",
+              "type": "Cell",
+              "box": {
+                "x": 24.0,
+                "y": 24.0,
+                "width": 1392.0,
+                "height": 32.0
+              },
+              "children": [],
+              "sourceIds": [
+                "scope-note"
+              ]
+            }
+          ],
+          "role": "header",
+          "sourceIds": [
+            "note"
+          ]
+        },
+        {
+          "id": "pattern.query",
+          "type": "Section",
+          "box": {
+            "x": 24.0,
+            "y": 80.0,
+            "width": 1392.0,
+            "height": 80.0
+          },
+          "children": [
+            {
+              "id": "pattern.query.grid",
+              "type": "Grid",
+              "box": {
+                "x": 24.0,
+                "y": 80.0,
+                "width": 1392.0,
+                "height": 80.0
+              },
+              "children": [
+                {
+                  "id": "layout.group.0.fields",
+                  "type": "Grid",
+                  "box": {
+                    "x": 24.0,
+                    "y": 80.0,
+                    "width": 1392.0,
+                    "height": 32.0
+                  },
+                  "children": [
+                    {
+                      "id": "layout.item.0.0",
+                      "type": "Cell",
+                      "box": {
+                        "x": 24.0,
+                        "y": 80.0,
+                        "width": 336.0,
+                        "height": 32.0
+                      },
+                      "children": [],
+                      "role": "field",
+                      "sourceIds": [
+                        "name"
+                      ]
+                    },
+                    {
+                      "id": "layout.item.0.1",
+                      "type": "Cell",
+                      "box": {
+                        "x": 376.0,
+                        "y": 80.0,
+                        "width": 336.0,
+                        "height": 32.0
+                      },
+                      "children": [],
+                      "role": "field",
+                      "sourceIds": [
+                        "status"
+                      ]
+                    }
+                  ],
+                  "sourceIds": [
+                    "filters"
+                  ]
+                },
+                {
+                  "id": "layout.group.0.buttons",
+                  "type": "HorizontalStack",
+                  "box": {
+                    "x": 24.0,
+                    "y": 128.0,
+                    "width": 1392.0,
+                    "height": 32.0
+                  },
+                  "children": [
+                    {
+                      "id": "layout.item.0.2",
+                      "type": "Cell",
+                      "box": {
+                        "x": 24.0,
+                        "y": 128.0,
+                        "width": 160.0,
+                        "height": 32.0
+                      },
+                      "children": [],
+                      "sourceIds": [
+                        "search"
+                      ]
+                    },
+                    {
+                      "id": "layout.item.0.3",
+                      "type": "Cell",
+                      "box": {
+                        "x": 192.0,
+                        "y": 128.0,
+                        "width": 160.0,
+                        "height": 32.0
+                      },
+                      "children": [],
+                      "sourceIds": [
+                        "reset"
+                      ]
+                    }
+                  ],
+                  "sourceIds": [
+                    "filters"
+                  ]
+                }
+              ]
+            }
+          ],
+          "role": "query",
+          "sourceIds": [
+            "filters"
+          ]
+        },
+        {
+          "id": "pattern.toolbar",
+          "type": "Section",
+          "box": {
+            "x": 24.0,
+            "y": 184.0,
+            "width": 1392.0,
+            "height": 32.0
+          },
+          "children": [
+            {
+              "id": "pattern.toolbar.row",
+              "type": "HorizontalStack",
+              "box": {
+                "x": 24.0,
+                "y": 184.0,
+                "width": 1392.0,
+                "height": 32.0
+              },
+              "children": [
+                {
+                  "id": "layout.group.1.buttons",
+                  "type": "HorizontalStack",
+                  "box": {
+                    "x": 24.0,
+                    "y": 184.0,
+                    "width": 1392.0,
+                    "height": 32.0
+                  },
+                  "children": [
+                    {
+                      "id": "layout.item.1.0",
+                      "type": "Cell",
+                      "box": {
+                        "x": 24.0,
+                        "y": 184.0,
+                        "width": 160.0,
+                        "height": 32.0
+                      },
+                      "children": [],
+                      "sourceIds": [
+                        "add"
+                      ]
+                    },
+                    {
+                      "id": "layout.item.1.1",
+                      "type": "Cell",
+                      "box": {
+                        "x": 192.0,
+                        "y": 184.0,
+                        "width": 160.0,
+                        "height": 32.0
+                      },
+                      "children": [],
+                      "sourceIds": [
+                        "export"
+                      ]
+                    }
+                  ],
+                  "sourceIds": [
+                    "toolbar"
+                  ]
+                }
+              ]
+            }
+          ],
+          "role": "toolbar",
+          "sourceIds": [
+            "toolbar"
+          ]
+        },
+        {
+          "id": "pattern.table",
+          "type": "Section",
+          "box": {
+            "x": 24.0,
+            "y": 240.0,
+            "width": 1392.0,
+            "height": 80.0
+          },
+          "children": [
+            {
+              "id": "layout.item.2.0",
+              "type": "Cell",
+              "box": {
+                "x": 24.0,
+                "y": 240.0,
+                "width": 1392.0,
+                "height": 32.0
+              },
+              "children": [],
+              "sourceIds": [
+                "users"
+              ]
+            },
+            {
+              "id": "layout.item.2.1",
+              "type": "Cell",
+              "box": {
+                "x": 24.0,
+                "y": 288.0,
+                "width": 1392.0,
+                "height": 32.0
+              },
+              "children": [],
+              "sourceIds": [
+                "example-row"
+              ]
+            }
+          ],
+          "role": "table",
+          "sourceIds": [
+            "results"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "user-management-example"
+      ]
+    },
+    "issues": [
+      {
+        "code": "unnecessary_nesting",
+        "path": "/page/children/2/children/0",
+        "message": "Single-child wrapper duplicates its child layout type",
+        "severity": "warning"
+      }
+    ]
+  },
+  "layoutTreeSha256": "3618739198bd9b70f2e266ae9a0c80efeacf3704ce0f0b4f4cd371c2764fa412"
+}

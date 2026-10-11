@@ -1,0 +1,13 @@
+{
+  "scope": "native-section-content-patch-qa",
+  "status": "PASS",
+  "nativeStructure": "PASS",
+  "visualReview": "PASS",
+  "nativePngSha256": "6597b57ad6725c088f09470bbc2711c309701ca4cfd179d6c08370f151be6bf9",
+  "changedTextIds": [
+    "b5a46b76-bcf2-8039-8008-c22cd1731fbf"
+  ],
+  "unchangedNativeNodeCount": 76,
+  "issues": [],
+  "fullTask015Acceptance": false
+}

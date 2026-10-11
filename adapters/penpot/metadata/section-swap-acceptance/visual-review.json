@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "reviewedBy": "Codex independent native PNG visual review",
+  "nativePngSha256": "1213ff78ffcb9853c588268b293737e2373a73c2bee2d972c2c6c23ed58bd469",
+  "note": "姓名控件成为真实选择框；文字和箭头完整，其他区块无变化。此为验收操作示例，不代表姓名字段业务语义调整获批。"
+}

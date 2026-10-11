@@ -1,0 +1,69 @@
+{
+  "gateVersion": "0.2.0",
+  "scope": "production",
+  "logicalComponentId": "form.select.default.medium",
+  "componentType": "Select",
+  "variants": [
+    "default"
+  ],
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "8510c62e4efced55ea261d95157c9ebd3d6541d547e4f9f8a5e493a2185a2bdc",
+  "status": "PASS",
+  "admissionEligible": true,
+  "issues": [],
+  "checks": {
+    "geometryAndStyle": "PASS",
+    "screenshot": {
+      "changedPixels": 302,
+      "changedPixelsOutsideEdgeBand": 0,
+      "changedPixelsOutsidePermittedRegions": 0,
+      "maxChannelDelta": 124,
+      "policy": "evidence-bound-edges-0.2.0",
+      "vectorRasterSha256": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+      "edgeBandPixelCount": 2243
+    },
+    "glyphRetention": [
+      {
+        "character": "启",
+        "sourceInkProxy": 63.0992919542572,
+        "nativeInkProxy": 57.510124035351346,
+        "retentionRatio": 0.9114226523657726,
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "sourceInkProxy": 67.6761200112065,
+        "nativeInkProxy": 57.68923668593841,
+        "retentionRatio": 0.8524312072912223,
+        "status": "PASS"
+      },
+      {
+        "character": "",
+        "sourceInkProxy": 15.159143931819262,
+        "nativeInkProxy": 14.708327381802603,
+        "retentionRatio": 0.9702610812296341,
+        "status": "PASS"
+      }
+    ],
+    "normalizationProofs": {
+      "geometryAndStyle": "PASS",
+      "content": "PASS",
+      "fontBinding": "PASS",
+      "glyphGeometry": "PASS",
+      "baselines": "PASS",
+      "renderState": "PASS",
+      "sourceReproduction": "PASS",
+      "vectorBinding": "PASS"
+    }
+  },
+  "capture": {
+    "captureId": "penpot-select-b09fb2975a0b0b78ef6d5df29755b384f841a47044150a9bd4a5557e6e3ad445",
+    "exporterVersion": "penpot-select-normalization-0.2.0",
+    "nativeEvidenceSha256": "75bc4d6e23897e2b2136099169a601403468e1bbba80653711262220806233eb",
+    "proofBundleSha256": "9354cdb3e3be59bdeb54a49890f621412d63f5672d835b8ec886348a12b2abbb"
+  },
+  "candidateSha256": "c7512500b1a08d595b86b8067729fefaa0ccc98e00185f414fb1b74fe71aee87",
+  "referenceScreenshotSha256": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+  "candidateScreenshotSha256": "1eca2b2d8fa529adda6171c55edb7d4ac8a95de4d3d4c6434d1dd9d9965eb89c",
+  "candidateEvidenceKind": "native-design-capture"
+}

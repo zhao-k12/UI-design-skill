@@ -1,0 +1,364 @@
+{
+  "layoutTreeVersion": "0.1.0",
+  "pattern": "list-page",
+  "page": {
+    "id": "pattern.page",
+    "type": "Page",
+    "layout": {
+      "width": {
+        "mode": "fixed",
+        "value": {
+          "token": "size.page"
+        }
+      },
+      "height": {
+        "mode": "hug"
+      },
+      "direction": "vertical",
+      "gap": {
+        "token": "spacing.section"
+      },
+      "padding": {
+        "top": {
+          "token": "spacing.page"
+        },
+        "right": {
+          "token": "spacing.page"
+        },
+        "bottom": {
+          "token": "spacing.page"
+        },
+        "left": {
+          "token": "spacing.page"
+        }
+      }
+    },
+    "children": [
+      {
+        "id": "pattern.header",
+        "type": "Section",
+        "role": "header",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "fixture.header",
+            "type": "Cell",
+            "role": "content",
+            "layout": {
+              "width": {
+                "mode": "hug"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "measurement": {
+              "width": 180,
+              "height": 28,
+              "source": {
+                "kind": "test-fixture",
+                "reference": "task-004 structural layout fixture; not official component metrics"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "pattern.query",
+        "type": "Section",
+        "role": "query",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "pattern.query.grid",
+            "type": "Grid",
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "gridColumns": 24,
+              "gap": {
+                "token": "spacing.md"
+              },
+              "wrap": true
+            },
+            "children": [
+              {
+                "id": "fixture.field.0",
+                "type": "Cell",
+                "role": "field",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "span": 6
+                },
+                "measurement": {
+                  "width": 180,
+                  "height": 64,
+                  "source": {
+                    "kind": "test-fixture",
+                    "reference": "task-004 structural layout fixture; not official component metrics"
+                  }
+                }
+              },
+              {
+                "id": "fixture.field.1",
+                "type": "Cell",
+                "role": "field",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "span": 6
+                },
+                "measurement": {
+                  "width": 180,
+                  "height": 64,
+                  "source": {
+                    "kind": "test-fixture",
+                    "reference": "task-004 structural layout fixture; not official component metrics"
+                  }
+                }
+              },
+              {
+                "id": "fixture.field.2",
+                "type": "Cell",
+                "role": "field",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "span": 6
+                },
+                "measurement": {
+                  "width": 180,
+                  "height": 64,
+                  "source": {
+                    "kind": "test-fixture",
+                    "reference": "task-004 structural layout fixture; not official component metrics"
+                  }
+                }
+              },
+              {
+                "id": "fixture.field.3",
+                "type": "Cell",
+                "role": "field",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "span": 6
+                },
+                "measurement": {
+                  "width": 180,
+                  "height": 64,
+                  "source": {
+                    "kind": "test-fixture",
+                    "reference": "task-004 structural layout fixture; not official component metrics"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pattern.toolbar",
+        "type": "Section",
+        "role": "toolbar",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "pattern.toolbar.row",
+            "type": "HorizontalStack",
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "gap": {
+                "token": "spacing.sm"
+              },
+              "wrap": true
+            },
+            "children": [
+              {
+                "id": "fixture.add",
+                "type": "Cell",
+                "role": "action",
+                "layout": {
+                  "width": {
+                    "mode": "hug"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "measurement": {
+                  "width": 104,
+                  "height": 32,
+                  "source": {
+                    "kind": "test-fixture",
+                    "reference": "task-004 structural layout fixture; not official component metrics"
+                  }
+                }
+              },
+              {
+                "id": "fixture.export",
+                "type": "Cell",
+                "role": "action",
+                "layout": {
+                  "width": {
+                    "mode": "hug"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "measurement": {
+                  "width": 80,
+                  "height": 32,
+                  "source": {
+                    "kind": "test-fixture",
+                    "reference": "task-004 structural layout fixture; not official component metrics"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pattern.table",
+        "type": "Section",
+        "role": "table",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "fixture.table",
+            "type": "Cell",
+            "role": "content",
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "measurement": {
+              "width": 800,
+              "height": 320,
+              "source": {
+                "kind": "test-fixture",
+                "reference": "task-004 structural layout fixture; not official component metrics"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "pattern.pagination",
+        "type": "Section",
+        "role": "pagination",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "fixture.pagination",
+            "type": "Cell",
+            "role": "content",
+            "layout": {
+              "width": {
+                "mode": "hug"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "measurement": {
+              "width": 320,
+              "height": 32,
+              "source": {
+                "kind": "test-fixture",
+                "reference": "task-004 structural layout fixture; not official component metrics"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

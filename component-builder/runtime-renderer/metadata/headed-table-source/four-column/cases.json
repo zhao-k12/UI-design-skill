@@ -1,0 +1,68 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {
+    "width": 1008,
+    "height": 464
+  },
+  "containerWidth": 960,
+  "cases": [
+    {
+      "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+      "componentType": "Table",
+      "variant": "default",
+      "props": {
+        "showHeader": true,
+        "border": false,
+        "stripe": false,
+        "columns": [
+          {
+            "title": "编号",
+            "key": "code",
+            "width": 160
+          },
+          {
+            "title": "姓名",
+            "key": "name",
+            "width": 240
+          },
+          {
+            "title": "部门",
+            "key": "department",
+            "width": 320
+          },
+          {
+            "title": "状态",
+            "key": "status",
+            "width": 240
+          }
+        ],
+        "data": [
+          {
+            "code": "001",
+            "name": "张三",
+            "department": "研发",
+            "status": "启用"
+          },
+          {
+            "code": "002",
+            "name": "李四",
+            "department": "财务",
+            "status": "停用"
+          },
+          {
+            "code": "003",
+            "name": "王五",
+            "department": "运营",
+            "status": "启用"
+          },
+          {
+            "code": "004",
+            "name": "赵六",
+            "department": "客服",
+            "status": "启用"
+          }
+        ]
+      }
+    }
+  ]
+}

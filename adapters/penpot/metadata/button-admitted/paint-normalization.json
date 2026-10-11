@@ -1,0 +1,19 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "PAINT_NORMALIZED",
+    "platform": "penpot",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+    "componentReference": "10f3de97-3a09-806f-8008-c0aff4ac5af0",
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "10f3de97-3a09-806f-8008-c0aff4723ada",
+      "10f3de97-3a09-806f-8008-c0aff49d61db"
+    ],
+    "reason": "opaque_same_color_fill_and_inner_border_union",
+    "admissionEligible": false,
+    "fidelityGate": "NOT_RUN"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "scope": "TASK-015 native subtask evidence",
+  "fullTask015Acceptance": false,
+  "files": {
+    "after-capture.json": "875a89e5cf6feec68b8386851613bfaa41120665b74c9938bdad5708f00062df",
+    "after-native.png": "1213ff78ffcb9853c588268b293737e2373a73c2bee2d972c2c6c23ed58bd469",
+    "before-capture.json": "5a296e2d410f616d4bfac6036b701cffe7ad67689efe09e1d6402d32a853f208",
+    "before-native.png": "6597b57ad6725c088f09470bbc2711c309701ca4cfd179d6c08370f151be6bf9",
+    "execution.json": "061d07a4c024cd645edde854ccba079d3608b03c7f3a7a2e6a2d1ceb829d9689",
+    "initial-after-capture.json": "407654c42454861aae9ced220525b94ad0fef98f3f8c486677307caa8b2bd09f",
+    "initial-name-failure.json": "ca41473abe481901f2c1961292f5d260ba00902b37c575b5f41e0914bd78f563",
+    "initial-served-plugin.js": "8e361e11c5173261bcb009c762c520e8c52c130bf4a6babc7d36a0a7c6209186",
+    "name-recovery-capture.json": "67cfd5334426a5517331fcdae7d9c9be43255a771bfdc1e3d80ee1aa24d56ee3",
+    "native-export-timeout.json": "d4622f4e1c1ebba933f003f6fb2562b07d1deda05a0e9da2a0cbe5a25919ffae",
+    "native-swap-qa.json": "c54134aa3f8ad5106d52e4aba199fa8637eccdf486cfb79b513162a6462694a2",
+    "original-execution.json": "761af643418a8a7c1ed1b8d61f8b1060e5902a6bdff5b6e0c3576fa2f32c2845",
+    "restore-input-swap.json": "4961ea969debb9abc8d9888a0fbc21033719e175723cd88b4eb815ddc6f46c67",
+    "restore-served-plugin.js": "217e7492ed06e89562d6399c371d7e81c676634c185261f407f70b1077af13d3",
+    "restored-input-capture.json": "5a296e2d410f616d4bfac6036b701cffe7ad67689efe09e1d6402d32a853f208",
+    "served-plugin.js": "f2e69bb95573c3ca8e9ab774f1a336303c9b31948fe797a3e7da1fa53505ccf1",
+    "swap.json": "3b72bd5c5cc9c89f1e2b8736bbf3c92c06e644f833bdd337da33c8804d664bb9",
+    "visual-review.json": "96349b4b73b8d2c2490360a974551038b2861795325fe748c2a1861d40b8946c"
+  }
+}

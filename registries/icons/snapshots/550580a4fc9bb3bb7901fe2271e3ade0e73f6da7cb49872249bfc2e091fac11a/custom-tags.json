@@ -1,0 +1,24 @@
+{
+  "customTagsVersion": "0.1.0",
+  "description": "项目明确选定的五种操作语义，仅补充标签，不修改官方图形。",
+  "tags": {
+    "remix.add-line": [
+      "新增",
+      "添加"
+    ],
+    "remix.delete-bin-line": [
+      "删除",
+      "移除"
+    ],
+    "remix.download-line": [
+      "导出"
+    ],
+    "remix.search-line": [
+      "搜索",
+      "查询"
+    ],
+    "remix.settings-3-line": [
+      "设置"
+    ]
+  }
+}

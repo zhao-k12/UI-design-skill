@@ -1,0 +1,131 @@
+{
+  "normalizationVersion": "0.2.0",
+  "scope": "production",
+  "evidenceKind": "native-design-capture",
+  "logicalComponentId": "form.select.default.medium",
+  "variant": "default",
+  "state": "default-static",
+  "props": {
+    "size": "default",
+    "modelValue": "enabled",
+    "placeholder": "请选择状态",
+    "elementId": "runtime-select",
+    "transfer": false
+  },
+  "content": {
+    "text": null,
+    "options": [
+      {
+        "value": "enabled",
+        "label": "启用"
+      },
+      {
+        "value": "disabled",
+        "label": "停用"
+      }
+    ]
+  },
+  "fixtureContext": {
+    "containerWidth": 240
+  },
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "8510c62e4efced55ea261d95157c9ebd3d6541d547e4f9f8a5e493a2185a2bdc",
+  "verification": {
+    "geometryAndStyle": "PASS",
+    "content": "PASS",
+    "fontBinding": "PASS",
+    "glyphGeometry": "PASS",
+    "baselines": "PASS",
+    "renderState": "PASS",
+    "sourceReproduction": "PASS",
+    "vectorBinding": "PASS"
+  },
+  "glyphPaintSamples": [
+    {
+      "characters": "启用",
+      "region": {
+        "x": 9,
+        "y": 8,
+        "width": 28,
+        "height": 16
+      },
+      "advances": [
+        14,
+        14
+      ],
+      "foreground": [
+        81,
+        90,
+        110
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "characters": "",
+      "region": {
+        "x": 217,
+        "y": 9,
+        "width": 14,
+        "height": 14
+      },
+      "advances": [
+        14
+      ],
+      "foreground": [
+        128,
+        134,
+        149
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "allowedCornerRegions": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 4,
+      "height": 4
+    },
+    {
+      "x": 0,
+      "y": 28,
+      "width": 4,
+      "height": 4
+    },
+    {
+      "x": 236,
+      "y": 0,
+      "width": 4,
+      "height": 4
+    },
+    {
+      "x": 236,
+      "y": 28,
+      "width": 4,
+      "height": 4
+    }
+  ],
+  "rasterContext": {
+    "deviceScaleFactor": 1,
+    "background": "white",
+    "scale": 1,
+    "resize": false,
+    "crop": false
+  },
+  "screenshotSha256": "1eca2b2d8fa529adda6171c55edb7d4ac8a95de4d3d4c6434d1dd9d9965eb89c",
+  "vectorRasterSha256": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+  "capture": {
+    "captureId": "penpot-select-b09fb2975a0b0b78ef6d5df29755b384f841a47044150a9bd4a5557e6e3ad445",
+    "exporterVersion": "penpot-select-normalization-0.2.0",
+    "nativeEvidenceSha256": "75bc4d6e23897e2b2136099169a601403468e1bbba80653711262220806233eb",
+    "proofBundleSha256": "9354cdb3e3be59bdeb54a49890f621412d63f5672d835b8ec886348a12b2abbb"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "scope": "penpot-static-pipeline-instance-fidelity",
+  "uiIrSha256": "94d539a316f9ac50af23726b705af8e5c89fd188dba9e99a8a0aee9195394bee",
+  "instances": [
+    {
+      "uiIrId": "header-title.icon",
+      "status": "PASS",
+      "exactMasterAffineFloat32": true,
+      "sourceNativeVectorPngBytesExact": true,
+      "nativeSourceChangedPixels": 137,
+      "outsideVerifiedEdgeBand": 0,
+      "nativePngSha256": "a88c42caddb063dabdc86d6bfd140205096738045e7659854c54288f27b27aa5"
+    },
+    {
+      "uiIrId": "layout.item.1.0.instance",
+      "status": "PASS",
+      "masterNativePngBytesExact": true,
+      "editableTextCount": 1
+    },
+    {
+      "uiIrId": "layout.item.1.1.instance",
+      "status": "PASS",
+      "masterNativePngBytesExact": true,
+      "editableTextCount": 2
+    },
+    {
+      "uiIrId": "layout.item.1.2.instance",
+      "status": "PASS",
+      "masterNativePngBytesExact": true,
+      "editableTextCount": 1
+    },
+    {
+      "uiIrId": "export-action.icon",
+      "status": "PASS",
+      "exactMasterAffineFloat32": true,
+      "sourceNativeVectorPngBytesExact": true,
+      "nativeSourceChangedPixels": 42,
+      "outsideVerifiedEdgeBand": 0,
+      "nativePngSha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43"
+    },
+    {
+      "uiIrId": "layout.item.2.0.instance",
+      "status": "PASS",
+      "masterNativePngBytesExact": true,
+      "editableTextCount": 9
+    }
+  ],
+  "issues": []
+}

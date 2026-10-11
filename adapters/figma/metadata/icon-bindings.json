@@ -1,0 +1,39 @@
+{
+  "metadataVersion": "0.1.0",
+  "scope": "production",
+  "platform": "figma",
+  "registrySha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+  "sourceVersion": "remixicon@4.9.1+39eab8b69cadaa47e1bed6a41777b1cd22227c74",
+  "bindings": {
+    "remix.search-line": {
+      "kind": "component",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "3:4",
+      "svgSha256": "e36fd9d602a25425c6c2288005ef5a413eec710f9718bd01dbfd81cb4d6b5c19"
+    },
+    "remix.delete-bin-line": {
+      "kind": "component",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "3:7",
+      "svgSha256": "a3484fc34454104f58430d605047d353c6f9669fd037b2b30a98d4f58ad66a3e"
+    },
+    "remix.add-line": {
+      "kind": "component",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "3:10",
+      "svgSha256": "b03a98dbb2f1d4c1aed7987ce4be58b6af4b4be8af47b08aadb77c4a35d6a645"
+    },
+    "remix.download-line": {
+      "kind": "component",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "3:13",
+      "svgSha256": "ad83ac7dc9d4c6af651a53068e928d82f9402cfd05a924742388549846032f43"
+    },
+    "remix.settings-3-line": {
+      "kind": "component",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "3:16",
+      "svgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1"
+    }
+  }
+}

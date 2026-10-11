@@ -1,0 +1,41 @@
+{
+  "scope": "figma_source_font_load_probe",
+  "status": "REVIEW",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "fonts": [
+    {
+      "fontName": {
+        "family": "Ionicons",
+        "style": "Regular"
+      },
+      "postScriptName": "Ionicons",
+      "sourceFileSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+      "listed": false,
+      "status": "MISSING",
+      "loadSucceeded": false,
+      "error": "The font \"Ionicons Regular\" could not be loaded. The font family \"Ionicons\" does not exist.\n\nFonts with similar names:\n- Niconne (Regular)\n\nCall figma.listAvailableFontsAsync() for the full list.\n\nTo upload a local font, see: https://help.figma.com/hc/articles/360039956894-Add-a-font-to-Figma"
+    },
+    {
+      "fontName": {
+        "family": "PingFang SC",
+        "style": "Regular"
+      },
+      "postScriptName": "PingFangSC-Regular",
+      "sourceFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "listed": false,
+      "status": "MISSING",
+      "loadSucceeded": false,
+      "error": "The font \"PingFang SC Regular\" could not be loaded. The font family \"PingFang SC\" does not exist.\n\nVisually similar fonts:\n- Noto Sans SC (Black, Bold, DemiLight, Light, Medium, Regular, Thin)\n\nFonts with similar names:\n- Pinyon Script (Regular)\n\nCall figma.listAvailableFontsAsync() for the full list.\n\nTo upload a local font, see: https://help.figma.com/hc/articles/360039956894-Add-a-font-to-Figma"
+    }
+  ],
+  "issues": [],
+  "availableFontCount": 8927,
+  "limitations": [
+    "Successful loading alone does not establish glyph equality or font-file identity in Figma.",
+    "Unlisted successful loads remain REVIEW; existing candidate guards are not bypassed."
+  ]
+}

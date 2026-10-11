@@ -1,0 +1,104 @@
+{
+  "targets": [
+    {
+      "ownerReference": "b5a46b76-bcf2-8039-8008-c24e30d14a96",
+      "textReference": "b5a46b76-bcf2-8039-8008-c24e30d14a98",
+      "name": "official-source / form.input.default.medium / 0.1::placeholder",
+      "expectedText": "请输入姓名",
+      "text": "姓名",
+      "sectionReference": "b5a46b76-bcf2-8039-8008-c24e308a25f9",
+      "componentReference": "b17404b9-592b-8074-8008-c0cd36551084",
+      "style": {
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontVariantId": "normal-400",
+        "fontFamily": "PingFang SC",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSize": "14",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed"
+      }
+    },
+    {
+      "ownerReference": "b5a46b76-bcf2-8039-8008-c24e30ffe5b4",
+      "textReference": "b5a46b76-bcf2-8039-8008-c24e30ffe5b7",
+      "name": "official-source / form.select.default.medium / 0.0.1.0",
+      "expectedText": "启用",
+      "text": "停用",
+      "sectionReference": "b5a46b76-bcf2-8039-8008-c24e308a25f9",
+      "componentReference": "b17404b9-592b-8074-8008-c0d00dc30929",
+      "style": {
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontVariantId": "normal-400",
+        "fontFamily": "PingFang SC",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSize": "14",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed"
+      }
+    },
+    {
+      "ownerReference": "b5a46b76-bcf2-8039-8008-c24e3165d6ad",
+      "textReference": "b5a46b76-bcf2-8039-8008-c24e3165d6af",
+      "name": "official-source / action.button.primary.medium / 0.0",
+      "expectedText": "查询",
+      "text": "导出",
+      "sectionReference": "b5a46b76-bcf2-8039-8008-c24e308a25f9",
+      "componentReference": "10f3de97-3a09-806f-8008-c0aff4ac5af0",
+      "style": {
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontVariantId": "normal-400",
+        "fontFamily": "PingFang SC",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSize": "14",
+        "lineHeight": "1.5",
+        "letterSpacing": "0",
+        "growType": "fixed"
+      }
+    },
+    {
+      "ownerReference": "b5a46b76-bcf2-8039-8008-c24e3230fe24",
+      "textReference": "b5a46b76-bcf2-8039-8008-c24e3230fe24",
+      "name": "column.role.label",
+      "expectedText": "角色",
+      "text": "范围",
+      "sectionReference": "b5a46b76-bcf2-8039-8008-c24e3171ce63",
+      "componentReference": null,
+      "style": {
+        "fontId": "gfont-noto-sans-sc",
+        "fontVariantId": "regular",
+        "fontFamily": "Noto Sans SC",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSize": "14",
+        "lineHeight": "1.5714285714285714",
+        "letterSpacing": "0",
+        "growType": "auto-width"
+      }
+    },
+    {
+      "ownerReference": "b5a46b76-bcf2-8039-8008-c24e3131cd5c",
+      "textReference": "b5a46b76-bcf2-8039-8008-c24e3131cd5c",
+      "name": "filter.description",
+      "expectedText": "查看用户信息",
+      "text": "用户列表",
+      "sectionReference": "b5a46b76-bcf2-8039-8008-c24e308a25f9",
+      "componentReference": null,
+      "style": {
+        "fontId": "gfont-noto-sans-sc",
+        "fontVariantId": "regular",
+        "fontFamily": "Noto Sans SC",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSize": "14",
+        "lineHeight": "1.5714285714285714",
+        "letterSpacing": "0",
+        "growType": "auto-width"
+      }
+    }
+  ]
+}

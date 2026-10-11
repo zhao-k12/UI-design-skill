@@ -1,0 +1,26 @@
+[
+  {
+    "before": 6,
+    "after": 2,
+    "changes": [
+      {
+        "reference": "60977a61-dfea-80ea-8008-c4e4edc77a0a",
+        "keys": [
+          "fills"
+        ]
+      }
+    ]
+  },
+  {
+    "before": 5,
+    "after": 3,
+    "changes": [
+      {
+        "reference": "60977a61-dfea-80ea-8008-c4e4eefd77c2",
+        "keys": [
+          "fills"
+        ]
+      }
+    ]
+  }
+]

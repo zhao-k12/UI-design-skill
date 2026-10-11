@@ -1,0 +1,471 @@
+{
+  "adapterVersion": "0.1.0",
+  "documentId": "task015-six-cell-slots",
+  "uiIrSha256": "b66b009ea16ffdaeedff587761954c546f516b8381a1b9f7e42cca643eef21eb",
+  "tokensSha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+  "componentsSha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+  "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pages": [
+    {
+      "id": "slot-page",
+      "name": "六类槽位验收",
+      "type": "Page",
+      "layout": {
+        "width": {
+          "mode": "fixed",
+          "value": 1440
+        },
+        "height": {
+          "mode": "fixed",
+          "value": 80
+        },
+        "padding": {
+          "top": 24,
+          "right": 24,
+          "bottom": 24,
+          "left": 24
+        },
+        "gap": 0,
+        "direction": "vertical",
+        "wrap": false,
+        "alignment": {
+          "main": "start",
+          "cross": "start"
+        }
+      },
+      "style": {
+        "fill": "#f4f5f7"
+      },
+      "children": [
+        {
+          "id": "slot-cell",
+          "name": "slot-cell",
+          "type": "Frame",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 1392
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32
+            },
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "gap": 8,
+            "direction": "horizontal",
+            "wrap": false,
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "style": {},
+          "children": [
+            {
+              "id": "slot-cell.slot.leading-icon",
+              "name": "slot-cell.slot.leading-icon",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 24
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": [
+                {
+                  "id": "slot-leading",
+                  "name": "slot-leading",
+                  "type": "IconInstance",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 0,
+                    "direction": "vertical",
+                    "wrap": false,
+                    "alignment": {
+                      "main": "start",
+                      "cross": "start"
+                    }
+                  },
+                  "style": {},
+                  "componentReference": "3:16",
+                  "svgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1"
+                }
+              ]
+            },
+            {
+              "id": "slot-cell.slot.label",
+              "name": "slot-cell.slot.label",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 28
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": [
+                {
+                  "id": "slot-label",
+                  "name": "slot-label",
+                  "type": "Text",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 28
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 22
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 0,
+                    "direction": "vertical",
+                    "wrap": false,
+                    "alignment": {
+                      "main": "start",
+                      "cross": "start"
+                    }
+                  },
+                  "style": {
+                    "typographyToken": {
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": 400,
+                      "lineHeight": 22,
+                      "letterSpacing": 0
+                    },
+                    "colorToken": "#20252b"
+                  },
+                  "text": "姓名",
+                  "fontName": {
+                    "family": "Noto Sans SC",
+                    "style": "Regular"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "slot-cell.slot.control",
+              "name": "slot-cell.slot.control",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 240
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": [
+                {
+                  "id": "slot-control",
+                  "name": "slot-control",
+                  "type": "ComponentInstance",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 240
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 32
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 0,
+                    "direction": "vertical",
+                    "wrap": false,
+                    "alignment": {
+                      "main": "start",
+                      "cross": "start"
+                    }
+                  },
+                  "style": {},
+                  "componentReference": "12:8",
+                  "fidelityReportSha256": "095db86f0fd809bcd410dc49eb9a3ec9d05cae7162bc27e38fc47cde7decdab3"
+                }
+              ]
+            },
+            {
+              "id": "slot-cell.slot.trailing-icon",
+              "name": "slot-cell.slot.trailing-icon",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 24
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": [
+                {
+                  "id": "slot-trailing",
+                  "name": "slot-trailing",
+                  "type": "IconInstance",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 0,
+                    "direction": "vertical",
+                    "wrap": false,
+                    "alignment": {
+                      "main": "start",
+                      "cross": "start"
+                    }
+                  },
+                  "style": {},
+                  "componentReference": "3:13",
+                  "svgSha256": "ad83ac7dc9d4c6af651a53068e928d82f9402cfd05a924742388549846032f43"
+                }
+              ]
+            },
+            {
+              "id": "slot-cell.slot.content",
+              "name": "slot-cell.slot.content",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 56
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": [
+                {
+                  "id": "slot-content",
+                  "name": "slot-content",
+                  "type": "Text",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 56
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 22
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 0,
+                    "direction": "vertical",
+                    "wrap": false,
+                    "alignment": {
+                      "main": "start",
+                      "cross": "start"
+                    }
+                  },
+                  "style": {
+                    "typographyToken": {
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": 400,
+                      "lineHeight": 22,
+                      "letterSpacing": 0
+                    },
+                    "colorToken": "#20252b"
+                  },
+                  "text": "用户列表",
+                  "fontName": {
+                    "family": "Noto Sans SC",
+                    "style": "Regular"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "slot-cell.slot.actions",
+              "name": "slot-cell.slot.actions",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 60
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": [
+                {
+                  "id": "slot-action",
+                  "name": "slot-action",
+                  "type": "ComponentInstance",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 60
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 32
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 0,
+                    "direction": "vertical",
+                    "wrap": false,
+                    "alignment": {
+                      "main": "start",
+                      "cross": "start"
+                    }
+                  },
+                  "style": {},
+                  "componentReference": "18:5",
+                  "fidelityReportSha256": "f5f768a7041c2302f10efaf2360ebce52f99031898fba81fd6e99827847e6c11"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

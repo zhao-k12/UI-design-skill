@@ -1,0 +1,37 @@
+{
+  "scope": "figma_baseline_alignment_diagnostic",
+  "status": "REVIEW",
+  "observations": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "textReference": "12:3",
+      "sourceBaselineComponentY": 20.5,
+      "nativeUnshapedFontBaselineComponentY": 21.5,
+      "deltaY": 1.0,
+      "status": "DIFFERENCE",
+      "nativeOffsetMethod": "exact contour translation from font baseline coordinates, identity linear transforms",
+      "correctionApplied": false
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "status": "UNSUPPORTED",
+      "reason": "placeholder_baseline_not_exposed_by_standard_dom"
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "textReference": "12:13",
+      "sourceBaselineComponentY": 21,
+      "nativeUnshapedFontBaselineComponentY": 21.0,
+      "deltaY": 0.0,
+      "status": "ALIGNED",
+      "nativeOffsetMethod": "exact contour translation from font baseline coordinates, identity linear transforms",
+      "correctionApplied": false
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Only measured Button/Select text baseline positions are compared. Input and pseudo glyph baselines remain unsupported.",
+    "Full CSS-normalized capture and exact raster admission remain incomplete."
+  ]
+}

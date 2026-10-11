@@ -1,0 +1,588 @@
+{
+  "uiIrVersion": "0.1.0",
+  "documentId": "task015-native-section-acceptance",
+  "pages": [
+    {
+      "id": "acceptance-page",
+      "type": "Page",
+      "layout": {
+        "direction": "vertical",
+        "gap": {
+          "token": "spacing.section"
+        },
+        "width": {
+          "mode": "fixed",
+          "value": 1440
+        },
+        "padding": {
+          "top": {
+            "token": "spacing.page"
+          },
+          "right": {
+            "token": "spacing.page"
+          },
+          "bottom": {
+            "token": "spacing.page"
+          },
+          "left": {
+            "token": "spacing.page"
+          }
+        }
+      },
+      "children": [
+        {
+          "id": "header",
+          "type": "Row",
+          "layout": {
+            "direction": "horizontal",
+            "gap": 16,
+            "width": {
+              "mode": "fill"
+            },
+            "alignment": {
+              "main": "start",
+              "cross": "center"
+            }
+          },
+          "children": [
+            {
+              "id": "title",
+              "type": "Text",
+              "text": "用户管理",
+              "style": {
+                "typographyToken": {
+                  "token": "typography.heading"
+                },
+                "colorToken": {
+                  "token": "color.text"
+                }
+              }
+            },
+            {
+              "id": "header.space",
+              "type": "Frame",
+              "layout": {
+                "direction": "vertical",
+                "gap": 0,
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 24
+                }
+              },
+              "children": []
+            },
+            {
+              "id": "header.settings",
+              "type": "IconInstance",
+              "iconId": "remix.settings-3-line",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 24
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "query",
+          "type": "Frame",
+          "layout": {
+            "direction": "vertical",
+            "gap": 0,
+            "width": {
+              "mode": "fill"
+            },
+            "padding": {
+              "top": {
+                "token": "spacing.md"
+              },
+              "right": {
+                "token": "spacing.md"
+              },
+              "bottom": {
+                "token": "spacing.md"
+              },
+              "left": {
+                "token": "spacing.md"
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "query.grid",
+              "type": "Grid",
+              "layout": {
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.md"
+                },
+                "width": {
+                  "mode": "fill"
+                },
+                "gridColumns": 24
+              },
+              "children": [
+                {
+                  "id": "filter.name",
+                  "type": "Frame",
+                  "layout": {
+                    "direction": "vertical",
+                    "gap": 8,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "span": 6
+                  },
+                  "children": [
+                    {
+                      "id": "label.name",
+                      "type": "Text",
+                      "text": "姓名",
+                      "style": {
+                        "typographyToken": {
+                          "token": "typography.body"
+                        },
+                        "colorToken": {
+                          "token": "color.text"
+                        }
+                      }
+                    },
+                    {
+                      "id": "input.name",
+                      "type": "ComponentInstance",
+                      "componentId": "form.input.default.medium",
+                      "layout": {
+                        "width": {
+                          "mode": "fixed",
+                          "value": 240
+                        },
+                        "height": {
+                          "mode": "fixed",
+                          "value": 32
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "filter.status",
+                  "type": "Frame",
+                  "layout": {
+                    "direction": "vertical",
+                    "gap": 8,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "span": 6
+                  },
+                  "children": [
+                    {
+                      "id": "label.status",
+                      "type": "Text",
+                      "text": "状态",
+                      "style": {
+                        "typographyToken": {
+                          "token": "typography.body"
+                        },
+                        "colorToken": {
+                          "token": "color.text"
+                        }
+                      }
+                    },
+                    {
+                      "id": "select.status",
+                      "type": "ComponentInstance",
+                      "componentId": "form.select.default.medium",
+                      "layout": {
+                        "width": {
+                          "mode": "fixed",
+                          "value": 240
+                        },
+                        "height": {
+                          "mode": "fixed",
+                          "value": 32
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "filter.summary",
+                  "type": "Frame",
+                  "layout": {
+                    "direction": "vertical",
+                    "gap": 8,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "span": 6
+                  },
+                  "children": [
+                    {
+                      "id": "label.summary",
+                      "type": "Text",
+                      "text": "范围",
+                      "style": {
+                        "typographyToken": {
+                          "token": "typography.body"
+                        },
+                        "colorToken": {
+                          "token": "color.text"
+                        }
+                      }
+                    },
+                    {
+                      "id": "filter.description",
+                      "type": "Text",
+                      "text": "查看用户信息",
+                      "style": {
+                        "typographyToken": {
+                          "token": "typography.body"
+                        },
+                        "colorToken": {
+                          "token": "color.text"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "filter.action",
+                  "type": "Frame",
+                  "layout": {
+                    "direction": "vertical",
+                    "gap": 8,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "span": 6
+                  },
+                  "children": [
+                    {
+                      "id": "label.action",
+                      "type": "Text",
+                      "text": "操作",
+                      "style": {
+                        "typographyToken": {
+                          "token": "typography.body"
+                        },
+                        "colorToken": {
+                          "token": "color.text"
+                        }
+                      }
+                    },
+                    {
+                      "id": "button.query",
+                      "type": "ComponentInstance",
+                      "componentId": "action.button.primary.medium",
+                      "layout": {
+                        "width": {
+                          "mode": "fixed",
+                          "value": 60
+                        },
+                        "height": {
+                          "mode": "fixed",
+                          "value": 32
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fill": {
+              "token": "color.surface"
+            }
+          }
+        },
+        {
+          "id": "list",
+          "type": "Frame",
+          "layout": {
+            "direction": "vertical",
+            "gap": 0,
+            "width": {
+              "mode": "fill"
+            }
+          },
+          "children": [
+            {
+              "id": "list.toolbar",
+              "type": "Row",
+              "layout": {
+                "direction": "horizontal",
+                "gap": 8,
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 40
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "list.title",
+                  "type": "Text",
+                  "text": "用户列表",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                },
+                {
+                  "id": "list.space",
+                  "type": "Frame",
+                  "layout": {
+                    "direction": "vertical",
+                    "gap": 0,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "id": "list.export",
+                  "type": "IconInstance",
+                  "iconId": "remix.download-line",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    }
+                  }
+                },
+                {
+                  "id": "list.export.label",
+                  "type": "Text",
+                  "text": "导出",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "list.columns",
+              "type": "Row",
+              "layout": {
+                "direction": "horizontal",
+                "gap": 0,
+                "width": {
+                  "mode": "fill"
+                }
+              },
+              "children": [
+                {
+                  "id": "column.name",
+                  "type": "Frame",
+                  "layout": {
+                    "direction": "horizontal",
+                    "gap": 0,
+                    "width": {
+                      "mode": "fixed",
+                      "value": 464.328125
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 48
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": {
+                        "token": "spacing.md"
+                      }
+                    },
+                    "alignment": {
+                      "main": "start",
+                      "cross": "center"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "column.name.label",
+                      "type": "Text",
+                      "text": "姓名",
+                      "style": {
+                        "typographyToken": {
+                          "token": "typography.body"
+                        },
+                        "colorToken": {
+                          "token": "color.text"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "column.status",
+                  "type": "Frame",
+                  "layout": {
+                    "direction": "horizontal",
+                    "gap": 0,
+                    "width": {
+                      "mode": "fixed",
+                      "value": 464.328125
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 48
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": {
+                        "token": "spacing.md"
+                      }
+                    },
+                    "alignment": {
+                      "main": "start",
+                      "cross": "center"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "column.status.label",
+                      "type": "Text",
+                      "text": "状态",
+                      "style": {
+                        "typographyToken": {
+                          "token": "typography.body"
+                        },
+                        "colorToken": {
+                          "token": "color.text"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "column.role",
+                  "type": "Frame",
+                  "layout": {
+                    "direction": "horizontal",
+                    "gap": 0,
+                    "width": {
+                      "mode": "fixed",
+                      "value": 463.34375
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 48
+                    },
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": {
+                        "token": "spacing.md"
+                      }
+                    },
+                    "alignment": {
+                      "main": "start",
+                      "cross": "center"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "column.role.label",
+                      "type": "Text",
+                      "text": "角色",
+                      "style": {
+                        "typographyToken": {
+                          "token": "typography.body"
+                        },
+                        "colorToken": {
+                          "token": "color.text"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fill": {
+                  "token": "color.surface"
+                }
+              }
+            },
+            {
+              "id": "table.body",
+              "type": "ComponentInstance",
+              "componentId": "data.table.default",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 1392
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 144
+                }
+              }
+            }
+          ],
+          "style": {
+            "fill": {
+              "token": "color.surface"
+            }
+          }
+        },
+        {
+          "id": "list.count",
+          "type": "Text",
+          "text": "共 3 位用户",
+          "style": {
+            "typographyToken": {
+              "token": "typography.body"
+            },
+            "colorToken": {
+              "token": "color.text"
+            }
+          }
+        }
+      ],
+      "style": {
+        "fill": {
+          "token": "color.page"
+        }
+      },
+      "name": "用户管理列表 · TASK-009 验收"
+    }
+  ]
+}

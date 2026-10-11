@@ -1,0 +1,46 @@
+{
+  "status": "OBSERVED",
+  "scope": "penpot-official-icon-precision-diagnostic",
+  "nativeReceiptSha256": "80dd3d9eb157db85870d8275c2966f9dbb05163d5487dfb3468234a69d7748e1",
+  "sourcePlanSha256": "3565c96b5a5e4852bbeb51605a357a33c2b7554890ebe1741c26cd8a3821f2c6",
+  "completeNativeCapture": false,
+  "observations": [
+    {
+      "iconId": "remix.settings-3-line",
+      "status": "OBSERVED",
+      "scope": "source-derived-float32-path-diagnostic",
+      "sourceCoordinatesExact": false,
+      "sourceFloat32EncodingExact": true,
+      "sourceCommandCount": 56,
+      "nativeCommandCount": 56,
+      "maxObservedCoordinateDelta": 9.521484365393462e-07,
+      "sourceCommandsSha256": "9455261b230b31b606d0452e4d278355524c6a439f41289afcc78359cad76e6a",
+      "encodedSourceCommandsSha256": "30479ca1aa389edd846de781de3cf99dc306f0bab9f1cf0460f4d49acb8bb8c9",
+      "nativeCommandsSha256": "30479ca1aa389edd846de781de3cf99dc306f0bab9f1cf0460f4d49acb8bb8c9",
+      "admissionEligible": false,
+      "limitations": [
+        "Float32 identification is diagnostic, not approval to change strict geometry acceptance."
+      ],
+      "sourceNativeVectorPngBytesEqual": true
+    },
+    {
+      "iconId": "remix.download-line",
+      "status": "OBSERVED",
+      "scope": "source-derived-float32-path-diagnostic",
+      "sourceCoordinatesExact": false,
+      "sourceFloat32EncodingExact": true,
+      "sourceCommandCount": 17,
+      "nativeCommandCount": 17,
+      "maxObservedCoordinateDelta": 3.4179687524726887e-07,
+      "sourceCommandsSha256": "c97aa933ed86356ea610d01a63eb840e5c71ddf42d3befa14a53bdada2c4def3",
+      "encodedSourceCommandsSha256": "5927dc4fe5fba00be81fa8418c37501c6946f75202cdd34aa5a8ce80a3d2dd6a",
+      "nativeCommandsSha256": "5927dc4fe5fba00be81fa8418c37501c6946f75202cdd34aa5a8ce80a3d2dd6a",
+      "admissionEligible": false,
+      "limitations": [
+        "Float32 identification is diagnostic, not approval to change strict geometry acceptance."
+      ],
+      "sourceNativeVectorPngBytesEqual": true
+    }
+  ],
+  "admissionEligible": false
+}

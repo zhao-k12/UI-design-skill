@@ -1,0 +1,50 @@
+{
+  "metadataVersion": "0.1.0",
+  "platform": "figma",
+  "scope": "production",
+  "libraryVersion": "0.1.0-dev",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "registrySha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+  "bindings": {
+    "action.button.primary.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "18:5",
+          "fidelityReportSha256": "f5f768a7041c2302f10efaf2360ebce52f99031898fba81fd6e99827847e6c11"
+        }
+      }
+    },
+    "form.input.default.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "12:8",
+          "fidelityReportSha256": "095db86f0fd809bcd410dc49eb9a3ec9d05cae7162bc27e38fc47cde7decdab3"
+        }
+      }
+    },
+    "form.select.default.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "12:15",
+          "fidelityReportSha256": "24ec8a72a08bb332b4f73734b17ab1772f34f378bc5130da4f7071435c0c4e21"
+        }
+      }
+    },
+    "data.table.default": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "28:3",
+          "fidelityReportSha256": "0984deb3fbaa90614cc8069d47bdfc326850a4ba356902a57a98c53eeee2e49d"
+        }
+      }
+    }
+  }
+}

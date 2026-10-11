@@ -1,0 +1,343 @@
+{
+  "scope": "source_font_file_metadata",
+  "status": "PASS",
+  "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "requirements": [
+    {
+      "familyName": "Ionicons",
+      "postScriptName": "Ionicons",
+      "isCustomFont": true,
+      "matches": [
+        {
+          "path": "F:\\zo2026\\ui-design-skill\\node_modules\\view-ui-plus\\dist\\styles\\fonts\\ionicons.ttf",
+          "fileSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+          "role": "official-release-sibling",
+          "faceIndex": 0,
+          "namePairs": [
+            {
+              "family": "Ionicons",
+              "style": "Regular",
+              "postScriptName": "Ionicons"
+            }
+          ]
+        }
+      ],
+      "status": "METADATA_IDENTIFIED",
+      "fontNameForLoadProbe": {
+        "family": "Ionicons",
+        "style": "Regular"
+      },
+      "association": "Name metadata match only; browser-loaded file identity is not established."
+    },
+    {
+      "familyName": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "isCustomFont": false,
+      "matches": [
+        {
+          "path": "C:\\Users\\38442\\AppData\\Local\\Microsoft\\Windows\\Fonts\\PingFang SC-Regular.otf",
+          "fileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "role": "system-file-candidate",
+          "faceIndex": 0,
+          "namePairs": [
+            {
+              "family": "PingFang SC",
+              "style": "Regular",
+              "postScriptName": "PingFangSC-Regular"
+            }
+          ]
+        }
+      ],
+      "status": "METADATA_IDENTIFIED",
+      "fontNameForLoadProbe": {
+        "family": "PingFang SC",
+        "style": "Regular"
+      },
+      "association": "Name metadata match only; browser-loaded file identity is not established."
+    }
+  ],
+  "files": [
+    {
+      "path": "C:\\Users\\38442\\AppData\\Local\\Microsoft\\Windows\\Fonts\\PingFang SC-Regular.otf",
+      "sha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "bytes": 13133584,
+      "container": "OTTO",
+      "faces": [
+        {
+          "faceIndex": 0,
+          "nameTableVersion": 0,
+          "languageTags": [],
+          "namePairs": [
+            {
+              "family": "PingFang SC",
+              "style": "Regular",
+              "postScriptName": "PingFangSC-Regular"
+            }
+          ],
+          "nameRecords": [
+            {
+              "platform": 0,
+              "encoding": 3,
+              "language": 0,
+              "nameId": 1,
+              "value": "PingFang SC"
+            },
+            {
+              "platform": 0,
+              "encoding": 3,
+              "language": 0,
+              "nameId": 2,
+              "value": "Regular"
+            },
+            {
+              "platform": 0,
+              "encoding": 3,
+              "language": 0,
+              "nameId": 5,
+              "value": "18.d1"
+            },
+            {
+              "platform": 0,
+              "encoding": 3,
+              "language": 0,
+              "nameId": 6,
+              "value": "PingFangSC-Regular"
+            },
+            {
+              "platform": 1,
+              "encoding": 0,
+              "language": 0,
+              "nameId": 1,
+              "value": "PingFang SC"
+            },
+            {
+              "platform": 1,
+              "encoding": 0,
+              "language": 0,
+              "nameId": 2,
+              "value": "Regular"
+            },
+            {
+              "platform": 1,
+              "encoding": 0,
+              "language": 0,
+              "nameId": 5,
+              "value": "18.d1"
+            },
+            {
+              "platform": 1,
+              "encoding": 0,
+              "language": 0,
+              "nameId": 6,
+              "value": "PingFangSC-Regular"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1028,
+              "nameId": 1,
+              "value": "PingFang SC"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1028,
+              "nameId": 2,
+              "value": "Regular"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1028,
+              "nameId": 5,
+              "value": "18.d1"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1028,
+              "nameId": 6,
+              "value": "PingFangSC-Regular"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1028,
+              "nameId": 16,
+              "value": "PingFang SC"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1028,
+              "nameId": 17,
+              "value": "Regular"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 1,
+              "value": "PingFang SC"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 2,
+              "value": "Regular"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 5,
+              "value": "18.d1"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 6,
+              "value": "PingFangSC-Regular"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 16,
+              "value": "PingFang SC"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 17,
+              "value": "Regular"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 2052,
+              "nameId": 1,
+              "value": "苹方-简"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 2052,
+              "nameId": 2,
+              "value": "常规体"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 2052,
+              "nameId": 16,
+              "value": "苹方-简"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 2052,
+              "nameId": 17,
+              "value": "常规体"
+            }
+          ],
+          "unsupportedNameEncodings": [],
+          "hasVariableAxes": false
+        }
+      ],
+      "role": "system-file-candidate"
+    },
+    {
+      "path": "F:\\zo2026\\ui-design-skill\\node_modules\\view-ui-plus\\dist\\styles\\fonts\\ionicons.ttf",
+      "sha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+      "bytes": 197664,
+      "container": "\u0000\u0001\u0000\u0000",
+      "faces": [
+        {
+          "faceIndex": 0,
+          "nameTableVersion": 0,
+          "languageTags": [],
+          "namePairs": [
+            {
+              "family": "Ionicons",
+              "style": "Regular",
+              "postScriptName": "Ionicons"
+            }
+          ],
+          "nameRecords": [
+            {
+              "platform": 1,
+              "encoding": 0,
+              "language": 0,
+              "nameId": 1,
+              "value": "Ionicons"
+            },
+            {
+              "platform": 1,
+              "encoding": 0,
+              "language": 0,
+              "nameId": 2,
+              "value": "Regular"
+            },
+            {
+              "platform": 1,
+              "encoding": 0,
+              "language": 0,
+              "nameId": 5,
+              "value": "Version 1.0"
+            },
+            {
+              "platform": 1,
+              "encoding": 0,
+              "language": 0,
+              "nameId": 6,
+              "value": "Ionicons"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 1,
+              "value": "Ionicons"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 2,
+              "value": "Regular"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 5,
+              "value": "Version 1.0"
+            },
+            {
+              "platform": 3,
+              "encoding": 1,
+              "language": 1033,
+              "nameId": 6,
+              "value": "Ionicons"
+            }
+          ],
+          "unsupportedNameEncodings": [],
+          "hasVariableAxes": false
+        }
+      ],
+      "role": "official-release-sibling"
+    }
+  ],
+  "nativeExecution": "NOT_RUN",
+  "fidelityGate": "NOT_RUN",
+  "admissionEligible": false,
+  "limitations": [
+    "No font installation, upload, conversion or redistribution.",
+    "SFNT metadata matches do not prove browser cache identity; release siblings do not prove WOFF2 equivalence.",
+    "These names are load-probe inputs, not approved native font bindings."
+  ]
+}

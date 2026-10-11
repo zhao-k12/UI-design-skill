@@ -1,0 +1,925 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "PARTIAL",
+    "platform": "penpot",
+    "scope": "production",
+    "evidenceKind": "native-platform-export",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+    "fileRevision": 10,
+    "registrySha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+    "sourceVersion": "remixicon@4.9.1+39eab8b69cadaa47e1bed6a41777b1cd22227c74",
+    "createdNodeIds": [],
+    "mutatedNodeIds": [],
+    "icons": [
+      {
+        "iconId": "remix.settings-3-line",
+        "svgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1",
+        "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc685ca781",
+        "mainReference": "6d6e57fb-4a0a-8065-8008-c0fc685bc39e",
+        "nodes": [
+          {
+            "reference": "6d6e57fb-4a0a-8065-8008-c0fc685bc39e",
+            "parentReference": "00000000-0000-0000-0000-000000000000",
+            "type": "board",
+            "name": "candidate / remix.settings-3-line / penpot-v1",
+            "x": 1600,
+            "y": 80,
+            "width": 24,
+            "height": 24,
+            "fills": [],
+            "strokes": [],
+            "opacity": null,
+            "blendMode": "normal",
+            "rotation": 0,
+            "hidden": false,
+            "visible": true,
+            "flipX": false,
+            "flipY": false,
+            "shadows": [],
+            "blur": null
+          },
+          {
+            "reference": "6d6e57fb-4a0a-8065-8008-c0fc684d16fe",
+            "parentReference": "6d6e57fb-4a0a-8065-8008-c0fc685bc39e",
+            "type": "group",
+            "name": "candidate / remix.settings-3-line / penpot-v1",
+            "x": 1600,
+            "y": 80,
+            "width": 24,
+            "height": 24,
+            "fills": [],
+            "strokes": [],
+            "opacity": null,
+            "blendMode": "normal",
+            "rotation": 0,
+            "hidden": false,
+            "visible": true,
+            "flipX": false,
+            "flipY": false,
+            "shadows": [],
+            "blur": null
+          },
+          {
+            "reference": "6d6e57fb-4a0a-8065-8008-c0fc685083af",
+            "parentReference": "6d6e57fb-4a0a-8065-8008-c0fc684d16fe",
+            "type": "rectangle",
+            "name": "base-background",
+            "x": 1600,
+            "y": 80,
+            "width": 24,
+            "height": 24,
+            "fills": [],
+            "strokes": [],
+            "opacity": null,
+            "blendMode": "normal",
+            "rotation": 0,
+            "hidden": true,
+            "visible": false,
+            "flipX": false,
+            "flipY": false,
+            "shadows": [],
+            "blur": null
+          },
+          {
+            "reference": "6d6e57fb-4a0a-8065-8008-c0fc685276f6",
+            "parentReference": "6d6e57fb-4a0a-8065-8008-c0fc684d16fe",
+            "type": "path",
+            "name": "svg-path",
+            "x": 1602.3613300323486,
+            "y": 81.9985367213001,
+            "width": 19.276769638061523,
+            "height": 20.003349849547632,
+            "fills": [
+              {
+                "fillColor": "#000000",
+                "fillOpacity": null,
+                "fillColorGradient": null,
+                "fillColorRefFile": null,
+                "fillColorRefId": null,
+                "fillImage": null
+              }
+            ],
+            "strokes": [],
+            "opacity": null,
+            "blendMode": "normal",
+            "rotation": 0,
+            "hidden": false,
+            "visible": true,
+            "flipX": false,
+            "flipY": false,
+            "shadows": [],
+            "blur": null,
+            "d": "M1603.3394775390625,97.00019836425781C1602.9072265625,96.25149536132812,1602.582763671875,95.47019958496094,1602.361328125,94.67410278320312C1603.333740234375,94.17790222167969,1603.999755859375,93.16680145263672,1603.999755859375,92.00019836425781C1603.999755859375,90.83450317382812,1603.3348388671875,89.8239974975586,1602.363525390625,89.32740783691406C1602.810302734375,87.71650695800781,1603.6585693359375,86.21627044677734,1604.86474609375,84.9900131225586C1605.7806396484375,85.58415985107422,1606.9893798828125,85.65534210205078,1607.999755859375,85.0719985961914C1609.0101318359375,84.48866271972656,1609.552734375,83.4063491821289,1609.4962158203125,82.3160400390625C1611.1612548828125,81.88459777832031,1612.8846435546875,81.90003967285156,1614.5030517578125,82.31861877441406C1614.447509765625,83.4080581665039,1614.9901123046875,84.48912048339844,1615.999755859375,85.0719985961914C1617.0101318359375,85.65531921386719,1618.21875,85.58415985107422,1619.1346435546875,84.99006652832031C1619.7132568359375,85.5798568725586,1620.2276611328125,86.25151062011719,1620.6600341796875,87.00021362304688C1621.0921630859375,87.7489013671875,1621.416748046875,88.5302505493164,1621.6380615234375,89.32627868652344C1620.6656494140625,89.82247161865234,1619.999755859375,90.83360290527344,1619.999755859375,92.00019836425781C1619.999755859375,93.16600036621094,1620.66455078125,94.17639923095703,1621.6358642578125,94.67300415039062C1621.189208984375,96.28389739990234,1620.3409423828125,97.78410339355469,1619.1346435546875,99.0103988647461C1618.21875,98.41629791259766,1617.0101318359375,98.34510040283203,1615.999755859375,98.92839813232422C1614.9892578125,99.51170349121094,1614.4466552734375,100.59410095214844,1614.503173828125,101.68440246582031C1612.8382568359375,102.11579895019531,1611.11474609375,102.10040283203125,1609.496337890625,101.68180084228516C1609.5518798828125,100.59230041503906,1609.00927734375,99.51129913330078,1607.999755859375,98.92839813232422C1606.9893798828125,98.34510040283203,1605.78076171875,98.41619873046875,1604.8648681640625,99.01029968261719C1604.2861328125,98.42050170898438,1603.771728515625,97.7489013671875,1603.3394775390625,97.00019836425781ZM1608.999755859375,97.19639587402344C1610.091064453125,97.82649993896484,1610.8748779296875,98.82270050048828,1611.250244140625,99.96589660644531C1611.7486572265625,100.01329803466797,1612.250244140625,100.01399993896484,1612.7486572265625,99.96749877929688C1613.123779296875,98.82369995117188,1613.9078369140625,97.82679748535156,1614.999755859375,97.19639587402344C1616.091552734375,96.56590270996094,1617.3470458984375,96.385498046875,1618.525146484375,96.63240051269531C1618.8145751953125,96.2239990234375,1619.0648193359375,95.78919982910156,1619.27294921875,95.33399963378906C1618.4705810546875,94.43730163574219,1617.999755859375,93.2603988647461,1617.999755859375,92.00019836425781C1617.999755859375,90.73999786376953,1618.4705810546875,89.56320190429688,1619.27294921875,88.66650390625C1619.1688232421875,88.44049835205078,1619.0538330078125,88.21821594238281,1618.9278564453125,88.00021362304688C1618.802001953125,87.78218841552734,1618.6669921875,87.57147979736328,1618.5233154296875,87.36842346191406C1617.345703125,87.61476135253906,1616.091064453125,87.43414306640625,1614.999755859375,86.80404663085938C1613.9083251953125,86.1739501953125,1613.1246337890625,85.17768096923828,1612.7491455078125,84.03455352783203C1612.2508544921875,83.98713684082031,1611.7491455078125,83.98645782470703,1611.2508544921875,84.03292083740234C1610.8756103515625,85.17671203613281,1610.091552734375,86.17363739013672,1608.999755859375,86.80404663085938C1607.9078369140625,87.4344711303711,1606.6524658203125,87.61493682861328,1605.4742431640625,87.36802673339844C1605.184814453125,87.77641296386719,1604.9345703125,88.21116638183594,1604.7265625,88.66636657714844C1605.52880859375,89.5631103515625,1605.999755859375,90.73999786376953,1605.999755859375,92.00019836425781C1605.999755859375,93.2603988647461,1605.52880859375,94.43720245361328,1604.7265625,95.33390045166016C1604.8306884765625,95.55989837646484,1604.9456787109375,95.78219604492188,1605.071533203125,96.00019836425781C1605.1973876953125,96.21820068359375,1605.3323974609375,96.42890167236328,1605.47607421875,96.63200378417969C1606.65380859375,96.38569641113281,1607.9083251953125,96.56629943847656,1608.999755859375,97.19639587402344ZM1611.999755859375,95.00019836425781C1610.3428955078125,95.00019836425781,1608.999755859375,93.65709686279297,1608.999755859375,92.00019836425781C1608.999755859375,90.34339904785156,1610.3428955078125,89.00021362304688,1611.999755859375,89.00021362304688C1613.6566162109375,89.00021362304688,1614.999755859375,90.34339904785156,1614.999755859375,92.00019836425781C1614.999755859375,93.65709686279297,1613.6566162109375,95.00019836425781,1611.999755859375,95.00019836425781ZM1611.999755859375,93.00019836425781C1612.552001953125,93.00019836425781,1612.999755859375,92.55249786376953,1612.999755859375,92.00019836425781C1612.999755859375,91.4478988647461,1612.552001953125,91.00019836425781,1611.999755859375,91.00019836425781C1611.4473876953125,91.00019836425781,1610.999755859375,91.4478988647461,1610.999755859375,92.00019836425781C1610.999755859375,92.55249786376953,1611.4473876953125,93.00019836425781,1611.999755859375,93.00019836425781Z",
+            "commands": [
+              {
+                "command": "move-to",
+                "params": {
+                  "y": 97.00019836425781,
+                  "x": 1603.3394775390625
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 94.67410278320312,
+                  "c1x": 1602.9072265625,
+                  "c1y": 96.25149536132812,
+                  "x": 1602.361328125,
+                  "c2x": 1602.582763671875,
+                  "c2y": 95.47019958496094
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 92.00019836425781,
+                  "c1x": 1603.333740234375,
+                  "c1y": 94.17790222167969,
+                  "x": 1603.999755859375,
+                  "c2x": 1603.999755859375,
+                  "c2y": 93.16680145263672
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 89.32740783691406,
+                  "c1x": 1603.999755859375,
+                  "c1y": 90.83450317382812,
+                  "x": 1602.363525390625,
+                  "c2x": 1603.3348388671875,
+                  "c2y": 89.8239974975586
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 84.9900131225586,
+                  "c1x": 1602.810302734375,
+                  "c1y": 87.71650695800781,
+                  "x": 1604.86474609375,
+                  "c2x": 1603.6585693359375,
+                  "c2y": 86.21627044677734
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 85.0719985961914,
+                  "c1x": 1605.7806396484375,
+                  "c1y": 85.58415985107422,
+                  "x": 1607.999755859375,
+                  "c2x": 1606.9893798828125,
+                  "c2y": 85.65534210205078
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 82.3160400390625,
+                  "c1x": 1609.0101318359375,
+                  "c1y": 84.48866271972656,
+                  "x": 1609.4962158203125,
+                  "c2x": 1609.552734375,
+                  "c2y": 83.4063491821289
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 82.31861877441406,
+                  "c1x": 1611.1612548828125,
+                  "c1y": 81.88459777832031,
+                  "x": 1614.5030517578125,
+                  "c2x": 1612.8846435546875,
+                  "c2y": 81.90003967285156
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 85.0719985961914,
+                  "c1x": 1614.447509765625,
+                  "c1y": 83.4080581665039,
+                  "x": 1615.999755859375,
+                  "c2x": 1614.9901123046875,
+                  "c2y": 84.48912048339844
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 84.99006652832031,
+                  "c1x": 1617.0101318359375,
+                  "c1y": 85.65531921386719,
+                  "x": 1619.1346435546875,
+                  "c2x": 1618.21875,
+                  "c2y": 85.58415985107422
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 87.00021362304688,
+                  "c1x": 1619.7132568359375,
+                  "c1y": 85.5798568725586,
+                  "x": 1620.6600341796875,
+                  "c2x": 1620.2276611328125,
+                  "c2y": 86.25151062011719
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 89.32627868652344,
+                  "c1x": 1621.0921630859375,
+                  "c1y": 87.7489013671875,
+                  "x": 1621.6380615234375,
+                  "c2x": 1621.416748046875,
+                  "c2y": 88.5302505493164
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 92.00019836425781,
+                  "c1x": 1620.6656494140625,
+                  "c1y": 89.82247161865234,
+                  "x": 1619.999755859375,
+                  "c2x": 1619.999755859375,
+                  "c2y": 90.83360290527344
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 94.67300415039062,
+                  "c1x": 1619.999755859375,
+                  "c1y": 93.16600036621094,
+                  "x": 1621.6358642578125,
+                  "c2x": 1620.66455078125,
+                  "c2y": 94.17639923095703
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 99.0103988647461,
+                  "c1x": 1621.189208984375,
+                  "c1y": 96.28389739990234,
+                  "x": 1619.1346435546875,
+                  "c2x": 1620.3409423828125,
+                  "c2y": 97.78410339355469
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 98.92839813232422,
+                  "c1x": 1618.21875,
+                  "c1y": 98.41629791259766,
+                  "x": 1615.999755859375,
+                  "c2x": 1617.0101318359375,
+                  "c2y": 98.34510040283203
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 101.68440246582031,
+                  "c1x": 1614.9892578125,
+                  "c1y": 99.51170349121094,
+                  "x": 1614.503173828125,
+                  "c2x": 1614.4466552734375,
+                  "c2y": 100.59410095214844
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 101.68180084228516,
+                  "c1x": 1612.8382568359375,
+                  "c1y": 102.11579895019531,
+                  "x": 1609.496337890625,
+                  "c2x": 1611.11474609375,
+                  "c2y": 102.10040283203125
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 98.92839813232422,
+                  "c1x": 1609.5518798828125,
+                  "c1y": 100.59230041503906,
+                  "x": 1607.999755859375,
+                  "c2x": 1609.00927734375,
+                  "c2y": 99.51129913330078
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 99.01029968261719,
+                  "c1x": 1606.9893798828125,
+                  "c1y": 98.34510040283203,
+                  "x": 1604.8648681640625,
+                  "c2x": 1605.78076171875,
+                  "c2y": 98.41619873046875
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 97.00019836425781,
+                  "c1x": 1604.2861328125,
+                  "c1y": 98.42050170898438,
+                  "x": 1603.3394775390625,
+                  "c2x": 1603.771728515625,
+                  "c2y": 97.7489013671875
+                }
+              },
+              {
+                "command": "close-path",
+                "params": {}
+              },
+              {
+                "command": "move-to",
+                "params": {
+                  "y": 97.19639587402344,
+                  "x": 1608.999755859375
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 99.96589660644531,
+                  "c1x": 1610.091064453125,
+                  "c1y": 97.82649993896484,
+                  "x": 1611.250244140625,
+                  "c2x": 1610.8748779296875,
+                  "c2y": 98.82270050048828
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 99.96749877929688,
+                  "c1x": 1611.7486572265625,
+                  "c1y": 100.01329803466797,
+                  "x": 1612.7486572265625,
+                  "c2x": 1612.250244140625,
+                  "c2y": 100.01399993896484
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 97.19639587402344,
+                  "c1x": 1613.123779296875,
+                  "c1y": 98.82369995117188,
+                  "x": 1614.999755859375,
+                  "c2x": 1613.9078369140625,
+                  "c2y": 97.82679748535156
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 96.63240051269531,
+                  "c1x": 1616.091552734375,
+                  "c1y": 96.56590270996094,
+                  "x": 1618.525146484375,
+                  "c2x": 1617.3470458984375,
+                  "c2y": 96.385498046875
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 95.33399963378906,
+                  "c1x": 1618.8145751953125,
+                  "c1y": 96.2239990234375,
+                  "x": 1619.27294921875,
+                  "c2x": 1619.0648193359375,
+                  "c2y": 95.78919982910156
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 92.00019836425781,
+                  "c1x": 1618.4705810546875,
+                  "c1y": 94.43730163574219,
+                  "x": 1617.999755859375,
+                  "c2x": 1617.999755859375,
+                  "c2y": 93.2603988647461
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 88.66650390625,
+                  "c1x": 1617.999755859375,
+                  "c1y": 90.73999786376953,
+                  "x": 1619.27294921875,
+                  "c2x": 1618.4705810546875,
+                  "c2y": 89.56320190429688
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 88.00021362304688,
+                  "c1x": 1619.1688232421875,
+                  "c1y": 88.44049835205078,
+                  "x": 1618.9278564453125,
+                  "c2x": 1619.0538330078125,
+                  "c2y": 88.21821594238281
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 87.36842346191406,
+                  "c1x": 1618.802001953125,
+                  "c1y": 87.78218841552734,
+                  "x": 1618.5233154296875,
+                  "c2x": 1618.6669921875,
+                  "c2y": 87.57147979736328
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 86.80404663085938,
+                  "c1x": 1617.345703125,
+                  "c1y": 87.61476135253906,
+                  "x": 1614.999755859375,
+                  "c2x": 1616.091064453125,
+                  "c2y": 87.43414306640625
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 84.03455352783203,
+                  "c1x": 1613.9083251953125,
+                  "c1y": 86.1739501953125,
+                  "x": 1612.7491455078125,
+                  "c2x": 1613.1246337890625,
+                  "c2y": 85.17768096923828
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 84.03292083740234,
+                  "c1x": 1612.2508544921875,
+                  "c1y": 83.98713684082031,
+                  "x": 1611.2508544921875,
+                  "c2x": 1611.7491455078125,
+                  "c2y": 83.98645782470703
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 86.80404663085938,
+                  "c1x": 1610.8756103515625,
+                  "c1y": 85.17671203613281,
+                  "x": 1608.999755859375,
+                  "c2x": 1610.091552734375,
+                  "c2y": 86.17363739013672
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 87.36802673339844,
+                  "c1x": 1607.9078369140625,
+                  "c1y": 87.4344711303711,
+                  "x": 1605.4742431640625,
+                  "c2x": 1606.6524658203125,
+                  "c2y": 87.61493682861328
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 88.66636657714844,
+                  "c1x": 1605.184814453125,
+                  "c1y": 87.77641296386719,
+                  "x": 1604.7265625,
+                  "c2x": 1604.9345703125,
+                  "c2y": 88.21116638183594
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 92.00019836425781,
+                  "c1x": 1605.52880859375,
+                  "c1y": 89.5631103515625,
+                  "x": 1605.999755859375,
+                  "c2x": 1605.999755859375,
+                  "c2y": 90.73999786376953
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 95.33390045166016,
+                  "c1x": 1605.999755859375,
+                  "c1y": 93.2603988647461,
+                  "x": 1604.7265625,
+                  "c2x": 1605.52880859375,
+                  "c2y": 94.43720245361328
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 96.00019836425781,
+                  "c1x": 1604.8306884765625,
+                  "c1y": 95.55989837646484,
+                  "x": 1605.071533203125,
+                  "c2x": 1604.9456787109375,
+                  "c2y": 95.78219604492188
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 96.63200378417969,
+                  "c1x": 1605.1973876953125,
+                  "c1y": 96.21820068359375,
+                  "x": 1605.47607421875,
+                  "c2x": 1605.3323974609375,
+                  "c2y": 96.42890167236328
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 97.19639587402344,
+                  "c1x": 1606.65380859375,
+                  "c1y": 96.38569641113281,
+                  "x": 1608.999755859375,
+                  "c2x": 1607.9083251953125,
+                  "c2y": 96.56629943847656
+                }
+              },
+              {
+                "command": "close-path",
+                "params": {}
+              },
+              {
+                "command": "move-to",
+                "params": {
+                  "y": 95.00019836425781,
+                  "x": 1611.999755859375
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 92.00019836425781,
+                  "c1x": 1610.3428955078125,
+                  "c1y": 95.00019836425781,
+                  "x": 1608.999755859375,
+                  "c2x": 1608.999755859375,
+                  "c2y": 93.65709686279297
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 89.00021362304688,
+                  "c1x": 1608.999755859375,
+                  "c1y": 90.34339904785156,
+                  "x": 1611.999755859375,
+                  "c2x": 1610.3428955078125,
+                  "c2y": 89.00021362304688
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 92.00019836425781,
+                  "c1x": 1613.6566162109375,
+                  "c1y": 89.00021362304688,
+                  "x": 1614.999755859375,
+                  "c2x": 1614.999755859375,
+                  "c2y": 90.34339904785156
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 95.00019836425781,
+                  "c1x": 1614.999755859375,
+                  "c1y": 93.65709686279297,
+                  "x": 1611.999755859375,
+                  "c2x": 1613.6566162109375,
+                  "c2y": 95.00019836425781
+                }
+              },
+              {
+                "command": "close-path",
+                "params": {}
+              },
+              {
+                "command": "move-to",
+                "params": {
+                  "y": 93.00019836425781,
+                  "x": 1611.999755859375
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 92.00019836425781,
+                  "c1x": 1612.552001953125,
+                  "c1y": 93.00019836425781,
+                  "x": 1612.999755859375,
+                  "c2x": 1612.999755859375,
+                  "c2y": 92.55249786376953
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 91.00019836425781,
+                  "c1x": 1612.999755859375,
+                  "c1y": 91.4478988647461,
+                  "x": 1611.999755859375,
+                  "c2x": 1612.552001953125,
+                  "c2y": 91.00019836425781
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 92.00019836425781,
+                  "c1x": 1611.4473876953125,
+                  "c1y": 91.00019836425781,
+                  "x": 1610.999755859375,
+                  "c2x": 1610.999755859375,
+                  "c2y": 91.4478988647461
+                }
+              },
+              {
+                "command": "curve-to",
+                "params": {
+                  "y": 93.00019836425781,
+                  "c1x": 1610.999755859375,
+                  "c1y": 92.55249786376953,
+                  "x": 1611.999755859375,
+                  "c2x": 1611.4473876953125,
+                  "c2y": 93.00019836425781
+                }
+              },
+              {
+                "command": "close-path",
+                "params": {}
+              }
+            ]
+          }
+        ],
+        "nativeSvgBase64": "PHN2ZyB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIyNCIgaWQ9InNjcmVlbnNob3QtNmQ2ZTU3ZmItNGEwYS04MDY1LTgwMDgtYzBmYzY4NWJjMzllIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBmaWxsPSJub25lIiB2ZXJzaW9uPSIxLjEiPjxnIGlkPSJzaGFwZS02ZDZlNTdmYi00YTBhLTgwNjUtODAwOC1jMGZjNjg1YmMzOWUiPjxnIGNsYXNzPSJmcmFtZS1jb250YWluZXItd3JhcHBlciI+PGcgY2xhc3M9ImZyYW1lLWNvbnRhaW5lci1ibHVyIj48ZyBjbGFzcz0iZnJhbWUtY29udGFpbmVyLXNoYWRvd3MiPjxnIGZpbGw9Im5vbmUiPjxnIGNsYXNzPSJmaWxscyIgaWQ9ImZpbGxzLTZkNmU1N2ZiLTRhMGEtODA2NS04MDA4LWMwZmM2ODViYzM5ZSI+PHJlY3Qgcng9IjAiIHJ5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHRyYW5zZm9ybT0ibWF0cml4KDEuMDAwMDAwLCAwLjAwMDAwMCwgMC4wMDAwMDAsIDEuMDAwMDAwLCAwLjAwMDAwMCwgMC4wMDAwMDApIiBjbGFzcz0iZnJhbWUtYmFja2dyb3VuZCIvPjwvZz48ZyBjbGFzcz0iZnJhbWUtY2hpbGRyZW4iPjxnIGlkPSJzaGFwZS02ZDZlNTdmYi00YTBhLTgwNjUtODAwOC1jMGZjNjg0ZDE2ZmUiIHJ4PSIwIiByeT0iMCIgc3R5bGU9ImZpbGw6IHJnYigwLCAwLCAwKTsiPjxnIGlkPSJzaGFwZS02ZDZlNTdmYi00YTBhLTgwNjUtODAwOC1jMGZjNjg1MDgzYWYiIHN0eWxlPSJkaXNwbGF5OiBub25lOyI+PGcgY2xhc3M9ImZpbGxzIiBpZD0iZmlsbHMtNmQ2ZTU3ZmItNGEwYS04MDY1LTgwMDgtYzBmYzY4NTA4M2FmIj48cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHg9IjAiIHRyYW5zZm9ybT0ibWF0cml4KDEuMDAwMDAwLCAwLjAwMDAwMCwgMC4wMDAwMDAsIDEuMDAwMDAwLCAwLjAwMDAwMCwgMC4wMDAwMDApIiBzdHlsZT0iZmlsbDogbm9uZTsiIHJ5PSIwIiBmaWxsPSJub25lIiByeD0iMCIgeT0iMCIvPjwvZz48L2c+PGcgaWQ9InNoYXBlLTZkNmU1N2ZiLTRhMGEtODA2NS04MDA4LWMwZmM2ODUyNzZmNiI+PGcgY2xhc3M9ImZpbGxzIiBpZD0iZmlsbHMtNmQ2ZTU3ZmItNGEwYS04MDY1LTgwMDgtYzBmYzY4NTI3NmY2Ij48cGF0aCBkPSJNMy4zMzk0Nzc1MzkwNjI1LDE3LjAwMDE5ODM2NDI1NzgxMkMyLjkwNzIyNjU2MjUsMTYuMjUxNDk1MzYxMzI4MTI1LDIuNTgyNzYzNjcxODc1LDE1LjQ3MDE5OTU4NDk2MDkzOCwyLjM2MTMyODEyNSwxNC42NzQxMDI3ODMyMDMxMjVDMy4zMzM3NDAyMzQzNzUsMTQuMTc3OTAyMjIxNjc5Njg4LDMuOTk5NzU1ODU5Mzc1LDEzLjE2NjgwMTQ1MjYzNjcxOSwzLjk5OTc1NTg1OTM3NSwxMi4wMDAxOTgzNjQyNTc4MTJDMy45OTk3NTU4NTkzNzUsMTAuODM0NTAzMTczODI4MTI1LDMuMzM0ODM4ODY3MTg3NSw5LjgyMzk5NzQ5NzU1ODU5NCwyLjM2MzUyNTM5MDYyNSw5LjMyNzQwNzgzNjkxNDA2MkMyLjgxMDMwMjczNDM3NSw3LjcxNjUwNjk1ODAwNzgxMjUsMy42NTg1NjkzMzU5Mzc1LDYuMjE2MjcwNDQ2Nzc3MzQ0LDQuODY0NzQ2MDkzNzUsNC45OTAwMTMxMjI1NTg1OTRDNS43ODA2Mzk2NDg0Mzc1LDUuNTg0MTU5ODUxMDc0MjE5LDYuOTg5Mzc5ODgyODEyNSw1LjY1NTM0MjEwMjA1MDc4MSw3Ljk5OTc1NTg1OTM3NSw1LjA3MTk5ODU5NjE5MTQwNkM5LjAxMDEzMTgzNTkzNzUsNC40ODg2NjI3MTk3MjY1NjI1LDkuNTUyNzM0Mzc1LDMuNDA2MzQ5MTgyMTI4OTA2Miw5LjQ5NjIxNTgyMDMxMjUsMi4zMTYwNDAwMzkwNjI1QzExLjE2MTI1NDg4MjgxMjUsMS44ODQ1OTc3NzgzMjAzMTI1LDEyLjg4NDY0MzU1NDY4NzUsMS45MDAwMzk2NzI4NTE1NjI1LDE0LjUwMzA1MTc1NzgxMjUsMi4zMTg2MTg3NzQ0MTQwNjI1QzE0LjQ0NzUwOTc2NTYyNSwzLjQwODA1ODE2NjUwMzkwNjIsMTQuOTkwMTEyMzA0Njg3NSw0LjQ4OTEyMDQ4MzM5ODQzNzUsMTUuOTk5NzU1ODU5Mzc1LDUuMDcxOTk4NTk2MTkxNDA2QzE3LjAxMDEzMTgzNTkzNzUsNS42NTUzMTkyMTM4NjcxODc1LDE4LjIxODc1LDUuNTg0MTU5ODUxMDc0MjE5LDE5LjEzNDY0MzU1NDY4NzUsNC45OTAwNjY1MjgzMjAzMTI1QzE5LjcxMzI1NjgzNTkzNzUsNS41Nzk4NTY4NzI1NTg1OTQsMjAuMjI3NjYxMTMyODEyNSw2LjI1MTUxMDYyMDExNzE4NzUsMjAuNjYwMDM0MTc5Njg3NSw3LjAwMDIxMzYyMzA0Njg3NUMyMS4wOTIxNjMwODU5Mzc1LDcuNzQ4OTAxMzY3MTg3NSwyMS40MTY3NDgwNDY4NzUsOC41MzAyNTA1NDkzMTY0MDYsMjEuNjM4MDYxNTIzNDM3NSw5LjMyNjI3ODY4NjUyMzQzOEMyMC42NjU2NDk0MTQwNjI1LDkuODIyNDcxNjE4NjUyMzQ0LDE5Ljk5OTc1NTg1OTM3NSwxMC44MzM2MDI5MDUyNzM0MzgsMTkuOTk5NzU1ODU5Mzc1LDEyLjAwMDE5ODM2NDI1NzgxMkMxOS45OTk3NTU4NTkzNzUsMTMuMTY2MDAwMzY2MjEwOTM4LDIwLjY2NDU1MDc4MTI1LDE0LjE3NjM5OTIzMDk1NzAzMSwyMS42MzU4NjQyNTc4MTI1LDE0LjY3MzAwNDE1MDM5MDYyNUMyMS4xODkyMDg5ODQzNzUsMTYuMjgzODk3Mzk5OTAyMzQ0LDIwLjM0MDk0MjM4MjgxMjUsMTcuNzg0MTAzMzkzNTU0Njg4LDE5LjEzNDY0MzU1NDY4NzUsMTkuMDEwMzk4ODY0NzQ2MDk0QzE4LjIxODc1LDE4LjQxNjI5NzkxMjU5NzY1NiwxNy4wMTAxMzE4MzU5Mzc1LDE4LjM0NTEwMDQwMjgzMjAzLDE1Ljk5OTc1NTg1OTM3NSwxOC45MjgzOTgxMzIzMjQyMkMxNC45ODkyNTc4MTI1LDE5LjUxMTcwMzQ5MTIxMDkzOCwxNC40NDY2NTUyNzM0Mzc1LDIwLjU5NDEwMDk1MjE0ODQzOCwxNC41MDMxNzM4MjgxMjUsMjEuNjg0NDAyNDY1ODIwMzEyQzEyLjgzODI1NjgzNTkzNzUsMjIuMTE1Nzk4OTUwMTk1MzEyLDExLjExNDc0NjA5Mzc1LDIyLjEwMDQwMjgzMjAzMTI1LDkuNDk2MzM3ODkwNjI1LDIxLjY4MTgwMDg0MjI4NTE1NkM5LjU1MTg3OTg4MjgxMjUsMjAuNTkyMzAwNDE1MDM5MDYyLDkuMDA5Mjc3MzQzNzUsMTkuNTExMjk5MTMzMzAwNzgsNy45OTk3NTU4NTkzNzUsMTguOTI4Mzk4MTMyMzI0MjJDNi45ODkzNzk4ODI4MTI1LDE4LjM0NTEwMDQwMjgzMjAzLDUuNzgwNzYxNzE4NzUsMTguNDE2MTk4NzMwNDY4NzUsNC44NjQ4NjgxNjQwNjI1LDE5LjAxMDI5OTY4MjYxNzE4OEM0LjI4NjEzMjgxMjUsMTguNDIwNTAxNzA4OTg0Mzc1LDMuNzcxNzI4NTE1NjI1LDE3Ljc0ODkwMTM2NzE4NzUsMy4zMzk0Nzc1MzkwNjI1LDE3LjAwMDE5ODM2NDI1NzgxMlpNOC45OTk3NTU4NTkzNzUsMTcuMTk2Mzk1ODc0MDIzNDM4QzEwLjA5MTA2NDQ1MzEyNSwxNy44MjY0OTk5Mzg5NjQ4NDQsMTAuODc0ODc3OTI5Njg3NSwxOC44MjI3MDA1MDA0ODgyOCwxMS4yNTAyNDQxNDA2MjUsMTkuOTY1ODk2NjA2NDQ1MzEyQzExLjc0ODY1NzIyNjU2MjUsMjAuMDEzMjk4MDM0NjY3OTcsMTIuMjUwMjQ0MTQwNjI1LDIwLjAxMzk5OTkzODk2NDg0NCwxMi43NDg2NTcyMjY1NjI1LDE5Ljk2NzQ5ODc3OTI5Njg3NUMxMy4xMjM3NzkyOTY4NzUsMTguODIzNjk5OTUxMTcxODc1LDEzLjkwNzgzNjkxNDA2MjUsMTcuODI2Nzk3NDg1MzUxNTYyLDE0Ljk5OTc1NTg1OTM3NSwxNy4xOTYzOTU4NzQwMjM0MzhDMTYuMDkxNTUyNzM0Mzc1LDE2LjU2NTkwMjcwOTk2MDkzOCwxNy4zNDcwNDU4OTg0Mzc1LDE2LjM4NTQ5ODA0Njg3NSwxOC41MjUxNDY0ODQzNzUsMTYuNjMyNDAwNTEyNjk1MzEyQzE4LjgxNDU3NTE5NTMxMjUsMTYuMjIzOTk5MDIzNDM3NSwxOS4wNjQ4MTkzMzU5Mzc1LDE1Ljc4OTE5OTgyOTEwMTU2MiwxOS4yNzI5NDkyMTg3NSwxNS4zMzM5OTk2MzM3ODkwNjJDMTguNDcwNTgxMDU0Njg3NSwxNC40MzczMDE2MzU3NDIxODgsMTcuOTk5NzU1ODU5Mzc1LDEzLjI2MDM5ODg2NDc0NjA5NCwxNy45OTk3NTU4NTkzNzUsMTIuMDAwMTk4MzY0MjU3ODEyQzE3Ljk5OTc1NTg1OTM3NSwxMC43Mzk5OTc4NjM3Njk1MzEsMTguNDcwNTgxMDU0Njg3NSw5LjU2MzIwMTkwNDI5Njg3NSwxOS4yNzI5NDkyMTg3NSw4LjY2NjUwMzkwNjI1QzE5LjE2ODgyMzI0MjE4NzUsOC40NDA0OTgzNTIwNTA3ODEsMTkuMDUzODMzMDA3ODEyNSw4LjIxODIxNTk0MjM4MjgxMiwxOC45Mjc4NTY0NDUzMTI1LDguMDAwMjEzNjIzMDQ2ODc1QzE4LjgwMjAwMTk1MzEyNSw3Ljc4MjE4ODQxNTUyNzM0NCwxOC42NjY5OTIxODc1LDcuNTcxNDc5Nzk3MzYzMjgxLDE4LjUyMzMxNTQyOTY4NzUsNy4zNjg0MjM0NjE5MTQwNjI1QzE3LjM0NTcwMzEyNSw3LjYxNDc2MTM1MjUzOTA2MjUsMTYuMDkxMDY0NDUzMTI1LDcuNDM0MTQzMDY2NDA2MjUsMTQuOTk5NzU1ODU5Mzc1LDYuODA0MDQ2NjMwODU5Mzc1QzEzLjkwODMyNTE5NTMxMjUsNi4xNzM5NTAxOTUzMTI1LDEzLjEyNDYzMzc4OTA2MjUsNS4xNzc2ODA5NjkyMzgyODEsMTIuNzQ5MTQ1NTA3ODEyNSw0LjAzNDU1MzUyNzgzMjAzMUMxMi4yNTA4NTQ0OTIxODc1LDMuOTg3MTM2ODQwODIwMzEyNSwxMS43NDkxNDU1MDc4MTI1LDMuOTg2NDU3ODI0NzA3MDMxMiwxMS4yNTA4NTQ0OTIxODc1LDQuMDMyOTIwODM3NDAyMzQ0QzEwLjg3NTYxMDM1MTU2MjUsNS4xNzY3MTIwMzYxMzI4MTI1LDEwLjA5MTU1MjczNDM3NSw2LjE3MzYzNzM5MDEzNjcxOSw4Ljk5OTc1NTg1OTM3NSw2LjgwNDA0NjYzMDg1OTM3NUM3LjkwNzgzNjkxNDA2MjUsNy40MzQ0NzExMzAzNzEwOTQsNi42NTI0NjU4MjAzMTI1LDcuNjE0OTM2ODI4NjEzMjgxLDUuNDc0MjQzMTY0MDYyNSw3LjM2ODAyNjczMzM5ODQzNzVDNS4xODQ4MTQ0NTMxMjUsNy43NzY0MTI5NjM4NjcxODc1LDQuOTM0NTcwMzEyNSw4LjIxMTE2NjM4MTgzNTkzOCw0LjcyNjU2MjUsOC42NjYzNjY1NzcxNDg0MzhDNS41Mjg4MDg1OTM3NSw5LjU2MzExMDM1MTU2MjUsNS45OTk3NTU4NTkzNzUsMTAuNzM5OTk3ODYzNzY5NTMxLDUuOTk5NzU1ODU5Mzc1LDEyLjAwMDE5ODM2NDI1NzgxMkM1Ljk5OTc1NTg1OTM3NSwxMy4yNjAzOTg4NjQ3NDYwOTQsNS41Mjg4MDg1OTM3NSwxNC40MzcyMDI0NTM2MTMyODEsNC43MjY1NjI1LDE1LjMzMzkwMDQ1MTY2MDE1NkM0LjgzMDY4ODQ3NjU2MjUsMTUuNTU5ODk4Mzc2NDY0ODQ0LDQuOTQ1Njc4NzEwOTM3NSwxNS43ODIxOTYwNDQ5MjE4NzUsNS4wNzE1MzMyMDMxMjUsMTYuMDAwMTk4MzY0MjU3ODEyQzUuMTk3Mzg3Njk1MzEyNSwxNi4yMTgyMDA2ODM1OTM3NSw1LjMzMjM5NzQ2MDkzNzUsMTYuNDI4OTAxNjcyMzYzMjgsNS40NzYwNzQyMTg3NSwxNi42MzIwMDM3ODQxNzk2ODhDNi42NTM4MDg1OTM3NSwxNi4zODU2OTY0MTExMzI4MTIsNy45MDgzMjUxOTUzMTI1LDE2LjU2NjI5OTQzODQ3NjU2Miw4Ljk5OTc1NTg1OTM3NSwxNy4xOTYzOTU4NzQwMjM0MzhaTTExLjk5OTc1NTg1OTM3NSwxNS4wMDAxOTgzNjQyNTc4MTJDMTAuMzQyODk1NTA3ODEyNSwxNS4wMDAxOTgzNjQyNTc4MTIsOC45OTk3NTU4NTkzNzUsMTMuNjU3MDk2ODYyNzkyOTY5LDguOTk5NzU1ODU5Mzc1LDEyLjAwMDE5ODM2NDI1NzgxMkM4Ljk5OTc1NTg1OTM3NSwxMC4zNDMzOTkwNDc4NTE1NjIsMTAuMzQyODk1NTA3ODEyNSw5LjAwMDIxMzYyMzA0Njg3NSwxMS45OTk3NTU4NTkzNzUsOS4wMDAyMTM2MjMwNDY4NzVDMTMuNjU2NjE2MjEwOTM3NSw5LjAwMDIxMzYyMzA0Njg3NSwxNC45OTk3NTU4NTkzNzUsMTAuMzQzMzk5MDQ3ODUxNTYyLDE0Ljk5OTc1NTg1OTM3NSwxMi4wMDAxOTgzNjQyNTc4MTJDMTQuOTk5NzU1ODU5Mzc1LDEzLjY1NzA5Njg2Mjc5Mjk2OSwxMy42NTY2MTYyMTA5Mzc1LDE1LjAwMDE5ODM2NDI1NzgxMiwxMS45OTk3NTU4NTkzNzUsMTUuMDAwMTk4MzY0MjU3ODEyWk0xMS45OTk3NTU4NTkzNzUsMTMuMDAwMTk4MzY0MjU3ODEyQzEyLjU1MjAwMTk1MzEyNSwxMy4wMDAxOTgzNjQyNTc4MTIsMTIuOTk5NzU1ODU5Mzc1LDEyLjU1MjQ5Nzg2Mzc2OTUzMSwxMi45OTk3NTU4NTkzNzUsMTIuMDAwMTk4MzY0MjU3ODEyQzEyLjk5OTc1NTg1OTM3NSwxMS40NDc4OTg4NjQ3NDYwOTQsMTIuNTUyMDAxOTUzMTI1LDExLjAwMDE5ODM2NDI1NzgxMiwxMS45OTk3NTU4NTkzNzUsMTEuMDAwMTk4MzY0MjU3ODEyQzExLjQ0NzM4NzY5NTMxMjUsMTEuMDAwMTk4MzY0MjU3ODEyLDEwLjk5OTc1NTg1OTM3NSwxMS40NDc4OTg4NjQ3NDYwOTQsMTAuOTk5NzU1ODU5Mzc1LDEyLjAwMDE5ODM2NDI1NzgxMkMxMC45OTk3NTU4NTkzNzUsMTIuNTUyNDk3ODYzNzY5NTMxLDExLjQ0NzM4NzY5NTMxMjUsMTMuMDAwMTk4MzY0MjU3ODEyLDExLjk5OTc1NTg1OTM3NSwxMy4wMDAxOTgzNjQyNTc4MTJaIiBzdHlsZT0iZmlsbDogcmdiKDAsIDAsIDApOyIvPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==",
+        "nativePngBase64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACI0lEQVR4nLSWOUidQRDHRyWHeaRIICSFISdJmiSQKilCQgghkJCDQCAJxAMttNBCEVHEQkVsRAtBvAtBUcELBEEULNRGUUQb76sRFRFv8fgPOx8My4dvFd4ffux+8+3s7Hy7s++FU4gVTiGWa4BksAVOBO4nuTi6BvgDAuqZ+79cHF0C8Opfg01wA9wkk8EHEBPMOczHlg8+gX5pn4n9L6iXfhyokv4Y6AVvQTdIPyvAV9Bh2dZAGqi17LwHeWSy0voCOv0C8OeaA3dBKjgEM7KqffLXFTJZ3hP/EpnjETi2A/wALTLgIZnTcl5NgsfgJ2j1Vu3pAOyC++CN5cgLyQYrYBlk+Ez+XibfIZVxhBV9STK5BRrUuyKQSeZ4XgcfxbdXjeFNfwD+gTa9Mi3esHVZ6W1lX5d3T0EkGJFMotQYzv6qvN/zjHYdXJI20rIfSRtBwWvnmn6wBydKO2DZK6WdAMPSr7DGDEobr416D76DUgn6Hyyqdz1kju1zsAFyQYEVYAFEkym4ITDFRr0HCaCczLflWjjvMQ2TIFGy2HbP6CkgUe+AQjJ3zyi5FdoLMvuWBabBE/IpNNY3UkdMtErmfqmx7LxffG/ZV8Vn0KXTslUkTvPgJZm6YP0GTdKPBdXSbwbjZKp/FuToyfwC2EoBxWRqge+cy2S+dUCyKDvL2SUAi0/FK8vWB94Fc3T9RasD2+qZf3AaXRxdM7iwQv6v4hQAAP//fjlBXAAAAAZJREFUAwCvI2jMppf1sAAAAABJRU5ErkJggg==",
+        "exportIssues": [],
+        "status": "CAPTURED"
+      },
+      {
+        "iconId": "remix.download-line",
+        "svgSha256": "ad83ac7dc9d4c6af651a53068e928d82f9402cfd05a924742388549846032f43",
+        "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc6866e456",
+        "mainReference": "6d6e57fb-4a0a-8065-8008-c0fc68665f64",
+        "nodes": [
+          {
+            "reference": "6d6e57fb-4a0a-8065-8008-c0fc68665f64",
+            "parentReference": "00000000-0000-0000-0000-000000000000",
+            "type": "board",
+            "name": "candidate / remix.download-line / penpot-v1",
+            "x": 1680,
+            "y": 80,
+            "width": 24,
+            "height": 24,
+            "fills": [],
+            "strokes": [],
+            "opacity": null,
+            "blendMode": "normal",
+            "rotation": 0,
+            "hidden": false,
+            "visible": true,
+            "flipX": false,
+            "flipY": false,
+            "shadows": [],
+            "blur": null
+          },
+          {
+            "reference": "6d6e57fb-4a0a-8065-8008-c0fc685f668c",
+            "parentReference": "6d6e57fb-4a0a-8065-8008-c0fc68665f64",
+            "type": "group",
+            "name": "candidate / remix.download-line / penpot-v1",
+            "x": 1680,
+            "y": 80,
+            "width": 24,
+            "height": 24,
+            "fills": [],
+            "strokes": [],
+            "opacity": null,
+            "blendMode": "normal",
+            "rotation": 0,
+            "hidden": false,
+            "visible": true,
+            "flipX": false,
+            "flipY": false,
+            "shadows": [],
+            "blur": null
+          },
+          {
+            "reference": "6d6e57fb-4a0a-8065-8008-c0fc685fe066",
+            "parentReference": "6d6e57fb-4a0a-8065-8008-c0fc685f668c",
+            "type": "rectangle",
+            "name": "base-background",
+            "x": 1680,
+            "y": 80,
+            "width": 24,
+            "height": 24,
+            "fills": [],
+            "strokes": [],
+            "opacity": null,
+            "blendMode": "normal",
+            "rotation": 0,
+            "hidden": true,
+            "visible": false,
+            "flipX": false,
+            "flipY": false,
+            "shadows": [],
+            "blur": null
+          },
+          {
+            "reference": "6d6e57fb-4a0a-8065-8008-c0fc685fe067",
+            "parentReference": "6d6e57fb-4a0a-8065-8008-c0fc685f668c",
+            "type": "path",
+            "name": "svg-path",
+            "x": 1683,
+            "y": 82,
+            "width": 18,
+            "height": 19,
+            "fills": [
+              {
+                "fillColor": "#000000",
+                "fillOpacity": null,
+                "fillColorGradient": null,
+                "fillColorRefFile": null,
+                "fillColorRefId": null,
+                "fillImage": null
+              }
+            ],
+            "strokes": [],
+            "opacity": null,
+            "blendMode": "normal",
+            "rotation": 0,
+            "hidden": false,
+            "visible": true,
+            "flipX": false,
+            "flipY": false,
+            "shadows": [],
+            "blur": null,
+            "d": "M1683,99L1701,99L1701,101L1683,101L1683,99ZM1693,93.17160034179688L1699.071044921875,87.10050201416016L1700.4853515625,88.51471710205078L1692,97L1683.5147705078125,88.51471710205078L1684.928955078125,87.10050201416016L1691,93.17160034179688L1691,82L1693,82L1693,93.17160034179688Z",
+            "commands": [
+              {
+                "command": "move-to",
+                "params": {
+                  "y": 99,
+                  "x": 1683
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 99,
+                  "x": 1701
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 101,
+                  "x": 1701
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 101,
+                  "x": 1683
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 99,
+                  "x": 1683
+                }
+              },
+              {
+                "command": "close-path",
+                "params": {}
+              },
+              {
+                "command": "move-to",
+                "params": {
+                  "y": 93.17160034179688,
+                  "x": 1693
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 87.10050201416016,
+                  "x": 1699.071044921875
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 88.51471710205078,
+                  "x": 1700.4853515625
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 97,
+                  "x": 1692
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 88.51471710205078,
+                  "x": 1683.5147705078125
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 87.10050201416016,
+                  "x": 1684.928955078125
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 93.17160034179688,
+                  "x": 1691
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 82,
+                  "x": 1691
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 82,
+                  "x": 1693
+                }
+              },
+              {
+                "command": "line-to",
+                "params": {
+                  "y": 93.17160034179688,
+                  "x": 1693
+                }
+              },
+              {
+                "command": "close-path",
+                "params": {}
+              }
+            ]
+          }
+        ],
+        "nativeSvgBase64": "PHN2ZyB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIyNCIgaWQ9InNjcmVlbnNob3QtNmQ2ZTU3ZmItNGEwYS04MDY1LTgwMDgtYzBmYzY4NjY1ZjY0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBmaWxsPSJub25lIiB2ZXJzaW9uPSIxLjEiPjxnIGlkPSJzaGFwZS02ZDZlNTdmYi00YTBhLTgwNjUtODAwOC1jMGZjNjg2NjVmNjQiPjxnIGNsYXNzPSJmcmFtZS1jb250YWluZXItd3JhcHBlciI+PGcgY2xhc3M9ImZyYW1lLWNvbnRhaW5lci1ibHVyIj48ZyBjbGFzcz0iZnJhbWUtY29udGFpbmVyLXNoYWRvd3MiPjxnIGZpbGw9Im5vbmUiPjxnIGNsYXNzPSJmaWxscyIgaWQ9ImZpbGxzLTZkNmU1N2ZiLTRhMGEtODA2NS04MDA4LWMwZmM2ODY2NWY2NCI+PHJlY3Qgcng9IjAiIHJ5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHRyYW5zZm9ybT0ibWF0cml4KDEuMDAwMDAwLCAwLjAwMDAwMCwgMC4wMDAwMDAsIDEuMDAwMDAwLCAwLjAwMDAwMCwgMC4wMDAwMDApIiBjbGFzcz0iZnJhbWUtYmFja2dyb3VuZCIvPjwvZz48ZyBjbGFzcz0iZnJhbWUtY2hpbGRyZW4iPjxnIGlkPSJzaGFwZS02ZDZlNTdmYi00YTBhLTgwNjUtODAwOC1jMGZjNjg1ZjY2OGMiIHJ4PSIwIiByeT0iMCIgc3R5bGU9ImZpbGw6IHJnYigwLCAwLCAwKTsiPjxnIGlkPSJzaGFwZS02ZDZlNTdmYi00YTBhLTgwNjUtODAwOC1jMGZjNjg1ZmUwNjYiIHN0eWxlPSJkaXNwbGF5OiBub25lOyI+PGcgY2xhc3M9ImZpbGxzIiBpZD0iZmlsbHMtNmQ2ZTU3ZmItNGEwYS04MDY1LTgwMDgtYzBmYzY4NWZlMDY2Ij48cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHg9IjAiIHRyYW5zZm9ybT0ibWF0cml4KDEuMDAwMDAwLCAwLjAwMDAwMCwgMC4wMDAwMDAsIDEuMDAwMDAwLCAwLjAwMDAwMCwgMC4wMDAwMDApIiBzdHlsZT0iZmlsbDogbm9uZTsiIHJ5PSIwIiBmaWxsPSJub25lIiByeD0iMCIgeT0iMCIvPjwvZz48L2c+PGcgaWQ9InNoYXBlLTZkNmU1N2ZiLTRhMGEtODA2NS04MDA4LWMwZmM2ODVmZTA2NyI+PGcgY2xhc3M9ImZpbGxzIiBpZD0iZmlsbHMtNmQ2ZTU3ZmItNGEwYS04MDY1LTgwMDgtYzBmYzY4NWZlMDY3Ij48cGF0aCBkPSJNMywxOUwyMSwxOUwyMSwyMUwzLDIxTDMsMTlaTTEzLDEzLjE3MTYwMDM0MTc5Njg3NUwxOS4wNzEwNDQ5MjE4NzUsNy4xMDA1MDIwMTQxNjAxNTZMMjAuNDg1MzUxNTYyNSw4LjUxNDcxNzEwMjA1MDc4MUwxMiwxN0wzLjUxNDc3MDUwNzgxMjUsOC41MTQ3MTcxMDIwNTA3ODFMNC45Mjg5NTUwNzgxMjUsNy4xMDA1MDIwMTQxNjAxNTZMMTEsMTMuMTcxNjAwMzQxNzk2ODc1TDExLDJMMTMsMkwxMywxMy4xNzE2MDAzNDE3OTY4NzVaIiBzdHlsZT0iZmlsbDogcmdiKDAsIDAsIDApOyIvPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==",
+        "exportIssues": [
+          {
+            "format": "png",
+            "detail": "#error {:message \"http error\", :data {:type :server-error, :code :timeout, :hint \"ResourceRequest timed out\", :data {:type :internal, :code :timeout, :hint \"ResourceRequest timed out\"}, :uri \"https://design.penpot.app/api/export\", :status 500}}"
+          }
+        ],
+        "status": "PARTIAL"
+      }
+    ],
+    "admissionEligible": false
+  }
+}

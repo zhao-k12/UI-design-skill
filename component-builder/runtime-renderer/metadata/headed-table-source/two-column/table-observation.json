@@ -1,0 +1,41 @@
+{
+  "headers": [
+    "姓名",
+    "邮箱"
+  ],
+  "headerCells": [
+    {
+      "x": 24,
+      "y": 24,
+      "width": 240.328125,
+      "height": 38.875
+    },
+    {
+      "x": 264.328125,
+      "y": 24,
+      "width": 480.671875,
+      "height": 38.875
+    }
+  ],
+  "rows": [
+    [
+      "赵六",
+      "zhao@example.com"
+    ],
+    [
+      "钱七",
+      "qian@example.com"
+    ]
+  ],
+  "rootWidth": 720,
+  "expectedRows": [
+    [
+      "赵六",
+      "zhao@example.com"
+    ],
+    [
+      "钱七",
+      "qian@example.com"
+    ]
+  ]
+}

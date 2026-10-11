@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "fonts": [
+    {
+      "family": "PingFang SC",
+      "style": "Regular"
+    },
+    {
+      "family": "PingFang SC",
+      "style": "Semibold"
+    }
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": []
+}

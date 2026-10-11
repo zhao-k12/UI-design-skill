@@ -1,0 +1,90 @@
+{
+  "metadataVersion": "0.1.0",
+  "platform": "penpot",
+  "scope": "production",
+  "libraryVersion": "0.3.0",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "registrySha256": "35280cf92efee4c728055ad2c949c69a5d8e84b0d1a2473b3ecaeb07e4d7feb2",
+  "bindings": {
+    "action.button.primary.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+          "componentReference": "10f3de97-3a09-806f-8008-c0aff4ac5af0",
+          "fidelityReportSha256": "f5f768a7041c2302f10efaf2360ebce52f99031898fba81fd6e99827847e6c11"
+        }
+      }
+    },
+    "form.input.default.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+          "componentReference": "b17404b9-592b-8074-8008-c0cd36551084",
+          "fidelityReportSha256": "095db86f0fd809bcd410dc49eb9a3ec9d05cae7162bc27e38fc47cde7decdab3"
+        }
+      }
+    },
+    "form.select.default.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+          "componentReference": "b17404b9-592b-8074-8008-c0d00dc30929",
+          "fidelityReportSha256": "24ec8a72a08bb332b4f73734b17ab1772f34f378bc5130da4f7071435c0c4e21"
+        }
+      }
+    },
+    "data.table.default": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+          "componentReference": "6d6e57fb-4a0a-8065-8008-c0f928688eff",
+          "fidelityReportSha256": "0984deb3fbaa90614cc8069d47bdfc326850a4ba356902a57a98c53eeee2e49d"
+        }
+      }
+    },
+    "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+          "componentReference": "b65bc280-c7a5-8006-8008-c496894279a2",
+          "fidelityReportSha256": "6a59223ce32aabb239652caad72a9fef03e84e9dc90cbf96f2923edcac70d7b1"
+        }
+      }
+    },
+    "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+          "componentReference": "b65bc280-c7a5-8006-8008-c4968b8d6f20",
+          "fidelityReportSha256": "58d332eb19a4c7bf1448fcfa10375bdcd8a1d514c2f1690ae569ee83ae80da91"
+        }
+      }
+    },
+    "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+          "componentReference": "60977a61-dfea-80ea-8008-c4e4ee901de1",
+          "fidelityReportSha256": "06122e82f14ffa57ceed22bc9dc898a7d615eedd5671aefafc9727ec262cca26"
+        }
+      }
+    },
+    "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+          "componentReference": "60977a61-dfea-80ea-8008-c4e4f19d879a",
+          "fidelityReportSha256": "ccae0ac3050496303897b04c4f7556b908d4458c6dcf7862a831937a532f7e1e"
+        }
+      }
+    }
+  }
+}

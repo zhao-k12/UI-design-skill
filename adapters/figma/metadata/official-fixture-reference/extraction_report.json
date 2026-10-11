@@ -1,0 +1,14 @@
+{
+  "scope": "component_runtime_extraction",
+  "status": "PASS",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentTypes": [
+    "Button",
+    "Input",
+    "Select"
+  ],
+  "componentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "runtimeManifestSha256": "060aafc001361b9c45c479192b98525de8979ed4df23e8253bf084a0de015b04",
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}

@@ -1,0 +1,226 @@
+{
+  "uiIrVersion": "0.1.0",
+  "documentId": "task015-six-cell-slots",
+  "pages": [
+    {
+      "id": "slot-page",
+      "type": "Page",
+      "name": "六类槽位验收",
+      "layout": {
+        "width": {
+          "mode": "fixed",
+          "value": 1440
+        },
+        "height": {
+          "mode": "fixed",
+          "value": 80
+        },
+        "direction": "vertical",
+        "padding": {
+          "top": {
+            "token": "spacing.lg"
+          },
+          "right": {
+            "token": "spacing.lg"
+          },
+          "bottom": {
+            "token": "spacing.lg"
+          },
+          "left": {
+            "token": "spacing.lg"
+          }
+        }
+      },
+      "style": {
+        "fill": {
+          "token": "color.page"
+        }
+      },
+      "children": [
+        {
+          "id": "slot-cell",
+          "type": "Frame",
+          "sourceIds": [
+            "slot-case"
+          ],
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 1392
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32
+            },
+            "direction": "horizontal",
+            "gap": {
+              "token": "spacing.sm"
+            },
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "children": [
+            {
+              "id": "slot-cell.slot.leading-icon",
+              "type": "Frame",
+              "sourceIds": [
+                "slot-case"
+              ],
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 24
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.label",
+              "type": "Frame",
+              "sourceIds": [
+                "slot-case"
+              ],
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 28
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.control",
+              "type": "Frame",
+              "sourceIds": [
+                "slot-case"
+              ],
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 240
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.trailing-icon",
+              "type": "Frame",
+              "sourceIds": [
+                "slot-case"
+              ],
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 24
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.content",
+              "type": "Frame",
+              "sourceIds": [
+                "slot-case"
+              ],
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 56
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.actions",
+              "type": "Frame",
+              "sourceIds": [
+                "slot-case"
+              ],
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 60
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

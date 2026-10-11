@@ -1,0 +1,395 @@
+{
+  "status": "PASS",
+  "scope": "observed-Type3-glyph-paths-in-font-units",
+  "unitsPerEm": 1000,
+  "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+  "nativePdfSha256": "9a8dc66eedf722980b653173a8abb8259c8c58e5520fe8857ad623dc507ccd44",
+  "glyphs": [
+    {
+      "character": "张",
+      "pathSha256": "91d2e871145fab81a389835e93134ffb683c111018ae6b05ed18114381868dd2",
+      "nativeUnicodeCharacter": "张",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 48,
+      "nativeCommandCount": 48,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "三",
+      "pathSha256": "96025248acee586c5c2414a630c4409a788e89cd3d4c08954102c9358729bb7a",
+      "nativeUnicodeCharacter": "三",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 18,
+      "nativeCommandCount": 18,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "研",
+      "pathSha256": "49af1da0eb04c29dae8c202fbcde548efba191a1f050d2e44eefd5a5217de2d3",
+      "nativeUnicodeCharacter": "研",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 51,
+      "nativeCommandCount": 51,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "发",
+      "pathSha256": "87100a6a4b3afcf71d7d907520ae50201498664ffda76dff96c9acc3e16c3066",
+      "nativeUnicodeCharacter": "发",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 38,
+      "nativeCommandCount": 38,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "启",
+      "pathSha256": "87e8f73079177e24a934b9ab41afebd080feddd1039489d15beb03ac01239ef4",
+      "nativeUnicodeCharacter": "启",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 36,
+      "nativeCommandCount": 36,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "用",
+      "pathSha256": "47702d98694a4dcdc75555908f9caf6a9cc3654a8b729c352ef7068811e56c69",
+      "nativeUnicodeCharacter": "⽤",
+      "sourceCmapGlyphAlias": true,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 43,
+      "nativeCommandCount": 43,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "李",
+      "pathSha256": "ee5e808f5e56e9ebd7379ab11b7203f2bf659cc430b032e075bac6991583662a",
+      "nativeUnicodeCharacter": "李",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 45,
+      "nativeCommandCount": 45,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "四",
+      "pathSha256": "f4b6b6446884cf49979e913a68723190e9e2612e5459262975568a1a61111ca4",
+      "nativeUnicodeCharacter": "四",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 30,
+      "nativeCommandCount": 30,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "财",
+      "pathSha256": "46f3a631deb559028096d89b7bfb7de8df4a25100f0456894001cab5962279cd",
+      "nativeUnicodeCharacter": "财",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 47,
+      "nativeCommandCount": 47,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "务",
+      "pathSha256": "23c080ba19d8b02199f5ce30ecae00fdd1aa65ad049a7da11f43b8879aade7f8",
+      "nativeUnicodeCharacter": "务",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 45,
+      "nativeCommandCount": 45,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "停",
+      "pathSha256": "8fb8ede6e1b7c31ee9c6607ac9a4c8c70470d8dd587dfc367e894925b89e3dc4",
+      "nativeUnicodeCharacter": "停",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 56,
+      "nativeCommandCount": 56,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "王",
+      "pathSha256": "d39d71285df5182103de5773282a3361d6a77aff09ec7f2f3e72eb34508dc65d",
+      "nativeUnicodeCharacter": "王",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 22,
+      "nativeCommandCount": 22,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "五",
+      "pathSha256": "8482fff1951b1242a340da06cbd1c843cad80f1af1899fc91b07dea882670b19",
+      "nativeUnicodeCharacter": "五",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 26,
+      "nativeCommandCount": 26,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "运",
+      "pathSha256": "50f28f9c4f3f624440ce0cd95f5786009b4c819349ae173659f7ac655ea6e353",
+      "nativeUnicodeCharacter": "运",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 51,
+      "nativeCommandCount": 51,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "营",
+      "pathSha256": "7dce6dd81b66ecdb6d7919ea040cd45ac4404f099f0e4673f8e6895ec455704d",
+      "nativeUnicodeCharacter": "营",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 60,
+      "nativeCommandCount": 60,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "赵",
+      "pathSha256": "15170d0304d16068bf5e0f5834a538ba65845e9d301cb7052a5c8ff1cee21a68",
+      "nativeUnicodeCharacter": "赵",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 51,
+      "nativeCommandCount": 51,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "六",
+      "pathSha256": "3aca47bcdb6b07ea9e4dd4cb3de650e0610c24b93d84f21a565bb1475dc1761d",
+      "nativeUnicodeCharacter": "六",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 24,
+      "nativeCommandCount": 24,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "客",
+      "pathSha256": "ed99942f5ed1711f1fe1cf0d9100c2078135f44531973faa91abdb65e9a319e0",
+      "nativeUnicodeCharacter": "客",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 53,
+      "nativeCommandCount": 53,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "服",
+      "pathSha256": "fa6bf3838518cc59180531f23487243afd1bcca2ba023cf9798d896e2fd3749a",
+      "nativeUnicodeCharacter": "服",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 59,
+      "nativeCommandCount": 59,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "admissionEligible": false,
+  "limitations": [
+    "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+    "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+    "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+  ]
+}

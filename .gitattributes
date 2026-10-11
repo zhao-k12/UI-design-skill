@@ -1,0 +1,137 @@
+*.json text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.svg -text
+License -text
+# Raw Penpot host receipts are byte-hashed evidence; preserve original newlines.
+adapters/penpot/metadata/button-native-v1/capture.json -text
+adapters/penpot/metadata/button-native-v1/creation.json -text
+adapters/penpot/metadata/button-native-v1/outline.json -text
+adapters/penpot/metadata/button-font-repair/*capture.json -text
+adapters/penpot/metadata/button-admitted/*capture.json -text
+adapters/penpot/metadata/button-admitted/*normalization.json -text
+adapters/penpot/metadata/button-admitted/export-timeout-*.json -text
+adapters/penpot/metadata/input-native-v1/*capture.json -text
+adapters/penpot/metadata/input-native-v1/creation.json -text
+adapters/penpot/metadata/input-native-v1/order-*.json -text
+adapters/penpot/metadata/select-native-v1/capture.json -text
+adapters/penpot/metadata/select-native-v1/creation.json -text
+adapters/penpot/metadata/table-native-v1/capture.json -text
+adapters/penpot/metadata/table-native-v1/creation.json -text
+adapters/penpot/metadata/icons-native-v1/*capture.json -text
+adapters/penpot/metadata/icons-native-v1/creation.json -text
+adapters/penpot/metadata/icons-native-v1/repeat-before-restore.json -text
+adapters/penpot/metadata/icons-native-v1/restore.json -text
+adapters/penpot/metadata/icons-native-v1/explicit-opacity-restore.json -text
+adapters/penpot/metadata/icons-native-v1/latest-svg-probe.json -text
+adapters/penpot/metadata/list-acceptance/*capture*.json -text
+adapters/penpot/metadata/list-acceptance/execution.json -text
+adapters/penpot/metadata/list-acceptance/default-restoration.json -text
+adapters/penpot/metadata/list-acceptance/icon-copy-reset.json -text
+adapters/penpot/metadata/list-acceptance/icon-instance-svg-probe.json -text
+
+# Hash-bound semantic prototype source bytes.
+examples/prototype-semantic/prototype.txt -text whitespace=cr-at-eol
+
+# Original native content receipts and exact served execution script are byte-bound.
+adapters/penpot/metadata/section-content-acceptance/*.json -text
+adapters/penpot/metadata/section-content-acceptance/served-plugin.js -text whitespace=-blank-at-eol
+
+adapters/figma/metadata/section-content-acceptance/*.json -text
+adapters/figma/metadata/section-content-acceptance/*.js -text whitespace=-blank-at-eol
+
+adapters/penpot/metadata/primitive-content-acceptance/*.json -text
+adapters/penpot/metadata/primitive-content-acceptance/*.js -text whitespace=-blank-at-eol
+
+adapters/penpot/metadata/section-swap-acceptance/*.json -text
+adapters/penpot/metadata/section-swap-acceptance/*.js -text whitespace=-blank-at-eol
+
+examples/acceptance-prototype/prototype.txt -text whitespace=cr-at-eol
+examples/acceptance-prototype/frozen-manifest.json -text
+
+adapters/figma/metadata/cell-slots-acceptance/*.json -text
+adapters/figma/metadata/cell-slots-acceptance/*.js -text whitespace=-blank-at-eol
+
+adapters/penpot/metadata/cell-slots-acceptance/*.json -text
+adapters/penpot/metadata/cell-slots-acceptance/*.js -text whitespace=-blank-at-eol
+
+adapters/cell_slots_qa.py -text
+adapters/figma/cell_slots.js -text
+adapters/penpot/cell_slots.js -text
+
+registries/assets/catalog.json -text
+schemas/asset-registry.schema.json -text
+schemas/ui-ir.schema.json -text
+validators/ui_ir.py -text
+core/asset-resolver/registry.py -text
+core/asset-resolver/resolver.py -text
+examples/resource-handling-contract/passed-list-report.json -text
+examples/resource-handling-contract/missing-report.json -text
+examples/resource-handling-contract/acceptance-manifest.json -text
+
+# TASK-017 native receipts, execution programs and checkpoint evidence are byte-bound.
+adapters/figma/metadata/pipeline-acceptance/** -text whitespace=-blank-at-eol
+adapters/penpot/metadata/pipeline-acceptance/** -text whitespace=-blank-at-eol
+examples/end-to-end-acceptance/*.json -text whitespace=-blank-at-eol
+VERSION -text
+requirements.txt -text
+requirements-dev.txt -text
+
+# TASK-018 exact official runtime source receipts and program hashes.
+examples/table-source-acceptance/** -text whitespace=-blank-at-eol
+component-builder/runtime-renderer/table-request.mjs -text
+component-builder/runtime-renderer/configurable-table-extract.mjs -text
+component-builder/runtime-renderer/configurable-table-harness.js -text
+component-builder/runtime-renderer/extract.mjs -text
+
+# TASK-019 source/font observations and original native diagnostic receipts.
+component-builder/runtime-renderer/metadata/configurable-table-source/** -text whitespace=-blank-at-eol
+adapters/penpot/metadata/configurable-table-native/** -text whitespace=cr-at-eol,-blank-at-eol
+adapters/figma/metadata/configurable-table-native/** -text whitespace=cr-at-eol,-blank-at-eol
+adapters/figma/true_type_encoding_diagnostic.py -text
+
+# TASK-019 explicitly versioned release and byte-bound new gate programs.
+releases/component-library-0.2.1/** -text whitespace=-blank-at-eol
+adapters/*/metadata/component-library-0.2.1/** -text
+.dev/TASK-019_ARIAL_ENCODING_DECISION.md -text
+scripts/admit_configurable_tables.py -text
+adapters/component_library_versions.py -text
+adapters/figma/configurable_table_fidelity.py -text
+adapters/figma/configurable_table_instance_qa.py -text
+adapters/penpot/configurable_table_fidelity.py -text whitespace=cr-at-eol
+adapters/penpot/configurable_table_instance_qa.py -text
+adapters/penpot/table_pixel_coverage.py -text whitespace=cr-at-eol
+adapters/penpot/configurable_table_admission.py -text
+adapters/penpot/configurable_table_compiler.py -text
+adapters/penpot/configurable_table_svg_probe.mjs -text whitespace=cr-at-eol
+adapters/figma/configurable_table_probes.mjs -text whitespace=cr-at-eol
+# TASK-020 source receipts preserve the captured byte hashes.
+component-builder/runtime-renderer/headed-table-*.mjs -text
+component-builder/runtime-renderer/metadata/headed-table-source/** -text
+adapters/figma/headed_table* -text whitespace=cr-at-eol
+adapters/penpot/headed_table* -text whitespace=cr-at-eol
+adapters/penpot/semibold_woff_container.py -text whitespace=cr-at-eol
+adapters/*/metadata/headed-table-native/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+adapters/penpot/host/headed_table_server.py -text whitespace=cr-at-eol
+adapters/headed_table.py -text whitespace=cr-at-eol
+# Preserve captured program bytes, including existing CRLF/terminal blank lines.
+component-builder/runtime-renderer/headed-table-typography-extract.mjs -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+component-builder/runtime-renderer/metadata/headed-table-source/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+adapters/headed_table.py -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+adapters/figma/headed_table* -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+adapters/penpot/headed_table* -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+adapters/penpot/host/headed_table_server.py -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+.dev/TASK-020_FIDELITY_DECISION.md -text
+adapters/headed_table_policy.py -text
+adapters/headed_table_png.py -text
+adapters/headed_table_pixel_regions.py -text
+adapters/headed_table*.py -text
+adapters/headed_component_library.py -text
+scripts/release_headed_table_library.py -text
+releases/component-library-0.3.0/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+adapters/*/metadata/component-library-0.3.0/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+adapters/penpot/host/headed_table_instance_server.py -text
+.dev/TASK-020_ACCEPTANCE.md -text
+third-party-licenses/** -text whitespace=cr-at-eol

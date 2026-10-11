@@ -1,0 +1,57 @@
+{
+  "version": "0.1.0",
+  "scope": "headed_official_table_source",
+  "requestSha256": "613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+  "casesSha256": "e375b6f824cbd14c7063b3f8d4dc1a72ef1a87a0c0e0fb094acec898e30b151f",
+  "requestFileSha256": "6351bc002ecbaf26aa3a50c3e89228837759af505cfc1a3d241c76afd322ac39",
+  "casesFileSha256": "31e0848b14828a67f30c7401b64fb2b745630220c6b1b8a7ace865bd46a735b5",
+  "programs": {
+    "table-request.mjs": "d062ac8c680afe58b9d5afc595dae69491b230903147b428bf0a570015d5eb1f",
+    "headed-table-request.mjs": "6cbdf8af0d462ec25810d84da1494be4a087e3af5fd2789c8550b77dec3ee72b",
+    "headed-table-extract.mjs": "afe93f86fffeee5e024023eca0f08beb377a7899313fab9cc09958bc97b90427",
+    "configurable-table-harness.js": "3bea57d277b01eadd78f9606f75772d97238afd7969f92ec5d5cfa8418f089a0",
+    "extract.mjs": "9516eb8741a3de363c8cd9cf8f7296f9badcd4b96fe8692d5d8cd7b780145ee6"
+  },
+  "nativeExecution": "NOT_RUN",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false,
+  "status": "PASS",
+  "observation": {
+    "headers": [
+      "姓名",
+      "邮箱"
+    ],
+    "headerCells": [
+      {
+        "x": 24,
+        "y": 24,
+        "width": 240.328125,
+        "height": 38.875
+      },
+      {
+        "x": 264.328125,
+        "y": 24,
+        "width": 480.671875,
+        "height": 38.875
+      }
+    ],
+    "rows": [
+      [
+        "赵六",
+        "zhao@example.com"
+      ],
+      [
+        "钱七",
+        "qian@example.com"
+      ]
+    ],
+    "rootWidth": 720
+  },
+  "componentId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+  "componentIrSha256": "e78d2c1d67a82b6323f33b9ddaf7709e8d9b142ec520a056730e138179e6b931",
+  "runtimeManifestSha256": "afac60c0c9f34157a1c2eb751229eedc5fa5dc89c9a771e081d0390493d386e5",
+  "screenshot": {
+    "path": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa.png",
+    "sha256": "5fed0dc67b1f70d63786e04839150f591c1a80f4c1312bf208d46f572bd3a0b3"
+  }
+}

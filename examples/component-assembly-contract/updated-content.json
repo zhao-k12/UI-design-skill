@@ -1,0 +1,124 @@
+{
+  "version": "0.1.0",
+  "mappingSha256": "e7c1baa8a586c236aa84886da69622d0cf76c8fef32512977784c49d3fb893db",
+  "items": [
+    {
+      "sourceId": "name",
+      "props": {
+        "placeholder": {
+          "text": "姓名",
+          "evidence": [
+            "e2"
+          ]
+        }
+      },
+      "slots": {}
+    },
+    {
+      "sourceId": "status",
+      "props": {
+        "placeholder": {
+          "text": "状态",
+          "evidence": [
+            "e2"
+          ]
+        }
+      },
+      "slots": {}
+    },
+    {
+      "sourceId": "search",
+      "props": {},
+      "slots": {
+        "label": [
+          {
+            "kind": "text",
+            "claim": {
+              "text": "查询",
+              "evidence": [
+                "e2"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "reset",
+      "props": {},
+      "slots": {
+        "label": [
+          {
+            "kind": "text",
+            "claim": {
+              "text": "重置",
+              "evidence": [
+                "e2"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "add",
+      "props": {},
+      "slots": {
+        "label": [
+          {
+            "kind": "text",
+            "claim": {
+              "text": "新增",
+              "evidence": [
+                "e3"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "export",
+      "props": {},
+      "slots": {
+        "label": [
+          {
+            "kind": "text",
+            "claim": {
+              "text": "导出",
+              "evidence": [
+                "e3"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "users",
+      "props": {
+        "headers": [
+          {
+            "text": "姓名",
+            "evidence": [
+              "e4"
+            ]
+          },
+          {
+            "text": "邮箱",
+            "evidence": [
+              "e4"
+            ]
+          },
+          {
+            "text": "状态",
+            "evidence": [
+              "e4"
+            ]
+          }
+        ]
+      },
+      "slots": {}
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+{
+  "uiIrVersion": "0.1.0",
+  "documentId": "adapter-native-smoke",
+  "pages": [
+    {
+      "id": "native-page",
+      "type": "Page",
+      "name": "原生布局与图标验收",
+      "layout": {
+        "width": {
+          "mode": "fixed",
+          "value": 1440
+        },
+        "padding": {
+          "top": {
+            "token": "spacing.page"
+          },
+          "right": {
+            "token": "spacing.page"
+          },
+          "bottom": {
+            "token": "spacing.page"
+          },
+          "left": {
+            "token": "spacing.page"
+          }
+        },
+        "gap": {
+          "token": "spacing.section"
+        }
+      },
+      "style": {
+        "fill": {
+          "token": "color.page"
+        }
+      },
+      "children": [
+        {
+          "id": "heading",
+          "type": "Text",
+          "text": "Adapter 原生布局与图标验收",
+          "style": {
+            "typographyToken": {
+              "token": "typography.heading"
+            },
+            "colorToken": {
+              "token": "color.text"
+            }
+          }
+        },
+        {
+          "id": "notice",
+          "type": "Text",
+          "text": "仅验收布局与官方图标；官方 UI 组件保真仍待完成。",
+          "style": {
+            "typographyToken": {
+              "token": "typography.body"
+            },
+            "colorToken": {
+              "token": "color.text"
+            }
+          }
+        },
+        {
+          "id": "grid",
+          "type": "Grid",
+          "layout": {
+            "gridColumns": 24,
+            "width": {
+              "mode": "fill"
+            },
+            "gap": {
+              "token": "spacing.md"
+            }
+          },
+          "children": [
+            {
+              "id": "column0",
+              "type": "Frame",
+              "name": "Grid span 6 / column 1",
+              "layout": {
+                "span": 6,
+                "width": {
+                  "mode": "fill"
+                },
+                "padding": {
+                  "top": {
+                    "token": "spacing.md"
+                  },
+                  "right": {
+                    "token": "spacing.md"
+                  },
+                  "bottom": {
+                    "token": "spacing.md"
+                  },
+                  "left": {
+                    "token": "spacing.md"
+                  }
+                },
+                "gap": {
+                  "token": "spacing.sm"
+                }
+              },
+              "style": {
+                "fill": {
+                  "token": "color.surface"
+                }
+              },
+              "children": [
+                {
+                  "id": "column0.title",
+                  "type": "Text",
+                  "text": "第 1 列",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                },
+                {
+                  "id": "column0.body",
+                  "type": "Text",
+                  "text": "span=6 · 原生 Auto Layout",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "column1",
+              "type": "Frame",
+              "name": "Grid span 6 / column 2",
+              "layout": {
+                "span": 6,
+                "width": {
+                  "mode": "fill"
+                },
+                "padding": {
+                  "top": {
+                    "token": "spacing.md"
+                  },
+                  "right": {
+                    "token": "spacing.md"
+                  },
+                  "bottom": {
+                    "token": "spacing.md"
+                  },
+                  "left": {
+                    "token": "spacing.md"
+                  }
+                },
+                "gap": {
+                  "token": "spacing.sm"
+                }
+              },
+              "style": {
+                "fill": {
+                  "token": "color.surface"
+                }
+              },
+              "children": [
+                {
+                  "id": "column1.title",
+                  "type": "Text",
+                  "text": "第 2 列",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                },
+                {
+                  "id": "column1.body",
+                  "type": "Text",
+                  "text": "span=6 · 原生 Auto Layout",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "column2",
+              "type": "Frame",
+              "name": "Grid span 6 / column 3",
+              "layout": {
+                "span": 6,
+                "width": {
+                  "mode": "fill"
+                },
+                "padding": {
+                  "top": {
+                    "token": "spacing.md"
+                  },
+                  "right": {
+                    "token": "spacing.md"
+                  },
+                  "bottom": {
+                    "token": "spacing.md"
+                  },
+                  "left": {
+                    "token": "spacing.md"
+                  }
+                },
+                "gap": {
+                  "token": "spacing.sm"
+                }
+              },
+              "style": {
+                "fill": {
+                  "token": "color.surface"
+                }
+              },
+              "children": [
+                {
+                  "id": "column2.title",
+                  "type": "Text",
+                  "text": "第 3 列",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                },
+                {
+                  "id": "column2.body",
+                  "type": "Text",
+                  "text": "span=6 · 原生 Auto Layout",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "column3",
+              "type": "Frame",
+              "name": "Grid span 6 / column 4",
+              "layout": {
+                "span": 6,
+                "width": {
+                  "mode": "fill"
+                },
+                "padding": {
+                  "top": {
+                    "token": "spacing.md"
+                  },
+                  "right": {
+                    "token": "spacing.md"
+                  },
+                  "bottom": {
+                    "token": "spacing.md"
+                  },
+                  "left": {
+                    "token": "spacing.md"
+                  }
+                },
+                "gap": {
+                  "token": "spacing.sm"
+                }
+              },
+              "style": {
+                "fill": {
+                  "token": "color.surface"
+                }
+              },
+              "children": [
+                {
+                  "id": "column3.title",
+                  "type": "Text",
+                  "text": "第 4 列",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                },
+                {
+                  "id": "column3.body",
+                  "type": "Text",
+                  "text": "span=6 · 原生 Auto Layout",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "icons",
+          "type": "HorizontalStack",
+          "layout": {
+            "width": {
+              "mode": "fill"
+            },
+            "gap": {
+              "token": "spacing.lg"
+            },
+            "padding": {
+              "top": {
+                "token": "spacing.md"
+              },
+              "right": {
+                "token": "spacing.md"
+              },
+              "bottom": {
+                "token": "spacing.md"
+              },
+              "left": {
+                "token": "spacing.md"
+              }
+            }
+          },
+          "style": {
+            "fill": {
+              "token": "color.surface"
+            }
+          },
+          "children": [
+            {
+              "id": "icon-group0",
+              "type": "HorizontalStack",
+              "layout": {
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "icon0",
+                  "type": "IconInstance",
+                  "iconId": "remix.search-line",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    }
+                  }
+                },
+                {
+                  "id": "icon0.label",
+                  "type": "Text",
+                  "text": "搜索",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "icon-group1",
+              "type": "HorizontalStack",
+              "layout": {
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "icon1",
+                  "type": "IconInstance",
+                  "iconId": "remix.delete-bin-line",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    }
+                  }
+                },
+                {
+                  "id": "icon1.label",
+                  "type": "Text",
+                  "text": "删除",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "icon-group2",
+              "type": "HorizontalStack",
+              "layout": {
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "icon2",
+                  "type": "IconInstance",
+                  "iconId": "remix.add-line",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    }
+                  }
+                },
+                {
+                  "id": "icon2.label",
+                  "type": "Text",
+                  "text": "新增",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "icon-group3",
+              "type": "HorizontalStack",
+              "layout": {
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "icon3",
+                  "type": "IconInstance",
+                  "iconId": "remix.download-line",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    }
+                  }
+                },
+                {
+                  "id": "icon3.label",
+                  "type": "Text",
+                  "text": "导出",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "icon-group4",
+              "type": "HorizontalStack",
+              "layout": {
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "icon4",
+                  "type": "IconInstance",
+                  "iconId": "remix.settings-3-line",
+                  "layout": {
+                    "width": {
+                      "mode": "fixed",
+                      "value": 24
+                    },
+                    "height": {
+                      "mode": "fixed",
+                      "value": 24
+                    }
+                  }
+                },
+                {
+                  "id": "icon4.label",
+                  "type": "Text",
+                  "text": "设置",
+                  "style": {
+                    "typographyToken": {
+                      "token": "typography.body"
+                    },
+                    "colorToken": {
+                      "token": "color.text"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "footer",
+          "type": "Frame",
+          "layout": {
+            "width": {
+              "mode": "fill"
+            },
+            "padding": {
+              "top": {
+                "token": "spacing.md"
+              },
+              "right": {
+                "token": "spacing.md"
+              },
+              "bottom": {
+                "token": "spacing.md"
+              },
+              "left": {
+                "token": "spacing.md"
+              }
+            }
+          },
+          "style": {
+            "fill": {
+              "token": "color.surface"
+            }
+          },
+          "children": [
+            {
+              "id": "footer.text",
+              "type": "Text",
+              "text": "可编辑 Text · Fixed / Fill / Hug · Grid24 · 真实 Icon Instance",
+              "style": {
+                "typographyToken": {
+                  "token": "typography.body"
+                },
+                "colorToken": {
+                  "token": "color.text"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

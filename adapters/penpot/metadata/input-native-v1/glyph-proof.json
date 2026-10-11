@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "scope": "observed-Type3-glyph-paths-in-font-units",
+  "unitsPerEm": 1000,
+  "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+  "nativePdfSha256": "6fbeebbee38f7fe4642367646553dc0fb201247e3ad86eee172aaf3cdeb5dc6b",
+  "glyphs": [
+    {
+      "character": "请",
+      "pathSha256": "0668f24c522ba05ad53103ab52c893a4062dacb4a8f9adaae70e9b3f347cb439",
+      "nativeUnicodeCharacter": "请",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 70,
+      "nativeCommandCount": 70,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "输",
+      "pathSha256": "c4a127e2ac9f14a9629486d40cb35e4358db948e6268165d38f3527b10d9c179",
+      "nativeUnicodeCharacter": "输",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 89,
+      "nativeCommandCount": 89,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "入",
+      "pathSha256": "4a43cd81f2716cdc58c0b180a807af8b43e6cc350289a022190f97565750a186",
+      "nativeUnicodeCharacter": "⼊",
+      "sourceCmapGlyphAlias": true,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 12,
+      "nativeCommandCount": 12,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "姓",
+      "pathSha256": "ba89646e4a807fdc23751a8fa8a59e0615012c4422f61d61ca5b161ba1995441",
+      "nativeUnicodeCharacter": "姓",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 55,
+      "nativeCommandCount": 55,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "名",
+      "pathSha256": "19fe7075361f17527e8f55dba9fac3f3356cccbac232d572fd94aaad3e7f11fb",
+      "nativeUnicodeCharacter": "名",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 32,
+      "nativeCommandCount": 32,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "admissionEligible": false,
+  "limitations": [
+    "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+    "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+    "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+  ]
+}

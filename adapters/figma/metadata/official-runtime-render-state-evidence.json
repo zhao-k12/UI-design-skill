@@ -1,0 +1,1458 @@
+{
+  "scope": "official_runtime_text_box_diagnostic",
+  "status": "PASS",
+  "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "referenceMatches": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 840,
+      "height": 240
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "8f3dd0fed4f4627bbc91c6e043c510d95207f1a7b6458a2e8786a4a9bf72f416",
+    "harnessBundleSha256": "6cfb8d54afb47684ca3b9d1b30983d2cd9926dcf4081679c2467e539689c27e0",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "1cf745c3419bce7023c26ae27a0af97b9fbb3903737ee8deba629296aecde000"
+  },
+  "observations": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "documentIndex": 0,
+      "backendNodeId": 14,
+      "text": "查询",
+      "startUtf16": 0,
+      "lengthUtf16": 2,
+      "documentBounds": {
+        "x": 40,
+        "y": 31.5,
+        "width": 28,
+        "height": 16
+      },
+      "ancestry": [
+        {
+          "nodeName": "#text",
+          "attributes": {}
+        },
+        {
+          "nodeName": "SPAN",
+          "attributes": {}
+        },
+        {
+          "nodeName": "BUTTON",
+          "attributes": {
+            "class": "ivu-btn ivu-btn-primary",
+            "type": "button"
+          }
+        },
+        {
+          "nodeName": "SECTION",
+          "attributes": {
+            "data-runtime-case": "action.button.primary.medium",
+            "style": "width: 240px;"
+          }
+        },
+        {
+          "nodeName": "MAIN",
+          "attributes": {
+            "id": "runtime-gallery",
+            "style": "display: flex; gap: 24px; padding: 24px; align-items: flex-start;"
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "id": "app"
+          }
+        },
+        {
+          "nodeName": "BODY",
+          "attributes": {}
+        },
+        {
+          "nodeName": "HTML",
+          "attributes": {
+            "lang": "zh-CN"
+          }
+        },
+        {
+          "nodeName": "#document",
+          "attributes": {}
+        }
+      ],
+      "surface": "snapshot-layout",
+      "componentBounds": {
+        "x": 16,
+        "y": 7.5,
+        "width": 28,
+        "height": 16
+      }
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "documentIndex": 0,
+      "backendNodeId": 34,
+      "text": "启用",
+      "startUtf16": 0,
+      "lengthUtf16": 2,
+      "documentBounds": {
+        "x": 561,
+        "y": 32,
+        "width": 28,
+        "height": 16
+      },
+      "ancestry": [
+        {
+          "nodeName": "#text",
+          "attributes": {}
+        },
+        {
+          "nodeName": "SPAN",
+          "attributes": {
+            "class": "ivu-select-selected-value"
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {}
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "class": "ivu-select-selection",
+            "tabindex": "0"
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "class": "ivu-select ivu-select-single ivu-select-default"
+          }
+        },
+        {
+          "nodeName": "SECTION",
+          "attributes": {
+            "data-runtime-case": "form.select.default.medium",
+            "style": "width: 240px;"
+          }
+        },
+        {
+          "nodeName": "MAIN",
+          "attributes": {
+            "id": "runtime-gallery",
+            "style": "display: flex; gap: 24px; padding: 24px; align-items: flex-start;"
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "id": "app"
+          }
+        },
+        {
+          "nodeName": "BODY",
+          "attributes": {}
+        },
+        {
+          "nodeName": "HTML",
+          "attributes": {
+            "lang": "zh-CN"
+          }
+        },
+        {
+          "nodeName": "#document",
+          "attributes": {}
+        }
+      ],
+      "surface": "snapshot-layout",
+      "componentBounds": {
+        "x": 9,
+        "y": 8,
+        "width": 28,
+        "height": 16
+      }
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "documentIndex": 0,
+      "backendNodeId": 38,
+      "text": "",
+      "startUtf16": 0,
+      "lengthUtf16": 1,
+      "documentBounds": {
+        "x": 769,
+        "y": 33,
+        "width": 14,
+        "height": 14
+      },
+      "ancestry": [
+        {
+          "nodeName": "::before",
+          "attributes": {}
+        },
+        {
+          "nodeName": "I",
+          "attributes": {
+            "class": "ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {}
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "class": "ivu-select-selection",
+            "tabindex": "0"
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "class": "ivu-select ivu-select-single ivu-select-default"
+          }
+        },
+        {
+          "nodeName": "SECTION",
+          "attributes": {
+            "data-runtime-case": "form.select.default.medium",
+            "style": "width: 240px;"
+          }
+        },
+        {
+          "nodeName": "MAIN",
+          "attributes": {
+            "id": "runtime-gallery",
+            "style": "display: flex; gap: 24px; padding: 24px; align-items: flex-start;"
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "id": "app"
+          }
+        },
+        {
+          "nodeName": "BODY",
+          "attributes": {}
+        },
+        {
+          "nodeName": "HTML",
+          "attributes": {
+            "lang": "zh-CN"
+          }
+        },
+        {
+          "nodeName": "#document",
+          "attributes": {}
+        }
+      ],
+      "surface": "snapshot-layout",
+      "componentBounds": {
+        "x": 217,
+        "y": 9,
+        "width": 14,
+        "height": 14
+      }
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "backendNodeId": 66,
+      "surface": "user-agent-shadow",
+      "text": "请输入姓名",
+      "startUtf16": 0,
+      "lengthUtf16": 5,
+      "documentBounds": {
+        "x": 296,
+        "y": 32,
+        "width": 70,
+        "height": 16
+      },
+      "ancestry": [
+        {
+          "nodeName": "#text",
+          "attributes": {}
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "pseudo": "-webkit-input-placeholder",
+            "id": "placeholder",
+            "style": "display: block !important;"
+          }
+        },
+        {
+          "nodeName": "INPUT",
+          "attributes": {
+            "id": "runtime-input",
+            "autocomplete": "off",
+            "spellcheck": "false",
+            "type": "text",
+            "class": "ivu-input ivu-input-default",
+            "placeholder": "请输入姓名",
+            "number": "false",
+            "value": ""
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "class": "ivu-input-wrapper ivu-input-wrapper-default ivu-input-type-text"
+          }
+        },
+        {
+          "nodeName": "SECTION",
+          "attributes": {
+            "data-runtime-case": "form.input.default.medium",
+            "style": "width: 240px;"
+          }
+        },
+        {
+          "nodeName": "MAIN",
+          "attributes": {
+            "id": "runtime-gallery",
+            "style": "display: flex; gap: 24px; padding: 24px; align-items: flex-start;"
+          }
+        },
+        {
+          "nodeName": "DIV",
+          "attributes": {
+            "id": "app",
+            "data-v-app": ""
+          }
+        },
+        {
+          "nodeName": "BODY",
+          "attributes": {}
+        },
+        {
+          "nodeName": "HTML",
+          "attributes": {
+            "lang": "zh-CN"
+          }
+        },
+        {
+          "nodeName": "#document",
+          "attributes": {}
+        }
+      ],
+      "componentBounds": {
+        "x": 8,
+        "y": 8,
+        "width": 70,
+        "height": 16
+      }
+    }
+  ],
+  "renderingSettings": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "rows": [
+        {
+          "path": "0",
+          "surface": "element",
+          "tag": "button",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0",
+          "surface": "::before",
+          "tag": "button",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "0.35",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0",
+          "surface": "element",
+          "tag": "span",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0",
+          "surface": "::before",
+          "tag": "span",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "rows": [
+        {
+          "path": "0",
+          "surface": "element",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0",
+          "surface": "::before",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0",
+          "surface": "element",
+          "tag": "i",
+          "properties": {
+            "font-family": "Ionicons",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "16px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "optimizelegibility",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0",
+          "surface": "::before",
+          "tag": "i",
+          "properties": {
+            "font-family": "Ionicons",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "16px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "optimizelegibility",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1",
+          "surface": "element",
+          "tag": "input",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1",
+          "surface": "::before",
+          "tag": "input",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1",
+          "surface": "::placeholder",
+          "tag": "input",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "rows": [
+        {
+          "path": "0",
+          "surface": "element",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0",
+          "surface": "::before",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0",
+          "surface": "element",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0",
+          "surface": "::before",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.0",
+          "surface": "element",
+          "tag": "input",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.0",
+          "surface": "::before",
+          "tag": "input",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.0",
+          "surface": "::placeholder",
+          "tag": "input",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.1",
+          "surface": "element",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.1",
+          "surface": "::before",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.1.0",
+          "surface": "element",
+          "tag": "span",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.1.0",
+          "surface": "::before",
+          "tag": "span",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.1.1",
+          "surface": "element",
+          "tag": "i",
+          "properties": {
+            "font-family": "Ionicons",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "optimizelegibility",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.0.1.1",
+          "surface": "::before",
+          "tag": "i",
+          "properties": {
+            "font-family": "Ionicons",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "optimizelegibility",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1",
+          "surface": "element",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "rgba(0, 0, 0, 0.2) 0px 1px 6px 0px",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1",
+          "surface": "::before",
+          "tag": "div",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.0",
+          "surface": "element",
+          "tag": "ul",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.0",
+          "surface": "::before",
+          "tag": "ul",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.0.0",
+          "surface": "element",
+          "tag": "li",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.0.0",
+          "surface": "::before",
+          "tag": "li",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.1",
+          "surface": "element",
+          "tag": "ul",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.1",
+          "surface": "::before",
+          "tag": "ul",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.1.0",
+          "surface": "element",
+          "tag": "li",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.1.0",
+          "surface": "::before",
+          "tag": "li",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.1.1",
+          "surface": "element",
+          "tag": "li",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.1.1",
+          "surface": "::before",
+          "tag": "li",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.2",
+          "surface": "element",
+          "tag": "ul",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        },
+        {
+          "path": "0.1.2",
+          "surface": "::before",
+          "tag": "ul",
+          "properties": {
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-weight": "400",
+            "font-style": "normal",
+            "font-size": "14px",
+            "font-synthesis": "weight style small-caps",
+            "font-kerning": "auto",
+            "font-feature-settings": "normal",
+            "font-variation-settings": "normal",
+            "text-rendering": "auto",
+            "-webkit-font-smoothing": "antialiased",
+            "-moz-osx-font-smoothing": "",
+            "opacity": "1",
+            "box-shadow": "none",
+            "text-shadow": "none",
+            "filter": "none",
+            "mix-blend-mode": "normal",
+            "text-transform": "none",
+            "text-decoration-line": "none",
+            "letter-spacing": "normal"
+          }
+        }
+      ]
+    }
+  ],
+  "canvasMetrics": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "surface": "element",
+      "text": "查询",
+      "requestedFont": "14px / 21px \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "canvasFont": "14px \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "metrics": {
+        "width": 28,
+        "actualBoundingBoxLeft": 1,
+        "actualBoundingBoxRight": 28,
+        "actualBoundingBoxAscent": 12,
+        "actualBoundingBoxDescent": 2,
+        "fontBoundingBoxAscent": 13,
+        "fontBoundingBoxDescent": 3
+      }
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "surface": "::placeholder",
+      "text": "请输入姓名",
+      "requestedFont": "14px \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "canvasFont": "14px \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "metrics": {
+        "width": 70,
+        "actualBoundingBoxLeft": 1,
+        "actualBoundingBoxRight": 70,
+        "actualBoundingBoxAscent": 12,
+        "actualBoundingBoxDescent": 2,
+        "fontBoundingBoxAscent": 13,
+        "fontBoundingBoxDescent": 3
+      }
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "surface": "element",
+      "text": "启用",
+      "requestedFont": "14px / 30px \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "canvasFont": "14px \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "metrics": {
+        "width": 28,
+        "actualBoundingBoxLeft": 1,
+        "actualBoundingBoxRight": 28,
+        "actualBoundingBoxAscent": 12,
+        "actualBoundingBoxDescent": 2,
+        "fontBoundingBoxAscent": 13,
+        "fontBoundingBoxDescent": 3
+      }
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "surface": "::before",
+      "text": "",
+      "requestedFont": "14px / 14px Ionicons",
+      "canvasFont": "14px Ionicons",
+      "metrics": {
+        "width": 14,
+        "actualBoundingBoxLeft": -2,
+        "actualBoundingBoxRight": 12,
+        "actualBoundingBoxAscent": 9,
+        "actualBoundingBoxDescent": -3,
+        "fontBoundingBoxAscent": 13,
+        "fontBoundingBoxDescent": 1
+      }
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Post-layout UTF-16 text boxes are not per-glyph ink outlines or native Figma measurements.",
+    "CDP backend node identities remain supplemental browser evidence, outside Core/Component IR.",
+    "Canvas metrics are separate browser text samples; their ink bounds do not establish DOM baseline, glyph outline equality, or native font-file identity."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "registrySha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+  "components": {
+    "action.button.primary.medium": {
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "18:5",
+      "capturePath": "adapters/figma/metadata/generated-button-baseline-capture/native-evidence.json",
+      "captureSha256": "97482c82ff9ec57675bf1e93cd72cf4140382835b65c572de14a07afef450e65"
+    },
+    "form.input.default.medium": {
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "12:8",
+      "capturePath": "adapters/figma/metadata/official-native-candidates/form.input.default.medium/native-evidence.json",
+      "captureSha256": "27ebc5d41286f2a0a3d6604e2385c1fc69d57615288a9ab1ac7ff8dac8436889"
+    },
+    "form.select.default.medium": {
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "12:15",
+      "capturePath": "adapters/figma/metadata/official-native-candidates/form.select.default.medium/native-evidence.json",
+      "captureSha256": "f56c4f122c2d297b1278e45e0cccded0cd560272cec1d23f1b6ba6cdf756424a"
+    }
+  }
+}

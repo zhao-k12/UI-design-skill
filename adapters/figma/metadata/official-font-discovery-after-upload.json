@@ -1,0 +1,32 @@
+{
+  "scope": "figma_official_font_discovery",
+  "observedDate": "2026-10-06",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pages": [
+    {
+      "id": "0:1",
+      "name": "Page 1"
+    },
+    {
+      "id": "4:2",
+      "name": "adapter-native-smoke/原生布局与图标验收"
+    }
+  ],
+  "queriedFamilies": [
+    "PingFang SC",
+    "Ionicons"
+  ],
+  "matches": [
+    {
+      "family": "Ionicons",
+      "style": "Regular"
+    },
+    {
+      "family": "PingFang SC",
+      "style": "Regular"
+    }
+  ],
+  "availableFontCount": 8929,
+  "createdNodeIds": [],
+  "mutatedNodeIds": []
+}

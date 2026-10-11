@@ -1,0 +1,28 @@
+{
+  "scope": "figma_table_source_border_revision",
+  "status": "PASS",
+  "createdNodeIds": [
+    "32:2",
+    "32:3",
+    "32:4",
+    "32:5"
+  ],
+  "mutatedNodeIds": [
+    "28:5",
+    "28:7",
+    "28:9",
+    "28:4",
+    "28:12",
+    "28:14",
+    "28:16",
+    "28:11",
+    "28:19",
+    "28:21",
+    "28:23",
+    "28:18",
+    "28:3"
+  ],
+  "issues": [],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN"
+}

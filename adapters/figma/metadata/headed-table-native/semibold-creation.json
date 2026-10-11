@@ -1,0 +1,78 @@
+{
+  "status": "CAPTURED",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "81:2",
+  "textReference": "81:3",
+  "fontName": {
+    "family": "PingFang SC",
+    "style": "Semibold"
+  },
+  "fontSize": 14,
+  "lineHeight": {
+    "unit": "PIXELS",
+    "value": 21
+  },
+  "width": 14,
+  "height": 21,
+  "svg": "<svg width=\"13\" height=\"2\" viewBox=\"0 0 13 2\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.77162e-06 -3.09944e-06H12.726V1.456H2.77162e-06V-3.09944e-06Z\" fill=\"black\"/>\n</svg>\n",
+  "createdNodeIds": [
+    "81:2",
+    "81:3"
+  ],
+  "mutatedNodeIds": [],
+  "existingPages": [
+    {
+      "id": "0:1",
+      "name": "Page 1"
+    },
+    {
+      "id": "4:2",
+      "name": "adapter-native-smoke/原生布局与图标验收"
+    },
+    {
+      "id": "35:2",
+      "name": "adapter-fidelity-acceptance/用户管理列表 · TASK-009 验收"
+    },
+    {
+      "id": "49:2",
+      "name": "frozen-user-management-list/pattern.page"
+    },
+    {
+      "id": "64:2",
+      "name": "TASK-019 mixed-font calibration"
+    },
+    {
+      "id": "69:2",
+      "name": "TASK-019 official mixed-font table candidates"
+    }
+  ],
+  "existingTextStyles": [
+    {
+      "id": "S:baff5a23c58b9ed689f45a33d6d2d46086b386fb,",
+      "name": "Official/PingFang SC/Regular/14-21",
+      "fontName": {
+        "family": "PingFang SC",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      }
+    },
+    {
+      "id": "S:547e13d8218d59542473b37080b3c5d20ba4126c,",
+      "name": "Official/Arial/Regular/14-21",
+      "fontName": {
+        "family": "Arial",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      }
+    }
+  ],
+  "fidelityGate": "NOT_RUN"
+}

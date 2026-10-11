@@ -1,0 +1,38 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "ICONS_CREATED",
+    "platform": "penpot",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+    "registrySha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+    "sourceVersion": "remixicon@4.9.1+39eab8b69cadaa47e1bed6a41777b1cd22227c74",
+    "createdNodeIds": [
+      "6d6e57fb-4a0a-8065-8008-c0fc684d16fe",
+      "6d6e57fb-4a0a-8065-8008-c0fc685083af",
+      "6d6e57fb-4a0a-8065-8008-c0fc685276f6",
+      "6d6e57fb-4a0a-8065-8008-c0fc685bc39e",
+      "6d6e57fb-4a0a-8065-8008-c0fc685f668c",
+      "6d6e57fb-4a0a-8065-8008-c0fc685fe066",
+      "6d6e57fb-4a0a-8065-8008-c0fc685fe067",
+      "6d6e57fb-4a0a-8065-8008-c0fc68665f64"
+    ],
+    "mutatedNodeIds": [],
+    "masters": [
+      {
+        "iconId": "remix.settings-3-line",
+        "svgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1",
+        "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc685ca781",
+        "mainReference": "6d6e57fb-4a0a-8065-8008-c0fc685bc39e"
+      },
+      {
+        "iconId": "remix.download-line",
+        "svgSha256": "ad83ac7dc9d4c6af651a53068e928d82f9402cfd05a924742388549846032f43",
+        "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc6866e456",
+        "mainReference": "6d6e57fb-4a0a-8065-8008-c0fc68665f64"
+      }
+    ],
+    "admissionEligible": false
+  }
+}

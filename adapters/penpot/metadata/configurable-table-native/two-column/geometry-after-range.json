@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false,
+  "textSamples": [
+    {
+      "path": "0.0.0.0.1.0.0.0.0",
+      "characters": "赵六",
+      "sourceTextBounds": {
+        "x": 18,
+        "y": 15,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 28
+    },
+    {
+      "path": "0.0.0.0.1.0.1.0.0",
+      "characters": "zhao@example.com",
+      "sourceTextBounds": {
+        "x": 258.328125,
+        "y": 15,
+        "width": 127.828125,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "postScriptName": "ArialMT",
+      "fill": "#515a6e",
+      "sourceBaselineY": 28
+    },
+    {
+      "path": "0.0.0.0.1.1.0.0.0",
+      "characters": "钱七",
+      "sourceTextBounds": {
+        "x": 18,
+        "y": 63,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 76
+    },
+    {
+      "path": "0.0.0.0.1.1.1.0.0",
+      "characters": "qian@example.com",
+      "sourceTextBounds": {
+        "x": 258.328125,
+        "y": 63,
+        "width": 123.9375,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "postScriptName": "ArialMT",
+      "fill": "#515a6e",
+      "sourceBaselineY": 76
+    }
+  ],
+  "sourcePaths": [
+    "candidate/data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72/penpot-v1",
+    "official-source/0.0.0.0.1.0",
+    "official-source/0.0.0.0.1.0.0",
+    "official-source/0.0.0.0.1.0.0.0.0",
+    "official-source/0.0.0.0.1.0.1",
+    "official-source/0.0.0.0.1.0.1.0.0",
+    "official-source/row-border/0.0.0.0.1.0",
+    "official-source/0.0.0.0.1.1",
+    "official-source/0.0.0.0.1.1.0",
+    "official-source/0.0.0.0.1.1.0.0.0",
+    "official-source/0.0.0.0.1.1.1",
+    "official-source/0.0.0.0.1.1.1.0.0",
+    "official-source/row-border/0.0.0.0.1.1",
+    "official-source/0.0::before"
+  ],
+  "borderNormalization": "Contiguous same-color cell borders form one row region; independent bottom pseudo and outer clipping are preserved."
+}

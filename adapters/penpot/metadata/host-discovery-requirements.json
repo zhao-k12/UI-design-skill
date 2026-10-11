@@ -1,0 +1,89 @@
+{
+  "status": "CAPTURED",
+  "evidenceKind": "native-api-readback-derived",
+  "sourceReceiptSha256": "d6ba35e608305ad6f8ce97bd8ada8c95f6fabcdb1154ffa9fad5328efa57a033",
+  "sourceReceiptPath": "artifacts/task-010/live-host-1/discovery-3.json",
+  "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+  "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+  "fileRevision": 0,
+  "availableFontFamilyCount": 1913,
+  "fonts": [
+    {
+      "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70e",
+      "family": "Ionicons",
+      "variants": [
+        {
+          "fontVariantId": "normal-400",
+          "weight": 400,
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "fontId": "gfont-noto-sans-sc",
+      "family": "Noto Sans SC",
+      "variants": [
+        {
+          "fontVariantId": "100",
+          "weight": 100,
+          "style": "normal"
+        },
+        {
+          "fontVariantId": "200",
+          "weight": 200,
+          "style": "normal"
+        },
+        {
+          "fontVariantId": "300",
+          "weight": 300,
+          "style": "normal"
+        },
+        {
+          "fontVariantId": "regular",
+          "weight": 400,
+          "style": "normal"
+        },
+        {
+          "fontVariantId": "500",
+          "weight": 500,
+          "style": "normal"
+        },
+        {
+          "fontVariantId": "600",
+          "weight": 600,
+          "style": "normal"
+        },
+        {
+          "fontVariantId": "700",
+          "weight": 700,
+          "style": "normal"
+        },
+        {
+          "fontVariantId": "800",
+          "weight": 800,
+          "style": "normal"
+        },
+        {
+          "fontVariantId": "900",
+          "weight": 900,
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+      "family": "PingFang SC",
+      "variants": [
+        {
+          "fontVariantId": "normal-400",
+          "weight": 400,
+          "style": "normal"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "fidelityGate": "NOT_RUN"
+}

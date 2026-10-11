@@ -1,0 +1,11 @@
+{
+  "status": "OBSERVED",
+  "fidelityGate": "NOT_RUN",
+  "programProvenance": "Reconstructed from executed host sources and frozen creation receipt; nonce differs from served transport, SDK repair code unchanged.",
+  "files": {
+    "adapters/penpot/metadata/headed-table-native/header-union/repair-program.js": "501340ed0134c448873d369dc03ba8863b289d8d9515463ac0bd2137b0af344b",
+    "adapters/penpot/headed_table_header_repair.js": "0c69c402a687c38286ffab4c4f34277424f9413a86d1f0a4cba51d193f167c8f",
+    "adapters/headed_table_policy.py": "1f084190909afac46c58c63b7e455b6ef8c1799a44bd39e36f069233d4e20f95",
+    ".dev/TASK-020_FIDELITY_DECISION.md": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa"
+  }
+}

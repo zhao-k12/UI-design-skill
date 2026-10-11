@@ -1,0 +1,92 @@
+{
+  "scope": "figma_official_font_preflight",
+  "status": "REVIEW",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "requirements": [
+    {
+      "family": "Ionicons",
+      "status": "MISSING",
+      "availableStyles": [],
+      "binding": null,
+      "uses": [
+        {
+          "logicalId": "form.select.default.medium",
+          "path": "0.0.1.1",
+          "surface": "element",
+          "postScriptName": "Ionicons",
+          "isCustomFont": true
+        },
+        {
+          "logicalId": "form.select.default.medium",
+          "path": "0.0.1.1",
+          "surface": "pseudo:before",
+          "postScriptName": "Ionicons",
+          "isCustomFont": true
+        }
+      ]
+    },
+    {
+      "family": "PingFang SC",
+      "status": "MISSING",
+      "availableStyles": [],
+      "binding": null,
+      "uses": [
+        {
+          "logicalId": "action.button.primary.medium",
+          "path": "0",
+          "surface": "element",
+          "postScriptName": "PingFangSC-Regular",
+          "isCustomFont": false
+        },
+        {
+          "logicalId": "action.button.primary.medium",
+          "path": "0.0",
+          "surface": "element",
+          "postScriptName": "PingFangSC-Regular",
+          "isCustomFont": false
+        },
+        {
+          "logicalId": "form.input.default.medium",
+          "path": "0.1",
+          "surface": "element",
+          "postScriptName": "PingFangSC-Regular",
+          "isCustomFont": false
+        },
+        {
+          "logicalId": "form.input.default.medium",
+          "path": "0.1.shadow.0",
+          "surface": "user-agent-shadow",
+          "postScriptName": "PingFangSC-Regular",
+          "isCustomFont": false
+        },
+        {
+          "logicalId": "form.select.default.medium",
+          "path": "0.0.1",
+          "surface": "element",
+          "postScriptName": "PingFangSC-Regular",
+          "isCustomFont": false
+        },
+        {
+          "logicalId": "form.select.default.medium",
+          "path": "0.0.1.0",
+          "surface": "element",
+          "postScriptName": "PingFangSC-Regular",
+          "isCustomFont": false
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "code": "missing_official_font",
+      "family": "Ionicons"
+    },
+    {
+      "code": "missing_official_font",
+      "family": "PingFang SC"
+    }
+  ],
+  "nativeExecution": "NOT_RUN",
+  "fidelityGate": "NOT_RUN",
+  "admissionEligible": false
+}

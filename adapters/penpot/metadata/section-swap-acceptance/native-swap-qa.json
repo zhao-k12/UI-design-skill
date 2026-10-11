@@ -1,0 +1,10 @@
+{
+  "scope": "native-section-component-swap-qa",
+  "status": "PASS",
+  "nativeStructure": "PASS",
+  "visualReview": "PASS",
+  "nativePngSha256": "1213ff78ffcb9853c588268b293737e2373a73c2bee2d972c2c6c23ed58bd469",
+  "unchangedNativeNodeCount": 74,
+  "issues": [],
+  "fullTask015Acceptance": false
+}

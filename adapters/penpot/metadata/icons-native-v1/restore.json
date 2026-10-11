@@ -1,0 +1,18 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "SOURCE_PATHS_RESTORED",
+    "platform": "penpot",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "6d6e57fb-4a0a-8065-8008-c0fc685bc39e",
+      "6d6e57fb-4a0a-8065-8008-c0fc685276f6",
+      "6d6e57fb-4a0a-8065-8008-c0fc68665f64",
+      "6d6e57fb-4a0a-8065-8008-c0fc685fe067"
+    ],
+    "admissionEligible": false
+  }
+}

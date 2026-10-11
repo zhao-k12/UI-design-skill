@@ -1,0 +1,178 @@
+{
+  "task": "TASK-010",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "adapters/figma/metadata/list-acceptance-native-evidence.json",
+      "sha256": "2c37c9cf8505a900ab4ace48d7d625f71a009eaa3436c0c19ec4a552229a397a"
+    },
+    {
+      "path": "adapters/penpot/capture.js",
+      "sha256": "4eb7673e9c5f92ffdc971c82ac31b53150dedd11b88271b711a7d831ef3d140c"
+    },
+    {
+      "path": "adapters/penpot/host/server.py",
+      "sha256": "d949a3878a9f189edd8745e700ba80a06330c7610ae72fef6fa47916e4721b58"
+    },
+    {
+      "path": "adapters/penpot/metadata/icon-bindings.json",
+      "sha256": "afa3f3005aa01a85a0fe2ad09ae5d67e5ae44ca0b6ff612de90c8961ed6728d3"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/gate-report.json",
+      "sha256": "eff1721505eb765e6dd908707a242fa8a13a80d6101df65fa07a58e19d75f9f3"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/button.query.png",
+      "sha256": "0dc1661beddb5211dc1a1ba74b65bcd790b20bd3eebdbad290cf66e3e354645a"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/button.query.svg",
+      "sha256": "824624182b8655b9ebd8fd2b3fb80d305c4a923a960338a2d88271db12cf6227"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/capture.json",
+      "sha256": "cdd45fa5372f3cce22613b3b36e5a501b34d5516b24cb2e102e9dd3b83918a72"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/default-restoration.json",
+      "sha256": "cbcf2e632fbd5badf544e2177e77c89ebb2e93b5299ea33b502c4f1ac0124b34"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/execution.json",
+      "sha256": "cd88849f7246b08bd433840cce5aad480c83e47db7f6edbc267904d6da434e70"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/final-qa.json",
+      "sha256": "9bee5d3c86b53a1c969dfdee8dafba1457478ce90407bfad1703f5a3b50d9f41"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/header.settings.png",
+      "sha256": "a88c42caddb063dabdc86d6bfd140205096738045e7659854c54288f27b27aa5"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/header.settings.svg",
+      "sha256": "9b33a85bd51c4cbf703ab72ca6fa9ec3135a58c31992c2b39511de9043537107"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/icon-copy-reset.json",
+      "sha256": "19a4c3ea163a7fd1b763f94655f7022372b5af9e83c819ef517adf85ad2eec8c"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/icon-instance-svg-probe.json",
+      "sha256": "4e0f76c5889aaf72e777a9a09437de2277e2aa6075e30c8667a46bba3a8690f9"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/initial-capture.json",
+      "sha256": "91b065e355815b7721c916c496d9a6982dc384092a2f9607330d7076b825d27a"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/initial-instances-capture.json",
+      "sha256": "961f0fc799459cbb5319542ecc933bdbb2c01870f219365e702bbfa3050b72cf"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/input.name.png",
+      "sha256": "e8d5bc115fe4e2084323015b266dbb9ad8ac87b063a90b7a47474b3444106def"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/input.name.svg",
+      "sha256": "e099ad50c55270469f5252dc2c4d210f57a3b5e48c97fb90831b27a71f621d4f"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/instances-capture.json",
+      "sha256": "588e66aa582c0895fc44a3c90b2326d3b3fe5e5061bb661b6282109f703f1cf5"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/list.export.png",
+      "sha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/list.export.svg",
+      "sha256": "0fa7eeafb97d878cb2d830112d8b3e6f541ec42f5f0cb9c2d7956041beda7e12"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/native-page.png",
+      "sha256": "e41dcc6dd820ebed6b7d4f6a159bae6bcfabc4aa9a34199aac16304c086c6b78"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/normalized-capture.json",
+      "sha256": "c841e262289ed684c3bacc404a8dfdb27ec1a09ecfd09ebaadb4cbf77d864ce9"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/partial-instances-capture-1.json",
+      "sha256": "f0b796fda1dc1f59b3bd08d46e22ff351f1ab8dd96d2a65e5fac7ab5821df2db"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/partial-instances-capture-2.json",
+      "sha256": "a71386586de45b3b5fbc922ceb8f69b8cb219b1946c2f8af781e92cf7d4e1a17"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/plan.json",
+      "sha256": "1a9f0c0af334d8156f767d8ecebecc2c6e4aab8361af7ddabb5b373f6fcb1fa0"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/remix.download-line.native.png",
+      "sha256": "919ce1e92686a57e3c3ec0e119c254de369b84b0e9029471bb712a7c21f82988"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/remix.download-line.source.png",
+      "sha256": "919ce1e92686a57e3c3ec0e119c254de369b84b0e9029471bb712a7c21f82988"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/remix.settings-3-line.native.png",
+      "sha256": "731f418d66fdb90f3668b93a6189638054bf2753ff11e448d23353b9c87c82c6"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/remix.settings-3-line.source.png",
+      "sha256": "731f418d66fdb90f3668b93a6189638054bf2753ff11e448d23353b9c87c82c6"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/select.status.png",
+      "sha256": "bce1c4d8e999116e46c1f73983ccb80902aa3a7514134d83e53b163530d559bf"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/select.status.svg",
+      "sha256": "cec0fbab07d507d1515b30ae4296e8f3e1091012973fb2afc6f2a5de57324ea1"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/table.body.png",
+      "sha256": "557534ae3b659b50f60167ff7e680a4c2f60222b3ac86f0d3661a3d1bba2c6bd"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/table.body.svg",
+      "sha256": "dff762d74e8ca40174769494ed4334467989db8ac2bce846cdc7c26a8a966024"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/visual-review.json",
+      "sha256": "a9f52d4131de6d0cae1411657a1971630fa7acdb7a2e86a29d177b1393d5c3f0"
+    },
+    {
+      "path": "adapters/penpot/metadata/list-acceptance/workspace.png",
+      "sha256": "97a5a21e03dd62e03529db7943c9210e8d4ad33c2002e4253df749cd59f1400f"
+    },
+    {
+      "path": "adapters/penpot/metadata/native-fidelity.json",
+      "sha256": "b2bf23728e02bd1f7f7b94e98748a95954a403d9ec492e9114d9783ca35e58ac"
+    },
+    {
+      "path": "adapters/penpot/page_final_qa.py",
+      "sha256": "42909933565ec8e5e38747eedd7547ba8b8e44578dfc3323fd20187631369446"
+    },
+    {
+      "path": "adapters/penpot/page_instances.js",
+      "sha256": "8f5383305ff069ffc76583de7fe368ab6ccabb6a8ca05a13466a8cf6dcc937bb"
+    },
+    {
+      "path": "adapters/penpot/page_recovery.js",
+      "sha256": "6c25da84c1cc42fc2b934c04e3e076132286987774f4162ce5c42e3d20ca4ccf"
+    },
+    {
+      "path": "adapters/penpot/runtime.js",
+      "sha256": "a36b85cf6687048d2d2bdff2678354a56b1c8082d441f3b3dc212f200dfa9aac"
+    },
+    {
+      "path": "examples/adapter-fidelity-acceptance.ui-ir.json",
+      "sha256": "62e69bfaf7aa499d6478b20c3513abea3925061a784e4ba5b6cbc361a252a17f"
+    }
+  ]
+}

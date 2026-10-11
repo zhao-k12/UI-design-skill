@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "containerWidth": 720,
+  "columns": [
+    {
+      "title": "姓名",
+      "key": "name",
+      "width": 240
+    },
+    {
+      "title": "邮箱",
+      "key": "email",
+      "width": 480
+    }
+  ],
+  "records": [
+    {
+      "name": "赵六",
+      "email": "zhao@example.com"
+    },
+    {
+      "name": "钱七",
+      "email": "qian@example.com"
+    }
+  ]
+}

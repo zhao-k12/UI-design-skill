@@ -1,0 +1,12 @@
+{
+  "scope": "component_runtime_extraction",
+  "status": "PASS",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentTypes": [
+    "Table"
+  ],
+  "componentIrSha256": "36aa8465c4d8fe6cfb9b31db977e2cebe10664b41253235a4458311d47932947",
+  "runtimeManifestSha256": "dc3ab21cbebee693369a381f57ba8c1fea0d0247c7f345f6cc36be34b67fb564",
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}

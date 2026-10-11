@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "stage": "structure-qa",
+  "status": "PASS",
+  "readyForLayout": true,
+  "analysisSha256": "d4c77d7269898907607e875729a28a35fecadc04ce616636cd670a2ac58557d2",
+  "pageTreeSha256": "fda1415659d25c58b1eb25fbfd433fa2a6856d99ec17b7e52fec116d52fbec66",
+  "reviewSha256": "f39bca3c6fdfae730e4a5b6f333a920db196351e38e1d33711753ea4bca578a5",
+  "issues": [],
+  "reviewReasons": [],
+  "freeze": {
+    "pageTreeSha256": "fda1415659d25c58b1eb25fbfd433fa2a6856d99ec17b7e52fec116d52fbec66",
+    "analysisSha256": "d4c77d7269898907607e875729a28a35fecadc04ce616636cd670a2ac58557d2"
+  }
+}

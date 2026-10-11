@@ -1,0 +1,106 @@
+{
+  "version": "0.1.0",
+  "layoutTreeSha256": "3618739198bd9b70f2e266ae9a0c80efeacf3704ce0f0b4f4cd371c2764fa412",
+  "registrySha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+  "items": [
+    {
+      "sourceId": "name",
+      "intent": "text",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e2"
+      ],
+      "preferredId": null,
+      "variant": null
+    },
+    {
+      "sourceId": "status",
+      "intent": "choice",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e2"
+      ],
+      "preferredId": null,
+      "variant": null
+    },
+    {
+      "sourceId": "search",
+      "intent": "action",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e2"
+      ],
+      "preferredId": null,
+      "variant": null
+    },
+    {
+      "sourceId": "reset",
+      "intent": "action",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e2"
+      ],
+      "preferredId": null,
+      "variant": null
+    },
+    {
+      "sourceId": "add",
+      "intent": "action",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e3"
+      ],
+      "preferredId": null,
+      "variant": null
+    },
+    {
+      "sourceId": "export",
+      "intent": "action",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e3"
+      ],
+      "preferredId": null,
+      "variant": null
+    },
+    {
+      "sourceId": "users",
+      "intent": "records",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e4"
+      ],
+      "preferredId": null,
+      "variant": null
+    },
+    {
+      "sourceId": "example-row",
+      "intent": "static",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e4"
+      ],
+      "preferredId": null,
+      "variant": null
+    },
+    {
+      "sourceId": "scope-note",
+      "intent": "static",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e5"
+      ],
+      "preferredId": null,
+      "variant": null
+    }
+  ]
+}

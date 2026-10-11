@@ -1,0 +1,97 @@
+{
+  "normalizationVersion": "0.2.0",
+  "scope": "production",
+  "evidenceKind": "native-design-capture",
+  "logicalComponentId": "action.button.primary.medium",
+  "variant": "default",
+  "state": "default-static",
+  "props": {
+    "type": "primary",
+    "size": "default"
+  },
+  "content": {
+    "text": "查询",
+    "options": []
+  },
+  "fixtureContext": {
+    "containerWidth": 240
+  },
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "66d8984b25e8e3e080e864396eaf25f168fd2cf9395a6111628ed9ca7036ed4f",
+  "verification": {
+    "geometryAndStyle": "PASS",
+    "content": "PASS",
+    "fontBinding": "PASS",
+    "glyphGeometry": "PASS",
+    "baselines": "PASS",
+    "renderState": "PASS",
+    "sourceReproduction": "PASS",
+    "vectorBinding": "PASS"
+  },
+  "glyphPaintSamples": [
+    {
+      "characters": "查询",
+      "region": {
+        "x": 16,
+        "y": 7.5,
+        "width": 28,
+        "height": 16
+      },
+      "advances": [
+        14.0,
+        14.0
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "background": [
+        45,
+        140,
+        240
+      ]
+    }
+  ],
+  "allowedCornerRegions": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 4.0,
+      "height": 4.0
+    },
+    {
+      "x": 0,
+      "y": 28.0,
+      "width": 4.0,
+      "height": 4.0
+    },
+    {
+      "x": 56.0,
+      "y": 0,
+      "width": 4.0,
+      "height": 4.0
+    },
+    {
+      "x": 56.0,
+      "y": 28.0,
+      "width": 4.0,
+      "height": 4.0
+    }
+  ],
+  "rasterContext": {
+    "deviceScaleFactor": 1,
+    "background": "white",
+    "scale": 1,
+    "resize": false,
+    "crop": false
+  },
+  "screenshotSha256": "d71f04472994070b4c2c8ebaca843f3e3583e72a9f76946a915633c14e7827a7",
+  "vectorRasterSha256": "4350af088b2699808beec26e25b69072ed59856b57c4684f666f3ec465efbef8",
+  "capture": {
+    "captureId": "render-state-v1/18:5",
+    "exporterVersion": "figma-native-export-v0.1.1",
+    "nativeEvidenceSha256": "d599d125eb90d3fff6d577e5de34c277a1a65eeb0b77ddf2b26b87a023e7c0d4",
+    "proofBundleSha256": "a75d6b852c155ed6d5706af7b4d784f92b08dafa7c42d4503b0c443fa08be52a"
+  }
+}

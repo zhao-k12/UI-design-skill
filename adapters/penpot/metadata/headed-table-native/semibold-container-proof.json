@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "scope": "same_authorized_font_container",
+  "sourcePath": "C:\\Users\\38442\\AppData\\Local\\Microsoft\\Windows\\Fonts\\PingFang SC-Semibold.otf",
+  "sourceSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+  "woffSha256": "7b5dffa57f71e3de21fc332144e11ec3a7066f03bbcd100ae7a7b73ebda1bb0f",
+  "tables": {
+    "head": {
+      "sourceSha256": "3cbffc83f5ea79f1fd0e7aaee9226ad31f7b5fe46b70677e98ff31ea186c3c4d",
+      "woffSha256": "3cbffc83f5ea79f1fd0e7aaee9226ad31f7b5fe46b70677e98ff31ea186c3c4d",
+      "exact": true
+    },
+    "hhea": {
+      "sourceSha256": "01e12488ae85514ac116d6ce9926f69b375d9ebe0255520eaf206935997c384d",
+      "woffSha256": "01e12488ae85514ac116d6ce9926f69b375d9ebe0255520eaf206935997c384d",
+      "exact": true
+    },
+    "maxp": {
+      "sourceSha256": "9fbda8ab1d5c5c08af5560d8f12e026410f66906181a5d89e51d4301ef4f36ec",
+      "woffSha256": "9fbda8ab1d5c5c08af5560d8f12e026410f66906181a5d89e51d4301ef4f36ec",
+      "exact": true
+    },
+    "OS/2": {
+      "sourceSha256": "bbfbc0538e7a453b95db25da090de9805f59ae7f60b79402db046ff6ed22868e",
+      "woffSha256": "bbfbc0538e7a453b95db25da090de9805f59ae7f60b79402db046ff6ed22868e",
+      "exact": true
+    },
+    "name": {
+      "sourceSha256": "3531242bac99cc2fa428dfc39339826ce9a91e4302dc8133cc3b765aa2a6ffd3",
+      "woffSha256": "3531242bac99cc2fa428dfc39339826ce9a91e4302dc8133cc3b765aa2a6ffd3",
+      "exact": true
+    },
+    "cmap": {
+      "sourceSha256": "45f6c7a6a02d2b4eabc7e50573c3bfa87447f9dec4a6dd31ab47f275062d692a",
+      "woffSha256": "45f6c7a6a02d2b4eabc7e50573c3bfa87447f9dec4a6dd31ab47f275062d692a",
+      "exact": true
+    },
+    "post": {
+      "sourceSha256": "35848ab602025cf8a29bf23cc64d62f7c87f1ac9609cd80ac8e1b337e1e96025",
+      "woffSha256": "35848ab602025cf8a29bf23cc64d62f7c87f1ac9609cd80ac8e1b337e1e96025",
+      "exact": true
+    },
+    "CFF ": {
+      "sourceSha256": "85ec00ee55e4cd13288a8a9f8a7a0cc436fd96bc485028a8a48135d71fd8228d",
+      "woffSha256": "85ec00ee55e4cd13288a8a9f8a7a0cc436fd96bc485028a8a48135d71fd8228d",
+      "exact": true
+    },
+    "BASE": {
+      "sourceSha256": "8b4ff417ebd7193129645d3e9e1d3c4e2feb8e8bbf4fd8abbaa2e9117df66265",
+      "woffSha256": "8b4ff417ebd7193129645d3e9e1d3c4e2feb8e8bbf4fd8abbaa2e9117df66265",
+      "exact": true
+    },
+    "GSUB": {
+      "sourceSha256": "de056d2fc9c400ee3e3a3f4caee12b9f26367795f8138918d902dd7207ba0edd",
+      "woffSha256": "de056d2fc9c400ee3e3a3f4caee12b9f26367795f8138918d902dd7207ba0edd",
+      "exact": true
+    },
+    "VORG": {
+      "sourceSha256": "8b9267190a1baa931804bcb61c77ba087d86405642e0bdb2742f5b5ad765ab8c",
+      "woffSha256": "8b9267190a1baa931804bcb61c77ba087d86405642e0bdb2742f5b5ad765ab8c",
+      "exact": true
+    },
+    "cidg": {
+      "sourceSha256": "022b62f15b36a23aea48d9b5d4925d9e8dc67fdf989a286ea09614d12927b384",
+      "woffSha256": "022b62f15b36a23aea48d9b5d4925d9e8dc67fdf989a286ea09614d12927b384",
+      "exact": true
+    },
+    "hmtx": {
+      "sourceSha256": "239228c4d2031d6c1efbfa3ea9f86d87f50b72f9edf1658a015b5002895bc7e4",
+      "woffSha256": "239228c4d2031d6c1efbfa3ea9f86d87f50b72f9edf1658a015b5002895bc7e4",
+      "exact": true
+    },
+    "meta": {
+      "sourceSha256": "dc6ccd8fd0be7cfe405fc02c7f19c92a1f1130c4fb2761523e9a8b5df5e6d5f6",
+      "woffSha256": "dc6ccd8fd0be7cfe405fc02c7f19c92a1f1130c4fb2761523e9a8b5df5e6d5f6",
+      "exact": true
+    },
+    "trak": {
+      "sourceSha256": "32f1e502f5269f83c0a804c23399f1e5c9d3be014399bf481730b6a5aeb1896b",
+      "woffSha256": "32f1e502f5269f83c0a804c23399f1e5c9d3be014399bf481730b6a5aeb1896b",
+      "exact": true
+    },
+    "vhea": {
+      "sourceSha256": "edc74a5f8337b48f350e1e9b2e740adeee850c87b07f1b07a5a854cd82fa2b97",
+      "woffSha256": "edc74a5f8337b48f350e1e9b2e740adeee850c87b07f1b07a5a854cd82fa2b97",
+      "exact": true
+    },
+    "vmtx": {
+      "sourceSha256": "3a2e33511e5f39453307e1d1e841d5c53f1bf5c4bfdd74905670e3cd20c8abd5",
+      "woffSha256": "3a2e33511e5f39453307e1d1e841d5c53f1bf5c4bfdd74905670e3cd20c8abd5",
+      "exact": true
+    }
+  },
+  "programSha256": "3133111c1170f58c2e85134edac9face4d88bfbe13665f62590b9b6993a598f6",
+  "nativeFidelity": "NOT_RUN"
+}

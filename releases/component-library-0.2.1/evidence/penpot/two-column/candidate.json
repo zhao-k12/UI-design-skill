@@ -1,0 +1,193 @@
+{
+  "normalizationVersion": "0.2.1",
+  "pixelRegionPolicy": "positive-area-intersection",
+  "scope": "production",
+  "evidenceKind": "native-design-capture",
+  "logicalComponentId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+  "variant": "default",
+  "state": "default-static",
+  "props": {
+    "showHeader": false,
+    "border": false,
+    "stripe": false,
+    "columns": [
+      {
+        "title": "姓名",
+        "key": "name",
+        "width": 240
+      },
+      {
+        "title": "邮箱",
+        "key": "email",
+        "width": 480
+      }
+    ],
+    "data": [
+      {
+        "name": "赵六",
+        "email": "zhao@example.com"
+      },
+      {
+        "name": "钱七",
+        "email": "qian@example.com"
+      }
+    ]
+  },
+  "content": {
+    "text": null,
+    "options": []
+  },
+  "fixtureContext": {
+    "containerWidth": 720
+  },
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "3c3993bb4ca86b5d4686818e2312410e7d35e03531aa8f87ec8c0e340ab082f9",
+  "verification": {
+    "geometryAndStyle": "PASS",
+    "content": "PASS",
+    "fontBinding": "PASS",
+    "glyphGeometry": "PASS",
+    "baselines": "PASS",
+    "renderState": "PASS",
+    "sourceReproduction": "PASS",
+    "vectorBinding": "PASS"
+  },
+  "glyphPaintSamples": [
+    {
+      "characters": "赵六",
+      "region": {
+        "x": 18,
+        "y": 15,
+        "width": 28,
+        "height": 16
+      },
+      "advances": [
+        14.0,
+        14.0
+      ],
+      "foreground": [
+        81,
+        90,
+        110
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "characters": "zhao@example.com",
+      "region": {
+        "x": 258.328125,
+        "y": 15,
+        "width": 127.828125,
+        "height": 16
+      },
+      "advances": [
+        7.0,
+        7.78125,
+        7.78125,
+        7.78125,
+        14.21875,
+        7.78125,
+        7.0,
+        7.796875,
+        11.65625,
+        7.78125,
+        3.109375,
+        7.796875,
+        3.890625,
+        7.0,
+        7.78125,
+        11.671875
+      ],
+      "foreground": [
+        81,
+        90,
+        110
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "characters": "钱七",
+      "region": {
+        "x": 18,
+        "y": 63,
+        "width": 28,
+        "height": 16
+      },
+      "advances": [
+        14.0,
+        14.0
+      ],
+      "foreground": [
+        81,
+        90,
+        110
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "characters": "qian@example.com",
+      "region": {
+        "x": 258.328125,
+        "y": 63,
+        "width": 123.9375,
+        "height": 16
+      },
+      "advances": [
+        7.78125,
+        3.109375,
+        7.78125,
+        7.796875,
+        14.203125,
+        7.78125,
+        7.0,
+        7.796875,
+        11.65625,
+        7.78125,
+        3.109375,
+        7.796875,
+        3.890625,
+        7.0,
+        7.78125,
+        11.671875
+      ],
+      "foreground": [
+        81,
+        90,
+        110
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "allowedCornerRegions": [],
+  "rasterContext": {
+    "deviceScaleFactor": 1,
+    "background": "white",
+    "scale": 1,
+    "resize": false,
+    "crop": false
+  },
+  "screenshotSha256": "83ca318fa215d73e84b48f06f18992f0e2e7aa802f5b5dc46e0bf9ea993428fa",
+  "vectorRasterSha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25",
+  "capture": {
+    "captureId": "penpot-configurable-table-27e6175d80abe5709f6f1b364f11aadbf969b5b06dd90060d2606a9b8ff0d626",
+    "exporterVersion": "penpot-configurable-table-normalization-0.2.1",
+    "nativeEvidenceSha256": "31ba2755e90c9a335f280b07bbe79a5e8c8c6ae971d3c7e9f70f51fb62ba9843",
+    "proofBundleSha256": "5cf0de310a0cc66f2f1be14e35f2b04d2b20b35c3145a70be583badf5e742bee"
+  }
+}

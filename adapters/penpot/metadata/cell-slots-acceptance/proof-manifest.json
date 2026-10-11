@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "scope": "native Cell slot subtask evidence",
+  "fullTask015Acceptance": false,
+  "files": {
+    "after-capture.json": "3aa879f8d9f1ae80c1674c76d139c7cb9134290d7783d4c5cda0a55086829aba",
+    "after-native.png": "757d56e90129e2e2a3fba799d8b6a8d729de4c56cc9aa505b474e265b2a5f646",
+    "before-capture.json": "ce3fd71f1c69873487bc4e46de3613e75ef479c8ca28403d35e7bd6ea566d7b9",
+    "before-native.png": "cec6615b46591cb6fc35abbd44018cc050dc1ee93381f4c4378fc207509e0b63",
+    "execution.json": "11ab2ffaf6fa747e7a50a2080bf14d6d355c3b006d71ed5035a8fc057d63928e",
+    "fill.json": "9ee1839fd0cae2e2e39dff708f85e4fd08fb4cd5debc096659c6533492095b70",
+    "qa-report.json": "bb63ff3c1febc8ea1394e0d9ce76473ebc3abf05ef7a67775c17ed04ec90e64d",
+    "request.json": "7cf8d2118e269b0faf76e409d1f92b9230ed388e8cad7403a63c46dd5f562df8",
+    "served-plugin.js": "08c74c4b53c5c39067d172a0a3325af22855424f6a0a627bf557ed0dc6ea00f2",
+    "visual-review.json": "8eec7a7550c9f74217076509dcbd74dc0cff5d658c251be21e7724aa8eb010ad"
+  },
+  "sourceFiles": {
+    "adapters/cell_slots_qa.py": "77a35ddb551c7e98c195889cdc21c5969d2090f786d0c6bae4f63e4b9cd98179",
+    "adapters/penpot/cell_slots.js": "0abbf033ac10e614472fb6e249bb0e40da6c80c1ae5a71d960dec99294f71202"
+  }
+}

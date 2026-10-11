@@ -1,0 +1,17 @@
+{
+  "name": "ui-design-skill-runtime-extractor",
+  "version": "0.1.0-dev",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lock:source": "node component-builder/source-reader/lock-source.mjs",
+    "extract": "node component-builder/runtime-renderer/extract.mjs --output artifacts/task-006",
+    "test:runtime": "node --test tests/runtime-extraction.test.mjs"
+  },
+  "dependencies": {
+    "esbuild": "0.28.2",
+    "playwright": "1.63.0",
+    "view-ui-plus": "1.3.24",
+    "vue": "3.5.43"
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "task": "TASK-019",
+  "status": "IN_PROGRESS",
+  "fidelityStatus": "NOT_RUN",
+  "productionAdmission": false,
+  "validation": {
+    "node": {
+      "passed": 108,
+      "failed": 0
+    },
+    "selectedPython": {
+      "passed": 10,
+      "failed": 0
+    },
+    "additionalPython": {
+      "passed": 7,
+      "failed": 0
+    }
+  },
+  "files": [
+    {
+      "path": "adapters/configurable_table.py",
+      "sha256": "ce44f127a87ae08dab8bf607ca6ec7a02d466b923346dcc971334d3d8054ef74",
+      "bytes": 6976
+    },
+    {
+      "path": "adapters/figma/configurable_font_calibration.py",
+      "sha256": "e88a3e1d460b2b9e32590eab31ddcd93648537c0bbaccfa88660b44acbfe3968",
+      "bytes": 4357
+    },
+    {
+      "path": "adapters/figma/metadata/configurable-table-native/arial-font-post-upload.json",
+      "sha256": "768b25d0432dcd3dfdbeea929ff1f303d974b015b847577a1d377282df374dc7",
+      "bytes": 302
+    },
+    {
+      "path": "adapters/figma/metadata/configurable-table-native/arial-font-preflight.json",
+      "sha256": "e758d06bc653b3973deb0e96017f81f48e5b29c133d6c7cd082c318303b1644f",
+      "bytes": 335
+    },
+    {
+      "path": "adapters/figma/metadata/configurable-table-native/arial-upload-dialog.png",
+      "sha256": "e64d73e77da5f1b37a7a146697a12f5f509bcad4a2500ef0ca068907a4e678e2",
+      "bytes": 54499
+    },
+    {
+      "path": "adapters/figma/metadata/configurable-table-native/arial-upload-preparation.json",
+      "sha256": "81f5f403c88ce4c337382c75fd9cb500fd58a9ecf51b6b986ea2d2fb1230c1a5",
+      "bytes": 662
+    },
+    {
+      "path": "adapters/figma/metadata/configurable-table-native/arial-upload-success.png",
+      "sha256": "1b2abcee4f58516b4ccfd5ed303698a044796003f0c4e90b9691fa3e9acc4a85",
+      "bytes": 60645
+    },
+    {
+      "path": "adapters/figma/metadata/configurable-table-native/mixed-font-calibration.json",
+      "sha256": "26fe2e810be3a471b44f1f92858690baa0fab7640d52dc56ae9ca8c5b8cbb434",
+      "bytes": 20054
+    },
+    {
+      "path": "adapters/figma/metadata/configurable-table-native/mixed-font-encoding-diagnostic.json",
+      "sha256": "075175e9f992c72a84a02b89e0d25e5debd2c997240091c77a6a73da925f2031",
+      "bytes": 2340
+    },
+    {
+      "path": "adapters/figma/metadata/configurable-table-native/mixed-font-readback.json",
+      "sha256": "3daf69329a785f74edd3ec3c11bd25e1d461664084a7be2dd3ea2cb0d2f7398a",
+      "bytes": 20020
+    },
+    {
+      "path": "adapters/penpot/configurable_table_candidate.js",
+      "sha256": "87be867f78f125ea708a2150e4c0cc4e1eea0dbf174087eadde1e6064d3e28d7",
+      "bytes": 4931
+    },
+    {
+      "path": "adapters/penpot/configurable_table_capture.js",
+      "sha256": "b2e3d7fa7799d5e2457b858a3011e8890401c7f76a8a33cb7352da5d425ac633",
+      "bytes": 5046
+    },
+    {
+      "path": "adapters/penpot/configurable_table_qa.py",
+      "sha256": "9360025e76cd9aa69645349c698119c8bbdfc97b8588bad55440ff0288600979",
+      "bytes": 4437
+    },
+    {
+      "path": "adapters/penpot/configurable_table_svg_probe.mjs",
+      "sha256": "34906b52d3bb90288e4bf7f2f929aeb7cdf93b54948609ee80c40533787fdc2f",
+      "bytes": 7360
+    },
+    {
+      "path": "adapters/penpot/host/configurable_table_server.py",
+      "sha256": "0d0c6c61f554f75d7a1630fb9e04773f9c529fa80659603eec5fffd05d45f0e2",
+      "bytes": 8207
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/all-font-ranges-discovery-1.json",
+      "sha256": "735fa220690fea451ccae5f07558f005442b1b7fb529fb5d7e97e8b757285aab",
+      "bytes": 17060
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/all-font-ranges-discovery-2.json",
+      "sha256": "48f610a5a36c45dfcc472ded5505bfe702b05ab67584cd7a36e649fd1bf22b75",
+      "bytes": 110096
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/all-font-ranges-two-column-retry.json",
+      "sha256": "fbdc4fe92a57c76e8eed580dfd53d0a2db2143b5ec115a18953db167da4b6e3c",
+      "bytes": 111416
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/arial-container-comparison.json",
+      "sha256": "4b82b980d12a6962fc5cf014150c89be02e94fa4bb2713dafcf501c41e05e3f2",
+      "bytes": 2572
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/arial-upload.png",
+      "sha256": "a34c75dd031bed9bce2fdd9ac33828e627890632079029632700d3c356e646f0",
+      "bytes": 71536
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/creation-program.js",
+      "sha256": "18d19e40e5c2dcaff45920956e79d10d318c990025bbac7c6bb5e870b2805f68",
+      "bytes": 38449
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/creation.json",
+      "sha256": "76a25aab63d492c880498efb40e4685b945a0d203d75b8d8d6077d4e6f74257a",
+      "bytes": 8590
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/font-discovery.json",
+      "sha256": "dc1d605a526ce23459a4a72490213caaef00f4654faba180998df282e2ca3c07",
+      "bytes": 1140127
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/font-range-reapply.json",
+      "sha256": "1d3531794f6e175ecbd4cd561e45eb4552c81e3b151df70d77652b4267f40fa5",
+      "bytes": 5092
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/font-resources.json",
+      "sha256": "d22a07ec9f144239ff8293ee19825c4a8e25fb3667a527af6065b75d8d0d6051",
+      "bytes": 574
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/edge-diagnostic.json",
+      "sha256": "31f23282dc9e41b50299f92776b15df588e2d7a5bea7e450ee6ea1ff20f91919",
+      "bytes": 366
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/geometry-after-range.json",
+      "sha256": "9d429209f03125ec12b289b5dbd076a2a805ebd8ebbc6f6b9e3db38d4e7f5b27",
+      "bytes": 7995
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/geometry-report.json",
+      "sha256": "9d429209f03125ec12b289b5dbd076a2a805ebd8ebbc6f6b9e3db38d4e7f5b27",
+      "bytes": 7995
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/native-after-range.pdf",
+      "sha256": "909dfdc35a6064683b8b6e78802c4421cefe47b736841c8331b29cb9ccf1e5a1",
+      "bytes": 40848
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/native-after-range.png",
+      "sha256": "4a3a3053fd5ba7b0a0ee7fcaeb5b53c36eaee086bdee1446d49efb73d1c62708",
+      "bytes": 11621
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/native-after-range.svg",
+      "sha256": "d5e7a424989b19f6a7f242847745e10836049fbe56a5fe395b433f7d2cd3ecfc",
+      "bytes": 27341
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/native.pdf",
+      "sha256": "f75437495773826e573ffc970381c6bbd9a0097a2aca289850b4f036d6b95322",
+      "bytes": 40885
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/native.png",
+      "sha256": "7032f7c3ae30df8a88dd4f25fe147cf384f34f3a6ca4279b1d91a5dd76784ae6",
+      "bytes": 11618
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/native.svg",
+      "sha256": "35b53397bc0f0251174993d6357c272fe70a4e63a162511cc5d76f48c1429892",
+      "bytes": 27317
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/svg-probe.json",
+      "sha256": "5c143bf2c24c002622904b4617945f95f8999e29fbfec15134ba3d16ff6e69ff",
+      "bytes": 12492
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column/vector-after-range.png",
+      "sha256": "1b12aa52a125e1ca68224318222ff272215edb1d3caec6077d87eca727e38a23",
+      "bytes": 10159
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column-capture-after-range.json",
+      "sha256": "8a50aad12feb7335d60de6e70422ca555529d11d4c6ea903ca69e0f8fd7d5bea",
+      "bytes": 295216
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/four-column-capture-initial.json",
+      "sha256": "3ade5fe03a45ad8c12e1c27cec68e9ca24c42f8b05a2ec053dd33adeb87d4822",
+      "bytes": 295120
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/range-reapply-program.js",
+      "sha256": "1997d64f1efaf5deac19ae3381c0182c2a07b6aab9564a02f4b9ddb5d19a0fe0",
+      "bytes": 48465
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/edge-diagnostic.json",
+      "sha256": "4cfef95f8ebd3487141adfd221b3d377cab7619ae0665d219a8bbaff359d27ab",
+      "bytes": 365
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/geometry-after-range.json",
+      "sha256": "8357a3f18bfa56c51093c29861b8d037aa2b77d4c58c3f2118d2c46c2b9bb7aa",
+      "bytes": 2397
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/geometry-report.json",
+      "sha256": "8357a3f18bfa56c51093c29861b8d037aa2b77d4c58c3f2118d2c46c2b9bb7aa",
+      "bytes": 2397
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/native-after-range.pdf",
+      "sha256": "f40e18c184f52cbd7d68c09cb39600dc293476b04f9a22dd919c57d53c251566",
+      "bytes": 24686
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/native-after-range.png",
+      "sha256": "a0f033b1e8c667bc9bc06fbe4b8c9150aaed1acf412713bc45d5367db023567f",
+      "bytes": 7204
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/native-after-range.svg",
+      "sha256": "2a39f37b9d3a0ec6577844cd147e8490bcd0fb4419b3ee7fb679ff302fe06603",
+      "bytes": 8990
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/native.pdf",
+      "sha256": "9791f7b00cd95a56d04512151c47908bab230df54b0e77ad6ba9608810a41afe",
+      "bytes": 24728
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/native.png",
+      "sha256": "18ce071661b4714c20586e635c21e9b4a2dbc4fcaedd9fde22ddba275bdd04b1",
+      "bytes": 7690
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/native.svg",
+      "sha256": "cc4cf36dd3a90e822b5e4c25dcef7d94f90c9d16ffa55631bfb6c773e4b33a51",
+      "bytes": 8996
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/svg-probe.json",
+      "sha256": "a307f29199d2065674c4d5de6a22afcd10221071e53a20e996ec86d65870e0c8",
+      "bytes": 8323
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column/vector-after-range.png",
+      "sha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25",
+      "bytes": 4754
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column-capture-after-range.json",
+      "sha256": "f6bfbf2f016af495484bdf9b3507b56706f62880a90498a478562c4f1affc352",
+      "bytes": 111416
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column-capture-initial.json",
+      "sha256": "69f8c2f64cbded49da9ddad2472544b57e3c71b68c0b193d5138a22396531d2b",
+      "bytes": 112154
+    },
+    {
+      "path": "adapters/penpot/metadata/configurable-table-native/two-column-capture-reload.json",
+      "sha256": "eb308fba1b4c65605c229594666dea11ba60f9632880d59ec13cf5b96ce2625e",
+      "bytes": 112136
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/component_ir.json",
+      "sha256": "36aa8465c4d8fe6cfb9b31db977e2cebe10664b41253235a4458311d47932947",
+      "bytes": 204324
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/configurable-source.json",
+      "sha256": "372ac19ad00d121888e8192b7c3a124ed92c31e863a7fc1b9ef5cd7b114087fd",
+      "bytes": 530
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122.png",
+      "sha256": "1b12aa52a125e1ca68224318222ff272215edb1d3caec6077d87eca727e38a23",
+      "bytes": 10159
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/extraction_report.json",
+      "sha256": "f835dddcc87f97dfb7dc6b464399403450869c13c0648981e89907e189887c62",
+      "bytes": 419
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/official-runtime-gallery.png",
+      "sha256": "0906e2094a62e0bc08cbbe3765b184330903be2844e685e5a9ba12859e032a80",
+      "bytes": 11666
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/request.json",
+      "sha256": "e9c1a1a52cc7efe80b1ac504a0221b083a2663baf9ae0cca71178cc0586393fe",
+      "bytes": 860
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/runtime_manifest.json",
+      "sha256": "dc3ab21cbebee693369a381f57ba8c1fea0d0247c7f345f6cc36be34b67fb564",
+      "bytes": 101411
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/source-extractor.mjs",
+      "sha256": "41c401c958aee5aa19d2e5a5d2bb6414248f579858689697b9f935e0a05f69ff",
+      "bytes": 4059
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/four-column/table-observation.json",
+      "sha256": "4899e5745ac282403599fc484fdf0542bfadd745d8338527b104a04ee43d623a",
+      "bytes": 9104
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/component_ir.json",
+      "sha256": "383e4a3e017a3a105f4d053fe4a464d371da2ddf51e1dda5eba989aca4d4b29e",
+      "bytes": 90701
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/configurable-source.json",
+      "sha256": "f03b538473197a397e69ae6ca6f0fb6860d2ceae61385efbb5006a5d2e187fb5",
+      "bytes": 530
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72.png",
+      "sha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25",
+      "bytes": 4754
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/extraction_report.json",
+      "sha256": "fe8a32fcbdb2b2c291c1ed2104fd77bdd0c21c55f113d7cba2839bd92e856fa6",
+      "bytes": 419
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/official-runtime-gallery.png",
+      "sha256": "86880d60f1014094e4f0b49dfaa34621c29351a82bfb6fc3bbedd7dca9125352",
+      "bytes": 6387
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/request.json",
+      "sha256": "6351bc002ecbaf26aa3a50c3e89228837759af505cfc1a3d241c76afd322ac39",
+      "bytes": 387
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/runtime_manifest.json",
+      "sha256": "9ea110e83aac56c4e3390a9f61a695ec79dc4ea5cf0d4a389c11cbcd171eb7fc",
+      "bytes": 101410
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/source-extractor.mjs",
+      "sha256": "41c401c958aee5aa19d2e5a5d2bb6414248f579858689697b9f935e0a05f69ff",
+      "bytes": 4059
+    },
+    {
+      "path": "component-builder/runtime-renderer/metadata/configurable-table-source/two-column/table-observation.json",
+      "sha256": "12d56a523432b2b729ce59467c302df25275dda2a43e8534cac72ae9fbc4e414",
+      "bytes": 3959
+    },
+    {
+      "path": "component-builder/runtime-renderer/table-typography-extract.mjs",
+      "sha256": "6133f80f693b584843d32144e07c2d4f25790ccff65cad0188495f6db1886c31",
+      "bytes": 4315
+    }
+  ],
+  "hashScope": "Git staged artifact bytes; evidence paths preserve raw bytes through -text attributes."
+}

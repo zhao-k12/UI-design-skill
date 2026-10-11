@@ -1,0 +1,20 @@
+{
+  "scope": "TASK-018 official Table source extraction",
+  "nodeSuite": {
+    "tests": 106,
+    "failures": 0
+  },
+  "pythonPipelineRegression": {
+    "tests": 10,
+    "failures": 0
+  },
+  "finalChangedTestRerun": {
+    "tests": 4,
+    "failures": 0
+  },
+  "nativeExecution": "NOT_RUN",
+  "productionAdmission": false,
+  "visualReview": {
+    "four-column": "PASS; four rows, four columns, no clipped visible content in official browser PNG"
+  }
+}

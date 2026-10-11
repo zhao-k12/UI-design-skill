@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "containerWidth": 960,
+  "columns": [
+    {"key": "code", "title": "编号", "width": 160},
+    {"key": "name", "title": "姓名", "width": 240},
+    {"key": "department", "title": "部门", "width": 320},
+    {"key": "status", "title": "状态", "width": 240}
+  ],
+  "records": [
+    {"code": "001", "name": "张三", "department": "研发", "status": "启用"},
+    {"code": "002", "name": "李四", "department": "财务", "status": "停用"},
+    {"code": "003", "name": "王五", "department": "运营", "status": "启用"},
+    {"code": "004", "name": "赵六", "department": "客服", "status": "启用"}
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "adapterVersion": "0.1.0",
+  "documentId": "task015-six-cell-slots",
+  "uiIrSha256": "a414f564c5d05dab3045ce62bd9e224597b2715885d01ab3b3b1bbec6ccafaaa",
+  "tokensSha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+  "componentsSha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+  "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pages": [
+    {
+      "id": "slot-page",
+      "name": "六类槽位验收",
+      "type": "Page",
+      "layout": {
+        "width": {
+          "mode": "fixed",
+          "value": 1440
+        },
+        "height": {
+          "mode": "fixed",
+          "value": 80
+        },
+        "padding": {
+          "top": 24,
+          "right": 24,
+          "bottom": 24,
+          "left": 24
+        },
+        "gap": 0,
+        "direction": "vertical",
+        "wrap": false,
+        "alignment": {
+          "main": "start",
+          "cross": "start"
+        }
+      },
+      "style": {
+        "fill": "#f4f5f7"
+      },
+      "children": [
+        {
+          "id": "slot-cell",
+          "name": "slot-cell",
+          "type": "Frame",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 1392
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32
+            },
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "gap": 8,
+            "direction": "horizontal",
+            "wrap": false,
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "style": {},
+          "children": [
+            {
+              "id": "slot-cell.slot.leading-icon",
+              "name": "slot-cell.slot.leading-icon",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 24
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.label",
+              "name": "slot-cell.slot.label",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 28
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.control",
+              "name": "slot-cell.slot.control",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 240
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.trailing-icon",
+              "name": "slot-cell.slot.trailing-icon",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 24
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.content",
+              "name": "slot-cell.slot.content",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 56
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": []
+            },
+            {
+              "id": "slot-cell.slot.actions",
+              "name": "slot-cell.slot.actions",
+              "type": "Frame",
+              "layout": {
+                "width": {
+                  "mode": "fixed",
+                  "value": 60
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 32
+                },
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 8,
+                "direction": "horizontal",
+                "wrap": false,
+                "alignment": {
+                  "main": "start",
+                  "cross": "center"
+                }
+              },
+              "style": {},
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

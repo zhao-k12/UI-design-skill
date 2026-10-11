@@ -1,0 +1,14 @@
+{
+  "type": "task010-result",
+  "status": "FAIL",
+  "error": "Error: candidate_capture_document_changed",
+  "result": {
+    "status": "FAIL",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "createdNodeIds": [],
+    "candidates": [],
+    "mutatedNodeIds": [],
+    "admissionEligible": false,
+    "fidelityGate": "NOT_RUN"
+  }
+}

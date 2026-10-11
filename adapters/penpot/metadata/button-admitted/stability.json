@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "captureSha256": [
+    "bf1610804cdb9491dca85edbfe682ec8f34d0c2fc6683ffb8daa79a4a906923b",
+    "039798dda81b7340f80f006e5c52744b3142e88161c87a328e51467145ece75e"
+  ],
+  "nodesExactlyEqual": true,
+  "nativePngBytesExactlyEqual": true,
+  "nativePngSha256": "0dc1661beddb5211dc1a1ba74b65bcd790b20bd3eebdbad290cf66e3e354645a",
+  "admissionEligible": false,
+  "scope": "native-png-and-node-repeatability-only",
+  "completeRepeatCapture": false,
+  "repeatExportIssues": [
+    {
+      "code": "native_export_failed",
+      "shapeReference": "10f3de97-3a09-806f-8008-c0aff49d61db",
+      "type": "svg",
+      "detail": "#error {:message \"http error\", :data {:type :server-error, :code :timeout, :hint \"ResourceRequest timed out\", :data {:type :internal, :code :timeout, :hint \"ResourceRequest timed out\"}, :uri \"https://design.penpot.app/api/export\", :status 500}}"
+    }
+  ]
+}

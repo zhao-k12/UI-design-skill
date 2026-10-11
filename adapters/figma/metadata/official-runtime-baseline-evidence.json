@@ -1,0 +1,107 @@
+{
+  "scope": "official_runtime_baseline_diagnostic",
+  "status": "PASS",
+  "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "referenceMatches": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 840,
+      "height": 240
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "8f3dd0fed4f4627bbc91c6e043c510d95207f1a7b6458a2e8786a4a9bf72f416",
+    "harnessBundleSha256": "6cfb8d54afb47684ca3b9d1b30983d2cd9926dcf4081679c2467e539689c27e0",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "1cf745c3419bce7023c26ae27a0af97b9fbb3903737ee8deba629296aecde000"
+  },
+  "observations": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "status": "OBSERVED",
+      "characters": "查询",
+      "baselineDocumentY": 44.5,
+      "baselineComponentY": 20.5,
+      "baselineElementY": 15,
+      "elementBounds": {
+        "x": 40,
+        "y": 29.5,
+        "width": 28,
+        "height": 21
+      },
+      "textRangeBounds": {
+        "x": 40,
+        "y": 31.5,
+        "width": 28,
+        "height": 16
+      },
+      "method": "temporary_zero_extent_inline_block_bottom_margin_edge",
+      "originalGeometryAndMarkupRestored": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "status": "UNSUPPORTED",
+      "reason": "placeholder_baseline_not_exposed_by_standard_dom"
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "status": "OBSERVED",
+      "characters": "启用",
+      "baselineDocumentY": 45,
+      "baselineComponentY": 21,
+      "baselineElementY": 20,
+      "elementBounds": {
+        "x": 553,
+        "y": 25,
+        "width": 238,
+        "height": 30
+      },
+      "textRangeBounds": {
+        "x": 561,
+        "y": 32,
+        "width": 28,
+        "height": 16
+      },
+      "method": "temporary_zero_extent_inline_block_bottom_margin_edge",
+      "originalGeometryAndMarkupRestored": true
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Instrumentation is temporary and checks original geometry/markup before, during and after.",
+    "Input placeholder and pseudo-element baselines are unsupported; no glyph or canvas metric is used to infer them."
+  ]
+}

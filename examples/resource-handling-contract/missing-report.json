@@ -1,0 +1,75 @@
+{
+  "scope": "resource-resolution",
+  "status": "Missing",
+  "readyForAdapter": false,
+  "assetRegistrySha256": "47a61c4b2eaecb3685f1d002e7ee0152586d741c7a911656c3d6c887370adc9f",
+  "resolvedAssets": {},
+  "issues": [
+    {
+      "code": "missing_asset",
+      "nodeId": "logo",
+      "logicalId": "contract.missing-logo",
+      "message": "No existing prototype or registered asset: contract.missing-logo"
+    },
+    {
+      "code": "missing_component",
+      "nodeId": "button",
+      "logicalId": "contract.missing-button",
+      "message": "No current component registry supplied"
+    },
+    {
+      "code": "missing_icon",
+      "nodeId": "icon",
+      "logicalId": "remix.contract-missing-icon",
+      "message": "No current official icon registry supplied"
+    }
+  ],
+  "document": {
+    "uiIrVersion": "0.1.0",
+    "documentId": "missing-resource-contract",
+    "pages": [
+      {
+        "id": "page",
+        "type": "Page",
+        "children": [
+          {
+            "id": "logo",
+            "type": "Image",
+            "assetId": "contract.missing-logo",
+            "alt": "Explicit missing-resource contract"
+          },
+          {
+            "id": "button",
+            "type": "ComponentInstance",
+            "componentId": "contract.missing-button"
+          },
+          {
+            "id": "icon",
+            "type": "IconInstance",
+            "iconId": "remix.contract-missing-icon"
+          }
+        ]
+      }
+    ],
+    "resourceIssues": [
+      {
+        "code": "missing_asset",
+        "nodeId": "logo",
+        "logicalId": "contract.missing-logo",
+        "message": "No existing prototype or registered asset: contract.missing-logo"
+      },
+      {
+        "code": "missing_component",
+        "nodeId": "button",
+        "logicalId": "contract.missing-button",
+        "message": "No current component registry supplied"
+      },
+      {
+        "code": "missing_icon",
+        "nodeId": "icon",
+        "logicalId": "remix.contract-missing-icon",
+        "message": "No current official icon registry supplied"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "observedDate": "2026-10-08",
+  "nativePngSha256": "e41dcc6dd820ebed6b7d4f6a159bae6bcfabc4aa9a34199aac16304c086c6b78",
+  "dimensions": [
+    1440,
+    496
+  ],
+  "observations": [
+    "Header, four query fields, toolbar, three editable table rows and count are visible.",
+    "No missing icon, text clipping, overlap, unexpected shadow or blank component observed.",
+    "Review uses the original complete Penpot page PNG; no replacement or geometry edits."
+  ]
+}

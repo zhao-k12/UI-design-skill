@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "scope": "native Cell slot subtask evidence",
+  "fullTask015Acceptance": false,
+  "files": {
+    "after-native.png": "cf4a6ba818784c3a0b846b9f09807bf5f01bf2a0fc42892ea7b7038bc7f738eb",
+    "after-transport.json": "e7dd3cb698fd324d36a1ebd28774c4d0cda84fc522164d6b820df8a1046b6dcf",
+    "before-capture.json": "34786e4faea54689ee9479fd5bd6b6e09d06a5cd65b2f6e37de51c4e9aa230fd",
+    "before-native.png": "e711e240aba1b8bccd00002245b72714210dc21b3223bfd481babd564568c678",
+    "executed-after-capture-0.js": "94a40aff793573947ed7a393d0eb2ce4e596b24b96bd6b3049d15b7826079554",
+    "executed-after-capture-1.js": "6192280a64ce01e02317ed2e632d0a9ce4e6ff38ce8270c67c86cc5debf985a3",
+    "executed-after-capture-2.js": "adc80aa5dfac3a9c4e8cae671bd7702c027be160e5ce1c4d8d68de3427324b44",
+    "executed-after-capture-3.js": "766a5fb8494cd2dda22696845ac593f518477837cef3b4a687a7d29c95aa09ec",
+    "executed-baseline.js": "9747c827c55ccbb11d8c8902526cac3c157fe90a7ec0ab918250a98180354d44",
+    "executed-before-capture.js": "dd01720f9e2d39a4987038eeb86de8a1d44d48593b3e7680fd5eed2bdd9bfb85",
+    "executed-fill.js": "19364a4a71023d30308a65dd7b1d8e2b61053fa94a0faaa598b42811e168875a",
+    "execution.json": "17d87394ed47cb075ab21283d54fb4793e3f757ba332feb446344c7676100f76",
+    "fill.json": "b1245b9adcacdfdeeda55ed6febb3bd0cc8533ec85d55485d446d0a01a9e9bfd",
+    "filled-plan.json": "7cdd2a3ab2170975c4f078a5ad3f29dd96254bb0a41873ec7f4f9d85da8e8419",
+    "qa-report.json": "24730c8b2992a50c60e1da6bf3353e3ede1c5c59ef99152e97f6a85b6a3ec09e",
+    "request.json": "9c981d94ee3e4ccc23531f000f5fa1c580190c5ceee5b2833ccc9c906cdec037",
+    "skeleton-plan.json": "c0b7754f2def5760202486a7ac085b6a302c2c8459f7fe619555f79e4068c8d0",
+    "visual-review.json": "fb7e837e0c3b8ae24431721a4a8f6529c446ac4dd27abb2614c7f25d3ca3f23b"
+  },
+  "sourceFiles": {
+    "adapters/cell_slots_qa.py": "77a35ddb551c7e98c195889cdc21c5969d2090f786d0c6bae4f63e4b9cd98179",
+    "adapters/figma/cell_slots.js": "20f25e6ac94a235fa5a91cbf4dfa85590844864685100d91ce860246c2722832"
+  }
+}

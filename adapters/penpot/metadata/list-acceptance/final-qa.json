@@ -1,0 +1,79 @@
+{
+  "scope": "task010_penpot_fixed_list_acceptance",
+  "status": "PASS",
+  "fullTaskAcceptance": "PASS",
+  "task": "TASK-010",
+  "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+  "pageReference": "6d6e57fb-4a0a-8065-8008-c10659a6d9f7",
+  "rootReference": "6d6e57fb-4a0a-8065-8008-c1065a3d80c2",
+  "uiIrSha256": "94fa6d9483f78754913cf5089a3c1d70887debdd953edd9f0bd14208e4b155d1",
+  "logicalNodes": 34,
+  "createdNodes": 78,
+  "nativeInstances": 6,
+  "verifiedNativeFlowContainers": 19,
+  "crossPlatformLogicalStructure": "PASS",
+  "nativePngSha256": "e41dcc6dd820ebed6b7d4f6a159bae6bcfabc4aa9a34199aac16304c086c6b78",
+  "instanceChecks": [
+    {
+      "uiIrId": "header.settings",
+      "status": "PASS",
+      "exactMasterAffineFloat32": true,
+      "sourceNativeVectorPngBytesExact": true,
+      "nativeSourceChangedPixels": 137,
+      "outsideVerifiedEdgeBand": 0,
+      "nativePngSha256": "a88c42caddb063dabdc86d6bfd140205096738045e7659854c54288f27b27aa5"
+    },
+    {
+      "uiIrId": "input.name",
+      "status": "PASS",
+      "masterNativePngBytesExact": true,
+      "editableTextCount": 1
+    },
+    {
+      "uiIrId": "select.status",
+      "status": "PASS",
+      "masterNativePngBytesExact": true,
+      "editableTextCount": 2
+    },
+    {
+      "uiIrId": "button.query",
+      "status": "PASS",
+      "masterNativePngBytesExact": true,
+      "editableTextCount": 1
+    },
+    {
+      "uiIrId": "list.export",
+      "status": "PASS",
+      "exactMasterAffineFloat32": true,
+      "sourceNativeVectorPngBytesExact": true,
+      "nativeSourceChangedPixels": 42,
+      "outsideVerifiedEdgeBand": 0,
+      "nativePngSha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43"
+    },
+    {
+      "uiIrId": "table.body",
+      "status": "PASS",
+      "masterNativePngBytesExact": true,
+      "editableTextCount": 9
+    }
+  ],
+  "visualInspection": {
+    "status": "PASS",
+    "observedDate": "2026-10-08",
+    "nativePngSha256": "e41dcc6dd820ebed6b7d4f6a159bae6bcfabc4aa9a34199aac16304c086c6b78",
+    "dimensions": [
+      1440,
+      496
+    ],
+    "observations": [
+      "Header, four query fields, toolbar, three editable table rows and count are visible.",
+      "No missing icon, text clipping, overlap, unexpected shadow or blank component observed.",
+      "Review uses the original complete Penpot page PNG; no replacement or geometry edits."
+    ]
+  },
+  "issues": [],
+  "limits": [
+    "Fixed static UI-IR only; no TASK-011 or full release gate claimed.",
+    "Float32 scene coordinates and native icon raster edges use the explicitly approved source-bound rules."
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "scope": "figma_font_file_outline_dimension_diagnostic",
+  "status": "REVIEW",
+  "fontToolsVersion": "4.60.1",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "observations": [
+    {
+      "textReference": "12:3",
+      "characters": "查询",
+      "sourceFileRole": "system-file-candidate",
+      "source": {
+        "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+        "unitsPerEm": 1000,
+        "glyphs": [
+          {
+            "codepoint": "U+67E5",
+            "glyphName": "cid03761",
+            "boundsFontUnits": [
+              43,
+              -71,
+              955,
+              819
+            ],
+            "advanceFontUnits": 1000
+          },
+          {
+            "codepoint": "U+8BE2",
+            "glyphName": "cid06595",
+            "boundsFontUnits": [
+              42,
+              -92,
+              923,
+              820
+            ],
+            "advanceFontUnits": 1000
+          }
+        ],
+        "advancePx": 28.0,
+        "unshapedInkBoundsBaselineCoordinates": {
+          "x": 0.602,
+          "y": -11.48,
+          "width": 26.32,
+          "height": 12.768
+        },
+        "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+      },
+      "nativeSvg": {
+        "textReference": "12:3",
+        "characters": "查询",
+        "svgSha256": "4dcb33b9dc0f09dbcf569a651e45fd7b7d6a99d0a9839cefaf146c9c58db1b57",
+        "pathCount": 1,
+        "pathBoundsSvgCoordinates": {
+          "x": 0.602,
+          "y": 4.52,
+          "width": 26.32,
+          "height": 12.768
+        },
+        "viewBox": "0 0 28 21",
+        "exportWidth": "28",
+        "exportHeight": "21"
+      },
+      "dimensionDeltaPx": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "dimensionEqual": true,
+      "contourComparison": {
+        "orderedContourStructureEqual": false,
+        "exactNormalizedCoordinatesEqual": false,
+        "sourceCommandCount": 88,
+        "nativeCommandCount": 88,
+        "maximumCoordinateDeltaPx": null,
+        "sourceNormalizedSha256": "2a00892be0340a3c54387e27903ad76ef699ddf4654bbcdd7fd1cb24eec7d7df",
+        "nativeNormalizedSha256": "94a233d25bd3fe533edaa302a4dad9bd48c1f31f9725484beec1c7a5acec3dde",
+        "alignmentTranslationSvgCoordinates": {
+          "x": 0.0,
+          "y": 16.0
+        },
+        "alignmentAppliedToCanvas": false,
+        "admissionEligible": false,
+        "unorientedGeometry": {
+          "contourCountSource": 11,
+          "contourCountNative": 11,
+          "structureEqual": true,
+          "exactCoordinatesEqual": true,
+          "maximumCoordinateDeltaPx": 0.0,
+          "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+          "admissionEligible": false
+        },
+        "nonzeroWinding": {
+          "scope": "nonzero_path_winding_diagnostic",
+          "status": "PASS",
+          "contourCount": 11,
+          "nativeFillRule": "nonzero",
+          "nativePathCount": 1,
+          "directionRelationship": "ALL_CONTOURS_REVERSED",
+          "nonzeroPathFilledRegionEquivalent": true,
+          "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+          "admissionEligible": false,
+          "limitations": [
+            "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+            "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+          ]
+        }
+      }
+    },
+    {
+      "textReference": "12:7",
+      "characters": "请输入姓名",
+      "sourceFileRole": "system-file-candidate",
+      "source": {
+        "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+        "unitsPerEm": 1000,
+        "glyphs": [
+          {
+            "codepoint": "U+8BF7",
+            "glyphName": "cid06615",
+            "boundsFontUnits": [
+              42,
+              -100,
+              956,
+              817
+            ],
+            "advanceFontUnits": 1000
+          },
+          {
+            "codepoint": "U+8F93",
+            "glyphName": "cid06924",
+            "boundsFontUnits": [
+              43,
+              -100,
+              964,
+              820
+            ],
+            "advanceFontUnits": 1000
+          },
+          {
+            "codepoint": "U+5165",
+            "glyphName": "cid01601",
+            "boundsFontUnits": [
+              39,
+              -86,
+              954,
+              817
+            ],
+            "advanceFontUnits": 1000
+          },
+          {
+            "codepoint": "U+59D3",
+            "glyphName": "cid02472",
+            "boundsFontUnits": [
+              47,
+              -104,
+              956,
+              821
+            ],
+            "advanceFontUnits": 1000
+          },
+          {
+            "codepoint": "U+540D",
+            "glyphName": "cid01911",
+            "boundsFontUnits": [
+              48,
+              -97,
+              875,
+              819
+            ],
+            "advanceFontUnits": 1000
+          }
+        ],
+        "advancePx": 70.0,
+        "unshapedInkBoundsBaselineCoordinates": {
+          "x": 0.588,
+          "y": -11.494,
+          "width": 67.662,
+          "height": 12.95
+        },
+        "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+      },
+      "nativeSvg": {
+        "textReference": "12:7",
+        "characters": "请输入姓名",
+        "svgSha256": "174ead9235d766e4ec6f78019810acf0b9fea45badc3ab5a0d9311886373fe64",
+        "pathCount": 1,
+        "pathBoundsSvgCoordinates": {
+          "x": 0.588,
+          "y": 3.506,
+          "width": 67.662,
+          "height": 12.95
+        },
+        "viewBox": "0 0 70 20",
+        "exportWidth": "70",
+        "exportHeight": "20"
+      },
+      "dimensionDeltaPx": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "dimensionEqual": true,
+      "contourComparison": {
+        "orderedContourStructureEqual": false,
+        "exactNormalizedCoordinatesEqual": false,
+        "sourceCommandCount": 244,
+        "nativeCommandCount": 244,
+        "maximumCoordinateDeltaPx": null,
+        "sourceNormalizedSha256": "484ceabd3e59e3652c312579c3b7eda8da1abb22e592cf56572f0e3e24f07095",
+        "nativeNormalizedSha256": "1d2ff102570c821e8812c00ef5384bdb8845b3bcc2e4f96c9ec4cf7d7bb2e91a",
+        "alignmentTranslationSvgCoordinates": {
+          "x": 0.0,
+          "y": 15.0
+        },
+        "alignmentAppliedToCanvas": false,
+        "admissionEligible": false,
+        "unorientedGeometry": {
+          "contourCountSource": 19,
+          "contourCountNative": 19,
+          "structureEqual": true,
+          "exactCoordinatesEqual": true,
+          "maximumCoordinateDeltaPx": 0.0,
+          "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+          "admissionEligible": false
+        },
+        "nonzeroWinding": {
+          "scope": "nonzero_path_winding_diagnostic",
+          "status": "PASS",
+          "contourCount": 19,
+          "nativeFillRule": "nonzero",
+          "nativePathCount": 1,
+          "directionRelationship": "ALL_CONTOURS_REVERSED",
+          "nonzeroPathFilledRegionEquivalent": true,
+          "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+          "admissionEligible": false,
+          "limitations": [
+            "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+            "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+          ]
+        }
+      }
+    },
+    {
+      "textReference": "12:13",
+      "characters": "启用",
+      "sourceFileRole": "system-file-candidate",
+      "source": {
+        "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+        "unitsPerEm": 1000,
+        "glyphs": [
+          {
+            "codepoint": "U+542F",
+            "glyphName": "cid01936",
+            "boundsFontUnits": [
+              39,
+              -104,
+              884,
+              826
+            ],
+            "advanceFontUnits": 1000
+          },
+          {
+            "codepoint": "U+7528",
+            "glyphName": "cid04768",
+            "boundsFontUnits": [
+              42,
+              -91,
+              886,
+              777
+            ],
+            "advanceFontUnits": 1000
+          }
+        ],
+        "advancePx": 28.0,
+        "unshapedInkBoundsBaselineCoordinates": {
+          "x": 0.546,
+          "y": -11.564,
+          "width": 25.858,
+          "height": 13.02
+        },
+        "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+      },
+      "nativeSvg": {
+        "textReference": "12:13",
+        "characters": "启用",
+        "svgSha256": "67ba5c3bd507b64f806cf33ece18451e0d6a777eb398e9f73a1b04908e5805db",
+        "pathCount": 1,
+        "pathBoundsSvgCoordinates": {
+          "x": 0.546,
+          "y": 8.436,
+          "width": 25.858,
+          "height": 13.02
+        },
+        "viewBox": "0 0 28 30",
+        "exportWidth": "28",
+        "exportHeight": "30"
+      },
+      "dimensionDeltaPx": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "dimensionEqual": true,
+      "contourComparison": {
+        "orderedContourStructureEqual": false,
+        "exactNormalizedCoordinatesEqual": false,
+        "sourceCommandCount": 71,
+        "nativeCommandCount": 70,
+        "maximumCoordinateDeltaPx": null,
+        "sourceNormalizedSha256": "e515947668dedfc3695a80b070d247c2aeaebb7207d5c232da5cb5e7388e0622",
+        "nativeNormalizedSha256": "68dae03bb09e205ca32918d6ae32b5e4c1aab23e2f9770c4913356e8a5cbd888",
+        "alignmentTranslationSvgCoordinates": {
+          "x": 0.0,
+          "y": 20.0
+        },
+        "alignmentAppliedToCanvas": false,
+        "admissionEligible": false,
+        "unorientedGeometry": {
+          "contourCountSource": 9,
+          "contourCountNative": 9,
+          "structureEqual": true,
+          "exactCoordinatesEqual": true,
+          "maximumCoordinateDeltaPx": 0.0,
+          "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+          "admissionEligible": false
+        },
+        "nonzeroWinding": {
+          "scope": "nonzero_path_winding_diagnostic",
+          "status": "PASS",
+          "contourCount": 9,
+          "nativeFillRule": "nonzero",
+          "nativePathCount": 1,
+          "directionRelationship": "ALL_CONTOURS_REVERSED",
+          "nonzeroPathFilledRegionEquivalent": true,
+          "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+          "admissionEligible": false,
+          "limitations": [
+            "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+            "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+          ]
+        }
+      }
+    },
+    {
+      "textReference": "12:14",
+      "characters": "",
+      "sourceFileRole": "official-release-sibling",
+      "source": {
+        "fontFileSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+        "unitsPerEm": 1024,
+        "glyphs": [
+          {
+            "codepoint": "U+F116",
+            "glyphName": "uniF116",
+            "boundsFontUnits": [
+              192,
+              256,
+              832,
+              640
+            ],
+            "advanceFontUnits": 1024
+          }
+        ],
+        "advancePx": 14.0,
+        "unshapedInkBoundsBaselineCoordinates": {
+          "x": 2.625,
+          "y": -8.75,
+          "width": 8.75,
+          "height": 5.25
+        },
+        "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+      },
+      "nativeSvg": {
+        "textReference": "12:14",
+        "characters": "",
+        "svgSha256": "f4d6c9263fbc9caebcdb3a75adb6915d4dbb9aef97d6231387a289d29df25bbc",
+        "pathCount": 1,
+        "pathBoundsSvgCoordinates": {
+          "x": 2.625,
+          "y": 4.25,
+          "width": 8.75,
+          "height": 5.25
+        },
+        "viewBox": "0 0 14 14",
+        "exportWidth": "14",
+        "exportHeight": "14"
+      },
+      "dimensionDeltaPx": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "dimensionEqual": true,
+      "contourComparison": {
+        "orderedContourStructureEqual": true,
+        "exactNormalizedCoordinatesEqual": false,
+        "sourceCommandCount": 7,
+        "nativeCommandCount": 7,
+        "maximumCoordinateDeltaPx": 5.25,
+        "sourceNormalizedSha256": "2592055b992705358eaa66a51642fbbd3e81c1b15ea1e9dc54e22304d8ea6341",
+        "nativeNormalizedSha256": "7f261e2aa868bd50730d8347901e323848e8842b4f450dd382c6a0684e96d3cb",
+        "alignmentTranslationSvgCoordinates": {
+          "x": -1.875e-06,
+          "y": 13.0
+        },
+        "alignmentAppliedToCanvas": false,
+        "admissionEligible": false,
+        "unorientedGeometry": {
+          "contourCountSource": 1,
+          "contourCountNative": 1,
+          "structureEqual": true,
+          "exactCoordinatesEqual": false,
+          "maximumCoordinateDeltaPx": 2.8125e-05,
+          "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+          "admissionEligible": false
+        },
+        "nonzeroWinding": {
+          "scope": "nonzero_path_winding_diagnostic",
+          "status": "REVIEW",
+          "contourCount": 1,
+          "nativeFillRule": "nonzero",
+          "nativePathCount": 1,
+          "directionRelationship": "UNRESOLVED",
+          "nonzeroPathFilledRegionEquivalent": false,
+          "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+          "admissionEligible": false,
+          "limitations": [
+            "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+            "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+          ]
+        }
+      }
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Dimension equality is not full contour equality, shaping equivalence or DOM baseline proof.",
+    "Local name metadata does not prove browser-loaded file identity; official TTF sibling does not prove served WOFF2 equivalence.",
+    "No positions, fonts, reference captures or admission tolerances are changed."
+  ],
+  "captureSha256": "8ab12b6040934d949ea50ec9010faab550760fc8dcd7e515d14fc069774a3973",
+  "fontIdentitySha256": "69dba6a4cca272184c0a6e830fd55b6f1684a4606a84f97a9a7a091ed479e193",
+  "windingRuleSource": "https://www.w3.org/TR/SVG2/painting.html#FillRuleProperty"
+}

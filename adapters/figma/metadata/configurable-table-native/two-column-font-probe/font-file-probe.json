@@ -1,0 +1,154 @@
+{
+  "scope": "mixed_source_font_file_effect_diagnostic",
+  "status": "OBSERVED",
+  "fontFiles": {
+    "Arial": {
+      "path": "C:/Windows/Fonts/arial.ttf",
+      "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+    },
+    "PingFang SC": {
+      "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Regular.otf",
+      "sha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a"
+    }
+  },
+  "referenceComponentIrSha256": "383e4a3e017a3a105f4d053fe4a464d371da2ddf51e1dda5eba989aca4d4b29e",
+  "probeScriptSha256": "c83c229c73bb8486287563571d164b91a14f04229b33fcc86352406a78086a15",
+  "referenceMatches": [
+    {
+      "logicalId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "observation": {
+    "logicalId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+    "fontLoadStatus": [
+      "loaded",
+      "loaded"
+    ],
+    "ownerGeometry": {
+      "before": [
+        {
+          "characters": "赵六",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 39,
+            "width": 28,
+            "height": 16,
+            "top": 39,
+            "right": 70,
+            "bottom": 55,
+            "left": 42
+          }
+        },
+        {
+          "characters": "zhao@example.com",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 39,
+            "width": 127.828125,
+            "height": 16,
+            "top": 39,
+            "right": 410.15625,
+            "bottom": 55,
+            "left": 282.328125
+          }
+        },
+        {
+          "characters": "钱七",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 87,
+            "width": 28,
+            "height": 16,
+            "top": 87,
+            "right": 70,
+            "bottom": 103,
+            "left": 42
+          }
+        },
+        {
+          "characters": "qian@example.com",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 87,
+            "width": 123.9375,
+            "height": 16,
+            "top": 87,
+            "right": 406.265625,
+            "bottom": 103,
+            "left": 282.328125
+          }
+        }
+      ],
+      "during": [
+        {
+          "characters": "赵六",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 39,
+            "width": 28,
+            "height": 16,
+            "top": 39,
+            "right": 70,
+            "bottom": 55,
+            "left": 42
+          }
+        },
+        {
+          "characters": "zhao@example.com",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 39,
+            "width": 127.828125,
+            "height": 16,
+            "top": 39,
+            "right": 410.15625,
+            "bottom": 55,
+            "left": 282.328125
+          }
+        },
+        {
+          "characters": "钱七",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 87,
+            "width": 28,
+            "height": 16,
+            "top": 87,
+            "right": 70,
+            "bottom": 103,
+            "left": 42
+          }
+        },
+        {
+          "characters": "qian@example.com",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 87,
+            "width": 123.9375,
+            "height": 16,
+            "top": 87,
+            "right": 406.265625,
+            "bottom": 103,
+            "left": 282.328125
+          }
+        }
+      ]
+    },
+    "ownerBoundsUnchanged": true,
+    "pngSha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25"
+  },
+  "ownerStatesRestored": true,
+  "temporaryFontFacesRemoved": true,
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN"
+}

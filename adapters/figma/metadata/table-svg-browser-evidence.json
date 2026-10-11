@@ -1,0 +1,51 @@
+{
+  "scope": "browser_raster_of_native_svg_diagnostic",
+  "status": "PASS",
+  "svgCaptureSha256": "3a3a6d50fcb15a2fdfc870bb68c0654f866994f4136ca387fe296b7b0a9d89de",
+  "referenceComponentIrSha256": "0624e587babae50f4f5b44a1c0bccf44100fb4679c332630e0272acbd118c33f",
+  "probeScriptSha256": "c3d1d39c95ab48c65cdf75e35d41be19bd4bded72121086b74464eda127fa773",
+  "referenceMatches": [
+    {
+      "logicalId": "data.table.default",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 1440,
+      "height": 400
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "samples": [
+    {
+      "logicalId": "data.table.default",
+      "componentReference": "28:3",
+      "svgSha256": "891fc9275b33a6b15e1d989973430de328dc8455bd33e24b6021b2c6f9506750",
+      "browserBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1392,
+        "height": 144
+      },
+      "pngPath": "svg-raster-data.table.default.png",
+      "pngSha256": "34713a919d320a55c09e539f67a7545948a1c0444470ad65c04d01cfe18708b6"
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Browser rendering of native outlined SVG is a diagnostic sample, not native Figma PNG or editable component admission.",
+    "Official DOM/CSS/reference images are preserved; font hinting in live text is not represented by outlined SVG."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "scope": "TASK-015 native subtask evidence",
+  "fullTask015Acceptance": false,
+  "files": {
+    "after-capture.json": "0d50794f9290548417ed94b16b1727070d1d79461bfe6aa41359a1639421fd34",
+    "after-native.png": "a640ba1f5e4fd699fb4f047ebf474d8417e96b246f0915e68de7e680448f0848",
+    "before-capture.json": "baef0bf7910550a4a4c22c07d9a0c77adacf108c81af9b2db317baf286187bf4",
+    "before-native.png": "e41dcc6dd820ebed6b7d4f6a159bae6bcfabc4aa9a34199aac16304c086c6b78",
+    "execution.json": "473dea14b2e26d040d03e3acff94eda52dc66ec606ef5b01d8d41813c9d8aa93",
+    "native-export-timeout.json": "d4622f4e1c1ebba933f003f6fb2562b07d1deda05a0e9da2a0cbe5a25919ffae",
+    "patch.json": "5796b0bc43dc10a7ecd9b137ae5ab1a319d94bd186e46effc7164ac8142c04c6",
+    "qa-report.json": "077cec363bdf4c9f1f11035d9943a54b76b6d6267f7f334f081af4a965bb2dc3",
+    "request.json": "81ef5ab801272186e345723e1effde38c4647a234b16c96d1a58779cdcc4cae0",
+    "served-plugin.js": "49cfbd850684163d1933590fa46a610a460e9dccad7f5a8294bcea5fc081c5f2",
+    "visual-review.json": "5fcc41ba5cb4cbd593ac846055e6a3f4b762d2645daf9977ea29242293643482"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "status": "OBSERVED",
+  "scope": "penpot-native-svg-browser-diagnostic",
+  "nativeReceiptSha256": "b09fb2975a0b0b78ef6d5df29755b384f841a47044150a9bd4a5557e6e3ad445",
+  "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "probeScriptSha256": "c7b719aafdae587753efac988f6f0093a7a93c18a03049b89f7a3db6827bc3b6",
+  "sample": {
+    "texts": [
+      {
+        "characters": "",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "length": 14,
+        "start": [
+          {
+            "x": 217,
+            "y": 23
+          }
+        ],
+        "end": [
+          {
+            "x": 231,
+            "y": 23
+          }
+        ],
+        "bbox": {
+          "x": 217,
+          "y": 9,
+          "width": 14,
+          "height": 14
+        }
+      },
+      {
+        "characters": "启用",
+        "fontFamily": "\"PingFang SC\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "length": 28,
+        "start": [
+          {
+            "x": 9,
+            "y": 26
+          },
+          {
+            "x": 23,
+            "y": 26
+          }
+        ],
+        "end": [
+          {
+            "x": 23,
+            "y": 26
+          },
+          {
+            "x": 37,
+            "y": 26
+          }
+        ],
+        "bbox": {
+          "x": 8,
+          "y": 6,
+          "width": 29,
+          "height": 20
+        }
+      }
+    ],
+    "fontLoadStatus": true,
+    "svgSha256": "be2fa81348177814a211a8e478c02e2809b79acc13f1bbcf7940836ad8c3ce54",
+    "pngSha256": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+    "fontResources": [
+      {
+        "family": "Ionicons",
+        "url": "https://design.penpot.app/assets/by-id/58c9f8d4-6c69-42f4-8f2e-fa099cc10f76",
+        "sha256": "9879ad9ccfc0640e6ba98ab85c3bbca11545baf7a0060efb2502498bc17e4f30"
+      },
+      {
+        "family": "PingFang SC",
+        "url": "https://design.penpot.app/assets/by-id/e2c64052-f235-4680-b309-8f8c183dc82e",
+        "sha256": "7ce5d241353a41d6c9fd02b905967ad800f19d534abd3d46eb67e46b0d18099a"
+      }
+    ]
+  },
+  "referenceMatches": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "The font resource is served from the hash-verified local font container, not a remote download.",
+    "Browser SVG raster is diagnostic; native PNG remains the production screenshot."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "BORDER_NORMALIZED",
+    "platform": "penpot",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+    "componentReference": "10f3de97-3a09-806f-8008-c0aff4ac5af0",
+    "createdNodeIds": [
+      "b17404b9-592b-8074-8008-c0bf44b15255"
+    ],
+    "mutatedNodeIds": [
+      "10f3de97-3a09-806f-8008-c0aff4723ada"
+    ],
+    "reason": "css_uniform_inner_border_centerline_geometry",
+    "admissionEligible": false,
+    "fidelityGate": "NOT_RUN"
+  }
+}

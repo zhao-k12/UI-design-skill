@@ -1,0 +1,282 @@
+{
+  "scope": "task019_exact_arial_encoding",
+  "status": "PASS",
+  "fontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+  "freetypeVersion": "2.13.2",
+  "freetypeBinarySha256": "090038852d6eb0dc75569f31fb92d6c98e829ca2639c9b6e8d8808032f9a7003",
+  "freetypeWrapperSha256": "aa2baf011511f89f04e8a135e6d398cd46bf86a3892add185177fccb88e66470",
+  "programSha256": "6192c7936068e5334436f66e9cdf4492fed4cc0ce01e02b976e6d5e0376a74ec",
+  "observations": [
+    {
+      "textReference": "68:2",
+      "characters": ".",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/512",
+      "fixedBaselinePx": 15,
+      "svgSha256": "a64fc08686c428cf6251aa9ebb0e02f39fdc3a6d9a8caebed8e77bdb7b56b762",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:3",
+      "characters": "0",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "e2bc6ba1f7de72f3938e7798079194a231107316fd32f2527224ea0c12e71c4b",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:4",
+      "characters": "1",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "0a39bbae0232a378dc9a529188bf21f982f364350fbb88e0d79f1bf999c60e6b",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:5",
+      "characters": "2",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "2bdc2ef99697d0c15ec7c1a70151aca8fe85d2aeffc5274e3e64106f265434b6",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:6",
+      "characters": "3",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "89260fa9a71f98f595926b5781f4b17e377873a697a17841742cadaa21e6fcc5",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:7",
+      "characters": "4",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "2589233d0df96373c6dcc8fcfa24dc4489f6530a53d68ad2f98da273468ee39d",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:8",
+      "characters": "@",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "455/32",
+      "fixedBaselinePx": 15,
+      "svgSha256": "8146c66bb413767553958c19fb035dfc6c968390fc93b59b2399bf167b88ee8d",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:9",
+      "characters": "a",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "08668065d061352bb06091684583645fa640b5b70362315c1724f501afbb0543",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:10",
+      "characters": "c",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "7",
+      "fixedBaselinePx": 15,
+      "svgSha256": "fa8aaba8742099a17ecdc31da53c302d26b3bde34d781ff9dd504a8ec7d881fd",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:11",
+      "characters": "e",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "433e99e54b0a56c3515c938aa14076c59e965e43e496ef03308e2553e9e35376",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:12",
+      "characters": "h",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "5cae66b26296ec38f854ed4a75fb7d298315814b13ca4001db9a7f951017a0a7",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:13",
+      "characters": "i",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "399/128",
+      "fixedBaselinePx": 15,
+      "svgSha256": "e3fe15b4e3b97e86b7fb0ce3f1d7740336e2aa02c123ef9ae06d717f0b19b202",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:14",
+      "characters": "l",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "399/128",
+      "fixedBaselinePx": 15,
+      "svgSha256": "b77cbb8d6ba1e40650071e3171714de89b0a10f4b713c76a9cacdaec2b43e95a",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:15",
+      "characters": "m",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5971/512",
+      "fixedBaselinePx": 15,
+      "svgSha256": "7404b6473274df810b248a1a3874a497f854aaecac923f1d24d17f9ed9d7a5a0",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:16",
+      "characters": "n",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "ad264cb132104996a97a07cd9abecb8e26686c1ea2f34e12e920ee83e89e6382",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:17",
+      "characters": "o",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "7d381d664d647b78126ba27fdde1dc5be25b419539878915c868e2f71fe754eb",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:18",
+      "characters": "p",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "40d10e102f7fc40ece02960598de622aab8bf462172bc02e1876858d9d01c929",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:19",
+      "characters": "q",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "1995/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "0ceb99d6e144b9c96f342455ed3b4b34a17ad8321a7683337bf0069ca67d3b5c",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:20",
+      "characters": "x",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "7",
+      "fixedBaselinePx": 15,
+      "svgSha256": "3dacd2e22c0bfb2bc6871e34a1863106a57d89d5f535b766b505be1289974c06",
+      "status": "PASS"
+    },
+    {
+      "textReference": "68:21",
+      "characters": "z",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "7",
+      "fixedBaselinePx": 15,
+      "svgSha256": "6c56187b370bc9f5b20557ca65db26dbd2df99df49494184fbe1076e7100450e",
+      "status": "PASS"
+    },
+    {
+      "textReference": "69:9",
+      "characters": "zhao@example.com",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "65485/512",
+      "fixedBaselinePx": 15,
+      "svgSha256": "f16086a9188c29df7c4c175d7ff913d2b00576da20366b5a237d47161cfcaabf",
+      "status": "PASS"
+    },
+    {
+      "textReference": "69:15",
+      "characters": "qian@example.com",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "63497/512",
+      "fixedBaselinePx": 15,
+      "svgSha256": "fe0931a97071dd2e537ca3b1a37a8a8602c85496b22feaaaeaf121218847ac57",
+      "status": "PASS"
+    },
+    {
+      "textReference": "69:21",
+      "characters": "001",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5985/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "5e150fb9cfc456f7d42ff5460ade9bdbf562235ca5dd9daff1203c519b0d6691",
+      "status": "PASS"
+    },
+    {
+      "textReference": "69:31",
+      "characters": "002",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5985/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "41b9767971cf0e4a7578c33bb2e5a41d36eaad429c183952b9e20ea309c53c7e",
+      "status": "PASS"
+    },
+    {
+      "textReference": "69:41",
+      "characters": "003",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5985/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "8310a0d77424142198e5e9eae2dec73c752c8fb53731b2963a4339fe21d11e75",
+      "status": "PASS"
+    },
+    {
+      "textReference": "69:51",
+      "characters": "004",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5985/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "f4b5aac170dbc8f0fd95d22c7162ab6f69e510e1748e84cfad99e4ec69b940b2",
+      "status": "PASS"
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "captureFileHashes": {
+    "arial-glyph-readback-1.json": "fd5bb2c0339fba72fc2348d7c7ceebdd02e808932f9b21a7b50007921d5a7ea2",
+    "arial-glyph-readback-2.json": "afd0c17437c7c01c746a9c1035ed8344de30aba53574a877c536304f812d0e26",
+    "arial-glyph-readback-3.json": "e8f0752c0856a3c85ecac2a15bcb4e35e10b6821558e5dca495dc1403d5f9072",
+    "arial-glyph-readback-4.json": "8c592df09fe74ad6a9ab2c772a52e8c6593efcebeb936e2cea68bf4f4444cb73",
+    "table-text-outlines-0.json": "6dd1e9c82ef1392088dba5439a214cfb551df77a0e54903fd3ccc3ce3efb0152",
+    "table-text-outlines-1.json": "acb1fe4554df997cad803b2e65389b4f86549955e394c8591d88036305ef6dd6"
+  },
+  "approvedDecisionSha256": "ca43541c9b0015f99a8982c8acc64830cb46efe0ae7a3f7d9931f94377bae349"
+}

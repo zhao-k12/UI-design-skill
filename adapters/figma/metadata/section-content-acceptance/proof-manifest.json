@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "scope": "TASK-015 native subtask evidence",
+  "fullTask015Acceptance": false,
+  "files": {
+    "after-native.png": "3fe026a764111aec0eff936358de95c728174b5d77ca9b8bde197e55ee3c58fe",
+    "after-transport.json": "8301653bd0fd70b6a08a564b76c4ae95eae5e6e9cdc7a9c436add220b5f9743a",
+    "before-native.png": "17f4e77c7392af6e236a3b1a8b45dec3b8488672f5c4bd9633a317b58388dc5d",
+    "before-transport.json": "7f7a7c87134a867e43a683ac7acfa956c5b6746ec44f60848dfc38d412fb875f",
+    "execution.json": "715273bb8c0ccc5bb17953bc8fee4cb35d749fa3625abcfccafba14f28de0a58",
+    "patch.json": "d502498904c71aab20148f4f74ca78583e09aadd0621a8b1deac6cd1aacd1cd4",
+    "qa-report.json": "79bbda3a09d7b7cd56a89832782da23dd7c2c9efe8871912e24ea1f9f41f981e",
+    "request.json": "b20296c2e58da18ed0a9a727baa274d10e26af655189122afe8d4629fb03e327",
+    "visual-review.json": "c3036ecdaa559706c7d87805690ce82f6f5e4c992513a349ee8bb828bbf17f4c",
+    "creation-ledger-reconciliation.json": "86b262d9da6532873b2983247dd9f4d81800217f4ab70368b8cc8a642464c421"
+  }
+}

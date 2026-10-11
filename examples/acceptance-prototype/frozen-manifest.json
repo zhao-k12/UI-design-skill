@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "decision": "human-approved-first-static-acceptance-prototype",
+  "decisionRecord": ".dev/ACCEPTANCE_PROTOTYPE_DECISION.md",
+  "sourceTableColumns": [
+    "姓名",
+    "状态",
+    "角色"
+  ],
+  "files": {
+    "examples/acceptance-prototype/prototype.txt": "d7e05d66c4f8e1133af714149effa74206a95774612bf36dfd8cbc19dbd16721",
+    "examples/adapter-fidelity-acceptance.ui-ir.json": "62e69bfaf7aa499d6478b20c3513abea3925061a784e4ba5b6cbc361a252a17f",
+    "adapters/figma/metadata/list-acceptance.png": "17f4e77c7392af6e236a3b1a8b45dec3b8488672f5c4bd9633a317b58388dc5d",
+    "adapters/figma/metadata/table-reference/component_ir.json": "0624e587babae50f4f5b44a1c0bccf44100fb4679c332630e0272acbd118c33f",
+    "adapters/penpot/metadata/list-acceptance/native-page.png": "e41dcc6dd820ebed6b7d4f6a159bae6bcfabc4aa9a34199aac16304c086c6b78"
+  }
+}

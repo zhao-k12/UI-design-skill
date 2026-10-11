@@ -1,0 +1,154 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "FONT_RANGE_REAPPLIED",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "b65bc280-c7a5-8006-8008-c496888c78a0",
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "b65bc280-c7a5-8006-8008-c49688efc657",
+      "b65bc280-c7a5-8006-8008-c4968927a3dc",
+      "b65bc280-c7a5-8006-8008-c49689b1ac31",
+      "b65bc280-c7a5-8006-8008-c4968a1eb254",
+      "b65bc280-c7a5-8006-8008-c4968a87f687",
+      "b65bc280-c7a5-8006-8008-c4968b207973"
+    ],
+    "observations": [
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c49688efc657",
+        "characters": "zhao@example.com",
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c4968927a3dc",
+        "characters": "qian@example.com",
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c49689b1ac31",
+        "characters": "001",
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c4968a1eb254",
+        "characters": "002",
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c4968a87f687",
+        "characters": "003",
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c4968b207973",
+        "characters": "004",
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      }
+    ],
+    "fidelityGate": "NOT_RUN",
+    "admissionEligible": false
+  }
+}

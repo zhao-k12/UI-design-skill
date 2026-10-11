@@ -1,0 +1,39 @@
+{
+  "status": "NATIVE_HOST_CONNECTED",
+  "evidenceKind": "browser-visible-workspace",
+  "observedDate": "2026-10-07",
+  "teamReference": "45145cff-4092-8110-8008-acf328e8a85a",
+  "teamName": "HeinQi",
+  "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+  "fileName": "UI Design Skill \u2014 TASK-010 \u9a8c\u6536",
+  "initialPageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+  "url": "https://design.penpot.app/#/workspace?team-id=45145cff-4092-8110-8008-acf328e8a85a&file-id=91396aad-60c8-808b-8008-c0885ca79899&page-id=91396aad-60c8-808b-8008-c0885ca7989a",
+  "nativeApiExecution": "FIXED_UI_IR_PAGE_EXECUTED",
+  "fidelityGate": "PASS",
+  "uiIrSha256": "94fa6d9483f78754913cf5089a3c1d70887debdd953edd9f0bd14208e4b155d1",
+  "pluginAuthorization": "READ_ONLY_APPROVED",
+  "permissionScreenshot": "artifacts/task-010/plugin-permission.jpg",
+  "nativeWriteAuthorization": "APPROVED_CONTEXTUAL_CONTINUATION",
+  "customFonts": "WOFF_INSTALLED_NATIVE_BUTTON_FONT_AND_GLYPH_CONTOURS_VERIFIED",
+  "candidateDiagnosticStatus": "PASS",
+  "fontRepairReport": "adapters/penpot/metadata/button-font-repair/repair-report.json",
+  "admittedComponentCount": 4,
+  "componentFidelity": {
+    "action.button.primary.medium": "PASS",
+    "form.input.default.medium": "PASS",
+    "form.select.default.medium": "PASS",
+    "data.table.default": "PASS"
+  },
+  "componentAcceptanceReport": "adapters/penpot/metadata/button-admitted/gate-report.json",
+  "componentAcceptanceReports": {
+    "action.button.primary.medium": "adapters/penpot/metadata/button-admitted/gate-report.json",
+    "form.input.default.medium": "adapters/penpot/metadata/input-native-v1/gate-report.json",
+    "form.select.default.medium": "adapters/penpot/metadata/select-native-v1/gate-report.json",
+    "data.table.default": "adapters/penpot/metadata/table-native-v1/gate-report.json"
+  },
+  "task010Acceptance": "PASS",
+  "admittedIconCount": 2,
+  "nativePageReference": "6d6e57fb-4a0a-8065-8008-c10659a6d9f7",
+  "nativeRootReference": "6d6e57fb-4a0a-8065-8008-c1065a3d80c2",
+  "finalAcceptanceReport": "adapters/penpot/metadata/list-acceptance/final-qa.json"
+}

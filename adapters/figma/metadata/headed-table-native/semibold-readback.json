@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "81:2",
+  "textReference": "81:3",
+  "characters": "一",
+  "fontName": {
+    "family": "PingFang SC",
+    "style": "Semibold"
+  },
+  "fontSize": 14,
+  "lineHeight": {
+    "unit": "PIXELS",
+    "value": 21
+  },
+  "absoluteBounds": {
+    "x": 80,
+    "y": 80,
+    "width": 14,
+    "height": 21
+  },
+  "absoluteRenderBounds": {
+    "x": 80.62999725341797,
+    "y": 90.13400268554688,
+    "width": 12.726005554199219,
+    "height": 1.45599365234375
+  },
+  "svg": "<svg width=\"14\" height=\"21\" viewBox=\"0 0 14 21\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.63 10.134H13.356V11.59H0.63V10.134Z\" fill=\"black\"/>\n</svg>\n",
+  "createdNodeIds": [],
+  "mutatedNodeIds": []
+}

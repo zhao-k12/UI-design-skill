@@ -1,0 +1,15 @@
+{
+  "casesVersion":"0.1.0",
+  "viewport":{"width":1440,"height":400},
+  "containerWidth":1392,
+  "cases":[{
+    "logicalId":"data.table.default","componentType":"Table","variant":"default",
+    "props":{"showHeader":false,"border":false,"stripe":false,"columns":[
+      {"title":"姓名","key":"name","width":464},
+      {"title":"状态","key":"status","width":464},
+      {"title":"角色","key":"role","width":464}],
+      "data":[{"name":"张三","status":"启用","role":"管理员"},
+        {"name":"李四","status":"启用","role":"编辑"},
+        {"name":"王五","status":"停用","role":"访客"}]}
+  }]
+}

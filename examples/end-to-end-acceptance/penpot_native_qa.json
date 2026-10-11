@@ -1,0 +1,13 @@
+{
+  "scope": "independent-static-pipeline-native-qa",
+  "platform": "penpot",
+  "status": "PASS",
+  "uiIrSha256": "94d539a316f9ac50af23726b705af8e5c89fd188dba9e99a8a0aee9195394bee",
+  "logicalNodes": 49,
+  "nativeNodes": 92,
+  "genuineInstances": 6,
+  "nativePngSha256": "961c3f255eeface6788f05e59a823e0eaf6928cdfa62e5ff446ec9c6cdbbcb8a",
+  "issues": [],
+  "fidelityGate": "NOT_RUN",
+  "visualReview": "NOT_RUN"
+}

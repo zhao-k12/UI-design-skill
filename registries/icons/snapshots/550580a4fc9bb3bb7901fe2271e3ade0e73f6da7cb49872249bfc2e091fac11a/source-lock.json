@@ -1,0 +1,17 @@
+{
+  "gitCommit": "39eab8b69cadaa47e1bed6a41777b1cd22227c74",
+  "iconCount": 3229,
+  "integrity": "sha512-36gLSoujkabnCFZFDyP17VNh9piuBA/rsXUb4auSJWLGsHVXtmxLj/EM5FjaEAGnk8oIAj1Azob/DZ2N+90lAQ==",
+  "license": "Apache-2.0",
+  "licenseSha256": "6f2f21c5f8db34635d31848e9ff831d5dc421bb83ffc9d37f82651364047ae58",
+  "lockVersion": "0.1.0",
+  "npmMetadataSha256": "ab777f70d2e08db9c4983123c75dcf8c2e4d7a90c8ec2734a08527ff7f5f33e3",
+  "officialTagsSha256": "71d6fc27431b1abe205d725a01171c881a5ef4a32c08fe4c1f7e2cb0ec3d9225",
+  "packageVersion": "4.9.1",
+  "repository": "https://github.com/Remix-Design/RemixIcon",
+  "sourceVersion": "remixicon@4.9.1+39eab8b69cadaa47e1bed6a41777b1cd22227c74",
+  "svgManifestSha256": "bd46eb7572061f37eca69f4528b07950759c86030e177f43314772ca0d2dd192",
+  "tagsUrl": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/39eab8b69cadaa47e1bed6a41777b1cd22227c74/tags.json",
+  "tarballSha256": "3a86ff64f3ab3ff9123556adb5fec29d1f41fa19b69d67ec8f7e3aa19724cd18",
+  "tarballUrl": "https://registry.npmjs.org/remixicon/-/remixicon-4.9.1.tgz"
+}

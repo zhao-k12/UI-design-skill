@@ -1,0 +1,404 @@
+{
+  "platform": "penpot",
+  "nativeEvidenceSha256": "296f071f6cf658422818aaa4d4b4042dd35a360fbe04047fc548f273d91cb14c",
+  "geometryAndStyle": {
+    "status": "PASS",
+    "nativeTextReference": "10f3de97-3a09-806f-8008-c0aff49d61db",
+    "textRegion": {
+      "x": 16,
+      "y": 5.5,
+      "width": 28,
+      "height": 21
+    },
+    "borderNormalization": "Uniform inner border represented by its exact centerline, preserving outer bounds/radius.",
+    "textAlignmentNormalization": "The observed 28px span occupies exactly both native glyph advances."
+  },
+  "content": {
+    "status": "PASS",
+    "characters": "查询"
+  },
+  "fontBinding": {
+    "status": "PASS",
+    "nativeBinding": {
+      "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+      "fontVariantId": "normal-400",
+      "family": "PingFang SC",
+      "weight": 400,
+      "style": "normal"
+    },
+    "actualPdfGlyphIdentity": {
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "nativePdfSha256": "c22b652853fd925f5755f8f51f1b9590aa60e7afa70da5c9b501119e7a606fa8",
+      "glyphs": [
+        {
+          "character": "查",
+          "pathSha256": "a25cd6fec3f84b0bb24508c71fc4c82064b6c5b7c25862f5e74c8e9491fb3a76",
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 46,
+          "nativeCommandCount": 46,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "询",
+          "pathSha256": "d1fcb3b893a0f9e71198917160aecf8326ba1ecd55d23a1df72c6d761e8ed52a",
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 52,
+          "nativeCommandCount": 52,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    }
+  },
+  "glyphGeometry": {
+    "status": "PASS",
+    "scope": "observed-Type3-glyph-paths-in-font-units",
+    "unitsPerEm": 1000,
+    "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+    "nativePdfSha256": "c22b652853fd925f5755f8f51f1b9590aa60e7afa70da5c9b501119e7a606fa8",
+    "glyphs": [
+      {
+        "character": "查",
+        "pathSha256": "a25cd6fec3f84b0bb24508c71fc4c82064b6c5b7c25862f5e74c8e9491fb3a76",
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 46,
+        "nativeCommandCount": 46,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "询",
+        "pathSha256": "d1fcb3b893a0f9e71198917160aecf8326ba1ecd55d23a1df72c6d761e8ed52a",
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 52,
+        "nativeCommandCount": 52,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      }
+    ],
+    "admissionEligible": false,
+    "limitations": [
+      "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+      "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+    ]
+  },
+  "baselines": {
+    "status": "PASS",
+    "actualNativePdfTextMatrix": [
+      "16",
+      "20.5"
+    ],
+    "componentY": 20.5,
+    "sourceObservedBaseline": {
+      "logicalId": "action.button.primary.medium",
+      "status": "OBSERVED",
+      "characters": "查询",
+      "baselineDocumentY": 44.5,
+      "baselineComponentY": 20.5,
+      "baselineElementY": 15,
+      "elementBounds": {
+        "x": 40,
+        "y": 29.5,
+        "width": 28,
+        "height": 21
+      },
+      "textRangeBounds": {
+        "x": 40,
+        "y": 31.5,
+        "width": 28,
+        "height": 16
+      },
+      "method": "temporary_zero_extent_inline_block_bottom_margin_edge",
+      "originalGeometryAndMarkupRestored": true
+    },
+    "sourceEvidenceSha256": "7ae76fdb1f72605ff1ae7815716c13148d7ab53fb2738159d755821b3dc5fc71"
+  },
+  "renderState": {
+    "status": "PASS",
+    "nativeNodes": [
+      {
+        "reference": "10f3de97-3a09-806f-8008-c0aff4723ada",
+        "parentReference": "00000000-0000-0000-0000-000000000000",
+        "type": "board",
+        "name": "candidate / action.button.primary.medium / candidate / action.button.primary.medium / penpot-v1",
+        "x": 80,
+        "y": 80,
+        "width": 60,
+        "height": 32,
+        "fills": [],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 4,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "b17404b9-592b-8074-8008-c0bf44b15255",
+        "parentReference": "10f3de97-3a09-806f-8008-c0aff4723ada",
+        "type": "rectangle",
+        "name": "official-source / action.button.primary.medium / border-centerline",
+        "x": 80.5,
+        "y": 80.5,
+        "width": 59,
+        "height": 31,
+        "fills": [
+          {
+            "fillColor": "#2d8cf0",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [
+          {
+            "strokeColor": "#2d8cf0",
+            "strokeColorRefFile": null,
+            "strokeColorRefId": null,
+            "strokeOpacity": 1,
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "strokeAlignment": "center",
+            "strokeCapStart": null,
+            "strokeCapEnd": null,
+            "strokeColorGradient": null,
+            "strokeImage": null
+          }
+        ],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 3.5,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "10f3de97-3a09-806f-8008-c0aff49d61db",
+        "parentReference": "10f3de97-3a09-806f-8008-c0aff4723ada",
+        "type": "text",
+        "name": "official-source / action.button.primary.medium / 0.0",
+        "x": 96,
+        "y": 85.5,
+        "width": 28,
+        "height": 21,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "查询",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.5",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 96,
+          "y": 85.5,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    ],
+    "repeatability": {
+      "status": "PASS",
+      "captureSha256": [
+        "bf1610804cdb9491dca85edbfe682ec8f34d0c2fc6683ffb8daa79a4a906923b",
+        "039798dda81b7340f80f006e5c52744b3142e88161c87a328e51467145ece75e"
+      ],
+      "nodesExactlyEqual": true,
+      "nativePngBytesExactlyEqual": true,
+      "nativePngSha256": "0dc1661beddb5211dc1a1ba74b65bcd790b20bd3eebdbad290cf66e3e354645a",
+      "admissionEligible": false,
+      "scope": "native-png-and-node-repeatability-only",
+      "completeRepeatCapture": false,
+      "repeatExportIssues": [
+        {
+          "code": "native_export_failed",
+          "shapeReference": "10f3de97-3a09-806f-8008-c0aff49d61db",
+          "type": "svg",
+          "detail": "#error {:message \"http error\", :data {:type :server-error, :code :timeout, :hint \"ResourceRequest timed out\", :data {:type :internal, :code :timeout, :hint \"ResourceRequest timed out\"}, :uri \"https://design.penpot.app/api/export\", :status 500}}"
+        }
+      ]
+    }
+  },
+  "sourceReproduction": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "vectorBinding": {
+    "status": "PASS",
+    "probe": {
+      "status": "OBSERVED",
+      "scope": "penpot-native-svg-browser-diagnostic",
+      "nativeReceiptSha256": "bf1610804cdb9491dca85edbfe682ec8f34d0c2fc6683ffb8daa79a4a906923b",
+      "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+      "probeScriptSha256": "f82116039b85a750b558bafb142c8a9e0c114f6b5ce16b0450d6d7865b163f17",
+      "sample": {
+        "text": {
+          "characters": "查询",
+          "fontFamily": "\"PingFang SC\"",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "length": 28,
+          "start": [
+            {
+              "x": 16,
+              "y": 25.5
+            },
+            {
+              "x": 30,
+              "y": 25.5
+            }
+          ],
+          "end": [
+            {
+              "x": 30,
+              "y": 25.5
+            },
+            {
+              "x": 44,
+              "y": 25.5
+            }
+          ],
+          "bbox": {
+            "x": 15,
+            "y": 5.5,
+            "width": 29,
+            "height": 20
+          }
+        },
+        "fontLoadStatus": true,
+        "svgSha256": "34695b066266f1dae07f13238d63afdf78be97209b9195bcfa38a60acea70410",
+        "pngSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+        "fontUrl": "https://design.penpot.app/assets/by-id/e2c64052-f235-4680-b309-8f8c183dc82e",
+        "fontSha256": "7ce5d241353a41d6c9fd02b905967ad800f19d534abd3d46eb67e46b0d18099a"
+      },
+      "referenceMatches": [
+        {
+          "logicalId": "action.button.primary.medium",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        },
+        {
+          "logicalId": "form.input.default.medium",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        },
+        {
+          "logicalId": "form.select.default.medium",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "The font resource is served from the hash-verified local font container, not a remote download.",
+        "Browser SVG raster is diagnostic; native PNG remains the production screenshot."
+      ]
+    },
+    "wholeVectorPngExactlyMatchesSource": true
+  },
+  "nativePngSha256": "0dc1661beddb5211dc1a1ba74b65bcd790b20bd3eebdbad290cf66e3e354645a",
+  "comparisonContext": {
+    "background": "white",
+    "resize": false,
+    "crop": false
+  }
+}

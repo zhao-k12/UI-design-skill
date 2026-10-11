@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "scope": "observed-Type3-glyph-paths-in-font-units",
+  "unitsPerEm": 1000,
+  "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+  "nativePdfSha256": "1581086fb35982686c94a32c5ff75fa9ed3601e0d7daa47038003bb9fc980350",
+  "glyphs": [
+    {
+      "character": "查",
+      "pathSha256": "a25cd6fec3f84b0bb24508c71fc4c82064b6c5b7c25862f5e74c8e9491fb3a76",
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 46,
+      "nativeCommandCount": 46,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "询",
+      "pathSha256": "d1fcb3b893a0f9e71198917160aecf8326ba1ecd55d23a1df72c6d761e8ed52a",
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 52,
+      "nativeCommandCount": 52,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "admissionEligible": false,
+  "limitations": [
+    "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+    "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+  ]
+}

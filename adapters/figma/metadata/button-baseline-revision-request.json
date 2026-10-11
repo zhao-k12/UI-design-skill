@@ -1,0 +1,33 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "0:1",
+  "componentReference": "12:4",
+  "textReference": "12:3",
+  "source": {
+    "rootBounds": {
+      "width": 60,
+      "height": 32
+    },
+    "spanBounds": {
+      "x": 16,
+      "y": 5.5,
+      "width": 28,
+      "height": 21
+    },
+    "text": "查询",
+    "fontName": {
+      "family": "PingFang SC",
+      "style": "Regular"
+    },
+    "fontWeight": 400,
+    "fontSize": 14,
+    "lineHeight": 21,
+    "baselineComponentY": 20.5,
+    "nativeSvgBaseline": 16.0
+  },
+  "evidenceHashes": {
+    "official-runtime-baseline-evidence.json": "d9b21b8c0f4940961ff2abcb9c2cc3ffccb13ce7cae904ed58c4a366a43df1da",
+    "native-text-outline-capture.json": "dcc68453314506d14ad6fd0cc957d7984a40b3ba4e118ab50f29ecae2b7086e9",
+    "font-file-identity.json": "69dba6a4cca272184c0a6e830fd55b6f1684a4606a84f97a9a7a091ed479e193"
+  }
+}

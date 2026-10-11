@@ -1,0 +1,67 @@
+{
+  "scope": "task009_figma_native_list_acceptance",
+  "task": "TASK-009",
+  "status": "PASS",
+  "fullTaskAcceptance": "PASS",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "35:2",
+  "rootReference": "35:3",
+  "uiIrSha256": "94fa6d9483f78754913cf5089a3c1d70887debdd953edd9f0bd14208e4b155d1",
+  "componentsSha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+  "logicalNodes": 34,
+  "nativeInstances": 6,
+  "componentTypes": [
+    "Button",
+    "Input",
+    "Select",
+    "Table"
+  ],
+  "instanceRasterComparisons": [
+    {
+      "instanceReference": "35:15",
+      "mainComponentReference": "12:8",
+      "status": "PASS",
+      "changedPixels": 0,
+      "pngSha256": "95f2676ccba3ca1eb388398de1294d555036a490a049d9a455a10e10d70aab6e"
+    },
+    {
+      "instanceReference": "35:21",
+      "mainComponentReference": "12:15",
+      "status": "PASS",
+      "changedPixels": 0,
+      "pngSha256": "41e5be95a0a150f592706dd010a2d68a9d35b4105f053bdb976df79addff8f5e"
+    },
+    {
+      "instanceReference": "35:34",
+      "mainComponentReference": "18:5",
+      "status": "PASS",
+      "changedPixels": 0,
+      "pngSha256": "d2a4858c2206b2018343c7e8d9dfd1bc0e7b4974f64ada9a42189f0ac340684b"
+    },
+    {
+      "instanceReference": "35:51",
+      "mainComponentReference": "28:3",
+      "status": "PASS",
+      "changedPixels": 0,
+      "pngSha256": "142ff9d60082b466cc29ed4ea79976b94096a3722a7774189d2992fc8919ccd1"
+    }
+  ],
+  "nativePagePngSha256": "17f4e77c7392af6e236a3b1a8b45dec3b8488672f5c4bd9633a317b58388dc5d",
+  "screenshotDimensions": [
+    1440,
+    496
+  ],
+  "inputHashes": {
+    "list-acceptance-native-evidence.json": "2c37c9cf8505a900ab4ace48d7d625f71a009eaa3436c0c19ec4a552229a397a",
+    "list-independent-readback.json": "33b31177607f3139c8a69573547343381641aa8ec74c6e9dfb62ffdf9c26d540",
+    "list-file-identity.json": "6cf962b3272b7258a4ecbd9aaec1294a9d3a12cdc6e7544349caf126335345a1",
+    "list-instance-pngs.json": "2b6c429151bf47b98e51223d62450c89d9d643fe3e254867aadf59ad465e72bd"
+  },
+  "issues": [],
+  "limits": [
+    "Fixed static fixture; admitted source content is unchanged.",
+    "Table is the official showHeader=false body variant; column labels belong to UI-IR.",
+    "Other planned component types, arbitrary props/slots and Penpot release acceptance remain separate tasks."
+  ],
+  "visualInspection": "PASS: actual native PNG inspected; no missing content or overlap"
+}

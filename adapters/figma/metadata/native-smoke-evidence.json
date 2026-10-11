@@ -1,0 +1,686 @@
+{
+  "status": "PASS",
+  "scope": "figma_native_translation",
+  "adapterVersion": "0.1.0",
+  "uiIrSha256": "1fe06802044369b525d8a8014af5b85cf795af4d2b26734eaf8609dcf9227255",
+  "tokensSha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+  "componentsSha256": "599fe5d5d0e693f29163d457a867ac12a0b9b6108c1c9d8621eac9ec06213c71",
+  "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+  "pageReference": "4:2",
+  "rootReference": "7:2",
+  "createdNodeIds": [
+    "7:2",
+    "7:3",
+    "7:4",
+    "7:5",
+    "7:6",
+    "7:7",
+    "7:8",
+    "7:9",
+    "7:10",
+    "7:11",
+    "7:12",
+    "7:13",
+    "7:14",
+    "7:15",
+    "7:16",
+    "7:17",
+    "7:18",
+    "7:19",
+    "7:20",
+    "7:21",
+    "7:22",
+    "7:23",
+    "7:24",
+    "7:25",
+    "I7:25;3:3",
+    "7:27",
+    "7:28",
+    "7:29",
+    "I7:29;3:6",
+    "7:31",
+    "7:32",
+    "7:33",
+    "I7:33;3:9",
+    "7:35",
+    "7:36",
+    "7:37",
+    "I7:37;3:12",
+    "7:39",
+    "7:40",
+    "7:41",
+    "I7:41;3:15",
+    "7:43",
+    "7:44",
+    "7:45"
+  ],
+  "mutatedNodeIds": [],
+  "nodeMap": {
+    "native-page": "7:2",
+    "heading": "7:3",
+    "notice": "7:4",
+    "grid": "7:5",
+    "column0": "7:8",
+    "column0.title": "7:9",
+    "column0.body": "7:10",
+    "column1": "7:12",
+    "column1.title": "7:13",
+    "column1.body": "7:14",
+    "column2": "7:16",
+    "column2.title": "7:17",
+    "column2.body": "7:18",
+    "column3": "7:20",
+    "column3.title": "7:21",
+    "column3.body": "7:22",
+    "icons": "7:23",
+    "icon-group0": "7:24",
+    "icon0": "7:25",
+    "icon0.label": "7:27",
+    "icon-group1": "7:28",
+    "icon1": "7:29",
+    "icon1.label": "7:31",
+    "icon-group2": "7:32",
+    "icon2": "7:33",
+    "icon2.label": "7:35",
+    "icon-group3": "7:36",
+    "icon3": "7:37",
+    "icon3.label": "7:39",
+    "icon-group4": "7:40",
+    "icon4": "7:41",
+    "icon4.label": "7:43",
+    "footer": "7:44",
+    "footer.text": "7:45"
+  },
+  "helperNodeIds": [
+    "7:6",
+    "7:7",
+    "7:11",
+    "7:15",
+    "7:19"
+  ],
+  "evidence": [
+    {
+      "uiIrId": "native-page",
+      "nodeId": "7:2",
+      "type": "FRAME",
+      "name": "UI-IR/adapter-native-smoke/native-page",
+      "width": 1440,
+      "height": 388,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 24,
+      "paddingTop": 24,
+      "paddingRight": 24,
+      "paddingBottom": 24,
+      "paddingLeft": 24
+    },
+    {
+      "uiIrId": "heading",
+      "nodeId": "7:3",
+      "type": "TEXT",
+      "name": "heading",
+      "width": 262,
+      "height": 28,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "Adapter 原生布局与图标验收",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontWeight": 600,
+      "namedStyleFontWeight": 600
+    },
+    {
+      "uiIrId": "notice",
+      "nodeId": "7:4",
+      "type": "TEXT",
+      "name": "notice",
+      "width": 329,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "仅验收布局与官方图标；官方 UI 组件保真仍待完成。",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "grid",
+      "nodeId": "7:5",
+      "type": "FRAME",
+      "name": "grid",
+      "width": 1392,
+      "height": 84,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 16,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0
+    },
+    {
+      "uiIrId": "column0",
+      "nodeId": "7:8",
+      "type": "FRAME",
+      "name": "Grid span 6 / column 1",
+      "width": 336,
+      "height": 84,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 8,
+      "paddingTop": 16,
+      "paddingRight": 16,
+      "paddingBottom": 16,
+      "paddingLeft": 16
+    },
+    {
+      "uiIrId": "column0.title",
+      "nodeId": "7:9",
+      "type": "TEXT",
+      "name": "column0.title",
+      "width": 43,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "第 1 列",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "column0.body",
+      "nodeId": "7:10",
+      "type": "TEXT",
+      "name": "column0.body",
+      "width": 177,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "span=6 · 原生 Auto Layout",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "column1",
+      "nodeId": "7:12",
+      "type": "FRAME",
+      "name": "Grid span 6 / column 2",
+      "width": 336,
+      "height": 84,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 8,
+      "paddingTop": 16,
+      "paddingRight": 16,
+      "paddingBottom": 16,
+      "paddingLeft": 16
+    },
+    {
+      "uiIrId": "column1.title",
+      "nodeId": "7:13",
+      "type": "TEXT",
+      "name": "column1.title",
+      "width": 43,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "第 2 列",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "column1.body",
+      "nodeId": "7:14",
+      "type": "TEXT",
+      "name": "column1.body",
+      "width": 177,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "span=6 · 原生 Auto Layout",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "column2",
+      "nodeId": "7:16",
+      "type": "FRAME",
+      "name": "Grid span 6 / column 3",
+      "width": 336,
+      "height": 84,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 8,
+      "paddingTop": 16,
+      "paddingRight": 16,
+      "paddingBottom": 16,
+      "paddingLeft": 16
+    },
+    {
+      "uiIrId": "column2.title",
+      "nodeId": "7:17",
+      "type": "TEXT",
+      "name": "column2.title",
+      "width": 43,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "第 3 列",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "column2.body",
+      "nodeId": "7:18",
+      "type": "TEXT",
+      "name": "column2.body",
+      "width": 177,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "span=6 · 原生 Auto Layout",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "column3",
+      "nodeId": "7:20",
+      "type": "FRAME",
+      "name": "Grid span 6 / column 4",
+      "width": 336,
+      "height": 84,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 8,
+      "paddingTop": 16,
+      "paddingRight": 16,
+      "paddingBottom": 16,
+      "paddingLeft": 16
+    },
+    {
+      "uiIrId": "column3.title",
+      "nodeId": "7:21",
+      "type": "TEXT",
+      "name": "column3.title",
+      "width": 43,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "第 4 列",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "column3.body",
+      "nodeId": "7:22",
+      "type": "TEXT",
+      "name": "column3.body",
+      "width": 177,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "span=6 · 原生 Auto Layout",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "icons",
+      "nodeId": "7:23",
+      "type": "FRAME",
+      "name": "icons",
+      "width": 1392,
+      "height": 56,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "HORIZONTAL",
+      "itemSpacing": 24,
+      "paddingTop": 16,
+      "paddingRight": 16,
+      "paddingBottom": 16,
+      "paddingLeft": 16
+    },
+    {
+      "uiIrId": "icon-group0",
+      "nodeId": "7:24",
+      "type": "FRAME",
+      "name": "icon-group0",
+      "width": 60,
+      "height": 24,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "HORIZONTAL",
+      "itemSpacing": 8,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0
+    },
+    {
+      "uiIrId": "icon0",
+      "nodeId": "7:25",
+      "type": "INSTANCE",
+      "name": "icon0",
+      "width": 24,
+      "height": 24,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "mainComponentReference": "3:4"
+    },
+    {
+      "uiIrId": "icon0.label",
+      "nodeId": "7:27",
+      "type": "TEXT",
+      "name": "icon0.label",
+      "width": 28,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "搜索",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "icon-group1",
+      "nodeId": "7:28",
+      "type": "FRAME",
+      "name": "icon-group1",
+      "width": 60,
+      "height": 24,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "HORIZONTAL",
+      "itemSpacing": 8,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0
+    },
+    {
+      "uiIrId": "icon1",
+      "nodeId": "7:29",
+      "type": "INSTANCE",
+      "name": "icon1",
+      "width": 24,
+      "height": 24,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "mainComponentReference": "3:7"
+    },
+    {
+      "uiIrId": "icon1.label",
+      "nodeId": "7:31",
+      "type": "TEXT",
+      "name": "icon1.label",
+      "width": 28,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "删除",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "icon-group2",
+      "nodeId": "7:32",
+      "type": "FRAME",
+      "name": "icon-group2",
+      "width": 60,
+      "height": 24,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "HORIZONTAL",
+      "itemSpacing": 8,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0
+    },
+    {
+      "uiIrId": "icon2",
+      "nodeId": "7:33",
+      "type": "INSTANCE",
+      "name": "icon2",
+      "width": 24,
+      "height": 24,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "mainComponentReference": "3:10"
+    },
+    {
+      "uiIrId": "icon2.label",
+      "nodeId": "7:35",
+      "type": "TEXT",
+      "name": "icon2.label",
+      "width": 28,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "新增",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "icon-group3",
+      "nodeId": "7:36",
+      "type": "FRAME",
+      "name": "icon-group3",
+      "width": 60,
+      "height": 24,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "HORIZONTAL",
+      "itemSpacing": 8,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0
+    },
+    {
+      "uiIrId": "icon3",
+      "nodeId": "7:37",
+      "type": "INSTANCE",
+      "name": "icon3",
+      "width": 24,
+      "height": 24,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "mainComponentReference": "3:13"
+    },
+    {
+      "uiIrId": "icon3.label",
+      "nodeId": "7:39",
+      "type": "TEXT",
+      "name": "icon3.label",
+      "width": 28,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "导出",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "icon-group4",
+      "nodeId": "7:40",
+      "type": "FRAME",
+      "name": "icon-group4",
+      "width": 60,
+      "height": 24,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "HORIZONTAL",
+      "itemSpacing": 8,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0
+    },
+    {
+      "uiIrId": "icon4",
+      "nodeId": "7:41",
+      "type": "INSTANCE",
+      "name": "icon4",
+      "width": 24,
+      "height": 24,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "mainComponentReference": "3:16"
+    },
+    {
+      "uiIrId": "icon4.label",
+      "nodeId": "7:43",
+      "type": "TEXT",
+      "name": "icon4.label",
+      "width": 28,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "设置",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    },
+    {
+      "uiIrId": "footer",
+      "nodeId": "7:44",
+      "type": "FRAME",
+      "name": "footer",
+      "width": 1392,
+      "height": 54,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 0,
+      "paddingTop": 16,
+      "paddingRight": 16,
+      "paddingBottom": 16,
+      "paddingLeft": 16
+    },
+    {
+      "uiIrId": "footer.text",
+      "nodeId": "7:45",
+      "type": "TEXT",
+      "name": "footer.text",
+      "width": 397,
+      "height": 22,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "可编辑 Text · Fixed / Fill / Hug · Grid24 · 真实 Icon Instance",
+      "fontName": {
+        "family": "Noto Sans SC",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontWeight": 400,
+      "namedStyleFontWeight": 400
+    }
+  ]
+}

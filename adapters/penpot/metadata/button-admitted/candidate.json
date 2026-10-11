@@ -1,0 +1,97 @@
+{
+  "normalizationVersion": "0.2.0",
+  "scope": "production",
+  "evidenceKind": "native-design-capture",
+  "logicalComponentId": "action.button.primary.medium",
+  "variant": "default",
+  "state": "default-static",
+  "props": {
+    "type": "primary",
+    "size": "default"
+  },
+  "content": {
+    "text": "查询",
+    "options": []
+  },
+  "fixtureContext": {
+    "containerWidth": 240
+  },
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "66d8984b25e8e3e080e864396eaf25f168fd2cf9395a6111628ed9ca7036ed4f",
+  "verification": {
+    "geometryAndStyle": "PASS",
+    "content": "PASS",
+    "fontBinding": "PASS",
+    "glyphGeometry": "PASS",
+    "baselines": "PASS",
+    "renderState": "PASS",
+    "sourceReproduction": "PASS",
+    "vectorBinding": "PASS"
+  },
+  "glyphPaintSamples": [
+    {
+      "characters": "查询",
+      "region": {
+        "x": 16,
+        "y": 5.5,
+        "width": 28,
+        "height": 21
+      },
+      "advances": [
+        14,
+        14
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "background": [
+        45,
+        140,
+        240
+      ]
+    }
+  ],
+  "allowedCornerRegions": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 4,
+      "height": 4
+    },
+    {
+      "x": 0,
+      "y": 28,
+      "width": 4,
+      "height": 4
+    },
+    {
+      "x": 56,
+      "y": 0,
+      "width": 4,
+      "height": 4
+    },
+    {
+      "x": 56,
+      "y": 28,
+      "width": 4,
+      "height": 4
+    }
+  ],
+  "rasterContext": {
+    "deviceScaleFactor": 1,
+    "background": "white",
+    "scale": 1,
+    "resize": false,
+    "crop": false
+  },
+  "screenshotSha256": "f06ba3864d17c183ee08cff6ac9e0114f67834da1733904c650cf496a02392ef",
+  "vectorRasterSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+  "capture": {
+    "captureId": "penpot-button-bf1610804cdb9491dca85edbfe682ec8f34d0c2fc6683ffb8daa79a4a906923b",
+    "exporterVersion": "penpot-button-normalization-0.2.0",
+    "nativeEvidenceSha256": "296f071f6cf658422818aaa4d4b4042dd35a360fbe04047fc548f273d91cb14c",
+    "proofBundleSha256": "ca47a08d9e000c5bcfdeeec74615a0587c11aff2b6ea32e2a1cc2e2567428d0e"
+  }
+}

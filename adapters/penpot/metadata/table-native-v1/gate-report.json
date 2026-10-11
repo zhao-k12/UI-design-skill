@@ -1,0 +1,181 @@
+{
+  "gateVersion": "0.2.0",
+  "scope": "production",
+  "logicalComponentId": "data.table.default",
+  "componentType": "Table",
+  "variants": [
+    "default"
+  ],
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "f4595874472457b7b34a51cf6c40e7022b88c963ba2a0a813b8d2383cfff35ea",
+  "status": "PASS",
+  "admissionEligible": true,
+  "issues": [],
+  "checks": {
+    "geometryAndStyle": "PASS",
+    "screenshot": {
+      "changedPixels": 2354,
+      "changedPixelsOutsideEdgeBand": 0,
+      "changedPixelsOutsidePermittedRegions": 0,
+      "maxChannelDelta": 145,
+      "policy": "evidence-bound-edges-0.2.0",
+      "vectorRasterSha256": "a2730f5b7f2e386d5a7ff1a9779841d73c359b2e90009aa80a2e5f1e1e99b02a",
+      "edgeBandPixelCount": 23014
+    },
+    "glyphRetention": [
+      {
+        "character": "张",
+        "sourceInkProxy": 66.72633267962203,
+        "nativeInkProxy": 55.86871864095968,
+        "retentionRatio": 0.8372814209527474,
+        "status": "PASS"
+      },
+      {
+        "character": "三",
+        "sourceInkProxy": 32.73215240811962,
+        "nativeInkProxy": 30.295481751267104,
+        "retentionRatio": 0.9255572738855979,
+        "status": "PASS"
+      },
+      {
+        "character": "启",
+        "sourceInkProxy": 63.33970914092151,
+        "nativeInkProxy": 57.58323357868731,
+        "retentionRatio": 0.9091174298033657,
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "sourceInkProxy": 67.91494536841304,
+        "nativeInkProxy": 57.738124952245116,
+        "retentionRatio": 0.8501534476548203,
+        "status": "PASS"
+      },
+      {
+        "character": "管",
+        "sourceInkProxy": 74.18634592364316,
+        "nativeInkProxy": 67.69597330820366,
+        "retentionRatio": 0.9125125717592324,
+        "status": "PASS"
+      },
+      {
+        "character": "理",
+        "sourceInkProxy": 81.2978376588646,
+        "nativeInkProxy": 67.63208364108702,
+        "retentionRatio": 0.8319050738456205,
+        "status": "PASS"
+      },
+      {
+        "character": "员",
+        "sourceInkProxy": 56.683569773068776,
+        "nativeInkProxy": 47.50359116725671,
+        "retentionRatio": 0.838048686020237,
+        "status": "PASS"
+      },
+      {
+        "character": "李",
+        "sourceInkProxy": 59.60061635636607,
+        "nativeInkProxy": 52.434798665410185,
+        "retentionRatio": 0.8797694029184232,
+        "status": "PASS"
+      },
+      {
+        "character": "四",
+        "sourceInkProxy": 73.45914728879613,
+        "nativeInkProxy": 59.50221582660521,
+        "retentionRatio": 0.8100041726958678,
+        "status": "PASS"
+      },
+      {
+        "character": "启",
+        "sourceInkProxy": 63.33970914092151,
+        "nativeInkProxy": 57.58323357868731,
+        "retentionRatio": 0.9091174298033657,
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "sourceInkProxy": 67.91494536841304,
+        "nativeInkProxy": 57.738124952245116,
+        "retentionRatio": 0.8501534476548203,
+        "status": "PASS"
+      },
+      {
+        "character": "编",
+        "sourceInkProxy": 85.17243970150018,
+        "nativeInkProxy": 71.16715482770039,
+        "retentionRatio": 0.8355655312577231,
+        "status": "PASS"
+      },
+      {
+        "character": "辑",
+        "sourceInkProxy": 79.60092198762192,
+        "nativeInkProxy": 70.37842243333418,
+        "retentionRatio": 0.884140794804841,
+        "status": "PASS"
+      },
+      {
+        "character": "王",
+        "sourceInkProxy": 45.72159539515575,
+        "nativeInkProxy": 42.86096324784148,
+        "retentionRatio": 0.93743367608696,
+        "status": "PASS"
+      },
+      {
+        "character": "五",
+        "sourceInkProxy": 52.257099559381615,
+        "nativeInkProxy": 44.72374754858264,
+        "retentionRatio": 0.8558406020556392,
+        "status": "PASS"
+      },
+      {
+        "character": "停",
+        "sourceInkProxy": 69.64935180704482,
+        "nativeInkProxy": 61.282416015077814,
+        "retentionRatio": 0.8798705863746356,
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "sourceInkProxy": 67.91494536841304,
+        "nativeInkProxy": 57.738124952245116,
+        "retentionRatio": 0.8501534476548203,
+        "status": "PASS"
+      },
+      {
+        "character": "访",
+        "sourceInkProxy": 54.89597076127652,
+        "nativeInkProxy": 48.12167944375112,
+        "retentionRatio": 0.8765976587428531,
+        "status": "PASS"
+      },
+      {
+        "character": "客",
+        "sourceInkProxy": 69.57109747090138,
+        "nativeInkProxy": 64.85299136591703,
+        "retentionRatio": 0.9321829570540018,
+        "status": "PASS"
+      }
+    ],
+    "normalizationProofs": {
+      "geometryAndStyle": "PASS",
+      "content": "PASS",
+      "fontBinding": "PASS",
+      "glyphGeometry": "PASS",
+      "baselines": "PASS",
+      "renderState": "PASS",
+      "sourceReproduction": "PASS",
+      "vectorBinding": "PASS"
+    }
+  },
+  "capture": {
+    "captureId": "penpot-table-2f3240b86ed5b415e851d1575a39756b1e09b6b272849cba9d1d4f8a8bbe77e4",
+    "exporterVersion": "penpot-table-normalization-0.2.0",
+    "nativeEvidenceSha256": "dc3255bd283342632539f529c64bd056e3ffaf1a03c7ef9a6ed4cbfc6705a5bc",
+    "proofBundleSha256": "dbc30efbfd3c61112e595fa8cc9da585cabe8aee8841164d2c1b23857a88e8da"
+  },
+  "candidateSha256": "adf692bed1075b7efc0984dfbf87747bfe1556e5e9c32f95b3f906cddc675ee1",
+  "referenceScreenshotSha256": "a2730f5b7f2e386d5a7ff1a9779841d73c359b2e90009aa80a2e5f1e1e99b02a",
+  "candidateScreenshotSha256": "ed88097c9e7639b090bd888fe3f578a9ed84d464b167730c64830a6140b8c878",
+  "candidateEvidenceKind": "native-design-capture"
+}

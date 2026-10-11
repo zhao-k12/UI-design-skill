@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "scope": "production-native-icon-master-admission",
+  "policyVersion": "task-010-locked-icon-raster-edges/0.1.0",
+  "platform": "penpot",
+  "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+  "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+  "registrySha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+  "sourceVersion": "remixicon@4.9.1+39eab8b69cadaa47e1bed6a41777b1cd22227c74",
+  "admissionEligible": true,
+  "actualInstanceAcceptance": "NOT_RUN",
+  "productionScreenshot": "original-complete-main-native-png",
+  "results": [
+    {
+      "iconId": "remix.settings-3-line",
+      "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc685ca781",
+      "mainReference": "6d6e57fb-4a0a-8065-8008-c0fc685bc39e",
+      "sourceSvgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1",
+      "status": "PASS",
+      "nativePngSha256": "b3720de56d586dc3d1365369a2277bf65f2f867ba73027d1ab42fb461e778d95",
+      "sourcePixelsExact": false,
+      "changedPixels": 138,
+      "changedPixelsOutsideVerifiedEdgeBand": 0,
+      "inkRegionBoundsExact": true,
+      "inkAndVoidRegionCountsExact": true,
+      "independentNativePngBytesExact": true
+    },
+    {
+      "iconId": "remix.download-line",
+      "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc6866e456",
+      "mainReference": "6d6e57fb-4a0a-8065-8008-c0fc68665f64",
+      "sourceSvgSha256": "ad83ac7dc9d4c6af651a53068e928d82f9402cfd05a924742388549846032f43",
+      "status": "PASS",
+      "nativePngSha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43",
+      "sourcePixelsExact": false,
+      "changedPixels": 42,
+      "changedPixelsOutsideVerifiedEdgeBand": 0,
+      "inkRegionBoundsExact": true,
+      "inkAndVoidRegionCountsExact": true,
+      "independentNativePngBytesExact": true
+    }
+  ],
+  "proofFiles": [
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/latest-main-capture.json",
+      "sha256": "a23fc55c57c21c99722db31dcfe84a7f9641ac5660fd59e5d9344e714ed8b84a"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/content-capture.json",
+      "sha256": "8382c1c7595b4739a013997861ef865e7143b715939ca34a2b677e9ca406672c"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/latest-svg-probe.json",
+      "sha256": "ca0a02682c518ad10ce95a249dbe437b6916a15016d855fb98afec440bf67540"
+    },
+    {
+      "path": "adapters/penpot/metadata/icon-source-plan/plan.json",
+      "sha256": "3565c96b5a5e4852bbeb51605a357a33c2b7554890ebe1741c26cd8a3821f2c6"
+    },
+    {
+      "path": "adapters/penpot/icon_admission.py",
+      "sha256": "a54ed2c892344fbcb2f05f95ce9ad2fedee71a6fe7a552767d7c9fd9fad7ddc2"
+    },
+    {
+      "path": "adapters/penpot/icon_raster_diagnostic.py",
+      "sha256": "4a42f4105a38c5b463147cef8461c2b4e396d5bc440760ddf0c10cd6eacb74d4"
+    },
+    {
+      "path": "adapters/penpot/icon_native_evidence.py",
+      "sha256": "f3b29273eae7986364a0ed9e481cd0b42ecf972fa7c70a7f7c64b98fade0b63c"
+    },
+    {
+      "path": "adapters/penpot/icon_precision.py",
+      "sha256": "2cb9a9e079cef20f91c49e969441a0d97427895d4b9a64e12062a2f4e006613b"
+    },
+    {
+      "path": "adapters/penpot/icon_svg_probe.mjs",
+      "sha256": "aef970c44bde34d03cbc142f33366e01f69bb3bad79ae80c89e6a6de9b628bff"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/latest.remix.settings-3-line.png",
+      "sha256": "b3720de56d586dc3d1365369a2277bf65f2f867ba73027d1ab42fb461e778d95"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/latest.remix.settings-3-line.svg",
+      "sha256": "600efac375d36d0e2dd56d44faee4fc64823dd18fbd4302f40e6ef310ef79276"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/remix.settings-3-line.source.png",
+      "sha256": "731f418d66fdb90f3668b93a6189638054bf2753ff11e448d23353b9c87c82c6"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/remix.settings-3-line.native.png",
+      "sha256": "731f418d66fdb90f3668b93a6189638054bf2753ff11e448d23353b9c87c82c6"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/latest.remix.download-line.png",
+      "sha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/latest.remix.download-line.svg",
+      "sha256": "b1ce71254fc4d472cf1060e455b5a0e97f956ae6e9d36c1d52feb6baab409f1f"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/remix.download-line.source.png",
+      "sha256": "919ce1e92686a57e3c3ec0e119c254de369b84b0e9029471bb712a7c21f82988"
+    },
+    {
+      "path": "adapters/penpot/metadata/icons-native-v1/remix.download-line.native.png",
+      "sha256": "919ce1e92686a57e3c3ec0e119c254de369b84b0e9029471bb712a7c21f82988"
+    }
+  ]
+}

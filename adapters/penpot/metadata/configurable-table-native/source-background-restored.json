@@ -1,0 +1,52 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "SOURCE_BACKGROUND_RESTORED",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "b65bc280-c7a5-8006-8008-c496888c78a0",
+    "observations": [
+      {
+        "mainReference": "b65bc280-c7a5-8006-8008-c49688a06509",
+        "logicalId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+        "sourcePath": "0.0",
+        "sourceFill": "#ffffff",
+        "beforeFills": [],
+        "afterFills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ]
+      },
+      {
+        "mainReference": "b65bc280-c7a5-8006-8008-c49689998f9c",
+        "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+        "sourcePath": "0.0",
+        "sourceFill": "#ffffff",
+        "beforeFills": [],
+        "afterFills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ]
+      }
+    ],
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "b65bc280-c7a5-8006-8008-c49688a06509",
+      "b65bc280-c7a5-8006-8008-c49689998f9c"
+    ],
+    "fidelityGate": "NOT_RUN",
+    "admissionEligible": false
+  }
+}

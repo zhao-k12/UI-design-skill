@@ -1,0 +1,61 @@
+{
+  "scope": "browser_font_file_binding_diagnostic",
+  "status": "PASS",
+  "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+  "probeScriptSha256": "0dfba539447fcdeb226c11a2144264b37975a720779d5152c24b5b75fd04fa80",
+  "referenceMatches": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "observations": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "pngPath": "file-bound-action.button.primary.medium.png",
+      "pngSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+      "ownerBoundsUnchanged": true,
+      "computedFamily": "DiagnosticFilePingFang",
+      "fontLoadStatus": "loaded",
+      "pngBytesExactlyMatchOfficialReference": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "pngPath": "file-bound-form.input.default.medium.png",
+      "pngSha256": "3c940cc44ef9cd1048a3ca8fcae8366b30eb22fc4866bbb8a75de3186d5b9855",
+      "ownerBoundsUnchanged": true,
+      "computedFamily": "DiagnosticFilePingFang",
+      "fontLoadStatus": "loaded",
+      "pngBytesExactlyMatchOfficialReference": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "pngPath": "file-bound-form.select.default.medium.png",
+      "pngSha256": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+      "ownerBoundsUnchanged": true,
+      "computedFamily": "DiagnosticFilePingFang",
+      "fontLoadStatus": "loaded",
+      "pngBytesExactlyMatchOfficialReference": true
+    }
+  ],
+  "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "temporaryFontFaceRemoved": true,
+  "ownerStatesRestored": true,
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Temporary explicit font-file binding is a diagnostic experiment, not an alteration of the official reference.",
+    "Native uploaded-file bytes and renderer behavior remain independent."
+  ]
+}

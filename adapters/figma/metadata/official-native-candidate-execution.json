@@ -1,0 +1,50 @@
+{
+  "scope": "figma_official_native_candidate_execution",
+  "observedDate": "2026-10-06",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "0:1",
+  "fontUploadReportedBy": "user",
+  "components": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "componentReference": "12:4",
+      "createdNodeIds": [
+        "12:2",
+        "12:3",
+        "12:4"
+      ],
+      "buildStatus": "PASS",
+      "captureStatus": "PASS"
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "componentReference": "12:8",
+      "createdNodeIds": [
+        "12:5",
+        "12:6",
+        "12:7",
+        "12:8"
+      ],
+      "buildStatus": "PASS",
+      "captureStatus": "PASS"
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "componentReference": "12:15",
+      "createdNodeIds": [
+        "12:9",
+        "12:10",
+        "12:11",
+        "12:12",
+        "12:13",
+        "12:14",
+        "12:15"
+      ],
+      "buildStatus": "PASS",
+      "captureStatus": "PASS"
+    }
+  ],
+  "mutatedNodeIds": [],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN"
+}

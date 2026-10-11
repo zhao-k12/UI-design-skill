@@ -1,0 +1,521 @@
+{
+  "scope": "figma_render_state_diagnostic_batch",
+  "status": "REVIEW",
+  "components": [
+    {
+      "scope": "figma_observed_render_state_diagnostic",
+      "logicalId": "action.button.primary.medium",
+      "status": "REVIEW",
+      "checks": [
+        {
+          "reference": "18:5",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "18:5",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "18:5",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "18:4",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "18:4",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "18:4",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "textCase",
+          "expected": "ORIGINAL",
+          "actual": "ORIGINAL",
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "textDecoration",
+          "expected": "NONE",
+          "actual": "NONE",
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "letterSpacing",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "status": "PASS"
+        }
+      ],
+      "unverified": [
+        {
+          "reference": "18:3",
+          "field": "blendMode",
+          "actual": "PASS_THROUGH",
+          "reason": "native_passthrough_text_not_css_normalized"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "PASS covers only listed observed properties, not all CSS or pixel equality.",
+        "Normal/pass-through containers are compared only at unit opacity; masks, clipping, font shaping and rasterization remain independent."
+      ]
+    },
+    {
+      "scope": "figma_observed_render_state_diagnostic",
+      "logicalId": "form.input.default.medium",
+      "status": "REVIEW",
+      "checks": [
+        {
+          "reference": "12:8",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:8",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:8",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:6",
+          "sourcePath": "0.1",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:6",
+          "sourcePath": "0.1",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:6",
+          "sourcePath": "0.1",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "textCase",
+          "expected": "ORIGINAL",
+          "actual": "ORIGINAL",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "textDecoration",
+          "expected": "NONE",
+          "actual": "NONE",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "letterSpacing",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "status": "PASS"
+        }
+      ],
+      "unverified": [
+        {
+          "reference": "12:7",
+          "field": "blendMode",
+          "actual": "PASS_THROUGH",
+          "reason": "native_passthrough_text_not_css_normalized"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "PASS covers only listed observed properties, not all CSS or pixel equality.",
+        "Normal/pass-through containers are compared only at unit opacity; masks, clipping, font shaping and rasterization remain independent."
+      ]
+    },
+    {
+      "scope": "figma_observed_render_state_diagnostic",
+      "logicalId": "form.select.default.medium",
+      "status": "REVIEW",
+      "checks": [
+        {
+          "reference": "12:15",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:15",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:15",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:10",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:10",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:10",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:11",
+          "sourcePath": "0.0.1",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:11",
+          "sourcePath": "0.0.1",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:11",
+          "sourcePath": "0.0.1",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:12",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:12",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:12",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "textCase",
+          "expected": "ORIGINAL",
+          "actual": "ORIGINAL",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "textDecoration",
+          "expected": "NONE",
+          "actual": "NONE",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "letterSpacing",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "textCase",
+          "expected": "ORIGINAL",
+          "actual": "ORIGINAL",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "textDecoration",
+          "expected": "NONE",
+          "actual": "NONE",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "letterSpacing",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "status": "PASS"
+        }
+      ],
+      "unverified": [
+        {
+          "reference": "12:13",
+          "field": "blendMode",
+          "actual": "PASS_THROUGH",
+          "reason": "native_passthrough_text_not_css_normalized"
+        },
+        {
+          "reference": "12:14",
+          "field": "blendMode",
+          "actual": "PASS_THROUGH",
+          "reason": "native_passthrough_text_not_css_normalized"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "PASS covers only listed observed properties, not all CSS or pixel equality.",
+        "Normal/pass-through containers are compared only at unit opacity; masks, clipping, font shaping and rasterization remain independent."
+      ]
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN"
+}

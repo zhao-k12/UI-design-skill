@@ -1,0 +1,62 @@
+{
+  "gateVersion": "0.2.0",
+  "scope": "production",
+  "logicalComponentId": "action.button.primary.medium",
+  "componentType": "Button",
+  "variants": [
+    "default"
+  ],
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "66d8984b25e8e3e080e864396eaf25f168fd2cf9395a6111628ed9ca7036ed4f",
+  "status": "PASS",
+  "admissionEligible": true,
+  "issues": [],
+  "checks": {
+    "geometryAndStyle": "PASS",
+    "screenshot": {
+      "changedPixels": 279,
+      "changedPixelsOutsideEdgeBand": 0,
+      "changedPixelsOutsidePermittedRegions": 0,
+      "maxChannelDelta": 176,
+      "policy": "evidence-bound-edges-0.2.0",
+      "vectorRasterSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+      "edgeBandPixelCount": 638
+    },
+    "glyphRetention": [
+      {
+        "character": "查",
+        "sourceInkProxy": 86.02363162467415,
+        "nativeInkProxy": 68.63735881841873,
+        "retentionRatio": 0.7978895743193837,
+        "status": "PASS"
+      },
+      {
+        "character": "询",
+        "sourceInkProxy": 86.57063423110334,
+        "nativeInkProxy": 59.93701129452652,
+        "retentionRatio": 0.6923480672963833,
+        "status": "PASS"
+      }
+    ],
+    "normalizationProofs": {
+      "geometryAndStyle": "PASS",
+      "content": "PASS",
+      "fontBinding": "PASS",
+      "glyphGeometry": "PASS",
+      "baselines": "PASS",
+      "renderState": "PASS",
+      "sourceReproduction": "PASS",
+      "vectorBinding": "PASS"
+    }
+  },
+  "capture": {
+    "captureId": "penpot-button-bf1610804cdb9491dca85edbfe682ec8f34d0c2fc6683ffb8daa79a4a906923b",
+    "exporterVersion": "penpot-button-normalization-0.2.0",
+    "nativeEvidenceSha256": "296f071f6cf658422818aaa4d4b4042dd35a360fbe04047fc548f273d91cb14c",
+    "proofBundleSha256": "ca47a08d9e000c5bcfdeeec74615a0587c11aff2b6ea32e2a1cc2e2567428d0e"
+  },
+  "candidateSha256": "629a0907a0ea173d21aa625723e0753e2b5539b9375c9d7d19adfd500660a710",
+  "referenceScreenshotSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+  "candidateScreenshotSha256": "f06ba3864d17c183ee08cff6ac9e0114f67834da1733904c650cf496a02392ef",
+  "candidateEvidenceKind": "native-design-capture"
+}

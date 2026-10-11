@@ -1,0 +1,88 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "HEADER_UNION_RESTORED",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "60977a61-dfea-80ea-8008-c4e4eda0adb3",
+    "observations": [
+      {
+        "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+        "mainReference": "60977a61-dfea-80ea-8008-c4e4edb93a37",
+        "rowReference": "60977a61-dfea-80ea-8008-c4e4edc77a0a",
+        "union": {
+          "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+          "rowPath": "0.0.0.0.1.0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 721,
+            "height": 38.875
+          },
+          "fill": "#f8f8f9",
+          "opacity": 1,
+          "cellPaths": [
+            "0.0.0.0.1.0.0",
+            "0.0.0.0.1.0.1"
+          ],
+          "fidelityGate": "NOT_RUN",
+          "productionAdmission": false
+        },
+        "beforeFills": [],
+        "afterFills": [
+          {
+            "fillColor": "#f8f8f9",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ]
+      },
+      {
+        "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+        "mainReference": "60977a61-dfea-80ea-8008-c4e4eef45e14",
+        "rowReference": "60977a61-dfea-80ea-8008-c4e4eefd77c2",
+        "union": {
+          "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+          "rowPath": "0.0.0.0.1.0",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 961,
+            "height": 38.875
+          },
+          "fill": "#f8f8f9",
+          "opacity": 1,
+          "cellPaths": [
+            "0.0.0.0.1.0.0",
+            "0.0.0.0.1.0.1",
+            "0.0.0.0.1.0.2",
+            "0.0.0.0.1.0.3"
+          ],
+          "fidelityGate": "NOT_RUN",
+          "productionAdmission": false
+        },
+        "beforeFills": [],
+        "afterFills": [
+          {
+            "fillColor": "#f8f8f9",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ]
+      }
+    ],
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "60977a61-dfea-80ea-8008-c4e4edc77a0a",
+      "60977a61-dfea-80ea-8008-c4e4eefd77c2"
+    ],
+    "fidelityGate": "NOT_RUN",
+    "admissionEligible": false
+  }
+}

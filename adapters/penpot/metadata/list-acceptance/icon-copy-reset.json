@@ -1,0 +1,16 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "LINKED_ICON_COPIES_RESET",
+    "platform": "penpot",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "6d6e57fb-4a0a-8065-8008-c10659a6d9f7",
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "6d6e57fb-4a0a-8065-8008-c1065a7ff727",
+      "6d6e57fb-4a0a-8065-8008-c1065bed3d01"
+    ],
+    "admissionEligible": false
+  }
+}

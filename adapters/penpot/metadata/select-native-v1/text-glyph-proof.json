@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "scope": "observed-Type3-glyph-paths-in-font-units",
+  "unitsPerEm": 1000,
+  "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+  "nativePdfSha256": "0ce0a4d661d832ffde69aff03042e0562341915462c133bd0cb218d1131ea619",
+  "glyphs": [
+    {
+      "character": "启",
+      "pathSha256": "87e8f73079177e24a934b9ab41afebd080feddd1039489d15beb03ac01239ef4",
+      "nativeUnicodeCharacter": "启",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 36,
+      "nativeCommandCount": 36,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "用",
+      "pathSha256": "47702d98694a4dcdc75555908f9caf6a9cc3654a8b729c352ef7068811e56c69",
+      "nativeUnicodeCharacter": "⽤",
+      "sourceCmapGlyphAlias": true,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 43,
+      "nativeCommandCount": 43,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "admissionEligible": false,
+  "limitations": [
+    "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+    "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+    "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+  ]
+}

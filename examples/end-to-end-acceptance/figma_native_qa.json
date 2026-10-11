@@ -1,0 +1,13 @@
+{
+  "scope": "independent-static-pipeline-native-qa",
+  "platform": "figma",
+  "status": "PASS",
+  "uiIrSha256": "94d539a316f9ac50af23726b705af8e5c89fd188dba9e99a8a0aee9195394bee",
+  "logicalNodes": 49,
+  "nativeNodes": 90,
+  "genuineInstances": 6,
+  "nativePngSha256": "126a87102e4a3711ef1a2375ded382fff1bb19c4a415d61dc905afe1718242c1",
+  "issues": [],
+  "fidelityGate": "NOT_RUN",
+  "visualReview": "NOT_RUN"
+}

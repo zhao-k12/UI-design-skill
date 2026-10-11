@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "scope": "actual-embedded-cid-truetype-glyphs",
+  "resource": "/F10",
+  "sourceFontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+  "embeddedFontSha256": "3f81eb80e6032f2ed43223abdf9e9b642299a32ee4fb22806bd5441a1dfd2713",
+  "nativePdfSha256": "9a8dc66eedf722980b653173a8abb8259c8c58e5520fe8857ad623dc507ccd44",
+  "unitsPerEm": 2048,
+  "fontHintTablesEqual": {
+    "fpgm": true,
+    "prep": true,
+    "cvt ": true,
+    "gasp": true
+  },
+  "glyphs": [
+    {
+      "character": "0",
+      "cid": 19,
+      "sourceGlyph": "zero",
+      "nativeGlyph": "zero",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "1",
+      "cid": 20,
+      "sourceGlyph": "one",
+      "nativeGlyph": "one",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "2",
+      "cid": 21,
+      "sourceGlyph": "two",
+      "nativeGlyph": "two",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "3",
+      "cid": 22,
+      "sourceGlyph": "three",
+      "nativeGlyph": "three",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "4",
+      "cid": 23,
+      "sourceGlyph": "four",
+      "nativeGlyph": "four",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    }
+  ],
+  "admissionEligible": false
+}

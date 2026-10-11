@@ -1,0 +1,195 @@
+{
+  "programSha256": "8a9ddc4439de894cba0d71e4629ea2e5df127e78a23b73807aa64d1746f8cbca",
+  "reports": [
+    {
+      "status": "PASS",
+      "scope": "native-png-source-pixel-ownership-only",
+      "platform": "penpot",
+      "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+      "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+      "pngContext": {
+        "status": "PASS",
+        "scope": "raw-native-png-dimensions-and-alpha-only",
+        "platform": "penpot",
+        "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+        "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+        "nativePngSha256": "f0cbecf1ae759279397a70158e2ef0ab4e68c0003fc74a60804429f733d3a0d1",
+        "dimensions": [
+          720,
+          135
+        ],
+        "lastRowAlpha": 255,
+        "otherRowsAlpha": 255,
+        "productionAdmission": false,
+        "fidelityGate": "NOT_RUN",
+        "limitations": [
+          "Exact root clipping and independent vector evidence remain required.",
+          "This subgate does not verify PNG colors, content or edge coverage."
+        ]
+      },
+      "sourcePngSha256": "5fed0dc67b1f70d63786e04839150f591c1a80f4c1312bf208d46f572bd3a0b3",
+      "differentPixels": 7056,
+      "categories": {
+        "text": 2736,
+        "horizontal": 4320,
+        "outside": 0
+      },
+      "horizontalRegions": [
+        {
+          "sourcePath": "0.0.0.0.1.0",
+          "region": {
+            "x": 0,
+            "y": 37.875,
+            "width": 721,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.0",
+          "region": {
+            "x": 0,
+            "y": 85.875,
+            "width": 721,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.1",
+          "region": {
+            "x": 0,
+            "y": 133.875,
+            "width": 721,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0::before",
+          "region": {
+            "x": 0,
+            "y": 133.875,
+            "width": 720.0,
+            "height": 1.0
+          },
+          "fill": "#dcdee2"
+        }
+      ],
+      "pixelRegionPolicy": "positive-area-intersection-no-padding",
+      "fidelityGate": "NOT_RUN",
+      "productionAdmission": false,
+      "limitations": [
+        "Text requires independent glyph, baseline, paint and retention checks.",
+        "Horizontal regions require exact vector style, full coverage and edge checks.",
+        "Region ownership alone does not admit differences inside these regions."
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "native-png-source-pixel-ownership-only",
+      "platform": "penpot",
+      "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+      "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+      "pngContext": {
+        "status": "PASS",
+        "scope": "raw-native-png-dimensions-and-alpha-only",
+        "platform": "penpot",
+        "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+        "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+        "nativePngSha256": "07e1a9090c4cbb29c0f463441582457921c8f2ca52d77fbefc028969343fc2bf",
+        "dimensions": [
+          960,
+          231
+        ],
+        "lastRowAlpha": 255,
+        "otherRowsAlpha": 255,
+        "productionAdmission": false,
+        "fidelityGate": "NOT_RUN",
+        "limitations": [
+          "Exact root clipping and independent vector evidence remain required.",
+          "This subgate does not verify PNG colors, content or edge coverage."
+        ]
+      },
+      "sourcePngSha256": "6283af61df4d0e150b2f35306eae5989144076b27ffc7619e00881fdd0ba7bcf",
+      "differentPixels": 14244,
+      "categories": {
+        "text": 4644,
+        "horizontal": 9600,
+        "outside": 0
+      },
+      "horizontalRegions": [
+        {
+          "sourcePath": "0.0.0.0.1.0",
+          "region": {
+            "x": 0,
+            "y": 37.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.0",
+          "region": {
+            "x": 0,
+            "y": 85.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.1",
+          "region": {
+            "x": 0,
+            "y": 133.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.2",
+          "region": {
+            "x": 0,
+            "y": 181.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.3",
+          "region": {
+            "x": 0,
+            "y": 229.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0::before",
+          "region": {
+            "x": 0,
+            "y": 229.875,
+            "width": 960.0,
+            "height": 1.0
+          },
+          "fill": "#dcdee2"
+        }
+      ],
+      "pixelRegionPolicy": "positive-area-intersection-no-padding",
+      "fidelityGate": "NOT_RUN",
+      "productionAdmission": false,
+      "limitations": [
+        "Text requires independent glyph, baseline, paint and retention checks.",
+        "Horizontal regions require exact vector style, full coverage and edge checks.",
+        "Region ownership alone does not admit differences inside these regions."
+      ]
+    }
+  ],
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "figma_complete_baseline_alignment_diagnostic",
+  "status": "REVIEW",
+  "observations": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "surface": "element",
+      "textReference": "12:3",
+      "sourceBaselineComponentY": 20.5,
+      "nativeFontBaselineComponentY": 20.5,
+      "deltaY": 0.0,
+      "positionStatus": "ALIGNED",
+      "nativeSvgBaselineOffset": 16.0,
+      "exactContourCoordinatesEqual": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "surface": "element",
+      "textReference": "12:13",
+      "sourceBaselineComponentY": 21,
+      "nativeFontBaselineComponentY": 21.0,
+      "deltaY": 0.0,
+      "positionStatus": "ALIGNED",
+      "nativeSvgBaselineOffset": 20.0,
+      "exactContourCoordinatesEqual": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "surface": "user-agent-shadow",
+      "textReference": "12:7",
+      "sourceBaselineComponentY": 21,
+      "nativeFontBaselineComponentY": 21.0,
+      "deltaY": 0.0,
+      "positionStatus": "ALIGNED",
+      "nativeSvgBaselineOffset": 15.0,
+      "exactContourCoordinatesEqual": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "surface": "pseudo:before",
+      "textReference": "12:14",
+      "sourceBaselineComponentY": 22,
+      "nativeFontBaselineComponentY": 22.0,
+      "deltaY": 0.0,
+      "positionStatus": "ALIGNED",
+      "nativeSvgBaselineOffset": 13.0,
+      "exactContourCoordinatesEqual": false
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Baseline coordinates use actual source markers and native SVG/font ink extents with identity linear transforms.",
+    "Ink dimension/position agreement does not establish fill winding, hinting, served font equivalence or exact pixel equality."
+  ]
+}

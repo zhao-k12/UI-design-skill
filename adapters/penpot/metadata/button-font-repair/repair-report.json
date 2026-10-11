@@ -1,0 +1,40 @@
+{
+  "status": "REVIEW",
+  "platform": "penpot",
+  "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+  "fontResourceRepair": "OBSERVED",
+  "sourceAndTeamDownloadedFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+  "nativeFontIdentity": "OBSERVED",
+  "glyphFontUnitContours": "PASS",
+  "baselineTextMatrixComponentY": 20.5,
+  "baselineEvidence": "native.pdf page stream: /F4 14 Tf; 1 0 0 -1 16 20.5 Tm",
+  "nativePngDifferentPixels": 281,
+  "nativePngDimensions": [
+    60,
+    32
+  ],
+  "publicSourceVersion": "penpot/penpot 2.18.3 @ ff7a66f51938b2293260ea27a64e2c4e0833b5e3",
+  "publicSourceUrl": "https://github.com/penpot/penpot/blob/ff7a66f51938b2293260ea27a64e2c4e0833b5e3/frontend/src/app/main/fonts.cljs#L330",
+  "fontsUploaded": "lossless WOFF containers for previously approved PingFang SC Regular and Ionicons Regular",
+  "oldFontVariantsRetained": true,
+  "actualGlyphSource": "native PDF Type3 CharProcs, compared without contour translation or tolerance",
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "remaining": [
+    "Complete normalization and the eight production fidelity proofs are pending.",
+    "PDF serializer matrices/character offsets remain separately recorded; font-unit equality does not certify scaled glyph placement.",
+    "Native PNG edge verification and SVG browser reproduction remain pending."
+  ],
+  "evidenceSha256": {
+    "corrected-capture.json": "e63b87899c2755bee694f556c5e4bce41ec1989354583be1e6ed83a803494b40",
+    "fallback-capture.json": "f721db9b1ad02b1be924f4a66494f3a04ae6ff9d50b824c6a42af49c3d56e140",
+    "fallback-fonts.json": "a5dfed2262643a59ddf1ccfe5c977e3c38728ddb6fcde71dbd3b9a2f823d2b48",
+    "fallback.pdf": "2702ef5d193f3b5a4aed146d53c2a6cce8192434239ecef5b8631f06ccccbda1",
+    "font-container-comparison.json": "a85c11c2fe2c54eb4e6fabdc52915401659a9e3cc35a87c1a6905ace99d6b46a",
+    "glyph-geometry.json": "c14a11fb851db569be69e08d89f7019b438d07b2dfa28d4eba1c9b36294a26ec",
+    "native-fonts.json": "eb755e6983bbca186ea3496efed7f0cdb4ab04fa4ffbecbf85da180db6a96957",
+    "native.pdf": "1581086fb35982686c94a32c5ff75fa9ed3601e0d7daa47038003bb9fc980350",
+    "native.png": "14ead19dadeefcc69d620b5e7d0419854402198bbbacc8185084b58f997458eb",
+    "native.svg": "8423f50d5d9caab9eb1dfe768a99615fb694287e7d35a7ca7c7a8f095828ef53"
+  }
+}

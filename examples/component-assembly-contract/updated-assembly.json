@@ -1,0 +1,842 @@
+{
+  "version": "0.1.0",
+  "stage": "component-assembly",
+  "status": "PASS",
+  "readyForAdapter": false,
+  "nativeInstancesCreated": false,
+  "mappingSha256": "e7c1baa8a586c236aa84886da69622d0cf76c8fef32512977784c49d3fb893db",
+  "mapping": {
+    "version": "0.1.0",
+    "stage": "component-mapping",
+    "status": "PASS",
+    "readyForAssembly": false,
+    "diagnosticOnly": true,
+    "layoutReport": {
+      "stage": "layout-qa",
+      "status": "PASS",
+      "readyForMapping": false,
+      "structureReport": {
+        "version": "0.1.0",
+        "stage": "structure-qa",
+        "status": "PASS",
+        "readyForLayout": true,
+        "analysisSha256": "8d2dd611c3fe6d0d4c99c05f785038b35c6dceae2b8dec68606c2bc3beb4f6a5",
+        "pageTreeSha256": "02368f18e893e47a6bafeadb0a93bef0c83a16663119207c5981b38b749859ab",
+        "reviewSha256": "bf6146c2081c9fc4fcbd9dd19a86ccd7c23200961af39e2b471e1c2846dd2d8b",
+        "issues": [],
+        "reviewReasons": [],
+        "freeze": {
+          "pageTreeSha256": "02368f18e893e47a6bafeadb0a93bef0c83a16663119207c5981b38b749859ab",
+          "analysisSha256": "8d2dd611c3fe6d0d4c99c05f785038b35c6dceae2b8dec68606c2bc3beb4f6a5"
+        }
+      },
+      "pageTreeSha256": "02368f18e893e47a6bafeadb0a93bef0c83a16663119207c5981b38b749859ab",
+      "planSha256": "9513a38228c6bbcefea3630510e498bef329cf40dccddd04395b9daf6db02348",
+      "rulesSha256": "5e995ec984a07cd12feb31f11b9043a4226066dc8df190e50a8b126549b2dd6e",
+      "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+      "issues": [],
+      "testFixture": true,
+      "engineReport": {
+        "scope": "layout",
+        "status": "PASS",
+        "engineVersion": "0.1.0",
+        "tokenRegistryVersion": "0.1.0",
+        "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+        "pattern": "list-page",
+        "skeleton": {
+          "id": "pattern.page",
+          "type": "Page",
+          "box": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1440.0,
+            "height": 264.0
+          },
+          "children": [
+            {
+              "id": "pattern.header",
+              "type": "Section",
+              "box": {
+                "x": 24.0,
+                "y": 24.0,
+                "width": 1392.0,
+                "height": 0.0
+              },
+              "children": [],
+              "role": "header",
+              "sourceIds": [
+                "note"
+              ]
+            },
+            {
+              "id": "pattern.query",
+              "type": "Section",
+              "box": {
+                "x": 24.0,
+                "y": 48.0,
+                "width": 1392.0,
+                "height": 80.0
+              },
+              "children": [
+                {
+                  "id": "pattern.query.grid",
+                  "type": "Grid",
+                  "box": {
+                    "x": 24.0,
+                    "y": 48.0,
+                    "width": 1392.0,
+                    "height": 80.0
+                  },
+                  "children": [
+                    {
+                      "id": "layout.group.0.fields",
+                      "type": "Grid",
+                      "box": {
+                        "x": 24.0,
+                        "y": 48.0,
+                        "width": 1392.0,
+                        "height": 32.0
+                      },
+                      "children": [
+                        {
+                          "id": "layout.item.0.0",
+                          "type": "Cell",
+                          "box": {
+                            "x": 24.0,
+                            "y": 48.0,
+                            "width": 336.0,
+                            "height": 32.0
+                          },
+                          "children": [],
+                          "role": "field",
+                          "sourceIds": [
+                            "name"
+                          ]
+                        },
+                        {
+                          "id": "layout.item.0.1",
+                          "type": "Cell",
+                          "box": {
+                            "x": 376.0,
+                            "y": 48.0,
+                            "width": 336.0,
+                            "height": 32.0
+                          },
+                          "children": [],
+                          "role": "field",
+                          "sourceIds": [
+                            "status"
+                          ]
+                        }
+                      ],
+                      "sourceIds": [
+                        "filters"
+                      ]
+                    },
+                    {
+                      "id": "layout.group.0.buttons",
+                      "type": "HorizontalStack",
+                      "box": {
+                        "x": 24.0,
+                        "y": 96.0,
+                        "width": 1392.0,
+                        "height": 32.0
+                      },
+                      "children": [
+                        {
+                          "id": "layout.item.0.2",
+                          "type": "Cell",
+                          "box": {
+                            "x": 24.0,
+                            "y": 96.0,
+                            "width": 160.0,
+                            "height": 32.0
+                          },
+                          "children": [],
+                          "sourceIds": [
+                            "search"
+                          ]
+                        },
+                        {
+                          "id": "layout.item.0.3",
+                          "type": "Cell",
+                          "box": {
+                            "x": 192.0,
+                            "y": 96.0,
+                            "width": 160.0,
+                            "height": 32.0
+                          },
+                          "children": [],
+                          "sourceIds": [
+                            "reset"
+                          ]
+                        }
+                      ],
+                      "sourceIds": [
+                        "filters"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "role": "query",
+              "sourceIds": [
+                "filters"
+              ]
+            },
+            {
+              "id": "pattern.toolbar",
+              "type": "Section",
+              "box": {
+                "x": 24.0,
+                "y": 152.0,
+                "width": 1392.0,
+                "height": 32.0
+              },
+              "children": [
+                {
+                  "id": "pattern.toolbar.row",
+                  "type": "HorizontalStack",
+                  "box": {
+                    "x": 24.0,
+                    "y": 152.0,
+                    "width": 1392.0,
+                    "height": 32.0
+                  },
+                  "children": [
+                    {
+                      "id": "layout.group.1.buttons",
+                      "type": "HorizontalStack",
+                      "box": {
+                        "x": 24.0,
+                        "y": 152.0,
+                        "width": 1392.0,
+                        "height": 32.0
+                      },
+                      "children": [
+                        {
+                          "id": "layout.item.1.0",
+                          "type": "Cell",
+                          "box": {
+                            "x": 24.0,
+                            "y": 152.0,
+                            "width": 160.0,
+                            "height": 32.0
+                          },
+                          "children": [],
+                          "sourceIds": [
+                            "add"
+                          ]
+                        },
+                        {
+                          "id": "layout.item.1.1",
+                          "type": "Cell",
+                          "box": {
+                            "x": 192.0,
+                            "y": 152.0,
+                            "width": 160.0,
+                            "height": 32.0
+                          },
+                          "children": [],
+                          "sourceIds": [
+                            "export"
+                          ]
+                        }
+                      ],
+                      "sourceIds": [
+                        "toolbar"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "role": "toolbar",
+              "sourceIds": [
+                "toolbar"
+              ]
+            },
+            {
+              "id": "pattern.table",
+              "type": "Section",
+              "box": {
+                "x": 24.0,
+                "y": 208.0,
+                "width": 1392.0,
+                "height": 32.0
+              },
+              "children": [
+                {
+                  "id": "layout.item.2.0",
+                  "type": "Cell",
+                  "box": {
+                    "x": 24.0,
+                    "y": 208.0,
+                    "width": 1392.0,
+                    "height": 32.0
+                  },
+                  "children": [],
+                  "sourceIds": [
+                    "users"
+                  ]
+                }
+              ],
+              "role": "table",
+              "sourceIds": [
+                "results"
+              ]
+            }
+          ],
+          "sourceIds": [
+            "user-management-example"
+          ]
+        },
+        "issues": [
+          {
+            "code": "unnecessary_nesting",
+            "path": "/page/children/2/children/0",
+            "message": "Single-child wrapper duplicates its child layout type",
+            "severity": "warning"
+          }
+        ]
+      },
+      "layoutTreeSha256": "b5b87be8aefa6972aa6f7dd99f5de6f24a9eeeee822fee1e5c6578ff6138cc62"
+    },
+    "registrySha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+    "registryScope": "production",
+    "decisionsSha256": "7560267898e3e9311648d21c82dd68bc2a23f81c01ec95e8360262dfaa0042f8",
+    "rows": [
+      {
+        "cellId": "layout.item.0.0",
+        "sourceId": "name",
+        "sectionId": "filters",
+        "label": "姓名",
+        "intent": "text",
+        "confidence": "high",
+        "rationale": "Explicit contract fixture judgment",
+        "evidence": [
+          "e2"
+        ],
+        "status": "Resolved",
+        "requestedTypes": [
+          "Input"
+        ],
+        "componentId": "form.input.default.medium",
+        "componentType": "Input",
+        "variant": "default",
+        "fallbackUsed": false,
+        "reasonCode": "matched"
+      },
+      {
+        "cellId": "layout.item.0.1",
+        "sourceId": "status",
+        "sectionId": "filters",
+        "label": "状态",
+        "intent": "choice",
+        "confidence": "high",
+        "rationale": "Explicit contract fixture judgment",
+        "evidence": [
+          "e2"
+        ],
+        "status": "Resolved",
+        "requestedTypes": [
+          "Select"
+        ],
+        "componentId": "form.select.default.medium",
+        "componentType": "Select",
+        "variant": "default",
+        "fallbackUsed": false,
+        "reasonCode": "matched"
+      },
+      {
+        "cellId": "layout.item.0.2",
+        "sourceId": "search",
+        "sectionId": "filters",
+        "label": "查询",
+        "intent": "action",
+        "confidence": "high",
+        "rationale": "Explicit contract fixture judgment",
+        "evidence": [
+          "e2"
+        ],
+        "status": "Resolved",
+        "requestedTypes": [
+          "Button"
+        ],
+        "componentId": "action.button.primary.medium",
+        "componentType": "Button",
+        "variant": "default",
+        "fallbackUsed": false,
+        "reasonCode": "matched"
+      },
+      {
+        "cellId": "layout.item.0.3",
+        "sourceId": "reset",
+        "sectionId": "filters",
+        "label": "重置",
+        "intent": "action",
+        "confidence": "high",
+        "rationale": "Explicit contract fixture judgment",
+        "evidence": [
+          "e2"
+        ],
+        "status": "Resolved",
+        "requestedTypes": [
+          "Button"
+        ],
+        "componentId": "action.button.primary.medium",
+        "componentType": "Button",
+        "variant": "default",
+        "fallbackUsed": false,
+        "reasonCode": "matched"
+      },
+      {
+        "cellId": "layout.item.1.0",
+        "sourceId": "add",
+        "sectionId": "toolbar",
+        "label": "新增用户",
+        "intent": "action",
+        "confidence": "high",
+        "rationale": "Explicit contract fixture judgment",
+        "evidence": [
+          "e3"
+        ],
+        "status": "Resolved",
+        "requestedTypes": [
+          "Button"
+        ],
+        "componentId": "action.button.primary.medium",
+        "componentType": "Button",
+        "variant": "default",
+        "fallbackUsed": false,
+        "reasonCode": "matched"
+      },
+      {
+        "cellId": "layout.item.1.1",
+        "sourceId": "export",
+        "sectionId": "toolbar",
+        "label": "导出",
+        "intent": "action",
+        "confidence": "high",
+        "rationale": "Explicit contract fixture judgment",
+        "evidence": [
+          "e3"
+        ],
+        "status": "Resolved",
+        "requestedTypes": [
+          "Button"
+        ],
+        "componentId": "action.button.primary.medium",
+        "componentType": "Button",
+        "variant": "default",
+        "fallbackUsed": false,
+        "reasonCode": "matched"
+      },
+      {
+        "cellId": "layout.item.2.0",
+        "sourceId": "users",
+        "sectionId": "results",
+        "label": "用户列表列：姓名、邮箱、状态",
+        "intent": "records",
+        "confidence": "high",
+        "rationale": "Explicit contract fixture judgment",
+        "evidence": [
+          "e4"
+        ],
+        "status": "Resolved",
+        "requestedTypes": [
+          "Table"
+        ],
+        "componentId": "data.table.default",
+        "componentType": "Table",
+        "variant": "default",
+        "fallbackUsed": false,
+        "reasonCode": "matched"
+      }
+    ],
+    "issues": [],
+    "layoutTreeSha256": "b5b87be8aefa6972aa6f7dd99f5de6f24a9eeeee822fee1e5c6578ff6138cc62"
+  },
+  "operations": [
+    {
+      "operation": "replace-cell",
+      "targetCellId": "layout.item.1.0",
+      "sourceId": "add",
+      "box": {
+        "x": 24.0,
+        "y": 152.0,
+        "width": 160.0,
+        "height": 32.0
+      },
+      "instance": {
+        "id": "layout.item.1.0",
+        "type": "ComponentInstance",
+        "componentId": "action.button.primary.medium",
+        "variant": "default",
+        "sourceIds": [
+          "add"
+        ],
+        "props": {},
+        "slots": {
+          "label": [
+            {
+              "id": "layout.item.1.0.label.0",
+              "type": "Text",
+              "sourceIds": [
+                "add"
+              ],
+              "text": "新增"
+            }
+          ]
+        },
+        "layout": {
+          "width": {
+            "mode": "fixed",
+            "value": 160.0
+          },
+          "height": {
+            "mode": "fixed",
+            "value": 32.0
+          }
+        }
+      }
+    },
+    {
+      "operation": "replace-cell",
+      "targetCellId": "layout.item.1.1",
+      "sourceId": "export",
+      "box": {
+        "x": 192.0,
+        "y": 152.0,
+        "width": 160.0,
+        "height": 32.0
+      },
+      "instance": {
+        "id": "layout.item.1.1",
+        "type": "ComponentInstance",
+        "componentId": "action.button.primary.medium",
+        "variant": "default",
+        "sourceIds": [
+          "export"
+        ],
+        "props": {},
+        "slots": {
+          "label": [
+            {
+              "id": "layout.item.1.1.label.0",
+              "type": "Text",
+              "sourceIds": [
+                "export"
+              ],
+              "text": "导出"
+            }
+          ]
+        },
+        "layout": {
+          "width": {
+            "mode": "fixed",
+            "value": 160.0
+          },
+          "height": {
+            "mode": "fixed",
+            "value": 32.0
+          }
+        }
+      }
+    }
+  ],
+  "sections": {
+    "filters": [
+      {
+        "operation": "replace-cell",
+        "targetCellId": "layout.item.0.0",
+        "sourceId": "name",
+        "box": {
+          "x": 24.0,
+          "y": 48.0,
+          "width": 336.0,
+          "height": 32.0
+        },
+        "instance": {
+          "id": "layout.item.0.0",
+          "type": "ComponentInstance",
+          "componentId": "form.input.default.medium",
+          "variant": "default",
+          "sourceIds": [
+            "name"
+          ],
+          "props": {
+            "placeholder": "姓名"
+          },
+          "slots": {},
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 336.0
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32.0
+            }
+          }
+        }
+      },
+      {
+        "operation": "replace-cell",
+        "targetCellId": "layout.item.0.1",
+        "sourceId": "status",
+        "box": {
+          "x": 376.0,
+          "y": 48.0,
+          "width": 336.0,
+          "height": 32.0
+        },
+        "instance": {
+          "id": "layout.item.0.1",
+          "type": "ComponentInstance",
+          "componentId": "form.select.default.medium",
+          "variant": "default",
+          "sourceIds": [
+            "status"
+          ],
+          "props": {
+            "placeholder": "状态"
+          },
+          "slots": {},
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 336.0
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32.0
+            }
+          }
+        }
+      },
+      {
+        "operation": "replace-cell",
+        "targetCellId": "layout.item.0.2",
+        "sourceId": "search",
+        "box": {
+          "x": 24.0,
+          "y": 96.0,
+          "width": 160.0,
+          "height": 32.0
+        },
+        "instance": {
+          "id": "layout.item.0.2",
+          "type": "ComponentInstance",
+          "componentId": "action.button.primary.medium",
+          "variant": "default",
+          "sourceIds": [
+            "search"
+          ],
+          "props": {},
+          "slots": {
+            "label": [
+              {
+                "id": "layout.item.0.2.label.0",
+                "type": "Text",
+                "sourceIds": [
+                  "search"
+                ],
+                "text": "查询"
+              }
+            ]
+          },
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 160.0
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32.0
+            }
+          }
+        }
+      },
+      {
+        "operation": "replace-cell",
+        "targetCellId": "layout.item.0.3",
+        "sourceId": "reset",
+        "box": {
+          "x": 192.0,
+          "y": 96.0,
+          "width": 160.0,
+          "height": 32.0
+        },
+        "instance": {
+          "id": "layout.item.0.3",
+          "type": "ComponentInstance",
+          "componentId": "action.button.primary.medium",
+          "variant": "default",
+          "sourceIds": [
+            "reset"
+          ],
+          "props": {},
+          "slots": {
+            "label": [
+              {
+                "id": "layout.item.0.3.label.0",
+                "type": "Text",
+                "sourceIds": [
+                  "reset"
+                ],
+                "text": "重置"
+              }
+            ]
+          },
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 160.0
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32.0
+            }
+          }
+        }
+      }
+    ],
+    "toolbar": [
+      {
+        "operation": "replace-cell",
+        "targetCellId": "layout.item.1.0",
+        "sourceId": "add",
+        "box": {
+          "x": 24.0,
+          "y": 152.0,
+          "width": 160.0,
+          "height": 32.0
+        },
+        "instance": {
+          "id": "layout.item.1.0",
+          "type": "ComponentInstance",
+          "componentId": "action.button.primary.medium",
+          "variant": "default",
+          "sourceIds": [
+            "add"
+          ],
+          "props": {},
+          "slots": {
+            "label": [
+              {
+                "id": "layout.item.1.0.label.0",
+                "type": "Text",
+                "sourceIds": [
+                  "add"
+                ],
+                "text": "新增"
+              }
+            ]
+          },
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 160.0
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32.0
+            }
+          }
+        }
+      },
+      {
+        "operation": "replace-cell",
+        "targetCellId": "layout.item.1.1",
+        "sourceId": "export",
+        "box": {
+          "x": 192.0,
+          "y": 152.0,
+          "width": 160.0,
+          "height": 32.0
+        },
+        "instance": {
+          "id": "layout.item.1.1",
+          "type": "ComponentInstance",
+          "componentId": "action.button.primary.medium",
+          "variant": "default",
+          "sourceIds": [
+            "export"
+          ],
+          "props": {},
+          "slots": {
+            "label": [
+              {
+                "id": "layout.item.1.1.label.0",
+                "type": "Text",
+                "sourceIds": [
+                  "export"
+                ],
+                "text": "导出"
+              }
+            ]
+          },
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 160.0
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32.0
+            }
+          }
+        }
+      }
+    ],
+    "results": [
+      {
+        "operation": "replace-cell",
+        "targetCellId": "layout.item.2.0",
+        "sourceId": "users",
+        "box": {
+          "x": 24.0,
+          "y": 208.0,
+          "width": 1392.0,
+          "height": 32.0
+        },
+        "instance": {
+          "id": "layout.item.2.0",
+          "type": "ComponentInstance",
+          "componentId": "data.table.default",
+          "variant": "default",
+          "sourceIds": [
+            "users"
+          ],
+          "props": {
+            "headers": [
+              "姓名",
+              "邮箱",
+              "状态"
+            ]
+          },
+          "slots": {},
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 1392.0
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32.0
+            }
+          }
+        }
+      }
+    ]
+  },
+  "issues": [],
+  "changedSections": [
+    "toolbar"
+  ],
+  "iconRegistrySha256": null,
+  "skeletonSha256": "1d6f1867d64f57ef57b6d6fe4f2dc6a6f2f0e74164117348dcd66e981c756677",
+  "pageTreeSha256": "02368f18e893e47a6bafeadb0a93bef0c83a16663119207c5981b38b749859ab",
+  "contentSha256": "6dc1427a2159c2b02b599b66ab91074abf33f690f8d71681cb347b7bb7bc014f",
+  "stateSha256": "7c05080fa15be0f3759d5c03ff99a3a963f576af71e33b702d2e420d1345db9b"
+}

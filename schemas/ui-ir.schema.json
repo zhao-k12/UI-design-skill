@@ -1,0 +1,1215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ui-design-skill:ui-ir:0.1.0",
+  "title": "UI-IR V0.1",
+  "description": "Platform-independent static design contract; validity does not imply registry or visual QA PASS.",
+  "type": "object",
+  "properties": {
+    "uiIrVersion": {
+      "const": "0.1.0"
+    },
+    "documentId": {
+      "$ref": "#/$defs/id"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Page"
+      },
+      "minItems": 1
+    },
+    "resourceIssues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "nodeId",
+          "logicalId",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "enum": [
+              "missing_component",
+              "missing_icon",
+              "missing_asset",
+              "unsupported_component"
+            ]
+          },
+          "nodeId": {
+            "$ref": "#/$defs/id"
+          },
+          "logicalId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "uiIrVersion",
+    "documentId",
+    "pages"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+    },
+    "token": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "pattern": "^[a-zA-Z][a-zA-Z0-9_-]*\\.[a-zA-Z0-9_.-]+$"
+        }
+      },
+      "required": [
+        "token"
+      ],
+      "additionalProperties": false
+    },
+    "spacing": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string",
+              "pattern": "^spacing\\.[a-zA-Z0-9_.-]+$"
+            }
+          },
+          "required": [
+            "token"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "color": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^#(?:[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string",
+              "pattern": "^color\\.[a-zA-Z0-9_.-]+$"
+            }
+          },
+          "required": [
+            "token"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "size": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "const": "fixed"
+            },
+            "value": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                {
+                  "$ref": "#/$defs/token"
+                }
+              ]
+            }
+          },
+          "required": [
+            "mode",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "enum": [
+                "fill",
+                "hug"
+              ]
+            }
+          },
+          "required": [
+            "mode"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "padding": {
+      "type": "object",
+      "properties": {
+        "top": {
+          "$ref": "#/$defs/spacing"
+        },
+        "right": {
+          "$ref": "#/$defs/spacing"
+        },
+        "bottom": {
+          "$ref": "#/$defs/spacing"
+        },
+        "left": {
+          "$ref": "#/$defs/spacing"
+        }
+      },
+      "required": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "additionalProperties": false
+    },
+    "alignment": {
+      "type": "object",
+      "properties": {
+        "main": {
+          "enum": [
+            "start",
+            "center",
+            "end",
+            "space-between"
+          ]
+        },
+        "cross": {
+          "enum": [
+            "start",
+            "center",
+            "end",
+            "stretch"
+          ]
+        }
+      },
+      "required": [
+        "main",
+        "cross"
+      ],
+      "additionalProperties": false
+    },
+    "layout": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "$ref": "#/$defs/size"
+        },
+        "height": {
+          "$ref": "#/$defs/size"
+        },
+        "padding": {
+          "$ref": "#/$defs/padding"
+        },
+        "gap": {
+          "$ref": "#/$defs/spacing"
+        },
+        "alignment": {
+          "$ref": "#/$defs/alignment"
+        },
+        "direction": {
+          "enum": [
+            "vertical",
+            "horizontal"
+          ]
+        },
+        "wrap": {
+          "type": "boolean"
+        },
+        "gridColumns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 24
+        },
+        "span": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 24
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "style": {
+      "type": "object",
+      "properties": {
+        "fill": {
+          "$ref": "#/$defs/color"
+        },
+        "stroke": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "$ref": "#/$defs/color"
+                },
+                "width": {
+                  "$ref": "#/$defs/spacing"
+                }
+              },
+              "required": [
+                "color",
+                "width"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "token": {
+                  "type": "string",
+                  "pattern": "^border\\.[a-zA-Z0-9_.-]+$"
+                }
+              },
+              "required": [
+                "token"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "radius": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "object",
+              "properties": {
+                "token": {
+                  "type": "string",
+                  "pattern": "^radius\\.[a-zA-Z0-9_.-]+$"
+                }
+              },
+              "required": [
+                "token"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "typographyToken": {
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string",
+              "pattern": "^typography\\.[a-zA-Z0-9_.-]+$"
+            }
+          },
+          "required": [
+            "token"
+          ],
+          "additionalProperties": false
+        },
+        "colorToken": {
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string",
+              "pattern": "^color\\.[a-zA-Z0-9_.-]+$"
+            }
+          },
+          "required": [
+            "token"
+          ],
+          "additionalProperties": false
+        },
+        "spacingToken": {
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string",
+              "pattern": "^spacing\\.[a-zA-Z0-9_.-]+$"
+            }
+          },
+          "required": [
+            "token"
+          ],
+          "additionalProperties": false
+        },
+        "shadowToken": {
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string",
+              "pattern": "^shadow\\.[a-zA-Z0-9_.-]+$"
+            }
+          },
+          "required": [
+            "token"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "contentValue": {
+      "oneOf": [
+        {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contentValue"
+          },
+          "minItems": 0
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "not": {
+              "pattern": "[Ff][Ii][Gg][Mm][Aa]|[Pp][Ee][Nn][Pp][Oo][Tt]"
+            }
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/contentValue"
+          }
+        }
+      ]
+    },
+    "slots": {
+      "type": "object",
+      "properties": {
+        "leading-icon": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1
+        },
+        "trailing-icon": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1
+        },
+        "label": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1
+        },
+        "control": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1
+        },
+        "content": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "sourceIds": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "Page": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Page"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "Frame": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Frame"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "Section": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Section"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "Grid": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/layout"
+            },
+            {
+              "required": [
+                "gridColumns"
+              ],
+              "properties": {
+                "gridColumns": {
+                  "const": 24
+                }
+              }
+            }
+          ]
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Grid"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "children",
+        "layout"
+      ],
+      "additionalProperties": false
+    },
+    "Row": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/layout"
+            },
+            {
+              "properties": {
+                "direction": {
+                  "const": "horizontal"
+                }
+              }
+            }
+          ]
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Row"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "Column": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/layout"
+            },
+            {
+              "properties": {
+                "direction": {
+                  "const": "vertical"
+                }
+              }
+            }
+          ]
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Column"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "VerticalStack": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/layout"
+            },
+            {
+              "properties": {
+                "direction": {
+                  "const": "vertical"
+                }
+              }
+            }
+          ]
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "VerticalStack"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "HorizontalStack": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/layout"
+            },
+            {
+              "properties": {
+                "direction": {
+                  "const": "horizontal"
+                }
+              }
+            }
+          ]
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "HorizontalStack"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "Text": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Text"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "ComponentInstance": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "ComponentInstance"
+        },
+        "componentId": {
+          "$ref": "#/$defs/id"
+        },
+        "variant": {
+          "$ref": "#/$defs/id"
+        },
+        "props": {
+          "type": "object",
+          "propertyNames": {
+            "not": {
+              "pattern": "[Ff][Ii][Gg][Mm][Aa]|[Pp][Ee][Nn][Pp][Oo][Tt]"
+            }
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/contentValue"
+          }
+        },
+        "slots": {
+          "$ref": "#/$defs/slots"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "componentId"
+      ],
+      "additionalProperties": false
+    },
+    "IconInstance": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "IconInstance"
+        },
+        "iconId": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "iconId"
+      ],
+      "additionalProperties": false
+    },
+    "Image": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Image"
+        },
+        "assetId": {
+          "$ref": "#/$defs/id"
+        },
+        "alt": {
+          "type": "string"
+        },
+        "fit": {
+          "enum": [
+            "contain",
+            "cover",
+            "fill"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "assetId",
+        "alt"
+      ],
+      "additionalProperties": false
+    },
+    "Divider": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "type": {
+          "const": "Divider"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "node": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "Frame",
+            "Section",
+            "Grid",
+            "Row",
+            "Column",
+            "VerticalStack",
+            "HorizontalStack",
+            "Text",
+            "ComponentInstance",
+            "IconInstance",
+            "Image",
+            "Divider"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Frame"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/Frame"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Section"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/Section"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Grid"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/Grid"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Row"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/Row"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Column"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/Column"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "VerticalStack"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/VerticalStack"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "HorizontalStack"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/HorizontalStack"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Text"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/Text"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "ComponentInstance"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/ComponentInstance"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "IconInstance"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/IconInstance"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Image"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/Image"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Divider"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/Divider"
+          }
+        }
+      ]
+    }
+  }
+}

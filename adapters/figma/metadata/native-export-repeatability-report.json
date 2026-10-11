@@ -1,0 +1,149 @@
+{
+  "scope": "figma_export_repeatability_batch",
+  "status": "PASS",
+  "components": [
+    {
+      "scope": "figma_native_export_repeatability",
+      "status": "PASS",
+      "evidenceScope": "production",
+      "logicalId": "action.button.primary.medium",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "18:5",
+      "captures": [
+        {
+          "captureId": "repeatability-2026-10-07/18:5/1",
+          "nativePngSha256": "d2a4858c2206b2018343c7e8d9dfd1bc0e7b4974f64ada9a42189f0ac340684b",
+          "nativeEvidenceSha256": "d599d125eb90d3fff6d577e5de34c277a1a65eeb0b77ddf2b26b87a023e7c0d4"
+        },
+        {
+          "captureId": "repeatability-2026-10-07/18:5/2",
+          "nativePngSha256": "d2a4858c2206b2018343c7e8d9dfd1bc0e7b4974f64ada9a42189f0ac340684b",
+          "nativeEvidenceSha256": "d599d125eb90d3fff6d577e5de34c277a1a65eeb0b77ddf2b26b87a023e7c0d4"
+        },
+        {
+          "captureId": "repeatability-2026-10-07/18:5/3",
+          "nativePngSha256": "d2a4858c2206b2018343c7e8d9dfd1bc0e7b4974f64ada9a42189f0ac340684b",
+          "nativeEvidenceSha256": "d599d125eb90d3fff6d577e5de34c277a1a65eeb0b77ddf2b26b87a023e7c0d4"
+        }
+      ],
+      "comparisons": [
+        {
+          "captureId": "repeatability-2026-10-07/18:5/2",
+          "sizeEqual": true,
+          "changedPixels": 0,
+          "pngBytesEqual": true,
+          "nativeObservationEqual": true
+        },
+        {
+          "captureId": "repeatability-2026-10-07/18:5/3",
+          "sizeEqual": true,
+          "changedPixels": 0,
+          "pngBytesEqual": true,
+          "nativeObservationEqual": true
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Independent host exports are compared only within the observed sessions; future exports may differ.",
+        "Repeatability does not establish official-browser pixel fidelity or a cause for differences."
+      ]
+    },
+    {
+      "scope": "figma_native_export_repeatability",
+      "status": "PASS",
+      "evidenceScope": "production",
+      "logicalId": "form.input.default.medium",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "12:8",
+      "captures": [
+        {
+          "captureId": "repeatability-2026-10-07/12:8/1",
+          "nativePngSha256": "95f2676ccba3ca1eb388398de1294d555036a490a049d9a455a10e10d70aab6e",
+          "nativeEvidenceSha256": "5eb78df9507342d72dbdcdefa271a8950e5d077e9f9c33fd58249527c7c66d87"
+        },
+        {
+          "captureId": "repeatability-2026-10-07/12:8/2",
+          "nativePngSha256": "95f2676ccba3ca1eb388398de1294d555036a490a049d9a455a10e10d70aab6e",
+          "nativeEvidenceSha256": "5eb78df9507342d72dbdcdefa271a8950e5d077e9f9c33fd58249527c7c66d87"
+        },
+        {
+          "captureId": "repeatability-2026-10-07/12:8/3",
+          "nativePngSha256": "95f2676ccba3ca1eb388398de1294d555036a490a049d9a455a10e10d70aab6e",
+          "nativeEvidenceSha256": "5eb78df9507342d72dbdcdefa271a8950e5d077e9f9c33fd58249527c7c66d87"
+        }
+      ],
+      "comparisons": [
+        {
+          "captureId": "repeatability-2026-10-07/12:8/2",
+          "sizeEqual": true,
+          "changedPixels": 0,
+          "pngBytesEqual": true,
+          "nativeObservationEqual": true
+        },
+        {
+          "captureId": "repeatability-2026-10-07/12:8/3",
+          "sizeEqual": true,
+          "changedPixels": 0,
+          "pngBytesEqual": true,
+          "nativeObservationEqual": true
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Independent host exports are compared only within the observed sessions; future exports may differ.",
+        "Repeatability does not establish official-browser pixel fidelity or a cause for differences."
+      ]
+    },
+    {
+      "scope": "figma_native_export_repeatability",
+      "status": "PASS",
+      "evidenceScope": "production",
+      "logicalId": "form.select.default.medium",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "12:15",
+      "captures": [
+        {
+          "captureId": "repeatability-2026-10-07/12:15/1",
+          "nativePngSha256": "41e5be95a0a150f592706dd010a2d68a9d35b4105f053bdb976df79addff8f5e",
+          "nativeEvidenceSha256": "112f87b18bf15659724174e54512a2fec8aa18e01e88fb27b445ba44ad5019cd"
+        },
+        {
+          "captureId": "repeatability-2026-10-07/12:15/2",
+          "nativePngSha256": "41e5be95a0a150f592706dd010a2d68a9d35b4105f053bdb976df79addff8f5e",
+          "nativeEvidenceSha256": "112f87b18bf15659724174e54512a2fec8aa18e01e88fb27b445ba44ad5019cd"
+        },
+        {
+          "captureId": "repeatability-2026-10-07/12:15/3",
+          "nativePngSha256": "41e5be95a0a150f592706dd010a2d68a9d35b4105f053bdb976df79addff8f5e",
+          "nativeEvidenceSha256": "112f87b18bf15659724174e54512a2fec8aa18e01e88fb27b445ba44ad5019cd"
+        }
+      ],
+      "comparisons": [
+        {
+          "captureId": "repeatability-2026-10-07/12:15/2",
+          "sizeEqual": true,
+          "changedPixels": 0,
+          "pngBytesEqual": true,
+          "nativeObservationEqual": true
+        },
+        {
+          "captureId": "repeatability-2026-10-07/12:15/3",
+          "sizeEqual": true,
+          "changedPixels": 0,
+          "pngBytesEqual": true,
+          "nativeObservationEqual": true
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Independent host exports are compared only within the observed sessions; future exports may differ.",
+        "Repeatability does not establish official-browser pixel fidelity or a cause for differences."
+      ]
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN"
+}

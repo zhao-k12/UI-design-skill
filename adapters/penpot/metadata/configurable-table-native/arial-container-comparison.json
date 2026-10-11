@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "evidenceKind": "lossless-font-container-comparison",
+  "sourceSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+  "woffSha256": "2035b173b6273ac11ffb25fd61d271753cca918bcc325dfdd7eebd636a0ea6d3",
+  "sourcePath": "C:\\Windows\\Fonts\\arial.ttf",
+  "woffPath": "artifacts\\task-019\\Arial-Regular.woff",
+  "tableSha256": {
+    "head": "8ce6521aeac5dcb93040ae0719f8291f229f658af50b1b612a394461c18d6506",
+    "hhea": "51ac9ef807706ae19d2b41faf7aaecaf144d65a09aaf80452dce0d8cb026e212",
+    "maxp": "9a16484ba20d0b2574b8a40c0a84fd2234a03d35f817e660b53e11a571146d0d",
+    "OS/2": "c234be78285eb10f50b98aebb3bca74d0b1236e0470270fdbe99af7abb2ad54e",
+    "hmtx": "93001d9d7f1f7f063e5c9d79f0fc4b5c9f6f08ab269500c7bfd4d21e66285b76",
+    "LTSH": "d162b8ee6cee5f616294a658d988e7fe8039890ffa96d1b7061cfd3772fb3dcf",
+    "VDMX": "b5446da41ba2140df10c81ed53c5bd2c638f7bd264576ec8266c8a643e2dd532",
+    "hdmx": "9500ad9dba5fbed5f5c20afb27a757aec4dc70f043edbe9a5031b621fd6a7c9d",
+    "cmap": "0ed82ab8da32af15eb9be977500a7a5e7651447f27db7283a6732c05811fd32a",
+    "fpgm": "bb4a83c536a79acdd4a8741de4f7057610ee056b0d44bd441c657095b16b3db2",
+    "prep": "6281aa070b6f1b4a140bece238530c9dd6777dee55f17495fb901e1b4f5e2778",
+    "cvt ": "46ba9ba74170fe3af17dfe710bf7e6a639a9def8ab044343bfceeb8959865a70",
+    "loca": "9f99bc71c26b125aa0a238ff7ed6e9e06a2cf94f0057d58ed3dd126e46bf4847",
+    "glyf": "df4d347fe8dfd76f683e35f6a6161cb3ceded557bc9fb91fbd9f2efb9a947aad",
+    "kern": "2f72290d81e371094753dd9416f1b8927e11e9225983b60ffe525cfedfd03f2f",
+    "name": "8cb3f92564bd9e3b6b879a435cfc081931a0efafb3a8f26f5e04fc7ad346686f",
+    "post": "49451c4f5be8f707022b2c80a7eaa65ff840967d94010471bbdd8e2908f9de3d",
+    "gasp": "b33df9e1ae4eec44486902f5b5413300ec413cc9d430924fdfe37eb2499aeca2",
+    "PCLT": "f425894c69eeccc7fccf23df54f35ce78641b4e7f2c00ba474247ea48691b9e0",
+    "DSIG": "e04e8a77a8d77eb3c6870bab56ed89b4b50871ce5c800757b9ff83cf256040bc",
+    "GDEF": "eca6b41f3a604fee1966258541d6d13979b93c7f94af769c4fee323a5b5ae2c5",
+    "GPOS": "0b2643c8d2c595a30c707e6097da90c8646d056eaa4c7f2f58197ff25f8f5320",
+    "GSUB": "ff5692399990d3cf4df6d40d63343ac074324b54075ef173306acf0fab99fdb8",
+    "JSTF": "c07d2a8686edecc02d600f6dad52e5a95eb38e3fea1cb67833e86bc6df3e75a8",
+    "meta": "d4b6685513840a4ef6497a7bafade825cfe8bb6361fcae9d51a162027922898c"
+  },
+  "tableCount": 25,
+  "normalizedFields": [
+    "head.checkSumAdjustment"
+  ],
+  "metricsGlyphsNamesAndHintingUnchanged": true,
+  "nativeRenderingVerified": false,
+  "admissionEligible": false
+}

@@ -1,0 +1,70 @@
+{
+  "version": "0.1.0",
+  "pattern": "list-page",
+  "pageTreeSha256": "02368f18e893e47a6bafeadb0a93bef0c83a16663119207c5981b38b749859ab",
+  "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+  "sectionRegions": {
+    "filters": "query",
+    "toolbar": "toolbar",
+    "results": "table",
+    "note": "header"
+  },
+  "measurements": {
+    "name": {
+      "width": 160,
+      "height": 32,
+      "source": {
+        "kind": "test-fixture",
+        "reference": "TASK-013-contract-test"
+      }
+    },
+    "status": {
+      "width": 160,
+      "height": 32,
+      "source": {
+        "kind": "test-fixture",
+        "reference": "TASK-013-contract-test"
+      }
+    },
+    "search": {
+      "width": 160,
+      "height": 32,
+      "source": {
+        "kind": "test-fixture",
+        "reference": "TASK-013-contract-test"
+      }
+    },
+    "reset": {
+      "width": 160,
+      "height": 32,
+      "source": {
+        "kind": "test-fixture",
+        "reference": "TASK-013-contract-test"
+      }
+    },
+    "add": {
+      "width": 160,
+      "height": 32,
+      "source": {
+        "kind": "test-fixture",
+        "reference": "TASK-013-contract-test"
+      }
+    },
+    "export": {
+      "width": 160,
+      "height": 32,
+      "source": {
+        "kind": "test-fixture",
+        "reference": "TASK-013-contract-test"
+      }
+    },
+    "users": {
+      "width": 160,
+      "height": 32,
+      "source": {
+        "kind": "test-fixture",
+        "reference": "TASK-013-contract-test"
+      }
+    }
+  }
+}

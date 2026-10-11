@@ -1,0 +1,70 @@
+{
+  "status": "OBSERVED",
+  "scope": "penpot-native-svg-browser-diagnostic",
+  "nativeReceiptSha256": "bf1610804cdb9491dca85edbfe682ec8f34d0c2fc6683ffb8daa79a4a906923b",
+  "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "probeScriptSha256": "f82116039b85a750b558bafb142c8a9e0c114f6b5ce16b0450d6d7865b163f17",
+  "sample": {
+    "text": {
+      "characters": "查询",
+      "fontFamily": "\"PingFang SC\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "length": 28,
+      "start": [
+        {
+          "x": 16,
+          "y": 25.5
+        },
+        {
+          "x": 30,
+          "y": 25.5
+        }
+      ],
+      "end": [
+        {
+          "x": 30,
+          "y": 25.5
+        },
+        {
+          "x": 44,
+          "y": 25.5
+        }
+      ],
+      "bbox": {
+        "x": 15,
+        "y": 5.5,
+        "width": 29,
+        "height": 20
+      }
+    },
+    "fontLoadStatus": true,
+    "svgSha256": "34695b066266f1dae07f13238d63afdf78be97209b9195bcfa38a60acea70410",
+    "pngSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+    "fontUrl": "https://design.penpot.app/assets/by-id/e2c64052-f235-4680-b309-8f8c183dc82e",
+    "fontSha256": "7ce5d241353a41d6c9fd02b905967ad800f19d534abd3d46eb67e46b0d18099a"
+  },
+  "referenceMatches": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "The font resource is served from the hash-verified local font container, not a remote download.",
+    "Browser SVG raster is diagnostic; native PNG remains the production screenshot."
+  ]
+}

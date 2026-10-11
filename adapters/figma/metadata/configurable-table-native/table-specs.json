@@ -1,0 +1,766 @@
+[
+  {
+    "logicalId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "3c3993bb4ca86b5d4686818e2312410e7d35e03531aa8f87ec8c0e340ab082f9",
+    "rootBounds": {
+      "width": 720,
+      "height": 96
+    },
+    "rootFill": "#ffffff",
+    "rootFillSourcePath": "0.0",
+    "rows": [
+      {
+        "path": "0.0.0.0.1.0",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 721,
+          "height": 48
+        },
+        "cells": [
+          {
+            "path": "0.0.0.0.1.0.0",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 240.328125,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.0.0.0.0",
+              "characters": "赵六",
+              "sourceTextBounds": {
+                "x": 18,
+                "y": 15,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 28
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.0.1",
+            "bounds": {
+              "x": 240.328125,
+              "y": 0,
+              "width": 480.671875,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.0.1.0.0",
+              "characters": "zhao@example.com",
+              "sourceTextBounds": {
+                "x": 258.328125,
+                "y": 15,
+                "width": 127.828125,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "Arial",
+              "postScriptName": "ArialMT",
+              "fill": "#515a6e",
+              "sourceBaselineY": 28
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          }
+        ],
+        "bottomBorder": {
+          "height": 1.0,
+          "fill": "#e8eaec"
+        }
+      },
+      {
+        "path": "0.0.0.0.1.1",
+        "bounds": {
+          "x": 0,
+          "y": 48,
+          "width": 721,
+          "height": 48
+        },
+        "cells": [
+          {
+            "path": "0.0.0.0.1.1.0",
+            "bounds": {
+              "x": 0,
+              "y": 48,
+              "width": 240.328125,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.1.0.0.0",
+              "characters": "钱七",
+              "sourceTextBounds": {
+                "x": 18,
+                "y": 63,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 76
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.1.1",
+            "bounds": {
+              "x": 240.328125,
+              "y": 48,
+              "width": 480.671875,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.1.1.0.0",
+              "characters": "qian@example.com",
+              "sourceTextBounds": {
+                "x": 258.328125,
+                "y": 63,
+                "width": 123.9375,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "Arial",
+              "postScriptName": "ArialMT",
+              "fill": "#515a6e",
+              "sourceBaselineY": 76
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          }
+        ],
+        "bottomBorder": {
+          "height": 1.0,
+          "fill": "#e8eaec"
+        }
+      }
+    ],
+    "sourceObservationSha256": "12d56a523432b2b729ce59467c302df25275dda2a43e8534cac72ae9fbc4e414",
+    "requiredFonts": [
+      "Arial",
+      "PingFang SC"
+    ],
+    "bottomPseudo": {
+      "height": 1.0,
+      "width": 720.0,
+      "fill": "#dcdee2",
+      "sourceCssRule": ".ivu-table:before{content:'';width:100%;height:1px;position:absolute;left:0;bottom:0;background-color:#dcdee2;z-index:4}"
+    },
+    "admissionEligible": false,
+    "fidelityGate": "NOT_RUN",
+    "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+    "fontBaselineOffsets": {
+      "Arial": 15.0,
+      "PingFang SC": 16.0
+    },
+    "fontCalibrationCaptureHashes": {
+      "Arial": "fd5bb2c0339fba72fc2348d7c7ceebdd02e808932f9b21a7b50007921d5a7ea2",
+      "PingFang SC": "11b8439224b84a73c72529ad4d185ff601e7bec07ee6eb1fcb595bc871e94a22"
+    },
+    "name": "candidate/data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+    "fontEncodingAdmission": "NOT_APPROVED"
+  },
+  {
+    "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "d2a59922bf0203a1fde62b376868d323cbc49f1954d41e44f113174412c8183e",
+    "rootBounds": {
+      "width": 960,
+      "height": 192
+    },
+    "rootFill": "#ffffff",
+    "rootFillSourcePath": "0.0",
+    "rows": [
+      {
+        "path": "0.0.0.0.1.0",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 961,
+          "height": 48
+        },
+        "cells": [
+          {
+            "path": "0.0.0.0.1.0.0",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 160.15625,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.0.0.0.0",
+              "characters": "001",
+              "sourceTextBounds": {
+                "x": 18,
+                "y": 15,
+                "width": 23.359375,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "Arial",
+              "postScriptName": "ArialMT",
+              "fill": "#515a6e",
+              "sourceBaselineY": 28
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.0.1",
+            "bounds": {
+              "x": 160.15625,
+              "y": 0,
+              "width": 240.25,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.0.1.0.0",
+              "characters": "张三",
+              "sourceTextBounds": {
+                "x": 178.15625,
+                "y": 15,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 28
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.0.2",
+            "bounds": {
+              "x": 400.40625,
+              "y": 0,
+              "width": 320.328125,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.0.2.0.0",
+              "characters": "研发",
+              "sourceTextBounds": {
+                "x": 418.40625,
+                "y": 15,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 28
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.0.3",
+            "bounds": {
+              "x": 720.734375,
+              "y": 0,
+              "width": 240.265625,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.0.3.0.0",
+              "characters": "启用",
+              "sourceTextBounds": {
+                "x": 738.734375,
+                "y": 15,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 28
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          }
+        ],
+        "bottomBorder": {
+          "height": 1.0,
+          "fill": "#e8eaec"
+        }
+      },
+      {
+        "path": "0.0.0.0.1.1",
+        "bounds": {
+          "x": 0,
+          "y": 48,
+          "width": 961,
+          "height": 48
+        },
+        "cells": [
+          {
+            "path": "0.0.0.0.1.1.0",
+            "bounds": {
+              "x": 0,
+              "y": 48,
+              "width": 160.15625,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.1.0.0.0",
+              "characters": "002",
+              "sourceTextBounds": {
+                "x": 18,
+                "y": 63,
+                "width": 23.359375,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "Arial",
+              "postScriptName": "ArialMT",
+              "fill": "#515a6e",
+              "sourceBaselineY": 76
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.1.1",
+            "bounds": {
+              "x": 160.15625,
+              "y": 48,
+              "width": 240.25,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.1.1.0.0",
+              "characters": "李四",
+              "sourceTextBounds": {
+                "x": 178.15625,
+                "y": 63,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 76
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.1.2",
+            "bounds": {
+              "x": 400.40625,
+              "y": 48,
+              "width": 320.328125,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.1.2.0.0",
+              "characters": "财务",
+              "sourceTextBounds": {
+                "x": 418.40625,
+                "y": 63,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 76
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.1.3",
+            "bounds": {
+              "x": 720.734375,
+              "y": 48,
+              "width": 240.265625,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.1.3.0.0",
+              "characters": "停用",
+              "sourceTextBounds": {
+                "x": 738.734375,
+                "y": 63,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 76
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          }
+        ],
+        "bottomBorder": {
+          "height": 1.0,
+          "fill": "#e8eaec"
+        }
+      },
+      {
+        "path": "0.0.0.0.1.2",
+        "bounds": {
+          "x": 0,
+          "y": 96,
+          "width": 961,
+          "height": 48
+        },
+        "cells": [
+          {
+            "path": "0.0.0.0.1.2.0",
+            "bounds": {
+              "x": 0,
+              "y": 96,
+              "width": 160.15625,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.2.0.0.0",
+              "characters": "003",
+              "sourceTextBounds": {
+                "x": 18,
+                "y": 111,
+                "width": 23.359375,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "Arial",
+              "postScriptName": "ArialMT",
+              "fill": "#515a6e",
+              "sourceBaselineY": 124
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.2.1",
+            "bounds": {
+              "x": 160.15625,
+              "y": 96,
+              "width": 240.25,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.2.1.0.0",
+              "characters": "王五",
+              "sourceTextBounds": {
+                "x": 178.15625,
+                "y": 111,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 124
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.2.2",
+            "bounds": {
+              "x": 400.40625,
+              "y": 96,
+              "width": 320.328125,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.2.2.0.0",
+              "characters": "运营",
+              "sourceTextBounds": {
+                "x": 418.40625,
+                "y": 111,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 124
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.2.3",
+            "bounds": {
+              "x": 720.734375,
+              "y": 96,
+              "width": 240.265625,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.2.3.0.0",
+              "characters": "启用",
+              "sourceTextBounds": {
+                "x": 738.734375,
+                "y": 111,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 124
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          }
+        ],
+        "bottomBorder": {
+          "height": 1.0,
+          "fill": "#e8eaec"
+        }
+      },
+      {
+        "path": "0.0.0.0.1.3",
+        "bounds": {
+          "x": 0,
+          "y": 144,
+          "width": 961,
+          "height": 48
+        },
+        "cells": [
+          {
+            "path": "0.0.0.0.1.3.0",
+            "bounds": {
+              "x": 0,
+              "y": 144,
+              "width": 160.15625,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.3.0.0.0",
+              "characters": "004",
+              "sourceTextBounds": {
+                "x": 18,
+                "y": 159,
+                "width": 23.359375,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "Arial",
+              "postScriptName": "ArialMT",
+              "fill": "#515a6e",
+              "sourceBaselineY": 172
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.3.1",
+            "bounds": {
+              "x": 160.15625,
+              "y": 144,
+              "width": 240.25,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.3.1.0.0",
+              "characters": "赵六",
+              "sourceTextBounds": {
+                "x": 178.15625,
+                "y": 159,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 172
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.3.2",
+            "bounds": {
+              "x": 400.40625,
+              "y": 144,
+              "width": 320.328125,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.3.2.0.0",
+              "characters": "客服",
+              "sourceTextBounds": {
+                "x": 418.40625,
+                "y": 159,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 172
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          },
+          {
+            "path": "0.0.0.0.1.3.3",
+            "bounds": {
+              "x": 720.734375,
+              "y": 144,
+              "width": 240.265625,
+              "height": 48
+            },
+            "fill": "#ffffff",
+            "text": {
+              "path": "0.0.0.0.1.3.3.0.0",
+              "characters": "启用",
+              "sourceTextBounds": {
+                "x": 738.734375,
+                "y": 159,
+                "width": 28,
+                "height": 16
+              },
+              "fontSize": 14,
+              "fontWeight": 400,
+              "fontFamily": "PingFang SC",
+              "postScriptName": "PingFangSC-Regular",
+              "fill": "#515a6e",
+              "sourceBaselineY": 172
+            },
+            "bottomBorder": {
+              "height": 1.0,
+              "fill": "#e8eaec"
+            }
+          }
+        ],
+        "bottomBorder": {
+          "height": 1.0,
+          "fill": "#e8eaec"
+        }
+      }
+    ],
+    "sourceObservationSha256": "4899e5745ac282403599fc484fdf0542bfadd745d8338527b104a04ee43d623a",
+    "requiredFonts": [
+      "Arial",
+      "PingFang SC"
+    ],
+    "bottomPseudo": {
+      "height": 1.0,
+      "width": 960.0,
+      "fill": "#dcdee2",
+      "sourceCssRule": ".ivu-table:before{content:'';width:100%;height:1px;position:absolute;left:0;bottom:0;background-color:#dcdee2;z-index:4}"
+    },
+    "admissionEligible": false,
+    "fidelityGate": "NOT_RUN",
+    "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+    "fontBaselineOffsets": {
+      "Arial": 15.0,
+      "PingFang SC": 16.0
+    },
+    "fontCalibrationCaptureHashes": {
+      "Arial": "fd5bb2c0339fba72fc2348d7c7ceebdd02e808932f9b21a7b50007921d5a7ea2",
+      "PingFang SC": "11b8439224b84a73c72529ad4d185ff601e7bec07ee6eb1fcb595bc871e94a22"
+    },
+    "name": "candidate/data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+    "fontEncodingAdmission": "NOT_APPROVED"
+  }
+]

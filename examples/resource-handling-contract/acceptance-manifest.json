@@ -1,0 +1,14 @@
+{
+  "scope": "TASK-016 resource contracts",
+  "nativeExecution": "NOT_RUN",
+  "files": {
+    "registries/assets/catalog.json": "1f02c02eedeee5b66b64d42010b68ac56b1cb09946e096c78f367d0a6781218e",
+    "schemas/asset-registry.schema.json": "bbd9b1f15381e41fb4adecadb19f459ab8dccc4bcae639865e5e33a40683b74c",
+    "schemas/ui-ir.schema.json": "27fb5ac955641c49971c1141f78b6fb608c5eacf2d9d8176b5f707cf2a1c34bd",
+    "validators/ui_ir.py": "0d63464460f7caf8a22b49578748e5a921f3ed9b0a5571444a481a3652a1be6b",
+    "core/asset-resolver/registry.py": "45de0c9b10f42f28d88a53af58a9448abe02476c3470eae8ed4d127ce738f762",
+    "core/asset-resolver/resolver.py": "b9c026be8e88e472e5397f593f97c7a181b044a45384cfc8ebaad693f1c8c47b",
+    "examples/resource-handling-contract/passed-list-report.json": "df5e8ffa699a22de72024c0ecc5956de6f8200727cbfd846ec173f33f61bcb7f",
+    "examples/resource-handling-contract/missing-report.json": "b0f9da6003ce007a93f3f167546b0c5302e4191297961a8ec4152b21a3a05d22"
+  }
+}

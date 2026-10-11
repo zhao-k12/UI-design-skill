@@ -1,0 +1,1593 @@
+{
+  "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+  "nativeCaptureSha256": "45b0b4c725262be45f92cc94be13dc2a3f8ec913e3851e7cbc3da6a199687849",
+  "componentIrSha256": "b71439e9d1ee3c80b61c21d8ed864bbcb7ff462d9fee9e8dc298b5ee53a002c1",
+  "geometryAndStyle": {
+    "status": "PASS",
+    "textSamples": [
+      {
+        "path": "0.0.0.0.1.0.0.0.0",
+        "characters": "姓名",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 10.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 600,
+        "sourceCssFontWeight": 700,
+        "role": "header",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "fill": "#515a6e",
+        "sourceBaselineY": 23.875,
+        "fontStyle": "Semibold",
+        "textReference": "82:7",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.0.1.0.0",
+        "characters": "邮箱",
+        "sourceTextBounds": {
+          "x": 258.328125,
+          "y": 10.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 600,
+        "sourceCssFontWeight": 700,
+        "role": "header",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "fill": "#515a6e",
+        "sourceBaselineY": 23.875,
+        "fontStyle": "Semibold",
+        "textReference": "82:9",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.0.0.0.0",
+        "characters": "赵六",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 53.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 66.875,
+        "fontStyle": "Regular",
+        "textReference": "82:13",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.0.1.0.0",
+        "characters": "zhao@example.com",
+        "sourceTextBounds": {
+          "x": 258.328125,
+          "y": 53.875,
+          "width": 127.828125,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 66.875,
+        "fontStyle": "Regular",
+        "textReference": "82:15",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.1.0.1.1.0.0.0",
+        "characters": "钱七",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 101.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 114.875,
+        "fontStyle": "Regular",
+        "textReference": "82:19",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.1.1.0.0",
+        "characters": "qian@example.com",
+        "sourceTextBounds": {
+          "x": 258.328125,
+          "y": 101.875,
+          "width": 123.9375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 114.875,
+        "fontStyle": "Regular",
+        "textReference": "82:21",
+        "nativeBaselineOffset": 15
+      }
+    ],
+    "sourcePaths": [
+      "candidate/data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+      "source/0.0.0.0.1.0",
+      "source/0.0.0.0.1.0.0",
+      "source/0.0.0.0.1.0.0.0.0",
+      "source/0.0.0.0.1.0.1",
+      "source/0.0.0.0.1.0.1.0.0",
+      "source/row-border/0.0.0.0.1.0",
+      "source/0.0.1.0.1.0",
+      "source/0.0.1.0.1.0.0",
+      "source/0.0.1.0.1.0.0.0.0",
+      "source/0.0.1.0.1.0.1",
+      "source/0.0.1.0.1.0.1.0.0",
+      "source/row-border/0.0.1.0.1.0",
+      "source/0.0.1.0.1.1",
+      "source/0.0.1.0.1.1.0",
+      "source/0.0.1.0.1.1.0.0.0",
+      "source/0.0.1.0.1.1.1",
+      "source/0.0.1.0.1.1.1.0.0",
+      "source/row-border/0.0.1.0.1.1",
+      "source/0.0::before"
+    ],
+    "sourceAutoSizingPreserved": true
+  },
+  "fontsGlyphsBaselines": {
+    "glyphs": {
+      "scope": "task020_glyph_diagnostic",
+      "status": "OBSERVED",
+      "captureSha256": "c07084549a9f6493ac2d1c62283ba1d6f322cb07f9309c75d46cf4ad03e3f287",
+      "programSha256": "dbcb21169e902dd12b9b1d3dfd817a43038207428655509f62b2174b2adb6cb0",
+      "observations": [
+        {
+          "textReference": "82:7",
+          "characters": "姓名",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:9",
+          "characters": "邮箱",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:13",
+          "characters": "赵六",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:15",
+          "characters": "zhao@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "65485/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f16086a9188c29df7c4c175d7ff913d2b00576da20366b5a237d47161cfcaabf",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:19",
+          "characters": "钱七",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:21",
+          "characters": "qian@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "63497/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "fe0931a97071dd2e537ca3b1a37a8a8602c85496b22feaaaeaf121218847ac57",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:27",
+          "characters": "编号",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:29",
+          "characters": "姓名",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:31",
+          "characters": "部门",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:33",
+          "characters": "状态",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:37",
+          "characters": "001",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "5e150fb9cfc456f7d42ff5460ade9bdbf562235ca5dd9daff1203c519b0d6691",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:39",
+          "characters": "张三",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:41",
+          "characters": "研发",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:43",
+          "characters": "启用",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:47",
+          "characters": "002",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "41b9767971cf0e4a7578c33bb2e5a41d36eaad429c183952b9e20ea309c53c7e",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:49",
+          "characters": "李四",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:51",
+          "characters": "财务",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:53",
+          "characters": "停用",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:57",
+          "characters": "003",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "8310a0d77424142198e5e9eae2dec73c752c8fb53731b2963a4339fe21d11e75",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:59",
+          "characters": "王五",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:61",
+          "characters": "运营",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:63",
+          "characters": "启用",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:67",
+          "characters": "004",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f4b5aac170dbc8f0fd95d22c7162ab6f69e510e1748e84cfad99e4ec69b940b2",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:69",
+          "characters": "赵六",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:71",
+          "characters": "客服",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:73",
+          "characters": "启用",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        }
+      ],
+      "fontEncodingAdmission": "NOT_APPROVED",
+      "fidelityGate": "NOT_RUN",
+      "admissionEligible": false
+    },
+    "lockedArialCalibration": {
+      "scope": "task019_exact_arial_encoding",
+      "status": "PASS",
+      "fontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+      "freetypeVersion": "2.13.2",
+      "freetypeBinarySha256": "090038852d6eb0dc75569f31fb92d6c98e829ca2639c9b6e8d8808032f9a7003",
+      "freetypeWrapperSha256": "aa2baf011511f89f04e8a135e6d398cd46bf86a3892add185177fccb88e66470",
+      "programSha256": "26aa24c6d431f5392b5db35989eef221e7eefd9aedf9ec079e944fa15a948cc8",
+      "observations": [
+        {
+          "textReference": "68:2",
+          "characters": ".",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "a64fc08686c428cf6251aa9ebb0e02f39fdc3a6d9a8caebed8e77bdb7b56b762",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:3",
+          "characters": "0",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "e2bc6ba1f7de72f3938e7798079194a231107316fd32f2527224ea0c12e71c4b",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:4",
+          "characters": "1",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "0a39bbae0232a378dc9a529188bf21f982f364350fbb88e0d79f1bf999c60e6b",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:5",
+          "characters": "2",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "2bdc2ef99697d0c15ec7c1a70151aca8fe85d2aeffc5274e3e64106f265434b6",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:6",
+          "characters": "3",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "89260fa9a71f98f595926b5781f4b17e377873a697a17841742cadaa21e6fcc5",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:7",
+          "characters": "4",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "2589233d0df96373c6dcc8fcfa24dc4489f6530a53d68ad2f98da273468ee39d",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:8",
+          "characters": "@",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "455/32",
+          "fixedBaselinePx": 15,
+          "svgSha256": "8146c66bb413767553958c19fb035dfc6c968390fc93b59b2399bf167b88ee8d",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:9",
+          "characters": "a",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "08668065d061352bb06091684583645fa640b5b70362315c1724f501afbb0543",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:10",
+          "characters": "c",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "fa8aaba8742099a17ecdc31da53c302d26b3bde34d781ff9dd504a8ec7d881fd",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:11",
+          "characters": "e",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "433e99e54b0a56c3515c938aa14076c59e965e43e496ef03308e2553e9e35376",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:12",
+          "characters": "h",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "5cae66b26296ec38f854ed4a75fb7d298315814b13ca4001db9a7f951017a0a7",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:13",
+          "characters": "i",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "399/128",
+          "fixedBaselinePx": 15,
+          "svgSha256": "e3fe15b4e3b97e86b7fb0ce3f1d7740336e2aa02c123ef9ae06d717f0b19b202",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:14",
+          "characters": "l",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "399/128",
+          "fixedBaselinePx": 15,
+          "svgSha256": "b77cbb8d6ba1e40650071e3171714de89b0a10f4b713c76a9cacdaec2b43e95a",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:15",
+          "characters": "m",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5971/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "7404b6473274df810b248a1a3874a497f854aaecac923f1d24d17f9ed9d7a5a0",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:16",
+          "characters": "n",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "ad264cb132104996a97a07cd9abecb8e26686c1ea2f34e12e920ee83e89e6382",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:17",
+          "characters": "o",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "7d381d664d647b78126ba27fdde1dc5be25b419539878915c868e2f71fe754eb",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:18",
+          "characters": "p",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "40d10e102f7fc40ece02960598de622aab8bf462172bc02e1876858d9d01c929",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:19",
+          "characters": "q",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "0ceb99d6e144b9c96f342455ed3b4b34a17ad8321a7683337bf0069ca67d3b5c",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:20",
+          "characters": "x",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "3dacd2e22c0bfb2bc6871e34a1863106a57d89d5f535b766b505be1289974c06",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:21",
+          "characters": "z",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "6c56187b370bc9f5b20557ca65db26dbd2df99df49494184fbe1076e7100450e",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:9",
+          "characters": "zhao@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "65485/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f16086a9188c29df7c4c175d7ff913d2b00576da20366b5a237d47161cfcaabf",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:15",
+          "characters": "qian@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "63497/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "fe0931a97071dd2e537ca3b1a37a8a8602c85496b22feaaaeaf121218847ac57",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:21",
+          "characters": "001",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "5e150fb9cfc456f7d42ff5460ade9bdbf562235ca5dd9daff1203c519b0d6691",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:31",
+          "characters": "002",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "41b9767971cf0e4a7578c33bb2e5a41d36eaad429c183952b9e20ea309c53c7e",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:41",
+          "characters": "003",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "8310a0d77424142198e5e9eae2dec73c752c8fb53731b2963a4339fe21d11e75",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:51",
+          "characters": "004",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f4b5aac170dbc8f0fd95d22c7162ab6f69e510e1748e84cfad99e4ec69b940b2",
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN"
+    },
+    "sourceFontEffect": {
+      "scope": "mixed_source_font_file_effect_diagnostic",
+      "status": "OBSERVED",
+      "fontFiles": {
+        "Arial": {
+          "path": "C:/Windows/Fonts/arial.ttf",
+          "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+        },
+        "PingFang SC": {
+          "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Regular.otf",
+          "sha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a"
+        },
+        "PingFang SC/Semibold": {
+          "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Semibold.otf",
+          "sha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78"
+        }
+      },
+      "referenceComponentIrSha256": "c2d14fde6a010c8271c68c8c84363f197f37e7cd485fcd11ee6805fb2d496c61",
+      "probeScriptSha256": "aaad4920d19a1ec815a574ec0711e2f04287d40d7301b45681772aaf378c916a",
+      "referenceMatches": [
+        {
+          "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        }
+      ],
+      "observation": {
+        "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+        "fontLoadStatus": [
+          "loaded",
+          "loaded",
+          "loaded"
+        ],
+        "ownerGeometry": {
+          "before": [
+            {
+              "characters": "姓名",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 70,
+                "bottom": 50.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "邮箱",
+              "style": null,
+              "bounds": {
+                "x": 282.328125,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 310.328125,
+                "bottom": 50.875,
+                "left": 282.328125
+              }
+            },
+            {
+              "characters": "赵六",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 77.875,
+                "width": 28,
+                "height": 16,
+                "top": 77.875,
+                "right": 70,
+                "bottom": 93.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "zhao@example.com",
+              "style": null,
+              "bounds": {
+                "x": 282.328125,
+                "y": 77.875,
+                "width": 127.828125,
+                "height": 16,
+                "top": 77.875,
+                "right": 410.15625,
+                "bottom": 93.875,
+                "left": 282.328125
+              }
+            },
+            {
+              "characters": "钱七",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 125.875,
+                "width": 28,
+                "height": 16,
+                "top": 125.875,
+                "right": 70,
+                "bottom": 141.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "qian@example.com",
+              "style": null,
+              "bounds": {
+                "x": 282.328125,
+                "y": 125.875,
+                "width": 123.9375,
+                "height": 16,
+                "top": 125.875,
+                "right": 406.265625,
+                "bottom": 141.875,
+                "left": 282.328125
+              }
+            }
+          ],
+          "during": [
+            {
+              "characters": "姓名",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 70,
+                "bottom": 50.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "邮箱",
+              "style": null,
+              "bounds": {
+                "x": 282.328125,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 310.328125,
+                "bottom": 50.875,
+                "left": 282.328125
+              }
+            },
+            {
+              "characters": "赵六",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 77.875,
+                "width": 28,
+                "height": 16,
+                "top": 77.875,
+                "right": 70,
+                "bottom": 93.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "zhao@example.com",
+              "style": null,
+              "bounds": {
+                "x": 282.328125,
+                "y": 77.875,
+                "width": 127.828125,
+                "height": 16,
+                "top": 77.875,
+                "right": 410.15625,
+                "bottom": 93.875,
+                "left": 282.328125
+              }
+            },
+            {
+              "characters": "钱七",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 125.875,
+                "width": 28,
+                "height": 16,
+                "top": 125.875,
+                "right": 70,
+                "bottom": 141.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "qian@example.com",
+              "style": null,
+              "bounds": {
+                "x": 282.328125,
+                "y": 125.875,
+                "width": 123.9375,
+                "height": 16,
+                "top": 125.875,
+                "right": 406.265625,
+                "bottom": 141.875,
+                "left": 282.328125
+              }
+            }
+          ]
+        },
+        "ownerBoundsUnchanged": true,
+        "pngSha256": "5fed0dc67b1f70d63786e04839150f591c1a80f4c1312bf208d46f572bd3a0b3"
+      },
+      "ownerStatesRestored": true,
+      "temporaryFontFacesRemoved": true,
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN"
+    },
+    "status": "PASS"
+  },
+  "vectorBinding": {
+    "status": "PASS",
+    "captureSha256": "7f2602dec58780949dced7aec75560715be20792b178bb4a40c18dfb89fe59f0",
+    "probe": {
+      "scope": "browser_raster_of_native_svg_diagnostic",
+      "status": "PASS",
+      "svgCaptureSha256": "7f2602dec58780949dced7aec75560715be20792b178bb4a40c18dfb89fe59f0",
+      "referenceComponentIrSha256": "c2d14fde6a010c8271c68c8c84363f197f37e7cd485fcd11ee6805fb2d496c61",
+      "probeScriptSha256": "c3d1d39c95ab48c65cdf75e35d41be19bd4bded72121086b74464eda127fa773",
+      "referenceMatches": [
+        {
+          "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        }
+      ],
+      "environment": {
+        "browser": "153.0.8010.12",
+        "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+        "node": "v24.15.0",
+        "operatingSystem": {
+          "platform": "win32",
+          "release": "10.0.19045"
+        },
+        "viewport": {
+          "width": 768,
+          "height": 464
+        },
+        "deviceScaleFactor": 1,
+        "locale": "zh-CN",
+        "fontsStatus": "loaded"
+      },
+      "samples": [
+        {
+          "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+          "componentReference": "82:4",
+          "svgSha256": "9841a51d60a4c2c57ecfba3144afca7563c9c174b4f603daf05e82080cd69e2b",
+          "browserBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 720,
+            "height": 135
+          },
+          "pngPath": "svg-raster-data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa.png",
+          "pngSha256": "64167857b82b5b59b7f9277b4e2fa90ad5da77823560d1df761e94071dc0de35"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Browser rendering of native outlined SVG is a diagnostic sample, not native Figma PNG or editable component admission.",
+        "Official DOM/CSS/reference images are preserved; font hinting in live text is not represented by outlined SVG."
+      ]
+    },
+    "horizontalLines": [
+      {
+        "sourcePath": "0.0.0.0.1.0",
+        "region": {
+          "x": 0,
+          "y": 37.875,
+          "width": 721,
+          "height": 1.0
+        },
+        "fill": "#e8eaec"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.0",
+        "region": {
+          "x": 0,
+          "y": 85.875,
+          "width": 721,
+          "height": 1.0
+        },
+        "fill": "#e8eaec"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.1",
+        "region": {
+          "x": 0,
+          "y": 133.875,
+          "width": 721,
+          "height": 1.0
+        },
+        "fill": "#e8eaec"
+      },
+      {
+        "sourcePath": "0.0::before",
+        "region": {
+          "x": 0,
+          "y": 133.875,
+          "width": 720.0,
+          "height": 1.0
+        },
+        "fill": "#dcdee2"
+      }
+    ],
+    "fractionalRootClip": {
+      "width": "720",
+      "height": "134.875",
+      "fill": "white"
+    },
+    "textPathCount": 6
+  },
+  "raster": {
+    "status": "PASS",
+    "pixelOwnership": {
+      "status": "PASS",
+      "scope": "native-png-source-pixel-ownership-only",
+      "platform": "figma",
+      "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+      "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+      "pngContext": {
+        "status": "PASS",
+        "scope": "raw-native-png-dimensions-and-alpha-only",
+        "platform": "figma",
+        "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+        "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+        "nativePngSha256": "0075f093d4f271072fff9ea6faac3f74026850e4d1ac0fd0f4097103aeadc556",
+        "dimensions": [
+          720,
+          135
+        ],
+        "lastRowAlpha": 223,
+        "otherRowsAlpha": 255,
+        "productionAdmission": false,
+        "fidelityGate": "NOT_RUN",
+        "limitations": [
+          "Exact root clipping and independent vector evidence remain required.",
+          "This subgate does not verify PNG colors, content or edge coverage."
+        ]
+      },
+      "sourcePngSha256": "5fed0dc67b1f70d63786e04839150f591c1a80f4c1312bf208d46f572bd3a0b3",
+      "differentPixels": 6988,
+      "categories": {
+        "text": 2668,
+        "horizontal": 4320,
+        "outside": 0
+      },
+      "horizontalRegions": [
+        {
+          "sourcePath": "0.0.0.0.1.0",
+          "region": {
+            "x": 0,
+            "y": 37.875,
+            "width": 721,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.0",
+          "region": {
+            "x": 0,
+            "y": 85.875,
+            "width": 721,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.1",
+          "region": {
+            "x": 0,
+            "y": 133.875,
+            "width": 721,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0::before",
+          "region": {
+            "x": 0,
+            "y": 133.875,
+            "width": 720.0,
+            "height": 1.0
+          },
+          "fill": "#dcdee2"
+        }
+      ],
+      "pixelRegionPolicy": "positive-area-intersection-no-padding",
+      "fidelityGate": "NOT_RUN",
+      "productionAdmission": false,
+      "limitations": [
+        "Text requires independent glyph, baseline, paint and retention checks.",
+        "Horizontal regions require exact vector style, full coverage and edge checks.",
+        "Region ownership alone does not admit differences inside these regions."
+      ]
+    },
+    "changedPixelsOutsideEdgeBand": 0,
+    "horizontalCoverage": [
+      {
+        "sourcePath": "0.0.0.0.1.0",
+        "region": {
+          "x": 0,
+          "y": 37.875,
+          "width": 721,
+          "height": 1.0
+        },
+        "sourceFill": "#e8eaec",
+        "rows": [
+          {
+            "y": 37,
+            "coveredPixels": 720,
+            "rgba": [
+              246,
+              246,
+              247,
+              255
+            ]
+          },
+          {
+            "y": 38,
+            "coveredPixels": 720,
+            "rgba": [
+              235,
+              237,
+              239,
+              255
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.0",
+        "region": {
+          "x": 0,
+          "y": 85.875,
+          "width": 721,
+          "height": 1.0
+        },
+        "sourceFill": "#e8eaec",
+        "rows": [
+          {
+            "y": 85,
+            "coveredPixels": 720,
+            "rgba": [
+              252,
+              253,
+              253,
+              255
+            ]
+          },
+          {
+            "y": 86,
+            "coveredPixels": 720,
+            "rgba": [
+              235,
+              237,
+              239,
+              255
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.1",
+        "region": {
+          "x": 0,
+          "y": 133.875,
+          "width": 721,
+          "height": 1.0
+        },
+        "sourceFill": "#e8eaec",
+        "rows": [
+          {
+            "y": 133,
+            "coveredPixels": 720,
+            "rgba": [
+              251,
+              251,
+              251,
+              255
+            ]
+          },
+          {
+            "y": 134,
+            "coveredPixels": 720,
+            "rgba": [
+              220,
+              223,
+              226,
+              223
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "sourcePath": "0.0::before",
+        "region": {
+          "x": 0,
+          "y": 133.875,
+          "width": 720.0,
+          "height": 1.0
+        },
+        "sourceFill": "#dcdee2",
+        "rows": [
+          {
+            "y": 133,
+            "coveredPixels": 720,
+            "rgba": [
+              251,
+              251,
+              251,
+              255
+            ]
+          },
+          {
+            "y": 134,
+            "coveredPixels": 720,
+            "rgba": [
+              220,
+              223,
+              226,
+              223
+            ]
+          }
+        ],
+        "status": "PASS"
+      }
+    ],
+    "glyphRetention": [
+      {
+        "character": "姓",
+        "sourceInkProxy": 95.17676725690688,
+        "nativeInkProxy": 81.94254163549202,
+        "retentionRatio": 0.8609510912921402,
+        "status": "PASS"
+      },
+      {
+        "character": "名",
+        "sourceInkProxy": 79.63816609859504,
+        "nativeInkProxy": 70.17775099066145,
+        "retentionRatio": 0.881207521827898,
+        "status": "PASS"
+      },
+      {
+        "character": "邮",
+        "sourceInkProxy": 104.84440380192305,
+        "nativeInkProxy": 89.64350042951754,
+        "retentionRatio": 0.8550146424493599,
+        "status": "PASS"
+      },
+      {
+        "character": "箱",
+        "sourceInkProxy": 104.44791753262945,
+        "nativeInkProxy": 92.33595200487709,
+        "retentionRatio": 0.8840382286801592,
+        "status": "PASS"
+      },
+      {
+        "character": "赵",
+        "sourceInkProxy": 70.1342485291496,
+        "nativeInkProxy": 58.04519522196472,
+        "retentionRatio": 0.8276298162350686,
+        "status": "PASS"
+      },
+      {
+        "character": "六",
+        "sourceInkProxy": 33.082316684919626,
+        "nativeInkProxy": 29.999490614573517,
+        "retentionRatio": 0.9068134768278971,
+        "status": "PASS"
+      },
+      {
+        "character": "z",
+        "sourceInkProxy": 20.791903318646057,
+        "nativeInkProxy": 20.259073427909232,
+        "retentionRatio": 0.9743732027524875,
+        "status": "PASS"
+      },
+      {
+        "character": "h",
+        "sourceInkProxy": 26.751903828031462,
+        "nativeInkProxy": 24.636693579196702,
+        "retentionRatio": 0.9209323470048372,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "sourceInkProxy": 27.518910933958182,
+        "nativeInkProxy": 25.44934161933627,
+        "retentionRatio": 0.924794650500937,
+        "status": "PASS"
+      },
+      {
+        "character": "o",
+        "sourceInkProxy": 23.305172809005924,
+        "nativeInkProxy": 22.564857499426942,
+        "retentionRatio": 0.9682338631150206,
+        "status": "PASS"
+      },
+      {
+        "character": "@",
+        "sourceInkProxy": 64.76628123169395,
+        "nativeInkProxy": 65.19775615719635,
+        "retentionRatio": 1.0066620302616858,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "sourceInkProxy": 24.876053791101036,
+        "nativeInkProxy": 25.06274354990704,
+        "retentionRatio": 1.0075047980026794,
+        "status": "PASS"
+      },
+      {
+        "character": "x",
+        "sourceInkProxy": 21.557840715177143,
+        "nativeInkProxy": 19.135827623971675,
+        "retentionRatio": 0.8876504783941407,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "sourceInkProxy": 27.35859460560833,
+        "nativeInkProxy": 25.556681863331892,
+        "retentionRatio": 0.9341372329883108,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "sourceInkProxy": 34.89120800753889,
+        "nativeInkProxy": 33.06456460280671,
+        "retentionRatio": 0.9476474588000077,
+        "status": "PASS"
+      },
+      {
+        "character": "p",
+        "sourceInkProxy": 29.48447647912794,
+        "nativeInkProxy": 27.083539209943208,
+        "retentionRatio": 0.9185694454882264,
+        "status": "PASS"
+      },
+      {
+        "character": "l",
+        "sourceInkProxy": 13.186587881720705,
+        "nativeInkProxy": 12.52233655095128,
+        "retentionRatio": 0.9496267467575739,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "sourceInkProxy": 24.83358378116802,
+        "nativeInkProxy": 25.072969462343686,
+        "retentionRatio": 1.009639594642687,
+        "status": "PASS"
+      },
+      {
+        "character": ".",
+        "sourceInkProxy": 1.3186587881720704,
+        "nativeInkProxy": 1.8825229860173702,
+        "retentionRatio": 1.4276043225912372,
+        "status": "PASS"
+      },
+      {
+        "character": "c",
+        "sourceInkProxy": 18.099406565978146,
+        "nativeInkProxy": 18.994320352494714,
+        "retentionRatio": 1.0494443717397208,
+        "status": "PASS"
+      },
+      {
+        "character": "o",
+        "sourceInkProxy": 22.842115987061618,
+        "nativeInkProxy": 22.684524870743445,
+        "retentionRatio": 0.9931008529854486,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "sourceInkProxy": 35.26346687721263,
+        "nativeInkProxy": 32.887273005119326,
+        "retentionRatio": 0.9326159880885447,
+        "status": "PASS"
+      },
+      {
+        "character": "钱",
+        "sourceInkProxy": 72.3298397982834,
+        "nativeInkProxy": 60.00024195807759,
+        "retentionRatio": 0.8295364973212835,
+        "status": "PASS"
+      },
+      {
+        "character": "七",
+        "sourceInkProxy": 37.336321727835376,
+        "nativeInkProxy": 32.751763747039206,
+        "retentionRatio": 0.8772091687495225,
+        "status": "PASS"
+      },
+      {
+        "character": "q",
+        "sourceInkProxy": 30.10897027736035,
+        "nativeInkProxy": 27.394009627384563,
+        "retentionRatio": 0.909828844196069,
+        "status": "PASS"
+      },
+      {
+        "character": "i",
+        "sourceInkProxy": 11.867929093548634,
+        "nativeInkProxy": 10.766777882484783,
+        "retentionRatio": 0.907216229353575,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "sourceInkProxy": 27.451302753228237,
+        "nativeInkProxy": 25.506660214451266,
+        "retentionRatio": 0.9291602822547909,
+        "status": "PASS"
+      },
+      {
+        "character": "n",
+        "sourceInkProxy": 23.783791355729317,
+        "nativeInkProxy": 20.628619820186945,
+        "retentionRatio": 0.8673394208538447,
+        "status": "PASS"
+      },
+      {
+        "character": "@",
+        "sourceInkProxy": 64.76628123169395,
+        "nativeInkProxy": 64.56918727555207,
+        "retentionRatio": 0.9969568430919045,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "sourceInkProxy": 24.876053791101036,
+        "nativeInkProxy": 25.325191656266714,
+        "retentionRatio": 1.018055028700989,
+        "status": "PASS"
+      },
+      {
+        "character": "x",
+        "sourceInkProxy": 21.557840715177143,
+        "nativeInkProxy": 19.564577337442376,
+        "retentionRatio": 0.9075388206050029,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "sourceInkProxy": 27.482680895499577,
+        "nativeInkProxy": 26.17056771005782,
+        "retentionRatio": 0.9522567252288469,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "sourceInkProxy": 34.76712171764765,
+        "nativeInkProxy": 33.02832182971245,
+        "retentionRatio": 0.9499872350073608,
+        "status": "PASS"
+      },
+      {
+        "character": "p",
+        "sourceInkProxy": 29.48447647912794,
+        "nativeInkProxy": 26.436989022744054,
+        "retentionRatio": 0.8966409507545029,
+        "status": "PASS"
+      },
+      {
+        "character": "l",
+        "sourceInkProxy": 13.186587881720705,
+        "nativeInkProxy": 12.51864350660928,
+        "retentionRatio": 0.9493466861099579,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "sourceInkProxy": 24.80202735399741,
+        "nativeInkProxy": 25.079247637725086,
+        "retentionRatio": 1.011177323521619,
+        "status": "PASS"
+      },
+      {
+        "character": ".",
+        "sourceInkProxy": 1.3203906986221123,
+        "nativeInkProxy": 1.8720423808674833,
+        "retentionRatio": 1.4177942807542074,
+        "status": "PASS"
+      },
+      {
+        "character": "c",
+        "sourceInkProxy": 18.099406565978146,
+        "nativeInkProxy": 18.440707536357383,
+        "retentionRatio": 1.0188570254574416,
+        "status": "PASS"
+      },
+      {
+        "character": "o",
+        "sourceInkProxy": 23.3384611466266,
+        "nativeInkProxy": 22.5646028067137,
+        "retentionRatio": 0.966841929506361,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "sourceInkProxy": 34.76712171764765,
+        "nativeInkProxy": 33.15104551358785,
+        "retentionRatio": 0.9535171125989563,
+        "status": "PASS"
+      }
+    ],
+    "limitations": [
+      "Exact native and independent vector geometry and paint remain mandatory upstream."
+    ]
+  },
+  "realInstance": {
+    "status": "PASS",
+    "mainReference": "82:4",
+    "instanceReference": "87:2",
+    "nativeNodeCount": 20,
+    "mainUnchanged": true,
+    "nativePngBytesEqual": true,
+    "nativePngSha256": "0075f093d4f271072fff9ea6faac3f74026850e4d1ac0fd0f4097103aeadc556"
+  },
+  "normalizerSha256": "0e4c6f9bbcdc4535416bac78838454f52d65f9ee0d5c94e9fe886c0fc9157bc2",
+  "rasterCheckerSha256": "5ff1c289e3e4a402fac38b9b8acc5656defaed1ce519a70b706675f586a907b9",
+  "nativeEvidenceSha256": "301908d42198a1787a33e8fe49b82f8b834c0560ffd7ba4f3f90da3ef46a79a2"
+}

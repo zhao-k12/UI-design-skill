@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "tests": 389,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "scope": "full-project-regression",
+  "optionalPdfDiagnostics": "desktop-bundled-pypdf-enabled",
+  "node": {
+    "status": "PASS",
+    "tests": 102,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 13902.8888
+  },
+  "historicalGates": {
+    "figmaOfficialComponentFidelity": "PASS",
+    "figmaTableFidelity": "PASS",
+    "penpotTask010Final": "PASS"
+  },
+  "architecture": "PASS",
+  "skillEntry": "PASS"
+}

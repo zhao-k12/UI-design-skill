@@ -1,0 +1,399 @@
+{
+  "status": "OBSERVED",
+  "scope": "penpot-native-svg-browser-diagnostic",
+  "nativeReceiptSha256": "27e6175d80abe5709f6f1b364f11aadbf969b5b06dd90060d2606a9b8ff0d626",
+  "referenceComponentIrSha256": "383e4a3e017a3a105f4d053fe4a464d371da2ddf51e1dda5eba989aca4d4b29e",
+  "probeScriptSha256": "e4ea05a8e58b0bc5dbcb1e38bc07715ae22b588a2dbe84810760b7f348a929bc",
+  "sample": {
+    "texts": [
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c4968927a3dc",
+        "characters": "qian@example.com",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "length": 123.9375,
+        "start": [
+          {
+            "x": 258.328125,
+            "y": 79
+          },
+          {
+            "x": 266.109375,
+            "y": 79
+          },
+          {
+            "x": 269.21875,
+            "y": 79
+          },
+          {
+            "x": 277,
+            "y": 79
+          },
+          {
+            "x": 284.796875,
+            "y": 79
+          },
+          {
+            "x": 299,
+            "y": 79
+          },
+          {
+            "x": 306.78125,
+            "y": 79
+          },
+          {
+            "x": 313.78125,
+            "y": 79
+          },
+          {
+            "x": 321.578125,
+            "y": 79
+          },
+          {
+            "x": 333.234375,
+            "y": 79
+          },
+          {
+            "x": 341.015625,
+            "y": 79
+          },
+          {
+            "x": 344.125,
+            "y": 79
+          },
+          {
+            "x": 351.921875,
+            "y": 79
+          },
+          {
+            "x": 355.8125,
+            "y": 79
+          },
+          {
+            "x": 362.8125,
+            "y": 79
+          },
+          {
+            "x": 370.59375,
+            "y": 79
+          }
+        ],
+        "end": [
+          {
+            "x": 266.125,
+            "y": 79
+          },
+          {
+            "x": 269.234375,
+            "y": 79
+          },
+          {
+            "x": 277.015625,
+            "y": 79
+          },
+          {
+            "x": 284.796875,
+            "y": 79
+          },
+          {
+            "x": 299.015625,
+            "y": 79
+          },
+          {
+            "x": 306.796875,
+            "y": 79
+          },
+          {
+            "x": 313.796875,
+            "y": 79
+          },
+          {
+            "x": 321.59375,
+            "y": 79
+          },
+          {
+            "x": 333.25,
+            "y": 79
+          },
+          {
+            "x": 341.03125,
+            "y": 79
+          },
+          {
+            "x": 344.140625,
+            "y": 79
+          },
+          {
+            "x": 351.9375,
+            "y": 79
+          },
+          {
+            "x": 355.828125,
+            "y": 79
+          },
+          {
+            "x": 362.828125,
+            "y": 79
+          },
+          {
+            "x": 370.609375,
+            "y": 79
+          },
+          {
+            "x": 382.265625,
+            "y": 79
+          }
+        ],
+        "bbox": {
+          "x": 258.328125,
+          "y": 63,
+          "width": 124.2734375,
+          "height": 16
+        }
+      },
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c49689120844",
+        "characters": "钱七",
+        "fontFamily": "\"PingFang SC\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "length": 28,
+        "start": [
+          {
+            "x": 18,
+            "y": 81
+          },
+          {
+            "x": 32,
+            "y": 81
+          }
+        ],
+        "end": [
+          {
+            "x": 32,
+            "y": 81
+          },
+          {
+            "x": 46,
+            "y": 81
+          }
+        ],
+        "bbox": {
+          "x": 17,
+          "y": 61,
+          "width": 29,
+          "height": 20
+        }
+      },
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c49688efc657",
+        "characters": "zhao@example.com",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "length": 127.828125,
+        "start": [
+          {
+            "x": 258.328125,
+            "y": 31
+          },
+          {
+            "x": 265.328125,
+            "y": 31
+          },
+          {
+            "x": 273.109375,
+            "y": 31
+          },
+          {
+            "x": 280.890625,
+            "y": 31
+          },
+          {
+            "x": 288.671875,
+            "y": 31
+          },
+          {
+            "x": 302.890625,
+            "y": 31
+          },
+          {
+            "x": 310.671875,
+            "y": 31
+          },
+          {
+            "x": 317.671875,
+            "y": 31
+          },
+          {
+            "x": 325.46875,
+            "y": 31
+          },
+          {
+            "x": 337.125,
+            "y": 31
+          },
+          {
+            "x": 344.90625,
+            "y": 31
+          },
+          {
+            "x": 348.015625,
+            "y": 31
+          },
+          {
+            "x": 355.8125,
+            "y": 31
+          },
+          {
+            "x": 359.703125,
+            "y": 31
+          },
+          {
+            "x": 366.703125,
+            "y": 31
+          },
+          {
+            "x": 374.484375,
+            "y": 31
+          }
+        ],
+        "end": [
+          {
+            "x": 265.328125,
+            "y": 31
+          },
+          {
+            "x": 273.125,
+            "y": 31
+          },
+          {
+            "x": 280.90625,
+            "y": 31
+          },
+          {
+            "x": 288.6875,
+            "y": 31
+          },
+          {
+            "x": 302.90625,
+            "y": 31
+          },
+          {
+            "x": 310.6875,
+            "y": 31
+          },
+          {
+            "x": 317.6875,
+            "y": 31
+          },
+          {
+            "x": 325.484375,
+            "y": 31
+          },
+          {
+            "x": 337.140625,
+            "y": 31
+          },
+          {
+            "x": 344.921875,
+            "y": 31
+          },
+          {
+            "x": 348.03125,
+            "y": 31
+          },
+          {
+            "x": 355.828125,
+            "y": 31
+          },
+          {
+            "x": 359.71875,
+            "y": 31
+          },
+          {
+            "x": 366.71875,
+            "y": 31
+          },
+          {
+            "x": 374.5,
+            "y": 31
+          },
+          {
+            "x": 386.15625,
+            "y": 31
+          }
+        ],
+        "bbox": {
+          "x": 258.328125,
+          "y": 15,
+          "width": 128.1630859375,
+          "height": 16
+        }
+      },
+      {
+        "textReference": "b65bc280-c7a5-8006-8008-c49688d9eaf7",
+        "characters": "赵六",
+        "fontFamily": "\"PingFang SC\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "length": 28,
+        "start": [
+          {
+            "x": 18,
+            "y": 33
+          },
+          {
+            "x": 32,
+            "y": 33
+          }
+        ],
+        "end": [
+          {
+            "x": 32,
+            "y": 33
+          },
+          {
+            "x": 46,
+            "y": 33
+          }
+        ],
+        "bbox": {
+          "x": 17,
+          "y": 13,
+          "width": 29,
+          "height": 20
+        }
+      }
+    ],
+    "fontLoadStatus": true,
+    "svgSha256": "dd235f37b49750bb6b01af74c33b706d3460d3830a6ed9f4ca242bd8e7dec059",
+    "pngSha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25",
+    "fontResources": {
+      "Arial": {
+        "url": "https://design.penpot.app/assets/by-id/acee000a-d2f5-469b-8d03-2f8d894b3987",
+        "path": "F:\\zo2026\\ui-design-skill\\artifacts\\task-019\\Arial-Regular.woff",
+        "sha256": "2035b173b6273ac11ffb25fd61d271753cca918bcc325dfdd7eebd636a0ea6d3"
+      },
+      "PingFang SC": {
+        "url": "https://design.penpot.app/assets/by-id/e2c64052-f235-4680-b309-8f8c183dc82e",
+        "path": "F:\\zo2026\\ui-design-skill\\artifacts\\task-010\\font-repair\\PingFang SC-Regular.woff",
+        "sha256": "7ce5d241353a41d6c9fd02b905967ad800f19d534abd3d46eb67e46b0d18099a"
+      }
+    }
+  },
+  "referenceMatches": [
+    {
+      "logicalId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "The font resource is served from the hash-verified local font container, not a remote download.",
+    "Browser SVG raster is diagnostic; native PNG remains the production screenshot."
+  ]
+}

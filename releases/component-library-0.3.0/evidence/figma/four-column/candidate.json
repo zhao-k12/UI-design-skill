@@ -1,0 +1,9 @@
+{
+  "normalizationVersion": "0.3.0",
+  "scope": "production",
+  "logicalComponentId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+  "componentIrSha256": "8b14f33d3468b3372046aa2a533824173cc26bd1e9e3990af1b8c202dbd10771",
+  "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+  "nativeEvidenceSha256": "db9e08826a5851c3c1718288b23af16f5eb8e0ffca0f42cff70800f901359791",
+  "proofBundleSha256": "78f7bd7237d8ae84ae60a7b517d7843905728eaeda5f9758926283c03896e86d"
+}

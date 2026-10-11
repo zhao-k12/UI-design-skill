@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"status\":\"AVAILABLE\",\"fonts\":[{\"fontName\":{\"family\":\"Arial\",\"style\":\"Regular\"}},{\"fontName\":{\"family\":\"PingFang SC\",\"style\":\"Regular\"}}],\"createdNodeIds\":[],\"mutatedNodeIds\":[]}"
+    }
+  ],
+  "isError": false
+}

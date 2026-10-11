@@ -1,0 +1,9 @@
+{
+  "status": "OBSERVED",
+  "nativeDifferingPixels": 3631,
+  "outsideIndependentVectorBand": 0,
+  "outsidePositiveAreaTextRectangles": 0,
+  "fontEncodingAdmission": "NOT_APPROVED",
+  "fidelityGate": "NOT_RUN",
+  "admissionEligible": false
+}

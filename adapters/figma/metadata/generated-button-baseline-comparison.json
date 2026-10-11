@@ -1,0 +1,307 @@
+{
+  "scope": "figma_candidate_diagnostic",
+  "status": "FAIL",
+  "logicalId": "action.button.primary.medium",
+  "componentType": "Button",
+  "evidenceScope": "production",
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "checks": [
+    {
+      "field": "root.width",
+      "status": "PASS",
+      "expected": 60,
+      "actual": 60
+    },
+    {
+      "field": "root.height",
+      "status": "PASS",
+      "expected": 32,
+      "actual": 32
+    },
+    {
+      "field": "button.bounds",
+      "status": "PASS",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "width": 60,
+        "height": 32
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "width": 60,
+        "height": 32
+      }
+    },
+    {
+      "field": "button.fill",
+      "status": "PASS",
+      "expected": {
+        "cssRgb": "rgb(45, 140, 240)",
+        "opacity": 1
+      },
+      "actual": [
+        {
+          "blendMode": "NORMAL",
+          "boundVariables": {},
+          "color": {
+            "b": 0.9411764740943909,
+            "g": 0.5490196347236633,
+            "r": 0.1764705926179886
+          },
+          "opacity": 1,
+          "type": "SOLID",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "field": "button.stroke",
+      "status": "PASS",
+      "expected": {
+        "cssRgb": "rgb(45, 140, 240)",
+        "opacity": 1
+      },
+      "actual": [
+        {
+          "blendMode": "NORMAL",
+          "boundVariables": {},
+          "color": {
+            "b": 0.9411764740943909,
+            "g": 0.5490196347236633,
+            "r": 0.1764705926179886
+          },
+          "opacity": 1,
+          "type": "SOLID",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "field": "button.strokeWeight",
+      "status": "PASS",
+      "expected": 1.0,
+      "actual": 1
+    },
+    {
+      "field": "button.strokeAlign",
+      "status": "PASS",
+      "expected": "INSIDE",
+      "actual": "INSIDE"
+    },
+    {
+      "field": "button.radius",
+      "status": "PASS",
+      "expected": 4.0,
+      "actual": 4
+    },
+    {
+      "field": "button.padding.top",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0
+    },
+    {
+      "field": "button.padding.right",
+      "status": "PASS",
+      "expected": 15.0,
+      "actual": 15
+    },
+    {
+      "field": "button.padding.bottom",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0
+    },
+    {
+      "field": "button.padding.left",
+      "status": "PASS",
+      "expected": 15.0,
+      "actual": 15
+    },
+    {
+      "field": "button.sourceSpanParent",
+      "status": "PASS",
+      "expected": "18:5",
+      "actual": "18:5"
+    },
+    {
+      "field": "button.labelParent",
+      "status": "PASS",
+      "expected": "18:4",
+      "actual": "18:4"
+    },
+    {
+      "field": "button.labelLayoutBounds",
+      "status": "PASS",
+      "expected": {
+        "x": 16,
+        "y": 5.5,
+        "width": 28,
+        "height": 21
+      },
+      "actual": {
+        "x": 16,
+        "y": 5.5,
+        "width": 28,
+        "height": 21
+      }
+    },
+    {
+      "field": "button.sourceSpanFill",
+      "status": "PASS",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "field": "button.sourceSpanStroke",
+      "status": "PASS",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "field": "button.sourceSpanClips",
+      "status": "PASS",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "field": "button.labelOffsetX",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "field": "label.characters",
+      "status": "PASS",
+      "expected": "查询",
+      "actual": "查询"
+    },
+    {
+      "field": "label.fontSize",
+      "status": "PASS",
+      "expected": 14.0,
+      "actual": 14
+    },
+    {
+      "field": "label.fontWeight",
+      "status": "PASS",
+      "expected": 400,
+      "actual": 400
+    },
+    {
+      "field": "label.color",
+      "status": "PASS",
+      "expected": {
+        "cssRgb": "rgb(255, 255, 255)",
+        "opacity": 1
+      },
+      "actual": [
+        {
+          "blendMode": "NORMAL",
+          "boundVariables": {},
+          "color": {
+            "b": 1,
+            "g": 1,
+            "r": 1
+          },
+          "opacity": 1,
+          "type": "SOLID",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "field": "label.fontFamily",
+      "status": "PASS",
+      "expected": "PingFang SC",
+      "actual": "PingFang SC"
+    },
+    {
+      "field": "label.fontBinding",
+      "status": "PASS",
+      "expected": {
+        "family": "PingFang SC",
+        "style": "Regular"
+      },
+      "actual": {
+        "family": "PingFang SC",
+        "style": "Regular"
+      }
+    },
+    {
+      "field": "label.lineHeight",
+      "status": "PASS",
+      "expected": {
+        "unit": "PIXELS",
+        "value": 21.0
+      },
+      "actual": {
+        "unit": "PIXELS",
+        "value": 21
+      }
+    },
+    {
+      "field": "raster.size",
+      "status": "PASS",
+      "expected": [
+        60,
+        32
+      ],
+      "actual": [
+        60,
+        32
+      ]
+    },
+    {
+      "field": "raster.changedPixels",
+      "status": "FAIL",
+      "expected": 0,
+      "actual": 317
+    }
+  ],
+  "issues": [],
+  "unverified": [
+    "Per-glyph bounds and complete CSS-normalized visible-node observations.",
+    "Button glyph baseline alignment is a separate measured diagnostic, not inferred from its source span bounds."
+  ],
+  "raster": {
+    "changedPixels": 317,
+    "totalPixels": 1920,
+    "referenceSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+    "candidateSha256": "d71f04472994070b4c2c8ebaca843f3e3583e72a9f76946a915633c14e7827a7",
+    "locations": {
+      "changedPixels": 317,
+      "changedPixelBounds": [
+        0,
+        0,
+        60,
+        32
+      ],
+      "maximumChannelDelta": 197,
+      "pixelsWithMaximumDeltaAtMost16": 53,
+      "insideObservedTextRunUnion": 289,
+      "outsideObservedTextRunUnion": 28,
+      "observedTextRegions": [
+        {
+          "path": "0.0",
+          "textRunIndex": 0,
+          "bounds": {
+            "x": 16,
+            "y": 7.5,
+            "width": 28,
+            "height": 16
+          },
+          "changedPixels": 289
+        }
+      ],
+      "unresolvedTextRegions": [],
+      "classification": "Pixel-center containment in observed reference text boxes only. Outside does not imply nontext; missing placeholder/pseudo glyph boxes remain unknown.",
+      "cause": "UNDETERMINED",
+      "admissionEligible": false
+    }
+  },
+  "captureId": "0vGWSRoLxBiVPXiZ8xJAX9/action.button.primary.medium/18:5"
+}

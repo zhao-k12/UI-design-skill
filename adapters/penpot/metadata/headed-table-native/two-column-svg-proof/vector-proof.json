@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "scope": "headed-table-native-vector-geometry-and-source-raster-only",
+  "productionAdmission": false,
+  "fidelityGate": "NOT_RUN",
+  "nativeReceiptSha256": "8f81781791204e076513e59f5bd4b7aeeeb936f803b564108ae7165042fe75bb",
+  "probeSha256": "365faf9a411b567c78bdd4f960bbdb98107aeab23d64cb5dc19fd0e1f5cd5e13",
+  "rectangles": [
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4edb93a37",
+      "bounds": {
+        "x": "0",
+        "y": "0",
+        "width": "720",
+        "height": "134.875"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ee660224",
+      "bounds": {
+        "x": "240.328125",
+        "y": "86.875",
+        "width": "480.671875",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ee50e92b",
+      "bounds": {
+        "x": "0",
+        "y": "86.875",
+        "width": "240.328125",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ee7cebd6",
+      "bounds": {
+        "x": "0",
+        "y": "133.875",
+        "width": "721",
+        "height": "1"
+      },
+      "fill": "#e8eaec"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ee2c2bee",
+      "bounds": {
+        "x": "240.328125",
+        "y": "38.875",
+        "width": "480.671875",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ee108951",
+      "bounds": {
+        "x": "0",
+        "y": "38.875",
+        "width": "240.328125",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ee4082f7",
+      "bounds": {
+        "x": "0",
+        "y": "85.875",
+        "width": "721",
+        "height": "1"
+      },
+      "fill": "#e8eaec"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4edc77a0a",
+      "bounds": {
+        "x": "0",
+        "y": "0",
+        "width": "721",
+        "height": "38.875"
+      },
+      "fill": "#f8f8f9"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ede97654",
+      "bounds": {
+        "x": "240.328125",
+        "y": "0",
+        "width": "480.671875",
+        "height": "38.875"
+      },
+      "fill": "#f8f8f9"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4edcf9fb6",
+      "bounds": {
+        "x": "0",
+        "y": "0",
+        "width": "240.328125",
+        "height": "38.875"
+      },
+      "fill": "#f8f8f9"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ee00f2a4",
+      "bounds": {
+        "x": "0",
+        "y": "37.875",
+        "width": "721",
+        "height": "1"
+      },
+      "fill": "#e8eaec"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ee863964",
+      "bounds": {
+        "x": "0",
+        "y": "133.875",
+        "width": "720",
+        "height": "1"
+      },
+      "fill": "#dcdee2"
+    }
+  ],
+  "changedPixels": 4320,
+  "outsideExactHorizontalRegions": 0,
+  "wholeTextAndNonHorizontalPixelsExactlyMatchSource": true
+}

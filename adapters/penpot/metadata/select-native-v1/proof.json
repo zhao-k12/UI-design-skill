@@ -1,0 +1,798 @@
+{
+  "platform": "penpot",
+  "nativeEvidenceSha256": "75bc4d6e23897e2b2136099169a601403468e1bbba80653711262220806233eb",
+  "geometryAndStyle": {
+    "status": "PASS",
+    "nativeTextReference": "b17404b9-592b-8074-8008-c0d00da8382d",
+    "textRegion": {
+      "x": 9,
+      "y": 8,
+      "width": 28,
+      "height": 16
+    },
+    "borderNormalization": "Uniform inner border represented by its exact centerline, preserving outer bounds/radius.",
+    "textAlignmentNormalization": "The observed 28px selected label and 14px arrow preserve source glyph advances."
+  },
+  "content": {
+    "status": "PASS",
+    "characters": "启用",
+    "arrow": ""
+  },
+  "fontBinding": {
+    "status": "PASS",
+    "nativeBinding": {
+      "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+      "fontVariantId": "normal-400",
+      "family": "PingFang SC",
+      "weight": 400,
+      "style": "normal"
+    },
+    "arrowNativeBinding": {
+      "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70e",
+      "fontVariantId": "normal-400",
+      "family": "Ionicons",
+      "weight": 400,
+      "style": "normal"
+    },
+    "actualPdfGlyphIdentity": {
+      "status": "PASS",
+      "label": {
+        "status": "PASS",
+        "scope": "observed-Type3-glyph-paths-in-font-units",
+        "unitsPerEm": 1000,
+        "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+        "nativePdfSha256": "0ce0a4d661d832ffde69aff03042e0562341915462c133bd0cb218d1131ea619",
+        "glyphs": [
+          {
+            "character": "启",
+            "pathSha256": "87e8f73079177e24a934b9ab41afebd080feddd1039489d15beb03ac01239ef4",
+            "nativeUnicodeCharacter": "启",
+            "sourceCmapGlyphAlias": false,
+            "orderedCompleteContoursEqual": true,
+            "advanceFontUnitsEqual": true,
+            "fontIdentityEqual": true,
+            "sourceCommandCount": 36,
+            "nativeCommandCount": 36,
+            "fontMatrix": [
+              "0.0010000001",
+              "0",
+              "0",
+              "-0.0010000001",
+              "0",
+              "0"
+            ],
+            "status": "PASS"
+          },
+          {
+            "character": "用",
+            "pathSha256": "47702d98694a4dcdc75555908f9caf6a9cc3654a8b729c352ef7068811e56c69",
+            "nativeUnicodeCharacter": "⽤",
+            "sourceCmapGlyphAlias": true,
+            "orderedCompleteContoursEqual": true,
+            "advanceFontUnitsEqual": true,
+            "fontIdentityEqual": true,
+            "sourceCommandCount": 43,
+            "nativeCommandCount": 43,
+            "fontMatrix": [
+              "0.0010000001",
+              "0",
+              "0",
+              "-0.0010000001",
+              "0",
+              "0"
+            ],
+            "status": "PASS"
+          }
+        ],
+        "admissionEligible": false,
+        "limitations": [
+          "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+          "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+          "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+        ]
+      },
+      "arrow": {
+        "status": "PASS",
+        "scope": "observed-embedded-TTF-glyph-in-font-units",
+        "nativePdfSha256": "0ce0a4d661d832ffde69aff03042e0562341915462c133bd0cb218d1131ea619",
+        "sourceFontSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+        "embeddedFontSha256": "0aa9f05a5a7fc0f68c46001d3c0437a57d4630680f00f7f0d5a164fa88d4204c",
+        "resource": "/F5",
+        "character": "",
+        "cid": 26,
+        "postscriptName": "Ionicons",
+        "unitsPerEm": 1024,
+        "orderedCompleteContoursEqual": true,
+        "advanceAndBearingEqual": true,
+        "hintInstructionsEqual": true,
+        "sourceCommandCount": 7,
+        "nativeCommandCount": 7,
+        "advanceFontUnits": 1024,
+        "sourceCommands": [
+          [
+            "moveTo",
+            [
+              [
+                257,
+                640
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                192,
+                575
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                512,
+                256
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                832,
+                575
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                767,
+                640
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                512,
+                385
+              ]
+            ]
+          ],
+          [
+            "closePath",
+            []
+          ]
+        ],
+        "nativeCommands": [
+          [
+            "moveTo",
+            [
+              [
+                257,
+                640
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                192,
+                575
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                512,
+                256
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                832,
+                575
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                767,
+                640
+              ]
+            ]
+          ],
+          [
+            "lineTo",
+            [
+              [
+                512,
+                385
+              ]
+            ]
+          ],
+          [
+            "closePath",
+            []
+          ]
+        ],
+        "admissionEligible": false,
+        "limitations": [
+          "Only the observed glyph is compared; editable content, baseline and native PNG require separate proof."
+        ]
+      }
+    }
+  },
+  "glyphGeometry": {
+    "status": "PASS",
+    "label": {
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "nativePdfSha256": "0ce0a4d661d832ffde69aff03042e0562341915462c133bd0cb218d1131ea619",
+      "glyphs": [
+        {
+          "character": "启",
+          "pathSha256": "87e8f73079177e24a934b9ab41afebd080feddd1039489d15beb03ac01239ef4",
+          "nativeUnicodeCharacter": "启",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 36,
+          "nativeCommandCount": 36,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "pathSha256": "47702d98694a4dcdc75555908f9caf6a9cc3654a8b729c352ef7068811e56c69",
+          "nativeUnicodeCharacter": "⽤",
+          "sourceCmapGlyphAlias": true,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 43,
+          "nativeCommandCount": 43,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    },
+    "arrow": {
+      "status": "PASS",
+      "scope": "observed-embedded-TTF-glyph-in-font-units",
+      "nativePdfSha256": "0ce0a4d661d832ffde69aff03042e0562341915462c133bd0cb218d1131ea619",
+      "sourceFontSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+      "embeddedFontSha256": "0aa9f05a5a7fc0f68c46001d3c0437a57d4630680f00f7f0d5a164fa88d4204c",
+      "resource": "/F5",
+      "character": "",
+      "cid": 26,
+      "postscriptName": "Ionicons",
+      "unitsPerEm": 1024,
+      "orderedCompleteContoursEqual": true,
+      "advanceAndBearingEqual": true,
+      "hintInstructionsEqual": true,
+      "sourceCommandCount": 7,
+      "nativeCommandCount": 7,
+      "advanceFontUnits": 1024,
+      "sourceCommands": [
+        [
+          "moveTo",
+          [
+            [
+              257,
+              640
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              192,
+              575
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              512,
+              256
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              832,
+              575
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              767,
+              640
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              512,
+              385
+            ]
+          ]
+        ],
+        [
+          "closePath",
+          []
+        ]
+      ],
+      "nativeCommands": [
+        [
+          "moveTo",
+          [
+            [
+              257,
+              640
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              192,
+              575
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              512,
+              256
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              832,
+              575
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              767,
+              640
+            ]
+          ]
+        ],
+        [
+          "lineTo",
+          [
+            [
+              512,
+              385
+            ]
+          ]
+        ],
+        [
+          "closePath",
+          []
+        ]
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Only the observed glyph is compared; editable content, baseline and native PNG require separate proof."
+      ]
+    }
+  },
+  "baselines": {
+    "status": "PASS",
+    "actualNativePdfTextMatrices": [
+      [
+        "217",
+        "22"
+      ],
+      [
+        "9",
+        "21"
+      ]
+    ],
+    "sourceObservedBaselines": [
+      {
+        "logicalId": "form.select.default.medium",
+        "status": "OBSERVED",
+        "characters": "启用",
+        "baselineDocumentY": 45,
+        "baselineComponentY": 21,
+        "baselineElementY": 20,
+        "elementBounds": {
+          "x": 553,
+          "y": 25,
+          "width": 238,
+          "height": 30
+        },
+        "textRangeBounds": {
+          "x": 561,
+          "y": 32,
+          "width": 28,
+          "height": 16
+        },
+        "method": "temporary_zero_extent_inline_block_bottom_margin_edge",
+        "originalGeometryAndMarkupRestored": true
+      },
+      {
+        "logicalId": "form.select.default.medium",
+        "surface": "pseudo:before",
+        "status": "OBSERVED",
+        "characters": "",
+        "baselineDocumentY": 46,
+        "baselineComponentY": 22,
+        "baselineElementY": 13,
+        "method": "zero_extent_baseline_marker_on_resolved_actual_dom_owner",
+        "originalGeometryAndMarkupRestored": true
+      }
+    ],
+    "sourceEvidenceSha256": "7ae76fdb1f72605ff1ae7815716c13148d7ab53fb2738159d755821b3dc5fc71"
+  },
+  "renderState": {
+    "status": "PASS",
+    "nativeNodes": [
+      {
+        "reference": "b17404b9-592b-8074-8008-c0d00d917931",
+        "parentReference": "00000000-0000-0000-0000-000000000000",
+        "type": "board",
+        "name": "candidate / form.select.default.medium / penpot-v1",
+        "x": 80,
+        "y": 240,
+        "width": 240,
+        "height": 32,
+        "fills": [],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 4,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "b17404b9-592b-8074-8008-c0d00d9fa45d",
+        "parentReference": "b17404b9-592b-8074-8008-c0d00d917931",
+        "type": "rectangle",
+        "name": "official-source / form.select.default.medium / border-centerline",
+        "x": 80.5,
+        "y": 240.5,
+        "width": 239,
+        "height": 31,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [
+          {
+            "strokeColor": "#dcdee2",
+            "strokeColorRefFile": null,
+            "strokeColorRefId": null,
+            "strokeOpacity": 1,
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "strokeAlignment": "center",
+            "strokeCapStart": null,
+            "strokeCapEnd": null,
+            "strokeColorGradient": null,
+            "strokeImage": null
+          }
+        ],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 3.5,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "b17404b9-592b-8074-8008-c0d00db5bb2f",
+        "parentReference": "b17404b9-592b-8074-8008-c0d00d917931",
+        "type": "text",
+        "name": "official-source / form.select.default.medium / 0.0.1.1::before",
+        "x": 297,
+        "y": 249,
+        "width": 14,
+        "height": 14,
+        "fills": [
+          {
+            "fillColor": "#808695",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70e",
+        "fontFamily": "Ionicons",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 297,
+          "y": 249,
+          "width": 14,
+          "height": 14
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "b17404b9-592b-8074-8008-c0d00da8382d",
+        "parentReference": "b17404b9-592b-8074-8008-c0d00d917931",
+        "type": "text",
+        "name": "official-source / form.select.default.medium / 0.0.1.0",
+        "x": 89,
+        "y": 248,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "启用",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 89,
+          "y": 246,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    ]
+  },
+  "sourceReproduction": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "vectorBinding": {
+    "status": "PASS",
+    "probe": {
+      "status": "OBSERVED",
+      "scope": "penpot-native-svg-browser-diagnostic",
+      "nativeReceiptSha256": "b09fb2975a0b0b78ef6d5df29755b384f841a47044150a9bd4a5557e6e3ad445",
+      "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+      "probeScriptSha256": "c7b719aafdae587753efac988f6f0093a7a93c18a03049b89f7a3db6827bc3b6",
+      "sample": {
+        "texts": [
+          {
+            "characters": "",
+            "fontFamily": "Ionicons",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 14,
+            "start": [
+              {
+                "x": 217,
+                "y": 23
+              }
+            ],
+            "end": [
+              {
+                "x": 231,
+                "y": 23
+              }
+            ],
+            "bbox": {
+              "x": 217,
+              "y": 9,
+              "width": 14,
+              "height": 14
+            }
+          },
+          {
+            "characters": "启用",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 9,
+                "y": 26
+              },
+              {
+                "x": 23,
+                "y": 26
+              }
+            ],
+            "end": [
+              {
+                "x": 23,
+                "y": 26
+              },
+              {
+                "x": 37,
+                "y": 26
+              }
+            ],
+            "bbox": {
+              "x": 8,
+              "y": 6,
+              "width": 29,
+              "height": 20
+            }
+          }
+        ],
+        "fontLoadStatus": true,
+        "svgSha256": "be2fa81348177814a211a8e478c02e2809b79acc13f1bbcf7940836ad8c3ce54",
+        "pngSha256": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+        "fontResources": [
+          {
+            "family": "Ionicons",
+            "url": "https://design.penpot.app/assets/by-id/58c9f8d4-6c69-42f4-8f2e-fa099cc10f76",
+            "sha256": "9879ad9ccfc0640e6ba98ab85c3bbca11545baf7a0060efb2502498bc17e4f30"
+          },
+          {
+            "family": "PingFang SC",
+            "url": "https://design.penpot.app/assets/by-id/e2c64052-f235-4680-b309-8f8c183dc82e",
+            "sha256": "7ce5d241353a41d6c9fd02b905967ad800f19d534abd3d46eb67e46b0d18099a"
+          }
+        ]
+      },
+      "referenceMatches": [
+        {
+          "logicalId": "action.button.primary.medium",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        },
+        {
+          "logicalId": "form.input.default.medium",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        },
+        {
+          "logicalId": "form.select.default.medium",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "The font resource is served from the hash-verified local font container, not a remote download.",
+        "Browser SVG raster is diagnostic; native PNG remains the production screenshot."
+      ]
+    },
+    "wholeVectorPngExactlyMatchesSource": true
+  },
+  "nativePngSha256": "bce1c4d8e999116e46c1f73983ccb80902aa3a7514134d83e53b163530d559bf",
+  "comparisonContext": {
+    "background": "white",
+    "resize": false,
+    "crop": false
+  }
+}

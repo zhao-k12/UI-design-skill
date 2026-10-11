@@ -1,0 +1,55 @@
+{
+  "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+  "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+  "logicalId": "form.select.default.medium",
+  "name": "candidate/form.select.default.medium/penpot-v1",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "8510c62e4efced55ea261d95157c9ebd3d6541d547e4f9f8a5e493a2185a2bdc",
+  "rootBounds": {
+    "width": 240,
+    "height": 32
+  },
+  "fill": "#ffffff",
+  "stroke": "#dcdee2",
+  "strokeWidth": 1.0,
+  "radius": 4.0,
+  "characters": "启用",
+  "labelRole": "selected-value",
+  "fontFamily": "PingFang SC",
+  "fontWeight": 400,
+  "fontSize": 14.0,
+  "textFill": "#515a6e",
+  "sourceTextBounds": {
+    "x": 9,
+    "y": 8,
+    "width": 28,
+    "height": 16
+  },
+  "arrow": {
+    "characters": "",
+    "fontFamily": "Ionicons",
+    "fontWeight": 400,
+    "fontSize": 14.0,
+    "lineHeight": 14.0,
+    "fill": "#808695",
+    "bounds": {
+      "x": 217,
+      "y": 9,
+      "width": 14,
+      "height": 14
+    }
+  },
+  "ignoredHiddenPaths": [
+    "0.0.0",
+    "0.1",
+    "0.1.0",
+    "0.1.0.0",
+    "0.1.1",
+    "0.1.1.0",
+    "0.1.1.1",
+    "0.1.2"
+  ],
+  "nativeTextBounds": null,
+  "baselineCalibration": "NOT_RUN",
+  "fidelityGate": "NOT_RUN"
+}

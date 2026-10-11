@@ -1,0 +1,215 @@
+{
+  "scope": "mixed_source_font_file_effect_diagnostic",
+  "status": "OBSERVED",
+  "fontFiles": {
+    "Arial": {
+      "path": "C:/Windows/Fonts/arial.ttf",
+      "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+    },
+    "PingFang SC": {
+      "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Regular.otf",
+      "sha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a"
+    },
+    "PingFang SC/Semibold": {
+      "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Semibold.otf",
+      "sha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78"
+    }
+  },
+  "referenceComponentIrSha256": "c2d14fde6a010c8271c68c8c84363f197f37e7cd485fcd11ee6805fb2d496c61",
+  "probeScriptSha256": "aaad4920d19a1ec815a574ec0711e2f04287d40d7301b45681772aaf378c916a",
+  "referenceMatches": [
+    {
+      "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "observation": {
+    "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+    "fontLoadStatus": [
+      "loaded",
+      "loaded",
+      "loaded"
+    ],
+    "ownerGeometry": {
+      "before": [
+        {
+          "characters": "姓名",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 34.875,
+            "width": 28,
+            "height": 16,
+            "top": 34.875,
+            "right": 70,
+            "bottom": 50.875,
+            "left": 42
+          }
+        },
+        {
+          "characters": "邮箱",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 34.875,
+            "width": 28,
+            "height": 16,
+            "top": 34.875,
+            "right": 310.328125,
+            "bottom": 50.875,
+            "left": 282.328125
+          }
+        },
+        {
+          "characters": "赵六",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 77.875,
+            "width": 28,
+            "height": 16,
+            "top": 77.875,
+            "right": 70,
+            "bottom": 93.875,
+            "left": 42
+          }
+        },
+        {
+          "characters": "zhao@example.com",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 77.875,
+            "width": 127.828125,
+            "height": 16,
+            "top": 77.875,
+            "right": 410.15625,
+            "bottom": 93.875,
+            "left": 282.328125
+          }
+        },
+        {
+          "characters": "钱七",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 125.875,
+            "width": 28,
+            "height": 16,
+            "top": 125.875,
+            "right": 70,
+            "bottom": 141.875,
+            "left": 42
+          }
+        },
+        {
+          "characters": "qian@example.com",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 125.875,
+            "width": 123.9375,
+            "height": 16,
+            "top": 125.875,
+            "right": 406.265625,
+            "bottom": 141.875,
+            "left": 282.328125
+          }
+        }
+      ],
+      "during": [
+        {
+          "characters": "姓名",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 34.875,
+            "width": 28,
+            "height": 16,
+            "top": 34.875,
+            "right": 70,
+            "bottom": 50.875,
+            "left": 42
+          }
+        },
+        {
+          "characters": "邮箱",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 34.875,
+            "width": 28,
+            "height": 16,
+            "top": 34.875,
+            "right": 310.328125,
+            "bottom": 50.875,
+            "left": 282.328125
+          }
+        },
+        {
+          "characters": "赵六",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 77.875,
+            "width": 28,
+            "height": 16,
+            "top": 77.875,
+            "right": 70,
+            "bottom": 93.875,
+            "left": 42
+          }
+        },
+        {
+          "characters": "zhao@example.com",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 77.875,
+            "width": 127.828125,
+            "height": 16,
+            "top": 77.875,
+            "right": 410.15625,
+            "bottom": 93.875,
+            "left": 282.328125
+          }
+        },
+        {
+          "characters": "钱七",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 125.875,
+            "width": 28,
+            "height": 16,
+            "top": 125.875,
+            "right": 70,
+            "bottom": 141.875,
+            "left": 42
+          }
+        },
+        {
+          "characters": "qian@example.com",
+          "style": null,
+          "bounds": {
+            "x": 282.328125,
+            "y": 125.875,
+            "width": 123.9375,
+            "height": 16,
+            "top": 125.875,
+            "right": 406.265625,
+            "bottom": 141.875,
+            "left": 282.328125
+          }
+        }
+      ]
+    },
+    "ownerBoundsUnchanged": true,
+    "pngSha256": "5fed0dc67b1f70d63786e04839150f591c1a80f4c1312bf208d46f572bd3a0b3"
+  },
+  "ownerStatesRestored": true,
+  "temporaryFontFacesRemoved": true,
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN"
+}

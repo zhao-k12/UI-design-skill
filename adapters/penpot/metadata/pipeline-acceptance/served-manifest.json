@@ -1,0 +1,1 @@
+{"name": "UI Design Skill · TASK-010 检查", "description": "项目自建的文件限定只读环境检查；结果只保存本机", "version": 2, "code": "plugin.js", "icon": "icon.svg", "permissions": ["content:write", "library:write"]}

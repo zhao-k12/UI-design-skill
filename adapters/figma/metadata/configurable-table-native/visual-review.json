@@ -1,0 +1,12 @@
+{
+  "scope": "task019_table_visual_review",
+  "status": "PASS",
+  "reviewedBy": "codex-visual-inspection",
+  "reviewedOn": "2026-10-10",
+  "nativePngHashes": {
+    "two-column": "ef66ac6e24aeab9ef2db3da940bd0eaa160babbea8c3419a2f138f5efc8ab1c0",
+    "four-column": "1518175a76742ab251fed959f06fb08fcb4d62388c2294e7ac98b865ee243b11"
+  },
+  "observations": ["Both complete native PNGs were inspected at original size.", "All frozen cells and rows are visible; emails occupy one line; row separators and column positions match the source.", "Actual instance PNGs are byte-identical to the reviewed main PNGs."],
+  "scopeLimit": "Two frozen Table bodies only; no header, interaction or arbitrary data rewriting."
+}

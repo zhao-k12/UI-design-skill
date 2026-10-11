@@ -1,0 +1,428 @@
+{
+  "scope": "task017-static-end-to-end-acceptance",
+  "status": "PASS",
+  "v01Ready": true,
+  "version": "0.1.0",
+  "uiIrSha256": "94d539a316f9ac50af23726b705af8e5c89fd188dba9e99a8a0aee9195394bee",
+  "manifestSha256": "67d3acb3002e851802df9d7c3fcc7713a612232ba22dde930f63bba49f7bd8f1",
+  "crossPlatformLogicalGeometryAndContent": "PASS",
+  "semanticItemCount": 9,
+  "releaseGates": {
+    "pageTreeComplete": true,
+    "deterministicLayout": true,
+    "ruleBasedLayoutWithoutFreeCoordinates": true,
+    "platformNeutralUiIr": true,
+    "figmaConsumesUiIr": true,
+    "penpotConsumesSameUiIr": true,
+    "genuineUiInstances": true,
+    "genuineIconInstances": true,
+    "registeredComponentsOnly": true,
+    "officialRuntimeExtraction": true,
+    "officialComponentFidelity": true,
+    "remixRegistryAndVersionLock": true,
+    "savedIntermediateJson": true,
+    "checkpointRecovery": true,
+    "missingResourcesBlock": true,
+    "completenessQa": true,
+    "nativeEditablePage": true,
+    "actualVisualQa": true
+  },
+  "platforms": {
+    "figma": {
+      "native": {
+        "scope": "independent-static-pipeline-native-qa",
+        "platform": "figma",
+        "status": "PASS",
+        "uiIrSha256": "94d539a316f9ac50af23726b705af8e5c89fd188dba9e99a8a0aee9195394bee",
+        "logicalNodes": 49,
+        "nativeNodes": 90,
+        "genuineInstances": 6,
+        "nativePngSha256": "126a87102e4a3711ef1a2375ded382fff1bb19c4a415d61dc905afe1718242c1",
+        "issues": [],
+        "fidelityGate": "PASS",
+        "visualReview": "PASS"
+      },
+      "fidelity": {
+        "scope": "figma-static-pipeline-instance-fidelity",
+        "status": "PASS",
+        "uiIrSha256": "94d539a316f9ac50af23726b705af8e5c89fd188dba9e99a8a0aee9195394bee",
+        "instances": [
+          {
+            "uiIrId": "header-title.icon",
+            "iconId": "remix.settings-3-line",
+            "status": "PASS",
+            "importedSourceVectorPathsExact": true,
+            "currentMasterNativePngBytesExact": true,
+            "nativePngSha256": "48f8b3df93f55bed88ae3ac30b214cb73b55ed0f037ac3409b365b7086468d5c"
+          },
+          {
+            "uiIrId": "layout.item.1.0.instance",
+            "status": "PASS",
+            "admittedNativePngBytesExact": false,
+            "currentSourceNativePngBytesExact": true,
+            "admittedSourceGeometryStyleAndGlyphOutlinesExact": true,
+            "historicalChangedPixels": 317,
+            "outsideVerifiedEdges": 0,
+            "outsidePermittedTextOrCorners": 0,
+            "glyphRetention": [
+              {
+                "character": "请",
+                "sourceInkProxy": 59.69021615472131,
+                "nativeInkProxy": 59.16734926052335,
+                "retentionRatio": 0.9912403249999522,
+                "status": "PASS"
+              },
+              {
+                "character": "输",
+                "sourceInkProxy": 68.0088737201366,
+                "nativeInkProxy": 67.30102389078506,
+                "retentionRatio": 0.9895918019130207,
+                "status": "PASS"
+              },
+              {
+                "character": "入",
+                "sourceInkProxy": 25.57133105802048,
+                "nativeInkProxy": 25.22457337883959,
+                "retentionRatio": 0.9864395921200149,
+                "status": "PASS"
+              },
+              {
+                "character": "姓",
+                "sourceInkProxy": 59.05711035267348,
+                "nativeInkProxy": 58.6863481228669,
+                "retentionRatio": 0.9937219713664877,
+                "status": "PASS"
+              },
+              {
+                "character": "名",
+                "sourceInkProxy": 49.034584755403834,
+                "nativeInkProxy": 48.61888509670078,
+                "retentionRatio": 0.9915223171405109,
+                "status": "PASS"
+              }
+            ],
+            "editableTextCount": 1,
+            "nativePngSha256": "c873f725653e48c08026d4fefac3eb0ab99e765e620f8eab343f6a748f7de288"
+          },
+          {
+            "uiIrId": "layout.item.1.1.instance",
+            "status": "PASS",
+            "admittedNativePngBytesExact": false,
+            "currentSourceNativePngBytesExact": true,
+            "admittedSourceGeometryStyleAndGlyphOutlinesExact": true,
+            "historicalChangedPixels": 150,
+            "outsideVerifiedEdges": 0,
+            "outsidePermittedTextOrCorners": 0,
+            "glyphRetention": [
+              {
+                "character": "启",
+                "sourceInkProxy": 53.77699106028577,
+                "nativeInkProxy": 53.63167613274585,
+                "retentionRatio": 0.9972978233873848,
+                "status": "PASS"
+              },
+              {
+                "character": "用",
+                "sourceInkProxy": 61.34298194228662,
+                "nativeInkProxy": 61.1943814787459,
+                "retentionRatio": 0.9975775474416857,
+                "status": "PASS"
+              },
+              {
+                "character": "",
+                "sourceInkProxy": 14.52623434747417,
+                "nativeInkProxy": 14.46350521354092,
+                "retentionRatio": 0.9956816658445168,
+                "status": "PASS"
+              }
+            ],
+            "editableTextCount": 2,
+            "nativePngSha256": "7ac3bcd3db012199ce4e76bf97de7a6118d2694937b10bd5b79888c89148eced"
+          },
+          {
+            "uiIrId": "layout.item.1.2.instance",
+            "status": "PASS",
+            "admittedNativePngBytesExact": false,
+            "currentSourceNativePngBytesExact": true,
+            "admittedSourceGeometryStyleAndGlyphOutlinesExact": true,
+            "historicalChangedPixels": 139,
+            "outsideVerifiedEdges": 0,
+            "outsidePermittedTextOrCorners": 0,
+            "glyphRetention": [
+              {
+                "character": "查",
+                "sourceInkProxy": 63.665855777584696,
+                "nativeInkProxy": 63.88896611642052,
+                "retentionRatio": 1.0035043955054221,
+                "status": "PASS"
+              },
+              {
+                "character": "询",
+                "sourceInkProxy": 56.165942658557775,
+                "nativeInkProxy": 56.340139009556914,
+                "retentionRatio": 1.0031014586910454,
+                "status": "PASS"
+              }
+            ],
+            "editableTextCount": 1,
+            "nativePngSha256": "b0c22cd92e2b72f4bb0ed512d2d52eada1e0a62d58644f9ec3dcf90e4a53061f"
+          },
+          {
+            "uiIrId": "export-action.icon",
+            "iconId": "remix.download-line",
+            "status": "PASS",
+            "importedSourceVectorPathsExact": true,
+            "currentMasterNativePngBytesExact": true,
+            "nativePngSha256": "224a007a3ec9b7612db9d93257af0252aa3fcab8f902aee34df25c41125ceea9"
+          },
+          {
+            "uiIrId": "layout.item.2.0.instance",
+            "status": "PASS",
+            "admittedNativePngBytesExact": false,
+            "currentSourceNativePngBytesExact": true,
+            "admittedSourceGeometryStyleAndGlyphOutlinesExact": true,
+            "historicalChangedPixels": 1000,
+            "outsideVerifiedEdges": 0,
+            "outsidePermittedTextOrCorners": 0,
+            "glyphRetention": [
+              {
+                "character": "张",
+                "sourceInkProxy": 55.224104118381156,
+                "nativeInkProxy": 55.02585131039401,
+                "retentionRatio": 0.9964100312508074,
+                "status": "PASS"
+              },
+              {
+                "character": "三",
+                "sourceInkProxy": 32.10641061559227,
+                "nativeInkProxy": 31.99122583602883,
+                "retentionRatio": 0.996412405580227,
+                "status": "PASS"
+              },
+              {
+                "character": "启",
+                "sourceInkProxy": 53.224651707714635,
+                "nativeInkProxy": 53.061164455084956,
+                "retentionRatio": 0.9969283546743063,
+                "status": "PASS"
+              },
+              {
+                "character": "用",
+                "sourceInkProxy": 60.28626187504776,
+                "nativeInkProxy": 60.1659450373125,
+                "retentionRatio": 0.9980042411986891,
+                "status": "PASS"
+              },
+              {
+                "character": "管",
+                "sourceInkProxy": 66.45499579757023,
+                "nativeInkProxy": 66.26098362325854,
+                "retentionRatio": 0.9970805479410054,
+                "status": "PASS"
+              },
+              {
+                "character": "理",
+                "sourceInkProxy": 68.02520184397524,
+                "nativeInkProxy": 67.83680564399053,
+                "retentionRatio": 0.9972304940687009,
+                "status": "PASS"
+              },
+              {
+                "character": "员",
+                "sourceInkProxy": 49.33569773068791,
+                "nativeInkProxy": 49.19076484221787,
+                "retentionRatio": 0.9970623119741572,
+                "status": "PASS"
+              },
+              {
+                "character": "李",
+                "sourceInkProxy": 52.719315895372226,
+                "nativeInkProxy": 52.56914907164507,
+                "retentionRatio": 0.997151578673267,
+                "status": "PASS"
+              },
+              {
+                "character": "四",
+                "sourceInkProxy": 56.523890176502036,
+                "nativeInkProxy": 56.35603494384026,
+                "retentionRatio": 0.9970303665912301,
+                "status": "PASS"
+              },
+              {
+                "character": "启",
+                "sourceInkProxy": 53.224651707714635,
+                "nativeInkProxy": 53.061164455084956,
+                "retentionRatio": 0.9969283546743063,
+                "status": "PASS"
+              },
+              {
+                "character": "用",
+                "sourceInkProxy": 60.28626187504776,
+                "nativeInkProxy": 60.1659450373125,
+                "retentionRatio": 0.9980042411986891,
+                "status": "PASS"
+              },
+              {
+                "character": "编",
+                "sourceInkProxy": 70.47380485444316,
+                "nativeInkProxy": 70.29161042202587,
+                "retentionRatio": 0.9974147212174282,
+                "status": "PASS"
+              },
+              {
+                "character": "辑",
+                "sourceInkProxy": 69.16020171662892,
+                "nativeInkProxy": 69.02520184397527,
+                "retentionRatio": 0.9980480121615783,
+                "status": "PASS"
+              },
+              {
+                "character": "王",
+                "sourceInkProxy": 41.91359549703282,
+                "nativeInkProxy": 41.81160380001529,
+                "retentionRatio": 0.9975666201907027,
+                "status": "PASS"
+              },
+              {
+                "character": "五",
+                "sourceInkProxy": 46.361192471283395,
+                "nativeInkProxy": 46.248019764154556,
+                "retentionRatio": 0.9975588913680566,
+                "status": "PASS"
+              },
+              {
+                "character": "停",
+                "sourceInkProxy": 58.204276290655315,
+                "nativeInkProxy": 58.009016122048756,
+                "retentionRatio": 0.9966452607772067,
+                "status": "PASS"
+              },
+              {
+                "character": "用",
+                "sourceInkProxy": 60.28626187504776,
+                "nativeInkProxy": 60.1659450373125,
+                "retentionRatio": 0.9980042411986891,
+                "status": "PASS"
+              },
+              {
+                "character": "访",
+                "sourceInkProxy": 46.40603112344956,
+                "nativeInkProxy": 46.253457453582264,
+                "retentionRatio": 0.9967122017079759,
+                "status": "PASS"
+              },
+              {
+                "character": "客",
+                "sourceInkProxy": 61.65354150217763,
+                "nativeInkProxy": 61.49826808954997,
+                "retentionRatio": 0.997481516732949,
+                "status": "PASS"
+              }
+            ],
+            "editableTextCount": 9,
+            "nativePngSha256": "aadb228445fe6bcd7b12bd8a2f221e4b5bf9308d72de960c540b191f250ad8a1"
+          }
+        ],
+        "issues": []
+      },
+      "review": {
+        "status": "PASS",
+        "reviewedBy": "codex-visual-inspection",
+        "nativePngSha256": "126a87102e4a3711ef1a2375ded382fff1bb19c4a415d61dc905afe1718242c1",
+        "checks": [
+          "Full native 1440x488 page inspected",
+          "Approved header/query/list sections and all nine semantic items visible",
+          "Name/status/role columns and three frozen records visible",
+          "Settings and download icons visible",
+          "No overlap, clipping, missing controls or substituted components"
+        ],
+        "scope": "approved-frozen-static-list"
+      }
+    },
+    "penpot": {
+      "native": {
+        "scope": "independent-static-pipeline-native-qa",
+        "platform": "penpot",
+        "status": "PASS",
+        "uiIrSha256": "94d539a316f9ac50af23726b705af8e5c89fd188dba9e99a8a0aee9195394bee",
+        "logicalNodes": 49,
+        "nativeNodes": 92,
+        "genuineInstances": 6,
+        "nativePngSha256": "961c3f255eeface6788f05e59a823e0eaf6928cdfa62e5ff446ec9c6cdbbcb8a",
+        "issues": [],
+        "fidelityGate": "PASS",
+        "visualReview": "PASS"
+      },
+      "fidelity": {
+        "status": "PASS",
+        "instances": [
+          {
+            "uiIrId": "header-title.icon",
+            "status": "PASS",
+            "exactMasterAffineFloat32": true,
+            "sourceNativeVectorPngBytesExact": true,
+            "nativeSourceChangedPixels": 137,
+            "outsideVerifiedEdgeBand": 0,
+            "nativePngSha256": "a88c42caddb063dabdc86d6bfd140205096738045e7659854c54288f27b27aa5"
+          },
+          {
+            "uiIrId": "layout.item.1.0.instance",
+            "status": "PASS",
+            "masterNativePngBytesExact": true,
+            "editableTextCount": 1
+          },
+          {
+            "uiIrId": "layout.item.1.1.instance",
+            "status": "PASS",
+            "masterNativePngBytesExact": true,
+            "editableTextCount": 2
+          },
+          {
+            "uiIrId": "layout.item.1.2.instance",
+            "status": "PASS",
+            "masterNativePngBytesExact": true,
+            "editableTextCount": 1
+          },
+          {
+            "uiIrId": "export-action.icon",
+            "status": "PASS",
+            "exactMasterAffineFloat32": true,
+            "sourceNativeVectorPngBytesExact": true,
+            "nativeSourceChangedPixels": 42,
+            "outsideVerifiedEdgeBand": 0,
+            "nativePngSha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43"
+          },
+          {
+            "uiIrId": "layout.item.2.0.instance",
+            "status": "PASS",
+            "masterNativePngBytesExact": true,
+            "editableTextCount": 9
+          }
+        ],
+        "uiIrSha256": "94d539a316f9ac50af23726b705af8e5c89fd188dba9e99a8a0aee9195394bee",
+        "scope": "penpot-static-pipeline-instance-fidelity",
+        "issues": []
+      },
+      "review": {
+        "status": "PASS",
+        "reviewedBy": "codex-visual-inspection",
+        "nativePngSha256": "961c3f255eeface6788f05e59a823e0eaf6928cdfa62e5ff446ec9c6cdbbcb8a",
+        "checks": [
+          "Full native 1440x488 page inspected",
+          "Approved header/query/list sections and all nine semantic items visible",
+          "Name/status/role columns and three frozen records visible",
+          "Settings and download icons visible",
+          "No overlap, clipping, missing controls or substituted components"
+        ],
+        "scope": "approved-frozen-static-list"
+      }
+    }
+  },
+  "issues": [],
+  "limits": [
+    "Frozen static user list with admitted Input, Select, Button and Table body; arbitrary table record overrides remain Unsupported.",
+    "AI observations, semantic review and component decisions are explicit inputs; no automatic OCR or interaction generation.",
+    "Image resources are validated but native Image generation is not admitted.",
+    "Historical Figma native raster changes use the existing approved source/outline/edge policy; native screenshots are retained."
+  ]
+}

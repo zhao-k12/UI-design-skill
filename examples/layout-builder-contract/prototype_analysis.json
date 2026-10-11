@@ -1,0 +1,218 @@
+{
+  "version": "0.1.0",
+  "documentId": "user-management-example",
+  "sources": [
+    {
+      "id": "source",
+      "path": "prototype.txt",
+      "sha256": "297a837e46b9f09b46c41fcb59e31fc9c30cb15216628fbbe6fa291379c6755d"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e0",
+      "sourceId": "source",
+      "quote": "用户管理",
+      "start": 0,
+      "end": 4
+    },
+    {
+      "id": "e1",
+      "sourceId": "source",
+      "quote": "主要任务：查找用户并查看用户列表。",
+      "start": 6,
+      "end": 23
+    },
+    {
+      "id": "e2",
+      "sourceId": "source",
+      "quote": "筛选区：姓名、状态；查询、重置。",
+      "start": 25,
+      "end": 41
+    },
+    {
+      "id": "e3",
+      "sourceId": "source",
+      "quote": "工具区：新增用户、导出。",
+      "start": 43,
+      "end": 55
+    },
+    {
+      "id": "e4",
+      "sourceId": "source",
+      "quote": "用户列表：姓名、邮箱、状态；示例：张三、zhang@example.com、启用。",
+      "start": 57,
+      "end": 98
+    },
+    {
+      "id": "e5",
+      "sourceId": "source",
+      "quote": "说明：仅展示静态原型，不描述按钮点击后的流程。",
+      "start": 100,
+      "end": 123
+    }
+  ],
+  "page": {
+    "identity": {
+      "text": "用户管理",
+      "evidence": [
+        "e0"
+      ]
+    },
+    "primaryTask": {
+      "text": "查找用户并查看用户列表",
+      "evidence": [
+        "e1"
+      ]
+    },
+    "blocks": [
+      {
+        "id": "filters",
+        "purpose": {
+          "text": "筛选用户",
+          "evidence": [
+            "e2"
+          ]
+        },
+        "fields": [
+          {
+            "id": "name",
+            "description": {
+              "text": "姓名",
+              "evidence": [
+                "e2"
+              ]
+            }
+          },
+          {
+            "id": "status",
+            "description": {
+              "text": "状态",
+              "evidence": [
+                "e2"
+              ]
+            }
+          }
+        ],
+        "buttons": [
+          {
+            "id": "search",
+            "description": {
+              "text": "查询",
+              "evidence": [
+                "e2"
+              ]
+            }
+          },
+          {
+            "id": "reset",
+            "description": {
+              "text": "重置",
+              "evidence": [
+                "e2"
+              ]
+            }
+          }
+        ],
+        "dataRegions": [],
+        "staticContent": []
+      },
+      {
+        "id": "toolbar",
+        "purpose": {
+          "text": "用户操作入口",
+          "evidence": [
+            "e3"
+          ]
+        },
+        "fields": [],
+        "buttons": [
+          {
+            "id": "add",
+            "description": {
+              "text": "新增用户",
+              "evidence": [
+                "e3"
+              ]
+            }
+          },
+          {
+            "id": "export",
+            "description": {
+              "text": "导出",
+              "evidence": [
+                "e3"
+              ]
+            }
+          }
+        ],
+        "dataRegions": [],
+        "staticContent": []
+      },
+      {
+        "id": "results",
+        "purpose": {
+          "text": "查看用户数据",
+          "evidence": [
+            "e4"
+          ]
+        },
+        "fields": [],
+        "buttons": [],
+        "dataRegions": [
+          {
+            "id": "users",
+            "description": {
+              "text": "用户列表列：姓名、邮箱、状态",
+              "evidence": [
+                "e4"
+              ]
+            }
+          }
+        ],
+        "staticContent": [
+          {
+            "id": "example-row",
+            "description": {
+              "text": "张三、zhang@example.com、启用",
+              "evidence": [
+                "e4"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "note",
+        "purpose": {
+          "text": "原型范围说明",
+          "evidence": [
+            "e5"
+          ]
+        },
+        "fields": [],
+        "buttons": [],
+        "dataRegions": [],
+        "staticContent": [
+          {
+            "id": "scope-note",
+            "description": {
+              "text": "说明：仅展示静态原型，不描述按钮点击后的流程。",
+              "evidence": [
+                "e5"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "unknowns": [],
+  "stage": "prototype-analysis",
+  "status": "Review",
+  "readyForStructure": false,
+  "reviewReasons": [
+    "Semantic interpretation requires human review"
+  ],
+  "observationSha256": "75b86e5f453a8e05404f105dcb49f0e37d47b9d84755036dce97ae86c87fd878"
+}

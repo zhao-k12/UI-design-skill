@@ -1,0 +1,4709 @@
+{
+  "status": "OBSERVED",
+  "scope": "locked-icons-native-raster-diagnostic",
+  "nativeEvidenceSubcheckStatus": "PASS",
+  "receiptSha256": "a23fc55c57c21c99722db31dcfe84a7f9641ac5660fd59e5d9344e714ed8b84a",
+  "repeatReceiptSha256": "8382c1c7595b4739a013997861ef865e7143b715939ca34a2b677e9ca406672c",
+  "sourcePlanSha256": "3565c96b5a5e4852bbeb51605a357a33c2b7554890ebe1741c26cd8a3821f2c6",
+  "svgProbeSha256": "ca0a02682c518ad10ce95a249dbe437b6916a15016d855fb98afec440bf67540",
+  "diagnosticScriptSha256": "4a42f4105a38c5b463147cef8461c2b4e396d5bc440760ddf0c10cd6eacb74d4",
+  "normalization": "white-alpha-composite-only-no-crop-resize-shift",
+  "edgeBandDefinition": "existing-AD-017-edge_band-diagnostic-only",
+  "rasterPolicy": "PENDING_DECISION",
+  "admissionEligible": false,
+  "results": [
+    {
+      "iconId": "remix.settings-3-line",
+      "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc685ca781",
+      "nativePngSha256": "b3720de56d586dc3d1365369a2277bf65f2f867ba73027d1ab42fb461e778d95",
+      "independentContentGroupPngBytesExact": true,
+      "repeatCaptureStatus": "PARTIAL",
+      "repeatCaptureComplete": false,
+      "status": "OBSERVED",
+      "sourcePixelsExact": false,
+      "changedPixels": 138,
+      "changedPixelsOutsideVerifiedEdgeBand": 0,
+      "edgeBandPixelCount": 480,
+      "pixels": [
+        {
+          "pixel": [
+            9,
+            2
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            145,
+            145,
+            145,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            110
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            2
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            11,
+            11,
+            11,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            244
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            2
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            2
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            11,
+            11,
+            11,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            244
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            2
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            149,
+            149,
+            149,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            106
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            3
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            56,
+            56,
+            56,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            199
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            3
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            66,
+            66,
+            66,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            189
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            4
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            145,
+            145,
+            145,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            110
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            4
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            14,
+            14,
+            14,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            241
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            11,
+            4
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            239,
+            239,
+            239,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            4
+          ],
+          "sourceRgba": [
+            223,
+            223,
+            223,
+            255
+          ],
+          "nativeWhiteRgba": [
+            238,
+            238,
+            238,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            17
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            4
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            12,
+            12,
+            12,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            243
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            4
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            96
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            4,
+            5
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            122,
+            122,
+            122,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            133
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            5
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            52,
+            52,
+            52,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            203
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            6,
+            5
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            110,
+            110,
+            110,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            145
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            7,
+            5
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            40,
+            40,
+            40,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            215
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            5
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            166,
+            166,
+            166,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            89
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            5
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            157,
+            157,
+            157,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            98
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            16,
+            5
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            45,
+            45,
+            45,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            210
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            17,
+            5
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            110,
+            110,
+            110,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            145
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            5
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            49,
+            49,
+            49,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            206
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            19,
+            5
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            117,
+            117,
+            117,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            138
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            6
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            179,
+            179,
+            179,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            76
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            6
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            19,
+            19,
+            19,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            236
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            6
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            149,
+            149,
+            149,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            106
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            6
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            17,
+            17,
+            17,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            238
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            6
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            181,
+            181,
+            181,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            74
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            2,
+            7
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            253,
+            253,
+            253,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            7
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            29,
+            29,
+            29,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            226
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            7
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            141,
+            141,
+            141,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            114
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            6,
+            7
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            146,
+            146,
+            146,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            109
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            7,
+            7
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            180,
+            180,
+            180,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            75
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            7
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            248,
+            248,
+            248,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            7
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            7
+          ],
+          "sourceRgba": [
+            223,
+            223,
+            223,
+            255
+          ],
+          "nativeWhiteRgba": [
+            248,
+            248,
+            248,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            7
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            16,
+            7
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            178,
+            178,
+            178,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            77
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            17,
+            7
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            147,
+            147,
+            147,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            108
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            7
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            145,
+            145,
+            145,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            110
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            21,
+            7
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            253,
+            253,
+            253,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            2,
+            8
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            175,
+            175,
+            175,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            80
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            4,
+            8
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            33,
+            33,
+            33,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            222
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            8
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            254,
+            254,
+            254,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            19,
+            8
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            36,
+            36,
+            36,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            219
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            21,
+            8
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            175,
+            175,
+            175,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            80
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            2,
+            9
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            181,
+            181,
+            181,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            74
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            9
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            9,
+            9,
+            9,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            246
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            9
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            197,
+            197,
+            197,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            58
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            9
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            254,
+            254,
+            254,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            9
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            130,
+            130,
+            130,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            125
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            11,
+            9
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            21,
+            21,
+            21,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            234
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            9
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            26,
+            26,
+            26,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            229
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            9
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            9
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            10,
+            10,
+            10,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            245
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            21,
+            9
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            182,
+            182,
+            182,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            73
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            10
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            160,
+            160,
+            160,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            95
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            10
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            79,
+            79,
+            79,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            176
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            10
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            113,
+            113,
+            113,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            142
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            10
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            125,
+            125,
+            125,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            130
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            10
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            66,
+            66,
+            66,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            189
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            10
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            170,
+            170,
+            170,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            85
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            11
+          ],
+          "sourceRgba": [
+            223,
+            223,
+            223,
+            255
+          ],
+          "nativeWhiteRgba": [
+            238,
+            238,
+            238,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            17
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            11
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            23,
+            23,
+            23,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            232
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            11
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            17,
+            17,
+            17,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            238
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            11,
+            11
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            217,
+            217,
+            217,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            38
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            11
+          ],
+          "sourceRgba": [
+            223,
+            223,
+            223,
+            255
+          ],
+          "nativeWhiteRgba": [
+            208,
+            208,
+            208,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            47
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            11
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            27,
+            27,
+            27,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            228
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            11
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            8,
+            8,
+            8,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            247
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            11
+          ],
+          "sourceRgba": [
+            223,
+            223,
+            223,
+            255
+          ],
+          "nativeWhiteRgba": [
+            247,
+            247,
+            247,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            12
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            233,
+            233,
+            233,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            22
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            12
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            13,
+            13,
+            13,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            242
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            12
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            20,
+            20,
+            20,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            235
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            11,
+            12
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            214,
+            214,
+            214,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            41
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            12
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            206,
+            206,
+            206,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            49
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            12
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            27,
+            27,
+            27,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            228
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            12
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            8,
+            8,
+            8,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            247
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            12
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            237,
+            237,
+            237,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            18
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            13
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            127
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            13
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            70,
+            70,
+            70,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            185
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            13
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            120,
+            120,
+            120,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            135
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            13
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            137,
+            137,
+            137,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            118
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            2,
+            14
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            176,
+            176,
+            176,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            79
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            14
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            3,
+            3,
+            3,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            252
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            14
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            197,
+            197,
+            197,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            58
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            14
+          ],
+          "sourceRgba": [
+            223,
+            223,
+            223,
+            255
+          ],
+          "nativeWhiteRgba": [
+            254,
+            254,
+            254,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            14
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            132,
+            132,
+            132,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            123
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            11,
+            14
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            21,
+            21,
+            21,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            234
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            14
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            27,
+            27,
+            27,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            228
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            14
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            116
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            14
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            190,
+            190,
+            190,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            65
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            14
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            8,
+            8,
+            8,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            247
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            21,
+            14
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            183,
+            183,
+            183,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            72
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            2,
+            15
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            154,
+            154,
+            154,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            101
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            4,
+            15
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            27,
+            27,
+            27,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            228
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            15
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            254,
+            254,
+            254,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            15
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            254,
+            254,
+            254,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            19,
+            15
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            28,
+            28,
+            28,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            227
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            21,
+            15
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            177,
+            177,
+            177,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            78
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            2,
+            16
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            244,
+            244,
+            244,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            11
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            16
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            24,
+            24,
+            24,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            231
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            16
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            119,
+            119,
+            119,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            136
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            6,
+            16
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            133,
+            133,
+            133,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            122
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            7,
+            16
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            180,
+            180,
+            180,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            75
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            16
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            248,
+            248,
+            248,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            7
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            16
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            248,
+            248,
+            248,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            7
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            16,
+            16
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            178,
+            178,
+            178,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            77
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            17,
+            16
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            132,
+            132,
+            132,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            123
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            16
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            123,
+            123,
+            123,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            132
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            16
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            35,
+            35,
+            35,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            220
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            21,
+            16
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            253,
+            253,
+            253,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            17
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            177,
+            177,
+            177,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            78
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            17
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            20,
+            20,
+            20,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            235
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            17
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            158,
+            158,
+            158,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            97
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            17
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            150,
+            150,
+            150,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            105
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            17
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            17,
+            17,
+            17,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            238
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            17
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            184,
+            184,
+            184,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            71
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            4,
+            18
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            113,
+            113,
+            113,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            142
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            18
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            159
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            6,
+            18
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            127,
+            127,
+            127,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            128
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            7,
+            18
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            80,
+            80,
+            80,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            175
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            18
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            170,
+            170,
+            170,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            85
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            18
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            158,
+            158,
+            158,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            97
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            16,
+            18
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            84,
+            84,
+            84,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            171
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            17,
+            18
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            127,
+            127,
+            127,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            128
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            18
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            93,
+            93,
+            93,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            162
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            19,
+            18
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            126,
+            126,
+            126,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            129
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            19
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            144,
+            144,
+            144,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            111
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            19
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            18,
+            18,
+            18,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            237
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            11,
+            19
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            243,
+            243,
+            243,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            12
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            19
+          ],
+          "sourceRgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nativeWhiteRgba": [
+            237,
+            237,
+            237,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            18
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            19
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            11,
+            11,
+            11,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            244
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            19
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            151,
+            151,
+            151,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            104
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            20
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            50,
+            50,
+            50,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            205
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            20
+          ],
+          "sourceRgba": [
+            96,
+            96,
+            96,
+            255
+          ],
+          "nativeWhiteRgba": [
+            62,
+            62,
+            62,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            193
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            21
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            142,
+            142,
+            142,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            113
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            21
+          ],
+          "sourceRgba": [
+            64,
+            64,
+            64,
+            255
+          ],
+          "nativeWhiteRgba": [
+            11,
+            11,
+            11,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            244
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            21
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            21
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            12,
+            12,
+            12,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            243
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            21
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            148,
+            148,
+            148,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            107
+          ],
+          "inVerifiedEdgeBand": true
+        }
+      ],
+      "sourceInkRegions": [
+        {
+          "bounds": [
+            2,
+            2,
+            22,
+            22
+          ],
+          "pixelCount": 165
+        },
+        {
+          "bounds": [
+            9,
+            9,
+            15,
+            15
+          ],
+          "pixelCount": 33
+        }
+      ],
+      "nativeInkRegions": [
+        {
+          "bounds": [
+            2,
+            2,
+            22,
+            22
+          ],
+          "pixelCount": 179
+        },
+        {
+          "bounds": [
+            9,
+            9,
+            15,
+            15
+          ],
+          "pixelCount": 34
+        }
+      ],
+      "sourceVoidRegions": [
+        {
+          "bounds": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "pixelCount": 281
+        },
+        {
+          "bounds": [
+            5,
+            4,
+            19,
+            20
+          ],
+          "pixelCount": 97
+        }
+      ],
+      "nativeVoidRegions": [
+        {
+          "bounds": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "pixelCount": 276
+        },
+        {
+          "bounds": [
+            6,
+            5,
+            19,
+            19
+          ],
+          "pixelCount": 87
+        }
+      ],
+      "inkAndVoidRegionBoundsExact": false,
+      "inkRegionBoundsExact": true,
+      "inkAndVoidRegionCountsExact": true,
+      "wrongNativePaintPixels": [],
+      "nonEmptyNativeInk": true,
+      "proposedEvidenceConditionsMet": true,
+      "acceptance": "PENDING_DECISION",
+      "admissionEligible": false
+    },
+    {
+      "iconId": "remix.download-line",
+      "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc6866e456",
+      "nativePngSha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43",
+      "independentContentGroupPngBytesExact": true,
+      "repeatCaptureStatus": "PARTIAL",
+      "repeatCaptureComplete": false,
+      "status": "OBSERVED",
+      "sourcePixelsExact": false,
+      "changedPixels": 42,
+      "changedPixelsOutsideVerifiedEdgeBand": 0,
+      "edgeBandPixelCount": 380,
+      "pixels": [
+        {
+          "pixel": [
+            4,
+            7
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            112,
+            112,
+            112,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            143
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            7
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            151,
+            151,
+            151,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            104
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            7
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            150,
+            150,
+            150,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            105
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            19,
+            7
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            115,
+            115,
+            115,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            140
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            3,
+            8
+          ],
+          "sourceRgba": [
+            223,
+            223,
+            223,
+            255
+          ],
+          "nativeWhiteRgba": [
+            193,
+            193,
+            193,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            62
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            8
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            6,
+            8
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            158,
+            158,
+            158,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            97
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            17,
+            8
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            157,
+            157,
+            157,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            98
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            20,
+            8
+          ],
+          "sourceRgba": [
+            223,
+            223,
+            223,
+            255
+          ],
+          "nativeWhiteRgba": [
+            196,
+            196,
+            196,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            59
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            4,
+            9
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            6,
+            9
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            2,
+            2,
+            2,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            253
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            7,
+            9
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            171,
+            171,
+            171,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            84
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            16,
+            9
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            164,
+            164,
+            164,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            91
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            17,
+            9
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            2,
+            2,
+            2,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            253
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            19,
+            9
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            5,
+            10
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            7,
+            10
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            3,
+            3,
+            3,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            252
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            10
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            177,
+            177,
+            177,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            78
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            10
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            171,
+            171,
+            171,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            84
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            16,
+            10
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            2,
+            2,
+            2,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            253
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            18,
+            10
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            6,
+            11
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            11
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            4,
+            4,
+            4,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            251
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            11
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            183,
+            183,
+            183,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            72
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            11
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            177,
+            177,
+            177,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            78
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            11
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            3,
+            3,
+            3,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            252
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            17,
+            11
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            7,
+            12
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            9,
+            12
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            6,
+            6,
+            6,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            249
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            12
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            189,
+            189,
+            189,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            66
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            12
+          ],
+          "sourceRgba": [
+            191,
+            191,
+            191,
+            255
+          ],
+          "nativeWhiteRgba": [
+            183,
+            183,
+            183,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            72
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            12
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            4,
+            4,
+            4,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            251
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            16,
+            12
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            8,
+            13
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            133,
+            133,
+            133,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            122
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            13
+          ],
+          "sourceRgba": [
+            32,
+            32,
+            32,
+            255
+          ],
+          "nativeWhiteRgba": [
+            8,
+            8,
+            8,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            247
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            13
+          ],
+          "sourceRgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeWhiteRgba": [
+            5,
+            5,
+            5,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            250
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            15,
+            13
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            133,
+            133,
+            133,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            122
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            14,
+            14
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            10,
+            15
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            120,
+            120,
+            120,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            135
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            13,
+            15
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            135,
+            135,
+            135,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            120
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            11,
+            16
+          ],
+          "sourceRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeWhiteRgba": [
+            120,
+            120,
+            120,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            135
+          ],
+          "inVerifiedEdgeBand": true
+        },
+        {
+          "pixel": [
+            12,
+            16
+          ],
+          "sourceRgba": [
+            159,
+            159,
+            159,
+            255
+          ],
+          "nativeWhiteRgba": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "nativeRawRgba": [
+            0,
+            0,
+            0,
+            127
+          ],
+          "inVerifiedEdgeBand": true
+        }
+      ],
+      "sourceInkRegions": [
+        {
+          "bounds": [
+            3,
+            2,
+            21,
+            17
+          ],
+          "pixelCount": 86
+        },
+        {
+          "bounds": [
+            3,
+            19,
+            21,
+            21
+          ],
+          "pixelCount": 36
+        }
+      ],
+      "nativeInkRegions": [
+        {
+          "bounds": [
+            3,
+            2,
+            21,
+            17
+          ],
+          "pixelCount": 86
+        },
+        {
+          "bounds": [
+            3,
+            19,
+            21,
+            21
+          ],
+          "pixelCount": 36
+        }
+      ],
+      "sourceVoidRegions": [
+        {
+          "bounds": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "pixelCount": 454
+        }
+      ],
+      "nativeVoidRegions": [
+        {
+          "bounds": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "pixelCount": 454
+        }
+      ],
+      "inkAndVoidRegionBoundsExact": true,
+      "inkRegionBoundsExact": true,
+      "inkAndVoidRegionCountsExact": true,
+      "wrongNativePaintPixels": [],
+      "nonEmptyNativeInk": true,
+      "proposedEvidenceConditionsMet": true,
+      "acceptance": "PENDING_DECISION",
+      "admissionEligible": false
+    }
+  ],
+  "limitations": [
+    "Edge localization and repeatability do not alone prove the cause of raster differences.",
+    "No new tolerance or icon raster allowance is approved by this diagnostic.",
+    "Original main PNG remains the production screenshot; partial group SVG export is not a complete repeat capture."
+  ]
+}

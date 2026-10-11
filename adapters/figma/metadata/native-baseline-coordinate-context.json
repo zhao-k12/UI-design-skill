@@ -1,0 +1,92 @@
+{
+  "scope": "figma_native_baseline_coordinate_context",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "0:1",
+  "observations": [
+    {
+      "textReference": "12:3",
+      "componentReference": "12:4",
+      "characters": "查询",
+      "textAbsoluteTransform": [
+        [
+          1,
+          0,
+          520
+        ],
+        [
+          0,
+          1,
+          85.5
+        ]
+      ],
+      "textAbsoluteBounds": {
+        "x": 520,
+        "y": 85.5,
+        "width": 28,
+        "height": 21
+      },
+      "componentAbsoluteTransform": [
+        [
+          1,
+          0,
+          504
+        ],
+        [
+          0,
+          1,
+          80
+        ]
+      ],
+      "componentAbsoluteBounds": {
+        "x": 504,
+        "y": 80,
+        "width": 60,
+        "height": 32
+      }
+    },
+    {
+      "textReference": "12:13",
+      "componentReference": "12:15",
+      "characters": "启用",
+      "textAbsoluteTransform": [
+        [
+          1,
+          0,
+          973
+        ],
+        [
+          0,
+          1,
+          81
+        ]
+      ],
+      "textAbsoluteBounds": {
+        "x": 973,
+        "y": 81,
+        "width": 28,
+        "height": 30
+      },
+      "componentAbsoluteTransform": [
+        [
+          1,
+          0,
+          964
+        ],
+        [
+          0,
+          1,
+          80
+        ]
+      ],
+      "componentAbsoluteBounds": {
+        "x": 964,
+        "y": 80,
+        "width": 240,
+        "height": 32
+      }
+    }
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "admissionEligible": false
+}

@@ -1,0 +1,94 @@
+{
+  "status": "OBSERVED",
+  "scope": "penpot-native-svg-browser-diagnostic",
+  "nativeReceiptSha256": "ec499f0c28df036a900a7ada3f805390c7e82ec8e8d3dcdecbedb3240e4be9ce",
+  "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "probeScriptSha256": "5970c1152722215c7f6b5be25210ccc42847c8c722320110b786c632b8405926",
+  "sample": {
+    "text": {
+      "characters": "请输入姓名",
+      "fontFamily": "\"PingFang SC\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "length": 70,
+      "start": [
+        {
+          "x": 8,
+          "y": 26
+        },
+        {
+          "x": 22,
+          "y": 26
+        },
+        {
+          "x": 36,
+          "y": 26
+        },
+        {
+          "x": 50,
+          "y": 26
+        },
+        {
+          "x": 64,
+          "y": 26
+        }
+      ],
+      "end": [
+        {
+          "x": 22,
+          "y": 26
+        },
+        {
+          "x": 36,
+          "y": 26
+        },
+        {
+          "x": 50,
+          "y": 26
+        },
+        {
+          "x": 64,
+          "y": 26
+        },
+        {
+          "x": 78,
+          "y": 26
+        }
+      ],
+      "bbox": {
+        "x": 7,
+        "y": 6,
+        "width": 71,
+        "height": 20
+      }
+    },
+    "fontLoadStatus": true,
+    "svgSha256": "595f5bcbe9d40c4c52befd7d1f7df4f92b817f36cba2a51cbf9b6e03c750aa29",
+    "pngSha256": "3c940cc44ef9cd1048a3ca8fcae8366b30eb22fc4866bbb8a75de3186d5b9855",
+    "fontUrl": "https://design.penpot.app/assets/by-id/e2c64052-f235-4680-b309-8f8c183dc82e",
+    "fontSha256": "7ce5d241353a41d6c9fd02b905967ad800f19d534abd3d46eb67e46b0d18099a"
+  },
+  "referenceMatches": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "The font resource is served from the hash-verified local font container, not a remote download.",
+    "Browser SVG raster is diagnostic; native PNG remains the production screenshot."
+  ]
+}

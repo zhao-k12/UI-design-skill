@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "scope": "native-icon-evidence-subcheck",
+  "nativeReceiptSha256": "a23fc55c57c21c99722db31dcfe84a7f9641ac5660fd59e5d9344e714ed8b84a",
+  "results": [
+    {
+      "iconId": "remix.settings-3-line",
+      "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc685ca781",
+      "mainReference": "6d6e57fb-4a0a-8065-8008-c0fc685bc39e",
+      "encoding": {
+        "status": "PASS",
+        "scope": "approved-icon-path-encoding-subcheck",
+        "sourceCoordinatesExact": false,
+        "sourceFloat32EncodingExact": true,
+        "sourceCommandCount": 56,
+        "nativeCommandCount": 56,
+        "maxObservedCoordinateDelta": 9.521484365393462e-07,
+        "sourceCommandsSha256": "9455261b230b31b606d0452e4d278355524c6a439f41289afcc78359cad76e6a",
+        "encodedSourceCommandsSha256": "30479ca1aa389edd846de781de3cf99dc306f0bab9f1cf0460f4d49acb8bb8c9",
+        "nativeCommandsSha256": "30479ca1aa389edd846de781de3cf99dc306f0bab9f1cf0460f4d49acb8bb8c9",
+        "admissionEligible": false,
+        "limitations": [
+          "Geometry subcheck only: native paint, SVG/PNG capture and real instances remain mandatory."
+        ],
+        "ruleVersion": "task-010-source-derived-float32/0.1.0",
+        "iconId": "remix.settings-3-line",
+        "sourceSvgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1"
+      },
+      "nativeSvgSha256": "600efac375d36d0e2dd56d44faee4fc64823dd18fbd4302f40e6ef310ef79276",
+      "nativePngSha256": "b3720de56d586dc3d1365369a2277bf65f2f867ba73027d1ab42fb461e778d95",
+      "sourceNativeVectorPngBytesEqual": true
+    },
+    {
+      "iconId": "remix.download-line",
+      "componentReference": "6d6e57fb-4a0a-8065-8008-c0fc6866e456",
+      "mainReference": "6d6e57fb-4a0a-8065-8008-c0fc68665f64",
+      "encoding": {
+        "status": "PASS",
+        "scope": "approved-icon-path-encoding-subcheck",
+        "sourceCoordinatesExact": false,
+        "sourceFloat32EncodingExact": true,
+        "sourceCommandCount": 17,
+        "nativeCommandCount": 17,
+        "maxObservedCoordinateDelta": 3.4179687524726887e-07,
+        "sourceCommandsSha256": "c97aa933ed86356ea610d01a63eb840e5c71ddf42d3befa14a53bdada2c4def3",
+        "encodedSourceCommandsSha256": "5927dc4fe5fba00be81fa8418c37501c6946f75202cdd34aa5a8ce80a3d2dd6a",
+        "nativeCommandsSha256": "5927dc4fe5fba00be81fa8418c37501c6946f75202cdd34aa5a8ce80a3d2dd6a",
+        "admissionEligible": false,
+        "limitations": [
+          "Geometry subcheck only: native paint, SVG/PNG capture and real instances remain mandatory."
+        ],
+        "ruleVersion": "task-010-source-derived-float32/0.1.0",
+        "iconId": "remix.download-line",
+        "sourceSvgSha256": "ad83ac7dc9d4c6af651a53068e928d82f9402cfd05a924742388549846032f43"
+      },
+      "nativeSvgSha256": "b1ce71254fc4d472cf1060e455b5a0e97f956ae6e9d36c1d52feb6baab409f1f",
+      "nativePngSha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43",
+      "sourceNativeVectorPngBytesEqual": true
+    }
+  ],
+  "admissionEligible": false,
+  "nativePngVisualAcceptance": "NOT_RUN",
+  "actualInstanceAcceptance": "NOT_RUN"
+}

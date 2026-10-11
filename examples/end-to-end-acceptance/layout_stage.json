@@ -1,0 +1,656 @@
+{
+  "status": "PASS",
+  "tree": {
+    "layoutTreeVersion": "0.1.0",
+    "pattern": "list-page",
+    "page": {
+      "id": "pattern.page",
+      "type": "Page",
+      "layout": {
+        "width": {
+          "mode": "fixed",
+          "value": {
+            "token": "size.page"
+          }
+        },
+        "height": {
+          "mode": "hug"
+        },
+        "direction": "vertical",
+        "gap": {
+          "token": "spacing.section"
+        },
+        "padding": {
+          "top": {
+            "token": "spacing.page"
+          },
+          "right": {
+            "token": "spacing.page"
+          },
+          "bottom": {
+            "token": "spacing.page"
+          },
+          "left": {
+            "token": "spacing.page"
+          }
+        }
+      },
+      "children": [
+        {
+          "id": "pattern.header",
+          "type": "Section",
+          "role": "header",
+          "layout": {
+            "width": {
+              "mode": "fill"
+            },
+            "height": {
+              "mode": "hug"
+            },
+            "direction": "vertical",
+            "gap": {
+              "token": "spacing.md"
+            }
+          },
+          "children": [
+            {
+              "id": "layout.item.0.0",
+              "type": "Cell",
+              "sourceIds": [
+                "header-title"
+              ],
+              "measurement": {
+                "width": 1392,
+                "height": 28,
+                "source": {
+                  "kind": "runtime",
+                  "reference": "metrics.header-title"
+                }
+              },
+              "layout": {
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "hug"
+                }
+              },
+              "constraints": {
+                "minWidth": 1392
+              }
+            }
+          ],
+          "sourceIds": [
+            "header"
+          ]
+        },
+        {
+          "id": "pattern.query",
+          "type": "Section",
+          "role": "query",
+          "layout": {
+            "width": {
+              "mode": "fill"
+            },
+            "height": {
+              "mode": "hug"
+            },
+            "direction": "vertical",
+            "gap": {
+              "token": "spacing.md"
+            },
+            "padding": {
+              "top": {
+                "token": "spacing.md"
+              },
+              "right": {
+                "token": "spacing.md"
+              },
+              "bottom": {
+                "token": "spacing.md"
+              },
+              "left": {
+                "token": "spacing.md"
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "pattern.query.grid",
+              "type": "Grid",
+              "layout": {
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "hug"
+                },
+                "gridColumns": 24,
+                "gap": {
+                  "token": "spacing.md"
+                },
+                "wrap": true
+              },
+              "children": [
+                {
+                  "id": "layout.item.1.0",
+                  "type": "Cell",
+                  "sourceIds": [
+                    "field-name"
+                  ],
+                  "measurement": {
+                    "width": 328,
+                    "height": 62,
+                    "source": {
+                      "kind": "runtime",
+                      "reference": "metrics.field-name"
+                    }
+                  },
+                  "layout": {
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    },
+                    "span": 6
+                  },
+                  "role": "field",
+                  "constraints": {
+                    "minWidth": 328
+                  }
+                },
+                {
+                  "id": "layout.item.1.1",
+                  "type": "Cell",
+                  "sourceIds": [
+                    "field-status"
+                  ],
+                  "measurement": {
+                    "width": 328,
+                    "height": 62,
+                    "source": {
+                      "kind": "runtime",
+                      "reference": "metrics.field-status"
+                    }
+                  },
+                  "layout": {
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    },
+                    "span": 6
+                  },
+                  "role": "field",
+                  "constraints": {
+                    "minWidth": 328
+                  }
+                },
+                {
+                  "id": "layout.item.1.3",
+                  "type": "Cell",
+                  "sourceIds": [
+                    "scope-content"
+                  ],
+                  "measurement": {
+                    "width": 328,
+                    "height": 52,
+                    "source": {
+                      "kind": "runtime",
+                      "reference": "metrics.scope-content"
+                    }
+                  },
+                  "layout": {
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    },
+                    "span": 6
+                  },
+                  "constraints": {
+                    "minWidth": 328
+                  }
+                },
+                {
+                  "id": "layout.item.1.2",
+                  "type": "Cell",
+                  "sourceIds": [
+                    "query-action"
+                  ],
+                  "measurement": {
+                    "width": 328,
+                    "height": 62,
+                    "source": {
+                      "kind": "runtime",
+                      "reference": "metrics.query-action"
+                    }
+                  },
+                  "layout": {
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    },
+                    "span": 6
+                  },
+                  "constraints": {
+                    "minWidth": 328
+                  }
+                }
+              ]
+            }
+          ],
+          "sourceIds": [
+            "query"
+          ]
+        },
+        {
+          "id": "pattern.table",
+          "type": "Section",
+          "role": "table",
+          "layout": {
+            "width": {
+              "mode": "fill"
+            },
+            "height": {
+              "mode": "hug"
+            },
+            "direction": "vertical",
+            "gap": {
+              "token": "spacing.md"
+            }
+          },
+          "children": [
+            {
+              "id": "layout.group.2.content-row.0",
+              "type": "HorizontalStack",
+              "sourceIds": [
+                "list"
+              ],
+              "layout": {
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "hug"
+                },
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "space-between",
+                  "cross": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "layout.item.2.1",
+                  "type": "Cell",
+                  "sourceIds": [
+                    "list-title"
+                  ],
+                  "measurement": {
+                    "width": 56,
+                    "height": 22,
+                    "source": {
+                      "kind": "runtime",
+                      "reference": "metrics.list-title"
+                    }
+                  },
+                  "layout": {
+                    "width": {
+                      "mode": "hug"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    }
+                  }
+                },
+                {
+                  "id": "layout.item.2.2",
+                  "type": "Cell",
+                  "sourceIds": [
+                    "export-action"
+                  ],
+                  "measurement": {
+                    "width": 60,
+                    "height": 24,
+                    "source": {
+                      "kind": "runtime",
+                      "reference": "metrics.export-action"
+                    }
+                  },
+                  "layout": {
+                    "width": {
+                      "mode": "hug"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "layout.item.2.0",
+              "type": "Cell",
+              "sourceIds": [
+                "user-table"
+              ],
+              "measurement": {
+                "width": 1392,
+                "height": 192,
+                "source": {
+                  "kind": "runtime",
+                  "reference": "metrics.user-table"
+                }
+              },
+              "layout": {
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "hug"
+                }
+              },
+              "constraints": {
+                "minWidth": 1392
+              }
+            },
+            {
+              "id": "layout.item.2.3",
+              "type": "Cell",
+              "sourceIds": [
+                "list-summary"
+              ],
+              "measurement": {
+                "width": 71,
+                "height": 22,
+                "source": {
+                  "kind": "runtime",
+                  "reference": "metrics.list-summary"
+                }
+              },
+              "layout": {
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "hug"
+                }
+              },
+              "constraints": {
+                "minWidth": 71
+              }
+            }
+          ],
+          "sourceIds": [
+            "list"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "frozen-user-management-list"
+      ]
+    }
+  },
+  "report": {
+    "stage": "layout-qa",
+    "status": "PASS",
+    "readyForMapping": true,
+    "structureReport": {
+      "version": "0.1.0",
+      "stage": "structure-qa",
+      "status": "PASS",
+      "readyForLayout": true,
+      "analysisSha256": "d4c77d7269898907607e875729a28a35fecadc04ce616636cd670a2ac58557d2",
+      "pageTreeSha256": "fda1415659d25c58b1eb25fbfd433fa2a6856d99ec17b7e52fec116d52fbec66",
+      "reviewSha256": "f39bca3c6fdfae730e4a5b6f333a920db196351e38e1d33711753ea4bca578a5",
+      "issues": [],
+      "reviewReasons": [],
+      "freeze": {
+        "pageTreeSha256": "fda1415659d25c58b1eb25fbfd433fa2a6856d99ec17b7e52fec116d52fbec66",
+        "analysisSha256": "d4c77d7269898907607e875729a28a35fecadc04ce616636cd670a2ac58557d2"
+      }
+    },
+    "pageTreeSha256": "fda1415659d25c58b1eb25fbfd433fa2a6856d99ec17b7e52fec116d52fbec66",
+    "planSha256": "9c237ecfe9e8a210dcd5d224016d7c18b42c66dc6b03a03de30807b7fa10ca4b",
+    "rulesSha256": "5e995ec984a07cd12feb31f11b9043a4226066dc8df190e50a8b126549b2dd6e",
+    "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+    "issues": [],
+    "testFixture": false,
+    "engineReport": {
+      "scope": "layout",
+      "status": "PASS",
+      "engineVersion": "0.1.0",
+      "tokenRegistryVersion": "0.1.0",
+      "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+      "pattern": "list-page",
+      "skeleton": {
+        "id": "pattern.page",
+        "type": "Page",
+        "box": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1440.0,
+          "height": 488.0
+        },
+        "children": [
+          {
+            "id": "pattern.header",
+            "type": "Section",
+            "box": {
+              "x": 24.0,
+              "y": 24.0,
+              "width": 1392.0,
+              "height": 28.0
+            },
+            "children": [
+              {
+                "id": "layout.item.0.0",
+                "type": "Cell",
+                "box": {
+                  "x": 24.0,
+                  "y": 24.0,
+                  "width": 1392.0,
+                  "height": 28.0
+                },
+                "children": [],
+                "sourceIds": [
+                  "header-title"
+                ]
+              }
+            ],
+            "role": "header",
+            "sourceIds": [
+              "header"
+            ]
+          },
+          {
+            "id": "pattern.query",
+            "type": "Section",
+            "box": {
+              "x": 24.0,
+              "y": 76.0,
+              "width": 1392.0,
+              "height": 94.0
+            },
+            "children": [
+              {
+                "id": "pattern.query.grid",
+                "type": "Grid",
+                "box": {
+                  "x": 40.0,
+                  "y": 92.0,
+                  "width": 1360.0,
+                  "height": 62.0
+                },
+                "children": [
+                  {
+                    "id": "layout.item.1.0",
+                    "type": "Cell",
+                    "box": {
+                      "x": 40.0,
+                      "y": 92.0,
+                      "width": 328.0,
+                      "height": 62.0
+                    },
+                    "children": [],
+                    "role": "field",
+                    "sourceIds": [
+                      "field-name"
+                    ]
+                  },
+                  {
+                    "id": "layout.item.1.1",
+                    "type": "Cell",
+                    "box": {
+                      "x": 384.0,
+                      "y": 92.0,
+                      "width": 328.0,
+                      "height": 62.0
+                    },
+                    "children": [],
+                    "role": "field",
+                    "sourceIds": [
+                      "field-status"
+                    ]
+                  },
+                  {
+                    "id": "layout.item.1.3",
+                    "type": "Cell",
+                    "box": {
+                      "x": 728.0,
+                      "y": 92.0,
+                      "width": 328.0,
+                      "height": 52.0
+                    },
+                    "children": [],
+                    "sourceIds": [
+                      "scope-content"
+                    ]
+                  },
+                  {
+                    "id": "layout.item.1.2",
+                    "type": "Cell",
+                    "box": {
+                      "x": 1072.0,
+                      "y": 92.0,
+                      "width": 328.0,
+                      "height": 62.0
+                    },
+                    "children": [],
+                    "sourceIds": [
+                      "query-action"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "role": "query",
+            "sourceIds": [
+              "query"
+            ]
+          },
+          {
+            "id": "pattern.table",
+            "type": "Section",
+            "box": {
+              "x": 24.0,
+              "y": 194.0,
+              "width": 1392.0,
+              "height": 270.0
+            },
+            "children": [
+              {
+                "id": "layout.group.2.content-row.0",
+                "type": "HorizontalStack",
+                "box": {
+                  "x": 24.0,
+                  "y": 194.0,
+                  "width": 1392.0,
+                  "height": 24.0
+                },
+                "children": [
+                  {
+                    "id": "layout.item.2.1",
+                    "type": "Cell",
+                    "box": {
+                      "x": 24.0,
+                      "y": 195.0,
+                      "width": 56.0,
+                      "height": 22.0
+                    },
+                    "children": [],
+                    "sourceIds": [
+                      "list-title"
+                    ]
+                  },
+                  {
+                    "id": "layout.item.2.2",
+                    "type": "Cell",
+                    "box": {
+                      "x": 1356.0,
+                      "y": 194.0,
+                      "width": 60.0,
+                      "height": 24.0
+                    },
+                    "children": [],
+                    "sourceIds": [
+                      "export-action"
+                    ]
+                  }
+                ],
+                "sourceIds": [
+                  "list"
+                ]
+              },
+              {
+                "id": "layout.item.2.0",
+                "type": "Cell",
+                "box": {
+                  "x": 24.0,
+                  "y": 234.0,
+                  "width": 1392.0,
+                  "height": 192.0
+                },
+                "children": [],
+                "sourceIds": [
+                  "user-table"
+                ]
+              },
+              {
+                "id": "layout.item.2.3",
+                "type": "Cell",
+                "box": {
+                  "x": 24.0,
+                  "y": 442.0,
+                  "width": 1392.0,
+                  "height": 22.0
+                },
+                "children": [],
+                "sourceIds": [
+                  "list-summary"
+                ]
+              }
+            ],
+            "role": "table",
+            "sourceIds": [
+              "list"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "frozen-user-management-list"
+        ]
+      },
+      "issues": []
+    },
+    "layoutTreeSha256": "f908d0b9a42104b6a9f990072fb4c6468a4e43b43fb73d7faa0f5239afb7bfc7"
+  }
+}

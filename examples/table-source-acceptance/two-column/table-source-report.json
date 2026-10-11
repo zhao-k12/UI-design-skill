@@ -1,0 +1,38 @@
+{
+  "version": "0.1.0",
+  "scope": "configurable_official_table_source",
+  "requestSha256": "4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+  "casesSha256": "ae9937ce27ba6c2f37d52d0613184ee8e22cabf7635daf23f14296e9e0c822b7",
+  "requestFileSha256": "6351bc002ecbaf26aa3a50c3e89228837759af505cfc1a3d241c76afd322ac39",
+  "casesFileSha256": "9ad06362726283ffa0c7ab5049b0d92f602052791a1722e800496a5f96a01eda",
+  "programs": {
+    "table-request.mjs": "d062ac8c680afe58b9d5afc595dae69491b230903147b428bf0a570015d5eb1f",
+    "configurable-table-extract.mjs": "ad9dd811a78cba27ab7f8e12f7d862db397cb65e3f969a5ad693101d365956b8",
+    "configurable-table-harness.js": "3bea57d277b01eadd78f9606f75772d97238afd7969f92ec5d5cfa8418f089a0",
+    "extract.mjs": "9516eb8741a3de363c8cd9cf8f7296f9badcd4b96fe8692d5d8cd7b780145ee6"
+  },
+  "nativeExecution": "NOT_RUN",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false,
+  "status": "PASS",
+  "observation": {
+    "rows": [
+      [
+        "赵六",
+        "zhao@example.com"
+      ],
+      [
+        "钱七",
+        "qian@example.com"
+      ]
+    ],
+    "rootWidth": 720
+  },
+  "componentId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+  "componentIrSha256": "c724668b2c74543295087d5262b7ff50e4dfcd9b8695c3df9120cd93bc9800ef",
+  "runtimeManifestSha256": "184a9df1f9d61972e1a4099c54a84534b2413ff154bc9671646bb54d56d62075",
+  "screenshot": {
+    "path": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72.png",
+    "sha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25"
+  }
+}

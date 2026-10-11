@@ -1,0 +1,548 @@
+{
+  "status": "PASS",
+  "scope": "headed-table-native-pdf-fonts-and-baselines-only",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false,
+  "nativeReceiptSha256": "8f81781791204e076513e59f5bd4b7aeeeb936f803b564108ae7165042fe75bb",
+  "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+  "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+  "sourceObservationSha256": "ac3ca5d3358e6b052b6a1c60c8036f5fae98c5cf4a1c189ecea0b05d8ac1cdbc",
+  "cffGlyphs": [
+    {
+      "resource": "/F5",
+      "postscriptName": "PingFangSC-Regular",
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+      "glyphs": [
+        {
+          "character": "钱",
+          "pathSha256": "3b455c70f49f3c5ecb1a0b63f8d920b73080fa56a886a72b2fe9d5bb3cea97d7",
+          "nativeUnicodeCharacter": "钱",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 74,
+          "nativeCommandCount": 74,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    },
+    {
+      "resource": "/F6",
+      "postscriptName": "PingFangSC-Regular",
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+      "glyphs": [
+        {
+          "character": "七",
+          "pathSha256": "139ce79736bcf3d49139e330c9729e89613fd39fbf1f8469f62e079aed63a9e8",
+          "nativeUnicodeCharacter": "七",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 22,
+          "nativeCommandCount": 22,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    },
+    {
+      "resource": "/F7",
+      "postscriptName": "PingFangSC-Regular",
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+      "glyphs": [
+        {
+          "character": "赵",
+          "pathSha256": "15170d0304d16068bf5e0f5834a538ba65845e9d301cb7052a5c8ff1cee21a68",
+          "nativeUnicodeCharacter": "赵",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 51,
+          "nativeCommandCount": 51,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    },
+    {
+      "resource": "/F8",
+      "postscriptName": "PingFangSC-Regular",
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+      "glyphs": [
+        {
+          "character": "六",
+          "pathSha256": "3aca47bcdb6b07ea9e4dd4cb3de650e0610c24b93d84f21a565bb1475dc1761d",
+          "nativeUnicodeCharacter": "六",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 24,
+          "nativeCommandCount": 24,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    },
+    {
+      "resource": "/F9",
+      "postscriptName": "PingFangSC-Semibold",
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+      "glyphs": [
+        {
+          "character": "邮",
+          "pathSha256": "60dfbc52f957a6e7205499b47a715cf3dd74c9b0f5e8e389d4a3b97c9270dab4",
+          "nativeUnicodeCharacter": "邮",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 56,
+          "nativeCommandCount": 56,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    },
+    {
+      "resource": "/F10",
+      "postscriptName": "PingFangSC-Semibold",
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+      "glyphs": [
+        {
+          "character": "箱",
+          "pathSha256": "1424d961c1628501ec892cbd9b5cf71cfe149bc7f09050d9cd966b4941870f2f",
+          "nativeUnicodeCharacter": "箱",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 77,
+          "nativeCommandCount": 77,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    },
+    {
+      "resource": "/F11",
+      "postscriptName": "PingFangSC-Semibold",
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+      "glyphs": [
+        {
+          "character": "姓",
+          "pathSha256": "01c0d0c47beaf2c8565178589a1d65cbf179abd24f4023861f8b77da2b690ed3",
+          "nativeUnicodeCharacter": "姓",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 55,
+          "nativeCommandCount": 55,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    },
+    {
+      "resource": "/F12",
+      "postscriptName": "PingFangSC-Semibold",
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+      "glyphs": [
+        {
+          "character": "名",
+          "pathSha256": "727d897caf3809195fbc2dfbf63ed7955a0b1ad494fb7501931721b1c464ee2e",
+          "nativeUnicodeCharacter": "名",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 32,
+          "nativeCommandCount": 32,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    }
+  ],
+  "Arial": {
+    "status": "PASS",
+    "scope": "actual-embedded-cid-truetype-glyphs",
+    "resource": "/F4",
+    "sourceFontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+    "embeddedFontSha256": "732f5474ab5b33759b9d95abbadb3d677f83c78673f7f4fad49208f595f63174",
+    "nativePdfSha256": "c6df011328e6de327a76ce65ef54b521184bb8447bcc2e2f355e7910044f8899",
+    "unitsPerEm": 2048,
+    "fontHintTablesEqual": {
+      "fpgm": true,
+      "prep": true,
+      "cvt ": true,
+      "gasp": true
+    },
+    "glyphs": [
+      {
+        "character": ".",
+        "cid": 17,
+        "sourceGlyph": "period",
+        "nativeGlyph": "period",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "@",
+        "cid": 35,
+        "sourceGlyph": "at",
+        "nativeGlyph": "at",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "cid": 68,
+        "sourceGlyph": "a",
+        "nativeGlyph": "a",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "c",
+        "cid": 70,
+        "sourceGlyph": "c",
+        "nativeGlyph": "c",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "cid": 72,
+        "sourceGlyph": "e",
+        "nativeGlyph": "e",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "h",
+        "cid": 75,
+        "sourceGlyph": "h",
+        "nativeGlyph": "h",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "i",
+        "cid": 76,
+        "sourceGlyph": "i",
+        "nativeGlyph": "i",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "l",
+        "cid": 79,
+        "sourceGlyph": "l",
+        "nativeGlyph": "l",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "cid": 80,
+        "sourceGlyph": "m",
+        "nativeGlyph": "m",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "n",
+        "cid": 81,
+        "sourceGlyph": "n",
+        "nativeGlyph": "n",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "o",
+        "cid": 82,
+        "sourceGlyph": "o",
+        "nativeGlyph": "o",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "p",
+        "cid": 83,
+        "sourceGlyph": "p",
+        "nativeGlyph": "p",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "q",
+        "cid": 84,
+        "sourceGlyph": "q",
+        "nativeGlyph": "q",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "x",
+        "cid": 91,
+        "sourceGlyph": "x",
+        "nativeGlyph": "x",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      },
+      {
+        "character": "z",
+        "cid": 93,
+        "sourceGlyph": "z",
+        "nativeGlyph": "z",
+        "orderedCoordinatesFlagsContoursEqual": true,
+        "instructionsEqual": true,
+        "advanceAndBearingEqual": true,
+        "pdfWidthSerializationEqual": true,
+        "status": "PASS"
+      }
+    ],
+    "admissionEligible": false
+  },
+  "baselines": [
+    {
+      "sourcePath": "0.0.1.0.1.1.1.0.0",
+      "characters": "qian@example.com",
+      "postscriptName": "ArialMT",
+      "fontWeight": 400,
+      "x": "258.32813",
+      "baselineY": "114.875",
+      "status": "PASS"
+    },
+    {
+      "sourcePath": "0.0.1.0.1.1.0.0.0",
+      "characters": "钱七",
+      "postscriptName": "PingFangSC-Regular",
+      "fontWeight": 400,
+      "x": "18",
+      "baselineY": "114.875",
+      "status": "PASS"
+    },
+    {
+      "sourcePath": "0.0.1.0.1.0.1.0.0",
+      "characters": "zhao@example.com",
+      "postscriptName": "ArialMT",
+      "fontWeight": 400,
+      "x": "258.32813",
+      "baselineY": "66.875",
+      "status": "PASS"
+    },
+    {
+      "sourcePath": "0.0.1.0.1.0.0.0.0",
+      "characters": "赵六",
+      "postscriptName": "PingFangSC-Regular",
+      "fontWeight": 400,
+      "x": "18",
+      "baselineY": "66.875",
+      "status": "PASS"
+    },
+    {
+      "sourcePath": "0.0.0.0.1.0.1.0.0",
+      "characters": "邮箱",
+      "postscriptName": "PingFangSC-Semibold",
+      "fontWeight": 600,
+      "x": "258.32813",
+      "baselineY": "23.875",
+      "status": "PASS"
+    },
+    {
+      "sourcePath": "0.0.0.0.1.0.0.0.0",
+      "characters": "姓名",
+      "postscriptName": "PingFangSC-Semibold",
+      "fontWeight": 600,
+      "x": "18",
+      "baselineY": "23.875",
+      "status": "PASS"
+    }
+  ],
+  "pdfXSerialization": "five decimal half-up; exact native node positions require separate geometry proof"
+}

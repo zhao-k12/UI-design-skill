@@ -1,0 +1,300 @@
+{
+  "gateVersion": "0.2.0",
+  "scope": "production",
+  "logicalComponentId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+  "componentType": "Table",
+  "variants": [
+    "default"
+  ],
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "3c3993bb4ca86b5d4686818e2312410e7d35e03531aa8f87ec8c0e340ab082f9",
+  "status": "PASS",
+  "admissionEligible": true,
+  "issues": [],
+  "checks": {
+    "geometryAndStyle": "PASS",
+    "screenshot": {
+      "changedPixels": 2182,
+      "changedPixelsOutsideEdgeBand": 0,
+      "changedPixelsOutsidePermittedRegions": 0,
+      "maxChannelDelta": 168,
+      "policy": "evidence-bound-edges-0.2.0",
+      "vectorRasterSha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25",
+      "edgeBandPixelCount": 10155
+    },
+    "glyphRetention": [
+      {
+        "character": "赵",
+        "sourceInkProxy": 70.1342485291496,
+        "nativeInkProxy": 55.61010365993429,
+        "retentionRatio": 0.792909382023553,
+        "status": "PASS"
+      },
+      {
+        "character": "六",
+        "sourceInkProxy": 33.082316684919626,
+        "nativeInkProxy": 31.649186256781192,
+        "retentionRatio": 0.9566798649022148,
+        "status": "PASS"
+      },
+      {
+        "character": "z",
+        "sourceInkProxy": 20.791903318646057,
+        "nativeInkProxy": 20.51259455466979,
+        "retentionRatio": 0.9865664648543366,
+        "status": "PASS"
+      },
+      {
+        "character": "h",
+        "sourceInkProxy": 26.751903828031462,
+        "nativeInkProxy": 25.143659424903852,
+        "retentionRatio": 0.9398829924978108,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "sourceInkProxy": 27.518910933958182,
+        "nativeInkProxy": 25.952538012887455,
+        "retentionRatio": 0.9430801267960851,
+        "status": "PASS"
+      },
+      {
+        "character": "o",
+        "sourceInkProxy": 23.305172809005924,
+        "nativeInkProxy": 22.541400300537404,
+        "retentionRatio": 0.9672273398387601,
+        "status": "PASS"
+      },
+      {
+        "character": "@",
+        "sourceInkProxy": 64.76628123169395,
+        "nativeInkProxy": 66.36180373379518,
+        "retentionRatio": 1.0246350797322057,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "sourceInkProxy": 24.876053791101036,
+        "nativeInkProxy": 25.888941242391056,
+        "retentionRatio": 1.0407173685905262,
+        "status": "PASS"
+      },
+      {
+        "character": "x",
+        "sourceInkProxy": 21.557840715177143,
+        "nativeInkProxy": 19.940325497287525,
+        "retentionRatio": 0.9249685884936122,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "sourceInkProxy": 27.35859460560833,
+        "nativeInkProxy": 25.98162392073963,
+        "retentionRatio": 0.9496695387786318,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "sourceInkProxy": 34.89120800753889,
+        "nativeInkProxy": 33.72381122176095,
+        "retentionRatio": 0.9665418065913423,
+        "status": "PASS"
+      },
+      {
+        "character": "p",
+        "sourceInkProxy": 29.48447647912794,
+        "nativeInkProxy": 27.81807299493161,
+        "retentionRatio": 0.9434820053401329,
+        "status": "PASS"
+      },
+      {
+        "character": "l",
+        "sourceInkProxy": 13.186587881720705,
+        "nativeInkProxy": 12.355780251127015,
+        "retentionRatio": 0.9369960115500874,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "sourceInkProxy": 24.83358378116802,
+        "nativeInkProxy": 25.88056185212541,
+        "retentionRatio": 1.0421597655893444,
+        "status": "PASS"
+      },
+      {
+        "character": ".",
+        "sourceInkProxy": 1.3186587881720704,
+        "nativeInkProxy": 2.1507653516032907,
+        "retentionRatio": 1.6310249253976379,
+        "status": "PASS"
+      },
+      {
+        "character": "c",
+        "sourceInkProxy": 18.099406565978146,
+        "nativeInkProxy": 19.140284746453403,
+        "retentionRatio": 1.0575089673067966,
+        "status": "PASS"
+      },
+      {
+        "character": "o",
+        "sourceInkProxy": 22.842115987061618,
+        "nativeInkProxy": 22.538955250490282,
+        "retentionRatio": 0.9867279924179068,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "sourceInkProxy": 35.26346687721263,
+        "nativeInkProxy": 33.72381122176095,
+        "retentionRatio": 0.9563385057739001,
+        "status": "PASS"
+      },
+      {
+        "character": "钱",
+        "sourceInkProxy": 72.3298397982834,
+        "nativeInkProxy": 60.93413646435576,
+        "retentionRatio": 0.8424481048802476,
+        "status": "PASS"
+      },
+      {
+        "character": "七",
+        "sourceInkProxy": 37.336321727835376,
+        "nativeInkProxy": 32.03130173445738,
+        "retentionRatio": 0.8579126237434648,
+        "status": "PASS"
+      },
+      {
+        "character": "q",
+        "sourceInkProxy": 30.10897027736035,
+        "nativeInkProxy": 27.68216896314597,
+        "retentionRatio": 0.9193993918802613,
+        "status": "PASS"
+      },
+      {
+        "character": "i",
+        "sourceInkProxy": 11.867929093548634,
+        "nativeInkProxy": 10.826885362809772,
+        "retentionRatio": 0.9122809276552917,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "sourceInkProxy": 27.451302753228237,
+        "nativeInkProxy": 25.876130198915007,
+        "retentionRatio": 0.9426193879222001,
+        "status": "PASS"
+      },
+      {
+        "character": "n",
+        "sourceInkProxy": 23.783791355729317,
+        "nativeInkProxy": 22.14534039681125,
+        "retentionRatio": 0.9311106066138871,
+        "status": "PASS"
+      },
+      {
+        "character": "@",
+        "sourceInkProxy": 64.76628123169395,
+        "nativeInkProxy": 66.36180373379518,
+        "retentionRatio": 1.0246350797322057,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "sourceInkProxy": 24.876053791101036,
+        "nativeInkProxy": 25.888941242391056,
+        "retentionRatio": 1.0407173685905262,
+        "status": "PASS"
+      },
+      {
+        "character": "x",
+        "sourceInkProxy": 21.557840715177143,
+        "nativeInkProxy": 19.940325497287525,
+        "retentionRatio": 0.9249685884936122,
+        "status": "PASS"
+      },
+      {
+        "character": "a",
+        "sourceInkProxy": 27.482680895499577,
+        "nativeInkProxy": 25.98162392073963,
+        "retentionRatio": 0.9453817121965801,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "sourceInkProxy": 34.76712171764765,
+        "nativeInkProxy": 33.72381122176095,
+        "retentionRatio": 0.9699914619231444,
+        "status": "PASS"
+      },
+      {
+        "character": "p",
+        "sourceInkProxy": 29.48447647912794,
+        "nativeInkProxy": 27.81807299493161,
+        "retentionRatio": 0.9434820053401329,
+        "status": "PASS"
+      },
+      {
+        "character": "l",
+        "sourceInkProxy": 13.186587881720705,
+        "nativeInkProxy": 12.355780251127015,
+        "retentionRatio": 0.9369960115500874,
+        "status": "PASS"
+      },
+      {
+        "character": "e",
+        "sourceInkProxy": 24.80202735399741,
+        "nativeInkProxy": 25.767885795787382,
+        "retentionRatio": 1.0389427214156468,
+        "status": "PASS"
+      },
+      {
+        "character": ".",
+        "sourceInkProxy": 1.3203906986221123,
+        "nativeInkProxy": 2.1590301301479764,
+        "retentionRatio": 1.6351449100641366,
+        "status": "PASS"
+      },
+      {
+        "character": "c",
+        "sourceInkProxy": 18.099406565978146,
+        "nativeInkProxy": 19.140284746453403,
+        "retentionRatio": 1.0575089673067966,
+        "status": "PASS"
+      },
+      {
+        "character": "o",
+        "sourceInkProxy": 23.3384611466266,
+        "nativeInkProxy": 22.538955250490282,
+        "retentionRatio": 0.9657429900320622,
+        "status": "PASS"
+      },
+      {
+        "character": "m",
+        "sourceInkProxy": 34.76712171764765,
+        "nativeInkProxy": 33.72381122176095,
+        "retentionRatio": 0.9699914619231444,
+        "status": "PASS"
+      }
+    ],
+    "normalizationProofs": {
+      "geometryAndStyle": "PASS",
+      "content": "PASS",
+      "fontBinding": "PASS",
+      "glyphGeometry": "PASS",
+      "baselines": "PASS",
+      "renderState": "PASS",
+      "sourceReproduction": "PASS",
+      "vectorBinding": "PASS"
+    }
+  },
+  "capture": {
+    "captureId": "penpot-configurable-table-27e6175d80abe5709f6f1b364f11aadbf969b5b06dd90060d2606a9b8ff0d626",
+    "exporterVersion": "penpot-configurable-table-normalization-0.2.0",
+    "nativeEvidenceSha256": "31ba2755e90c9a335f280b07bbe79a5e8c8c6ae971d3c7e9f70f51fb62ba9843",
+    "proofBundleSha256": "da837b1332e9e52f4a9f78469fdb1233f0fe7f3dbabf33071a76d65a4e634e34"
+  },
+  "candidateSha256": "d3e735c7da74558e26bde622db148326f82023b11967b9489d08a5d39fff767c",
+  "referenceScreenshotSha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25",
+  "candidateScreenshotSha256": "83ca318fa215d73e84b48f06f18992f0e2e7aa802f5b5dc46e0bf9ea993428fa",
+  "candidateEvidenceKind": "native-design-capture"
+}

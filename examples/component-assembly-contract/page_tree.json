@@ -1,0 +1,141 @@
+{
+  "version": "0.1.0",
+  "documentId": "user-management-example",
+  "analysisSha256": "8d2dd611c3fe6d0d4c99c05f785038b35c6dceae2b8dec68606c2bc3beb4f6a5",
+  "stage": "page-tree",
+  "page": {
+    "id": "user-management-example",
+    "kind": "Page",
+    "identity": {
+      "text": "用户管理",
+      "evidence": [
+        "e0"
+      ]
+    },
+    "primaryTask": {
+      "text": "查找用户并查看用户列表",
+      "evidence": [
+        "e1"
+      ]
+    },
+    "children": [
+      {
+        "id": "filters",
+        "kind": "Section",
+        "purpose": {
+          "text": "筛选用户",
+          "evidence": [
+            "e2"
+          ]
+        },
+        "children": [
+          {
+            "id": "name",
+            "kind": "fields",
+            "description": {
+              "text": "姓名",
+              "evidence": [
+                "e2"
+              ]
+            }
+          },
+          {
+            "id": "status",
+            "kind": "fields",
+            "description": {
+              "text": "状态",
+              "evidence": [
+                "e2"
+              ]
+            }
+          },
+          {
+            "id": "search",
+            "kind": "buttons",
+            "description": {
+              "text": "查询",
+              "evidence": [
+                "e2"
+              ]
+            }
+          },
+          {
+            "id": "reset",
+            "kind": "buttons",
+            "description": {
+              "text": "重置",
+              "evidence": [
+                "e2"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "toolbar",
+        "kind": "Section",
+        "purpose": {
+          "text": "用户操作入口",
+          "evidence": [
+            "e3"
+          ]
+        },
+        "children": [
+          {
+            "id": "add",
+            "kind": "buttons",
+            "description": {
+              "text": "新增用户",
+              "evidence": [
+                "e3"
+              ]
+            }
+          },
+          {
+            "id": "export",
+            "kind": "buttons",
+            "description": {
+              "text": "导出",
+              "evidence": [
+                "e3"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "results",
+        "kind": "Section",
+        "purpose": {
+          "text": "查看用户数据",
+          "evidence": [
+            "e4"
+          ]
+        },
+        "children": [
+          {
+            "id": "users",
+            "kind": "dataRegions",
+            "description": {
+              "text": "用户列表列：姓名、邮箱、状态",
+              "evidence": [
+                "e4"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "note",
+        "kind": "Section",
+        "purpose": {
+          "text": "原型范围说明",
+          "evidence": [
+            "e5"
+          ]
+        },
+        "children": []
+      }
+    ]
+  }
+}

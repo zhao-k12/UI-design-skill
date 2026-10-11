@@ -1,0 +1,74 @@
+{
+  "scope": "figma_native_outline_geometry",
+  "status": "PASS",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "observations": [
+    {
+      "textReference": "12:3",
+      "characters": "查询",
+      "svgSha256": "4dcb33b9dc0f09dbcf569a651e45fd7b7d6a99d0a9839cefaf146c9c58db1b57",
+      "pathCount": 1,
+      "pathBoundsSvgCoordinates": {
+        "x": 0.602,
+        "y": 4.52,
+        "width": 26.32,
+        "height": 12.768
+      },
+      "viewBox": "0 0 28 21",
+      "exportWidth": "28",
+      "exportHeight": "21"
+    },
+    {
+      "textReference": "12:7",
+      "characters": "请输入姓名",
+      "svgSha256": "174ead9235d766e4ec6f78019810acf0b9fea45badc3ab5a0d9311886373fe64",
+      "pathCount": 1,
+      "pathBoundsSvgCoordinates": {
+        "x": 0.588,
+        "y": 3.506,
+        "width": 67.662,
+        "height": 12.95
+      },
+      "viewBox": "0 0 70 20",
+      "exportWidth": "70",
+      "exportHeight": "20"
+    },
+    {
+      "textReference": "12:13",
+      "characters": "启用",
+      "svgSha256": "67ba5c3bd507b64f806cf33ece18451e0d6a777eb398e9f73a1b04908e5805db",
+      "pathCount": 1,
+      "pathBoundsSvgCoordinates": {
+        "x": 0.546,
+        "y": 8.436,
+        "width": 25.858,
+        "height": 13.02
+      },
+      "viewBox": "0 0 28 30",
+      "exportWidth": "28",
+      "exportHeight": "30"
+    },
+    {
+      "textReference": "12:14",
+      "characters": "",
+      "svgSha256": "f4d6c9263fbc9caebcdb3a75adb6915d4dbb9aef97d6231387a289d29df25bbc",
+      "pathCount": 1,
+      "pathBoundsSvgCoordinates": {
+        "x": 2.625,
+        "y": 4.25,
+        "width": 8.75,
+        "height": 5.25
+      },
+      "viewBox": "0 0 14 14",
+      "exportWidth": "14",
+      "exportHeight": "14"
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Only absolute M/L/H/V/C/Z commands are supported; cubic extrema are solved analytically; other commands/transforms/strokes are not approximated.",
+    "Bounds describe exported path coordinates, not original font curves or independent source glyph equality.",
+    "SVG export precision and platform coordinate transforms remain unverified."
+  ]
+}

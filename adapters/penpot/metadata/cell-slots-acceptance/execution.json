@@ -1,0 +1,40 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "EXECUTED",
+    "scope": "penpot_native_translation",
+    "finalAcceptance": "NOT_RUN",
+    "adapterVersion": "0.1.0",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "3d10efcf-8262-8086-8008-c379658b3649",
+    "rootReference": "3d10efcf-8262-8086-8008-c379659a596e",
+    "uiIrSha256": "a414f564c5d05dab3045ce62bd9e224597b2715885d01ab3b3b1bbec6ccafaaa",
+    "tokensSha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+    "componentsSha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+    "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+    "createdNodeIds": [
+      "3d10efcf-8262-8086-8008-c379658b3649",
+      "3d10efcf-8262-8086-8008-c379659a596e",
+      "3d10efcf-8262-8086-8008-c37965d165f3",
+      "3d10efcf-8262-8086-8008-c37965dee505",
+      "3d10efcf-8262-8086-8008-c37965ed11a3",
+      "3d10efcf-8262-8086-8008-c37965fb45c0",
+      "3d10efcf-8262-8086-8008-c37966090003",
+      "3d10efcf-8262-8086-8008-c379661856cc",
+      "3d10efcf-8262-8086-8008-c3796625c8a6"
+    ],
+    "mutatedNodeIds": [],
+    "nodeMap": {
+      "slot-page": "3d10efcf-8262-8086-8008-c379659a596e",
+      "slot-cell": "3d10efcf-8262-8086-8008-c37965d165f3",
+      "slot-cell.slot.leading-icon": "3d10efcf-8262-8086-8008-c37965dee505",
+      "slot-cell.slot.label": "3d10efcf-8262-8086-8008-c37965ed11a3",
+      "slot-cell.slot.control": "3d10efcf-8262-8086-8008-c37965fb45c0",
+      "slot-cell.slot.trailing-icon": "3d10efcf-8262-8086-8008-c37966090003",
+      "slot-cell.slot.content": "3d10efcf-8262-8086-8008-c379661856cc",
+      "slot-cell.slot.actions": "3d10efcf-8262-8086-8008-c3796625c8a6"
+    },
+    "helperNodeIds": []
+  }
+}

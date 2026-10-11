@@ -1,0 +1,256 @@
+{
+  "items": [
+    {
+      "roleId": "slot-cell.slot.leading-icon",
+      "width": 24,
+      "height": 32,
+      "children": [
+        {
+          "id": "slot-leading",
+          "name": "slot-leading",
+          "type": "IconInstance",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 24
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 24
+            },
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "gap": 0,
+            "direction": "vertical",
+            "wrap": false,
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "style": {},
+          "componentReference": "3:16",
+          "svgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1"
+        }
+      ]
+    },
+    {
+      "roleId": "slot-cell.slot.label",
+      "width": 28,
+      "height": 32,
+      "children": [
+        {
+          "id": "slot-label",
+          "name": "slot-label",
+          "type": "Text",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 28
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 22
+            },
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "gap": 0,
+            "direction": "vertical",
+            "wrap": false,
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "style": {
+            "typographyToken": {
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeight": 22,
+              "letterSpacing": 0
+            },
+            "colorToken": "#20252b"
+          },
+          "text": "姓名",
+          "fontName": {
+            "family": "Noto Sans SC",
+            "style": "Regular"
+          }
+        }
+      ]
+    },
+    {
+      "roleId": "slot-cell.slot.control",
+      "width": 240,
+      "height": 32,
+      "children": [
+        {
+          "id": "slot-control",
+          "name": "slot-control",
+          "type": "ComponentInstance",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 240
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32
+            },
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "gap": 0,
+            "direction": "vertical",
+            "wrap": false,
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "style": {},
+          "componentReference": "12:8",
+          "fidelityReportSha256": "095db86f0fd809bcd410dc49eb9a3ec9d05cae7162bc27e38fc47cde7decdab3"
+        }
+      ]
+    },
+    {
+      "roleId": "slot-cell.slot.trailing-icon",
+      "width": 24,
+      "height": 32,
+      "children": [
+        {
+          "id": "slot-trailing",
+          "name": "slot-trailing",
+          "type": "IconInstance",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 24
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 24
+            },
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "gap": 0,
+            "direction": "vertical",
+            "wrap": false,
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "style": {},
+          "componentReference": "3:13",
+          "svgSha256": "ad83ac7dc9d4c6af651a53068e928d82f9402cfd05a924742388549846032f43"
+        }
+      ]
+    },
+    {
+      "roleId": "slot-cell.slot.content",
+      "width": 56,
+      "height": 32,
+      "children": [
+        {
+          "id": "slot-content",
+          "name": "slot-content",
+          "type": "Text",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 56
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 22
+            },
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "gap": 0,
+            "direction": "vertical",
+            "wrap": false,
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "style": {
+            "typographyToken": {
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeight": 22,
+              "letterSpacing": 0
+            },
+            "colorToken": "#20252b"
+          },
+          "text": "用户列表",
+          "fontName": {
+            "family": "Noto Sans SC",
+            "style": "Regular"
+          }
+        }
+      ]
+    },
+    {
+      "roleId": "slot-cell.slot.actions",
+      "width": 60,
+      "height": 32,
+      "children": [
+        {
+          "id": "slot-action",
+          "name": "slot-action",
+          "type": "ComponentInstance",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 60
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32
+            },
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "gap": 0,
+            "direction": "vertical",
+            "wrap": false,
+            "alignment": {
+              "main": "start",
+              "cross": "start"
+            }
+          },
+          "style": {},
+          "componentReference": "18:5",
+          "fidelityReportSha256": "f5f768a7041c2302f10efaf2360ebce52f99031898fba81fd6e99827847e6c11"
+        }
+      ]
+    }
+  ]
+}

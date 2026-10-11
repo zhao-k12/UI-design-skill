@@ -1,0 +1,186 @@
+{
+  "scope": "native_svg_three_way_raster_diagnostic",
+  "status": "REVIEW",
+  "components": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "pngHashes": {
+        "official": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+        "nativePng": "d71f04472994070b4c2c8ebaca843f3e3583e72a9f76946a915633c14e7827a7",
+        "browserNativeSvg": "4350af088b2699808beec26e25b69072ed59856b57c4684f666f3ec465efbef8"
+      },
+      "officialVsNativePng": 317,
+      "officialVsBrowserNativeSvg": 288,
+      "nativePngVsBrowserNativeSvg": 194,
+      "browserSvgDifferenceRegions": {
+        "sourcePath": "0",
+        "sourceRadiusPx": 4.0,
+        "cornerRectangles": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 0,
+            "y": 28.0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 56.0,
+            "y": 0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 56.0,
+            "y": 28.0,
+            "width": 4.0,
+            "height": 4.0
+          }
+        ],
+        "categories": {
+          "observedText": {
+            "changedPixels": 288,
+            "maximumChannelDelta": 210
+          },
+          "sourceCornerRectangles": {
+            "changedPixels": 0,
+            "maximumChannelDelta": 0
+          },
+          "unclassified": {
+            "changedPixels": 0,
+            "maximumChannelDelta": 0
+          }
+        },
+        "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+        "cause": "UNDETERMINED",
+        "admissionEligible": false
+      }
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "pngHashes": {
+        "official": "3c940cc44ef9cd1048a3ca8fcae8366b30eb22fc4866bbb8a75de3186d5b9855",
+        "nativePng": "f6e483965eb85c47d7943076d83465fb6d3354f0ec09f0715dd3a3e91e437688",
+        "browserNativeSvg": "f775b894fda69a7dd0a446cb1234171a4f35e3aead2236b58a89666a26fd0c4c"
+      },
+      "officialVsNativePng": 675,
+      "officialVsBrowserNativeSvg": 640,
+      "nativePngVsBrowserNativeSvg": 480,
+      "browserSvgDifferenceRegions": {
+        "sourcePath": "0.1",
+        "sourceRadiusPx": 4.0,
+        "cornerRectangles": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 0,
+            "y": 28.0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 236.0,
+            "y": 0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 236.0,
+            "y": 28.0,
+            "width": 4.0,
+            "height": 4.0
+          }
+        ],
+        "categories": {
+          "observedText": {
+            "changedPixels": 640,
+            "maximumChannelDelta": 54
+          },
+          "sourceCornerRectangles": {
+            "changedPixels": 0,
+            "maximumChannelDelta": 0
+          },
+          "unclassified": {
+            "changedPixels": 0,
+            "maximumChannelDelta": 0
+          }
+        },
+        "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+        "cause": "UNDETERMINED",
+        "admissionEligible": false
+      }
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "pngHashes": {
+        "official": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+        "nativePng": "a23c44f51058fe59682dccd7843aaa37c75cb485a59bbcfb77ee340065b4fd45",
+        "browserNativeSvg": "0ad4eb890068be2e739ddd20ea2c2cc93d507288f0721bc2d20e5e54049b7534"
+      },
+      "officialVsNativePng": 311,
+      "officialVsBrowserNativeSvg": 275,
+      "nativePngVsBrowserNativeSvg": 263,
+      "browserSvgDifferenceRegions": {
+        "sourcePath": "0.0",
+        "sourceRadiusPx": 4.0,
+        "cornerRectangles": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 0,
+            "y": 28.0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 236.0,
+            "y": 0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          {
+            "x": 236.0,
+            "y": 28.0,
+            "width": 4.0,
+            "height": 4.0
+          }
+        ],
+        "categories": {
+          "observedText": {
+            "changedPixels": 275,
+            "maximumChannelDelta": 124
+          },
+          "sourceCornerRectangles": {
+            "changedPixels": 0,
+            "maximumChannelDelta": 0
+          },
+          "unclassified": {
+            "changedPixels": 0,
+            "maximumChannelDelta": 0
+          }
+        },
+        "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+        "cause": "UNDETERMINED",
+        "admissionEligible": false
+      }
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Browser raster of outlined native SVG is diagnostic only; production admission still requires original native PNG exact fidelity.",
+    "Text outline rendering does not reproduce live-font hinting, shaping or rasterizer behavior."
+  ]
+}

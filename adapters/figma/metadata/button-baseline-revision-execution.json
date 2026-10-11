@@ -1,0 +1,28 @@
+{
+  "scope": "figma_button_baseline_revision",
+  "status": "PASS",
+  "createdNodeIds": [
+    "16:2"
+  ],
+  "mutatedNodeIds": [
+    "12:4",
+    "12:3"
+  ],
+  "issues": [],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "nativeObservation": {
+    "componentReference": "12:4",
+    "spanReference": "16:2",
+    "textReference": "12:3",
+    "spanBounds": {
+      "x": 16,
+      "y": 5.5,
+      "width": 28,
+      "height": 21
+    },
+    "textOffsetY": -1,
+    "baselineComponentY": 20.5,
+    "method": "source DOM baseline aligned to verified native font-outline baseline"
+  }
+}

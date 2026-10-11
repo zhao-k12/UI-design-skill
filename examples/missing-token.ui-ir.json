@@ -1,0 +1,12 @@
+{
+  "uiIrVersion": "0.1.0",
+  "documentId": "example.missing-token",
+  "pages": [
+    {
+      "id": "page",
+      "type": "Page",
+      "layout": { "gap": { "token": "spacing.unknown" } },
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "version": "0.1.0",
+  "documentId": "frozen-user-management-list",
+  "sources": [
+    {
+      "id": "prototype",
+      "path": "prototype.txt",
+      "sha256": "d7e05d66c4f8e1133af714149effa74206a95774612bf36dfd8cbc19dbd16721"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e0",
+      "sourceId": "prototype",
+      "quote": "用户管理静态列表页",
+      "start": 0,
+      "end": 9
+    },
+    {
+      "id": "e1",
+      "sourceId": "prototype",
+      "quote": "页头：标题“用户管理”，设置图标使用已验收的 remix.settings-3-line。",
+      "start": 11,
+      "end": 56
+    },
+    {
+      "id": "e2",
+      "sourceId": "prototype",
+      "quote": "查询区：",
+      "start": 58,
+      "end": 62
+    },
+    {
+      "id": "e3",
+      "sourceId": "prototype",
+      "quote": "- 姓名：输入框，占位文字“请输入姓名”。",
+      "start": 63,
+      "end": 84
+    },
+    {
+      "id": "e4",
+      "sourceId": "prototype",
+      "quote": "- 状态：选择框，当前静态显示“启用”；本次验收不涉及下拉选项或交互。",
+      "start": 85,
+      "end": 120
+    },
+    {
+      "id": "e5",
+      "sourceId": "prototype",
+      "quote": "- 范围：静态文字“查看用户信息”。",
+      "start": 121,
+      "end": 139
+    },
+    {
+      "id": "e6",
+      "sourceId": "prototype",
+      "quote": "- 操作：按钮“查询”。",
+      "start": 140,
+      "end": 152
+    },
+    {
+      "id": "e7",
+      "sourceId": "prototype",
+      "quote": "列表区：",
+      "start": 154,
+      "end": 158
+    },
+    {
+      "id": "e8",
+      "sourceId": "prototype",
+      "quote": "- 标题“用户列表”。",
+      "start": 159,
+      "end": 170
+    },
+    {
+      "id": "e9",
+      "sourceId": "prototype",
+      "quote": "- 导出操作：已验收的 remix.download-line 图标和文字“导出”。",
+      "start": 171,
+      "end": 213
+    },
+    {
+      "id": "e10",
+      "sourceId": "prototype",
+      "quote": "- 表格列固定为“姓名／状态／角色”。",
+      "start": 214,
+      "end": 233
+    },
+    {
+      "id": "e11",
+      "sourceId": "prototype",
+      "quote": "- 三行静态内容分别为：张三／启用／管理员；李四／启用／编辑；王五／停用／访客。",
+      "start": 234,
+      "end": 274
+    },
+    {
+      "id": "e12",
+      "sourceId": "prototype",
+      "quote": "- 汇总文字“共 3 位用户”。",
+      "start": 275,
+      "end": 291
+    },
+    {
+      "id": "e13",
+      "sourceId": "prototype",
+      "quote": "本原型冻结已通过 TASK-009 和 TASK-010 原生保真验收的列表内容；不包含业务逻辑。",
+      "start": 293,
+      "end": 342
+    }
+  ],
+  "page": {
+    "identity": {
+      "text": "用户管理",
+      "evidence": [
+        "e0"
+      ]
+    },
+    "primaryTask": {
+      "text": "查询与查看用户信息",
+      "evidence": [
+        "e2",
+        "e5",
+        "e7",
+        "e13"
+      ]
+    },
+    "blocks": [
+      {
+        "id": "header",
+        "purpose": {
+          "text": "页头",
+          "evidence": [
+            "e1"
+          ]
+        },
+        "fields": [],
+        "buttons": [],
+        "dataRegions": [],
+        "staticContent": [
+          {
+            "id": "header-title",
+            "description": {
+              "text": "用户管理标题与设置图标",
+              "evidence": [
+                "e1"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "query",
+        "purpose": {
+          "text": "查询区",
+          "evidence": [
+            "e2"
+          ]
+        },
+        "fields": [
+          {
+            "id": "field-name",
+            "description": {
+              "text": "姓名",
+              "evidence": [
+                "e3"
+              ]
+            }
+          },
+          {
+            "id": "field-status",
+            "description": {
+              "text": "状态",
+              "evidence": [
+                "e4"
+              ]
+            }
+          }
+        ],
+        "buttons": [
+          {
+            "id": "query-action",
+            "description": {
+              "text": "查询",
+              "evidence": [
+                "e6"
+              ]
+            }
+          }
+        ],
+        "dataRegions": [],
+        "staticContent": [
+          {
+            "id": "scope-content",
+            "description": {
+              "text": "范围与查看用户信息",
+              "evidence": [
+                "e5"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "purpose": {
+          "text": "列表区",
+          "evidence": [
+            "e7"
+          ]
+        },
+        "fields": [],
+        "buttons": [],
+        "dataRegions": [
+          {
+            "id": "user-table",
+            "description": {
+              "text": "用户列表，列为姓名／状态／角色，包含三行静态记录",
+              "evidence": [
+                "e10",
+                "e11"
+              ]
+            }
+          }
+        ],
+        "staticContent": [
+          {
+            "id": "list-title",
+            "description": {
+              "text": "用户列表",
+              "evidence": [
+                "e8"
+              ]
+            }
+          },
+          {
+            "id": "export-action",
+            "description": {
+              "text": "导出文字与下载图标（静态操作显示）",
+              "evidence": [
+                "e9"
+              ]
+            }
+          },
+          {
+            "id": "list-summary",
+            "description": {
+              "text": "共 3 位用户",
+              "evidence": [
+                "e12"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "unknowns": []
+}

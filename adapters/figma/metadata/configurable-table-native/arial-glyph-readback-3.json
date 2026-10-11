@@ -1,0 +1,148 @@
+{
+  "scope": "figma_native_text_outline_diagnostic",
+  "status": "PASS",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "64:2",
+  "observations": [
+    {
+      "textReference": "68:12",
+      "characters": "h",
+      "fontName": {
+        "family": "Arial",
+        "style": "Regular"
+      },
+      "fontWeight": 400,
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "absoluteBounds": {
+        "x": 300,
+        "y": 140,
+        "width": 8,
+        "height": 21
+      },
+      "absoluteRenderBounds": {
+        "x": 300.9228515625,
+        "y": 144.978515625,
+        "width": 5.9130859375,
+        "height": 10.021484375
+      },
+      "svg": "<svg width=\"8\" height=\"21\" viewBox=\"0 0 8 21\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.922852 15V4.97852H2.15332V8.57422C2.72754 7.90885 3.45215 7.57617 4.32715 7.57617C4.86491 7.57617 5.33203 7.68327 5.72852 7.89746C6.125 8.1071 6.40755 8.39876 6.57617 8.77246C6.74935 9.14616 6.83594 9.68848 6.83594 10.3994V15H5.60547V10.3994C5.60547 9.78418 5.47103 9.33757 5.20215 9.05957C4.93783 8.77702 4.56185 8.63574 4.07422 8.63574C3.70964 8.63574 3.36556 8.73145 3.04199 8.92285C2.72298 9.1097 2.49512 9.36491 2.3584 9.68848C2.22168 10.012 2.15332 10.4587 2.15332 11.0283V15H0.922852Z\" fill=\"#515A6E\"/>\n</svg>\n"
+    },
+    {
+      "textReference": "68:13",
+      "characters": "i",
+      "fontName": {
+        "family": "Arial",
+        "style": "Regular"
+      },
+      "fontWeight": 400,
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "absoluteBounds": {
+        "x": 340,
+        "y": 140,
+        "width": 4,
+        "height": 21
+      },
+      "absoluteRenderBounds": {
+        "x": 340.9296875,
+        "y": 144.978515625,
+        "width": 1.23046875,
+        "height": 10.021484375
+      },
+      "svg": "<svg width=\"4\" height=\"21\" viewBox=\"0 0 4 21\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.929688 6.39355V4.97852H2.16016V6.39355H0.929688ZM0.929688 15V7.74023H2.16016V15H0.929688Z\" fill=\"#515A6E\"/>\n</svg>\n"
+    },
+    {
+      "textReference": "68:14",
+      "characters": "l",
+      "fontName": {
+        "family": "Arial",
+        "style": "Regular"
+      },
+      "fontWeight": 400,
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "absoluteBounds": {
+        "x": 380,
+        "y": 140,
+        "width": 4,
+        "height": 21
+      },
+      "absoluteRenderBounds": {
+        "x": 380.8955078125,
+        "y": 144.978515625,
+        "width": 1.23046875,
+        "height": 10.021484375
+      },
+      "svg": "<svg width=\"4\" height=\"21\" viewBox=\"0 0 4 21\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.895508 15V4.97852H2.12598V15H0.895508Z\" fill=\"#515A6E\"/>\n</svg>\n"
+    },
+    {
+      "textReference": "68:15",
+      "characters": "m",
+      "fontName": {
+        "family": "Arial",
+        "style": "Regular"
+      },
+      "fontWeight": 400,
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "absoluteBounds": {
+        "x": 420,
+        "y": 140,
+        "width": 12,
+        "height": 21
+      },
+      "absoluteRenderBounds": {
+        "x": 420.9228515625,
+        "y": 147.576171875,
+        "width": 9.8369140625,
+        "height": 7.423828125
+      },
+      "svg": "<svg width=\"12\" height=\"21\" viewBox=\"0 0 12 21\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.922852 15V7.74023H2.02344V8.75879C2.2513 8.40332 2.55436 8.11849 2.93262 7.9043C3.31087 7.68555 3.74154 7.57617 4.22461 7.57617C4.76237 7.57617 5.20215 7.68783 5.54395 7.91113C5.8903 8.13444 6.13411 8.44661 6.27539 8.84766C6.84961 8 7.59701 7.57617 8.51758 7.57617C9.23763 7.57617 9.79134 7.77669 10.1787 8.17773C10.5661 8.57422 10.7598 9.18717 10.7598 10.0166V15H9.53613V10.4268C9.53613 9.93457 9.49512 9.58138 9.41309 9.36719C9.33561 9.14844 9.19206 8.97298 8.98242 8.84082C8.77279 8.70866 8.52669 8.64258 8.24414 8.64258C7.73372 8.64258 7.3099 8.81348 6.97266 9.15527C6.63542 9.49251 6.4668 10.0348 6.4668 10.7822V15H5.23633V10.2832C5.23633 9.73633 5.13607 9.32617 4.93555 9.05273C4.73503 8.7793 4.4069 8.64258 3.95117 8.64258C3.60482 8.64258 3.28353 8.73372 2.9873 8.91602C2.69564 9.09831 2.48372 9.36491 2.35156 9.71582C2.2194 10.0667 2.15332 10.5726 2.15332 11.2334V15H0.922852Z\" fill=\"#515A6E\"/>\n</svg>\n"
+    },
+    {
+      "textReference": "68:16",
+      "characters": "n",
+      "fontName": {
+        "family": "Arial",
+        "style": "Regular"
+      },
+      "fontWeight": 400,
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "absoluteBounds": {
+        "x": 460,
+        "y": 140,
+        "width": 8,
+        "height": 21
+      },
+      "absoluteRenderBounds": {
+        "x": 460.9228515625,
+        "y": 147.576171875,
+        "width": 5.8994140625,
+        "height": 7.423828125
+      },
+      "svg": "<svg width=\"8\" height=\"21\" viewBox=\"0 0 8 21\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.922852 15V7.74023H2.03027V8.77246C2.56348 7.97493 3.33366 7.57617 4.34082 7.57617C4.77832 7.57617 5.17936 7.65592 5.54395 7.81543C5.91309 7.97038 6.1888 8.17546 6.37109 8.43066C6.55339 8.68587 6.68099 8.98893 6.75391 9.33984C6.79948 9.56771 6.82227 9.96647 6.82227 10.5361V15H5.5918V10.584C5.5918 10.0827 5.54395 9.70898 5.44824 9.46289C5.35254 9.21224 5.18164 9.014 4.93555 8.86816C4.69401 8.71777 4.40918 8.64258 4.08105 8.64258C3.55697 8.64258 3.10352 8.80892 2.7207 9.1416C2.34245 9.47428 2.15332 10.1055 2.15332 11.0352V15H0.922852Z\" fill=\"#515A6E\"/>\n</svg>\n"
+    }
+  ],
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}

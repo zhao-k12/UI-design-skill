@@ -1,0 +1,522 @@
+{
+  "version": "0.1.0",
+  "stage": "component-mapping",
+  "status": "Missing",
+  "readyForAssembly": false,
+  "diagnosticOnly": true,
+  "layoutReport": {
+    "stage": "layout-qa",
+    "status": "PASS",
+    "readyForMapping": false,
+    "structureReport": {
+      "version": "0.1.0",
+      "stage": "structure-qa",
+      "status": "PASS",
+      "readyForLayout": true,
+      "analysisSha256": "e20dc52efbff33b6f322e7af2a25e7c95d9687c78063098f83b362b479dcfc60",
+      "pageTreeSha256": "6efdf8b4ce93e21d9dc060a464530f6a9deb09046f7940a9edea0dd2a79d9134",
+      "reviewSha256": "eb5d6c4e4676a4446cf7043c3f7a2c03f6bb08f269daedd561b3e129f73ce9d8",
+      "issues": [],
+      "reviewReasons": [],
+      "freeze": {
+        "pageTreeSha256": "6efdf8b4ce93e21d9dc060a464530f6a9deb09046f7940a9edea0dd2a79d9134",
+        "analysisSha256": "e20dc52efbff33b6f322e7af2a25e7c95d9687c78063098f83b362b479dcfc60"
+      }
+    },
+    "pageTreeSha256": "6efdf8b4ce93e21d9dc060a464530f6a9deb09046f7940a9edea0dd2a79d9134",
+    "planSha256": "21c945e308c4b555f2a84b0b82260bc04fde52c65e99abc1f97ac1c2ebecf050",
+    "rulesSha256": "5e995ec984a07cd12feb31f11b9043a4226066dc8df190e50a8b126549b2dd6e",
+    "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+    "issues": [],
+    "testFixture": true,
+    "engineReport": {
+      "scope": "layout",
+      "status": "PASS",
+      "engineVersion": "0.1.0",
+      "tokenRegistryVersion": "0.1.0",
+      "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+      "pattern": "list-page",
+      "skeleton": {
+        "id": "pattern.page",
+        "type": "Page",
+        "box": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1440.0,
+          "height": 344.0
+        },
+        "children": [
+          {
+            "id": "pattern.header",
+            "type": "Section",
+            "box": {
+              "x": 24.0,
+              "y": 24.0,
+              "width": 1392.0,
+              "height": 32.0
+            },
+            "children": [
+              {
+                "id": "layout.item.3.0",
+                "type": "Cell",
+                "box": {
+                  "x": 24.0,
+                  "y": 24.0,
+                  "width": 1392.0,
+                  "height": 32.0
+                },
+                "children": [],
+                "sourceIds": [
+                  "scope-note"
+                ]
+              }
+            ],
+            "role": "header",
+            "sourceIds": [
+              "note"
+            ]
+          },
+          {
+            "id": "pattern.query",
+            "type": "Section",
+            "box": {
+              "x": 24.0,
+              "y": 80.0,
+              "width": 1392.0,
+              "height": 80.0
+            },
+            "children": [
+              {
+                "id": "pattern.query.grid",
+                "type": "Grid",
+                "box": {
+                  "x": 24.0,
+                  "y": 80.0,
+                  "width": 1392.0,
+                  "height": 80.0
+                },
+                "children": [
+                  {
+                    "id": "layout.group.0.fields",
+                    "type": "Grid",
+                    "box": {
+                      "x": 24.0,
+                      "y": 80.0,
+                      "width": 1392.0,
+                      "height": 32.0
+                    },
+                    "children": [
+                      {
+                        "id": "layout.item.0.0",
+                        "type": "Cell",
+                        "box": {
+                          "x": 24.0,
+                          "y": 80.0,
+                          "width": 336.0,
+                          "height": 32.0
+                        },
+                        "children": [],
+                        "role": "field",
+                        "sourceIds": [
+                          "name"
+                        ]
+                      },
+                      {
+                        "id": "layout.item.0.1",
+                        "type": "Cell",
+                        "box": {
+                          "x": 376.0,
+                          "y": 80.0,
+                          "width": 336.0,
+                          "height": 32.0
+                        },
+                        "children": [],
+                        "role": "field",
+                        "sourceIds": [
+                          "status"
+                        ]
+                      }
+                    ],
+                    "sourceIds": [
+                      "filters"
+                    ]
+                  },
+                  {
+                    "id": "layout.group.0.buttons",
+                    "type": "HorizontalStack",
+                    "box": {
+                      "x": 24.0,
+                      "y": 128.0,
+                      "width": 1392.0,
+                      "height": 32.0
+                    },
+                    "children": [
+                      {
+                        "id": "layout.item.0.2",
+                        "type": "Cell",
+                        "box": {
+                          "x": 24.0,
+                          "y": 128.0,
+                          "width": 160.0,
+                          "height": 32.0
+                        },
+                        "children": [],
+                        "sourceIds": [
+                          "search"
+                        ]
+                      },
+                      {
+                        "id": "layout.item.0.3",
+                        "type": "Cell",
+                        "box": {
+                          "x": 192.0,
+                          "y": 128.0,
+                          "width": 160.0,
+                          "height": 32.0
+                        },
+                        "children": [],
+                        "sourceIds": [
+                          "reset"
+                        ]
+                      }
+                    ],
+                    "sourceIds": [
+                      "filters"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "role": "query",
+            "sourceIds": [
+              "filters"
+            ]
+          },
+          {
+            "id": "pattern.toolbar",
+            "type": "Section",
+            "box": {
+              "x": 24.0,
+              "y": 184.0,
+              "width": 1392.0,
+              "height": 32.0
+            },
+            "children": [
+              {
+                "id": "pattern.toolbar.row",
+                "type": "HorizontalStack",
+                "box": {
+                  "x": 24.0,
+                  "y": 184.0,
+                  "width": 1392.0,
+                  "height": 32.0
+                },
+                "children": [
+                  {
+                    "id": "layout.group.1.buttons",
+                    "type": "HorizontalStack",
+                    "box": {
+                      "x": 24.0,
+                      "y": 184.0,
+                      "width": 1392.0,
+                      "height": 32.0
+                    },
+                    "children": [
+                      {
+                        "id": "layout.item.1.0",
+                        "type": "Cell",
+                        "box": {
+                          "x": 24.0,
+                          "y": 184.0,
+                          "width": 160.0,
+                          "height": 32.0
+                        },
+                        "children": [],
+                        "sourceIds": [
+                          "add"
+                        ]
+                      },
+                      {
+                        "id": "layout.item.1.1",
+                        "type": "Cell",
+                        "box": {
+                          "x": 192.0,
+                          "y": 184.0,
+                          "width": 160.0,
+                          "height": 32.0
+                        },
+                        "children": [],
+                        "sourceIds": [
+                          "export"
+                        ]
+                      }
+                    ],
+                    "sourceIds": [
+                      "toolbar"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "role": "toolbar",
+            "sourceIds": [
+              "toolbar"
+            ]
+          },
+          {
+            "id": "pattern.table",
+            "type": "Section",
+            "box": {
+              "x": 24.0,
+              "y": 240.0,
+              "width": 1392.0,
+              "height": 80.0
+            },
+            "children": [
+              {
+                "id": "layout.item.2.0",
+                "type": "Cell",
+                "box": {
+                  "x": 24.0,
+                  "y": 240.0,
+                  "width": 1392.0,
+                  "height": 32.0
+                },
+                "children": [],
+                "sourceIds": [
+                  "users"
+                ]
+              },
+              {
+                "id": "layout.item.2.1",
+                "type": "Cell",
+                "box": {
+                  "x": 24.0,
+                  "y": 288.0,
+                  "width": 1392.0,
+                  "height": 32.0
+                },
+                "children": [],
+                "sourceIds": [
+                  "example-row"
+                ]
+              }
+            ],
+            "role": "table",
+            "sourceIds": [
+              "results"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "user-management-example"
+        ]
+      },
+      "issues": [
+        {
+          "code": "unnecessary_nesting",
+          "path": "/page/children/2/children/0",
+          "message": "Single-child wrapper duplicates its child layout type",
+          "severity": "warning"
+        }
+      ]
+    },
+    "layoutTreeSha256": "3618739198bd9b70f2e266ae9a0c80efeacf3704ce0f0b4f4cd371c2764fa412"
+  },
+  "registrySha256": "028aa6a9f330e3199fef0fa331111229648ca8299f78d376df70e93a5b0ec369",
+  "registryScope": "production",
+  "decisionsSha256": "323706855ac0bfce0c71c5e82e5091825e382a60bc0d4f82705aede2eb3eff88",
+  "rows": [
+    {
+      "cellId": "layout.item.3.0",
+      "sourceId": "scope-note",
+      "sectionId": "note",
+      "label": "说明：仅展示静态原型，不描述按钮点击后的流程。",
+      "intent": "static",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e5"
+      ],
+      "status": "Missing",
+      "requestedTypes": [
+        "Text"
+      ],
+      "componentId": null,
+      "componentType": null,
+      "variant": null,
+      "fallbackUsed": false,
+      "reasonCode": "missing_component"
+    },
+    {
+      "cellId": "layout.item.0.0",
+      "sourceId": "name",
+      "sectionId": "filters",
+      "label": "姓名",
+      "intent": "text",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e2"
+      ],
+      "status": "Resolved",
+      "requestedTypes": [
+        "Input"
+      ],
+      "componentId": "form.input.default.medium",
+      "componentType": "Input",
+      "variant": "default",
+      "fallbackUsed": false,
+      "reasonCode": "matched"
+    },
+    {
+      "cellId": "layout.item.0.1",
+      "sourceId": "status",
+      "sectionId": "filters",
+      "label": "状态",
+      "intent": "choice",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e2"
+      ],
+      "status": "Resolved",
+      "requestedTypes": [
+        "Select"
+      ],
+      "componentId": "form.select.default.medium",
+      "componentType": "Select",
+      "variant": "default",
+      "fallbackUsed": false,
+      "reasonCode": "matched"
+    },
+    {
+      "cellId": "layout.item.0.2",
+      "sourceId": "search",
+      "sectionId": "filters",
+      "label": "查询",
+      "intent": "action",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e2"
+      ],
+      "status": "Resolved",
+      "requestedTypes": [
+        "Button"
+      ],
+      "componentId": "action.button.primary.medium",
+      "componentType": "Button",
+      "variant": "default",
+      "fallbackUsed": false,
+      "reasonCode": "matched"
+    },
+    {
+      "cellId": "layout.item.0.3",
+      "sourceId": "reset",
+      "sectionId": "filters",
+      "label": "重置",
+      "intent": "action",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e2"
+      ],
+      "status": "Resolved",
+      "requestedTypes": [
+        "Button"
+      ],
+      "componentId": "action.button.primary.medium",
+      "componentType": "Button",
+      "variant": "default",
+      "fallbackUsed": false,
+      "reasonCode": "matched"
+    },
+    {
+      "cellId": "layout.item.1.0",
+      "sourceId": "add",
+      "sectionId": "toolbar",
+      "label": "新增用户",
+      "intent": "action",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e3"
+      ],
+      "status": "Resolved",
+      "requestedTypes": [
+        "Button"
+      ],
+      "componentId": "action.button.primary.medium",
+      "componentType": "Button",
+      "variant": "default",
+      "fallbackUsed": false,
+      "reasonCode": "matched"
+    },
+    {
+      "cellId": "layout.item.1.1",
+      "sourceId": "export",
+      "sectionId": "toolbar",
+      "label": "导出",
+      "intent": "action",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e3"
+      ],
+      "status": "Resolved",
+      "requestedTypes": [
+        "Button"
+      ],
+      "componentId": "action.button.primary.medium",
+      "componentType": "Button",
+      "variant": "default",
+      "fallbackUsed": false,
+      "reasonCode": "matched"
+    },
+    {
+      "cellId": "layout.item.2.0",
+      "sourceId": "users",
+      "sectionId": "results",
+      "label": "用户列表列：姓名、邮箱、状态",
+      "intent": "records",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e4"
+      ],
+      "status": "Resolved",
+      "requestedTypes": [
+        "Table"
+      ],
+      "componentId": "data.table.default",
+      "componentType": "Table",
+      "variant": "default",
+      "fallbackUsed": false,
+      "reasonCode": "matched"
+    },
+    {
+      "cellId": "layout.item.2.1",
+      "sourceId": "example-row",
+      "sectionId": "results",
+      "label": "张三、zhang@example.com、启用",
+      "intent": "static",
+      "confidence": "high",
+      "rationale": "Explicit contract fixture judgment",
+      "evidence": [
+        "e4"
+      ],
+      "status": "Missing",
+      "requestedTypes": [
+        "Text"
+      ],
+      "componentId": null,
+      "componentType": null,
+      "variant": null,
+      "fallbackUsed": false,
+      "reasonCode": "missing_component"
+    }
+  ],
+  "issues": [],
+  "layoutTreeSha256": "3618739198bd9b70f2e266ae9a0c80efeacf3704ce0f0b4f4cd371c2764fa412"
+}

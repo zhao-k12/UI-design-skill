@@ -1,0 +1,1632 @@
+{
+  "platform": "figma",
+  "approvedArialDecisionSha256": "ca43541c9b0015f99a8982c8acc64830cb46efe0ae7a3f7d9931f94377bae349",
+  "geometryAndStyle": {
+    "status": "PASS",
+    "textSamples": [
+      {
+        "path": "0.0.0.0.1.0.0.0.0",
+        "characters": "001",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 15,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 28,
+        "textReference": "69:21",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.0.0.1.0.1.0.0",
+        "characters": "张三",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 15,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 28,
+        "textReference": "69:23",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.0.2.0.0",
+        "characters": "研发",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 15,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 28,
+        "textReference": "69:25",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.0.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 15,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 28,
+        "textReference": "69:27",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.1.0.0.0",
+        "characters": "002",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 63,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 76,
+        "textReference": "69:31",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.0.0.1.1.1.0.0",
+        "characters": "李四",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 76,
+        "textReference": "69:33",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.1.2.0.0",
+        "characters": "财务",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 76,
+        "textReference": "69:35",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.1.3.0.0",
+        "characters": "停用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 76,
+        "textReference": "69:37",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.2.0.0.0",
+        "characters": "003",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 111,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 124,
+        "textReference": "69:41",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.0.0.1.2.1.0.0",
+        "characters": "王五",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 124,
+        "textReference": "69:43",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.2.2.0.0",
+        "characters": "运营",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 124,
+        "textReference": "69:45",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.2.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 124,
+        "textReference": "69:47",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.3.0.0.0",
+        "characters": "004",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 159,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 172,
+        "textReference": "69:51",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.0.0.1.3.1.0.0",
+        "characters": "赵六",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 159,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 172,
+        "textReference": "69:53",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.3.2.0.0",
+        "characters": "客服",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 159,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 172,
+        "textReference": "69:55",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.3.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 159,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 172,
+        "textReference": "69:57",
+        "nativeBaselineOffset": 16
+      }
+    ],
+    "sourcePaths": [
+      "candidate/data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+      "source/0.0.0.0.1.0",
+      "source/0.0.0.0.1.0.0",
+      "source/0.0.0.0.1.0.0.0.0",
+      "source/0.0.0.0.1.0.1",
+      "source/0.0.0.0.1.0.1.0.0",
+      "source/0.0.0.0.1.0.2",
+      "source/0.0.0.0.1.0.2.0.0",
+      "source/0.0.0.0.1.0.3",
+      "source/0.0.0.0.1.0.3.0.0",
+      "source/row-border/0.0.0.0.1.0",
+      "source/0.0.0.0.1.1",
+      "source/0.0.0.0.1.1.0",
+      "source/0.0.0.0.1.1.0.0.0",
+      "source/0.0.0.0.1.1.1",
+      "source/0.0.0.0.1.1.1.0.0",
+      "source/0.0.0.0.1.1.2",
+      "source/0.0.0.0.1.1.2.0.0",
+      "source/0.0.0.0.1.1.3",
+      "source/0.0.0.0.1.1.3.0.0",
+      "source/row-border/0.0.0.0.1.1",
+      "source/0.0.0.0.1.2",
+      "source/0.0.0.0.1.2.0",
+      "source/0.0.0.0.1.2.0.0.0",
+      "source/0.0.0.0.1.2.1",
+      "source/0.0.0.0.1.2.1.0.0",
+      "source/0.0.0.0.1.2.2",
+      "source/0.0.0.0.1.2.2.0.0",
+      "source/0.0.0.0.1.2.3",
+      "source/0.0.0.0.1.2.3.0.0",
+      "source/row-border/0.0.0.0.1.2",
+      "source/0.0.0.0.1.3",
+      "source/0.0.0.0.1.3.0",
+      "source/0.0.0.0.1.3.0.0.0",
+      "source/0.0.0.0.1.3.1",
+      "source/0.0.0.0.1.3.1.0.0",
+      "source/0.0.0.0.1.3.2",
+      "source/0.0.0.0.1.3.2.0.0",
+      "source/0.0.0.0.1.3.3",
+      "source/0.0.0.0.1.3.3.0.0",
+      "source/row-border/0.0.0.0.1.3",
+      "source/0.0::before"
+    ],
+    "sourceAutoSizingPreserved": true
+  },
+  "fontBinding": {
+    "scope": "mixed_source_font_file_effect_diagnostic",
+    "status": "OBSERVED",
+    "fontFiles": {
+      "Arial": {
+        "path": "C:/Windows/Fonts/arial.ttf",
+        "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+      },
+      "PingFang SC": {
+        "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Regular.otf",
+        "sha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a"
+      }
+    },
+    "referenceComponentIrSha256": "36aa8465c4d8fe6cfb9b31db977e2cebe10664b41253235a4458311d47932947",
+    "probeScriptSha256": "c83c229c73bb8486287563571d164b91a14f04229b33fcc86352406a78086a15",
+    "referenceMatches": [
+      {
+        "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+        "screenshotMatches": true,
+        "environmentMatches": true
+      }
+    ],
+    "observation": {
+      "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+      "fontLoadStatus": [
+        "loaded",
+        "loaded"
+      ],
+      "ownerGeometry": {
+        "before": [
+          {
+            "characters": "001",
+            "style": null,
+            "bounds": {
+              "x": 42,
+              "y": 39,
+              "width": 23.359375,
+              "height": 16,
+              "top": 39,
+              "right": 65.359375,
+              "bottom": 55,
+              "left": 42
+            }
+          },
+          {
+            "characters": "张三",
+            "style": null,
+            "bounds": {
+              "x": 202.15625,
+              "y": 39,
+              "width": 28,
+              "height": 16,
+              "top": 39,
+              "right": 230.15625,
+              "bottom": 55,
+              "left": 202.15625
+            }
+          },
+          {
+            "characters": "研发",
+            "style": null,
+            "bounds": {
+              "x": 442.40625,
+              "y": 39,
+              "width": 28,
+              "height": 16,
+              "top": 39,
+              "right": 470.40625,
+              "bottom": 55,
+              "left": 442.40625
+            }
+          },
+          {
+            "characters": "启用",
+            "style": null,
+            "bounds": {
+              "x": 762.734375,
+              "y": 39,
+              "width": 28,
+              "height": 16,
+              "top": 39,
+              "right": 790.734375,
+              "bottom": 55,
+              "left": 762.734375
+            }
+          },
+          {
+            "characters": "002",
+            "style": null,
+            "bounds": {
+              "x": 42,
+              "y": 87,
+              "width": 23.359375,
+              "height": 16,
+              "top": 87,
+              "right": 65.359375,
+              "bottom": 103,
+              "left": 42
+            }
+          },
+          {
+            "characters": "李四",
+            "style": null,
+            "bounds": {
+              "x": 202.15625,
+              "y": 87,
+              "width": 28,
+              "height": 16,
+              "top": 87,
+              "right": 230.15625,
+              "bottom": 103,
+              "left": 202.15625
+            }
+          },
+          {
+            "characters": "财务",
+            "style": null,
+            "bounds": {
+              "x": 442.40625,
+              "y": 87,
+              "width": 28,
+              "height": 16,
+              "top": 87,
+              "right": 470.40625,
+              "bottom": 103,
+              "left": 442.40625
+            }
+          },
+          {
+            "characters": "停用",
+            "style": null,
+            "bounds": {
+              "x": 762.734375,
+              "y": 87,
+              "width": 28,
+              "height": 16,
+              "top": 87,
+              "right": 790.734375,
+              "bottom": 103,
+              "left": 762.734375
+            }
+          },
+          {
+            "characters": "003",
+            "style": null,
+            "bounds": {
+              "x": 42,
+              "y": 135,
+              "width": 23.359375,
+              "height": 16,
+              "top": 135,
+              "right": 65.359375,
+              "bottom": 151,
+              "left": 42
+            }
+          },
+          {
+            "characters": "王五",
+            "style": null,
+            "bounds": {
+              "x": 202.15625,
+              "y": 135,
+              "width": 28,
+              "height": 16,
+              "top": 135,
+              "right": 230.15625,
+              "bottom": 151,
+              "left": 202.15625
+            }
+          },
+          {
+            "characters": "运营",
+            "style": null,
+            "bounds": {
+              "x": 442.40625,
+              "y": 135,
+              "width": 28,
+              "height": 16,
+              "top": 135,
+              "right": 470.40625,
+              "bottom": 151,
+              "left": 442.40625
+            }
+          },
+          {
+            "characters": "启用",
+            "style": null,
+            "bounds": {
+              "x": 762.734375,
+              "y": 135,
+              "width": 28,
+              "height": 16,
+              "top": 135,
+              "right": 790.734375,
+              "bottom": 151,
+              "left": 762.734375
+            }
+          },
+          {
+            "characters": "004",
+            "style": null,
+            "bounds": {
+              "x": 42,
+              "y": 183,
+              "width": 23.359375,
+              "height": 16,
+              "top": 183,
+              "right": 65.359375,
+              "bottom": 199,
+              "left": 42
+            }
+          },
+          {
+            "characters": "赵六",
+            "style": null,
+            "bounds": {
+              "x": 202.15625,
+              "y": 183,
+              "width": 28,
+              "height": 16,
+              "top": 183,
+              "right": 230.15625,
+              "bottom": 199,
+              "left": 202.15625
+            }
+          },
+          {
+            "characters": "客服",
+            "style": null,
+            "bounds": {
+              "x": 442.40625,
+              "y": 183,
+              "width": 28,
+              "height": 16,
+              "top": 183,
+              "right": 470.40625,
+              "bottom": 199,
+              "left": 442.40625
+            }
+          },
+          {
+            "characters": "启用",
+            "style": null,
+            "bounds": {
+              "x": 762.734375,
+              "y": 183,
+              "width": 28,
+              "height": 16,
+              "top": 183,
+              "right": 790.734375,
+              "bottom": 199,
+              "left": 762.734375
+            }
+          }
+        ],
+        "during": [
+          {
+            "characters": "001",
+            "style": null,
+            "bounds": {
+              "x": 42,
+              "y": 39,
+              "width": 23.359375,
+              "height": 16,
+              "top": 39,
+              "right": 65.359375,
+              "bottom": 55,
+              "left": 42
+            }
+          },
+          {
+            "characters": "张三",
+            "style": null,
+            "bounds": {
+              "x": 202.15625,
+              "y": 39,
+              "width": 28,
+              "height": 16,
+              "top": 39,
+              "right": 230.15625,
+              "bottom": 55,
+              "left": 202.15625
+            }
+          },
+          {
+            "characters": "研发",
+            "style": null,
+            "bounds": {
+              "x": 442.40625,
+              "y": 39,
+              "width": 28,
+              "height": 16,
+              "top": 39,
+              "right": 470.40625,
+              "bottom": 55,
+              "left": 442.40625
+            }
+          },
+          {
+            "characters": "启用",
+            "style": null,
+            "bounds": {
+              "x": 762.734375,
+              "y": 39,
+              "width": 28,
+              "height": 16,
+              "top": 39,
+              "right": 790.734375,
+              "bottom": 55,
+              "left": 762.734375
+            }
+          },
+          {
+            "characters": "002",
+            "style": null,
+            "bounds": {
+              "x": 42,
+              "y": 87,
+              "width": 23.359375,
+              "height": 16,
+              "top": 87,
+              "right": 65.359375,
+              "bottom": 103,
+              "left": 42
+            }
+          },
+          {
+            "characters": "李四",
+            "style": null,
+            "bounds": {
+              "x": 202.15625,
+              "y": 87,
+              "width": 28,
+              "height": 16,
+              "top": 87,
+              "right": 230.15625,
+              "bottom": 103,
+              "left": 202.15625
+            }
+          },
+          {
+            "characters": "财务",
+            "style": null,
+            "bounds": {
+              "x": 442.40625,
+              "y": 87,
+              "width": 28,
+              "height": 16,
+              "top": 87,
+              "right": 470.40625,
+              "bottom": 103,
+              "left": 442.40625
+            }
+          },
+          {
+            "characters": "停用",
+            "style": null,
+            "bounds": {
+              "x": 762.734375,
+              "y": 87,
+              "width": 28,
+              "height": 16,
+              "top": 87,
+              "right": 790.734375,
+              "bottom": 103,
+              "left": 762.734375
+            }
+          },
+          {
+            "characters": "003",
+            "style": null,
+            "bounds": {
+              "x": 42,
+              "y": 135,
+              "width": 23.359375,
+              "height": 16,
+              "top": 135,
+              "right": 65.359375,
+              "bottom": 151,
+              "left": 42
+            }
+          },
+          {
+            "characters": "王五",
+            "style": null,
+            "bounds": {
+              "x": 202.15625,
+              "y": 135,
+              "width": 28,
+              "height": 16,
+              "top": 135,
+              "right": 230.15625,
+              "bottom": 151,
+              "left": 202.15625
+            }
+          },
+          {
+            "characters": "运营",
+            "style": null,
+            "bounds": {
+              "x": 442.40625,
+              "y": 135,
+              "width": 28,
+              "height": 16,
+              "top": 135,
+              "right": 470.40625,
+              "bottom": 151,
+              "left": 442.40625
+            }
+          },
+          {
+            "characters": "启用",
+            "style": null,
+            "bounds": {
+              "x": 762.734375,
+              "y": 135,
+              "width": 28,
+              "height": 16,
+              "top": 135,
+              "right": 790.734375,
+              "bottom": 151,
+              "left": 762.734375
+            }
+          },
+          {
+            "characters": "004",
+            "style": null,
+            "bounds": {
+              "x": 42,
+              "y": 183,
+              "width": 23.359375,
+              "height": 16,
+              "top": 183,
+              "right": 65.359375,
+              "bottom": 199,
+              "left": 42
+            }
+          },
+          {
+            "characters": "赵六",
+            "style": null,
+            "bounds": {
+              "x": 202.15625,
+              "y": 183,
+              "width": 28,
+              "height": 16,
+              "top": 183,
+              "right": 230.15625,
+              "bottom": 199,
+              "left": 202.15625
+            }
+          },
+          {
+            "characters": "客服",
+            "style": null,
+            "bounds": {
+              "x": 442.40625,
+              "y": 183,
+              "width": 28,
+              "height": 16,
+              "top": 183,
+              "right": 470.40625,
+              "bottom": 199,
+              "left": 442.40625
+            }
+          },
+          {
+            "characters": "启用",
+            "style": null,
+            "bounds": {
+              "x": 762.734375,
+              "y": 183,
+              "width": 28,
+              "height": 16,
+              "top": 183,
+              "right": 790.734375,
+              "bottom": 199,
+              "left": 762.734375
+            }
+          }
+        ]
+      },
+      "ownerBoundsUnchanged": true,
+      "pngSha256": "1b12aa52a125e1ca68224318222ff272215edb1d3caec6077d87eca727e38a23"
+    },
+    "ownerStatesRestored": true,
+    "temporaryFontFacesRemoved": true,
+    "admissionEligible": false,
+    "fidelityGate": "NOT_RUN"
+  },
+  "glyphGeometry": {
+    "status": "PASS",
+    "Arial": {
+      "scope": "task019_exact_arial_encoding",
+      "status": "PASS",
+      "fontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+      "freetypeVersion": "2.13.2",
+      "freetypeBinarySha256": "090038852d6eb0dc75569f31fb92d6c98e829ca2639c9b6e8d8808032f9a7003",
+      "freetypeWrapperSha256": "aa2baf011511f89f04e8a135e6d398cd46bf86a3892add185177fccb88e66470",
+      "programSha256": "26aa24c6d431f5392b5db35989eef221e7eefd9aedf9ec079e944fa15a948cc8",
+      "observations": [
+        {
+          "textReference": "68:2",
+          "characters": ".",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "a64fc08686c428cf6251aa9ebb0e02f39fdc3a6d9a8caebed8e77bdb7b56b762",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:3",
+          "characters": "0",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "e2bc6ba1f7de72f3938e7798079194a231107316fd32f2527224ea0c12e71c4b",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:4",
+          "characters": "1",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "0a39bbae0232a378dc9a529188bf21f982f364350fbb88e0d79f1bf999c60e6b",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:5",
+          "characters": "2",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "2bdc2ef99697d0c15ec7c1a70151aca8fe85d2aeffc5274e3e64106f265434b6",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:6",
+          "characters": "3",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "89260fa9a71f98f595926b5781f4b17e377873a697a17841742cadaa21e6fcc5",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:7",
+          "characters": "4",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "2589233d0df96373c6dcc8fcfa24dc4489f6530a53d68ad2f98da273468ee39d",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:8",
+          "characters": "@",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "455/32",
+          "fixedBaselinePx": 15,
+          "svgSha256": "8146c66bb413767553958c19fb035dfc6c968390fc93b59b2399bf167b88ee8d",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:9",
+          "characters": "a",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "08668065d061352bb06091684583645fa640b5b70362315c1724f501afbb0543",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:10",
+          "characters": "c",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "fa8aaba8742099a17ecdc31da53c302d26b3bde34d781ff9dd504a8ec7d881fd",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:11",
+          "characters": "e",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "433e99e54b0a56c3515c938aa14076c59e965e43e496ef03308e2553e9e35376",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:12",
+          "characters": "h",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "5cae66b26296ec38f854ed4a75fb7d298315814b13ca4001db9a7f951017a0a7",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:13",
+          "characters": "i",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "399/128",
+          "fixedBaselinePx": 15,
+          "svgSha256": "e3fe15b4e3b97e86b7fb0ce3f1d7740336e2aa02c123ef9ae06d717f0b19b202",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:14",
+          "characters": "l",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "399/128",
+          "fixedBaselinePx": 15,
+          "svgSha256": "b77cbb8d6ba1e40650071e3171714de89b0a10f4b713c76a9cacdaec2b43e95a",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:15",
+          "characters": "m",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5971/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "7404b6473274df810b248a1a3874a497f854aaecac923f1d24d17f9ed9d7a5a0",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:16",
+          "characters": "n",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "ad264cb132104996a97a07cd9abecb8e26686c1ea2f34e12e920ee83e89e6382",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:17",
+          "characters": "o",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "7d381d664d647b78126ba27fdde1dc5be25b419539878915c868e2f71fe754eb",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:18",
+          "characters": "p",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "40d10e102f7fc40ece02960598de622aab8bf462172bc02e1876858d9d01c929",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:19",
+          "characters": "q",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "0ceb99d6e144b9c96f342455ed3b4b34a17ad8321a7683337bf0069ca67d3b5c",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:20",
+          "characters": "x",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "3dacd2e22c0bfb2bc6871e34a1863106a57d89d5f535b766b505be1289974c06",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:21",
+          "characters": "z",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "6c56187b370bc9f5b20557ca65db26dbd2df99df49494184fbe1076e7100450e",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:9",
+          "characters": "zhao@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "65485/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f16086a9188c29df7c4c175d7ff913d2b00576da20366b5a237d47161cfcaabf",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:15",
+          "characters": "qian@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "63497/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "fe0931a97071dd2e537ca3b1a37a8a8602c85496b22feaaaeaf121218847ac57",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:21",
+          "characters": "001",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "5e150fb9cfc456f7d42ff5460ade9bdbf562235ca5dd9daff1203c519b0d6691",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:31",
+          "characters": "002",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "41b9767971cf0e4a7578c33bb2e5a41d36eaad429c183952b9e20ea309c53c7e",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:41",
+          "characters": "003",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "8310a0d77424142198e5e9eae2dec73c752c8fb53731b2963a4339fe21d11e75",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:51",
+          "characters": "004",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f4b5aac170dbc8f0fd95d22c7162ab6f69e510e1748e84cfad99e4ec69b940b2",
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN"
+    },
+    "PingFang SC": "exact fixed-baseline directed CFF encoding"
+  },
+  "baselines": {
+    "status": "PASS",
+    "textSamples": [
+      {
+        "path": "0.0.0.0.1.0.0.0.0",
+        "characters": "001",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 15,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 28,
+        "textReference": "69:21",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.0.0.1.0.1.0.0",
+        "characters": "张三",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 15,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 28,
+        "textReference": "69:23",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.0.2.0.0",
+        "characters": "研发",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 15,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 28,
+        "textReference": "69:25",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.0.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 15,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 28,
+        "textReference": "69:27",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.1.0.0.0",
+        "characters": "002",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 63,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 76,
+        "textReference": "69:31",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.0.0.1.1.1.0.0",
+        "characters": "李四",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 76,
+        "textReference": "69:33",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.1.2.0.0",
+        "characters": "财务",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 76,
+        "textReference": "69:35",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.1.3.0.0",
+        "characters": "停用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 76,
+        "textReference": "69:37",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.2.0.0.0",
+        "characters": "003",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 111,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 124,
+        "textReference": "69:41",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.0.0.1.2.1.0.0",
+        "characters": "王五",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 124,
+        "textReference": "69:43",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.2.2.0.0",
+        "characters": "运营",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 124,
+        "textReference": "69:45",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.2.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 124,
+        "textReference": "69:47",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.3.0.0.0",
+        "characters": "004",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 159,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 172,
+        "textReference": "69:51",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.0.0.1.3.1.0.0",
+        "characters": "赵六",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 159,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 172,
+        "textReference": "69:53",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.3.2.0.0",
+        "characters": "客服",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 159,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 172,
+        "textReference": "69:55",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.3.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 159,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 172,
+        "textReference": "69:57",
+        "nativeBaselineOffset": 16
+      }
+    ]
+  },
+  "vectorBinding": {
+    "status": "PASS",
+    "captureSha256": "2c4a3a6b3a05a148999679469d7749994882b08697edd7655c824b912af0f04d",
+    "probe": {
+      "scope": "browser_raster_of_native_svg_diagnostic",
+      "status": "PASS",
+      "svgCaptureSha256": "2c4a3a6b3a05a148999679469d7749994882b08697edd7655c824b912af0f04d",
+      "referenceComponentIrSha256": "36aa8465c4d8fe6cfb9b31db977e2cebe10664b41253235a4458311d47932947",
+      "probeScriptSha256": "c3d1d39c95ab48c65cdf75e35d41be19bd4bded72121086b74464eda127fa773",
+      "referenceMatches": [
+        {
+          "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        }
+      ],
+      "environment": {
+        "browser": "153.0.8010.12",
+        "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+        "node": "v24.15.0",
+        "operatingSystem": {
+          "platform": "win32",
+          "release": "10.0.19045"
+        },
+        "viewport": {
+          "width": 1008,
+          "height": 400
+        },
+        "deviceScaleFactor": 1,
+        "locale": "zh-CN",
+        "fontsStatus": "loaded"
+      },
+      "samples": [
+        {
+          "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+          "componentReference": "69:18",
+          "svgSha256": "d676db2f35673c20b0e02770df0fd8f0500d67a495513e370c391f210ac4183f",
+          "browserBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 960,
+            "height": 192
+          },
+          "pngPath": "svg-raster-data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122.png",
+          "pngSha256": "941a44bcaefedde72b3253379391b1b4dd3f2bfd2d9bdfc586c87e2ddd645212"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Browser rendering of native outlined SVG is a diagnostic sample, not native Figma PNG or editable component admission.",
+        "Official DOM/CSS/reference images are preserved; font hinting in live text is not represented by outlined SVG."
+      ]
+    }
+  },
+  "content": {
+    "status": "PASS"
+  },
+  "renderState": {
+    "status": "PASS",
+    "nativeEvidenceSha256": "3087138c98c012b87bed436c9820ec397ade312cb1289fd748eaa4c23ab4c337"
+  },
+  "sourceReproduction": [
+    {
+      "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "retentionSourceProbe": "b92d99e6cd379207c9671de3e07659c12030b65b18fcb50f0f41cdd63adbf658"
+}

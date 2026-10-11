@@ -1,0 +1,9 @@
+{
+  "programs": {
+    "headed_table_pdf_proof.py": "90532dbf318c033fbcaa9f29be6429f81dad8f0d7bbf402322ccb8aee374622e",
+    "headed_table_svg_probe.mjs": "12ffea696edab8d2aabb745ad5fc0a75558419e7faed3e71d9a4641200de6bcf",
+    "headed_table_vector_proof.py": "154a092ef029446ce5d795bb5cf2f4b5f1b4b5be358b7af52152b0890d40f9ed"
+  },
+  "productionAdmission": false,
+  "fidelityGate": "NOT_RUN"
+}

@@ -1,0 +1,42 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {
+    "width": 768,
+    "height": 400
+  },
+  "containerWidth": 720,
+  "cases": [
+    {
+      "logicalId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+      "componentType": "Table",
+      "variant": "default",
+      "props": {
+        "showHeader": false,
+        "border": false,
+        "stripe": false,
+        "columns": [
+          {
+            "title": "姓名",
+            "key": "name",
+            "width": 240
+          },
+          {
+            "title": "邮箱",
+            "key": "email",
+            "width": 480
+          }
+        ],
+        "data": [
+          {
+            "name": "赵六",
+            "email": "zhao@example.com"
+          },
+          {
+            "name": "钱七",
+            "email": "qian@example.com"
+          }
+        ]
+      }
+    }
+  ]
+}

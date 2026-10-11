@@ -1,0 +1,87 @@
+{
+  "version": "0.1.0",
+  "scope": "headed_official_table_source",
+  "requestSha256": "5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+  "casesSha256": "4e6b4bd9cd08a85421903afca957ad2d93df5da33fd1a1177ac23c2b41c00825",
+  "requestFileSha256": "e9c1a1a52cc7efe80b1ac504a0221b083a2663baf9ae0cca71178cc0586393fe",
+  "casesFileSha256": "6f75b3d59f6d9328fd0447ddaf83cefdc93ffde3b31cdc829393e3704c1f2c77",
+  "programs": {
+    "table-request.mjs": "d062ac8c680afe58b9d5afc595dae69491b230903147b428bf0a570015d5eb1f",
+    "headed-table-request.mjs": "6cbdf8af0d462ec25810d84da1494be4a087e3af5fd2789c8550b77dec3ee72b",
+    "headed-table-extract.mjs": "afe93f86fffeee5e024023eca0f08beb377a7899313fab9cc09958bc97b90427",
+    "configurable-table-harness.js": "3bea57d277b01eadd78f9606f75772d97238afd7969f92ec5d5cfa8418f089a0",
+    "extract.mjs": "9516eb8741a3de363c8cd9cf8f7296f9badcd4b96fe8692d5d8cd7b780145ee6"
+  },
+  "nativeExecution": "NOT_RUN",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false,
+  "status": "PASS",
+  "observation": {
+    "headers": [
+      "编号",
+      "姓名",
+      "部门",
+      "状态"
+    ],
+    "headerCells": [
+      {
+        "x": 24,
+        "y": 24,
+        "width": 160.15625,
+        "height": 38.875
+      },
+      {
+        "x": 184.15625,
+        "y": 24,
+        "width": 240.25,
+        "height": 38.875
+      },
+      {
+        "x": 424.40625,
+        "y": 24,
+        "width": 320.328125,
+        "height": 38.875
+      },
+      {
+        "x": 744.734375,
+        "y": 24,
+        "width": 240.265625,
+        "height": 38.875
+      }
+    ],
+    "rows": [
+      [
+        "001",
+        "张三",
+        "研发",
+        "启用"
+      ],
+      [
+        "002",
+        "李四",
+        "财务",
+        "停用"
+      ],
+      [
+        "003",
+        "王五",
+        "运营",
+        "启用"
+      ],
+      [
+        "004",
+        "赵六",
+        "客服",
+        "启用"
+      ]
+    ],
+    "rootWidth": 960
+  },
+  "componentId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+  "componentIrSha256": "88a5928b583a43b4007943268aad1a7150a346dd685bf3440b2fb6667ada8155",
+  "runtimeManifestSha256": "7144c275624dddd1938e2c7f7584711d60552e0bdf41a5a439e9a09b43e36080",
+  "screenshot": {
+    "path": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25.png",
+    "sha256": "6283af61df4d0e150b2f35306eae5989144076b27ffc7619e00881fdd0ba7bcf"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "figma_native_capture_artifacts",
+  "status": "PASS",
+  "evidenceScope": "production",
+  "captureId": "task019/data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72/69:4",
+  "exporterVersion": "figma-native-export-v0.1.1",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "componentReference": "69:4",
+  "logicalId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+  "nativeEvidenceSha256": "962978473ac47cd1449bd1469cb7df50008b1ccb298e810c71a7f81fc3a1fba0",
+  "nativePngSha256": "25990c689fcf7c60219481fe858a664eebe6ef2cdc9c7cabd5b854e896e17954",
+  "comparisonPngSha256": "3ac1ed33a5c835444debbe3b511cbb904ab0ff5d89da9f9063572af4fe89f62a",
+  "pixelSize": [
+    720,
+    96
+  ],
+  "normalization": {
+    "operation": "alpha-composite-on-white",
+    "resize": false,
+    "crop": false,
+    "scale": 1
+  },
+  "fidelityGate": "NOT_RUN",
+  "admissionEligible": false,
+  "limitations": [
+    "Native transport validation does not establish CSS equivalence or platform authenticity.",
+    "Per-glyph metrics and full independent Fidelity Capture mapping remain pending."
+  ],
+  "files": {
+    "native-evidence.json": "962978473ac47cd1449bd1469cb7df50008b1ccb298e810c71a7f81fc3a1fba0",
+    "native.png": "25990c689fcf7c60219481fe858a664eebe6ef2cdc9c7cabd5b854e896e17954",
+    "comparison-white.png": "3ac1ed33a5c835444debbe3b511cbb904ab0ff5d89da9f9063572af4fe89f62a"
+  }
+}

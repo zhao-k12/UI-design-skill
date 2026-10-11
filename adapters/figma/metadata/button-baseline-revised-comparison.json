@@ -1,0 +1,1232 @@
+{
+  "scope": "figma_candidate_diagnostic_batch",
+  "status": "FAIL",
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "components": [
+    {
+      "scope": "figma_candidate_diagnostic",
+      "status": "FAIL",
+      "logicalId": "action.button.primary.medium",
+      "componentType": "Button",
+      "evidenceScope": "production",
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "checks": [
+        {
+          "field": "root.width",
+          "status": "PASS",
+          "expected": 60,
+          "actual": 60
+        },
+        {
+          "field": "root.height",
+          "status": "PASS",
+          "expected": 32,
+          "actual": 32
+        },
+        {
+          "field": "button.bounds",
+          "status": "PASS",
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 32
+          },
+          "actual": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 32
+          }
+        },
+        {
+          "field": "button.fill",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(45, 140, 240)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 0.9411764740943909,
+                "g": 0.5490196347236633,
+                "r": 0.1764705926179886
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "button.stroke",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(45, 140, 240)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 0.9411764740943909,
+                "g": 0.5490196347236633,
+                "r": 0.1764705926179886
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "button.strokeWeight",
+          "status": "PASS",
+          "expected": 1.0,
+          "actual": 1
+        },
+        {
+          "field": "button.strokeAlign",
+          "status": "PASS",
+          "expected": "INSIDE",
+          "actual": "INSIDE"
+        },
+        {
+          "field": "button.radius",
+          "status": "PASS",
+          "expected": 4.0,
+          "actual": 4
+        },
+        {
+          "field": "button.padding.top",
+          "status": "PASS",
+          "expected": 0.0,
+          "actual": 0
+        },
+        {
+          "field": "button.padding.right",
+          "status": "PASS",
+          "expected": 15.0,
+          "actual": 15
+        },
+        {
+          "field": "button.padding.bottom",
+          "status": "PASS",
+          "expected": 0.0,
+          "actual": 0
+        },
+        {
+          "field": "button.padding.left",
+          "status": "PASS",
+          "expected": 15.0,
+          "actual": 15
+        },
+        {
+          "field": "button.sourceSpanParent",
+          "status": "PASS",
+          "expected": "12:4",
+          "actual": "12:4"
+        },
+        {
+          "field": "button.labelParent",
+          "status": "PASS",
+          "expected": "16:2",
+          "actual": "16:2"
+        },
+        {
+          "field": "button.labelLayoutBounds",
+          "status": "PASS",
+          "expected": {
+            "x": 16,
+            "y": 5.5,
+            "width": 28,
+            "height": 21
+          },
+          "actual": {
+            "x": 16,
+            "y": 5.5,
+            "width": 28,
+            "height": 21
+          }
+        },
+        {
+          "field": "button.sourceSpanFill",
+          "status": "PASS",
+          "expected": [],
+          "actual": []
+        },
+        {
+          "field": "button.sourceSpanStroke",
+          "status": "PASS",
+          "expected": [],
+          "actual": []
+        },
+        {
+          "field": "button.sourceSpanClips",
+          "status": "PASS",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "field": "button.labelOffsetX",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "field": "label.characters",
+          "status": "PASS",
+          "expected": "查询",
+          "actual": "查询"
+        },
+        {
+          "field": "label.fontSize",
+          "status": "PASS",
+          "expected": 14.0,
+          "actual": 14
+        },
+        {
+          "field": "label.fontWeight",
+          "status": "PASS",
+          "expected": 400,
+          "actual": 400
+        },
+        {
+          "field": "label.color",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(255, 255, 255)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 1,
+                "g": 1,
+                "r": 1
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "label.fontFamily",
+          "status": "PASS",
+          "expected": "PingFang SC",
+          "actual": "PingFang SC"
+        },
+        {
+          "field": "label.fontBinding",
+          "status": "PASS",
+          "expected": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          },
+          "actual": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          }
+        },
+        {
+          "field": "label.lineHeight",
+          "status": "PASS",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 21.0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 21
+          }
+        },
+        {
+          "field": "raster.size",
+          "status": "PASS",
+          "expected": [
+            60,
+            32
+          ],
+          "actual": [
+            60,
+            32
+          ]
+        },
+        {
+          "field": "raster.changedPixels",
+          "status": "FAIL",
+          "expected": 0,
+          "actual": 317
+        }
+      ],
+      "issues": [],
+      "unverified": [
+        "Per-glyph bounds and complete CSS-normalized visible-node observations.",
+        "Button glyph baseline alignment is a separate measured diagnostic, not inferred from its source span bounds."
+      ],
+      "raster": {
+        "changedPixels": 317,
+        "totalPixels": 1920,
+        "referenceSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+        "candidateSha256": "d71f04472994070b4c2c8ebaca843f3e3583e72a9f76946a915633c14e7827a7",
+        "locations": {
+          "changedPixels": 317,
+          "changedPixelBounds": [
+            0,
+            0,
+            60,
+            32
+          ],
+          "maximumChannelDelta": 197,
+          "pixelsWithMaximumDeltaAtMost16": 53,
+          "insideObservedTextRunUnion": 289,
+          "outsideObservedTextRunUnion": 28,
+          "observedTextRegions": [
+            {
+              "path": "0.0",
+              "textRunIndex": 0,
+              "bounds": {
+                "x": 16,
+                "y": 7.5,
+                "width": 28,
+                "height": 16
+              },
+              "changedPixels": 289
+            }
+          ],
+          "unresolvedTextRegions": [],
+          "classification": "Pixel-center containment in observed reference text boxes only. Outside does not imply nontext; missing placeholder/pseudo glyph boxes remain unknown.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        },
+        "supplementalLocations": {
+          "changedPixels": 317,
+          "changedPixelBounds": [
+            0,
+            0,
+            60,
+            32
+          ],
+          "maximumChannelDelta": 197,
+          "pixelsWithMaximumDeltaAtMost16": 53,
+          "insideObservedTextRunUnion": 289,
+          "outsideObservedTextRunUnion": 28,
+          "observedTextRegions": [
+            {
+              "path": "supplemental:0:snapshot-layout",
+              "textRunIndex": 0,
+              "bounds": {
+                "x": 16,
+                "y": 7.5,
+                "width": 28,
+                "height": 16
+              },
+              "changedPixels": 289
+            }
+          ],
+          "unresolvedTextRegions": [],
+          "classification": "Pixel-center containment in observed reference text boxes only. Outside does not imply nontext; missing placeholder/pseudo glyph boxes remain unknown.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        },
+        "surfacePartition": {
+          "sourcePath": "0",
+          "sourceRadiusPx": 4.0,
+          "cornerRectangles": [
+            {
+              "x": 0,
+              "y": 0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 0,
+              "y": 28.0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 56.0,
+              "y": 0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 56.0,
+              "y": 28.0,
+              "width": 4.0,
+              "height": 4.0
+            }
+          ],
+          "categories": {
+            "observedText": {
+              "changedPixels": 289,
+              "maximumChannelDelta": 197
+            },
+            "sourceCornerRectangles": {
+              "changedPixels": 28,
+              "maximumChannelDelta": 17
+            },
+            "unclassified": {
+              "changedPixels": 0,
+              "maximumChannelDelta": 0
+            }
+          },
+          "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        }
+      },
+      "captureId": "button-baseline-revision-v1"
+    },
+    {
+      "scope": "figma_candidate_diagnostic",
+      "status": "FAIL",
+      "logicalId": "form.input.default.medium",
+      "componentType": "Input",
+      "evidenceScope": "production",
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "checks": [
+        {
+          "field": "root.width",
+          "status": "PASS",
+          "expected": 240,
+          "actual": 240
+        },
+        {
+          "field": "root.height",
+          "status": "PASS",
+          "expected": 32,
+          "actual": 32
+        },
+        {
+          "field": "root.transparentFill",
+          "status": "PASS",
+          "expected": [],
+          "actual": []
+        },
+        {
+          "field": "root.noStroke",
+          "status": "PASS",
+          "expected": [],
+          "actual": []
+        },
+        {
+          "field": "field.parent",
+          "status": "PASS",
+          "expected": "12:8",
+          "actual": "12:8"
+        },
+        {
+          "field": "field.bounds",
+          "status": "PASS",
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "width": 240,
+            "height": 32
+          },
+          "actual": {
+            "x": 0,
+            "y": 0,
+            "width": 240,
+            "height": 32
+          }
+        },
+        {
+          "field": "field.fill",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(255, 255, 255)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 1,
+                "g": 1,
+                "r": 1
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "field.stroke",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(220, 222, 226)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 0.886274516582489,
+                "g": 0.8705882430076599,
+                "r": 0.8627451062202454
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "field.strokeWeight",
+          "status": "PASS",
+          "expected": 1.0,
+          "actual": 1
+        },
+        {
+          "field": "field.strokeAlign",
+          "status": "PASS",
+          "expected": "INSIDE",
+          "actual": "INSIDE"
+        },
+        {
+          "field": "field.radius",
+          "status": "PASS",
+          "expected": 4.0,
+          "actual": 4
+        },
+        {
+          "field": "field.padding.top",
+          "status": "PASS",
+          "expected": 4.0,
+          "actual": 4
+        },
+        {
+          "field": "field.padding.right",
+          "status": "PASS",
+          "expected": 7.0,
+          "actual": 7
+        },
+        {
+          "field": "field.padding.bottom",
+          "status": "PASS",
+          "expected": 4.0,
+          "actual": 4
+        },
+        {
+          "field": "field.padding.left",
+          "status": "PASS",
+          "expected": 7.0,
+          "actual": 7
+        },
+        {
+          "field": "placeholder.parent",
+          "status": "PASS",
+          "expected": "12:6",
+          "actual": "12:6"
+        },
+        {
+          "field": "placeholder.characters",
+          "status": "PASS",
+          "expected": "请输入姓名",
+          "actual": "请输入姓名"
+        },
+        {
+          "field": "placeholder.fontSize",
+          "status": "PASS",
+          "expected": 14.0,
+          "actual": 14
+        },
+        {
+          "field": "placeholder.fontWeight",
+          "status": "PASS",
+          "expected": 400,
+          "actual": 400
+        },
+        {
+          "field": "placeholder.color",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(197, 200, 206)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 0.8078431487083435,
+                "g": 0.7843137383460999,
+                "r": 0.772549033164978
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "placeholder.fontFamily",
+          "status": "PASS",
+          "expected": "PingFang SC",
+          "actual": "PingFang SC"
+        },
+        {
+          "field": "placeholder.fontBinding",
+          "status": "PASS",
+          "expected": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          },
+          "actual": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          }
+        },
+        {
+          "field": "raster.size",
+          "status": "PASS",
+          "expected": [
+            240,
+            32
+          ],
+          "actual": [
+            240,
+            32
+          ]
+        },
+        {
+          "field": "raster.changedPixels",
+          "status": "FAIL",
+          "expected": 0,
+          "actual": 675
+        }
+      ],
+      "issues": [],
+      "unverified": [
+        "Per-glyph bounds and complete CSS-normalized visible-node observations.",
+        "placeholder: CSS normal line-height requires actual font metrics; native AUTO does not establish equivalence."
+      ],
+      "raster": {
+        "changedPixels": 675,
+        "totalPixels": 7680,
+        "referenceSha256": "3c940cc44ef9cd1048a3ca8fcae8366b30eb22fc4866bbb8a75de3186d5b9855",
+        "candidateSha256": "f6e483965eb85c47d7943076d83465fb6d3354f0ec09f0715dd3a3e91e437688",
+        "locations": {
+          "changedPixels": 675,
+          "changedPixelBounds": [
+            0,
+            0,
+            240,
+            32
+          ],
+          "maximumChannelDelta": 47,
+          "pixelsWithMaximumDeltaAtMost16": 367,
+          "insideObservedTextRunUnion": 0,
+          "outsideObservedTextRunUnion": 675,
+          "observedTextRegions": [],
+          "unresolvedTextRegions": [],
+          "classification": "Pixel-center containment in observed reference text boxes only. Outside does not imply nontext; missing placeholder/pseudo glyph boxes remain unknown.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        },
+        "supplementalLocations": {
+          "changedPixels": 675,
+          "changedPixelBounds": [
+            0,
+            0,
+            240,
+            32
+          ],
+          "maximumChannelDelta": 47,
+          "pixelsWithMaximumDeltaAtMost16": 367,
+          "insideObservedTextRunUnion": 640,
+          "outsideObservedTextRunUnion": 35,
+          "observedTextRegions": [
+            {
+              "path": "supplemental:0:user-agent-shadow",
+              "textRunIndex": 0,
+              "bounds": {
+                "x": 8,
+                "y": 8,
+                "width": 70,
+                "height": 16
+              },
+              "changedPixels": 640
+            }
+          ],
+          "unresolvedTextRegions": [],
+          "classification": "Pixel-center containment in observed reference text boxes only. Outside does not imply nontext; missing placeholder/pseudo glyph boxes remain unknown.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        },
+        "surfacePartition": {
+          "sourcePath": "0.1",
+          "sourceRadiusPx": 4.0,
+          "cornerRectangles": [
+            {
+              "x": 0,
+              "y": 0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 0,
+              "y": 28.0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 236.0,
+              "y": 0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 236.0,
+              "y": 28.0,
+              "width": 4.0,
+              "height": 4.0
+            }
+          ],
+          "categories": {
+            "observedText": {
+              "changedPixels": 640,
+              "maximumChannelDelta": 47
+            },
+            "sourceCornerRectangles": {
+              "changedPixels": 35,
+              "maximumChannelDelta": 4
+            },
+            "unclassified": {
+              "changedPixels": 0,
+              "maximumChannelDelta": 0
+            }
+          },
+          "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        }
+      },
+      "captureId": "0vGWSRoLxBiVPXiZ8xJAX9/form.input.default.medium/12:8"
+    },
+    {
+      "scope": "figma_candidate_diagnostic",
+      "status": "FAIL",
+      "logicalId": "form.select.default.medium",
+      "componentType": "Select",
+      "evidenceScope": "production",
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "checks": [
+        {
+          "field": "root.width",
+          "status": "PASS",
+          "expected": 240,
+          "actual": 240
+        },
+        {
+          "field": "root.height",
+          "status": "PASS",
+          "expected": 32,
+          "actual": 32
+        },
+        {
+          "field": "root.transparentFill",
+          "status": "PASS",
+          "expected": [],
+          "actual": []
+        },
+        {
+          "field": "root.noStroke",
+          "status": "PASS",
+          "expected": [],
+          "actual": []
+        },
+        {
+          "field": "field.parent",
+          "status": "PASS",
+          "expected": "12:15",
+          "actual": "12:15"
+        },
+        {
+          "field": "field.bounds",
+          "status": "PASS",
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "width": 240,
+            "height": 32
+          },
+          "actual": {
+            "x": 0,
+            "y": 0,
+            "width": 240,
+            "height": 32
+          }
+        },
+        {
+          "field": "field.fill",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(255, 255, 255)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 1,
+                "g": 1,
+                "r": 1
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "field.stroke",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(220, 222, 226)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 0.886274516582489,
+                "g": 0.8705882430076599,
+                "r": 0.8627451062202454
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "field.strokeWeight",
+          "status": "PASS",
+          "expected": 1.0,
+          "actual": 1
+        },
+        {
+          "field": "field.strokeAlign",
+          "status": "PASS",
+          "expected": "INSIDE",
+          "actual": "INSIDE"
+        },
+        {
+          "field": "field.radius",
+          "status": "PASS",
+          "expected": 4.0,
+          "actual": 4
+        },
+        {
+          "field": "field.padding.top",
+          "status": "PASS",
+          "expected": 0.0,
+          "actual": 0
+        },
+        {
+          "field": "field.padding.right",
+          "status": "PASS",
+          "expected": 0.0,
+          "actual": 0
+        },
+        {
+          "field": "field.padding.bottom",
+          "status": "PASS",
+          "expected": 0.0,
+          "actual": 0
+        },
+        {
+          "field": "field.padding.left",
+          "status": "PASS",
+          "expected": 0.0,
+          "actual": 0
+        },
+        {
+          "field": "content.parent",
+          "status": "PASS",
+          "expected": "12:10",
+          "actual": "12:10"
+        },
+        {
+          "field": "selectedSlot.parent",
+          "status": "PASS",
+          "expected": "12:11",
+          "actual": "12:11"
+        },
+        {
+          "field": "selected.parent",
+          "status": "PASS",
+          "expected": "12:12",
+          "actual": "12:12"
+        },
+        {
+          "field": "selected.characters",
+          "status": "PASS",
+          "expected": "启用",
+          "actual": "启用"
+        },
+        {
+          "field": "selected.fontSize",
+          "status": "PASS",
+          "expected": 14.0,
+          "actual": 14
+        },
+        {
+          "field": "selected.fontWeight",
+          "status": "PASS",
+          "expected": 400,
+          "actual": 400
+        },
+        {
+          "field": "selected.color",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(81, 90, 110)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 0.4313725531101227,
+                "g": 0.3529411852359772,
+                "r": 0.3176470696926117
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "selected.fontFamily",
+          "status": "PASS",
+          "expected": "PingFang SC",
+          "actual": "PingFang SC"
+        },
+        {
+          "field": "selected.fontBinding",
+          "status": "PASS",
+          "expected": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          },
+          "actual": {
+            "family": "PingFang SC",
+            "style": "Regular"
+          }
+        },
+        {
+          "field": "selected.lineHeight",
+          "status": "PASS",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 30.0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 30
+          }
+        },
+        {
+          "field": "source/0.0.1.bounds",
+          "status": "PASS",
+          "expected": {
+            "x": 1,
+            "y": 1,
+            "width": 238,
+            "height": 30
+          },
+          "actual": {
+            "x": 1,
+            "y": 1,
+            "width": 238,
+            "height": 30
+          }
+        },
+        {
+          "field": "source/selected-value.bounds",
+          "status": "PASS",
+          "expected": {
+            "x": 1,
+            "y": 1,
+            "width": 238,
+            "height": 30
+          },
+          "actual": {
+            "x": 1,
+            "y": 1,
+            "width": 238,
+            "height": 30
+          }
+        },
+        {
+          "field": "arrow.parent",
+          "status": "PASS",
+          "expected": "12:11",
+          "actual": "12:11"
+        },
+        {
+          "field": "arrow.characters",
+          "status": "PASS",
+          "expected": "",
+          "actual": ""
+        },
+        {
+          "field": "arrow.fontSize",
+          "status": "PASS",
+          "expected": 14.0,
+          "actual": 14
+        },
+        {
+          "field": "arrow.fontWeight",
+          "status": "PASS",
+          "expected": 400,
+          "actual": 400
+        },
+        {
+          "field": "arrow.color",
+          "status": "PASS",
+          "expected": {
+            "cssRgb": "rgb(128, 134, 149)",
+            "opacity": 1
+          },
+          "actual": [
+            {
+              "blendMode": "NORMAL",
+              "boundVariables": {},
+              "color": {
+                "b": 0.5843137502670288,
+                "g": 0.5254902243614197,
+                "r": 0.501960813999176
+              },
+              "opacity": 1,
+              "type": "SOLID",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "field": "arrow.fontFamily",
+          "status": "PASS",
+          "expected": "Ionicons",
+          "actual": "Ionicons"
+        },
+        {
+          "field": "arrow.fontBinding",
+          "status": "PASS",
+          "expected": {
+            "family": "Ionicons",
+            "style": "Regular"
+          },
+          "actual": {
+            "family": "Ionicons",
+            "style": "Regular"
+          }
+        },
+        {
+          "field": "arrow.lineHeight",
+          "status": "PASS",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 14.0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 14
+          }
+        },
+        {
+          "field": "arrow.bounds",
+          "status": "PASS",
+          "expected": {
+            "x": 217,
+            "y": 9,
+            "width": 14,
+            "height": 14
+          },
+          "actual": {
+            "x": 217,
+            "y": 9,
+            "width": 14,
+            "height": 14
+          }
+        },
+        {
+          "field": "arrow.positioning",
+          "status": "PASS",
+          "expected": "ABSOLUTE",
+          "actual": "ABSOLUTE"
+        },
+        {
+          "field": "raster.size",
+          "status": "PASS",
+          "expected": [
+            240,
+            32
+          ],
+          "actual": [
+            240,
+            32
+          ]
+        },
+        {
+          "field": "raster.changedPixels",
+          "status": "FAIL",
+          "expected": 0,
+          "actual": 311
+        }
+      ],
+      "issues": [],
+      "unverified": [
+        "Per-glyph bounds and complete CSS-normalized visible-node observations."
+      ],
+      "raster": {
+        "changedPixels": 311,
+        "totalPixels": 7680,
+        "referenceSha256": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+        "candidateSha256": "a23c44f51058fe59682dccd7843aaa37c75cb485a59bbcfb77ee340065b4fd45",
+        "locations": {
+          "changedPixels": 311,
+          "changedPixelBounds": [
+            0,
+            0,
+            240,
+            32
+          ],
+          "maximumChannelDelta": 120,
+          "pixelsWithMaximumDeltaAtMost16": 90,
+          "insideObservedTextRunUnion": 242,
+          "outsideObservedTextRunUnion": 69,
+          "observedTextRegions": [
+            {
+              "path": "0.0.1.0",
+              "textRunIndex": 0,
+              "bounds": {
+                "x": 9,
+                "y": 8,
+                "width": 28,
+                "height": 16
+              },
+              "changedPixels": 242
+            }
+          ],
+          "unresolvedTextRegions": [],
+          "classification": "Pixel-center containment in observed reference text boxes only. Outside does not imply nontext; missing placeholder/pseudo glyph boxes remain unknown.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        },
+        "supplementalLocations": {
+          "changedPixels": 311,
+          "changedPixelBounds": [
+            0,
+            0,
+            240,
+            32
+          ],
+          "maximumChannelDelta": 120,
+          "pixelsWithMaximumDeltaAtMost16": 90,
+          "insideObservedTextRunUnion": 276,
+          "outsideObservedTextRunUnion": 35,
+          "observedTextRegions": [
+            {
+              "path": "supplemental:0:snapshot-layout",
+              "textRunIndex": 0,
+              "bounds": {
+                "x": 9,
+                "y": 8,
+                "width": 28,
+                "height": 16
+              },
+              "changedPixels": 242
+            },
+            {
+              "path": "supplemental:1:snapshot-layout",
+              "textRunIndex": 0,
+              "bounds": {
+                "x": 217,
+                "y": 9,
+                "width": 14,
+                "height": 14
+              },
+              "changedPixels": 34
+            }
+          ],
+          "unresolvedTextRegions": [],
+          "classification": "Pixel-center containment in observed reference text boxes only. Outside does not imply nontext; missing placeholder/pseudo glyph boxes remain unknown.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        },
+        "surfacePartition": {
+          "sourcePath": "0.0",
+          "sourceRadiusPx": 4.0,
+          "cornerRectangles": [
+            {
+              "x": 0,
+              "y": 0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 0,
+              "y": 28.0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 236.0,
+              "y": 0,
+              "width": 4.0,
+              "height": 4.0
+            },
+            {
+              "x": 236.0,
+              "y": 28.0,
+              "width": 4.0,
+              "height": 4.0
+            }
+          ],
+          "categories": {
+            "observedText": {
+              "changedPixels": 276,
+              "maximumChannelDelta": 120
+            },
+            "sourceCornerRectangles": {
+              "changedPixels": 35,
+              "maximumChannelDelta": 4
+            },
+            "unclassified": {
+              "changedPixels": 0,
+              "maximumChannelDelta": 0
+            }
+          },
+          "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+          "cause": "UNDETERMINED",
+          "admissionEligible": false
+        }
+      },
+      "captureId": "0vGWSRoLxBiVPXiZ8xJAX9/form.select.default.medium/12:15"
+    }
+  ]
+}

@@ -1,0 +1,666 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "FONT_RANGE_REAPPLIED",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "60977a61-dfea-80ea-8008-c4e4eda0adb3",
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "60977a61-dfea-80ea-8008-c4e4edd79b63",
+      "60977a61-dfea-80ea-8008-c4e4edf246cd",
+      "60977a61-dfea-80ea-8008-c4e4ee18c2ed",
+      "60977a61-dfea-80ea-8008-c4e4ee33e489",
+      "60977a61-dfea-80ea-8008-c4e4ee584aaa",
+      "60977a61-dfea-80ea-8008-c4e4ee6de2fe",
+      "60977a61-dfea-80ea-8008-c4e4ef0e119b",
+      "60977a61-dfea-80ea-8008-c4e4ef2c28d1",
+      "60977a61-dfea-80ea-8008-c4e4ef49dcb8",
+      "60977a61-dfea-80ea-8008-c4e4ef6a99a8",
+      "60977a61-dfea-80ea-8008-c4e4ef9c5fa4",
+      "60977a61-dfea-80ea-8008-c4e4efb96764",
+      "60977a61-dfea-80ea-8008-c4e4efd63a6d",
+      "60977a61-dfea-80ea-8008-c4e4eff493ff",
+      "60977a61-dfea-80ea-8008-c4e4f023f23d",
+      "60977a61-dfea-80ea-8008-c4e4f040db2b",
+      "60977a61-dfea-80ea-8008-c4e4f05b7ff5",
+      "60977a61-dfea-80ea-8008-c4e4f07661c5",
+      "60977a61-dfea-80ea-8008-c4e4f0a8cd86",
+      "60977a61-dfea-80ea-8008-c4e4f0c6c572",
+      "60977a61-dfea-80ea-8008-c4e4f0e1fa58",
+      "60977a61-dfea-80ea-8008-c4e4f0fa4774",
+      "60977a61-dfea-80ea-8008-c4e4f1276b85",
+      "60977a61-dfea-80ea-8008-c4e4f140f5ae",
+      "60977a61-dfea-80ea-8008-c4e4f15b8b9e",
+      "60977a61-dfea-80ea-8008-c4e4f175bfe3"
+    ],
+    "observations": [
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4edd79b63",
+        "characters": "姓名",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 600,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4edf246cd",
+        "characters": "邮箱",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 600,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ee18c2ed",
+        "characters": "赵六",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ee33e489",
+        "characters": "zhao@example.com",
+        "sourceFontFamily": "Arial",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ee584aaa",
+        "characters": "钱七",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ee6de2fe",
+        "characters": "qian@example.com",
+        "sourceFontFamily": "Arial",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ef0e119b",
+        "characters": "编号",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 600,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ef2c28d1",
+        "characters": "姓名",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 600,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ef49dcb8",
+        "characters": "部门",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 600,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ef6a99a8",
+        "characters": "状态",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 600,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-600",
+          "fontSize": "14",
+          "fontWeight": "600",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4ef9c5fa4",
+        "characters": "001",
+        "sourceFontFamily": "Arial",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4efb96764",
+        "characters": "张三",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4efd63a6d",
+        "characters": "研发",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4eff493ff",
+        "characters": "启用",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f023f23d",
+        "characters": "002",
+        "sourceFontFamily": "Arial",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f040db2b",
+        "characters": "李四",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f05b7ff5",
+        "characters": "财务",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f07661c5",
+        "characters": "停用",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f0a8cd86",
+        "characters": "003",
+        "sourceFontFamily": "Arial",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f0c6c572",
+        "characters": "王五",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f0e1fa58",
+        "characters": "运营",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f0fa4774",
+        "characters": "启用",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f1276b85",
+        "characters": "004",
+        "sourceFontFamily": "Arial",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-b65bc280-c7a5-8006-8008-c4950e2dd987",
+          "fontFamily": "Arial",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f140f5ae",
+        "characters": "赵六",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f15b8b9e",
+        "characters": "客服",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      },
+      {
+        "textReference": "60977a61-dfea-80ea-8008-c4e4f175bfe3",
+        "characters": "启用",
+        "sourceFontFamily": "PingFang SC",
+        "sourceFontWeight": 400,
+        "beforeRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        },
+        "afterRange": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontFamily": "PingFang SC",
+          "fontVariantId": "normal-400",
+          "fontSize": "14",
+          "fontWeight": "400",
+          "lineHeight": "1.1428571428571428",
+          "letterSpacing": "0"
+        }
+      }
+    ],
+    "fidelityGate": "NOT_RUN",
+    "admissionEligible": false
+  }
+}

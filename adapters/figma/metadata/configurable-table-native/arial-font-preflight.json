@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"scope\":\"task019-source-font-preflight\",\"fileReference\":\"0vGWSRoLxBiVPXiZ8xJAX9\",\"fonts\":[{\"fontName\":{\"family\":\"PingFang SC\",\"style\":\"Regular\"}}],\"createdNodeIds\":[],\"mutatedNodeIds\":[],\"fidelityGate\":\"NOT_RUN\"}"
+    }
+  ],
+  "isError": false
+}

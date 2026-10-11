@@ -1,0 +1,12 @@
+[
+  {
+    "case": "two-column",
+    "captureSha256": "db53e73dad5b51399c815cd04436c19e0568b84bdf1680294509ae5927eff8ba",
+    "status": "PASS"
+  },
+  {
+    "case": "four-column",
+    "captureSha256": "d4d5ac295af1eaecbdc71b083c4da7947324190f12b838d3b5e61bfa7af32ccd",
+    "status": "PASS"
+  }
+]

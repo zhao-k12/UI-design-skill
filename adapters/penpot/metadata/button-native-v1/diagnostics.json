@@ -1,0 +1,37 @@
+{
+  "status": "FAIL",
+  "platform": "penpot",
+  "evidenceKind": "native-candidate-diagnostic",
+  "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+  "componentReference": "10f3de97-3a09-806f-8008-c0aff4ac5af0",
+  "penpotVersion": "2.18.3",
+  "nativeTextSvgSha256": "e9a310f898ed02fce52c3a43f1c6eae9a5e77b933a32112a4197903df669bc84",
+  "issues": [
+    {
+      "code": "native_font_asset_url_incomplete",
+      "observedUrls": [
+        "https://design.penpot.app/assets/by-id/"
+      ]
+    },
+    {
+      "code": "outline_is_text_frame",
+      "nativePath": "M400,80L428,80L428,101L400,101L400,80"
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "requiredProofsComplete": false,
+  "rawReceiptPaths": [
+    "adapters/penpot/metadata/button-native-v1/capture.json",
+    "adapters/penpot/metadata/button-native-v1/outline.json"
+  ],
+  "resourceReadStatus": "HTTP_403; no font bytes obtained",
+  "evidenceSha256": {
+    "capture.json": "b334c78d31dd3c5ad3e5c644322912bc714c5859bb435e53fa7b27e282b956f1",
+    "outline.json": "8d1af8d43097049d5b5966c2cc59018a651ff12db40dea8daabd1a0422202952",
+    "creation.json": "3608f64c50898870df55fbb3993b0f975d4c6310cf21c60cb0bea576cb27065b",
+    "native.png": "e1920956a65f07b6871db9024b2ae1fca7c3f513816530369142504962e7e42e",
+    "native.svg": "5b4b38eedd79ee44357faa86a0120e37cc2febb1e256e6f4985fc187d8fadcc9",
+    "native-text.svg": "e9a310f898ed02fce52c3a43f1c6eae9a5e77b933a32112a4197903df669bc84"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "scope": "browser_font_file_binding_diagnostic",
+  "status": "PASS",
+  "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+  "probeScriptSha256": "1412812202a19efb253bc031d0c82a0ac073845fa327b33e7db86294c0ba3365",
+  "referenceMatches": [
+    {
+      "logicalId": "data.table.default",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "observations": [
+    {
+      "logicalId": "data.table.default",
+      "pngPath": "file-bound-data.table.default.png",
+      "pngSha256": "a2730f5b7f2e386d5a7ff1a9779841d73c359b2e90009aa80a2e5f1e1e99b02a",
+      "ownerBoundsUnchanged": true,
+      "ownerGeometry": {
+        "before": [
+          {
+            "style": null,
+            "bounds": "{\"x\":42,\"y\":39,\"width\":28,\"height\":16,\"top\":39,\"right\":70,\"bottom\":55,\"left\":42}"
+          },
+          {
+            "style": null,
+            "bounds": "{\"x\":506.328125,\"y\":39,\"width\":28,\"height\":16,\"top\":39,\"right\":534.328125,\"bottom\":55,\"left\":506.328125}"
+          },
+          {
+            "style": null,
+            "bounds": "{\"x\":970.65625,\"y\":39,\"width\":42,\"height\":16,\"top\":39,\"right\":1012.65625,\"bottom\":55,\"left\":970.65625}"
+          },
+          {
+            "style": null,
+            "bounds": "{\"x\":42,\"y\":87,\"width\":28,\"height\":16,\"top\":87,\"right\":70,\"bottom\":103,\"left\":42}"
+          },
+          {
+            "style": null,
+            "bounds": "{\"x\":506.328125,\"y\":87,\"width\":28,\"height\":16,\"top\":87,\"right\":534.328125,\"bottom\":103,\"left\":506.328125}"
+          },
+          {
+            "style": null,
+            "bounds": "{\"x\":970.65625,\"y\":87,\"width\":28,\"height\":16,\"top\":87,\"right\":998.65625,\"bottom\":103,\"left\":970.65625}"
+          },
+          {
+            "style": null,
+            "bounds": "{\"x\":42,\"y\":135,\"width\":28,\"height\":16,\"top\":135,\"right\":70,\"bottom\":151,\"left\":42}"
+          },
+          {
+            "style": null,
+            "bounds": "{\"x\":506.328125,\"y\":135,\"width\":28,\"height\":16,\"top\":135,\"right\":534.328125,\"bottom\":151,\"left\":506.328125}"
+          },
+          {
+            "style": null,
+            "bounds": "{\"x\":970.65625,\"y\":135,\"width\":28,\"height\":16,\"top\":135,\"right\":998.65625,\"bottom\":151,\"left\":970.65625}"
+          }
+        ],
+        "during": [
+          {
+            "bounds": "{\"x\":42,\"y\":39,\"width\":28,\"height\":16,\"top\":39,\"right\":70,\"bottom\":55,\"left\":42}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          },
+          {
+            "bounds": "{\"x\":506.328125,\"y\":39,\"width\":28,\"height\":16,\"top\":39,\"right\":534.328125,\"bottom\":55,\"left\":506.328125}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          },
+          {
+            "bounds": "{\"x\":970.65625,\"y\":39,\"width\":42,\"height\":16,\"top\":39,\"right\":1012.65625,\"bottom\":55,\"left\":970.65625}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          },
+          {
+            "bounds": "{\"x\":42,\"y\":87,\"width\":28,\"height\":16,\"top\":87,\"right\":70,\"bottom\":103,\"left\":42}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          },
+          {
+            "bounds": "{\"x\":506.328125,\"y\":87,\"width\":28,\"height\":16,\"top\":87,\"right\":534.328125,\"bottom\":103,\"left\":506.328125}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          },
+          {
+            "bounds": "{\"x\":970.65625,\"y\":87,\"width\":28,\"height\":16,\"top\":87,\"right\":998.65625,\"bottom\":103,\"left\":970.65625}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          },
+          {
+            "bounds": "{\"x\":42,\"y\":135,\"width\":28,\"height\":16,\"top\":135,\"right\":70,\"bottom\":151,\"left\":42}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          },
+          {
+            "bounds": "{\"x\":506.328125,\"y\":135,\"width\":28,\"height\":16,\"top\":135,\"right\":534.328125,\"bottom\":151,\"left\":506.328125}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          },
+          {
+            "bounds": "{\"x\":970.65625,\"y\":135,\"width\":28,\"height\":16,\"top\":135,\"right\":998.65625,\"bottom\":151,\"left\":970.65625}",
+            "family": "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+          }
+        ]
+      },
+      "computedFamily": [
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "\"Helvetica Neue\", Helvetica, DiagnosticFilePingFang, \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif"
+      ],
+      "fontLoadStatus": "loaded"
+    }
+  ],
+  "referenceComponentIrSha256": "0624e587babae50f4f5b44a1c0bccf44100fb4679c332630e0272acbd118c33f",
+  "temporaryFontFaceRemoved": true,
+  "ownerStatesRestored": true,
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Temporary explicit font-file binding is a diagnostic experiment, not an alteration of the official reference.",
+    "Native uploaded-file bytes and renderer behavior remain independent."
+  ]
+}

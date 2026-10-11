@@ -1,0 +1,9 @@
+{
+  "scope": "figma_native_capture_integrity",
+  "status": "PASS",
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "issues": [],
+  "captureId": "task009-icon-native-export-20261006",
+  "evidenceScope": "production"
+}

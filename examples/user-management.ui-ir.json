@@ -1,0 +1,525 @@
+{
+  "uiIrVersion": "0.1.0",
+  "documentId": "example.user-management",
+  "pages": [
+    {
+      "id": "users.page",
+      "type": "Page",
+      "name": "用户管理",
+      "sourceIds": [
+        "prototype.users"
+      ],
+      "layout": {
+        "width": {
+          "mode": "fixed",
+          "value": {
+            "token": "size.page"
+          }
+        },
+        "height": {
+          "mode": "hug"
+        },
+        "direction": "vertical",
+        "padding": {
+          "top": {
+            "token": "spacing.page"
+          },
+          "right": {
+            "token": "spacing.page"
+          },
+          "bottom": {
+            "token": "spacing.page"
+          },
+          "left": {
+            "token": "spacing.page"
+          }
+        },
+        "gap": {
+          "token": "spacing.section"
+        }
+      },
+      "style": {
+        "fill": {
+          "token": "color.page"
+        }
+      },
+      "children": [
+        {
+          "id": "users.header",
+          "type": "Section",
+          "name": "Header",
+          "children": [
+            {
+              "id": "users.title",
+              "type": "Text",
+              "text": "用户管理",
+              "style": {
+                "typographyToken": {
+                  "token": "typography.heading"
+                },
+                "colorToken": {
+                  "token": "color.text"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "users.query",
+          "type": "Section",
+          "name": "SearchSection",
+          "layout": {
+            "width": {
+              "mode": "fill"
+            },
+            "height": {
+              "mode": "hug"
+            },
+            "direction": "vertical",
+            "gap": {
+              "token": "spacing.md"
+            }
+          },
+          "children": [
+            {
+              "id": "users.query.grid",
+              "type": "Grid",
+              "layout": {
+                "gridColumns": 24,
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "hug"
+                },
+                "gap": {
+                  "token": "spacing.md"
+                },
+                "wrap": true
+              },
+              "children": [
+                {
+                  "id": "query.name.column",
+                  "type": "Column",
+                  "layout": {
+                    "span": 6,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    },
+                    "direction": "vertical"
+                  },
+                  "children": [
+                    {
+                      "id": "query.name.item",
+                      "type": "ComponentInstance",
+                      "componentId": "form.item.default",
+                      "props": {
+                        "label": "姓名"
+                      },
+                      "slots": {
+                        "label": [
+                          {
+                            "id": "query.name.label",
+                            "type": "Text",
+                            "text": "姓名"
+                          }
+                        ],
+                        "control": [
+                          {
+                            "id": "query.name.control",
+                            "type": "ComponentInstance",
+                            "componentId": "form.input.default.medium",
+                            "props": {
+                              "placeholder": "请输入姓名"
+                            },
+                            "layout": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "query.department.column",
+                  "type": "Column",
+                  "layout": {
+                    "span": 6,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    },
+                    "direction": "vertical"
+                  },
+                  "children": [
+                    {
+                      "id": "query.department.item",
+                      "type": "ComponentInstance",
+                      "componentId": "form.item.default",
+                      "props": {
+                        "label": "所属部门"
+                      },
+                      "slots": {
+                        "label": [
+                          {
+                            "id": "query.department.label",
+                            "type": "Text",
+                            "text": "所属部门"
+                          }
+                        ],
+                        "control": [
+                          {
+                            "id": "query.department.control",
+                            "type": "ComponentInstance",
+                            "componentId": "form.select.default.medium",
+                            "props": {
+                              "placeholder": "请选择部门",
+                              "options": [
+                                {
+                                  "label": "研发部",
+                                  "value": "engineering"
+                                },
+                                {
+                                  "label": "销售部",
+                                  "value": "sales"
+                                }
+                              ]
+                            },
+                            "layout": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "query.status.column",
+                  "type": "Column",
+                  "layout": {
+                    "span": 6,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    },
+                    "direction": "vertical"
+                  },
+                  "children": [
+                    {
+                      "id": "query.status.item",
+                      "type": "ComponentInstance",
+                      "componentId": "form.item.default",
+                      "props": {
+                        "label": "状态"
+                      },
+                      "slots": {
+                        "label": [
+                          {
+                            "id": "query.status.label",
+                            "type": "Text",
+                            "text": "状态"
+                          }
+                        ],
+                        "control": [
+                          {
+                            "id": "query.status.control",
+                            "type": "ComponentInstance",
+                            "componentId": "form.select.default.medium",
+                            "props": {
+                              "placeholder": "请选择状态",
+                              "options": [
+                                {
+                                  "label": "启用",
+                                  "value": "enabled"
+                                },
+                                {
+                                  "label": "停用",
+                                  "value": "disabled"
+                                }
+                              ]
+                            },
+                            "layout": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "query.created.column",
+                  "type": "Column",
+                  "layout": {
+                    "span": 6,
+                    "width": {
+                      "mode": "fill"
+                    },
+                    "height": {
+                      "mode": "hug"
+                    },
+                    "direction": "vertical"
+                  },
+                  "children": [
+                    {
+                      "id": "query.created.item",
+                      "type": "ComponentInstance",
+                      "componentId": "form.item.default",
+                      "props": {
+                        "label": "创建日期"
+                      },
+                      "slots": {
+                        "label": [
+                          {
+                            "id": "query.created.label",
+                            "type": "Text",
+                            "text": "创建日期"
+                          }
+                        ],
+                        "control": [
+                          {
+                            "id": "query.created.control",
+                            "type": "ComponentInstance",
+                            "componentId": "form.date-picker.default.medium",
+                            "props": {
+                              "placeholder": "请选择日期"
+                            },
+                            "layout": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "users.query.actions",
+              "type": "HorizontalStack",
+              "layout": {
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "alignment": {
+                  "main": "end",
+                  "cross": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "query.search",
+                  "type": "ComponentInstance",
+                  "componentId": "action.button.primary.medium",
+                  "props": {
+                    "label": "查询"
+                  },
+                  "slots": {
+                    "leading-icon": [
+                      {
+                        "id": "query.search.icon",
+                        "type": "IconInstance",
+                        "iconId": "remix.search-line",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": {
+                              "token": "size.icon"
+                            }
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": {
+                              "token": "size.icon"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "query.reset",
+                  "type": "ComponentInstance",
+                  "componentId": "action.button.default.medium",
+                  "props": {
+                    "label": "重置"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "users.toolbar",
+          "type": "Section",
+          "name": "Toolbar",
+          "children": [
+            {
+              "id": "users.toolbar.actions",
+              "type": "HorizontalStack",
+              "layout": {
+                "direction": "horizontal",
+                "gap": {
+                  "token": "spacing.sm"
+                },
+                "wrap": true
+              },
+              "children": [
+                {
+                  "id": "toolbar.add",
+                  "type": "ComponentInstance",
+                  "componentId": "action.button.primary.medium",
+                  "props": {
+                    "label": "新增用户"
+                  },
+                  "slots": {
+                    "leading-icon": [
+                      {
+                        "id": "toolbar.add.icon",
+                        "type": "IconInstance",
+                        "iconId": "remix.add-line",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": {
+                              "token": "size.icon"
+                            }
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": {
+                              "token": "size.icon"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "toolbar.export",
+                  "type": "ComponentInstance",
+                  "componentId": "action.button.default.medium",
+                  "props": {
+                    "label": "导出"
+                  },
+                  "slots": {
+                    "leading-icon": [
+                      {
+                        "id": "toolbar.export.icon",
+                        "type": "IconInstance",
+                        "iconId": "remix.download-line",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": {
+                              "token": "size.icon"
+                            }
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": {
+                              "token": "size.icon"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "users.table",
+          "type": "Section",
+          "name": "TableSection",
+          "layout": {
+            "width": {
+              "mode": "fill"
+            },
+            "height": {
+              "mode": "hug"
+            }
+          },
+          "children": [
+            {
+              "id": "users.table.instance",
+              "type": "ComponentInstance",
+              "componentId": "data.table.default",
+              "props": {
+                "columns": [
+                  {
+                    "key": "name",
+                    "title": "姓名"
+                  },
+                  {
+                    "key": "department",
+                    "title": "所属部门"
+                  },
+                  {
+                    "key": "status",
+                    "title": "状态"
+                  },
+                  {
+                    "key": "created",
+                    "title": "创建日期"
+                  }
+                ],
+                "rows": [
+                  {
+                    "name": "张三",
+                    "department": "研发部",
+                    "status": "启用",
+                    "created": "2026-10-01"
+                  }
+                ]
+              },
+              "layout": {
+                "width": {
+                  "mode": "fill"
+                },
+                "height": {
+                  "mode": "hug"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

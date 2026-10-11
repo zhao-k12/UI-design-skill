@@ -1,0 +1,752 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ui-design-skill:layout-tree:0.1.0",
+  "title": "Layout Tree V0.1",
+  "type": "object",
+  "properties": {
+    "layoutTreeVersion": {
+      "const": "0.1.0"
+    },
+    "pattern": {
+      "enum": [
+        "list-page",
+        "detail-page",
+        "form-page",
+        "dashboard-basic",
+        "sidebar-content"
+      ]
+    },
+    "page": {
+      "$ref": "#/$defs/page"
+    }
+  },
+  "required": [
+    "layoutTreeVersion",
+    "pattern",
+    "page"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+    },
+    "token": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "pattern": "^[a-zA-Z][a-zA-Z0-9_-]*\\.[a-zA-Z0-9_.-]+$"
+        }
+      },
+      "required": [
+        "token"
+      ],
+      "additionalProperties": false
+    },
+    "spacing": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string",
+              "pattern": "^spacing\\.[a-zA-Z0-9_.-]+$"
+            }
+          },
+          "required": [
+            "token"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "size": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "const": "fixed"
+            },
+            "value": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                {
+                  "$ref": "#/$defs/token"
+                }
+              ]
+            }
+          },
+          "required": [
+            "mode",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "enum": [
+                "fill",
+                "hug"
+              ]
+            }
+          },
+          "required": [
+            "mode"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "padding": {
+      "type": "object",
+      "properties": {
+        "top": {
+          "$ref": "#/$defs/spacing"
+        },
+        "right": {
+          "$ref": "#/$defs/spacing"
+        },
+        "bottom": {
+          "$ref": "#/$defs/spacing"
+        },
+        "left": {
+          "$ref": "#/$defs/spacing"
+        }
+      },
+      "required": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "additionalProperties": false
+    },
+    "alignment": {
+      "type": "object",
+      "properties": {
+        "main": {
+          "enum": [
+            "start",
+            "center",
+            "end",
+            "space-between"
+          ]
+        },
+        "cross": {
+          "enum": [
+            "start",
+            "center",
+            "end",
+            "stretch"
+          ]
+        }
+      },
+      "required": [
+        "main",
+        "cross"
+      ],
+      "additionalProperties": false
+    },
+    "layout": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "$ref": "#/$defs/size"
+        },
+        "height": {
+          "$ref": "#/$defs/size"
+        },
+        "padding": {
+          "$ref": "#/$defs/padding"
+        },
+        "gap": {
+          "$ref": "#/$defs/spacing"
+        },
+        "alignment": {
+          "$ref": "#/$defs/alignment"
+        },
+        "direction": {
+          "enum": [
+            "vertical",
+            "horizontal"
+          ]
+        },
+        "wrap": {
+          "type": "boolean"
+        },
+        "gridColumns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 24
+        },
+        "span": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 24
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "node": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "Frame",
+            "Section",
+            "Grid",
+            "Row",
+            "Column",
+            "VerticalStack",
+            "HorizontalStack",
+            "Cell"
+          ]
+        },
+        "role": {
+          "enum": [
+            "header",
+            "query",
+            "toolbar",
+            "table",
+            "pagination",
+            "field",
+            "action",
+            "content",
+            "sidebar",
+            "summary",
+            "detail",
+            "form",
+            "actions",
+            "metrics"
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "constraints": {
+          "type": "object",
+          "properties": {
+            "minWidth": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "$ref": "#/$defs/token"
+                }
+              ]
+            },
+            "minHeight": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "$ref": "#/$defs/token"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "measurement": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "number",
+              "minimum": 0
+            },
+            "height": {
+              "type": "number",
+              "minimum": 0
+            },
+            "source": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "test-fixture",
+                    "runtime"
+                  ]
+                },
+                "reference": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "kind",
+                "reference"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "width",
+            "height",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Cell"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "children"
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "children"
+            ],
+            "not": {
+              "required": [
+                "measurement"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Grid"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "layout"
+            ],
+            "properties": {
+              "layout": {
+                "required": [
+                  "gridColumns"
+                ],
+                "properties": {
+                  "gridColumns": {
+                    "const": 24
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Row"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "layout": {
+                "properties": {
+                  "direction": {
+                    "const": "horizontal"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "HorizontalStack"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "layout": {
+                "properties": {
+                  "direction": {
+                    "const": "horizontal"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Column"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "layout": {
+                "properties": {
+                  "direction": {
+                    "const": "vertical"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "VerticalStack"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "layout": {
+                "properties": {
+                  "direction": {
+                    "const": "vertical"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "page": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "const": "Page"
+        },
+        "role": {
+          "enum": [
+            "header",
+            "query",
+            "toolbar",
+            "table",
+            "pagination",
+            "field",
+            "action",
+            "content",
+            "sidebar",
+            "summary",
+            "detail",
+            "form",
+            "actions",
+            "metrics"
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "layout": {
+          "$ref": "#/$defs/layout"
+        },
+        "constraints": {
+          "type": "object",
+          "properties": {
+            "minWidth": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "$ref": "#/$defs/token"
+                }
+              ]
+            },
+            "minHeight": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "$ref": "#/$defs/token"
+                }
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "measurement": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "number",
+              "minimum": 0
+            },
+            "height": {
+              "type": "number",
+              "minimum": 0
+            },
+            "source": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "test-fixture",
+                    "runtime"
+                  ]
+                },
+                "reference": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "kind",
+                "reference"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "width",
+            "height",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Cell"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "children"
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "children"
+            ],
+            "not": {
+              "required": [
+                "measurement"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Grid"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "layout"
+            ],
+            "properties": {
+              "layout": {
+                "required": [
+                  "gridColumns"
+                ],
+                "properties": {
+                  "gridColumns": {
+                    "const": 24
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Row"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "layout": {
+                "properties": {
+                  "direction": {
+                    "const": "horizontal"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "HorizontalStack"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "layout": {
+                "properties": {
+                  "direction": {
+                    "const": "horizontal"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Column"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "layout": {
+                "properties": {
+                  "direction": {
+                    "const": "vertical"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "VerticalStack"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "layout": {
+                "properties": {
+                  "direction": {
+                    "const": "vertical"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

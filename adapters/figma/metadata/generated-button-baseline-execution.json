@@ -1,0 +1,111 @@
+{
+  "scope": "figma_button_candidate",
+  "status": "PASS",
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "createdNodeIds": [
+    "18:2",
+    "18:3",
+    "18:4",
+    "18:5"
+  ],
+  "mutatedNodeIds": [],
+  "issues": [],
+  "nativeObservation": {
+    "componentReference": "18:5",
+    "textReference": "18:3",
+    "spanReference": "18:4",
+    "spanBounds": {
+      "x": 16,
+      "y": 5.5,
+      "width": 28,
+      "height": 21
+    },
+    "textOffsetY": -1,
+    "calibrationEvidenceHashes": {
+      "official-runtime-complete-baseline-evidence.json": "7ae76fdb1f72605ff1ae7815716c13148d7ab53fb2738159d755821b3dc5fc71",
+      "native-text-outline-after-baseline-revision.json": "8ab12b6040934d949ea50ec9010faab550760fc8dcd7e515d14fc069774a3973",
+      "font-file-identity.json": "69dba6a4cca272184c0a6e830fd55b6f1684a4606a84f97a9a7a091ed479e193",
+      "official-native-candidate-execution.json": "6c47df751f215791411b0e8a62700646f48ef68a515e6de848d2ff7cda9d7c74"
+    },
+    "component": {
+      "type": "COMPONENT",
+      "width": 60,
+      "height": 32,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.1764705926179886,
+            "g": 0.5490196347236633,
+            "b": 0.9411764740943909
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.1764705926179886,
+            "g": 0.5490196347236633,
+            "b": 0.9411764740943909
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "cornerRadius": 4,
+      "paddingTop": 0,
+      "paddingRight": 15,
+      "paddingBottom": 0,
+      "paddingLeft": 15
+    },
+    "text": {
+      "type": "TEXT",
+      "characters": "查询",
+      "width": 28,
+      "height": 21,
+      "x": 0,
+      "y": -1,
+      "fontName": {
+        "family": "PingFang SC",
+        "style": "Regular"
+      },
+      "fontWeight": 400,
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    }
+  },
+  "executedScriptSha256": "3be83527fe1e50b4b756c44eb9706c2b8efbfa0b46eaa4687486448f0b9fa6b1",
+  "separateVerification": {
+    "nativeSvgExactlyMatchesCalibration": true,
+    "actualBaselineComponentY": 20.5,
+    "nativePngExactlyMatchesPriorRevision": true,
+    "fidelityPassed": false
+  }
+}

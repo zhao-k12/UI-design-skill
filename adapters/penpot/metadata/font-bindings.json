@@ -1,0 +1,30 @@
+{
+  "Noto Sans SC:400": {
+    "fontId": "gfont-noto-sans-sc",
+    "fontVariantId": "regular",
+    "family": "Noto Sans SC",
+    "weight": 400,
+    "style": "normal"
+  },
+  "Noto Sans SC:600": {
+    "fontId": "gfont-noto-sans-sc",
+    "fontVariantId": "600",
+    "family": "Noto Sans SC",
+    "weight": 600,
+    "style": "normal"
+  },
+  "PingFang SC:400": {
+    "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+    "fontVariantId": "normal-400",
+    "family": "PingFang SC",
+    "weight": 400,
+    "style": "normal"
+  },
+  "Ionicons:400": {
+    "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70e",
+    "fontVariantId": "normal-400",
+    "family": "Ionicons",
+    "weight": 400,
+    "style": "normal"
+  }
+}

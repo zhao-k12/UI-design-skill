@@ -1,0 +1,21 @@
+{
+  "status": "FAIL",
+  "adapterVersion": "0.1.0",
+  "issues": [
+    {
+      "code": "native_write_failed",
+      "detail": "Error: font_weight_mismatch: heading"
+    }
+  ],
+  "createdNodeIds": [
+    "4:2",
+    "4:3",
+    "4:4"
+  ],
+  "mutatedNodeIds": [],
+  "pageReference": "4:2",
+  "nodeMap": {
+    "native-page": "4:3"
+  },
+  "helperNodeIds": []
+}

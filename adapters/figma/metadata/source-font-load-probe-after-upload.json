@@ -1,0 +1,39 @@
+{
+  "scope": "figma_source_font_load_probe",
+  "status": "PASS",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "createdNodeIds": [],
+  "mutatedNodeIds": [],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "fonts": [
+    {
+      "fontName": {
+        "family": "PingFang SC",
+        "style": "Regular"
+      },
+      "postScriptName": "PingFangSC-Regular",
+      "sourceFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "listed": true,
+      "status": "LOAD_SUCCEEDED",
+      "loadSucceeded": true
+    },
+    {
+      "fontName": {
+        "family": "Ionicons",
+        "style": "Regular"
+      },
+      "postScriptName": "Ionicons",
+      "sourceFileSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+      "listed": true,
+      "status": "LOAD_SUCCEEDED",
+      "loadSucceeded": true
+    }
+  ],
+  "issues": [],
+  "availableFontCount": 8929,
+  "limitations": [
+    "Successful loading alone does not establish glyph equality or font-file identity in Figma.",
+    "Unlisted successful loads remain REVIEW; existing candidate guards are not bypassed."
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "scope": "observed-embedded-TTF-glyph-in-font-units",
+  "nativePdfSha256": "0ce0a4d661d832ffde69aff03042e0562341915462c133bd0cb218d1131ea619",
+  "sourceFontSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+  "embeddedFontSha256": "0aa9f05a5a7fc0f68c46001d3c0437a57d4630680f00f7f0d5a164fa88d4204c",
+  "resource": "/F5",
+  "character": "",
+  "cid": 26,
+  "postscriptName": "Ionicons",
+  "unitsPerEm": 1024,
+  "orderedCompleteContoursEqual": true,
+  "advanceAndBearingEqual": true,
+  "hintInstructionsEqual": true,
+  "sourceCommandCount": 7,
+  "nativeCommandCount": 7,
+  "advanceFontUnits": 1024,
+  "sourceCommands": [
+    [
+      "moveTo",
+      [
+        [
+          257,
+          640
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          192,
+          575
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          512,
+          256
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          832,
+          575
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          767,
+          640
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          512,
+          385
+        ]
+      ]
+    ],
+    [
+      "closePath",
+      []
+    ]
+  ],
+  "nativeCommands": [
+    [
+      "moveTo",
+      [
+        [
+          257,
+          640
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          192,
+          575
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          512,
+          256
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          832,
+          575
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          767,
+          640
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          512,
+          385
+        ]
+      ]
+    ],
+    [
+      "closePath",
+      []
+    ]
+  ],
+  "admissionEligible": false,
+  "limitations": [
+    "Only the observed glyph is compared; editable content, baseline and native PNG require separate proof."
+  ]
+}

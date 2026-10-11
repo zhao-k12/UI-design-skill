@@ -1,0 +1,42 @@
+{
+  "status": "OBSERVED",
+  "admissionEligible": false,
+  "results": [
+    {
+      "iconId": "remix.settings-3-line",
+      "nativePngSha256": "b3720de56d586dc3d1365369a2277bf65f2f867ba73027d1ab42fb461e778d95",
+      "dimensions": [
+        24,
+        24
+      ],
+      "sourcePixelsExact": false,
+      "changedPixels": 138,
+      "differenceBounds": [
+        2,
+        2,
+        22,
+        22
+      ],
+      "comparisonNormalization": "white-background-alpha-composite-only-no-resize-crop-or-shift",
+      "acceptance": "NOT_RUN"
+    },
+    {
+      "iconId": "remix.download-line",
+      "nativePngSha256": "b73d35c25355ba86dd3452975477a04bb54df26ae3c8e1fe98981bf5b455db43",
+      "dimensions": [
+        24,
+        24
+      ],
+      "sourcePixelsExact": false,
+      "changedPixels": 42,
+      "differenceBounds": [
+        3,
+        7,
+        21,
+        17
+      ],
+      "comparisonNormalization": "white-background-alpha-composite-only-no-resize-crop-or-shift",
+      "acceptance": "NOT_RUN"
+    }
+  ]
+}

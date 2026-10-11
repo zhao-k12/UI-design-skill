@@ -1,0 +1,293 @@
+{
+  "status": "PASS",
+  "scope": "headed-table-native-vector-geometry-and-source-raster-only",
+  "productionAdmission": false,
+  "fidelityGate": "NOT_RUN",
+  "nativeReceiptSha256": "8b5fc26462a4cd72d604062dc5bc047c61cddd8fe8398036c17647f3b20f7b56",
+  "probeSha256": "c6794035dc1a8ce5e3870d75e09c655789be9175a13d9fc8fbea0ce8a820068a",
+  "rectangles": [
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4eef45e14",
+      "bounds": {
+        "x": "0",
+        "y": "0",
+        "width": "960",
+        "height": "230.875"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f16bb0f7",
+      "bounds": {
+        "x": "720.734375",
+        "y": "182.875",
+        "width": "240.265625",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f151d225",
+      "bounds": {
+        "x": "400.40625",
+        "y": "182.875",
+        "width": "320.328125",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f13707cb",
+      "bounds": {
+        "x": "160.15625",
+        "y": "182.875",
+        "width": "240.25",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f11edf93",
+      "bounds": {
+        "x": "0",
+        "y": "182.875",
+        "width": "160.15625",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f185d94f",
+      "bounds": {
+        "x": "0",
+        "y": "229.875",
+        "width": "961",
+        "height": "1"
+      },
+      "fill": "#e8eaec"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f0f14283",
+      "bounds": {
+        "x": "720.734375",
+        "y": "134.875",
+        "width": "240.265625",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f0d8e8b2",
+      "bounds": {
+        "x": "400.40625",
+        "y": "134.875",
+        "width": "320.328125",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f0bc290b",
+      "bounds": {
+        "x": "160.15625",
+        "y": "134.875",
+        "width": "240.25",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f09e8d0c",
+      "bounds": {
+        "x": "0",
+        "y": "134.875",
+        "width": "160.15625",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f10b44bb",
+      "bounds": {
+        "x": "0",
+        "y": "181.875",
+        "width": "961",
+        "height": "1"
+      },
+      "fill": "#e8eaec"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f06c65e8",
+      "bounds": {
+        "x": "720.734375",
+        "y": "86.875",
+        "width": "240.265625",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f05222d0",
+      "bounds": {
+        "x": "400.40625",
+        "y": "86.875",
+        "width": "320.328125",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f034d7dc",
+      "bounds": {
+        "x": "160.15625",
+        "y": "86.875",
+        "width": "240.25",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f019f68a",
+      "bounds": {
+        "x": "0",
+        "y": "86.875",
+        "width": "160.15625",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f086ef55",
+      "bounds": {
+        "x": "0",
+        "y": "133.875",
+        "width": "961",
+        "height": "1"
+      },
+      "fill": "#e8eaec"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4efe985ea",
+      "bounds": {
+        "x": "720.734375",
+        "y": "38.875",
+        "width": "240.265625",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4efca984f",
+      "bounds": {
+        "x": "400.40625",
+        "y": "38.875",
+        "width": "320.328125",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4efac89b7",
+      "bounds": {
+        "x": "160.15625",
+        "y": "38.875",
+        "width": "240.25",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ef9314bc",
+      "bounds": {
+        "x": "0",
+        "y": "38.875",
+        "width": "160.15625",
+        "height": "48"
+      },
+      "fill": "#ffffff"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f0042358",
+      "bounds": {
+        "x": "0",
+        "y": "85.875",
+        "width": "961",
+        "height": "1"
+      },
+      "fill": "#e8eaec"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4eefd77c2",
+      "bounds": {
+        "x": "0",
+        "y": "0",
+        "width": "961",
+        "height": "38.875"
+      },
+      "fill": "#f8f8f9"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ef5d6cfa",
+      "bounds": {
+        "x": "720.734375",
+        "y": "0",
+        "width": "240.265625",
+        "height": "38.875"
+      },
+      "fill": "#f8f8f9"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ef3cac12",
+      "bounds": {
+        "x": "400.40625",
+        "y": "0",
+        "width": "320.328125",
+        "height": "38.875"
+      },
+      "fill": "#f8f8f9"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ef219627",
+      "bounds": {
+        "x": "160.15625",
+        "y": "0",
+        "width": "240.25",
+        "height": "38.875"
+      },
+      "fill": "#f8f8f9"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ef04a0d4",
+      "bounds": {
+        "x": "0",
+        "y": "0",
+        "width": "160.15625",
+        "height": "38.875"
+      },
+      "fill": "#f8f8f9"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4ef7c8971",
+      "bounds": {
+        "x": "0",
+        "y": "37.875",
+        "width": "961",
+        "height": "1"
+      },
+      "fill": "#e8eaec"
+    },
+    {
+      "reference": "60977a61-dfea-80ea-8008-c4e4f191972f",
+      "bounds": {
+        "x": "0",
+        "y": "229.875",
+        "width": "960",
+        "height": "1"
+      },
+      "fill": "#dcdee2"
+    }
+  ],
+  "changedPixels": 9600,
+  "outsideExactHorizontalRegions": 0,
+  "wholeTextAndNonHorizontalPixelsExactlyMatchSource": true
+}

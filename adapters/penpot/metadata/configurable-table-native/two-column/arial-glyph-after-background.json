@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "scope": "actual-embedded-cid-truetype-glyphs",
+  "resource": "/F4",
+  "sourceFontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+  "embeddedFontSha256": "732f5474ab5b33759b9d95abbadb3d677f83c78673f7f4fad49208f595f63174",
+  "nativePdfSha256": "2aa83d5e0c0bac3fe558919759385e6158949d11170da6eb07e6357c6008a13c",
+  "unitsPerEm": 2048,
+  "fontHintTablesEqual": {
+    "fpgm": true,
+    "prep": true,
+    "cvt ": true,
+    "gasp": true
+  },
+  "glyphs": [
+    {
+      "character": ".",
+      "cid": 17,
+      "sourceGlyph": "period",
+      "nativeGlyph": "period",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "@",
+      "cid": 35,
+      "sourceGlyph": "at",
+      "nativeGlyph": "at",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "a",
+      "cid": 68,
+      "sourceGlyph": "a",
+      "nativeGlyph": "a",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "c",
+      "cid": 70,
+      "sourceGlyph": "c",
+      "nativeGlyph": "c",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "e",
+      "cid": 72,
+      "sourceGlyph": "e",
+      "nativeGlyph": "e",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "h",
+      "cid": 75,
+      "sourceGlyph": "h",
+      "nativeGlyph": "h",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "i",
+      "cid": 76,
+      "sourceGlyph": "i",
+      "nativeGlyph": "i",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "l",
+      "cid": 79,
+      "sourceGlyph": "l",
+      "nativeGlyph": "l",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "m",
+      "cid": 80,
+      "sourceGlyph": "m",
+      "nativeGlyph": "m",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "n",
+      "cid": 81,
+      "sourceGlyph": "n",
+      "nativeGlyph": "n",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "o",
+      "cid": 82,
+      "sourceGlyph": "o",
+      "nativeGlyph": "o",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "p",
+      "cid": 83,
+      "sourceGlyph": "p",
+      "nativeGlyph": "p",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "q",
+      "cid": 84,
+      "sourceGlyph": "q",
+      "nativeGlyph": "q",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "x",
+      "cid": 91,
+      "sourceGlyph": "x",
+      "nativeGlyph": "x",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    },
+    {
+      "character": "z",
+      "cid": 93,
+      "sourceGlyph": "z",
+      "nativeGlyph": "z",
+      "orderedCoordinatesFlagsContoursEqual": true,
+      "instructionsEqual": true,
+      "advanceAndBearingEqual": true,
+      "pdfWidthSerializationEqual": true,
+      "status": "PASS"
+    }
+  ],
+  "admissionEligible": false
+}

@@ -1,0 +1,155 @@
+{
+  "scope": "official_table_runtime_supplement",
+  "status": "PASS",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 768,
+      "height": 400
+    },
+    "containerWidth": 720,
+    "cases": [
+      {
+        "logicalId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+        "componentType": "Table",
+        "variant": "default",
+        "props": {
+          "showHeader": false,
+          "border": false,
+          "stripe": false,
+          "columns": [
+            {
+              "title": "姓名",
+              "key": "name",
+              "width": 240
+            },
+            {
+              "title": "邮箱",
+              "key": "email",
+              "width": 480
+            }
+          ],
+          "data": [
+            {
+              "name": "赵六",
+              "email": "zhao@example.com"
+            },
+            {
+              "name": "钱七",
+              "email": "qian@example.com"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 768,
+      "height": 400
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "ae9937ce27ba6c2f37d52d0613184ee8e22cabf7635daf23f14296e9e0c822b7",
+    "harnessBundleSha256": "7372d133ed457c4dfb4516ed4fdd99a9d7e56e42ac3b7df5c4107872154a012c",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "9516eb8741a3de363c8cd9cf8f7296f9badcd4b96fe8692d5d8cd7b780145ee6"
+  },
+  "baselines": [
+    {
+      "characters": "赵六",
+      "range": {
+        "x": 18,
+        "y": 15,
+        "width": 28,
+        "height": 16
+      },
+      "baselineComponentY": 28,
+      "restored": true
+    },
+    {
+      "characters": "zhao@example.com",
+      "range": {
+        "x": 258.328125,
+        "y": 15,
+        "width": 127.828125,
+        "height": 16
+      },
+      "baselineComponentY": 28,
+      "restored": true
+    },
+    {
+      "characters": "钱七",
+      "range": {
+        "x": 18,
+        "y": 63,
+        "width": 28,
+        "height": 16
+      },
+      "baselineComponentY": 76,
+      "restored": true
+    },
+    {
+      "characters": "qian@example.com",
+      "range": {
+        "x": 258.328125,
+        "y": 63,
+        "width": 123.9375,
+        "height": 16
+      },
+      "baselineComponentY": 76,
+      "restored": true
+    }
+  ],
+  "fonts": [
+    [
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ],
+    [
+      {
+        "familyName": "Arial",
+        "postScriptName": "ArialMT",
+        "isCustomFont": false,
+        "glyphCount": 16
+      }
+    ],
+    [
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ],
+    [
+      {
+        "familyName": "Arial",
+        "postScriptName": "ArialMT",
+        "isCustomFont": false,
+        "glyphCount": 16
+      }
+    ]
+  ],
+  "referenceComponentIrSha256": "383e4a3e017a3a105f4d053fe4a464d371da2ddf51e1dda5eba989aca4d4b29e"
+}

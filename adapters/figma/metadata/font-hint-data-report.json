@@ -1,0 +1,410 @@
+{
+  "scope": "source_font_hint_diagnostic_batch",
+  "status": "REVIEW",
+  "fontIdentitySha256": "69dba6a4cca272184c0a6e830fd55b6f1684a4606a84f97a9a7a091ed479e193",
+  "observations": [
+    {
+      "scope": "source_font_hint_data_diagnostic",
+      "status": "REVIEW",
+      "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "outlineFormat": "CFF_TYPE2",
+      "glyphs": [
+        {
+          "character": "查",
+          "codepoint": "U+67E5",
+          "glyphName": "cid03761",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        },
+        {
+          "character": "询",
+          "codepoint": "U+8BE2",
+          "glyphName": "cid06595",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        }
+      ],
+      "globalHintTables": {
+        "fpgm": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "prep": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "cvt ": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "gasp": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      },
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "CFF observation expands subroutines for operator/data inspection, without executing grid fitting.",
+        "No glyph-local hints does not exclude private hint parameters, automatic hinting or engine-specific rasterization.",
+        "Font data does not establish which hints the browser or Figma applies."
+      ],
+      "familyName": "PingFang SC",
+      "characters": "查询"
+    },
+    {
+      "scope": "source_font_hint_data_diagnostic",
+      "status": "REVIEW",
+      "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "outlineFormat": "CFF_TYPE2",
+      "glyphs": [
+        {
+          "character": "请",
+          "codepoint": "U+8BF7",
+          "glyphName": "cid06615",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        },
+        {
+          "character": "输",
+          "codepoint": "U+8F93",
+          "glyphName": "cid06924",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        },
+        {
+          "character": "入",
+          "codepoint": "U+5165",
+          "glyphName": "cid01601",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        },
+        {
+          "character": "姓",
+          "codepoint": "U+59D3",
+          "glyphName": "cid02472",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        },
+        {
+          "character": "名",
+          "codepoint": "U+540D",
+          "glyphName": "cid01911",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        }
+      ],
+      "globalHintTables": {
+        "fpgm": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "prep": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "cvt ": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "gasp": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      },
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "CFF observation expands subroutines for operator/data inspection, without executing grid fitting.",
+        "No glyph-local hints does not exclude private hint parameters, automatic hinting or engine-specific rasterization.",
+        "Font data does not establish which hints the browser or Figma applies."
+      ],
+      "familyName": "PingFang SC",
+      "characters": "请输入姓名"
+    },
+    {
+      "scope": "source_font_hint_data_diagnostic",
+      "status": "REVIEW",
+      "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "outlineFormat": "CFF_TYPE2",
+      "glyphs": [
+        {
+          "character": "启",
+          "codepoint": "U+542F",
+          "glyphName": "cid01936",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        },
+        {
+          "character": "用",
+          "codepoint": "U+7528",
+          "glyphName": "cid04768",
+          "operatorCounts": {
+            "hstem": 0,
+            "vstem": 0,
+            "hstemhm": 0,
+            "vstemhm": 0,
+            "hintmask": 0,
+            "cntrmask": 0,
+            "callsubr": 0,
+            "callgsubr": 0
+          },
+          "stemHintCount": 0,
+          "explicitPrivateHintValues": {
+            "BlueValues": [
+              -69.0,
+              -69.0
+            ],
+            "StdHW": 64,
+            "StdVW": 70,
+            "LanguageGroup": 1
+          },
+          "subroutineExecutions": 0
+        }
+      ],
+      "globalHintTables": {
+        "fpgm": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "prep": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "cvt ": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "gasp": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      },
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "CFF observation expands subroutines for operator/data inspection, without executing grid fitting.",
+        "No glyph-local hints does not exclude private hint parameters, automatic hinting or engine-specific rasterization.",
+        "Font data does not establish which hints the browser or Figma applies."
+      ],
+      "familyName": "PingFang SC",
+      "characters": "启用"
+    },
+    {
+      "scope": "source_font_hint_data_diagnostic",
+      "status": "REVIEW",
+      "fontFileSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+      "outlineFormat": "TRUETYPE",
+      "glyphs": [
+        {
+          "character": "",
+          "codepoint": "U+F116",
+          "glyphName": "uniF116",
+          "instructionBytes": 0,
+          "instructionSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "globalHintTables": {
+        "fpgm": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "prep": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "cvt ": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "gasp": {
+          "present": true,
+          "bytes": 8,
+          "sha256": "4ca731f86ad506ac0e320283dc9461926346de3c4d91d539ea7f6620d3826940"
+        }
+      },
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "CFF observation expands subroutines for operator/data inspection, without executing grid fitting.",
+        "No glyph-local hints does not exclude private hint parameters, automatic hinting or engine-specific rasterization.",
+        "Font data does not establish which hints the browser or Figma applies."
+      ],
+      "familyName": "Ionicons",
+      "characters": ""
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "documentation": [
+    "https://learn.microsoft.com/en-us/typography/opentype/spec/cff",
+    "https://learn.microsoft.com/en-us/typography/opentype/spec/glyf"
+  ]
+}

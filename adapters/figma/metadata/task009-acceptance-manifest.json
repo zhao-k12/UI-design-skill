@@ -1,0 +1,23 @@
+{
+  "task": "TASK-009",
+  "status": "PASS",
+  "skillVersion": "0.1.0-dev",
+  "uiIrVersion": "0.1.0",
+  "fidelityPolicy": "0.2.0",
+  "componentLibraryVersion": "0.1.0-dev",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "inputs": {
+    "examples/adapter-fidelity-acceptance.ui-ir.json": "62e69bfaf7aa499d6478b20c3513abea3925061a784e4ba5b6cbc361a252a17f",
+    "registries/components/catalog.json": "01dd0c6cf055e27a03b0980c78319b1e7657296581e57bfdc5a9de5cc5ec07a3",
+    "registries/components/fidelity-reports.json": "9b7bafc923fa1ad8b26d7c338636eed656adc79e10adec8275b395964bb01841",
+    "registries/tokens/default.json": "95b33524d86927dbaf89a3b023373f61ef1cb5ca639f0ba52b4b1a8225a4acad",
+    "adapters/figma/compiler.py": "0284d852cb8daeaeecdda2506a63dc3464a3b65417e0b8d1cdb4e5b7e4bb1c77",
+    "adapters/figma/runtime.js": "9e8d7469af372dc9e15008e3eaf7dd805e26b5e10f47c32f7a682e21a4246e5e",
+    "adapters/figma/cross_renderer_normalization.py": "d5d8ee96bb9cae246c994b1249b0291b84d19b6512a62f3e930e06dc6642aa1e",
+    "adapters/figma/table_fidelity.py": "9099a04d746d2f6158deecc712e64aa6f7b3901fad78452287cf103d79f81505",
+    "validators/visual/cross_renderer.py": "4fd33ec70a201f41aba6e5308c1712726367740fbabb4534c2be373e9efd5d02"
+  },
+  "finalQaSha256": "9d9fb961ca4bb86913ca9f84698e702a58651fc33eb1a1a0d05f2dbdce0f7008",
+  "nativePagePngSha256": "17f4e77c7392af6e236a3b1a8b45dec3b8488672f5c4bd9633a317b58388dc5d",
+  "scope": "Fixed static Figma acceptance; dual-platform release deferred"
+}

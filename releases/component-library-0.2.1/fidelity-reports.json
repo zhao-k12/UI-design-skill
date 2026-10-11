@@ -1,0 +1,999 @@
+{
+  "action.button.primary.medium.native-0.2.0": {
+    "gateVersion": "0.2.0",
+    "scope": "production",
+    "logicalComponentId": "action.button.primary.medium",
+    "componentType": "Button",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "66d8984b25e8e3e080e864396eaf25f168fd2cf9395a6111628ed9ca7036ed4f",
+    "status": "PASS",
+    "admissionEligible": true,
+    "issues": [],
+    "checks": {
+      "geometryAndStyle": "PASS",
+      "screenshot": {
+        "changedPixels": 317,
+        "changedPixelsOutsideEdgeBand": 0,
+        "changedPixelsOutsidePermittedRegions": 0,
+        "maxChannelDelta": 197,
+        "policy": "evidence-bound-edges-0.2.0",
+        "vectorRasterSha256": "4350af088b2699808beec26e25b69072ed59856b57c4684f666f3ec465efbef8",
+        "edgeBandPixelCount": 609
+      },
+      "glyphRetention": [
+        {
+          "character": "查",
+          "sourceInkProxy": 86.02363162467415,
+          "nativeInkProxy": 63.665855777584696,
+          "retentionRatio": 0.7400972799586321,
+          "status": "PASS"
+        },
+        {
+          "character": "询",
+          "sourceInkProxy": 86.57063423110334,
+          "nativeInkProxy": 56.165942658557775,
+          "retentionRatio": 0.6487874688386922,
+          "status": "PASS"
+        }
+      ],
+      "normalizationProofs": {
+        "geometryAndStyle": "PASS",
+        "content": "PASS",
+        "fontBinding": "PASS",
+        "glyphGeometry": "PASS",
+        "baselines": "PASS",
+        "renderState": "PASS",
+        "sourceReproduction": "PASS",
+        "vectorBinding": "PASS"
+      }
+    },
+    "capture": {
+      "captureId": "render-state-v1/18:5",
+      "exporterVersion": "figma-native-export-v0.1.1",
+      "nativeEvidenceSha256": "d599d125eb90d3fff6d577e5de34c277a1a65eeb0b77ddf2b26b87a023e7c0d4",
+      "proofBundleSha256": "a75d6b852c155ed6d5706af7b4d784f92b08dafa7c42d4503b0c443fa08be52a"
+    },
+    "candidateSha256": "22b33eba206d27fd623e40716a8359cd565785df4d70b16476d5d494c73a1826",
+    "referenceScreenshotSha256": "377b2ea174242eaf9c271553d854926c89782a517cd6437d0c4e59f8926972f4",
+    "candidateScreenshotSha256": "d71f04472994070b4c2c8ebaca843f3e3583e72a9f76946a915633c14e7827a7",
+    "candidateEvidenceKind": "native-design-capture"
+  },
+  "form.input.default.medium.native-0.2.0": {
+    "gateVersion": "0.2.0",
+    "scope": "production",
+    "logicalComponentId": "form.input.default.medium",
+    "componentType": "Input",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "3cd50f6da424b69f5f71a7e7a71cf7e33b499c0b6bdd1d12d843a0df3f3c00eb",
+    "status": "PASS",
+    "admissionEligible": true,
+    "issues": [],
+    "checks": {
+      "geometryAndStyle": "PASS",
+      "screenshot": {
+        "changedPixels": 675,
+        "changedPixelsOutsideEdgeBand": 0,
+        "changedPixelsOutsidePermittedRegions": 0,
+        "maxChannelDelta": 47,
+        "policy": "evidence-bound-edges-0.2.0",
+        "vectorRasterSha256": "f775b894fda69a7dd0a446cb1234171a4f35e3aead2236b58a89666a26fd0c4c",
+        "edgeBandPixelCount": 2806
+      },
+      "glyphRetention": [
+        {
+          "character": "请",
+          "sourceInkProxy": 86.89510807736065,
+          "nativeInkProxy": 59.69021615472131,
+          "retentionRatio": 0.6869226297708328,
+          "status": "PASS"
+        },
+        {
+          "character": "输",
+          "sourceInkProxy": 104.95529010238914,
+          "nativeInkProxy": 68.0088737201366,
+          "retentionRatio": 0.6479794744389782,
+          "status": "PASS"
+        },
+        {
+          "character": "入",
+          "sourceInkProxy": 39.31467576791812,
+          "nativeInkProxy": 25.57133105802048,
+          "retentionRatio": 0.6504271129939575,
+          "status": "PASS"
+        },
+        {
+          "character": "姓",
+          "sourceInkProxy": 85.15733788395902,
+          "nativeInkProxy": 59.05711035267348,
+          "retentionRatio": 0.6935058307382574,
+          "status": "PASS"
+        },
+        {
+          "character": "名",
+          "sourceInkProxy": 71.65893060295795,
+          "nativeInkProxy": 49.034584755403834,
+          "retentionRatio": 0.6842773725872456,
+          "status": "PASS"
+        }
+      ],
+      "normalizationProofs": {
+        "geometryAndStyle": "PASS",
+        "content": "PASS",
+        "fontBinding": "PASS",
+        "glyphGeometry": "PASS",
+        "baselines": "PASS",
+        "renderState": "PASS",
+        "sourceReproduction": "PASS",
+        "vectorBinding": "PASS"
+      }
+    },
+    "capture": {
+      "captureId": "render-state-v1/12:8",
+      "exporterVersion": "figma-native-export-v0.1.1",
+      "nativeEvidenceSha256": "5eb78df9507342d72dbdcdefa271a8950e5d077e9f9c33fd58249527c7c66d87",
+      "proofBundleSha256": "7bfd24441a5a4e3fa7b3edff6e4020d1ac0940bc9aea02a25abe077af04893df"
+    },
+    "candidateSha256": "c85c51eab8ba245eba574e3047105598c1256f961aee766c4f396c1178c77ea1",
+    "referenceScreenshotSha256": "3c940cc44ef9cd1048a3ca8fcae8366b30eb22fc4866bbb8a75de3186d5b9855",
+    "candidateScreenshotSha256": "f6e483965eb85c47d7943076d83465fb6d3354f0ec09f0715dd3a3e91e437688",
+    "candidateEvidenceKind": "native-design-capture"
+  },
+  "form.select.default.medium.native-0.2.0": {
+    "gateVersion": "0.2.0",
+    "scope": "production",
+    "logicalComponentId": "form.select.default.medium",
+    "componentType": "Select",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "8510c62e4efced55ea261d95157c9ebd3d6541d547e4f9f8a5e493a2185a2bdc",
+    "status": "PASS",
+    "admissionEligible": true,
+    "issues": [],
+    "checks": {
+      "geometryAndStyle": "PASS",
+      "screenshot": {
+        "changedPixels": 311,
+        "changedPixelsOutsideEdgeBand": 0,
+        "changedPixelsOutsidePermittedRegions": 0,
+        "maxChannelDelta": 120,
+        "policy": "evidence-bound-edges-0.2.0",
+        "vectorRasterSha256": "0ad4eb890068be2e739ddd20ea2c2cc93d507288f0721bc2d20e5e54049b7534",
+        "edgeBandPixelCount": 2232
+      },
+      "glyphRetention": [
+        {
+          "character": "启",
+          "sourceInkProxy": 63.0992919542572,
+          "nativeInkProxy": 53.77699106028577,
+          "retentionRatio": 0.852259817737266,
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "sourceInkProxy": 67.6761200112065,
+          "nativeInkProxy": 61.34298194228662,
+          "retentionRatio": 0.9064199001380224,
+          "status": "PASS"
+        },
+        {
+          "character": "",
+          "sourceInkProxy": 15.159143931819262,
+          "nativeInkProxy": 14.52623434747417,
+          "retentionRatio": 0.9582489890463666,
+          "status": "PASS"
+        }
+      ],
+      "normalizationProofs": {
+        "geometryAndStyle": "PASS",
+        "content": "PASS",
+        "fontBinding": "PASS",
+        "glyphGeometry": "PASS",
+        "baselines": "PASS",
+        "renderState": "PASS",
+        "sourceReproduction": "PASS",
+        "vectorBinding": "PASS"
+      }
+    },
+    "capture": {
+      "captureId": "render-state-v1/12:15",
+      "exporterVersion": "figma-native-export-v0.1.1",
+      "nativeEvidenceSha256": "112f87b18bf15659724174e54512a2fec8aa18e01e88fb27b445ba44ad5019cd",
+      "proofBundleSha256": "dc945ddfb14eb91d0bd22e39fc5b1ecf58805e783b0426f23bf5f8042e2e3971"
+    },
+    "candidateSha256": "37d5fc829bd4bfef41f28cc193ecacd4e1523e98d88e72203f380c71f2deaa63",
+    "referenceScreenshotSha256": "a5b75597a1079927013cfd47f77fabad43779ddf2455c8027863736be196f12f",
+    "candidateScreenshotSha256": "a23c44f51058fe59682dccd7843aaa37c75cb485a59bbcfb77ee340065b4fd45",
+    "candidateEvidenceKind": "native-design-capture"
+  },
+  "data.table.default.native-0.2.0": {
+    "gateVersion": "0.2.0",
+    "scope": "production",
+    "logicalComponentId": "data.table.default",
+    "componentType": "Table",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "f4595874472457b7b34a51cf6c40e7022b88c963ba2a0a813b8d2383cfff35ea",
+    "status": "PASS",
+    "admissionEligible": true,
+    "issues": [],
+    "checks": {
+      "geometryAndStyle": "PASS",
+      "screenshot": {
+        "changedPixels": 2415,
+        "changedPixelsOutsideEdgeBand": 0,
+        "changedPixelsOutsidePermittedRegions": 0,
+        "maxChannelDelta": 152,
+        "policy": "evidence-bound-edges-0.2.0",
+        "vectorRasterSha256": "34713a919d320a55c09e539f67a7545948a1c0444470ad65c04d01cfe18708b6",
+        "edgeBandPixelCount": 22805
+      },
+      "glyphRetention": [
+        {
+          "character": "张",
+          "sourceInkProxy": 66.72633267962203,
+          "nativeInkProxy": 55.224104118381156,
+          "retentionRatio": 0.8276208492310321,
+          "status": "PASS"
+        },
+        {
+          "character": "三",
+          "sourceInkProxy": 32.73215240811962,
+          "nativeInkProxy": 32.10641061559227,
+          "retentionRatio": 0.9808829622713071,
+          "status": "PASS"
+        },
+        {
+          "character": "启",
+          "sourceInkProxy": 63.33970914092151,
+          "nativeInkProxy": 53.224651707714635,
+          "retentionRatio": 0.8403046434788268,
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "sourceInkProxy": 67.91494536841304,
+          "nativeInkProxy": 60.28626187504776,
+          "retentionRatio": 0.8876729790183508,
+          "status": "PASS"
+        },
+        {
+          "character": "管",
+          "sourceInkProxy": 74.18634592364316,
+          "nativeInkProxy": 66.45499579757023,
+          "retentionRatio": 0.8957847292542152,
+          "status": "PASS"
+        },
+        {
+          "character": "理",
+          "sourceInkProxy": 81.2978376588646,
+          "nativeInkProxy": 68.02520184397524,
+          "retentionRatio": 0.8367406047060819,
+          "status": "PASS"
+        },
+        {
+          "character": "员",
+          "sourceInkProxy": 56.683569773068776,
+          "nativeInkProxy": 49.33569773068791,
+          "retentionRatio": 0.8703703370871333,
+          "status": "PASS"
+        },
+        {
+          "character": "李",
+          "sourceInkProxy": 59.60061635636607,
+          "nativeInkProxy": 52.719315895372226,
+          "retentionRatio": 0.8845431325768691,
+          "status": "PASS"
+        },
+        {
+          "character": "四",
+          "sourceInkProxy": 73.45914728879613,
+          "nativeInkProxy": 56.523890176502036,
+          "retentionRatio": 0.7694602001611168,
+          "status": "PASS"
+        },
+        {
+          "character": "启",
+          "sourceInkProxy": 63.33970914092151,
+          "nativeInkProxy": 53.224651707714635,
+          "retentionRatio": 0.8403046434788268,
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "sourceInkProxy": 67.91494536841304,
+          "nativeInkProxy": 60.28626187504776,
+          "retentionRatio": 0.8876729790183508,
+          "status": "PASS"
+        },
+        {
+          "character": "编",
+          "sourceInkProxy": 85.17243970150018,
+          "nativeInkProxy": 70.47380485444316,
+          "retentionRatio": 0.8274249874892555,
+          "status": "PASS"
+        },
+        {
+          "character": "辑",
+          "sourceInkProxy": 79.60092198762192,
+          "nativeInkProxy": 69.16020171662892,
+          "retentionRatio": 0.8688366917079611,
+          "status": "PASS"
+        },
+        {
+          "character": "王",
+          "sourceInkProxy": 45.72159539515575,
+          "nativeInkProxy": 41.91359549703282,
+          "retentionRatio": 0.9167133197078597,
+          "status": "PASS"
+        },
+        {
+          "character": "五",
+          "sourceInkProxy": 52.257099559381615,
+          "nativeInkProxy": 46.361192471283395,
+          "retentionRatio": 0.8871750032471953,
+          "status": "PASS"
+        },
+        {
+          "character": "停",
+          "sourceInkProxy": 69.64935180704482,
+          "nativeInkProxy": 58.204276290655315,
+          "retentionRatio": 0.8356757784609867,
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "sourceInkProxy": 67.91494536841304,
+          "nativeInkProxy": 60.28626187504776,
+          "retentionRatio": 0.8876729790183508,
+          "status": "PASS"
+        },
+        {
+          "character": "访",
+          "sourceInkProxy": 54.89597076127652,
+          "nativeInkProxy": 46.40603112344956,
+          "retentionRatio": 0.8453449402553285,
+          "status": "PASS"
+        },
+        {
+          "character": "客",
+          "sourceInkProxy": 69.57109747090138,
+          "nativeInkProxy": 61.65354150217763,
+          "retentionRatio": 0.8861947524683605,
+          "status": "PASS"
+        }
+      ],
+      "normalizationProofs": {
+        "geometryAndStyle": "PASS",
+        "content": "PASS",
+        "fontBinding": "PASS",
+        "glyphGeometry": "PASS",
+        "baselines": "PASS",
+        "renderState": "PASS",
+        "sourceReproduction": "PASS",
+        "vectorBinding": "PASS"
+      }
+    },
+    "capture": {
+      "captureId": "table-native-v2/28:3",
+      "exporterVersion": "figma-native-export-v0.1.1",
+      "nativeEvidenceSha256": "1016d92dcc9de501528a7e0b7123f80d6c3d660510c684c4a3d8907c06c23d68",
+      "proofBundleSha256": "7c339e83446ea6b281b0f47a1ae7e9b3d9968ba762cd24a336494b26fdeb089b"
+    },
+    "candidateSha256": "4a0fb1831d0fb544c81f2876ff1c0f4d76eaeacd0604a7273b18a0c6dd65754f",
+    "referenceScreenshotSha256": "a2730f5b7f2e386d5a7ff1a9779841d73c359b2e90009aa80a2e5f1e1e99b02a",
+    "candidateScreenshotSha256": "f7db1f8ca86eb3603bf08c469ddc2f798259c9dad38b56683cb7b93d1c9c5346",
+    "candidateEvidenceKind": "native-design-capture"
+  },
+  "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72.native-0.2.1": {
+    "gateVersion": "0.2.1",
+    "scope": "production",
+    "logicalComponentId": "data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72",
+    "componentType": "Table",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "3c3993bb4ca86b5d4686818e2312410e7d35e03531aa8f87ec8c0e340ab082f9",
+    "status": "PASS",
+    "admissionEligible": true,
+    "issues": [],
+    "checks": {
+      "geometryAndStyle": "PASS",
+      "screenshot": {
+        "changedPixels": 2139,
+        "changedPixelsOutsideEdgeBand": 0,
+        "changedPixelsOutsidePermittedRegions": 0,
+        "maxChannelDelta": 174,
+        "policy": "evidence-bound-edges-0.2.1",
+        "vectorRasterSha256": "cee82b7106af3495ed72dd04c246a4bf7b143b4d5d28280292ab74f555724f06",
+        "edgeBandPixelCount": 10149
+      },
+      "glyphRetention": [
+        {
+          "character": "赵",
+          "sourceInkProxy": 70.1342485291496,
+          "nativeInkProxy": 57.865738736214766,
+          "retentionRatio": 0.8250710594291785,
+          "status": "PASS"
+        },
+        {
+          "character": "六",
+          "sourceInkProxy": 33.082316684919626,
+          "nativeInkProxy": 29.296449583577413,
+          "retentionRatio": 0.8855622132694239,
+          "status": "PASS"
+        },
+        {
+          "character": "z",
+          "sourceInkProxy": 20.791903318646057,
+          "nativeInkProxy": 20.11583424598222,
+          "retentionRatio": 0.9674840219145526,
+          "status": "PASS"
+        },
+        {
+          "character": "h",
+          "sourceInkProxy": 26.751903828031462,
+          "nativeInkProxy": 25.07271476963044,
+          "retentionRatio": 0.937231044594235,
+          "status": "PASS"
+        },
+        {
+          "character": "a",
+          "sourceInkProxy": 27.518910933958182,
+          "nativeInkProxy": 25.6962280009169,
+          "retentionRatio": 0.9337661676577432,
+          "status": "PASS"
+        },
+        {
+          "character": "o",
+          "sourceInkProxy": 23.305172809005924,
+          "nativeInkProxy": 22.635700277615058,
+          "retentionRatio": 0.9712736508380595,
+          "status": "PASS"
+        },
+        {
+          "character": "@",
+          "sourceInkProxy": 64.76628123169395,
+          "nativeInkProxy": 65.20426355601967,
+          "retentionRatio": 1.0067625053653904,
+          "status": "PASS"
+        },
+        {
+          "character": "e",
+          "sourceInkProxy": 24.876053791101036,
+          "nativeInkProxy": 25.01096452130505,
+          "retentionRatio": 1.0054233171923865,
+          "status": "PASS"
+        },
+        {
+          "character": "x",
+          "sourceInkProxy": 21.557840715177143,
+          "nativeInkProxy": 19.75502381376869,
+          "retentionRatio": 0.9163730298768172,
+          "status": "PASS"
+        },
+        {
+          "character": "a",
+          "sourceInkProxy": 27.35859460560833,
+          "nativeInkProxy": 25.628772635814887,
+          "retentionRatio": 0.9367722649964322,
+          "status": "PASS"
+        },
+        {
+          "character": "m",
+          "sourceInkProxy": 34.89120800753889,
+          "nativeInkProxy": 33.05885948603011,
+          "retentionRatio": 0.9474839472134966,
+          "status": "PASS"
+        },
+        {
+          "character": "p",
+          "sourceInkProxy": 29.48447647912794,
+          "nativeInkProxy": 26.846713190535628,
+          "retentionRatio": 0.910537218103242,
+          "status": "PASS"
+        },
+        {
+          "character": "l",
+          "sourceInkProxy": 13.186587881720705,
+          "nativeInkProxy": 12.52222193923032,
+          "retentionRatio": 0.949618055220234,
+          "status": "PASS"
+        },
+        {
+          "character": "e",
+          "sourceInkProxy": 24.83358378116802,
+          "nativeInkProxy": 25.260716195909637,
+          "retentionRatio": 1.0171997895473115,
+          "status": "PASS"
+        },
+        {
+          "character": ".",
+          "sourceInkProxy": 1.3186587881720704,
+          "nativeInkProxy": 1.88252298601737,
+          "retentionRatio": 1.427604322591237,
+          "status": "PASS"
+        },
+        {
+          "character": "c",
+          "sourceInkProxy": 18.099406565978146,
+          "nativeInkProxy": 18.934391157069,
+          "retentionRatio": 1.0461332579080462,
+          "status": "PASS"
+        },
+        {
+          "character": "o",
+          "sourceInkProxy": 22.842115987061618,
+          "nativeInkProxy": 22.81271171331788,
+          "retentionRatio": 0.9987127167307795,
+          "status": "PASS"
+        },
+        {
+          "character": "m",
+          "sourceInkProxy": 35.26346687721263,
+          "nativeInkProxy": 32.883554491506004,
+          "retentionRatio": 0.9325105386264635,
+          "status": "PASS"
+        },
+        {
+          "character": "钱",
+          "sourceInkProxy": 72.3298397982834,
+          "nativeInkProxy": 58.87205511550315,
+          "retentionRatio": 0.8139386908596521,
+          "status": "PASS"
+        },
+        {
+          "character": "七",
+          "sourceInkProxy": 37.336321727835376,
+          "nativeInkProxy": 32.43225173827778,
+          "retentionRatio": 0.8686514963818339,
+          "status": "PASS"
+        },
+        {
+          "character": "q",
+          "sourceInkProxy": 30.10897027736035,
+          "nativeInkProxy": 27.071976160762045,
+          "retentionRatio": 0.8991332453876082,
+          "status": "PASS"
+        },
+        {
+          "character": "i",
+          "sourceInkProxy": 11.867929093548634,
+          "nativeInkProxy": 10.828553600081504,
+          "retentionRatio": 0.9124214944937503,
+          "status": "PASS"
+        },
+        {
+          "character": "a",
+          "sourceInkProxy": 27.451302753228237,
+          "nativeInkProxy": 25.625588976899373,
+          "retentionRatio": 0.9334926362970456,
+          "status": "PASS"
+        },
+        {
+          "character": "n",
+          "sourceInkProxy": 23.783791355729317,
+          "nativeInkProxy": 20.4318696992079,
+          "retentionRatio": 0.8590669752190723,
+          "status": "PASS"
+        },
+        {
+          "character": "@",
+          "sourceInkProxy": 64.76628123169395,
+          "nativeInkProxy": 65.06974759952121,
+          "retentionRatio": 1.0046855610984,
+          "status": "PASS"
+        },
+        {
+          "character": "e",
+          "sourceInkProxy": 24.876053791101036,
+          "nativeInkProxy": 25.072854850622726,
+          "retentionRatio": 1.0079112652342026,
+          "status": "PASS"
+        },
+        {
+          "character": "x",
+          "sourceInkProxy": 21.557840715177143,
+          "nativeInkProxy": 19.303975753253702,
+          "retentionRatio": 0.8954503379210574,
+          "status": "PASS"
+        },
+        {
+          "character": "a",
+          "sourceInkProxy": 27.482680895499577,
+          "nativeInkProxy": 25.82305223747549,
+          "retentionRatio": 0.9396118353833575,
+          "status": "PASS"
+        },
+        {
+          "character": "m",
+          "sourceInkProxy": 34.76712171764765,
+          "nativeInkProxy": 33.073427909227526,
+          "retentionRatio": 0.9512846124515274,
+          "status": "PASS"
+        },
+        {
+          "character": "p",
+          "sourceInkProxy": 29.48447647912794,
+          "nativeInkProxy": 26.939676030868753,
+          "retentionRatio": 0.913690159970768,
+          "status": "PASS"
+        },
+        {
+          "character": "l",
+          "sourceInkProxy": 13.186587881720705,
+          "nativeInkProxy": 12.51852889488832,
+          "retentionRatio": 0.9493379945726179,
+          "status": "PASS"
+        },
+        {
+          "character": "e",
+          "sourceInkProxy": 24.80202735399741,
+          "nativeInkProxy": 25.376575911163183,
+          "retentionRatio": 1.0231653868034774,
+          "status": "PASS"
+        },
+        {
+          "character": ".",
+          "sourceInkProxy": 1.3203906986221123,
+          "nativeInkProxy": 1.9405801900007642,
+          "retentionRatio": 1.4697014997347737,
+          "status": "PASS"
+        },
+        {
+          "character": "c",
+          "sourceInkProxy": 18.099406565978146,
+          "nativeInkProxy": 18.57159412169218,
+          "retentionRatio": 1.0260885656108534,
+          "status": "PASS"
+        },
+        {
+          "character": "o",
+          "sourceInkProxy": 23.3384611466266,
+          "nativeInkProxy": 22.81259710159693,
+          "retentionRatio": 0.977467921225574,
+          "status": "PASS"
+        },
+        {
+          "character": "m",
+          "sourceInkProxy": 34.76712171764765,
+          "nativeInkProxy": 32.697756157196345,
+          "retentionRatio": 0.940479238481197,
+          "status": "PASS"
+        }
+      ],
+      "normalizationProofs": {
+        "geometryAndStyle": "PASS",
+        "content": "PASS",
+        "fontBinding": "PASS",
+        "glyphGeometry": "PASS",
+        "baselines": "PASS",
+        "renderState": "PASS",
+        "sourceReproduction": "PASS",
+        "vectorBinding": "PASS"
+      }
+    },
+    "pixelRegionPolicy": "positive-area-intersection",
+    "capture": {
+      "captureId": "task019/after-sizing/data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72/69:4",
+      "exporterVersion": "figma-configurable-table-normalization-0.2.1",
+      "nativeEvidenceSha256": "5609b2e16f0943847fc48fe6fb83396427b9e44f15d1deb1ab8279168e796fef",
+      "proofBundleSha256": "fe9d417d19bd09fb8e7a6e0b7c25198f0d82d897640f35464f8e03d41f84ad22"
+    },
+    "candidateSha256": "3ac70f987158cc1b8c733d575c0ab738fce8c91cbabfc5b44e3ccd8131a5fc5a",
+    "referenceScreenshotSha256": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25",
+    "candidateScreenshotSha256": "ef66ac6e24aeab9ef2db3da940bd0eaa160babbea8c3419a2f138f5efc8ab1c0",
+    "candidateEvidenceKind": "native-design-capture"
+  },
+  "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122.native-0.2.1": {
+    "gateVersion": "0.2.1",
+    "scope": "production",
+    "logicalComponentId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+    "componentType": "Table",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "d2a59922bf0203a1fde62b376868d323cbc49f1954d41e44f113174412c8183e",
+    "status": "PASS",
+    "admissionEligible": true,
+    "issues": [],
+    "checks": {
+      "geometryAndStyle": "PASS",
+      "screenshot": {
+        "changedPixels": 3631,
+        "changedPixelsOutsideEdgeBand": 0,
+        "changedPixelsOutsidePermittedRegions": 0,
+        "maxChannelDelta": 158,
+        "policy": "evidence-bound-edges-0.2.1",
+        "vectorRasterSha256": "941a44bcaefedde72b3253379391b1b4dd3f2bfd2d9bdfc586c87e2ddd645212",
+        "edgeBandPixelCount": 24811
+      },
+      "glyphRetention": [
+        {
+          "character": "0",
+          "sourceInkProxy": 27.32274660621959,
+          "nativeInkProxy": 28.062858161627993,
+          "retentionRatio": 1.0270877436326233,
+          "status": "PASS"
+        },
+        {
+          "character": "0",
+          "sourceInkProxy": 27.363191809082345,
+          "nativeInkProxy": 27.67293635229096,
+          "retentionRatio": 1.0113197519269592,
+          "status": "PASS"
+        },
+        {
+          "character": "1",
+          "sourceInkProxy": 16.717533046379536,
+          "nativeInkProxy": 14.70724346076459,
+          "retentionRatio": 0.8797496269313307,
+          "status": "PASS"
+        },
+        {
+          "character": "张",
+          "sourceInkProxy": 66.09585360262845,
+          "nativeInkProxy": 53.48064335379365,
+          "retentionRatio": 0.8091376453857746,
+          "status": "PASS"
+        },
+        {
+          "character": "三",
+          "sourceInkProxy": 32.85104296666072,
+          "nativeInkProxy": 31.877951251814682,
+          "retentionRatio": 0.9703786660340253,
+          "status": "PASS"
+        },
+        {
+          "character": "研",
+          "sourceInkProxy": 72.13101393169146,
+          "nativeInkProxy": 57.586850215215364,
+          "retentionRatio": 0.7983646295302391,
+          "status": "PASS"
+        },
+        {
+          "character": "发",
+          "sourceInkProxy": 63.73663499987263,
+          "nativeInkProxy": 54.718220716705304,
+          "retentionRatio": 0.8585050139031446,
+          "status": "PASS"
+        },
+        {
+          "character": "启",
+          "sourceInkProxy": 63.15644499910858,
+          "nativeInkProxy": 53.91095942745079,
+          "retentionRatio": 0.8536097848479552,
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "sourceInkProxy": 67.68763212184498,
+          "nativeInkProxy": 60.23630389934546,
+          "retentionRatio": 0.8899159567424911,
+          "status": "PASS"
+        },
+        {
+          "character": "0",
+          "sourceInkProxy": 27.32274660621959,
+          "nativeInkProxy": 28.062858161627993,
+          "retentionRatio": 1.0270877436326233,
+          "status": "PASS"
+        },
+        {
+          "character": "0",
+          "sourceInkProxy": 27.499834449736397,
+          "nativeInkProxy": 27.67293635229096,
+          "retentionRatio": 1.0062946525322163,
+          "status": "PASS"
+        },
+        {
+          "character": "2",
+          "sourceInkProxy": 24.524106665308302,
+          "nativeInkProxy": 25.827509359957215,
+          "retentionRatio": 1.053147815430631,
+          "status": "PASS"
+        },
+        {
+          "character": "李",
+          "sourceInkProxy": 59.47561317270714,
+          "nativeInkProxy": 51.5664493288847,
+          "retentionRatio": 0.8670183723729663,
+          "status": "PASS"
+        },
+        {
+          "character": "四",
+          "sourceInkProxy": 73.65458574230196,
+          "nativeInkProxy": 56.659272088225556,
+          "retentionRatio": 0.7692565441405299,
+          "status": "PASS"
+        },
+        {
+          "character": "财",
+          "sourceInkProxy": 71.84401344777525,
+          "nativeInkProxy": 57.29157221811885,
+          "retentionRatio": 0.7974439270401446,
+          "status": "PASS"
+        },
+        {
+          "character": "务",
+          "sourceInkProxy": 58.66479892010292,
+          "nativeInkProxy": 53.648600463540745,
+          "retentionRatio": 0.9144938949949549,
+          "status": "PASS"
+        },
+        {
+          "character": "停",
+          "sourceInkProxy": 69.53890431194763,
+          "nativeInkProxy": 58.812711713317896,
+          "retentionRatio": 0.8457526372501839,
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "sourceInkProxy": 67.68763212184498,
+          "nativeInkProxy": 60.23630389934546,
+          "retentionRatio": 0.8899159567424911,
+          "status": "PASS"
+        },
+        {
+          "character": "0",
+          "sourceInkProxy": 27.32274660621959,
+          "nativeInkProxy": 28.062858161627993,
+          "retentionRatio": 1.0270877436326233,
+          "status": "PASS"
+        },
+        {
+          "character": "0",
+          "sourceInkProxy": 27.40566181901536,
+          "nativeInkProxy": 27.67293635229096,
+          "retentionRatio": 1.0097525297889414,
+          "status": "PASS"
+        },
+        {
+          "character": "3",
+          "sourceInkProxy": 24.452652624608415,
+          "nativeInkProxy": 24.95069149071645,
+          "retentionRatio": 1.0203674780709404,
+          "status": "PASS"
+        },
+        {
+          "character": "王",
+          "sourceInkProxy": 45.703117438810075,
+          "nativeInkProxy": 41.55903777092937,
+          "retentionRatio": 0.9093261050861786,
+          "status": "PASS"
+        },
+        {
+          "character": "五",
+          "sourceInkProxy": 52.261301989150105,
+          "nativeInkProxy": 46.19976822963096,
+          "retentionRatio": 0.8840148727871806,
+          "status": "PASS"
+        },
+        {
+          "character": "运",
+          "sourceInkProxy": 57.66782976339047,
+          "nativeInkProxy": 50.80927336168913,
+          "retentionRatio": 0.8810678947024396,
+          "status": "PASS"
+        },
+        {
+          "character": "营",
+          "sourceInkProxy": 66.09487303568247,
+          "nativeInkProxy": 58.98441280594963,
+          "retentionRatio": 0.8924203965730575,
+          "status": "PASS"
+        },
+        {
+          "character": "启",
+          "sourceInkProxy": 63.15644499910858,
+          "nativeInkProxy": 53.91095942745079,
+          "retentionRatio": 0.8536097848479552,
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "sourceInkProxy": 67.68763212184498,
+          "nativeInkProxy": 60.23630389934546,
+          "retentionRatio": 0.8899159567424911,
+          "status": "PASS"
+        },
+        {
+          "character": "0",
+          "sourceInkProxy": 27.32274660621959,
+          "nativeInkProxy": 28.062858161627993,
+          "retentionRatio": 1.0270877436326233,
+          "status": "PASS"
+        },
+        {
+          "character": "0",
+          "sourceInkProxy": 27.45736443980338,
+          "nativeInkProxy": 27.980745230878945,
+          "retentionRatio": 1.019061581537551,
+          "status": "PASS"
+        },
+        {
+          "character": "4",
+          "sourceInkProxy": 24.12583093497695,
+          "nativeInkProxy": 25.095127728395685,
+          "retentionRatio": 1.040176721623854,
+          "status": "PASS"
+        },
+        {
+          "character": "赵",
+          "sourceInkProxy": 70.0058197284976,
+          "nativeInkProxy": 57.006813030079215,
+          "retentionRatio": 0.8143153419411099,
+          "status": "PASS"
+        },
+        {
+          "character": "六",
+          "sourceInkProxy": 33.226791126505866,
+          "nativeInkProxy": 29.54089091511092,
+          "retentionRatio": 0.8890684268197476,
+          "status": "PASS"
+        },
+        {
+          "character": "客",
+          "sourceInkProxy": 69.6492371953238,
+          "nativeInkProxy": 62.1149046175789,
+          "retentionRatio": 0.8918246217598094,
+          "status": "PASS"
+        },
+        {
+          "character": "服",
+          "sourceInkProxy": 81.86522935078825,
+          "nativeInkProxy": 68.64153274074832,
+          "retentionRatio": 0.8384699253284067,
+          "status": "PASS"
+        },
+        {
+          "character": "启",
+          "sourceInkProxy": 63.15644499910858,
+          "nativeInkProxy": 53.91095942745079,
+          "retentionRatio": 0.8536097848479552,
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "sourceInkProxy": 67.68763212184498,
+          "nativeInkProxy": 60.23630389934546,
+          "retentionRatio": 0.8899159567424911,
+          "status": "PASS"
+        }
+      ],
+      "normalizationProofs": {
+        "geometryAndStyle": "PASS",
+        "content": "PASS",
+        "fontBinding": "PASS",
+        "glyphGeometry": "PASS",
+        "baselines": "PASS",
+        "renderState": "PASS",
+        "sourceReproduction": "PASS",
+        "vectorBinding": "PASS"
+      }
+    },
+    "pixelRegionPolicy": "positive-area-intersection",
+    "capture": {
+      "captureId": "task019/after-sizing/data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122/69:18",
+      "exporterVersion": "figma-configurable-table-normalization-0.2.1",
+      "nativeEvidenceSha256": "3087138c98c012b87bed436c9820ec397ade312cb1289fd748eaa4c23ab4c337",
+      "proofBundleSha256": "d1d8f21bc0ed122e0b37c630027629ceaa44c2ef3b5d5369e9c27327af8cd663"
+    },
+    "candidateSha256": "7c7418486e253ef15b46457695019fddb565678bf7577cdfa452d34163fb3590",
+    "referenceScreenshotSha256": "1b12aa52a125e1ca68224318222ff272215edb1d3caec6077d87eca727e38a23",
+    "candidateScreenshotSha256": "1518175a76742ab251fed959f06fb08fcb4d62388c2294e7ac98b865ee243b11",
+    "candidateEvidenceKind": "native-design-capture"
+  }
+}

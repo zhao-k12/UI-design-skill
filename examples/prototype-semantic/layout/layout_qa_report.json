@@ -1,0 +1,25 @@
+{
+  "stage": "layout-qa",
+  "status": "Review",
+  "readyForMapping": false,
+  "structureReport": {
+    "version": "0.1.0",
+    "stage": "structure-qa",
+    "status": "Review",
+    "readyForLayout": false,
+    "analysisSha256": "24702eaf4fbfdbbe22a352616ca4fb27c4d3602bfb907d2b3f4c773f7020c682",
+    "pageTreeSha256": "d7b67eadb1d8f3c43e32353d8db1e6d15eecadb1d980b1b03fad52afb6426ad5",
+    "reviewSha256": null,
+    "issues": [],
+    "reviewReasons": [
+      "Unresolved prototype questions",
+      "Human semantic review receipt required"
+    ]
+  },
+  "pageTreeSha256": "d7b67eadb1d8f3c43e32353d8db1e6d15eecadb1d980b1b03fad52afb6426ad5",
+  "planSha256": null,
+  "rulesSha256": "5e995ec984a07cd12feb31f11b9043a4226066dc8df190e50a8b126549b2dd6e",
+  "tokenRegistrySha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+  "issues": [],
+  "testFixture": false
+}

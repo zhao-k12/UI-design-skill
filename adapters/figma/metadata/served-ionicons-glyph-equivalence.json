@@ -1,0 +1,24 @@
+{
+  "scope": "served_ionicons_default_arrow_equivalence",
+  "status": "PASS",
+  "codepoint": "U+F116",
+  "servedResource": "/vendor/styles/fonts/ionicons.woff2",
+  "servedSha256": "503dc6b7a4b1ef89aac99bf92eab623f06d00ca212630514b660fa6ee52c437c",
+  "siblingSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+  "checks": {
+    "unitsPerEm": true,
+    "metrics": true,
+    "commands": true,
+    "glyphInstructions": true,
+    "globalHinting": true
+  },
+  "commandCount": 7,
+  "glyphInstructionBytes": 0,
+  "admissionEligible": false,
+  "limitations": [
+    "Only U+F116 is compared; other glyphs are unverified.",
+    "Native uploaded-file bytes, hinting execution and pixel fidelity are not certified."
+  ],
+  "runtimeManifestSha256": "1f88a245f02111a9bca5e6bcd870a1ae84126a2252563dac7343900488072cfe",
+  "documentation": "https://fonttools.readthedocs.io/en/stable/ttLib/woff2.html"
+}

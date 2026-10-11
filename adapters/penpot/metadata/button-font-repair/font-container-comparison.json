@@ -1,0 +1,64 @@
+[
+  {
+    "status": "PASS",
+    "evidenceKind": "lossless-font-container-comparison",
+    "sourceSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+    "woffSha256": "7ce5d241353a41d6c9fd02b905967ad800f19d534abd3d46eb67e46b0d18099a",
+    "sourcePath": "C:\\Users\\38442\\AppData\\Local\\Microsoft\\Windows\\Fonts\\PingFang SC-Regular.otf",
+    "woffPath": "artifacts\\task-010\\font-repair\\PingFang SC-Regular.woff",
+    "tableSha256": {
+      "head": "595b0b4e2f9b9f2ce1dfe9af8d8142c120686df4dccfc4bc49e2ec014a8a3758",
+      "hhea": "1d1a738e95dfa3ce3fdba180eaf0882914c4088e5424d0c729aec582d07143e0",
+      "maxp": "9fbda8ab1d5c5c08af5560d8f12e026410f66906181a5d89e51d4301ef4f36ec",
+      "OS/2": "24fde60d334a56b9cffc831e0b47f9287ade94f071795c56016308514bd5cdaa",
+      "name": "b93adbd817be4b6687f52958f5512be68c3ae047515121dbd8d6f85796e98cf0",
+      "cmap": "45f6c7a6a02d2b4eabc7e50573c3bfa87447f9dec4a6dd31ab47f275062d692a",
+      "post": "aebbe49bbf4c73319ebc7fbded6ce867211a0b45873219b97d74d283b2aec0bb",
+      "CFF ": "7e1aa8a691c8d063fd20d3352d4d6ed66535fb42d1e18679f2b978085fbbc6fd",
+      "BASE": "8b4ff417ebd7193129645d3e9e1d3c4e2feb8e8bbf4fd8abbaa2e9117df66265",
+      "GSUB": "de056d2fc9c400ee3e3a3f4caee12b9f26367795f8138918d902dd7207ba0edd",
+      "VORG": "795b728f629c39e8ed52396ce5f8c57a3bc2c42cd92dc46b81deaa0d0c2d8066",
+      "cidg": "022b62f15b36a23aea48d9b5d4925d9e8dc67fdf989a286ea09614d12927b384",
+      "hmtx": "f54b27169392f142c83aec0cc45aa6e1238dcbaaea717260d303aa544b4d18c5",
+      "meta": "f4bee6dde3003aec5905781e0faf8332ba79d5e93fbcd971dc7afaa47ffb6256",
+      "trak": "32f1e502f5269f83c0a804c23399f1e5c9d3be014399bf481730b6a5aeb1896b",
+      "vhea": "edc74a5f8337b48f350e1e9b2e740adeee850c87b07f1b07a5a854cd82fa2b97",
+      "vmtx": "8334c1d4dce812518740714117bfafac7b18d4e2d7444be69955a761a0f7b2bb"
+    },
+    "tableCount": 17,
+    "normalizedFields": [
+      "head.checkSumAdjustment"
+    ],
+    "metricsGlyphsNamesAndHintingUnchanged": true,
+    "nativeRenderingVerified": false,
+    "admissionEligible": false
+  },
+  {
+    "status": "PASS",
+    "evidenceKind": "lossless-font-container-comparison",
+    "sourceSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+    "woffSha256": "9879ad9ccfc0640e6ba98ab85c3bbca11545baf7a0060efb2502498bc17e4f30",
+    "sourcePath": "node_modules\\view-ui-plus\\dist\\styles\\fonts\\ionicons.ttf",
+    "woffPath": "artifacts\\task-010\\font-repair\\Ionicons-Regular.woff",
+    "tableSha256": {
+      "OS/2": "6d3e444508ebcf09de07da099018068f479c4e79d5e370a9bb598c6923963aa4",
+      "cmap": "4fab07a71e510e76e1160125e5b8b2af16885934dafb03cfa64322053ff3d0af",
+      "gasp": "4ca731f86ad506ac0e320283dc9461926346de3c4d91d539ea7f6620d3826940",
+      "glyf": "be5af1746092621dc8fe24ae2260608e07c343064818c08024a454a8c3b961f3",
+      "head": "64af7f8dd6312dfe54a064ac8204219744e01933afab5b2af2f5a1292f340fae",
+      "hhea": "31e1892e74be1c4c7c17f29381057a32d286b93b1fd1acf0fa5c2cab7bb6e346",
+      "hmtx": "016f30b2cd7ba82ad93d592a92108e814cd4e6d3a806c54d6ad41150a81af3db",
+      "loca": "23c06ada15d76958f9d7e7123e607a8e165c5f14572f05ecacc89349e00ac924",
+      "maxp": "c5911996064a523a8c4198e017b7a88ccbc7a76775e620c22492cf8eab7b5001",
+      "name": "73da3c1c72053cb5eca92dc16ff2a53fe6c6e101bf0a4bb9881ec2f1dca9b306",
+      "post": "0ad3d447862dce4449673ba242e96a0233c41be523d58d891af7c4be741468d8"
+    },
+    "tableCount": 11,
+    "normalizedFields": [
+      "head.checkSumAdjustment"
+    ],
+    "metricsGlyphsNamesAndHintingUnchanged": true,
+    "nativeRenderingVerified": false,
+    "admissionEligible": false
+  }
+]

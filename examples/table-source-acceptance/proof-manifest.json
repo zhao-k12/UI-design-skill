@@ -1,0 +1,28 @@
+{
+  "scope": "TASK-018 source evidence only",
+  "files": {
+    "examples/table-source-acceptance/validation-summary.json": "9df3e50d387ebf67fc8de5973ecd9876b9b4cb8e53675c0b586680a9f855f524",
+    "examples/table-source-acceptance/four-column/cases.json": "28e782727acb8a9619eb057bd51dc9d56b206e6a34d06b5e06ffcc7882f4ac6b",
+    "examples/table-source-acceptance/four-column/component_ir.json": "457638616544d53b4a96b1568276df9caf171b474b1959f018a8d7293713f01a",
+    "examples/table-source-acceptance/four-column/data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122.png": "1b12aa52a125e1ca68224318222ff272215edb1d3caec6077d87eca727e38a23",
+    "examples/table-source-acceptance/four-column/extraction_report.json": "41e4300ee273b3fb69c05c17a887e786731225868403a0557a351fe55f2e2265",
+    "examples/table-source-acceptance/four-column/official-runtime-gallery.png": "0906e2094a62e0bc08cbbe3765b184330903be2844e685e5a9ba12859e032a80",
+    "examples/table-source-acceptance/four-column/request.json": "e9c1a1a52cc7efe80b1ac504a0221b083a2663baf9ae0cca71178cc0586393fe",
+    "examples/table-source-acceptance/four-column/runtime_manifest.json": "6599cfc566822b0e87d68f53ee0e83022b14084b0657f42f9bd69836a03c3c9a",
+    "examples/table-source-acceptance/four-column/table-observation.json": "6a46a02c7795e3a1fc5b21f1fc33e623cce9f6497aa2b2047fb7da6846b92d62",
+    "examples/table-source-acceptance/four-column/table-source-report.json": "f3b5732698ccecb39e53579ca721e57149abe0382b96e8bd99f28e572f4f0426",
+    "examples/table-source-acceptance/two-column/cases.json": "9ad06362726283ffa0c7ab5049b0d92f602052791a1722e800496a5f96a01eda",
+    "examples/table-source-acceptance/two-column/component_ir.json": "c724668b2c74543295087d5262b7ff50e4dfcd9b8695c3df9120cd93bc9800ef",
+    "examples/table-source-acceptance/two-column/data.table.config.4fe0393d9091c298f4469e4e95f43824af5373fe0552434be0ed2887e3857a72.png": "8a9ca3b3833d0a66c6ca3af238e1327d7d16352433b2b9393656f2175ad26d25",
+    "examples/table-source-acceptance/two-column/extraction_report.json": "0704f8bf09f0f1e279e2813b81111703ee6960872a86fbeb3ad37d527f0254fc",
+    "examples/table-source-acceptance/two-column/official-runtime-gallery.png": "86880d60f1014094e4f0b49dfaa34621c29351a82bfb6fc3bbedd7dca9125352",
+    "examples/table-source-acceptance/two-column/request.json": "6351bc002ecbaf26aa3a50c3e89228837759af505cfc1a3d241c76afd322ac39",
+    "examples/table-source-acceptance/two-column/runtime_manifest.json": "184a9df1f9d61972e1a4099c54a84534b2413ff154bc9671646bb54d56d62075",
+    "examples/table-source-acceptance/two-column/table-observation.json": "da69bbaff860a06c7ceb8e0c6ac8cdc539c14352a8886cc15a8a190e6288b63d",
+    "examples/table-source-acceptance/two-column/table-source-report.json": "055924752659f26f574a20781878d814e0bcf3e8937c6508faf85b67bc391410",
+    "component-builder/runtime-renderer/extract.mjs": "9516eb8741a3de363c8cd9cf8f7296f9badcd4b96fe8692d5d8cd7b780145ee6",
+    "component-builder/runtime-renderer/table-request.mjs": "d062ac8c680afe58b9d5afc595dae69491b230903147b428bf0a570015d5eb1f",
+    "component-builder/runtime-renderer/configurable-table-extract.mjs": "ad9dd811a78cba27ab7f8e12f7d862db397cb65e3f969a5ad693101d365956b8",
+    "component-builder/runtime-renderer/configurable-table-harness.js": "3bea57d277b01eadd78f9606f75772d97238afd7969f92ec5d5cfa8418f089a0"
+  }
+}

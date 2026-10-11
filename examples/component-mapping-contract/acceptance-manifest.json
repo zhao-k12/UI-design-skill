@@ -1,0 +1,11 @@
+{
+  "task": "TASK-014",
+  "scope": "synthetic-contract-with-production-registry",
+  "productionAssemblyEligible": false,
+  "files": {
+    "component_mapping.json": "11f20155cfe781b28faafcc3b325b43943ed11d5f7bff3ba2e88ef1aad547960",
+    "component_annotation.html": "913bbc7b0dc8b9eead1875a6b4d797dc77d2077bf5965251a64705aa8b8608f9",
+    "decisions.json": "a3c7036efb7a51d7fd9bd041e4f84df9d673de5b77d1a6708a2d3a39b3c0d879",
+    "annotation-review.png": "8a5ca7104352132b8c284c5b985c88be16ba1fab633a7fe27850687692821deb"
+  }
+}

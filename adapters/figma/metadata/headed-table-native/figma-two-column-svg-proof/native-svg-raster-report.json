@@ -1,0 +1,51 @@
+{
+  "scope": "browser_raster_of_native_svg_diagnostic",
+  "status": "PASS",
+  "svgCaptureSha256": "7f2602dec58780949dced7aec75560715be20792b178bb4a40c18dfb89fe59f0",
+  "referenceComponentIrSha256": "c2d14fde6a010c8271c68c8c84363f197f37e7cd485fcd11ee6805fb2d496c61",
+  "probeScriptSha256": "c3d1d39c95ab48c65cdf75e35d41be19bd4bded72121086b74464eda127fa773",
+  "referenceMatches": [
+    {
+      "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 768,
+      "height": 464
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "samples": [
+    {
+      "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+      "componentReference": "82:4",
+      "svgSha256": "9841a51d60a4c2c57ecfba3144afca7563c9c174b4f603daf05e82080cd69e2b",
+      "browserBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 135
+      },
+      "pngPath": "svg-raster-data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa.png",
+      "pngSha256": "64167857b82b5b59b7f9277b4e2fa90ad5da77823560d1df761e94071dc0de35"
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Browser rendering of native outlined SVG is a diagnostic sample, not native Figma PNG or editable component admission.",
+    "Official DOM/CSS/reference images are preserved; font hinting in live text is not represented by outlined SVG."
+  ]
+}

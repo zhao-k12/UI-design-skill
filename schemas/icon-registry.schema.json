@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["registryVersion", "scope", "sourceVersion", "sourceLockSha256", "customTagsSha256", "icons"],
+  "properties": {
+    "registryVersion": {"const": "0.1.0"},
+    "scope": {"enum": ["production", "test-fixture"]},
+    "sourceVersion": {"type": "string", "minLength": 1},
+    "sourceLockSha256": {"$ref": "#/$defs/hash"},
+    "customTagsSha256": {"$ref": "#/$defs/hash"},
+    "icons": {"type": "object", "minProperties": 1,
+      "propertyNames": {"pattern": "^remix\\.[a-z0-9]+(?:-[a-z0-9]+)*$"},
+      "additionalProperties": {"$ref": "#/$defs/icon"}}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "tags": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "revision": {"type": "object", "additionalProperties": false, "required": ["sourceVersion", "svgSha256"],
+      "properties": {"sourceVersion": {"type": "string", "minLength": 1}, "svgSha256": {"$ref": "#/$defs/hash"}}},
+    "icon": {"type": "object", "additionalProperties": false,
+      "required": ["name", "category", "style", "status", "svgSha256", "sourcePath", "sourceVersion", "officialTags", "customTags", "history"],
+      "properties": {
+        "name": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "category": {"type": "string", "minLength": 1}, "style": {"enum": ["line", "fill", "neutral"]},
+        "status": {"enum": ["source-ready", "deprecated"]},
+        "svgSha256": {"$ref": "#/$defs/hash"}, "sourcePath": {"type": "string", "pattern": "^icons/[^/]+/[^/]+\\.svg$"},
+        "sourceVersion": {"type": "string", "minLength": 1},
+        "officialTags": {"$ref": "#/$defs/tags"}, "customTags": {"$ref": "#/$defs/tags"},
+        "history": {"type": "array", "items": {"$ref": "#/$defs/revision"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "nativePngSha256": "6597b57ad6725c088f09470bbc2711c309701ca4cfd179d6c08370f151be6bf9",
+  "reviewedBy": "Codex",
+  "observations": [
+    "Query-region button reads 导出 with intact glyphs",
+    "Button stays within its original 60 × 32 box",
+    "Header, form controls, list, rows and footer remain visible and unchanged"
+  ],
+  "scope": "native-adapter-content-contract-only"
+}

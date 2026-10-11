@@ -1,0 +1,39 @@
+{
+  "scope": "native_pixel_location_diagnostic",
+  "admissionEligible": false,
+  "rows": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "changedPixels": 336,
+      "changedPixelBounds": [
+        0,
+        0,
+        60,
+        32
+      ],
+      "interpretation": "Pixel location only; no inferred cause, glyph metrics or admission."
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "changedPixels": 675,
+      "changedPixelBounds": [
+        0,
+        0,
+        240,
+        32
+      ],
+      "interpretation": "Pixel location only; no inferred cause, glyph metrics or admission."
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "changedPixels": 311,
+      "changedPixelBounds": [
+        0,
+        0,
+        240,
+        32
+      ],
+      "interpretation": "Pixel location only; no inferred cause, glyph metrics or admission."
+    }
+  ]
+}

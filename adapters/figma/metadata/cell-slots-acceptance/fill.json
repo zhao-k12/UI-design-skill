@@ -1,0 +1,40 @@
+{
+  "status": "FILLED",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "35:2",
+  "rootReference": "46:74",
+  "createdNodeIds": [
+    "47:74",
+    "I47:74;3:15",
+    "47:76",
+    "47:77",
+    "I47:77;12:6",
+    "I47:77;12:7",
+    "47:80",
+    "I47:80;3:12",
+    "47:82",
+    "47:83",
+    "I47:83;18:4",
+    "I47:83;18:3"
+  ],
+  "mutatedNodeIds": [
+    "46:76",
+    "46:77",
+    "46:78",
+    "46:79",
+    "46:80",
+    "46:81"
+  ],
+  "removedNodeIds": [],
+  "nodeMap": {
+    "slot-leading": "47:74",
+    "slot-label": "47:76",
+    "slot-control": "47:77",
+    "slot-trailing": "47:80",
+    "slot-content": "47:82",
+    "slot-action": "47:83"
+  },
+  "beforeSha256": "b025cb0482f3b1c70b7410a1b41f4bb20aa01693d8358075e219588ececa3436",
+  "afterSha256": "8695f82a15aece36a16d9b31da6515e7fd56d5fe40248af9aa9858e81d5353ac",
+  "fullTask015Acceptance": false
+}

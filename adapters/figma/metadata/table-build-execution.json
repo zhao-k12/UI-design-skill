@@ -1,0 +1,53 @@
+{
+  "scope": "figma_table_candidate_build",
+  "status": "PASS",
+  "logicalId": "data.table.default",
+  "createdNodeIds": [
+    "28:3",
+    "28:4",
+    "28:5",
+    "28:6",
+    "28:7",
+    "28:8",
+    "28:9",
+    "28:10",
+    "28:11",
+    "28:12",
+    "28:13",
+    "28:14",
+    "28:15",
+    "28:16",
+    "28:17",
+    "28:18",
+    "28:19",
+    "28:20",
+    "28:21",
+    "28:22",
+    "28:23",
+    "28:24"
+  ],
+  "mutatedNodeIds": [],
+  "createdStyleIds": [
+    "S:baff5a23c58b9ed689f45a33d6d2d46086b386fb,"
+  ],
+  "issues": [],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "componentReference": "28:3",
+  "nativeObservation": {
+    "componentReference": "28:3",
+    "width": 1392,
+    "height": 144,
+    "textReferences": [
+      "28:6",
+      "28:8",
+      "28:10",
+      "28:13",
+      "28:15",
+      "28:17",
+      "28:20",
+      "28:22",
+      "28:24"
+    ]
+  }
+}

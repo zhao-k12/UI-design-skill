@@ -1,0 +1,291 @@
+{
+  "scope": "task020_glyph_diagnostic",
+  "status": "OBSERVED",
+  "captureSha256": "c07084549a9f6493ac2d1c62283ba1d6f322cb07f9309c75d46cf4ad03e3f287",
+  "programSha256": "dbcb21169e902dd12b9b1d3dfd817a43038207428655509f62b2174b2adb6cb0",
+  "observations": [
+    {
+      "textReference": "82:7",
+      "characters": "姓名",
+      "fontStyle": "Semibold",
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:9",
+      "characters": "邮箱",
+      "fontStyle": "Semibold",
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:13",
+      "characters": "赵六",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:15",
+      "characters": "zhao@example.com",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "65485/512",
+      "fixedBaselinePx": 15,
+      "svgSha256": "f16086a9188c29df7c4c175d7ff913d2b00576da20366b5a237d47161cfcaabf",
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:19",
+      "characters": "钱七",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:21",
+      "characters": "qian@example.com",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "63497/512",
+      "fixedBaselinePx": 15,
+      "svgSha256": "fe0931a97071dd2e537ca3b1a37a8a8602c85496b22feaaaeaf121218847ac57",
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:27",
+      "characters": "编号",
+      "fontStyle": "Semibold",
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:29",
+      "characters": "姓名",
+      "fontStyle": "Semibold",
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:31",
+      "characters": "部门",
+      "fontStyle": "Semibold",
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:33",
+      "characters": "状态",
+      "fontStyle": "Semibold",
+      "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:37",
+      "characters": "001",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5985/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "5e150fb9cfc456f7d42ff5460ade9bdbf562235ca5dd9daff1203c519b0d6691",
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:39",
+      "characters": "张三",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:41",
+      "characters": "研发",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:43",
+      "characters": "启用",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:47",
+      "characters": "002",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5985/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "41b9767971cf0e4a7578c33bb2e5a41d36eaad429c183952b9e20ea309c53c7e",
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:49",
+      "characters": "李四",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:51",
+      "characters": "财务",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:53",
+      "characters": "停用",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:57",
+      "characters": "003",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5985/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "8310a0d77424142198e5e9eae2dec73c752c8fb53731b2963a4339fe21d11e75",
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:59",
+      "characters": "王五",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:61",
+      "characters": "运营",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:63",
+      "characters": "启用",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:67",
+      "characters": "004",
+      "exactDirectedEncodingEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "encodedAdvancePx": "5985/256",
+      "fixedBaselinePx": 15,
+      "svgSha256": "f4b5aac170dbc8f0fd95d22c7162ab6f69e510e1748e84cfad99e4ec69b940b2",
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:69",
+      "characters": "赵六",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:71",
+      "characters": "客服",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    },
+    {
+      "textReference": "82:73",
+      "characters": "启用",
+      "fontStyle": "Regular",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "exactCffEncoding": true,
+      "fixedBaselinePx": 16,
+      "fixedBaselineEqual": true,
+      "intrinsicDimensionsEqual": true,
+      "status": "PASS"
+    }
+  ],
+  "fontEncodingAdmission": "NOT_APPROVED",
+  "fidelityGate": "NOT_RUN",
+  "admissionEligible": false
+}

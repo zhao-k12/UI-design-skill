@@ -1,0 +1,326 @@
+[
+  {
+    "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+    "figma": {
+      "scope": "figma_adapter_preflight",
+      "adapterVersion": "0.1.0",
+      "status": "PASS",
+      "nativeExecution": "NOT_RUN",
+      "issues": [],
+      "plan": {
+        "adapterVersion": "0.1.0",
+        "documentId": "task020-release-preflight",
+        "uiIrSha256": "367880d7b0c333aa95c763b3e2dfa3779349df927012e29469f84300d1876762",
+        "tokensSha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+        "componentsSha256": "35280cf92efee4c728055ad2c949c69a5d8e84b0d1a2473b3ecaeb07e4d7feb2",
+        "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "pages": [
+          {
+            "id": "page",
+            "name": "page",
+            "type": "Page",
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1440
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "gap": 0,
+              "direction": "vertical",
+              "wrap": false,
+              "alignment": {
+                "main": "start",
+                "cross": "start"
+              }
+            },
+            "style": {},
+            "children": [
+              {
+                "id": "table",
+                "name": "table",
+                "type": "ComponentInstance",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 720
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 134.875
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 0,
+                  "direction": "vertical",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "start",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "componentReference": "82:4",
+                "fidelityReportSha256": "06122e82f14ffa57ceed22bc9dc898a7d615eedd5671aefafc9727ec262cca26"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "penpot": {
+      "scope": "penpot_adapter_preflight",
+      "adapterVersion": "0.1.0",
+      "status": "PASS",
+      "nativeExecution": "NOT_RUN",
+      "issues": [],
+      "plan": {
+        "platform": "penpot",
+        "adapterVersion": "0.1.0",
+        "documentId": "task020-release-preflight",
+        "uiIrSha256": "367880d7b0c333aa95c763b3e2dfa3779349df927012e29469f84300d1876762",
+        "tokensSha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+        "componentsSha256": "35280cf92efee4c728055ad2c949c69a5d8e84b0d1a2473b3ecaeb07e4d7feb2",
+        "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+        "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+        "pages": [
+          {
+            "id": "page",
+            "name": "page",
+            "type": "Page",
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1440
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "gap": 0,
+              "direction": "vertical",
+              "wrap": false,
+              "alignment": {
+                "main": "start",
+                "cross": "start"
+              }
+            },
+            "style": {},
+            "children": [
+              {
+                "id": "table",
+                "name": "table",
+                "type": "ComponentInstance",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 720
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 134.875
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 0,
+                  "direction": "vertical",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "start",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "componentReference": "60977a61-dfea-80ea-8008-c4e4ee901de1",
+                "fidelityReportSha256": "06122e82f14ffa57ceed22bc9dc898a7d615eedd5671aefafc9727ec262cca26"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+    "figma": {
+      "scope": "figma_adapter_preflight",
+      "adapterVersion": "0.1.0",
+      "status": "PASS",
+      "nativeExecution": "NOT_RUN",
+      "issues": [],
+      "plan": {
+        "adapterVersion": "0.1.0",
+        "documentId": "task020-release-preflight",
+        "uiIrSha256": "d743d1445fc88384fc0d9dbf4101335f47c8384dcdf982c8426b86092f9c13f8",
+        "tokensSha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+        "componentsSha256": "35280cf92efee4c728055ad2c949c69a5d8e84b0d1a2473b3ecaeb07e4d7feb2",
+        "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "pages": [
+          {
+            "id": "page",
+            "name": "page",
+            "type": "Page",
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1440
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "gap": 0,
+              "direction": "vertical",
+              "wrap": false,
+              "alignment": {
+                "main": "start",
+                "cross": "start"
+              }
+            },
+            "style": {},
+            "children": [
+              {
+                "id": "table",
+                "name": "table",
+                "type": "ComponentInstance",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 960
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 230.875
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 0,
+                  "direction": "vertical",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "start",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "componentReference": "82:24",
+                "fidelityReportSha256": "ccae0ac3050496303897b04c4f7556b908d4458c6dcf7862a831937a532f7e1e"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "penpot": {
+      "scope": "penpot_adapter_preflight",
+      "adapterVersion": "0.1.0",
+      "status": "PASS",
+      "nativeExecution": "NOT_RUN",
+      "issues": [],
+      "plan": {
+        "platform": "penpot",
+        "adapterVersion": "0.1.0",
+        "documentId": "task020-release-preflight",
+        "uiIrSha256": "d743d1445fc88384fc0d9dbf4101335f47c8384dcdf982c8426b86092f9c13f8",
+        "tokensSha256": "c45fc025aa3293a675933e377ccdfc90c60204f990ff90402fcb5ebc00178c2f",
+        "componentsSha256": "35280cf92efee4c728055ad2c949c69a5d8e84b0d1a2473b3ecaeb07e4d7feb2",
+        "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+        "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+        "pages": [
+          {
+            "id": "page",
+            "name": "page",
+            "type": "Page",
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1440
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "gap": 0,
+              "direction": "vertical",
+              "wrap": false,
+              "alignment": {
+                "main": "start",
+                "cross": "start"
+              }
+            },
+            "style": {},
+            "children": [
+              {
+                "id": "table",
+                "name": "table",
+                "type": "ComponentInstance",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 960
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 230.875
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 0,
+                  "direction": "vertical",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "start",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "componentReference": "60977a61-dfea-80ea-8008-c4e4f19d879a",
+                "fidelityReportSha256": "ccae0ac3050496303897b04c4f7556b908d4458c6dcf7862a831937a532f7e1e"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,462 @@
+{
+  "layoutTreeVersion": "0.1.0",
+  "pattern": "list-page",
+  "page": {
+    "id": "pattern.page",
+    "type": "Page",
+    "layout": {
+      "width": {
+        "mode": "fixed",
+        "value": {
+          "token": "size.page"
+        }
+      },
+      "height": {
+        "mode": "hug"
+      },
+      "direction": "vertical",
+      "gap": {
+        "token": "spacing.section"
+      },
+      "padding": {
+        "top": {
+          "token": "spacing.page"
+        },
+        "right": {
+          "token": "spacing.page"
+        },
+        "bottom": {
+          "token": "spacing.page"
+        },
+        "left": {
+          "token": "spacing.page"
+        }
+      }
+    },
+    "children": [
+      {
+        "id": "pattern.header",
+        "type": "Section",
+        "role": "header",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "layout.item.3.0",
+            "type": "Cell",
+            "sourceIds": [
+              "scope-note"
+            ],
+            "measurement": {
+              "width": 160,
+              "height": 32,
+              "source": {
+                "kind": "test-fixture",
+                "reference": "TASK-013-contract-test"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "constraints": {
+              "minWidth": 160
+            }
+          }
+        ],
+        "sourceIds": [
+          "note"
+        ]
+      },
+      {
+        "id": "pattern.query",
+        "type": "Section",
+        "role": "query",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "pattern.query.grid",
+            "type": "Grid",
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "gridColumns": 24,
+              "gap": {
+                "token": "spacing.md"
+              },
+              "wrap": true
+            },
+            "children": [
+              {
+                "id": "layout.group.0.fields",
+                "type": "Grid",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "gap": {
+                    "token": "spacing.md"
+                  },
+                  "wrap": true,
+                  "gridColumns": 24,
+                  "span": 24
+                },
+                "children": [
+                  {
+                    "id": "layout.item.0.0",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "name"
+                    ],
+                    "measurement": {
+                      "width": 160,
+                      "height": 32,
+                      "source": {
+                        "kind": "test-fixture",
+                        "reference": "TASK-013-contract-test"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "fill"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      },
+                      "span": 6
+                    },
+                    "role": "field"
+                  },
+                  {
+                    "id": "layout.item.0.1",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "status"
+                    ],
+                    "measurement": {
+                      "width": 160,
+                      "height": 32,
+                      "source": {
+                        "kind": "test-fixture",
+                        "reference": "TASK-013-contract-test"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "fill"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      },
+                      "span": 6
+                    },
+                    "role": "field"
+                  }
+                ],
+                "sourceIds": [
+                  "filters"
+                ],
+                "constraints": {
+                  "minWidth": 160
+                }
+              },
+              {
+                "id": "layout.group.0.buttons",
+                "type": "HorizontalStack",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "gap": {
+                    "token": "spacing.sm"
+                  },
+                  "wrap": true,
+                  "span": 24
+                },
+                "children": [
+                  {
+                    "id": "layout.item.0.2",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "search"
+                    ],
+                    "measurement": {
+                      "width": 160,
+                      "height": 32,
+                      "source": {
+                        "kind": "test-fixture",
+                        "reference": "TASK-013-contract-test"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    }
+                  },
+                  {
+                    "id": "layout.item.0.3",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "reset"
+                    ],
+                    "measurement": {
+                      "width": 160,
+                      "height": 32,
+                      "source": {
+                        "kind": "test-fixture",
+                        "reference": "TASK-013-contract-test"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    }
+                  }
+                ],
+                "sourceIds": [
+                  "filters"
+                ],
+                "constraints": {
+                  "minWidth": 160
+                }
+              }
+            ]
+          }
+        ],
+        "sourceIds": [
+          "filters"
+        ]
+      },
+      {
+        "id": "pattern.toolbar",
+        "type": "Section",
+        "role": "toolbar",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "pattern.toolbar.row",
+            "type": "HorizontalStack",
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "gap": {
+                "token": "spacing.sm"
+              },
+              "wrap": true
+            },
+            "children": [
+              {
+                "id": "layout.group.1.buttons",
+                "type": "HorizontalStack",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "gap": {
+                    "token": "spacing.sm"
+                  },
+                  "wrap": true
+                },
+                "children": [
+                  {
+                    "id": "layout.item.1.0",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "add"
+                    ],
+                    "measurement": {
+                      "width": 160,
+                      "height": 32,
+                      "source": {
+                        "kind": "test-fixture",
+                        "reference": "TASK-013-contract-test"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    }
+                  },
+                  {
+                    "id": "layout.item.1.1",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "export"
+                    ],
+                    "measurement": {
+                      "width": 160,
+                      "height": 32,
+                      "source": {
+                        "kind": "test-fixture",
+                        "reference": "TASK-013-contract-test"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    }
+                  }
+                ],
+                "sourceIds": [
+                  "toolbar"
+                ],
+                "constraints": {
+                  "minWidth": 160
+                }
+              }
+            ]
+          }
+        ],
+        "sourceIds": [
+          "toolbar"
+        ]
+      },
+      {
+        "id": "pattern.table",
+        "type": "Section",
+        "role": "table",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "layout.item.2.0",
+            "type": "Cell",
+            "sourceIds": [
+              "users"
+            ],
+            "measurement": {
+              "width": 160,
+              "height": 32,
+              "source": {
+                "kind": "test-fixture",
+                "reference": "TASK-013-contract-test"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "constraints": {
+              "minWidth": 160
+            }
+          },
+          {
+            "id": "layout.item.2.1",
+            "type": "Cell",
+            "sourceIds": [
+              "example-row"
+            ],
+            "measurement": {
+              "width": 160,
+              "height": 32,
+              "source": {
+                "kind": "test-fixture",
+                "reference": "TASK-013-contract-test"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "constraints": {
+              "minWidth": 160
+            }
+          }
+        ],
+        "sourceIds": [
+          "results"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "user-management-example"
+    ]
+  }
+}

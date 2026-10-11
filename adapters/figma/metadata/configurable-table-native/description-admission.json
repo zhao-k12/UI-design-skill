@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"scope\":\"task019_component_description\",\"status\":\"PASS\",\"fileReference\":\"0vGWSRoLxBiVPXiZ8xJAX9\",\"pageReference\":\"69:2\",\"createdNodeIds\":[],\"mutatedNodeIds\":[\"69:4\",\"69:18\"],\"observations\":[{\"reference\":\"69:4\",\"before\":\"Official source-bound Table body; pending Figma font encoding and full fidelity admission.\",\"after\":\"Official source-bound Table body. Admitted in component library 0.2.1 after exact font, geometry, full native PNG and real linked-instance acceptance. Frozen content and dimensions; no text/data override slots.\",\"width\":720,\"height\":96},{\"reference\":\"69:18\",\"before\":\"Official source-bound Table body; pending Figma font encoding and full fidelity admission.\",\"after\":\"Official source-bound Table body. Admitted in component library 0.2.1 after exact font, geometry, full native PNG and real linked-instance acceptance. Frozen content and dimensions; no text/data override slots.\",\"width\":960,\"height\":192}]}"
+    }
+  ],
+  "isError": false
+}

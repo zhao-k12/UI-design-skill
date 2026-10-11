@@ -1,0 +1,87 @@
+{
+  "scope": "browser_raster_of_native_svg_diagnostic",
+  "status": "PASS",
+  "svgCaptureSha256": "989b3cafc9e8900ddbecab19caab15fca9f7f46c66c6515469882da45a3e23ee",
+  "referenceComponentIrSha256": "3b19ae988759787d668550ad0253139b5b3813c9421f4a76917ed05b309b7245",
+  "probeScriptSha256": "d3eace0ef379f673455e832b61b63d0dceb7e4d228fd1afaca0360ee6165c75c",
+  "referenceMatches": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 840,
+      "height": 240
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "samples": [
+    {
+      "logicalId": "action.button.primary.medium",
+      "componentReference": "18:5",
+      "svgSha256": "f1dc6c597bb68f16016fc7e660150a5ceed0e004192b09c71c77c2403629b10a",
+      "browserBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 60,
+        "height": 32
+      },
+      "pngPath": "svg-raster-action.button.primary.medium.png",
+      "pngSha256": "4350af088b2699808beec26e25b69072ed59856b57c4684f666f3ec465efbef8"
+    },
+    {
+      "logicalId": "form.input.default.medium",
+      "componentReference": "12:8",
+      "svgSha256": "3e9fa4db38321f1f158af774834996730adb095f9f5583c93cbdaa0bf775ee53",
+      "browserBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 32
+      },
+      "pngPath": "svg-raster-form.input.default.medium.png",
+      "pngSha256": "f775b894fda69a7dd0a446cb1234171a4f35e3aead2236b58a89666a26fd0c4c"
+    },
+    {
+      "logicalId": "form.select.default.medium",
+      "componentReference": "12:15",
+      "svgSha256": "eb1060498265dbda6805fee9f12b8d292a988b4ef7aaff78372dff07ad1d4670",
+      "browserBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 32
+      },
+      "pngPath": "svg-raster-form.select.default.medium.png",
+      "pngSha256": "0ad4eb890068be2e739ddd20ea2c2cc93d507288f0721bc2d20e5e54049b7534"
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Browser rendering of native outlined SVG is a diagnostic sample, not native Figma PNG or editable component admission.",
+    "Official DOM/CSS/reference images are preserved; font hinting in live text is not represented by outlined SVG."
+  ]
+}

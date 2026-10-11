@@ -1,0 +1,54 @@
+{
+  "version": "0.1.0",
+  "scope": "configurable_official_table_source",
+  "requestSha256": "b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+  "casesSha256": "2c5f05462ebd8d6d559dd8475f2d1d07a2df698b7fccc252bfef4eecaaba6f40",
+  "requestFileSha256": "e9c1a1a52cc7efe80b1ac504a0221b083a2663baf9ae0cca71178cc0586393fe",
+  "casesFileSha256": "28e782727acb8a9619eb057bd51dc9d56b206e6a34d06b5e06ffcc7882f4ac6b",
+  "programs": {
+    "table-request.mjs": "d062ac8c680afe58b9d5afc595dae69491b230903147b428bf0a570015d5eb1f",
+    "configurable-table-extract.mjs": "ad9dd811a78cba27ab7f8e12f7d862db397cb65e3f969a5ad693101d365956b8",
+    "configurable-table-harness.js": "3bea57d277b01eadd78f9606f75772d97238afd7969f92ec5d5cfa8418f089a0",
+    "extract.mjs": "9516eb8741a3de363c8cd9cf8f7296f9badcd4b96fe8692d5d8cd7b780145ee6"
+  },
+  "nativeExecution": "NOT_RUN",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false,
+  "status": "PASS",
+  "observation": {
+    "rows": [
+      [
+        "001",
+        "张三",
+        "研发",
+        "启用"
+      ],
+      [
+        "002",
+        "李四",
+        "财务",
+        "停用"
+      ],
+      [
+        "003",
+        "王五",
+        "运营",
+        "启用"
+      ],
+      [
+        "004",
+        "赵六",
+        "客服",
+        "启用"
+      ]
+    ],
+    "rootWidth": 960
+  },
+  "componentId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+  "componentIrSha256": "457638616544d53b4a96b1568276df9caf171b474b1959f018a8d7293713f01a",
+  "runtimeManifestSha256": "6599cfc566822b0e87d68f53ee0e83022b14084b0657f42f9bd69836a03c3c9a",
+  "screenshot": {
+    "path": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122.png",
+    "sha256": "1b12aa52a125e1ca68224318222ff272215edb1d3caec6077d87eca727e38a23"
+  }
+}

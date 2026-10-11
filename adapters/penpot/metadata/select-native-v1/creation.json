@@ -1,0 +1,26 @@
+{
+  "type": "task010-result",
+  "status": "CAPTURED",
+  "result": {
+    "status": "CANDIDATE_CREATED",
+    "platform": "penpot",
+    "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+    "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+    "componentReference": "b17404b9-592b-8074-8008-c0d00dc30929",
+    "mainReference": "b17404b9-592b-8074-8008-c0d00d917931",
+    "textReference": "b17404b9-592b-8074-8008-c0d00da8382d",
+    "arrowReference": "b17404b9-592b-8074-8008-c0d00db5bb2f",
+    "logicalId": "form.select.default.medium",
+    "componentIrSha256": "8510c62e4efced55ea261d95157c9ebd3d6541d547e4f9f8a5e493a2185a2bdc",
+    "createdNodeIds": [
+      "b17404b9-592b-8074-8008-c0d00d917931",
+      "b17404b9-592b-8074-8008-c0d00d9fa45d",
+      "b17404b9-592b-8074-8008-c0d00da8382d",
+      "b17404b9-592b-8074-8008-c0d00db5bb2f"
+    ],
+    "mutatedNodeIds": [],
+    "admissionEligible": false,
+    "baselineCalibration": "NOT_RUN",
+    "fidelityGate": "NOT_RUN"
+  }
+}

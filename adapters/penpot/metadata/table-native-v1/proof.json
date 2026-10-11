@@ -1,0 +1,2240 @@
+{
+  "platform": "penpot",
+  "nativeEvidenceSha256": "dc3255bd283342632539f529c64bd056e3ffaf1a03c7ef9a6ed4cbfc6705a5bc",
+  "geometryAndStyle": {
+    "status": "PASS",
+    "textSamples": [
+      {
+        "path": "0.0.0.0.1.0.0.0.0",
+        "characters": "张三",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 15,
+          "width": 28,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 28
+      },
+      {
+        "path": "0.0.0.0.1.0.1.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 482.328125,
+          "y": 15,
+          "width": 28,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 28
+      },
+      {
+        "path": "0.0.0.0.1.0.2.0.0",
+        "characters": "管理员",
+        "sourceTextBounds": {
+          "x": 946.65625,
+          "y": 15,
+          "width": 42,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 28
+      },
+      {
+        "path": "0.0.0.0.1.1.0.0.0",
+        "characters": "李四",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 76
+      },
+      {
+        "path": "0.0.0.0.1.1.1.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 482.328125,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 76
+      },
+      {
+        "path": "0.0.0.0.1.1.2.0.0",
+        "characters": "编辑",
+        "sourceTextBounds": {
+          "x": 946.65625,
+          "y": 63,
+          "width": 28,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 76
+      },
+      {
+        "path": "0.0.0.0.1.2.0.0.0",
+        "characters": "王五",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 124
+      },
+      {
+        "path": "0.0.0.0.1.2.1.0.0",
+        "characters": "停用",
+        "sourceTextBounds": {
+          "x": 482.328125,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 124
+      },
+      {
+        "path": "0.0.0.0.1.2.2.0.0",
+        "characters": "访客",
+        "sourceTextBounds": {
+          "x": 946.65625,
+          "y": 111,
+          "width": 28,
+          "height": 16
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fill": "#515a6e",
+        "sourceBaselineY": 124
+      }
+    ],
+    "sourcePaths": [
+      "candidate/data.table.default/penpot-v1",
+      "official-source/0.0.0.0.1.0",
+      "official-source/0.0.0.0.1.0.0",
+      "official-source/0.0.0.0.1.0.0.0.0",
+      "official-source/0.0.0.0.1.0.1",
+      "official-source/0.0.0.0.1.0.1.0.0",
+      "official-source/0.0.0.0.1.0.2",
+      "official-source/0.0.0.0.1.0.2.0.0",
+      "official-source/row-border/0.0.0.0.1.0",
+      "official-source/0.0.0.0.1.1",
+      "official-source/0.0.0.0.1.1.0",
+      "official-source/0.0.0.0.1.1.0.0.0",
+      "official-source/0.0.0.0.1.1.1",
+      "official-source/0.0.0.0.1.1.1.0.0",
+      "official-source/0.0.0.0.1.1.2",
+      "official-source/0.0.0.0.1.1.2.0.0",
+      "official-source/row-border/0.0.0.0.1.1",
+      "official-source/0.0.0.0.1.2",
+      "official-source/0.0.0.0.1.2.0",
+      "official-source/0.0.0.0.1.2.0.0.0",
+      "official-source/0.0.0.0.1.2.1",
+      "official-source/0.0.0.0.1.2.1.0.0",
+      "official-source/0.0.0.0.1.2.2",
+      "official-source/0.0.0.0.1.2.2.0.0",
+      "official-source/row-border/0.0.0.0.1.2",
+      "official-source/0.0::before"
+    ],
+    "borderNormalization": "Contiguous same-color cell borders form one row region; independent bottom pseudo and outer clipping are preserved."
+  },
+  "content": {
+    "status": "PASS",
+    "cells": [
+      "张三",
+      "启用",
+      "管理员",
+      "李四",
+      "启用",
+      "编辑",
+      "王五",
+      "停用",
+      "访客"
+    ]
+  },
+  "fontBinding": {
+    "status": "PASS",
+    "nativeBinding": {
+      "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+      "fontVariantId": "normal-400",
+      "family": "PingFang SC",
+      "weight": 400,
+      "style": "normal"
+    },
+    "actualPdfGlyphIdentity": {
+      "status": "PASS",
+      "scope": "observed-Type3-glyph-paths-in-font-units",
+      "unitsPerEm": 1000,
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "nativePdfSha256": "5733109288ea5eee0d0fa1dd7f7af39662c3cef60a3c26a70a00149b6d74629e",
+      "glyphs": [
+        {
+          "character": "张",
+          "pathSha256": "91d2e871145fab81a389835e93134ffb683c111018ae6b05ed18114381868dd2",
+          "nativeUnicodeCharacter": "张",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 48,
+          "nativeCommandCount": 48,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "三",
+          "pathSha256": "96025248acee586c5c2414a630c4409a788e89cd3d4c08954102c9358729bb7a",
+          "nativeUnicodeCharacter": "三",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 18,
+          "nativeCommandCount": 18,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "启",
+          "pathSha256": "87e8f73079177e24a934b9ab41afebd080feddd1039489d15beb03ac01239ef4",
+          "nativeUnicodeCharacter": "启",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 36,
+          "nativeCommandCount": 36,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "用",
+          "pathSha256": "47702d98694a4dcdc75555908f9caf6a9cc3654a8b729c352ef7068811e56c69",
+          "nativeUnicodeCharacter": "⽤",
+          "sourceCmapGlyphAlias": true,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 43,
+          "nativeCommandCount": 43,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "管",
+          "pathSha256": "21de87f0dd51a588d1403064264df3f0a88b5e0d0889bac017750473b0c6e132",
+          "nativeUnicodeCharacter": "管",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 67,
+          "nativeCommandCount": 67,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "理",
+          "pathSha256": "d42fbefa821d8ff9d3f7473b39abe98883a84d73536068823dfd024de204c35b",
+          "nativeUnicodeCharacter": "理",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 68,
+          "nativeCommandCount": 68,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "员",
+          "pathSha256": "4057e11369b51a4a0a04c934afc93ec256a08224e00fe4121a1f9b1bd56dc0c7",
+          "nativeUnicodeCharacter": "员",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 36,
+          "nativeCommandCount": 36,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "李",
+          "pathSha256": "ee5e808f5e56e9ebd7379ab11b7203f2bf659cc430b032e075bac6991583662a",
+          "nativeUnicodeCharacter": "李",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 45,
+          "nativeCommandCount": 45,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "四",
+          "pathSha256": "f4b6b6446884cf49979e913a68723190e9e2612e5459262975568a1a61111ca4",
+          "nativeUnicodeCharacter": "四",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 30,
+          "nativeCommandCount": 30,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "编",
+          "pathSha256": "0d5f5b41b1f5e2f4d589684c3c36be403047b65d7bdae65a7d28e9391b4c34d2",
+          "nativeUnicodeCharacter": "编",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 83,
+          "nativeCommandCount": 83,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "辑",
+          "pathSha256": "6035f305afa902b49ea101feaf6e9c8fbf62d4cdc9e9789a6d1e29a3f1aa04a8",
+          "nativeUnicodeCharacter": "辑",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 81,
+          "nativeCommandCount": 81,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "王",
+          "pathSha256": "d39d71285df5182103de5773282a3361d6a77aff09ec7f2f3e72eb34508dc65d",
+          "nativeUnicodeCharacter": "王",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 22,
+          "nativeCommandCount": 22,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "五",
+          "pathSha256": "8482fff1951b1242a340da06cbd1c843cad80f1af1899fc91b07dea882670b19",
+          "nativeUnicodeCharacter": "五",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 26,
+          "nativeCommandCount": 26,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "停",
+          "pathSha256": "8fb8ede6e1b7c31ee9c6607ac9a4c8c70470d8dd587dfc367e894925b89e3dc4",
+          "nativeUnicodeCharacter": "停",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 56,
+          "nativeCommandCount": 56,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "访",
+          "pathSha256": "4cdf274747c135b302c34416eb375632fc2b124f573541a446a1816d88d9da69",
+          "nativeUnicodeCharacter": "访",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 46,
+          "nativeCommandCount": 46,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "character": "客",
+          "pathSha256": "ed99942f5ed1711f1fe1cf0d9100c2078135f44531973faa91abdb65e9a319e0",
+          "nativeUnicodeCharacter": "客",
+          "sourceCmapGlyphAlias": false,
+          "orderedCompleteContoursEqual": true,
+          "advanceFontUnitsEqual": true,
+          "fontIdentityEqual": true,
+          "sourceCommandCount": 53,
+          "nativeCommandCount": 53,
+          "fontMatrix": [
+            "0.0010000001",
+            "0",
+            "0",
+            "-0.0010000001",
+            "0",
+            "0"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "limitations": [
+        "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+        "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+        "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+      ]
+    }
+  },
+  "glyphGeometry": {
+    "status": "PASS",
+    "scope": "observed-Type3-glyph-paths-in-font-units",
+    "unitsPerEm": 1000,
+    "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+    "nativePdfSha256": "5733109288ea5eee0d0fa1dd7f7af39662c3cef60a3c26a70a00149b6d74629e",
+    "glyphs": [
+      {
+        "character": "张",
+        "pathSha256": "91d2e871145fab81a389835e93134ffb683c111018ae6b05ed18114381868dd2",
+        "nativeUnicodeCharacter": "张",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 48,
+        "nativeCommandCount": 48,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "三",
+        "pathSha256": "96025248acee586c5c2414a630c4409a788e89cd3d4c08954102c9358729bb7a",
+        "nativeUnicodeCharacter": "三",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 18,
+        "nativeCommandCount": 18,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "启",
+        "pathSha256": "87e8f73079177e24a934b9ab41afebd080feddd1039489d15beb03ac01239ef4",
+        "nativeUnicodeCharacter": "启",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 36,
+        "nativeCommandCount": 36,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "pathSha256": "47702d98694a4dcdc75555908f9caf6a9cc3654a8b729c352ef7068811e56c69",
+        "nativeUnicodeCharacter": "⽤",
+        "sourceCmapGlyphAlias": true,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 43,
+        "nativeCommandCount": 43,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "管",
+        "pathSha256": "21de87f0dd51a588d1403064264df3f0a88b5e0d0889bac017750473b0c6e132",
+        "nativeUnicodeCharacter": "管",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 67,
+        "nativeCommandCount": 67,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "理",
+        "pathSha256": "d42fbefa821d8ff9d3f7473b39abe98883a84d73536068823dfd024de204c35b",
+        "nativeUnicodeCharacter": "理",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 68,
+        "nativeCommandCount": 68,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "员",
+        "pathSha256": "4057e11369b51a4a0a04c934afc93ec256a08224e00fe4121a1f9b1bd56dc0c7",
+        "nativeUnicodeCharacter": "员",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 36,
+        "nativeCommandCount": 36,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "李",
+        "pathSha256": "ee5e808f5e56e9ebd7379ab11b7203f2bf659cc430b032e075bac6991583662a",
+        "nativeUnicodeCharacter": "李",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 45,
+        "nativeCommandCount": 45,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "四",
+        "pathSha256": "f4b6b6446884cf49979e913a68723190e9e2612e5459262975568a1a61111ca4",
+        "nativeUnicodeCharacter": "四",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 30,
+        "nativeCommandCount": 30,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "编",
+        "pathSha256": "0d5f5b41b1f5e2f4d589684c3c36be403047b65d7bdae65a7d28e9391b4c34d2",
+        "nativeUnicodeCharacter": "编",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 83,
+        "nativeCommandCount": 83,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "辑",
+        "pathSha256": "6035f305afa902b49ea101feaf6e9c8fbf62d4cdc9e9789a6d1e29a3f1aa04a8",
+        "nativeUnicodeCharacter": "辑",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 81,
+        "nativeCommandCount": 81,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "王",
+        "pathSha256": "d39d71285df5182103de5773282a3361d6a77aff09ec7f2f3e72eb34508dc65d",
+        "nativeUnicodeCharacter": "王",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 22,
+        "nativeCommandCount": 22,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "五",
+        "pathSha256": "8482fff1951b1242a340da06cbd1c843cad80f1af1899fc91b07dea882670b19",
+        "nativeUnicodeCharacter": "五",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 26,
+        "nativeCommandCount": 26,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "停",
+        "pathSha256": "8fb8ede6e1b7c31ee9c6607ac9a4c8c70470d8dd587dfc367e894925b89e3dc4",
+        "nativeUnicodeCharacter": "停",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 56,
+        "nativeCommandCount": 56,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "访",
+        "pathSha256": "4cdf274747c135b302c34416eb375632fc2b124f573541a446a1816d88d9da69",
+        "nativeUnicodeCharacter": "访",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 46,
+        "nativeCommandCount": 46,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      },
+      {
+        "character": "客",
+        "pathSha256": "ed99942f5ed1711f1fe1cf0d9100c2078135f44531973faa91abdb65e9a319e0",
+        "nativeUnicodeCharacter": "客",
+        "sourceCmapGlyphAlias": false,
+        "orderedCompleteContoursEqual": true,
+        "advanceFontUnitsEqual": true,
+        "fontIdentityEqual": true,
+        "sourceCommandCount": 53,
+        "nativeCommandCount": 53,
+        "fontMatrix": [
+          "0.0010000001",
+          "0",
+          "0",
+          "-0.0010000001",
+          "0",
+          "0"
+        ],
+        "status": "PASS"
+      }
+    ],
+    "admissionEligible": false,
+    "limitations": [
+      "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+      "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+      "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+    ]
+  },
+  "baselines": {
+    "status": "PASS",
+    "nativeTextMatrices": [
+      [
+        "946.65625",
+        "124"
+      ],
+      [
+        "482.32813",
+        "124"
+      ],
+      [
+        "18",
+        "124"
+      ],
+      [
+        "946.65625",
+        "76"
+      ],
+      [
+        "482.32813",
+        "76"
+      ],
+      [
+        "18",
+        "76"
+      ],
+      [
+        "946.65625",
+        "28"
+      ],
+      [
+        "482.32813",
+        "28"
+      ],
+      [
+        "18",
+        "28"
+      ]
+    ],
+    "sourceObservationSha256": "63ede3fc28f5016dbbfc7d6b6478491658b0133046e3d9ce0c0f2b3bc9cc093e",
+    "sourceBaselines": [
+      28,
+      28,
+      28,
+      76,
+      76,
+      76,
+      124,
+      124,
+      124
+    ],
+    "pdfXSerialization": "five decimal half-up; exact x separately bound by native nodes and whole SVG"
+  },
+  "renderState": {
+    "status": "PASS",
+    "nativeNodes": [
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f92704d041",
+        "parentReference": "00000000-0000-0000-0000-000000000000",
+        "type": "board",
+        "name": "candidate / data.table.default / penpot-v1",
+        "x": 80,
+        "y": 320,
+        "width": 1392,
+        "height": 144,
+        "fills": [],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": true,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9280179ef",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92704d041",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.2",
+        "x": 80,
+        "y": 416,
+        "width": 1393,
+        "height": 48,
+        "fills": [],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9283a91b7",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f9280179ef",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.2.2",
+        "x": 1008.65625,
+        "y": 416,
+        "width": 464.34375,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f928446be8",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f9283a91b7",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.2.2.0.0",
+        "x": 1026.65625,
+        "y": 431,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "访客",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 1026.65625,
+          "y": 429,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f92822f5f6",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f9280179ef",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.2.1",
+        "x": 544.328125,
+        "y": 416,
+        "width": 464.328125,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9282b46dd",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92822f5f6",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.2.1.0.0",
+        "x": 562.328125,
+        "y": 431,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "停用",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 562.328125,
+          "y": 429,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9280ae12a",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f9280179ef",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.2.0",
+        "x": 80,
+        "y": 416,
+        "width": 464.328125,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f92813eb11",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f9280ae12a",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.2.0.0.0",
+        "x": 98,
+        "y": 431,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "王五",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 98,
+          "y": 429,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f928543906",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f9280179ef",
+        "type": "rectangle",
+        "name": "official-source / row-border / 0.0.0.0.1.2",
+        "x": 80,
+        "y": 463,
+        "width": 1393,
+        "height": 1,
+        "fills": [
+          {
+            "fillColor": "#e8eaec",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f927a3306d",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92704d041",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.1",
+        "x": 80,
+        "y": 368,
+        "width": 1393,
+        "height": 48,
+        "fills": [],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f927dc6991",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f927a3306d",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.1.2",
+        "x": 1008.65625,
+        "y": 368,
+        "width": 464.34375,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f927e86378",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f927dc6991",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.1.2.0.0",
+        "x": 1026.65625,
+        "y": 383,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "编辑",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 1026.65625,
+          "y": 381,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f927c38ee9",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f927a3306d",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.1.1",
+        "x": 544.328125,
+        "y": 368,
+        "width": 464.328125,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f927cdf3c1",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f927c38ee9",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.1.1.0.0",
+        "x": 562.328125,
+        "y": 383,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "启用",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 562.328125,
+          "y": 381,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f927ac2c0f",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f927a3306d",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.1.0",
+        "x": 80,
+        "y": 368,
+        "width": 464.328125,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f927b5ecbe",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f927ac2c0f",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.1.0.0.0",
+        "x": 98,
+        "y": 383,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "李四",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 98,
+          "y": 381,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f927f7ac5a",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f927a3306d",
+        "type": "rectangle",
+        "name": "official-source / row-border / 0.0.0.0.1.1",
+        "x": 80,
+        "y": 415,
+        "width": 1393,
+        "height": 1,
+        "fills": [
+          {
+            "fillColor": "#e8eaec",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f92732ebbc",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92704d041",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.0",
+        "x": 80,
+        "y": 320,
+        "width": 1393,
+        "height": 48,
+        "fills": [],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f92770d127",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92732ebbc",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.0.2",
+        "x": 1008.65625,
+        "y": 320,
+        "width": 464.34375,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9277b2191",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92770d127",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.0.2.0.0",
+        "x": 1026.65625,
+        "y": 335,
+        "width": 42,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "管理员",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 1026.65625,
+          "y": 333,
+          "width": 42,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f92758874a",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92732ebbc",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.0.1",
+        "x": 544.328125,
+        "y": 320,
+        "width": 464.328125,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9276221d5",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92758874a",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.0.1.0.0",
+        "x": 562.328125,
+        "y": 335,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "启用",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 562.328125,
+          "y": 333,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9273dd3eb",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92732ebbc",
+        "type": "board",
+        "name": "official-source / 0.0.0.0.1.0.0",
+        "x": 80,
+        "y": 320,
+        "width": 464.328125,
+        "height": 48,
+        "fills": [
+          {
+            "fillColor": "#ffffff",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "clipContent": false,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9274747de",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f9273dd3eb",
+        "type": "text",
+        "name": "official-source / 0.0.0.0.1.0.0.0.0",
+        "x": 98,
+        "y": 335,
+        "width": 28,
+        "height": 16,
+        "fills": [
+          {
+            "fillColor": "#515a6e",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": null,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null,
+        "characters": "张三",
+        "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+        "fontFamily": "PingFang SC",
+        "fontVariantId": "normal-400",
+        "fontSize": "14",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "lineHeight": "1.1428571428571428",
+        "letterSpacing": "0",
+        "growType": "fixed",
+        "textBounds": {
+          "x": 98,
+          "y": 333,
+          "width": 28,
+          "height": 20
+        },
+        "align": "left",
+        "verticalAlign": "top",
+        "direction": "ltr",
+        "textTransform": "none",
+        "textDecoration": "none"
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9279380c8",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92732ebbc",
+        "type": "rectangle",
+        "name": "official-source / row-border / 0.0.0.0.1.0",
+        "x": 80,
+        "y": 367,
+        "width": 1393,
+        "height": 1,
+        "fills": [
+          {
+            "fillColor": "#e8eaec",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      },
+      {
+        "reference": "6d6e57fb-4a0a-8065-8008-c0f9285e8ff3",
+        "parentReference": "6d6e57fb-4a0a-8065-8008-c0f92704d041",
+        "type": "rectangle",
+        "name": "official-source / 0.0::before",
+        "x": 80,
+        "y": 463,
+        "width": 1392,
+        "height": 1,
+        "fills": [
+          {
+            "fillColor": "#dcdee2",
+            "fillOpacity": 1,
+            "fillColorGradient": null,
+            "fillColorRefFile": null,
+            "fillColorRefId": null,
+            "fillImage": null
+          }
+        ],
+        "strokes": [],
+        "opacity": 1,
+        "blendMode": "normal",
+        "borderRadius": 0,
+        "rotation": 0,
+        "hidden": false,
+        "visible": true,
+        "flipX": false,
+        "flipY": false,
+        "shadows": [],
+        "blur": null
+      }
+    ]
+  },
+  "sourceReproduction": [
+    {
+      "logicalId": "data.table.default",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "vectorBinding": {
+    "status": "PASS",
+    "probe": {
+      "status": "OBSERVED",
+      "scope": "penpot-native-svg-browser-diagnostic",
+      "nativeReceiptSha256": "2f3240b86ed5b415e851d1575a39756b1e09b6b272849cba9d1d4f8a8bbe77e4",
+      "referenceComponentIrSha256": "0624e587babae50f4f5b44a1c0bccf44100fb4679c332630e0272acbd118c33f",
+      "probeScriptSha256": "4271588e4e1a72a4cc30dbb7b13727c1409cfaea892660fa58a23d6d36e902b7",
+      "sample": {
+        "texts": [
+          {
+            "characters": "访客",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 946.65625,
+                "y": 129
+              },
+              {
+                "x": 960.65625,
+                "y": 129
+              }
+            ],
+            "end": [
+              {
+                "x": 960.65625,
+                "y": 129
+              },
+              {
+                "x": 974.65625,
+                "y": 129
+              }
+            ],
+            "bbox": {
+              "x": 945.65625,
+              "y": 109,
+              "width": 29,
+              "height": 20
+            }
+          },
+          {
+            "characters": "停用",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 482.328125,
+                "y": 129
+              },
+              {
+                "x": 496.328125,
+                "y": 129
+              }
+            ],
+            "end": [
+              {
+                "x": 496.328125,
+                "y": 129
+              },
+              {
+                "x": 510.328125,
+                "y": 129
+              }
+            ],
+            "bbox": {
+              "x": 481.328125,
+              "y": 109,
+              "width": 29,
+              "height": 20
+            }
+          },
+          {
+            "characters": "王五",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 18,
+                "y": 129
+              },
+              {
+                "x": 32,
+                "y": 129
+              }
+            ],
+            "end": [
+              {
+                "x": 32,
+                "y": 129
+              },
+              {
+                "x": 46,
+                "y": 129
+              }
+            ],
+            "bbox": {
+              "x": 18,
+              "y": 109,
+              "width": 28,
+              "height": 20
+            }
+          },
+          {
+            "characters": "编辑",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 946.65625,
+                "y": 81
+              },
+              {
+                "x": 960.65625,
+                "y": 81
+              }
+            ],
+            "end": [
+              {
+                "x": 960.65625,
+                "y": 81
+              },
+              {
+                "x": 974.65625,
+                "y": 81
+              }
+            ],
+            "bbox": {
+              "x": 945.65625,
+              "y": 61,
+              "width": 30,
+              "height": 20
+            }
+          },
+          {
+            "characters": "启用",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 482.328125,
+                "y": 81
+              },
+              {
+                "x": 496.328125,
+                "y": 81
+              }
+            ],
+            "end": [
+              {
+                "x": 496.328125,
+                "y": 81
+              },
+              {
+                "x": 510.328125,
+                "y": 81
+              }
+            ],
+            "bbox": {
+              "x": 481.328125,
+              "y": 61,
+              "width": 29,
+              "height": 20
+            }
+          },
+          {
+            "characters": "李四",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 18,
+                "y": 81
+              },
+              {
+                "x": 32,
+                "y": 81
+              }
+            ],
+            "end": [
+              {
+                "x": 32,
+                "y": 81
+              },
+              {
+                "x": 46,
+                "y": 81
+              }
+            ],
+            "bbox": {
+              "x": 17,
+              "y": 61,
+              "width": 29,
+              "height": 20
+            }
+          },
+          {
+            "characters": "管理员",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 42,
+            "start": [
+              {
+                "x": 946.65625,
+                "y": 33
+              },
+              {
+                "x": 960.65625,
+                "y": 33
+              },
+              {
+                "x": 974.65625,
+                "y": 33
+              }
+            ],
+            "end": [
+              {
+                "x": 960.65625,
+                "y": 33
+              },
+              {
+                "x": 974.65625,
+                "y": 33
+              },
+              {
+                "x": 988.65625,
+                "y": 33
+              }
+            ],
+            "bbox": {
+              "x": 945.65625,
+              "y": 13,
+              "width": 43,
+              "height": 20
+            }
+          },
+          {
+            "characters": "启用",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 482.328125,
+                "y": 33
+              },
+              {
+                "x": 496.328125,
+                "y": 33
+              }
+            ],
+            "end": [
+              {
+                "x": 496.328125,
+                "y": 33
+              },
+              {
+                "x": 510.328125,
+                "y": 33
+              }
+            ],
+            "bbox": {
+              "x": 481.328125,
+              "y": 13,
+              "width": 29,
+              "height": 20
+            }
+          },
+          {
+            "characters": "张三",
+            "fontFamily": "\"PingFang SC\"",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "length": 28,
+            "start": [
+              {
+                "x": 18,
+                "y": 33
+              },
+              {
+                "x": 32,
+                "y": 33
+              }
+            ],
+            "end": [
+              {
+                "x": 32,
+                "y": 33
+              },
+              {
+                "x": 46,
+                "y": 33
+              }
+            ],
+            "bbox": {
+              "x": 18,
+              "y": 13,
+              "width": 28,
+              "height": 20
+            }
+          }
+        ],
+        "fontLoadStatus": true,
+        "svgSha256": "f25200017860c35df67ad9addcdc1d2d1c6e7472d99433a71d626f9a086cdf38",
+        "pngSha256": "a2730f5b7f2e386d5a7ff1a9779841d73c359b2e90009aa80a2e5f1e1e99b02a",
+        "fontUrl": "https://design.penpot.app/assets/by-id/e2c64052-f235-4680-b309-8f8c183dc82e",
+        "fontSha256": "7ce5d241353a41d6c9fd02b905967ad800f19d534abd3d46eb67e46b0d18099a"
+      },
+      "referenceMatches": [
+        {
+          "logicalId": "data.table.default",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "The font resource is served from the hash-verified local font container, not a remote download.",
+        "Browser SVG raster is diagnostic; native PNG remains the production screenshot."
+      ]
+    },
+    "wholeVectorPngExactlyMatchesSource": true
+  },
+  "nativePngSha256": "557534ae3b659b50f60167ff7e680a4c2f60222b3ac86f0d3661a3d1bba2c6bd",
+  "comparisonContext": {
+    "background": "white",
+    "resize": false,
+    "crop": false
+  }
+}

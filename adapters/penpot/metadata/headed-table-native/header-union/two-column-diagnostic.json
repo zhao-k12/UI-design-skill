@@ -1,0 +1,180 @@
+{
+  "status": "OBSERVED",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false,
+  "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+  "geometry": {
+    "status": "PASS",
+    "fidelityGate": "NOT_RUN",
+    "productionAdmission": false,
+    "textSamples": [
+      {
+        "path": "0.0.0.0.1.0.0.0.0",
+        "characters": "姓名",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 10.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 600,
+        "sourceCssFontWeight": 700,
+        "role": "header",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "fill": "#515a6e",
+        "sourceBaselineY": 23.875
+      },
+      {
+        "path": "0.0.0.0.1.0.1.0.0",
+        "characters": "邮箱",
+        "sourceTextBounds": {
+          "x": 258.328125,
+          "y": 10.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 600,
+        "sourceCssFontWeight": 700,
+        "role": "header",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "fill": "#515a6e",
+        "sourceBaselineY": 23.875
+      },
+      {
+        "path": "0.0.1.0.1.0.0.0.0",
+        "characters": "赵六",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 53.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 66.875
+      },
+      {
+        "path": "0.0.1.0.1.0.1.0.0",
+        "characters": "zhao@example.com",
+        "sourceTextBounds": {
+          "x": 258.328125,
+          "y": 53.875,
+          "width": 127.828125,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 66.875
+      },
+      {
+        "path": "0.0.1.0.1.1.0.0.0",
+        "characters": "钱七",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 101.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 114.875
+      },
+      {
+        "path": "0.0.1.0.1.1.1.0.0",
+        "characters": "qian@example.com",
+        "sourceTextBounds": {
+          "x": 258.328125,
+          "y": 101.875,
+          "width": 123.9375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 114.875
+      }
+    ],
+    "sourcePaths": [
+      "candidate/data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa/penpot-v1",
+      "official-source/0.0.0.0.1.0",
+      "official-source/0.0.0.0.1.0.0",
+      "official-source/0.0.0.0.1.0.0.0.0",
+      "official-source/0.0.0.0.1.0.1",
+      "official-source/0.0.0.0.1.0.1.0.0",
+      "official-source/row-border/0.0.0.0.1.0",
+      "official-source/0.0.1.0.1.0",
+      "official-source/0.0.1.0.1.0.0",
+      "official-source/0.0.1.0.1.0.0.0.0",
+      "official-source/0.0.1.0.1.0.1",
+      "official-source/0.0.1.0.1.0.1.0.0",
+      "official-source/row-border/0.0.1.0.1.0",
+      "official-source/0.0.1.0.1.1",
+      "official-source/0.0.1.0.1.1.0",
+      "official-source/0.0.1.0.1.1.0.0.0",
+      "official-source/0.0.1.0.1.1.1",
+      "official-source/0.0.1.0.1.1.1.0.0",
+      "official-source/row-border/0.0.1.0.1.1",
+      "official-source/0.0::before"
+    ],
+    "borderNormalization": "Contiguous same-color cell borders form one row region; independent bottom pseudo and outer clipping are preserved."
+  },
+  "differentPixels": 7056,
+  "outsideTextAndExactHorizontalRegions": 0,
+  "nativeAlpha": [
+    255,
+    255
+  ]
+}

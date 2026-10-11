@@ -1,0 +1,490 @@
+{
+  "scope": "mixed_source_font_file_effect_diagnostic",
+  "status": "OBSERVED",
+  "fontFiles": {
+    "Arial": {
+      "path": "C:/Windows/Fonts/arial.ttf",
+      "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+    },
+    "PingFang SC": {
+      "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Regular.otf",
+      "sha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a"
+    }
+  },
+  "referenceComponentIrSha256": "36aa8465c4d8fe6cfb9b31db977e2cebe10664b41253235a4458311d47932947",
+  "probeScriptSha256": "c83c229c73bb8486287563571d164b91a14f04229b33fcc86352406a78086a15",
+  "referenceMatches": [
+    {
+      "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+      "screenshotMatches": true,
+      "environmentMatches": true
+    }
+  ],
+  "observation": {
+    "logicalId": "data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122",
+    "fontLoadStatus": [
+      "loaded",
+      "loaded"
+    ],
+    "ownerGeometry": {
+      "before": [
+        {
+          "characters": "001",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 39,
+            "width": 23.359375,
+            "height": 16,
+            "top": 39,
+            "right": 65.359375,
+            "bottom": 55,
+            "left": 42
+          }
+        },
+        {
+          "characters": "张三",
+          "style": null,
+          "bounds": {
+            "x": 202.15625,
+            "y": 39,
+            "width": 28,
+            "height": 16,
+            "top": 39,
+            "right": 230.15625,
+            "bottom": 55,
+            "left": 202.15625
+          }
+        },
+        {
+          "characters": "研发",
+          "style": null,
+          "bounds": {
+            "x": 442.40625,
+            "y": 39,
+            "width": 28,
+            "height": 16,
+            "top": 39,
+            "right": 470.40625,
+            "bottom": 55,
+            "left": 442.40625
+          }
+        },
+        {
+          "characters": "启用",
+          "style": null,
+          "bounds": {
+            "x": 762.734375,
+            "y": 39,
+            "width": 28,
+            "height": 16,
+            "top": 39,
+            "right": 790.734375,
+            "bottom": 55,
+            "left": 762.734375
+          }
+        },
+        {
+          "characters": "002",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 87,
+            "width": 23.359375,
+            "height": 16,
+            "top": 87,
+            "right": 65.359375,
+            "bottom": 103,
+            "left": 42
+          }
+        },
+        {
+          "characters": "李四",
+          "style": null,
+          "bounds": {
+            "x": 202.15625,
+            "y": 87,
+            "width": 28,
+            "height": 16,
+            "top": 87,
+            "right": 230.15625,
+            "bottom": 103,
+            "left": 202.15625
+          }
+        },
+        {
+          "characters": "财务",
+          "style": null,
+          "bounds": {
+            "x": 442.40625,
+            "y": 87,
+            "width": 28,
+            "height": 16,
+            "top": 87,
+            "right": 470.40625,
+            "bottom": 103,
+            "left": 442.40625
+          }
+        },
+        {
+          "characters": "停用",
+          "style": null,
+          "bounds": {
+            "x": 762.734375,
+            "y": 87,
+            "width": 28,
+            "height": 16,
+            "top": 87,
+            "right": 790.734375,
+            "bottom": 103,
+            "left": 762.734375
+          }
+        },
+        {
+          "characters": "003",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 135,
+            "width": 23.359375,
+            "height": 16,
+            "top": 135,
+            "right": 65.359375,
+            "bottom": 151,
+            "left": 42
+          }
+        },
+        {
+          "characters": "王五",
+          "style": null,
+          "bounds": {
+            "x": 202.15625,
+            "y": 135,
+            "width": 28,
+            "height": 16,
+            "top": 135,
+            "right": 230.15625,
+            "bottom": 151,
+            "left": 202.15625
+          }
+        },
+        {
+          "characters": "运营",
+          "style": null,
+          "bounds": {
+            "x": 442.40625,
+            "y": 135,
+            "width": 28,
+            "height": 16,
+            "top": 135,
+            "right": 470.40625,
+            "bottom": 151,
+            "left": 442.40625
+          }
+        },
+        {
+          "characters": "启用",
+          "style": null,
+          "bounds": {
+            "x": 762.734375,
+            "y": 135,
+            "width": 28,
+            "height": 16,
+            "top": 135,
+            "right": 790.734375,
+            "bottom": 151,
+            "left": 762.734375
+          }
+        },
+        {
+          "characters": "004",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 183,
+            "width": 23.359375,
+            "height": 16,
+            "top": 183,
+            "right": 65.359375,
+            "bottom": 199,
+            "left": 42
+          }
+        },
+        {
+          "characters": "赵六",
+          "style": null,
+          "bounds": {
+            "x": 202.15625,
+            "y": 183,
+            "width": 28,
+            "height": 16,
+            "top": 183,
+            "right": 230.15625,
+            "bottom": 199,
+            "left": 202.15625
+          }
+        },
+        {
+          "characters": "客服",
+          "style": null,
+          "bounds": {
+            "x": 442.40625,
+            "y": 183,
+            "width": 28,
+            "height": 16,
+            "top": 183,
+            "right": 470.40625,
+            "bottom": 199,
+            "left": 442.40625
+          }
+        },
+        {
+          "characters": "启用",
+          "style": null,
+          "bounds": {
+            "x": 762.734375,
+            "y": 183,
+            "width": 28,
+            "height": 16,
+            "top": 183,
+            "right": 790.734375,
+            "bottom": 199,
+            "left": 762.734375
+          }
+        }
+      ],
+      "during": [
+        {
+          "characters": "001",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 39,
+            "width": 23.359375,
+            "height": 16,
+            "top": 39,
+            "right": 65.359375,
+            "bottom": 55,
+            "left": 42
+          }
+        },
+        {
+          "characters": "张三",
+          "style": null,
+          "bounds": {
+            "x": 202.15625,
+            "y": 39,
+            "width": 28,
+            "height": 16,
+            "top": 39,
+            "right": 230.15625,
+            "bottom": 55,
+            "left": 202.15625
+          }
+        },
+        {
+          "characters": "研发",
+          "style": null,
+          "bounds": {
+            "x": 442.40625,
+            "y": 39,
+            "width": 28,
+            "height": 16,
+            "top": 39,
+            "right": 470.40625,
+            "bottom": 55,
+            "left": 442.40625
+          }
+        },
+        {
+          "characters": "启用",
+          "style": null,
+          "bounds": {
+            "x": 762.734375,
+            "y": 39,
+            "width": 28,
+            "height": 16,
+            "top": 39,
+            "right": 790.734375,
+            "bottom": 55,
+            "left": 762.734375
+          }
+        },
+        {
+          "characters": "002",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 87,
+            "width": 23.359375,
+            "height": 16,
+            "top": 87,
+            "right": 65.359375,
+            "bottom": 103,
+            "left": 42
+          }
+        },
+        {
+          "characters": "李四",
+          "style": null,
+          "bounds": {
+            "x": 202.15625,
+            "y": 87,
+            "width": 28,
+            "height": 16,
+            "top": 87,
+            "right": 230.15625,
+            "bottom": 103,
+            "left": 202.15625
+          }
+        },
+        {
+          "characters": "财务",
+          "style": null,
+          "bounds": {
+            "x": 442.40625,
+            "y": 87,
+            "width": 28,
+            "height": 16,
+            "top": 87,
+            "right": 470.40625,
+            "bottom": 103,
+            "left": 442.40625
+          }
+        },
+        {
+          "characters": "停用",
+          "style": null,
+          "bounds": {
+            "x": 762.734375,
+            "y": 87,
+            "width": 28,
+            "height": 16,
+            "top": 87,
+            "right": 790.734375,
+            "bottom": 103,
+            "left": 762.734375
+          }
+        },
+        {
+          "characters": "003",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 135,
+            "width": 23.359375,
+            "height": 16,
+            "top": 135,
+            "right": 65.359375,
+            "bottom": 151,
+            "left": 42
+          }
+        },
+        {
+          "characters": "王五",
+          "style": null,
+          "bounds": {
+            "x": 202.15625,
+            "y": 135,
+            "width": 28,
+            "height": 16,
+            "top": 135,
+            "right": 230.15625,
+            "bottom": 151,
+            "left": 202.15625
+          }
+        },
+        {
+          "characters": "运营",
+          "style": null,
+          "bounds": {
+            "x": 442.40625,
+            "y": 135,
+            "width": 28,
+            "height": 16,
+            "top": 135,
+            "right": 470.40625,
+            "bottom": 151,
+            "left": 442.40625
+          }
+        },
+        {
+          "characters": "启用",
+          "style": null,
+          "bounds": {
+            "x": 762.734375,
+            "y": 135,
+            "width": 28,
+            "height": 16,
+            "top": 135,
+            "right": 790.734375,
+            "bottom": 151,
+            "left": 762.734375
+          }
+        },
+        {
+          "characters": "004",
+          "style": null,
+          "bounds": {
+            "x": 42,
+            "y": 183,
+            "width": 23.359375,
+            "height": 16,
+            "top": 183,
+            "right": 65.359375,
+            "bottom": 199,
+            "left": 42
+          }
+        },
+        {
+          "characters": "赵六",
+          "style": null,
+          "bounds": {
+            "x": 202.15625,
+            "y": 183,
+            "width": 28,
+            "height": 16,
+            "top": 183,
+            "right": 230.15625,
+            "bottom": 199,
+            "left": 202.15625
+          }
+        },
+        {
+          "characters": "客服",
+          "style": null,
+          "bounds": {
+            "x": 442.40625,
+            "y": 183,
+            "width": 28,
+            "height": 16,
+            "top": 183,
+            "right": 470.40625,
+            "bottom": 199,
+            "left": 442.40625
+          }
+        },
+        {
+          "characters": "启用",
+          "style": null,
+          "bounds": {
+            "x": 762.734375,
+            "y": 183,
+            "width": 28,
+            "height": 16,
+            "top": 183,
+            "right": 790.734375,
+            "bottom": 199,
+            "left": 762.734375
+          }
+        }
+      ]
+    },
+    "ownerBoundsUnchanged": true,
+    "pngSha256": "1b12aa52a125e1ca68224318222ff272215edb1d3caec6077d87eca727e38a23"
+  },
+  "ownerStatesRestored": true,
+  "temporaryFontFacesRemoved": true,
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN"
+}

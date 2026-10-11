@@ -1,0 +1,33 @@
+{
+  "status": "FAIL",
+  "evidenceKind": "native-pdf-font-observation",
+  "pdfSha256": "2702ef5d193f3b5a4aed146d53c2a6cce8192434239ecef5b8631f06ccccbda1",
+  "fonts": [
+    {
+      "page": 0,
+      "resource": "/F4",
+      "baseFont": "AAAAAA+WenQuanYiZenHei",
+      "postscriptName": "WenQuanYiZenHei",
+      "embedded": [
+        {
+          "field": "/FontFile2",
+          "sha256": "373fbc18cf3deca7383fe60d6b711e5322d635ca324d0886f5591546d44cef49",
+          "bytes": 199620,
+          "subtype": ""
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "code": "native_pdf_font_mismatch",
+      "expected": "PingFangSC-Regular",
+      "observed": [
+        "WenQuanYiZenHei"
+      ]
+    }
+  ],
+  "admissionEligible": false,
+  "glyphGeometryVerified": false,
+  "nativePngVerified": false
+}

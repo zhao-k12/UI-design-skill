@@ -1,0 +1,10 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": { "width": 840, "height": 240 },
+  "containerWidth": 240,
+  "cases": [
+    { "logicalId": "action.button.primary.medium", "componentType": "Button", "variant": "default", "props": { "type": "primary", "size": "default" }, "text": "查询" },
+    { "logicalId": "form.input.default.medium", "componentType": "Input", "variant": "default", "props": { "size": "default", "modelValue": "", "placeholder": "请输入姓名", "elementId": "runtime-input" } },
+    { "logicalId": "form.select.default.medium", "componentType": "Select", "variant": "default", "props": { "size": "default", "modelValue": "enabled", "placeholder": "请选择状态", "elementId": "runtime-select", "transfer": false }, "options": [ { "value": "enabled", "label": "启用" }, { "value": "disabled", "label": "停用" } ] }
+  ]
+}

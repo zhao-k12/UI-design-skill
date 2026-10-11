@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "tree": {
+    "version": "0.1.0",
+    "documentId": "frozen-user-management-list",
+    "analysisSha256": "d4c77d7269898907607e875729a28a35fecadc04ce616636cd670a2ac58557d2",
+    "stage": "page-tree",
+    "page": {
+      "id": "frozen-user-management-list",
+      "kind": "Page",
+      "identity": {
+        "text": "用户管理",
+        "evidence": [
+          "e0"
+        ]
+      },
+      "primaryTask": {
+        "text": "查询与查看用户信息",
+        "evidence": [
+          "e2",
+          "e5",
+          "e7",
+          "e13"
+        ]
+      },
+      "children": [
+        {
+          "id": "header",
+          "kind": "Section",
+          "purpose": {
+            "text": "页头",
+            "evidence": [
+              "e1"
+            ]
+          },
+          "children": [
+            {
+              "id": "header-title",
+              "kind": "staticContent",
+              "description": {
+                "text": "用户管理标题与设置图标",
+                "evidence": [
+                  "e1"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "query",
+          "kind": "Section",
+          "purpose": {
+            "text": "查询区",
+            "evidence": [
+              "e2"
+            ]
+          },
+          "children": [
+            {
+              "id": "field-name",
+              "kind": "fields",
+              "description": {
+                "text": "姓名",
+                "evidence": [
+                  "e3"
+                ]
+              }
+            },
+            {
+              "id": "field-status",
+              "kind": "fields",
+              "description": {
+                "text": "状态",
+                "evidence": [
+                  "e4"
+                ]
+              }
+            },
+            {
+              "id": "query-action",
+              "kind": "buttons",
+              "description": {
+                "text": "查询",
+                "evidence": [
+                  "e6"
+                ]
+              }
+            },
+            {
+              "id": "scope-content",
+              "kind": "staticContent",
+              "description": {
+                "text": "范围与查看用户信息",
+                "evidence": [
+                  "e5"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "kind": "Section",
+          "purpose": {
+            "text": "列表区",
+            "evidence": [
+              "e7"
+            ]
+          },
+          "children": [
+            {
+              "id": "user-table",
+              "kind": "dataRegions",
+              "description": {
+                "text": "用户列表，列为姓名／状态／角色，包含三行静态记录",
+                "evidence": [
+                  "e10",
+                  "e11"
+                ]
+              }
+            },
+            {
+              "id": "list-title",
+              "kind": "staticContent",
+              "description": {
+                "text": "用户列表",
+                "evidence": [
+                  "e8"
+                ]
+              }
+            },
+            {
+              "id": "export-action",
+              "kind": "staticContent",
+              "description": {
+                "text": "导出文字与下载图标（静态操作显示）",
+                "evidence": [
+                  "e9"
+                ]
+              }
+            },
+            {
+              "id": "list-summary",
+              "kind": "staticContent",
+              "description": {
+                "text": "共 3 位用户",
+                "evidence": [
+                  "e12"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

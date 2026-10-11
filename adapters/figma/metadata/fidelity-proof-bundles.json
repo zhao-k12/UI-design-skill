@@ -1,0 +1,5722 @@
+{
+  "action.button.primary.medium": {
+    "logicalId": "action.button.primary.medium",
+    "inputHashes": {
+      "official-runtime-font-evidence.json": "0a918c6d286bd8007850c13b9d8e71f75432381b50b58fd87742c912e94be8ec",
+      "official-source-font-bindings.json": "ef0e8f1e0029601ed172a4a0fd05754c571ae174a5ab77e4251254afbeeb7e0f",
+      "official-runtime-render-state-evidence.json": "bf0364c877bf840a28f343151fa0488f1235b4b9f5e325f085961cd5c8236171",
+      "font-file-identity.json": "69dba6a4cca272184c0a6e830fd55b6f1684a4606a84f97a9a7a091ed479e193",
+      "native-current-text-outline.json": "11b8439224b84a73c72529ad4d185ff601e7bec07ee6eb1fcb595bc871e94a22",
+      "native-component-svg-capture.json": "989b3cafc9e8900ddbecab19caab15fca9f7f46c66c6515469882da45a3e23ee",
+      "native-svg-browser-evidence.json": "04aba8c2e10afac190eb3f7296a51f55ce311d2ec22d05a2207c66c48815422d",
+      "browser-font-file-binding-evidence.json": "70dfad805216af5cc1421edb8a88881c9bc668a539d957dcb39b5238c38bf1a6",
+      "official-runtime-complete-baseline-evidence.json": "7ae76fdb1f72605ff1ae7815716c13148d7ab53fb2738159d755821b3dc5fc71",
+      "served-ionicons-glyph-equivalence.json": "99607a1e2bce5a54eb4c93160f42f72845ababc0a0ae13555f972962d8b98042"
+    },
+    "blendExperimentSha256": "a5963edeba446d6dc527d4065ab65c0c4c3ae786a0b86dcc7697f569157306ee",
+    "nativeEvidenceSha256": "d599d125eb90d3fff6d577e5de34c277a1a65eeb0b77ddf2b26b87a023e7c0d4",
+    "geometryAndStyle": [
+      {
+        "field": "root.width",
+        "status": "PASS",
+        "expected": 60,
+        "actual": 60
+      },
+      {
+        "field": "root.height",
+        "status": "PASS",
+        "expected": 32,
+        "actual": 32
+      },
+      {
+        "field": "button.bounds",
+        "status": "PASS",
+        "expected": {
+          "x": 0,
+          "y": 0,
+          "width": 60,
+          "height": 32
+        },
+        "actual": {
+          "x": 0,
+          "y": 0,
+          "width": 60,
+          "height": 32
+        }
+      },
+      {
+        "field": "button.fill",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(45, 140, 240)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.9411764740943909,
+              "g": 0.5490196347236633,
+              "r": 0.1764705926179886
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "button.stroke",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(45, 140, 240)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.9411764740943909,
+              "g": 0.5490196347236633,
+              "r": 0.1764705926179886
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "button.strokeWeight",
+        "status": "PASS",
+        "expected": 1.0,
+        "actual": 1
+      },
+      {
+        "field": "button.strokeAlign",
+        "status": "PASS",
+        "expected": "INSIDE",
+        "actual": "INSIDE"
+      },
+      {
+        "field": "button.radius",
+        "status": "PASS",
+        "expected": 4.0,
+        "actual": 4
+      },
+      {
+        "field": "button.padding.top",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0
+      },
+      {
+        "field": "button.padding.right",
+        "status": "PASS",
+        "expected": 15.0,
+        "actual": 15
+      },
+      {
+        "field": "button.padding.bottom",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0
+      },
+      {
+        "field": "button.padding.left",
+        "status": "PASS",
+        "expected": 15.0,
+        "actual": 15
+      },
+      {
+        "field": "button.sourceSpanParent",
+        "status": "PASS",
+        "expected": "18:5",
+        "actual": "18:5"
+      },
+      {
+        "field": "button.labelParent",
+        "status": "PASS",
+        "expected": "18:4",
+        "actual": "18:4"
+      },
+      {
+        "field": "button.labelLayoutBounds",
+        "status": "PASS",
+        "expected": {
+          "x": 16,
+          "y": 5.5,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "x": 16,
+          "y": 5.5,
+          "width": 28,
+          "height": 21
+        }
+      },
+      {
+        "field": "button.sourceSpanFill",
+        "status": "PASS",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "field": "button.sourceSpanStroke",
+        "status": "PASS",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "field": "button.sourceSpanClips",
+        "status": "PASS",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "field": "button.labelOffsetX",
+        "status": "PASS",
+        "expected": 0,
+        "actual": 0
+      },
+      {
+        "field": "label.characters",
+        "status": "PASS",
+        "expected": "查询",
+        "actual": "查询"
+      },
+      {
+        "field": "label.fontSize",
+        "status": "PASS",
+        "expected": 14.0,
+        "actual": 14
+      },
+      {
+        "field": "label.fontWeight",
+        "status": "PASS",
+        "expected": 400,
+        "actual": 400
+      },
+      {
+        "field": "label.color",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(255, 255, 255)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "label.fontFamily",
+        "status": "PASS",
+        "expected": "PingFang SC",
+        "actual": "PingFang SC"
+      },
+      {
+        "field": "label.fontBinding",
+        "status": "PASS",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        }
+      },
+      {
+        "field": "label.lineHeight",
+        "status": "PASS",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21.0
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        }
+      }
+    ],
+    "renderState": {
+      "scope": "figma_observed_render_state_diagnostic",
+      "logicalId": "action.button.primary.medium",
+      "status": "REVIEW",
+      "checks": [
+        {
+          "reference": "18:5",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "18:5",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "18:5",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "18:4",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "18:4",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "18:4",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "textCase",
+          "expected": "ORIGINAL",
+          "actual": "ORIGINAL",
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "textDecoration",
+          "expected": "NONE",
+          "actual": "NONE",
+          "status": "PASS"
+        },
+        {
+          "reference": "18:3",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "letterSpacing",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "status": "PASS"
+        }
+      ],
+      "unverified": [
+        {
+          "reference": "18:3",
+          "field": "blendMode",
+          "actual": "PASS_THROUGH",
+          "reason": "native_passthrough_text_not_css_normalized"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "PASS covers only listed observed properties, not all CSS or pixel equality.",
+        "Normal/pass-through containers are compared only at unit opacity; masks, clipping, font shaping and rasterization remain independent."
+      ]
+    },
+    "blendState": {
+      "scope": "figma_text_blend_mode_pixel_diagnostic",
+      "status": "PASS",
+      "logicalId": "action.button.primary.medium",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "18:5",
+      "mutatedNodeIds": [
+        "18:3"
+      ],
+      "restoredNodeIds": [
+        "18:3"
+      ],
+      "nativePngHashes": {
+        "before": "d2a4858c2206b2018343c7e8d9dfd1bc0e7b4974f64ada9a42189f0ac340684b",
+        "normal": "d2a4858c2206b2018343c7e8d9dfd1bc0e7b4974f64ada9a42189f0ac340684b",
+        "restored": "d2a4858c2206b2018343c7e8d9dfd1bc0e7b4974f64ada9a42189f0ac340684b"
+      },
+      "normalVsBeforeChangedPixels": 0,
+      "restoredVsBeforeChangedPixels": 0,
+      "observedEffect": "NO_PIXEL_CHANGE_IN_CURRENT_STATIC_COMPONENT",
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Only current static component/content/background is tested; no general CSS blend-mode equivalence is certified.",
+        "This experiment does not compare with official browser pixels or admit a component."
+      ]
+    },
+    "glyphGeometry": [
+      {
+        "textReference": "18:3",
+        "characters": "查询",
+        "sourceFileRole": "system-file-candidate",
+        "source": {
+          "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "unitsPerEm": 1000,
+          "glyphs": [
+            {
+              "codepoint": "U+67E5",
+              "glyphName": "cid03761",
+              "boundsFontUnits": [
+                43,
+                -71,
+                955,
+                819
+              ],
+              "advanceFontUnits": 1000
+            },
+            {
+              "codepoint": "U+8BE2",
+              "glyphName": "cid06595",
+              "boundsFontUnits": [
+                42,
+                -92,
+                923,
+                820
+              ],
+              "advanceFontUnits": 1000
+            }
+          ],
+          "advancePx": 28.0,
+          "unshapedInkBoundsBaselineCoordinates": {
+            "x": 0.602,
+            "y": -11.48,
+            "width": 26.32,
+            "height": 12.768
+          },
+          "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+        },
+        "nativeSvg": {
+          "textReference": "18:3",
+          "characters": "查询",
+          "svgSha256": "4dcb33b9dc0f09dbcf569a651e45fd7b7d6a99d0a9839cefaf146c9c58db1b57",
+          "pathCount": 1,
+          "pathBoundsSvgCoordinates": {
+            "x": 0.602,
+            "y": 4.52,
+            "width": 26.32,
+            "height": 12.768
+          },
+          "viewBox": "0 0 28 21",
+          "exportWidth": "28",
+          "exportHeight": "21"
+        },
+        "dimensionDeltaPx": {
+          "width": 0.0,
+          "height": 0.0
+        },
+        "dimensionEqual": true,
+        "contourComparison": {
+          "orderedContourStructureEqual": false,
+          "exactNormalizedCoordinatesEqual": false,
+          "sourceCommandCount": 88,
+          "nativeCommandCount": 88,
+          "maximumCoordinateDeltaPx": null,
+          "sourceNormalizedSha256": "2a00892be0340a3c54387e27903ad76ef699ddf4654bbcdd7fd1cb24eec7d7df",
+          "nativeNormalizedSha256": "94a233d25bd3fe533edaa302a4dad9bd48c1f31f9725484beec1c7a5acec3dde",
+          "alignmentTranslationSvgCoordinates": {
+            "x": 0.0,
+            "y": 16.0
+          },
+          "alignmentAppliedToCanvas": false,
+          "admissionEligible": false,
+          "unorientedGeometry": {
+            "contourCountSource": 11,
+            "contourCountNative": 11,
+            "structureEqual": true,
+            "exactCoordinatesEqual": true,
+            "maximumCoordinateDeltaPx": 0.0,
+            "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+            "admissionEligible": false
+          },
+          "nonzeroWinding": {
+            "scope": "nonzero_path_winding_diagnostic",
+            "status": "PASS",
+            "contourCount": 11,
+            "nativeFillRule": "nonzero",
+            "nativePathCount": 1,
+            "directionRelationship": "ALL_CONTOURS_REVERSED",
+            "nonzeroPathFilledRegionEquivalent": true,
+            "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+            "admissionEligible": false,
+            "limitations": [
+              "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+              "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+            ]
+          },
+          "sixDigitSerialization": {
+            "status": "REVIEW",
+            "serializer": "six-significant-decimal-digits",
+            "translation": {
+              "x": "0.000",
+              "y": "16.000"
+            },
+            "exactSerializedDirectedGeometryEqual": false,
+            "nativeFillRule": "nonzero",
+            "nativePathCount": 1,
+            "admissionEligible": false
+          }
+        }
+      }
+    ],
+    "baselines": [
+      {
+        "logicalId": "action.button.primary.medium",
+        "surface": "element",
+        "textReference": "18:3",
+        "sourceBaselineComponentY": 20.5,
+        "nativeFontBaselineComponentY": 20.5,
+        "deltaY": 0.0,
+        "positionStatus": "ALIGNED",
+        "nativeSvgBaselineOffset": 16.0,
+        "exactContourCoordinatesEqual": true
+      }
+    ],
+    "vectorSurfaceComparison": {
+      "sourcePath": "0",
+      "sourceRadiusPx": 4.0,
+      "cornerRectangles": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 0,
+          "y": 28.0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 56.0,
+          "y": 0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 56.0,
+          "y": 28.0,
+          "width": 4.0,
+          "height": 4.0
+        }
+      ],
+      "categories": {
+        "observedText": {
+          "changedPixels": 288,
+          "maximumChannelDelta": 210
+        },
+        "sourceCornerRectangles": {
+          "changedPixels": 0,
+          "maximumChannelDelta": 0
+        },
+        "unclassified": {
+          "changedPixels": 0,
+          "maximumChannelDelta": 0
+        }
+      },
+      "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+      "cause": "UNDETERMINED",
+      "admissionEligible": false
+    },
+    "vectorRasterSha256": "4350af088b2699808beec26e25b69072ed59856b57c4684f666f3ec465efbef8"
+  },
+  "form.input.default.medium": {
+    "logicalId": "form.input.default.medium",
+    "inputHashes": {
+      "official-runtime-font-evidence.json": "0a918c6d286bd8007850c13b9d8e71f75432381b50b58fd87742c912e94be8ec",
+      "official-source-font-bindings.json": "ef0e8f1e0029601ed172a4a0fd05754c571ae174a5ab77e4251254afbeeb7e0f",
+      "official-runtime-render-state-evidence.json": "bf0364c877bf840a28f343151fa0488f1235b4b9f5e325f085961cd5c8236171",
+      "font-file-identity.json": "69dba6a4cca272184c0a6e830fd55b6f1684a4606a84f97a9a7a091ed479e193",
+      "native-current-text-outline.json": "11b8439224b84a73c72529ad4d185ff601e7bec07ee6eb1fcb595bc871e94a22",
+      "native-component-svg-capture.json": "989b3cafc9e8900ddbecab19caab15fca9f7f46c66c6515469882da45a3e23ee",
+      "native-svg-browser-evidence.json": "04aba8c2e10afac190eb3f7296a51f55ce311d2ec22d05a2207c66c48815422d",
+      "browser-font-file-binding-evidence.json": "70dfad805216af5cc1421edb8a88881c9bc668a539d957dcb39b5238c38bf1a6",
+      "official-runtime-complete-baseline-evidence.json": "7ae76fdb1f72605ff1ae7815716c13148d7ab53fb2738159d755821b3dc5fc71",
+      "served-ionicons-glyph-equivalence.json": "99607a1e2bce5a54eb4c93160f42f72845ababc0a0ae13555f972962d8b98042"
+    },
+    "blendExperimentSha256": "de17d04ebcf7c6b3edd3e4f5d44b2729d76cdd9cf25d9744932bebdc460f0026",
+    "nativeEvidenceSha256": "5eb78df9507342d72dbdcdefa271a8950e5d077e9f9c33fd58249527c7c66d87",
+    "geometryAndStyle": [
+      {
+        "field": "root.width",
+        "status": "PASS",
+        "expected": 240,
+        "actual": 240
+      },
+      {
+        "field": "root.height",
+        "status": "PASS",
+        "expected": 32,
+        "actual": 32
+      },
+      {
+        "field": "root.transparentFill",
+        "status": "PASS",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "field": "root.noStroke",
+        "status": "PASS",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "field": "field.parent",
+        "status": "PASS",
+        "expected": "12:8",
+        "actual": "12:8"
+      },
+      {
+        "field": "field.bounds",
+        "status": "PASS",
+        "expected": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 32
+        },
+        "actual": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 32
+        }
+      },
+      {
+        "field": "field.fill",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(255, 255, 255)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "field.stroke",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(220, 222, 226)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.886274516582489,
+              "g": 0.8705882430076599,
+              "r": 0.8627451062202454
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "field.strokeWeight",
+        "status": "PASS",
+        "expected": 1.0,
+        "actual": 1
+      },
+      {
+        "field": "field.strokeAlign",
+        "status": "PASS",
+        "expected": "INSIDE",
+        "actual": "INSIDE"
+      },
+      {
+        "field": "field.radius",
+        "status": "PASS",
+        "expected": 4.0,
+        "actual": 4
+      },
+      {
+        "field": "field.padding.top",
+        "status": "PASS",
+        "expected": 4.0,
+        "actual": 4
+      },
+      {
+        "field": "field.padding.right",
+        "status": "PASS",
+        "expected": 7.0,
+        "actual": 7
+      },
+      {
+        "field": "field.padding.bottom",
+        "status": "PASS",
+        "expected": 4.0,
+        "actual": 4
+      },
+      {
+        "field": "field.padding.left",
+        "status": "PASS",
+        "expected": 7.0,
+        "actual": 7
+      },
+      {
+        "field": "placeholder.parent",
+        "status": "PASS",
+        "expected": "12:6",
+        "actual": "12:6"
+      },
+      {
+        "field": "placeholder.characters",
+        "status": "PASS",
+        "expected": "请输入姓名",
+        "actual": "请输入姓名"
+      },
+      {
+        "field": "placeholder.fontSize",
+        "status": "PASS",
+        "expected": 14.0,
+        "actual": 14
+      },
+      {
+        "field": "placeholder.fontWeight",
+        "status": "PASS",
+        "expected": 400,
+        "actual": 400
+      },
+      {
+        "field": "placeholder.color",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(197, 200, 206)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.8078431487083435,
+              "g": 0.7843137383460999,
+              "r": 0.772549033164978
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "placeholder.fontFamily",
+        "status": "PASS",
+        "expected": "PingFang SC",
+        "actual": "PingFang SC"
+      },
+      {
+        "field": "placeholder.fontBinding",
+        "status": "PASS",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        }
+      }
+    ],
+    "renderState": {
+      "scope": "figma_observed_render_state_diagnostic",
+      "logicalId": "form.input.default.medium",
+      "status": "REVIEW",
+      "checks": [
+        {
+          "reference": "12:8",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:8",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:8",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:6",
+          "sourcePath": "0.1",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:6",
+          "sourcePath": "0.1",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:6",
+          "sourcePath": "0.1",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "textCase",
+          "expected": "ORIGINAL",
+          "actual": "ORIGINAL",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "textDecoration",
+          "expected": "NONE",
+          "actual": "NONE",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:7",
+          "sourcePath": "0.1",
+          "surface": "::placeholder",
+          "field": "letterSpacing",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "status": "PASS"
+        }
+      ],
+      "unverified": [
+        {
+          "reference": "12:7",
+          "field": "blendMode",
+          "actual": "PASS_THROUGH",
+          "reason": "native_passthrough_text_not_css_normalized"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "PASS covers only listed observed properties, not all CSS or pixel equality.",
+        "Normal/pass-through containers are compared only at unit opacity; masks, clipping, font shaping and rasterization remain independent."
+      ]
+    },
+    "blendState": {
+      "scope": "figma_text_blend_mode_pixel_diagnostic",
+      "status": "PASS",
+      "logicalId": "form.input.default.medium",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "12:8",
+      "mutatedNodeIds": [
+        "12:7"
+      ],
+      "restoredNodeIds": [
+        "12:7"
+      ],
+      "nativePngHashes": {
+        "before": "95f2676ccba3ca1eb388398de1294d555036a490a049d9a455a10e10d70aab6e",
+        "normal": "95f2676ccba3ca1eb388398de1294d555036a490a049d9a455a10e10d70aab6e",
+        "restored": "95f2676ccba3ca1eb388398de1294d555036a490a049d9a455a10e10d70aab6e"
+      },
+      "normalVsBeforeChangedPixels": 0,
+      "restoredVsBeforeChangedPixels": 0,
+      "observedEffect": "NO_PIXEL_CHANGE_IN_CURRENT_STATIC_COMPONENT",
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Only current static component/content/background is tested; no general CSS blend-mode equivalence is certified.",
+        "This experiment does not compare with official browser pixels or admit a component."
+      ]
+    },
+    "glyphGeometry": [
+      {
+        "textReference": "12:7",
+        "characters": "请输入姓名",
+        "sourceFileRole": "system-file-candidate",
+        "source": {
+          "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "unitsPerEm": 1000,
+          "glyphs": [
+            {
+              "codepoint": "U+8BF7",
+              "glyphName": "cid06615",
+              "boundsFontUnits": [
+                42,
+                -100,
+                956,
+                817
+              ],
+              "advanceFontUnits": 1000
+            },
+            {
+              "codepoint": "U+8F93",
+              "glyphName": "cid06924",
+              "boundsFontUnits": [
+                43,
+                -100,
+                964,
+                820
+              ],
+              "advanceFontUnits": 1000
+            },
+            {
+              "codepoint": "U+5165",
+              "glyphName": "cid01601",
+              "boundsFontUnits": [
+                39,
+                -86,
+                954,
+                817
+              ],
+              "advanceFontUnits": 1000
+            },
+            {
+              "codepoint": "U+59D3",
+              "glyphName": "cid02472",
+              "boundsFontUnits": [
+                47,
+                -104,
+                956,
+                821
+              ],
+              "advanceFontUnits": 1000
+            },
+            {
+              "codepoint": "U+540D",
+              "glyphName": "cid01911",
+              "boundsFontUnits": [
+                48,
+                -97,
+                875,
+                819
+              ],
+              "advanceFontUnits": 1000
+            }
+          ],
+          "advancePx": 70.0,
+          "unshapedInkBoundsBaselineCoordinates": {
+            "x": 0.588,
+            "y": -11.494,
+            "width": 67.662,
+            "height": 12.95
+          },
+          "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+        },
+        "nativeSvg": {
+          "textReference": "12:7",
+          "characters": "请输入姓名",
+          "svgSha256": "174ead9235d766e4ec6f78019810acf0b9fea45badc3ab5a0d9311886373fe64",
+          "pathCount": 1,
+          "pathBoundsSvgCoordinates": {
+            "x": 0.588,
+            "y": 3.506,
+            "width": 67.662,
+            "height": 12.95
+          },
+          "viewBox": "0 0 70 20",
+          "exportWidth": "70",
+          "exportHeight": "20"
+        },
+        "dimensionDeltaPx": {
+          "width": 0.0,
+          "height": 0.0
+        },
+        "dimensionEqual": true,
+        "contourComparison": {
+          "orderedContourStructureEqual": false,
+          "exactNormalizedCoordinatesEqual": false,
+          "sourceCommandCount": 244,
+          "nativeCommandCount": 244,
+          "maximumCoordinateDeltaPx": null,
+          "sourceNormalizedSha256": "484ceabd3e59e3652c312579c3b7eda8da1abb22e592cf56572f0e3e24f07095",
+          "nativeNormalizedSha256": "1d2ff102570c821e8812c00ef5384bdb8845b3bcc2e4f96c9ec4cf7d7bb2e91a",
+          "alignmentTranslationSvgCoordinates": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "alignmentAppliedToCanvas": false,
+          "admissionEligible": false,
+          "unorientedGeometry": {
+            "contourCountSource": 19,
+            "contourCountNative": 19,
+            "structureEqual": true,
+            "exactCoordinatesEqual": true,
+            "maximumCoordinateDeltaPx": 0.0,
+            "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+            "admissionEligible": false
+          },
+          "nonzeroWinding": {
+            "scope": "nonzero_path_winding_diagnostic",
+            "status": "PASS",
+            "contourCount": 19,
+            "nativeFillRule": "nonzero",
+            "nativePathCount": 1,
+            "directionRelationship": "ALL_CONTOURS_REVERSED",
+            "nonzeroPathFilledRegionEquivalent": true,
+            "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+            "admissionEligible": false,
+            "limitations": [
+              "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+              "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+            ]
+          },
+          "sixDigitSerialization": {
+            "status": "REVIEW",
+            "serializer": "six-significant-decimal-digits",
+            "translation": {
+              "x": "0.000",
+              "y": "15.000"
+            },
+            "exactSerializedDirectedGeometryEqual": false,
+            "nativeFillRule": "nonzero",
+            "nativePathCount": 1,
+            "admissionEligible": false
+          }
+        }
+      }
+    ],
+    "baselines": [
+      {
+        "logicalId": "form.input.default.medium",
+        "surface": "user-agent-shadow",
+        "textReference": "12:7",
+        "sourceBaselineComponentY": 21,
+        "nativeFontBaselineComponentY": 21.0,
+        "deltaY": 0.0,
+        "positionStatus": "ALIGNED",
+        "nativeSvgBaselineOffset": 15.0,
+        "exactContourCoordinatesEqual": true
+      }
+    ],
+    "vectorSurfaceComparison": {
+      "sourcePath": "0.1",
+      "sourceRadiusPx": 4.0,
+      "cornerRectangles": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 0,
+          "y": 28.0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 236.0,
+          "y": 0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 236.0,
+          "y": 28.0,
+          "width": 4.0,
+          "height": 4.0
+        }
+      ],
+      "categories": {
+        "observedText": {
+          "changedPixels": 640,
+          "maximumChannelDelta": 54
+        },
+        "sourceCornerRectangles": {
+          "changedPixels": 0,
+          "maximumChannelDelta": 0
+        },
+        "unclassified": {
+          "changedPixels": 0,
+          "maximumChannelDelta": 0
+        }
+      },
+      "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+      "cause": "UNDETERMINED",
+      "admissionEligible": false
+    },
+    "vectorRasterSha256": "f775b894fda69a7dd0a446cb1234171a4f35e3aead2236b58a89666a26fd0c4c"
+  },
+  "form.select.default.medium": {
+    "logicalId": "form.select.default.medium",
+    "inputHashes": {
+      "official-runtime-font-evidence.json": "0a918c6d286bd8007850c13b9d8e71f75432381b50b58fd87742c912e94be8ec",
+      "official-source-font-bindings.json": "ef0e8f1e0029601ed172a4a0fd05754c571ae174a5ab77e4251254afbeeb7e0f",
+      "official-runtime-render-state-evidence.json": "bf0364c877bf840a28f343151fa0488f1235b4b9f5e325f085961cd5c8236171",
+      "font-file-identity.json": "69dba6a4cca272184c0a6e830fd55b6f1684a4606a84f97a9a7a091ed479e193",
+      "native-current-text-outline.json": "11b8439224b84a73c72529ad4d185ff601e7bec07ee6eb1fcb595bc871e94a22",
+      "native-component-svg-capture.json": "989b3cafc9e8900ddbecab19caab15fca9f7f46c66c6515469882da45a3e23ee",
+      "native-svg-browser-evidence.json": "04aba8c2e10afac190eb3f7296a51f55ce311d2ec22d05a2207c66c48815422d",
+      "browser-font-file-binding-evidence.json": "70dfad805216af5cc1421edb8a88881c9bc668a539d957dcb39b5238c38bf1a6",
+      "official-runtime-complete-baseline-evidence.json": "7ae76fdb1f72605ff1ae7815716c13148d7ab53fb2738159d755821b3dc5fc71",
+      "served-ionicons-glyph-equivalence.json": "99607a1e2bce5a54eb4c93160f42f72845ababc0a0ae13555f972962d8b98042"
+    },
+    "blendExperimentSha256": "ba024afa516a9c7e646ad4f20c9b478c6939a8027ef8cec579514ac09b039ef0",
+    "nativeEvidenceSha256": "112f87b18bf15659724174e54512a2fec8aa18e01e88fb27b445ba44ad5019cd",
+    "geometryAndStyle": [
+      {
+        "field": "root.width",
+        "status": "PASS",
+        "expected": 240,
+        "actual": 240
+      },
+      {
+        "field": "root.height",
+        "status": "PASS",
+        "expected": 32,
+        "actual": 32
+      },
+      {
+        "field": "root.transparentFill",
+        "status": "PASS",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "field": "root.noStroke",
+        "status": "PASS",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "field": "field.parent",
+        "status": "PASS",
+        "expected": "12:15",
+        "actual": "12:15"
+      },
+      {
+        "field": "field.bounds",
+        "status": "PASS",
+        "expected": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 32
+        },
+        "actual": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 32
+        }
+      },
+      {
+        "field": "field.fill",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(255, 255, 255)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "field.stroke",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(220, 222, 226)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.886274516582489,
+              "g": 0.8705882430076599,
+              "r": 0.8627451062202454
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "field.strokeWeight",
+        "status": "PASS",
+        "expected": 1.0,
+        "actual": 1
+      },
+      {
+        "field": "field.strokeAlign",
+        "status": "PASS",
+        "expected": "INSIDE",
+        "actual": "INSIDE"
+      },
+      {
+        "field": "field.radius",
+        "status": "PASS",
+        "expected": 4.0,
+        "actual": 4
+      },
+      {
+        "field": "field.padding.top",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0
+      },
+      {
+        "field": "field.padding.right",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0
+      },
+      {
+        "field": "field.padding.bottom",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0
+      },
+      {
+        "field": "field.padding.left",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0
+      },
+      {
+        "field": "content.parent",
+        "status": "PASS",
+        "expected": "12:10",
+        "actual": "12:10"
+      },
+      {
+        "field": "selectedSlot.parent",
+        "status": "PASS",
+        "expected": "12:11",
+        "actual": "12:11"
+      },
+      {
+        "field": "selected.parent",
+        "status": "PASS",
+        "expected": "12:12",
+        "actual": "12:12"
+      },
+      {
+        "field": "selected.characters",
+        "status": "PASS",
+        "expected": "启用",
+        "actual": "启用"
+      },
+      {
+        "field": "selected.fontSize",
+        "status": "PASS",
+        "expected": 14.0,
+        "actual": 14
+      },
+      {
+        "field": "selected.fontWeight",
+        "status": "PASS",
+        "expected": 400,
+        "actual": 400
+      },
+      {
+        "field": "selected.color",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(81, 90, 110)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "selected.fontFamily",
+        "status": "PASS",
+        "expected": "PingFang SC",
+        "actual": "PingFang SC"
+      },
+      {
+        "field": "selected.fontBinding",
+        "status": "PASS",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        }
+      },
+      {
+        "field": "selected.lineHeight",
+        "status": "PASS",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 30.0
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 30
+        }
+      },
+      {
+        "field": "source/0.0.1.bounds",
+        "status": "PASS",
+        "expected": {
+          "x": 1,
+          "y": 1,
+          "width": 238,
+          "height": 30
+        },
+        "actual": {
+          "x": 1,
+          "y": 1,
+          "width": 238,
+          "height": 30
+        }
+      },
+      {
+        "field": "source/selected-value.bounds",
+        "status": "PASS",
+        "expected": {
+          "x": 1,
+          "y": 1,
+          "width": 238,
+          "height": 30
+        },
+        "actual": {
+          "x": 1,
+          "y": 1,
+          "width": 238,
+          "height": 30
+        }
+      },
+      {
+        "field": "arrow.parent",
+        "status": "PASS",
+        "expected": "12:11",
+        "actual": "12:11"
+      },
+      {
+        "field": "arrow.characters",
+        "status": "PASS",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "field": "arrow.fontSize",
+        "status": "PASS",
+        "expected": 14.0,
+        "actual": 14
+      },
+      {
+        "field": "arrow.fontWeight",
+        "status": "PASS",
+        "expected": 400,
+        "actual": 400
+      },
+      {
+        "field": "arrow.color",
+        "status": "PASS",
+        "expected": {
+          "cssRgb": "rgb(128, 134, 149)",
+          "opacity": 1
+        },
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.5843137502670288,
+              "g": 0.5254902243614197,
+              "r": 0.501960813999176
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "field": "arrow.fontFamily",
+        "status": "PASS",
+        "expected": "Ionicons",
+        "actual": "Ionicons"
+      },
+      {
+        "field": "arrow.fontBinding",
+        "status": "PASS",
+        "expected": {
+          "family": "Ionicons",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "Ionicons",
+          "style": "Regular"
+        }
+      },
+      {
+        "field": "arrow.lineHeight",
+        "status": "PASS",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 14.0
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 14
+        }
+      },
+      {
+        "field": "arrow.bounds",
+        "status": "PASS",
+        "expected": {
+          "x": 217,
+          "y": 9,
+          "width": 14,
+          "height": 14
+        },
+        "actual": {
+          "x": 217,
+          "y": 9,
+          "width": 14,
+          "height": 14
+        }
+      },
+      {
+        "field": "arrow.positioning",
+        "status": "PASS",
+        "expected": "ABSOLUTE",
+        "actual": "ABSOLUTE"
+      }
+    ],
+    "renderState": {
+      "scope": "figma_observed_render_state_diagnostic",
+      "logicalId": "form.select.default.medium",
+      "status": "REVIEW",
+      "checks": [
+        {
+          "reference": "12:15",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:15",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:15",
+          "sourcePath": "0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:10",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:10",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:10",
+          "sourcePath": "0.0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:11",
+          "sourcePath": "0.0.1",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:11",
+          "sourcePath": "0.0.1",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:11",
+          "sourcePath": "0.0.1",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:12",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:12",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:12",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "blendMode",
+          "expected": [
+            "NORMAL",
+            "PASS_THROUGH"
+          ],
+          "actual": "PASS_THROUGH",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "textCase",
+          "expected": "ORIGINAL",
+          "actual": "ORIGINAL",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "textDecoration",
+          "expected": "NONE",
+          "actual": "NONE",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:13",
+          "sourcePath": "0.0.1.0",
+          "surface": "element",
+          "field": "letterSpacing",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "opacity",
+          "expected": 1,
+          "actual": 1,
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "effects",
+          "expected": [],
+          "actual": [],
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "textCase",
+          "expected": "ORIGINAL",
+          "actual": "ORIGINAL",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "textDecoration",
+          "expected": "NONE",
+          "actual": "NONE",
+          "status": "PASS"
+        },
+        {
+          "reference": "12:14",
+          "sourcePath": "0.0.1.1",
+          "surface": "::before",
+          "field": "letterSpacing",
+          "expected": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "actual": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "status": "PASS"
+        }
+      ],
+      "unverified": [
+        {
+          "reference": "12:13",
+          "field": "blendMode",
+          "actual": "PASS_THROUGH",
+          "reason": "native_passthrough_text_not_css_normalized"
+        },
+        {
+          "reference": "12:14",
+          "field": "blendMode",
+          "actual": "PASS_THROUGH",
+          "reason": "native_passthrough_text_not_css_normalized"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "PASS covers only listed observed properties, not all CSS or pixel equality.",
+        "Normal/pass-through containers are compared only at unit opacity; masks, clipping, font shaping and rasterization remain independent."
+      ]
+    },
+    "blendState": {
+      "scope": "figma_text_blend_mode_pixel_diagnostic",
+      "status": "PASS",
+      "logicalId": "form.select.default.medium",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "12:15",
+      "mutatedNodeIds": [
+        "12:13",
+        "12:14"
+      ],
+      "restoredNodeIds": [
+        "12:13",
+        "12:14"
+      ],
+      "nativePngHashes": {
+        "before": "41e5be95a0a150f592706dd010a2d68a9d35b4105f053bdb976df79addff8f5e",
+        "normal": "41e5be95a0a150f592706dd010a2d68a9d35b4105f053bdb976df79addff8f5e",
+        "restored": "41e5be95a0a150f592706dd010a2d68a9d35b4105f053bdb976df79addff8f5e"
+      },
+      "normalVsBeforeChangedPixels": 0,
+      "restoredVsBeforeChangedPixels": 0,
+      "observedEffect": "NO_PIXEL_CHANGE_IN_CURRENT_STATIC_COMPONENT",
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Only current static component/content/background is tested; no general CSS blend-mode equivalence is certified.",
+        "This experiment does not compare with official browser pixels or admit a component."
+      ]
+    },
+    "glyphGeometry": [
+      {
+        "textReference": "12:13",
+        "characters": "启用",
+        "sourceFileRole": "system-file-candidate",
+        "source": {
+          "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "unitsPerEm": 1000,
+          "glyphs": [
+            {
+              "codepoint": "U+542F",
+              "glyphName": "cid01936",
+              "boundsFontUnits": [
+                39,
+                -104,
+                884,
+                826
+              ],
+              "advanceFontUnits": 1000
+            },
+            {
+              "codepoint": "U+7528",
+              "glyphName": "cid04768",
+              "boundsFontUnits": [
+                42,
+                -91,
+                886,
+                777
+              ],
+              "advanceFontUnits": 1000
+            }
+          ],
+          "advancePx": 28.0,
+          "unshapedInkBoundsBaselineCoordinates": {
+            "x": 0.546,
+            "y": -11.564,
+            "width": 25.858,
+            "height": 13.02
+          },
+          "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+        },
+        "nativeSvg": {
+          "textReference": "12:13",
+          "characters": "启用",
+          "svgSha256": "67ba5c3bd507b64f806cf33ece18451e0d6a777eb398e9f73a1b04908e5805db",
+          "pathCount": 1,
+          "pathBoundsSvgCoordinates": {
+            "x": 0.546,
+            "y": 8.436,
+            "width": 25.858,
+            "height": 13.02
+          },
+          "viewBox": "0 0 28 30",
+          "exportWidth": "28",
+          "exportHeight": "30"
+        },
+        "dimensionDeltaPx": {
+          "width": 0.0,
+          "height": 0.0
+        },
+        "dimensionEqual": true,
+        "contourComparison": {
+          "orderedContourStructureEqual": false,
+          "exactNormalizedCoordinatesEqual": false,
+          "sourceCommandCount": 71,
+          "nativeCommandCount": 70,
+          "maximumCoordinateDeltaPx": null,
+          "sourceNormalizedSha256": "e515947668dedfc3695a80b070d247c2aeaebb7207d5c232da5cb5e7388e0622",
+          "nativeNormalizedSha256": "68dae03bb09e205ca32918d6ae32b5e4c1aab23e2f9770c4913356e8a5cbd888",
+          "alignmentTranslationSvgCoordinates": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "alignmentAppliedToCanvas": false,
+          "admissionEligible": false,
+          "unorientedGeometry": {
+            "contourCountSource": 9,
+            "contourCountNative": 9,
+            "structureEqual": true,
+            "exactCoordinatesEqual": true,
+            "maximumCoordinateDeltaPx": 0.0,
+            "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+            "admissionEligible": false
+          },
+          "nonzeroWinding": {
+            "scope": "nonzero_path_winding_diagnostic",
+            "status": "PASS",
+            "contourCount": 9,
+            "nativeFillRule": "nonzero",
+            "nativePathCount": 1,
+            "directionRelationship": "ALL_CONTOURS_REVERSED",
+            "nonzeroPathFilledRegionEquivalent": true,
+            "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+            "admissionEligible": false,
+            "limitations": [
+              "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+              "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+            ]
+          },
+          "sixDigitSerialization": {
+            "status": "REVIEW",
+            "serializer": "six-significant-decimal-digits",
+            "translation": {
+              "x": "0.000",
+              "y": "20.000"
+            },
+            "exactSerializedDirectedGeometryEqual": false,
+            "nativeFillRule": "nonzero",
+            "nativePathCount": 1,
+            "admissionEligible": false
+          }
+        }
+      },
+      {
+        "textReference": "12:14",
+        "characters": "",
+        "sourceFileRole": "official-release-sibling",
+        "source": {
+          "fontFileSha256": "13d29fa1b804cd295603d17a7c9296c425af2724feaac7ce621f7cad43d8a31d",
+          "unitsPerEm": 1024,
+          "glyphs": [
+            {
+              "codepoint": "U+F116",
+              "glyphName": "uniF116",
+              "boundsFontUnits": [
+                192,
+                256,
+                832,
+                640
+              ],
+              "advanceFontUnits": 1024
+            }
+          ],
+          "advancePx": 14.0,
+          "unshapedInkBoundsBaselineCoordinates": {
+            "x": 2.625,
+            "y": -8.75,
+            "width": 8.75,
+            "height": 5.25
+          },
+          "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+        },
+        "nativeSvg": {
+          "textReference": "12:14",
+          "characters": "",
+          "svgSha256": "f4d6c9263fbc9caebcdb3a75adb6915d4dbb9aef97d6231387a289d29df25bbc",
+          "pathCount": 1,
+          "pathBoundsSvgCoordinates": {
+            "x": 2.625,
+            "y": 4.25,
+            "width": 8.75,
+            "height": 5.25
+          },
+          "viewBox": "0 0 14 14",
+          "exportWidth": "14",
+          "exportHeight": "14"
+        },
+        "dimensionDeltaPx": {
+          "width": 0.0,
+          "height": 0.0
+        },
+        "dimensionEqual": true,
+        "contourComparison": {
+          "orderedContourStructureEqual": true,
+          "exactNormalizedCoordinatesEqual": false,
+          "sourceCommandCount": 7,
+          "nativeCommandCount": 7,
+          "maximumCoordinateDeltaPx": 5.25,
+          "sourceNormalizedSha256": "2592055b992705358eaa66a51642fbbd3e81c1b15ea1e9dc54e22304d8ea6341",
+          "nativeNormalizedSha256": "7f261e2aa868bd50730d8347901e323848e8842b4f450dd382c6a0684e96d3cb",
+          "alignmentTranslationSvgCoordinates": {
+            "x": -1.875e-06,
+            "y": 13.0
+          },
+          "alignmentAppliedToCanvas": false,
+          "admissionEligible": false,
+          "unorientedGeometry": {
+            "contourCountSource": 1,
+            "contourCountNative": 1,
+            "structureEqual": true,
+            "exactCoordinatesEqual": false,
+            "maximumCoordinateDeltaPx": 2.8125e-05,
+            "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+            "admissionEligible": false
+          },
+          "nonzeroWinding": {
+            "scope": "nonzero_path_winding_diagnostic",
+            "status": "REVIEW",
+            "contourCount": 1,
+            "nativeFillRule": "nonzero",
+            "nativePathCount": 1,
+            "directionRelationship": "UNRESOLVED",
+            "nonzeroPathFilledRegionEquivalent": false,
+            "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+            "admissionEligible": false,
+            "limitations": [
+              "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+              "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+            ]
+          },
+          "sixDigitSerialization": {
+            "status": "PASS",
+            "serializer": "six-significant-decimal-digits",
+            "translation": {
+              "x": "0E-9",
+              "y": "13.000000000"
+            },
+            "exactSerializedDirectedGeometryEqual": true,
+            "nativeFillRule": "nonzero",
+            "nativePathCount": 1,
+            "admissionEligible": false
+          }
+        }
+      }
+    ],
+    "baselines": [
+      {
+        "logicalId": "form.select.default.medium",
+        "surface": "element",
+        "textReference": "12:13",
+        "sourceBaselineComponentY": 21,
+        "nativeFontBaselineComponentY": 21.0,
+        "deltaY": 0.0,
+        "positionStatus": "ALIGNED",
+        "nativeSvgBaselineOffset": 20.0,
+        "exactContourCoordinatesEqual": true
+      },
+      {
+        "logicalId": "form.select.default.medium",
+        "surface": "pseudo:before",
+        "textReference": "12:14",
+        "sourceBaselineComponentY": 22,
+        "nativeFontBaselineComponentY": 22.0,
+        "deltaY": 0.0,
+        "positionStatus": "ALIGNED",
+        "nativeSvgBaselineOffset": 13.0,
+        "exactContourCoordinatesEqual": false
+      }
+    ],
+    "vectorSurfaceComparison": {
+      "sourcePath": "0.0",
+      "sourceRadiusPx": 4.0,
+      "cornerRectangles": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 0,
+          "y": 28.0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 236.0,
+          "y": 0,
+          "width": 4.0,
+          "height": 4.0
+        },
+        {
+          "x": 236.0,
+          "y": 28.0,
+          "width": 4.0,
+          "height": 4.0
+        }
+      ],
+      "categories": {
+        "observedText": {
+          "changedPixels": 275,
+          "maximumChannelDelta": 124
+        },
+        "sourceCornerRectangles": {
+          "changedPixels": 0,
+          "maximumChannelDelta": 0
+        },
+        "unclassified": {
+          "changedPixels": 0,
+          "maximumChannelDelta": 0
+        }
+      },
+      "membershipRule": "Pixel centers; text takes priority over corner rectangles. Rectangles are not glyph or curve masks.",
+      "cause": "UNDETERMINED",
+      "admissionEligible": false
+    },
+    "vectorRasterSha256": "0ad4eb890068be2e739ddd20ea2c2cc93d507288f0721bc2d20e5e54049b7534"
+  },
+  "data.table.default": {
+    "geometryAndStyle": [
+      {
+        "field": "root.size",
+        "expected": {
+          "width": 1392,
+          "height": 144
+        },
+        "actual": {
+          "width": 1392,
+          "height": 144
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "root.clips",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "root.fills",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "root.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:3.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:3.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:3.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:3.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:3.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:4.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:4.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:4.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:4.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:4.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:5.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:5.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:5.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:5.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:5.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:6.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:6.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:6.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:6.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:6.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:7.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:7.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:7.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:7.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:7.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:8.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:8.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:8.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:8.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:8.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:9.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:9.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:9.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:9.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:9.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:10.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:10.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:10.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:10.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:10.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "32:2.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "32:2.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "32:2.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "32:2.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "32:2.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:11.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:11.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:11.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:11.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:11.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:12.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:12.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:12.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:12.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:12.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:13.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:13.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:13.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:13.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:13.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:14.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:14.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:14.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:14.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:14.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:15.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:15.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:15.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:15.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:15.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:16.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:16.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:16.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:16.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:16.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:17.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:17.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:17.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:17.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:17.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "32:3.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "32:3.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "32:3.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "32:3.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "32:3.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:18.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:18.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:18.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:18.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:18.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:19.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:19.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:19.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:19.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:19.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:20.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:20.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:20.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:20.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:20.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:21.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:21.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:21.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:21.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:21.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:22.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:22.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:22.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:22.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:22.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:23.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:23.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:23.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:23.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:23.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "28:24.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "28:24.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "28:24.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "28:24.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "28:24.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "32:4.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "32:4.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "32:4.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "32:4.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "32:4.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "32:5.visible",
+        "expected": true,
+        "actual": true,
+        "status": "PASS"
+      },
+      {
+        "field": "32:5.opacity",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "field": "32:5.rotation",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "32:5.effects",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "32:5.isMask",
+        "expected": false,
+        "actual": false,
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.bounds",
+        "expected": {
+          "x": 0,
+          "y": 0,
+          "width": 1393,
+          "height": 48
+        },
+        "actual": {
+          "x": 0,
+          "y": 0,
+          "width": 1393,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.parent",
+        "expected": "28:3",
+        "actual": "28:3",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.0.bounds",
+        "expected": {
+          "x": 0,
+          "y": 0,
+          "width": 464.328125,
+          "height": 48
+        },
+        "actual": {
+          "x": 0,
+          "y": 0,
+          "width": 464.328125,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.0.parent",
+        "expected": "28:4",
+        "actual": "28:4",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.0.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.0.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.parent",
+        "expected": "28:5",
+        "actual": "28:5",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.characters",
+        "expected": "张三",
+        "actual": "张三",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.position",
+        "expected": {
+          "x": 18,
+          "y": 12.0,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 28,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.0.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.1.bounds",
+        "expected": {
+          "x": 464.328125,
+          "y": 0,
+          "width": 464.328125,
+          "height": 48
+        },
+        "actual": {
+          "x": 464.328125,
+          "y": 0,
+          "width": 464.328125,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.1.parent",
+        "expected": "28:4",
+        "actual": "28:4",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.1.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.1.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.parent",
+        "expected": "28:7",
+        "actual": "28:7",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.characters",
+        "expected": "启用",
+        "actual": "启用",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.position",
+        "expected": {
+          "x": 18.0,
+          "y": 12.0,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 28,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.1.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.2.bounds",
+        "expected": {
+          "x": 928.65625,
+          "y": 0,
+          "width": 464.34375,
+          "height": 48
+        },
+        "actual": {
+          "x": 928.65625,
+          "y": 0,
+          "width": 464.34375,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.2.parent",
+        "expected": "28:4",
+        "actual": "28:4",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.2.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.0.2.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.parent",
+        "expected": "28:9",
+        "actual": "28:9",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.characters",
+        "expected": "管理员",
+        "actual": "管理员",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.position",
+        "expected": {
+          "x": 18.0,
+          "y": 12.0,
+          "width": 42,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 42,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.0.2.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.0.bounds",
+        "expected": {
+          "x": 0,
+          "y": 47.0,
+          "width": 1393,
+          "height": 1.0
+        },
+        "actual": {
+          "x": 0,
+          "y": 47,
+          "width": 1393,
+          "height": 1
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.0.fill",
+        "source": "rgb(232, 234, 236)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.9254902005195618,
+              "g": 0.9176470637321472,
+              "r": 0.9098039269447327
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.0.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.bounds",
+        "expected": {
+          "x": 0,
+          "y": 48,
+          "width": 1393,
+          "height": 48
+        },
+        "actual": {
+          "x": 0,
+          "y": 48,
+          "width": 1393,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.parent",
+        "expected": "28:3",
+        "actual": "28:3",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.0.bounds",
+        "expected": {
+          "x": 0,
+          "y": 48,
+          "width": 464.328125,
+          "height": 48
+        },
+        "actual": {
+          "x": 0,
+          "y": 48,
+          "width": 464.328125,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.0.parent",
+        "expected": "28:11",
+        "actual": "28:11",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.0.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.0.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.parent",
+        "expected": "28:12",
+        "actual": "28:12",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.characters",
+        "expected": "李四",
+        "actual": "李四",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.position",
+        "expected": {
+          "x": 18,
+          "y": 12.0,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 28,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.0.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.1.bounds",
+        "expected": {
+          "x": 464.328125,
+          "y": 48,
+          "width": 464.328125,
+          "height": 48
+        },
+        "actual": {
+          "x": 464.328125,
+          "y": 48,
+          "width": 464.328125,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.1.parent",
+        "expected": "28:11",
+        "actual": "28:11",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.1.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.1.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.parent",
+        "expected": "28:14",
+        "actual": "28:14",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.characters",
+        "expected": "启用",
+        "actual": "启用",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.position",
+        "expected": {
+          "x": 18.0,
+          "y": 12.0,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 28,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.1.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.2.bounds",
+        "expected": {
+          "x": 928.65625,
+          "y": 48,
+          "width": 464.34375,
+          "height": 48
+        },
+        "actual": {
+          "x": 928.65625,
+          "y": 48,
+          "width": 464.34375,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.2.parent",
+        "expected": "28:11",
+        "actual": "28:11",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.2.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.1.2.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.parent",
+        "expected": "28:16",
+        "actual": "28:16",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.characters",
+        "expected": "编辑",
+        "actual": "编辑",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.position",
+        "expected": {
+          "x": 18.0,
+          "y": 12.0,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 28,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.1.2.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.1.bounds",
+        "expected": {
+          "x": 0,
+          "y": 95.0,
+          "width": 1393,
+          "height": 1.0
+        },
+        "actual": {
+          "x": 0,
+          "y": 95,
+          "width": 1393,
+          "height": 1
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.1.fill",
+        "source": "rgb(232, 234, 236)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.9254902005195618,
+              "g": 0.9176470637321472,
+              "r": 0.9098039269447327
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.1.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.bounds",
+        "expected": {
+          "x": 0,
+          "y": 96,
+          "width": 1393,
+          "height": 48
+        },
+        "actual": {
+          "x": 0,
+          "y": 96,
+          "width": 1393,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.parent",
+        "expected": "28:3",
+        "actual": "28:3",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.0.bounds",
+        "expected": {
+          "x": 0,
+          "y": 96,
+          "width": 464.328125,
+          "height": 48
+        },
+        "actual": {
+          "x": 0,
+          "y": 96,
+          "width": 464.328125,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.0.parent",
+        "expected": "28:18",
+        "actual": "28:18",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.0.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.0.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.parent",
+        "expected": "28:19",
+        "actual": "28:19",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.characters",
+        "expected": "王五",
+        "actual": "王五",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.position",
+        "expected": {
+          "x": 18,
+          "y": 12.0,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 28,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.0.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.1.bounds",
+        "expected": {
+          "x": 464.328125,
+          "y": 96,
+          "width": 464.328125,
+          "height": 48
+        },
+        "actual": {
+          "x": 464.328125,
+          "y": 96,
+          "width": 464.328125,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.1.parent",
+        "expected": "28:18",
+        "actual": "28:18",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.1.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.1.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.parent",
+        "expected": "28:21",
+        "actual": "28:21",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.characters",
+        "expected": "停用",
+        "actual": "停用",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.position",
+        "expected": {
+          "x": 18.0,
+          "y": 12.0,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 28,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.1.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.2.bounds",
+        "expected": {
+          "x": 928.65625,
+          "y": 96,
+          "width": 464.34375,
+          "height": 48
+        },
+        "actual": {
+          "x": 928.65625,
+          "y": 96,
+          "width": 464.34375,
+          "height": 48
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.2.parent",
+        "expected": "28:18",
+        "actual": "28:18",
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.2.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "0.0.0.0.1.2.2.fill",
+        "source": "rgb(255, 255, 255)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 1,
+              "g": 1,
+              "r": 1
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.parent",
+        "expected": "28:23",
+        "actual": "28:23",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.characters",
+        "expected": "访客",
+        "actual": "访客",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.fontName",
+        "expected": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "actual": {
+          "family": "PingFang SC",
+          "style": "Regular"
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.fontSize",
+        "expected": 14,
+        "actual": 14,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.fontWeight",
+        "expected": 400,
+        "actual": 400,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.lineHeight",
+        "expected": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "actual": {
+          "unit": "PIXELS",
+          "value": 21
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.textCase",
+        "expected": "ORIGINAL",
+        "actual": "ORIGINAL",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.textDecoration",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.paragraphIndent",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.paragraphSpacing",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.tracking",
+        "actual": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "normalizedPixels": 0,
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.position",
+        "expected": {
+          "x": 18.0,
+          "y": 12.0,
+          "width": 28,
+          "height": 21
+        },
+        "actual": {
+          "height": 21,
+          "width": 28,
+          "x": 18,
+          "y": 12
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/0.0.0.0.1.2.2.0.0.fill",
+        "source": "rgb(81, 90, 110)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.4313725531101227,
+              "g": 0.3529411852359772,
+              "r": 0.3176470696926117
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.2.bounds",
+        "expected": {
+          "x": 0,
+          "y": 143.0,
+          "width": 1393,
+          "height": 1.0
+        },
+        "actual": {
+          "x": 0,
+          "y": 143,
+          "width": 1393,
+          "height": 1
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.2.fill",
+        "source": "rgb(232, 234, 236)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.9254902005195618,
+              "g": 0.9176470637321472,
+              "r": 0.9098039269447327
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "field": "source/row-border/0.0.0.0.1.2.strokes",
+        "expected": [],
+        "actual": [],
+        "status": "PASS"
+      },
+      {
+        "field": "pseudo.bounds",
+        "expected": {
+          "x": 0,
+          "y": 143.0,
+          "width": 1392.0,
+          "height": 1.0
+        },
+        "actual": {
+          "x": 0,
+          "y": 143,
+          "width": 1392,
+          "height": 1
+        },
+        "status": "PASS"
+      },
+      {
+        "field": "pseudo.fill",
+        "source": "rgb(220, 222, 226)",
+        "actual": [
+          {
+            "blendMode": "NORMAL",
+            "boundVariables": {},
+            "color": {
+              "b": 0.886274516582489,
+              "g": 0.8705882430076599,
+              "r": 0.8627451062202454
+            },
+            "opacity": 1,
+            "type": "SOLID",
+            "visible": true
+          }
+        ],
+        "status": "PASS"
+      }
+    ],
+    "glyphGeometry": {
+      "scope": "figma_font_file_outline_dimension_diagnostic",
+      "status": "REVIEW",
+      "fontToolsVersion": "4.60.1",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "observations": [
+        {
+          "textReference": "28:6",
+          "characters": "张三",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+5F20",
+                "glyphName": "cid02911",
+                "boundsFontUnits": [
+                  56,
+                  -100,
+                  964,
+                  816
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+4E09",
+                "glyphName": "cid01251",
+                "boundsFontUnits": [
+                  49,
+                  -47,
+                  951,
+                  741
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 28.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.784,
+              "y": -11.424,
+              "width": 26.53,
+              "height": 12.824
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:6",
+            "characters": "张三",
+            "svgSha256": "4c826a01e7892c5bae404b0cc297be4d789b9a12d4368353530fa8508163e01f",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.784,
+              "y": 4.576,
+              "width": 26.53,
+              "height": 12.823999999999998
+            },
+            "viewBox": "0 0 28 21",
+            "exportWidth": "28",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": 0.0,
+            "height": -1.7763568394002505e-15
+          },
+          "dimensionEqual": false,
+          "contourComparison": {
+            "orderedContourStructureEqual": false,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 60,
+            "nativeCommandCount": 61,
+            "maximumCoordinateDeltaPx": null,
+            "sourceNormalizedSha256": "d74109110b436cda4513308d2501899c0119060a94d6c1d007bba81252845135",
+            "nativeNormalizedSha256": "dce70d1a345485153ae45f0ae0872c5ae8429ae317ac112b1cab91c8d4c67375",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 6,
+              "contourCountNative": 6,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 6,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "REVIEW",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": false,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        },
+        {
+          "textReference": "28:8",
+          "characters": "启用",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+542F",
+                "glyphName": "cid01936",
+                "boundsFontUnits": [
+                  39,
+                  -104,
+                  884,
+                  826
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+7528",
+                "glyphName": "cid04768",
+                "boundsFontUnits": [
+                  42,
+                  -91,
+                  886,
+                  777
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 28.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.546,
+              "y": -11.564,
+              "width": 25.858,
+              "height": 13.02
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:8",
+            "characters": "启用",
+            "svgSha256": "e9b9b7327bb781277d03af608af21206c95cd607ba0ebcee31eab465c40ca99b",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.546,
+              "y": 4.436,
+              "width": 25.858,
+              "height": 13.02
+            },
+            "viewBox": "0 0 28 21",
+            "exportWidth": "28",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "dimensionEqual": true,
+          "contourComparison": {
+            "orderedContourStructureEqual": false,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 71,
+            "nativeCommandCount": 70,
+            "maximumCoordinateDeltaPx": null,
+            "sourceNormalizedSha256": "e515947668dedfc3695a80b070d247c2aeaebb7207d5c232da5cb5e7388e0622",
+            "nativeNormalizedSha256": "68dae03bb09e205ca32918d6ae32b5e4c1aab23e2f9770c4913356e8a5cbd888",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 9,
+              "contourCountNative": 9,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 9,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "REVIEW",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": false,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        },
+        {
+          "textReference": "28:10",
+          "characters": "管理员",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+7BA1",
+                "glyphName": "cid05333",
+                "boundsFontUnits": [
+                  53,
+                  -100,
+                  945,
+                  822
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+7406",
+                "glyphName": "cid04696",
+                "boundsFontUnits": [
+                  41,
+                  -70,
+                  959,
+                  777
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+5458",
+                "glyphName": "cid01959",
+                "boundsFontUnits": [
+                  68,
+                  -103,
+                  929,
+                  780
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 42.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.742,
+              "y": -11.508,
+              "width": 40.264,
+              "height": 12.95
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:10",
+            "characters": "管理员",
+            "svgSha256": "7cebd8c80b98b4d79d0aec9e96dd302a25851b4c145a6053de077adba7fb113f",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.742,
+              "y": 4.492,
+              "width": 40.264,
+              "height": 12.95
+            },
+            "viewBox": "0 0 42 21",
+            "exportWidth": "42",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "dimensionEqual": true,
+          "contourComparison": {
+            "orderedContourStructureEqual": false,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 157,
+            "nativeCommandCount": 156,
+            "maximumCoordinateDeltaPx": null,
+            "sourceNormalizedSha256": "51cb01f8c560d298ef0f35b0d6b7ba53949b28048f29ff861d976ec82a4556f8",
+            "nativeNormalizedSha256": "a38c4c196d8b1cc44e41fa5f621d22d263269023165c5306b1ca31f15d2e4cb0",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 16,
+              "contourCountNative": 16,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 16,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "REVIEW",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": false,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        },
+        {
+          "textReference": "28:13",
+          "characters": "李四",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+674E",
+                "glyphName": "cid03691",
+                "boundsFontUnits": [
+                  49,
+                  -99,
+                  949,
+                  814
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+56DB",
+                "glyphName": "cid02213",
+                "boundsFontUnits": [
+                  89,
+                  -85,
+                  911,
+                  753
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 28.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.686,
+              "y": -11.396,
+              "width": 26.068,
+              "height": 12.782
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:13",
+            "characters": "李四",
+            "svgSha256": "b485098f6eab6852482b5398666fcfb4959a0f209d56c8806ddd43c758db9c0b",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.686,
+              "y": 4.604,
+              "width": 26.068,
+              "height": 12.782
+            },
+            "viewBox": "0 0 28 21",
+            "exportWidth": "28",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "dimensionEqual": true,
+          "contourComparison": {
+            "orderedContourStructureEqual": false,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 71,
+            "nativeCommandCount": 72,
+            "maximumCoordinateDeltaPx": null,
+            "sourceNormalizedSha256": "b52ad9ebe55bf216789fcd3e2343c3d719e8a3c20313588906b693081529f14c",
+            "nativeNormalizedSha256": "0302933d38e01f07f5a7b491bd4d3afef5686a799ce1e7fbc910f1ad3a7e2601",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 4,
+              "contourCountNative": 4,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 4,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "REVIEW",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": false,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        },
+        {
+          "textReference": "28:15",
+          "characters": "启用",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+542F",
+                "glyphName": "cid01936",
+                "boundsFontUnits": [
+                  39,
+                  -104,
+                  884,
+                  826
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+7528",
+                "glyphName": "cid04768",
+                "boundsFontUnits": [
+                  42,
+                  -91,
+                  886,
+                  777
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 28.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.546,
+              "y": -11.564,
+              "width": 25.858,
+              "height": 13.02
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:15",
+            "characters": "启用",
+            "svgSha256": "e9b9b7327bb781277d03af608af21206c95cd607ba0ebcee31eab465c40ca99b",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.546,
+              "y": 4.436,
+              "width": 25.858,
+              "height": 13.02
+            },
+            "viewBox": "0 0 28 21",
+            "exportWidth": "28",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "dimensionEqual": true,
+          "contourComparison": {
+            "orderedContourStructureEqual": false,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 71,
+            "nativeCommandCount": 70,
+            "maximumCoordinateDeltaPx": null,
+            "sourceNormalizedSha256": "e515947668dedfc3695a80b070d247c2aeaebb7207d5c232da5cb5e7388e0622",
+            "nativeNormalizedSha256": "68dae03bb09e205ca32918d6ae32b5e4c1aab23e2f9770c4913356e8a5cbd888",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 9,
+              "contourCountNative": 9,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 9,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "REVIEW",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": false,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        },
+        {
+          "textReference": "28:17",
+          "characters": "编辑",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+7F16",
+                "glyphName": "cid05547",
+                "boundsFontUnits": [
+                  41,
+                  -101,
+                  922,
+                  822
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+8F91",
+                "glyphName": "cid06923",
+                "boundsFontUnits": [
+                  45,
+                  -102,
+                  963,
+                  818
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 28.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.574,
+              "y": -11.508,
+              "width": 26.908,
+              "height": 12.936
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:17",
+            "characters": "编辑",
+            "svgSha256": "3b00fd99a6c42a62dbae608457c080038e1fc13b582eae4db6dd9c14e28f2a34",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.574,
+              "y": 4.492,
+              "width": 26.907999999999998,
+              "height": 12.936
+            },
+            "viewBox": "0 0 28 21",
+            "exportWidth": "28",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": -3.552713678800501e-15,
+            "height": 0.0
+          },
+          "dimensionEqual": false,
+          "contourComparison": {
+            "orderedContourStructureEqual": false,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 151,
+            "nativeCommandCount": 152,
+            "maximumCoordinateDeltaPx": null,
+            "sourceNormalizedSha256": "5da9742554b9423358739667e66deba91d2ca40f76f067224bfbd2a9638e36b9",
+            "nativeNormalizedSha256": "e815802481f3858e2a01aca4a9ca4b205cd702a3692435cd5e1a25da9215f2f8",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 15,
+              "contourCountNative": 15,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 15,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "REVIEW",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": false,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        },
+        {
+          "textReference": "28:20",
+          "characters": "王五",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+738B",
+                "glyphName": "cid04660",
+                "boundsFontUnits": [
+                  66,
+                  -53,
+                  935,
+                  769
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+4E94",
+                "glyphName": "cid01330",
+                "boundsFontUnits": [
+                  56,
+                  -57,
+                  945,
+                  759
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 28.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.924,
+              "y": -10.766,
+              "width": 26.306,
+              "height": 11.564
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:20",
+            "characters": "王五",
+            "svgSha256": "6f53bb5d6b6e570d864a239daf09006d38cab2fe13e20029bd173b70af953c49",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.924,
+              "y": 5.234,
+              "width": 26.306,
+              "height": 11.563999999999998
+            },
+            "viewBox": "0 0 28 21",
+            "exportWidth": "28",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": 0.0,
+            "height": -1.7763568394002505e-15
+          },
+          "dimensionEqual": false,
+          "contourComparison": {
+            "orderedContourStructureEqual": true,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 45,
+            "nativeCommandCount": 45,
+            "maximumCoordinateDeltaPx": 12.166,
+            "sourceNormalizedSha256": "f32b557a38089536a22d3b343f250d8137c807c82be53b5a346f6361a5b7accb",
+            "nativeNormalizedSha256": "9d0532c5482735fc3b3ace48d41d947ac19751deb5bf5a8267e9147a43d581e2",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 3,
+              "contourCountNative": 3,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 3,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "PASS",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": true,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        },
+        {
+          "textReference": "28:22",
+          "characters": "停用",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+505C",
+                "glyphName": "cid01546",
+                "boundsFontUnits": [
+                  35,
+                  -100,
+                  929,
+                  822
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+7528",
+                "glyphName": "cid04768",
+                "boundsFontUnits": [
+                  42,
+                  -91,
+                  886,
+                  777
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 28.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.49,
+              "y": -11.508,
+              "width": 25.914,
+              "height": 12.908
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:22",
+            "characters": "停用",
+            "svgSha256": "62c89ade8f6a12b932ab39ef6fca430b2c0309d70cd3fcabd93059f548f6afa4",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.49,
+              "y": 4.492,
+              "width": 25.914,
+              "height": 12.907999999999998
+            },
+            "viewBox": "0 0 28 21",
+            "exportWidth": "28",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": 0.0,
+            "height": -1.7763568394002505e-15
+          },
+          "dimensionEqual": false,
+          "contourComparison": {
+            "orderedContourStructureEqual": false,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 90,
+            "nativeCommandCount": 89,
+            "maximumCoordinateDeltaPx": null,
+            "sourceNormalizedSha256": "9db4f67866802084bcce1b8c9119e75dee2c45e85e8a1b2f7282fdfc88c1bfe9",
+            "nativeNormalizedSha256": "e6c4255b53421a6990364697fb0c1b786271f96bb24a5a6cb78e21fa085e0be3",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 11,
+              "contourCountNative": 11,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 11,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "REVIEW",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": false,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        },
+        {
+          "textReference": "28:24",
+          "characters": "访客",
+          "sourceFileRole": "system-file-candidate",
+          "source": {
+            "fontFileSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+            "unitsPerEm": 1000,
+            "glyphs": [
+              {
+                "codepoint": "U+8BBF",
+                "glyphName": "cid06562",
+                "boundsFontUnits": [
+                  45,
+                  -104,
+                  962,
+                  827
+                ],
+                "advanceFontUnits": 1000
+              },
+              {
+                "codepoint": "U+5BA2",
+                "glyphName": "cid02606",
+                "boundsFontUnits": [
+                  41,
+                  -103,
+                  956,
+                  824
+                ],
+                "advanceFontUnits": 1000
+              }
+            ],
+            "advancePx": 28.0,
+            "unshapedInkBoundsBaselineCoordinates": {
+              "x": 0.63,
+              "y": -11.578,
+              "width": 26.754,
+              "height": 13.034
+            },
+            "shaping": "NONE: cmap glyphs with hmtx advances; no GSUB/GPOS, kerning, hinting or rasterization."
+          },
+          "nativeSvg": {
+            "textReference": "28:24",
+            "characters": "访客",
+            "svgSha256": "0c3c19d5bd41aea0519bb46e0712c0b6ea17012f6db5b642bab3e70851532490",
+            "pathCount": 1,
+            "pathBoundsSvgCoordinates": {
+              "x": 0.63,
+              "y": 4.422,
+              "width": 26.754,
+              "height": 13.033999999999999
+            },
+            "viewBox": "0 0 28 21",
+            "exportWidth": "28",
+            "exportHeight": "21"
+          },
+          "dimensionDeltaPx": {
+            "width": 0.0,
+            "height": -1.7763568394002505e-15
+          },
+          "dimensionEqual": false,
+          "contourComparison": {
+            "orderedContourStructureEqual": false,
+            "exactNormalizedCoordinatesEqual": false,
+            "sourceCommandCount": 93,
+            "nativeCommandCount": 93,
+            "maximumCoordinateDeltaPx": null,
+            "sourceNormalizedSha256": "91a9746897a0dd2f4c0827e4400a1ac08351a992ec285e53694a200300832201",
+            "nativeNormalizedSha256": "dd447193d95fa864585a975e85058e7eca848e5fce85cec598dc5c0f997e9aa8",
+            "alignmentTranslationSvgCoordinates": {
+              "x": 0.0,
+              "y": 16.0
+            },
+            "alignmentAppliedToCanvas": false,
+            "admissionEligible": false,
+            "unorientedGeometry": {
+              "contourCountSource": 8,
+              "contourCountNative": 8,
+              "structureEqual": true,
+              "exactCoordinatesEqual": true,
+              "maximumCoordinateDeltaPx": 0.0,
+              "comparison": "Translation, contour order, cyclic starts and traversal direction are normalized; fill winding semantics remain unverified.",
+              "admissionEligible": false
+            },
+            "nonzeroWinding": {
+              "scope": "nonzero_path_winding_diagnostic",
+              "status": "PASS",
+              "contourCount": 8,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "directionRelationship": "ALL_CONTOURS_REVERSED",
+              "nonzeroPathFilledRegionEquivalent": true,
+              "proof": "Exact directed segments after common translation, contour ordering and cyclic starts; uniform reversal changes winding sign everywhere but preserves its zero set.",
+              "admissionEligible": false,
+              "limitations": [
+                "This compares paths under nonzero fill, not font renderer behavior, hinting or pixels.",
+                "Individual contour reversal, multiple native fill paths, evenodd or inexact coordinates are not certified."
+              ]
+            },
+            "sixDigitSerialization": {
+              "status": "REVIEW",
+              "serializer": "six-significant-decimal-digits",
+              "translation": {
+                "x": "0.000",
+                "y": "16.000"
+              },
+              "exactSerializedDirectedGeometryEqual": false,
+              "nativeFillRule": "nonzero",
+              "nativePathCount": 1,
+              "admissionEligible": false
+            }
+          }
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Dimension equality is not full contour equality, shaping equivalence or DOM baseline proof.",
+        "Local name metadata does not prove browser-loaded file identity; official TTF sibling does not prove served WOFF2 equivalence.",
+        "No positions, fonts, reference captures or admission tolerances are changed."
+      ]
+    },
+    "baselines": [
+      {
+        "textReference": "28:6",
+        "sourceBaseline": 28,
+        "nativeBaseline": "28.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      },
+      {
+        "textReference": "28:8",
+        "sourceBaseline": 28,
+        "nativeBaseline": "28.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      },
+      {
+        "textReference": "28:10",
+        "sourceBaseline": 28,
+        "nativeBaseline": "28.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      },
+      {
+        "textReference": "28:13",
+        "sourceBaseline": 76,
+        "nativeBaseline": "76.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      },
+      {
+        "textReference": "28:15",
+        "sourceBaseline": 76,
+        "nativeBaseline": "76.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      },
+      {
+        "textReference": "28:17",
+        "sourceBaseline": 76,
+        "nativeBaseline": "76.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      },
+      {
+        "textReference": "28:20",
+        "sourceBaseline": 124,
+        "nativeBaseline": "124.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      },
+      {
+        "textReference": "28:22",
+        "sourceBaseline": 124,
+        "nativeBaseline": "124.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      },
+      {
+        "textReference": "28:24",
+        "sourceBaseline": 124,
+        "nativeBaseline": "124.000",
+        "status": "PASS",
+        "proof": "Exact full directed path equivalence and common coordinate translation; no rounded extrema comparison."
+      }
+    ],
+    "inputHashes": {
+      "table-reference\\component_ir.json": "0624e587babae50f4f5b44a1c0bccf44100fb4679c332630e0272acbd118c33f",
+      "table-reference\\table-observation.json": "63ede3fc28f5016dbbfc7d6b6478491658b0133046e3d9ce0c0f2b3bc9cc093e",
+      "table-text-outline.json": "d0b459ab3ad42523cf836581e0da3e5946228ae7c56cc2f2858f2f9dd96ab5e0",
+      "table-font-file-binding.json": "e739475a8fb9b74437a5f79594108c22d3167fc7148bf277a8028616278fcb4d",
+      "table-component-svg-v2.json": "3a3a6d50fcb15a2fdfc870bb68c0654f866994f4136ca387fe296b7b0a9d89de",
+      "table-svg-browser-evidence.json": "378977ad6a7af069abc67904f7b80aee79fc365abcec58eaac59f1d7e44c09e5",
+      "table-blend-experiment.json": "f76fff300812564603cbc53a38d52efa89437a6924493e2831beb31a1604c564",
+      "table-native-capture-v2\\native-evidence.json": "1016d92dcc9de501528a7e0b7123f80d6c3d660510c684c4a3d8907c06c23d68"
+    },
+    "nontextChangedPixels": 0
+  }
+}

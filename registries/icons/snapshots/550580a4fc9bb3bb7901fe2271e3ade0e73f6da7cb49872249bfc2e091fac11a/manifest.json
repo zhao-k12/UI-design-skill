@@ -1,0 +1,11 @@
+{
+  "files": {
+    "License": "6f2f21c5f8db34635d31848e9ff831d5dc421bb83ffc9d37f82651364047ae58",
+    "custom-tags.json": "8db3919411f5cc3ccd3f4763b1d2b44b9cbedb1053095c26a31dcdbf5d67d7da",
+    "registry.json": "27cc3c02544d46a80b1979a6d32a547b7c06d000253e2bf3d6c5b43fdc67de89",
+    "semantic-index.json": "9ee1a655d74410b03e6067a802c6d8baf61d9972b89c2f803f59ff7940e0fca0",
+    "source-lock.json": "3774dd4d80bbdf5d42d5ab7c4be5d11cf11f741bc2e3b5aacb08ac5bb47e9140"
+  },
+  "manifestVersion": "0.1.0",
+  "registrySha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde"
+}

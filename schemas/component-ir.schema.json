@@ -1,0 +1,478 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ui-design-skill:component-ir:0.1.0",
+  "title": "Official Runtime Component IR V0.1",
+  "type": "object",
+  "properties": {
+    "status": {
+      "const": "PASS"
+    },
+    "componentIrVersion": {
+      "const": "0.1.0"
+    },
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/component"
+      }
+    }
+  },
+  "required": [
+    "status",
+    "componentIrVersion",
+    "components"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "bounds": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number",
+          "minimum": 0
+        },
+        "height": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "width",
+        "height"
+      ],
+      "additionalProperties": false
+    },
+    "style": {
+      "type": "object",
+      "required": [
+        "display",
+        "position",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left",
+        "gap",
+        "font-size",
+        "font-weight",
+        "font-family",
+        "line-height",
+        "border-top-width",
+        "border-top-color",
+        "background-color",
+        "color"
+      ],
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "node": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^0(?:\\.[0-9]+)*$"
+        },
+        "parentPath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tag": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "bounds": {
+          "$ref": "#/$defs/bounds"
+        },
+        "visible": {
+          "type": "boolean"
+        },
+        "computedStyle": {
+          "$ref": "#/$defs/style"
+        },
+        "pseudoElements": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "::before",
+              "::after",
+              "::placeholder"
+            ]
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/style"
+          }
+        },
+        "textRuns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "bounds": {
+                "$ref": "#/$defs/bounds"
+              }
+            },
+            "required": [
+              "text",
+              "bounds"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "path",
+        "parentPath",
+        "tag",
+        "attributes",
+        "bounds",
+        "visible",
+        "computedStyle",
+        "pseudoElements",
+        "textRuns",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "environment": {
+      "type": "object",
+      "properties": {
+        "browser": {
+          "type": "string"
+        },
+        "browserExecutableSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "node": {
+          "type": "string"
+        },
+        "operatingSystem": {
+          "type": "object",
+          "properties": {
+            "platform": {
+              "type": "string"
+            },
+            "release": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "platform",
+            "release"
+          ],
+          "additionalProperties": false
+        },
+        "viewport": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "width",
+            "height"
+          ],
+          "additionalProperties": false
+        },
+        "deviceScaleFactor": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "locale": {
+          "type": "string"
+        },
+        "fontsStatus": {
+          "const": "loaded"
+        }
+      },
+      "required": [
+        "browser",
+        "browserExecutableSha256",
+        "node",
+        "operatingSystem",
+        "viewport",
+        "deviceScaleFactor",
+        "locale",
+        "fontsStatus"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "sourceVersion": {
+          "type": "string"
+        },
+        "sourceLockSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "packageVersion": {
+          "type": "string"
+        },
+        "officialCssSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "officialRuntimeSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "casesSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "harnessBundleSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "extractorSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "assemblySha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "rendererSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "sourceVersion",
+        "sourceLockSha256",
+        "packageVersion",
+        "officialCssSha256",
+        "officialRuntimeSha256",
+        "casesSha256",
+        "harnessBundleSha256",
+        "extractorSha256",
+        "assemblySha256",
+        "rendererSha256"
+      ],
+      "additionalProperties": false
+    },
+    "component": {
+      "type": "object",
+      "properties": {
+        "componentIrVersion": {
+          "const": "0.1.0"
+        },
+        "evidenceKind": {
+          "const": "official-runtime"
+        },
+        "logicalComponentId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+        },
+        "componentType": {
+          "enum": [
+            "Button",
+            "Input",
+            "Select",
+            "DatePicker",
+            "Table",
+            "FormItem",
+            "Pagination",
+            "Card",
+            "Tabs"
+          ]
+        },
+        "variant": {
+          "type": "string"
+        },
+        "state": {
+          "const": "default-static"
+        },
+        "props": {
+          "type": "object"
+        },
+        "resolvedProps": {
+          "type": "object"
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "value",
+                  "label"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "text",
+            "options"
+          ],
+          "additionalProperties": false
+        },
+        "fixtureContext": {
+          "type": "object",
+          "properties": {
+            "containerWidth": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "containerWidth"
+          ],
+          "additionalProperties": false
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "environment": {
+          "$ref": "#/$defs/environment"
+        },
+        "rootBounds": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "width",
+            "height"
+          ],
+          "additionalProperties": false
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/node"
+          }
+        },
+        "iconMetrics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "visible": {
+                "type": "boolean"
+              },
+              "bounds": {
+                "$ref": "#/$defs/bounds"
+              },
+              "tag": {
+                "type": "string"
+              },
+              "pseudoElements": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/$defs/style"
+                }
+              }
+            },
+            "required": [
+              "path",
+              "visible",
+              "bounds",
+              "tag",
+              "pseudoElements"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "screenshot": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_.-]+\\.png$"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "componentIrVersion",
+        "evidenceKind",
+        "logicalComponentId",
+        "componentType",
+        "variant",
+        "state",
+        "props",
+        "resolvedProps",
+        "content",
+        "fixtureContext",
+        "provenance",
+        "environment",
+        "rootBounds",
+        "nodes",
+        "iconMetrics",
+        "screenshot"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

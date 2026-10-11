@@ -1,0 +1,4 @@
+{
+  "Noto Sans SC:400": {"family": "Noto Sans SC", "style": "Regular"},
+  "Noto Sans SC:600": {"family": "Noto Sans SC", "style": "Regular", "variationSettings": {"wght": 600}}
+}

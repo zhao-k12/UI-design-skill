@@ -1,0 +1,223 @@
+{
+  "scope": "headed_official_table_runtime_supplement",
+  "status": "PASS",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 768,
+      "height": 464
+    },
+    "containerWidth": 720,
+    "cases": [
+      {
+        "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+        "componentType": "Table",
+        "variant": "default",
+        "props": {
+          "showHeader": true,
+          "border": false,
+          "stripe": false,
+          "columns": [
+            {
+              "title": "姓名",
+              "key": "name",
+              "width": 240
+            },
+            {
+              "title": "邮箱",
+              "key": "email",
+              "width": 480
+            }
+          ],
+          "data": [
+            {
+              "name": "赵六",
+              "email": "zhao@example.com"
+            },
+            {
+              "name": "钱七",
+              "email": "qian@example.com"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 768,
+      "height": 464
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "e375b6f824cbd14c7063b3f8d4dc1a72ef1a87a0c0e0fb094acec898e30b151f",
+    "harnessBundleSha256": "865c4d2d939b2852f8668ecc096b241f0bd42b6b69e0a25413e2d0f3a4b34a0b",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "9516eb8741a3de363c8cd9cf8f7296f9badcd4b96fe8692d5d8cd7b780145ee6"
+  },
+  "baselines": [
+    {
+      "role": "header",
+      "characters": "姓名",
+      "range": {
+        "x": 18,
+        "y": 10.875,
+        "width": 28,
+        "height": 16
+      },
+      "baselineComponentY": 23.875,
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "restored": true
+    },
+    {
+      "role": "header",
+      "characters": "邮箱",
+      "range": {
+        "x": 258.328125,
+        "y": 10.875,
+        "width": 28,
+        "height": 16
+      },
+      "baselineComponentY": 23.875,
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "restored": true
+    },
+    {
+      "role": "body",
+      "characters": "赵六",
+      "range": {
+        "x": 18,
+        "y": 53.875,
+        "width": 28,
+        "height": 16
+      },
+      "baselineComponentY": 66.875,
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "restored": true
+    },
+    {
+      "role": "body",
+      "characters": "zhao@example.com",
+      "range": {
+        "x": 258.328125,
+        "y": 53.875,
+        "width": 127.828125,
+        "height": 16
+      },
+      "baselineComponentY": 66.875,
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "restored": true
+    },
+    {
+      "role": "body",
+      "characters": "钱七",
+      "range": {
+        "x": 18,
+        "y": 101.875,
+        "width": 28,
+        "height": 16
+      },
+      "baselineComponentY": 114.875,
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "restored": true
+    },
+    {
+      "role": "body",
+      "characters": "qian@example.com",
+      "range": {
+        "x": 258.328125,
+        "y": 101.875,
+        "width": 123.9375,
+        "height": 16
+      },
+      "baselineComponentY": 114.875,
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "restored": true
+    }
+  ],
+  "fonts": [
+    [
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ],
+    [
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ],
+    [
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ],
+    [
+      {
+        "familyName": "Arial",
+        "postScriptName": "ArialMT",
+        "isCustomFont": false,
+        "glyphCount": 16
+      }
+    ],
+    [
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ],
+    [
+      {
+        "familyName": "Arial",
+        "postScriptName": "ArialMT",
+        "isCustomFont": false,
+        "glyphCount": 16
+      }
+    ]
+  ],
+  "referenceComponentIrSha256": "c2d14fde6a010c8271c68c8c84363f197f37e7cd485fcd11ee6805fb2d496c61"
+}

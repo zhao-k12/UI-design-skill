@@ -1,0 +1,2515 @@
+{
+  "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+  "nativeCaptureSha256": "ea7447d1a31c729d74e9ada993e0c3c3663e93193f6f8e7cf1f8a5a764642661",
+  "componentIrSha256": "8b14f33d3468b3372046aa2a533824173cc26bd1e9e3990af1b8c202dbd10771",
+  "geometryAndStyle": {
+    "status": "PASS",
+    "textSamples": [
+      {
+        "path": "0.0.0.0.1.0.0.0.0",
+        "characters": "编号",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 10.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 600,
+        "sourceCssFontWeight": 700,
+        "role": "header",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "fill": "#515a6e",
+        "sourceBaselineY": 23.875,
+        "fontStyle": "Semibold",
+        "textReference": "82:27",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.0.1.0.0",
+        "characters": "姓名",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 10.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 600,
+        "sourceCssFontWeight": 700,
+        "role": "header",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "fill": "#515a6e",
+        "sourceBaselineY": 23.875,
+        "fontStyle": "Semibold",
+        "textReference": "82:29",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.0.2.0.0",
+        "characters": "部门",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 10.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 600,
+        "sourceCssFontWeight": 700,
+        "role": "header",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "fill": "#515a6e",
+        "sourceBaselineY": 23.875,
+        "fontStyle": "Semibold",
+        "textReference": "82:31",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.0.0.1.0.3.0.0",
+        "characters": "状态",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 10.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 600,
+        "sourceCssFontWeight": 700,
+        "role": "header",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Semibold",
+        "fill": "#515a6e",
+        "sourceBaselineY": 23.875,
+        "fontStyle": "Semibold",
+        "textReference": "82:33",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.0.0.0.0",
+        "characters": "001",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 53.875,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 66.875,
+        "fontStyle": "Regular",
+        "textReference": "82:37",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.1.0.1.0.1.0.0",
+        "characters": "张三",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 53.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 66.875,
+        "fontStyle": "Regular",
+        "textReference": "82:39",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.0.2.0.0",
+        "characters": "研发",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 53.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 66.875,
+        "fontStyle": "Regular",
+        "textReference": "82:41",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.0.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 53.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 66.875,
+        "fontStyle": "Regular",
+        "textReference": "82:43",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.1.0.0.0",
+        "characters": "002",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 101.875,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 114.875,
+        "fontStyle": "Regular",
+        "textReference": "82:47",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.1.0.1.1.1.0.0",
+        "characters": "李四",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 101.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 114.875,
+        "fontStyle": "Regular",
+        "textReference": "82:49",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.1.2.0.0",
+        "characters": "财务",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 101.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 114.875,
+        "fontStyle": "Regular",
+        "textReference": "82:51",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.1.3.0.0",
+        "characters": "停用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 101.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 114.875,
+        "fontStyle": "Regular",
+        "textReference": "82:53",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.2.0.0.0",
+        "characters": "003",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 149.875,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 162.875,
+        "fontStyle": "Regular",
+        "textReference": "82:57",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.1.0.1.2.1.0.0",
+        "characters": "王五",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 149.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 162.875,
+        "fontStyle": "Regular",
+        "textReference": "82:59",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.2.2.0.0",
+        "characters": "运营",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 149.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 162.875,
+        "fontStyle": "Regular",
+        "textReference": "82:61",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.2.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 149.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 162.875,
+        "fontStyle": "Regular",
+        "textReference": "82:63",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.3.0.0.0",
+        "characters": "004",
+        "sourceTextBounds": {
+          "x": 18,
+          "y": 197.875,
+          "width": 23.359375,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "Arial",
+        "postScriptName": "ArialMT",
+        "fill": "#515a6e",
+        "sourceBaselineY": 210.875,
+        "fontStyle": "Regular",
+        "textReference": "82:67",
+        "nativeBaselineOffset": 15
+      },
+      {
+        "path": "0.0.1.0.1.3.1.0.0",
+        "characters": "赵六",
+        "sourceTextBounds": {
+          "x": 178.15625,
+          "y": 197.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 210.875,
+        "fontStyle": "Regular",
+        "textReference": "82:69",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.3.2.0.0",
+        "characters": "客服",
+        "sourceTextBounds": {
+          "x": 418.40625,
+          "y": 197.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 210.875,
+        "fontStyle": "Regular",
+        "textReference": "82:71",
+        "nativeBaselineOffset": 16
+      },
+      {
+        "path": "0.0.1.0.1.3.3.0.0",
+        "characters": "启用",
+        "sourceTextBounds": {
+          "x": 738.734375,
+          "y": 197.875,
+          "width": 28,
+          "height": 16
+        },
+        "sourceSizing": {
+          "display": "inline",
+          "width": "auto",
+          "height": "auto"
+        },
+        "fontSize": 14,
+        "fontWeight": 400,
+        "sourceCssFontWeight": 400,
+        "role": "body",
+        "fontFamily": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "fill": "#515a6e",
+        "sourceBaselineY": 210.875,
+        "fontStyle": "Regular",
+        "textReference": "82:73",
+        "nativeBaselineOffset": 16
+      }
+    ],
+    "sourcePaths": [
+      "candidate/data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+      "source/0.0.0.0.1.0",
+      "source/0.0.0.0.1.0.0",
+      "source/0.0.0.0.1.0.0.0.0",
+      "source/0.0.0.0.1.0.1",
+      "source/0.0.0.0.1.0.1.0.0",
+      "source/0.0.0.0.1.0.2",
+      "source/0.0.0.0.1.0.2.0.0",
+      "source/0.0.0.0.1.0.3",
+      "source/0.0.0.0.1.0.3.0.0",
+      "source/row-border/0.0.0.0.1.0",
+      "source/0.0.1.0.1.0",
+      "source/0.0.1.0.1.0.0",
+      "source/0.0.1.0.1.0.0.0.0",
+      "source/0.0.1.0.1.0.1",
+      "source/0.0.1.0.1.0.1.0.0",
+      "source/0.0.1.0.1.0.2",
+      "source/0.0.1.0.1.0.2.0.0",
+      "source/0.0.1.0.1.0.3",
+      "source/0.0.1.0.1.0.3.0.0",
+      "source/row-border/0.0.1.0.1.0",
+      "source/0.0.1.0.1.1",
+      "source/0.0.1.0.1.1.0",
+      "source/0.0.1.0.1.1.0.0.0",
+      "source/0.0.1.0.1.1.1",
+      "source/0.0.1.0.1.1.1.0.0",
+      "source/0.0.1.0.1.1.2",
+      "source/0.0.1.0.1.1.2.0.0",
+      "source/0.0.1.0.1.1.3",
+      "source/0.0.1.0.1.1.3.0.0",
+      "source/row-border/0.0.1.0.1.1",
+      "source/0.0.1.0.1.2",
+      "source/0.0.1.0.1.2.0",
+      "source/0.0.1.0.1.2.0.0.0",
+      "source/0.0.1.0.1.2.1",
+      "source/0.0.1.0.1.2.1.0.0",
+      "source/0.0.1.0.1.2.2",
+      "source/0.0.1.0.1.2.2.0.0",
+      "source/0.0.1.0.1.2.3",
+      "source/0.0.1.0.1.2.3.0.0",
+      "source/row-border/0.0.1.0.1.2",
+      "source/0.0.1.0.1.3",
+      "source/0.0.1.0.1.3.0",
+      "source/0.0.1.0.1.3.0.0.0",
+      "source/0.0.1.0.1.3.1",
+      "source/0.0.1.0.1.3.1.0.0",
+      "source/0.0.1.0.1.3.2",
+      "source/0.0.1.0.1.3.2.0.0",
+      "source/0.0.1.0.1.3.3",
+      "source/0.0.1.0.1.3.3.0.0",
+      "source/row-border/0.0.1.0.1.3",
+      "source/0.0::before"
+    ],
+    "sourceAutoSizingPreserved": true
+  },
+  "fontsGlyphsBaselines": {
+    "glyphs": {
+      "scope": "task020_glyph_diagnostic",
+      "status": "OBSERVED",
+      "captureSha256": "c07084549a9f6493ac2d1c62283ba1d6f322cb07f9309c75d46cf4ad03e3f287",
+      "programSha256": "dbcb21169e902dd12b9b1d3dfd817a43038207428655509f62b2174b2adb6cb0",
+      "observations": [
+        {
+          "textReference": "82:7",
+          "characters": "姓名",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:9",
+          "characters": "邮箱",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:13",
+          "characters": "赵六",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:15",
+          "characters": "zhao@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "65485/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f16086a9188c29df7c4c175d7ff913d2b00576da20366b5a237d47161cfcaabf",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:19",
+          "characters": "钱七",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:21",
+          "characters": "qian@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "63497/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "fe0931a97071dd2e537ca3b1a37a8a8602c85496b22feaaaeaf121218847ac57",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:27",
+          "characters": "编号",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:29",
+          "characters": "姓名",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:31",
+          "characters": "部门",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:33",
+          "characters": "状态",
+          "fontStyle": "Semibold",
+          "sourceFontSha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:37",
+          "characters": "001",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "5e150fb9cfc456f7d42ff5460ade9bdbf562235ca5dd9daff1203c519b0d6691",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:39",
+          "characters": "张三",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:41",
+          "characters": "研发",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:43",
+          "characters": "启用",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:47",
+          "characters": "002",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "41b9767971cf0e4a7578c33bb2e5a41d36eaad429c183952b9e20ea309c53c7e",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:49",
+          "characters": "李四",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:51",
+          "characters": "财务",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:53",
+          "characters": "停用",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:57",
+          "characters": "003",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "8310a0d77424142198e5e9eae2dec73c752c8fb53731b2963a4339fe21d11e75",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:59",
+          "characters": "王五",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:61",
+          "characters": "运营",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:63",
+          "characters": "启用",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:67",
+          "characters": "004",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f4b5aac170dbc8f0fd95d22c7162ab6f69e510e1748e84cfad99e4ec69b940b2",
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:69",
+          "characters": "赵六",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:71",
+          "characters": "客服",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        },
+        {
+          "textReference": "82:73",
+          "characters": "启用",
+          "fontStyle": "Regular",
+          "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+          "exactCffEncoding": true,
+          "fixedBaselinePx": 16,
+          "fixedBaselineEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "status": "PASS"
+        }
+      ],
+      "fontEncodingAdmission": "NOT_APPROVED",
+      "fidelityGate": "NOT_RUN",
+      "admissionEligible": false
+    },
+    "lockedArialCalibration": {
+      "scope": "task019_exact_arial_encoding",
+      "status": "PASS",
+      "fontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+      "freetypeVersion": "2.13.2",
+      "freetypeBinarySha256": "090038852d6eb0dc75569f31fb92d6c98e829ca2639c9b6e8d8808032f9a7003",
+      "freetypeWrapperSha256": "aa2baf011511f89f04e8a135e6d398cd46bf86a3892add185177fccb88e66470",
+      "programSha256": "26aa24c6d431f5392b5db35989eef221e7eefd9aedf9ec079e944fa15a948cc8",
+      "observations": [
+        {
+          "textReference": "68:2",
+          "characters": ".",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "a64fc08686c428cf6251aa9ebb0e02f39fdc3a6d9a8caebed8e77bdb7b56b762",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:3",
+          "characters": "0",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "e2bc6ba1f7de72f3938e7798079194a231107316fd32f2527224ea0c12e71c4b",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:4",
+          "characters": "1",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "0a39bbae0232a378dc9a529188bf21f982f364350fbb88e0d79f1bf999c60e6b",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:5",
+          "characters": "2",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "2bdc2ef99697d0c15ec7c1a70151aca8fe85d2aeffc5274e3e64106f265434b6",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:6",
+          "characters": "3",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "89260fa9a71f98f595926b5781f4b17e377873a697a17841742cadaa21e6fcc5",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:7",
+          "characters": "4",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "2589233d0df96373c6dcc8fcfa24dc4489f6530a53d68ad2f98da273468ee39d",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:8",
+          "characters": "@",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "455/32",
+          "fixedBaselinePx": 15,
+          "svgSha256": "8146c66bb413767553958c19fb035dfc6c968390fc93b59b2399bf167b88ee8d",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:9",
+          "characters": "a",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "08668065d061352bb06091684583645fa640b5b70362315c1724f501afbb0543",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:10",
+          "characters": "c",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "fa8aaba8742099a17ecdc31da53c302d26b3bde34d781ff9dd504a8ec7d881fd",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:11",
+          "characters": "e",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "433e99e54b0a56c3515c938aa14076c59e965e43e496ef03308e2553e9e35376",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:12",
+          "characters": "h",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "5cae66b26296ec38f854ed4a75fb7d298315814b13ca4001db9a7f951017a0a7",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:13",
+          "characters": "i",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "399/128",
+          "fixedBaselinePx": 15,
+          "svgSha256": "e3fe15b4e3b97e86b7fb0ce3f1d7740336e2aa02c123ef9ae06d717f0b19b202",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:14",
+          "characters": "l",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "399/128",
+          "fixedBaselinePx": 15,
+          "svgSha256": "b77cbb8d6ba1e40650071e3171714de89b0a10f4b713c76a9cacdaec2b43e95a",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:15",
+          "characters": "m",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5971/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "7404b6473274df810b248a1a3874a497f854aaecac923f1d24d17f9ed9d7a5a0",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:16",
+          "characters": "n",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "ad264cb132104996a97a07cd9abecb8e26686c1ea2f34e12e920ee83e89e6382",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:17",
+          "characters": "o",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "7d381d664d647b78126ba27fdde1dc5be25b419539878915c868e2f71fe754eb",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:18",
+          "characters": "p",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "40d10e102f7fc40ece02960598de622aab8bf462172bc02e1876858d9d01c929",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:19",
+          "characters": "q",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "1995/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "0ceb99d6e144b9c96f342455ed3b4b34a17ad8321a7683337bf0069ca67d3b5c",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:20",
+          "characters": "x",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "3dacd2e22c0bfb2bc6871e34a1863106a57d89d5f535b766b505be1289974c06",
+          "status": "PASS"
+        },
+        {
+          "textReference": "68:21",
+          "characters": "z",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "7",
+          "fixedBaselinePx": 15,
+          "svgSha256": "6c56187b370bc9f5b20557ca65db26dbd2df99df49494184fbe1076e7100450e",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:9",
+          "characters": "zhao@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "65485/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f16086a9188c29df7c4c175d7ff913d2b00576da20366b5a237d47161cfcaabf",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:15",
+          "characters": "qian@example.com",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "63497/512",
+          "fixedBaselinePx": 15,
+          "svgSha256": "fe0931a97071dd2e537ca3b1a37a8a8602c85496b22feaaaeaf121218847ac57",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:21",
+          "characters": "001",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "5e150fb9cfc456f7d42ff5460ade9bdbf562235ca5dd9daff1203c519b0d6691",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:31",
+          "characters": "002",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "41b9767971cf0e4a7578c33bb2e5a41d36eaad429c183952b9e20ea309c53c7e",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:41",
+          "characters": "003",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "8310a0d77424142198e5e9eae2dec73c752c8fb53731b2963a4339fe21d11e75",
+          "status": "PASS"
+        },
+        {
+          "textReference": "69:51",
+          "characters": "004",
+          "exactDirectedEncodingEqual": true,
+          "intrinsicDimensionsEqual": true,
+          "encodedAdvancePx": "5985/256",
+          "fixedBaselinePx": 15,
+          "svgSha256": "f4b5aac170dbc8f0fd95d22c7162ab6f69e510e1748e84cfad99e4ec69b940b2",
+          "status": "PASS"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN"
+    },
+    "sourceFontEffect": {
+      "scope": "mixed_source_font_file_effect_diagnostic",
+      "status": "OBSERVED",
+      "fontFiles": {
+        "Arial": {
+          "path": "C:/Windows/Fonts/arial.ttf",
+          "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+        },
+        "PingFang SC": {
+          "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Regular.otf",
+          "sha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a"
+        },
+        "PingFang SC/Semibold": {
+          "path": "C:/Users/38442/AppData/Local/Microsoft/Windows/Fonts/PingFang SC-Semibold.otf",
+          "sha256": "ca115f4f17266f1ff5ead3ef1049814eafb4f61cc279134e0a8b3d817532fb78"
+        }
+      },
+      "referenceComponentIrSha256": "049b125dfa38f02155a56a4db7996cae9fb3cc1c2f68fd5fb5320f5c717dc22c",
+      "probeScriptSha256": "aaad4920d19a1ec815a574ec0711e2f04287d40d7301b45681772aaf378c916a",
+      "referenceMatches": [
+        {
+          "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        }
+      ],
+      "observation": {
+        "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+        "fontLoadStatus": [
+          "loaded",
+          "loaded",
+          "loaded"
+        ],
+        "ownerGeometry": {
+          "before": [
+            {
+              "characters": "编号",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 70,
+                "bottom": 50.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "姓名",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 230.15625,
+                "bottom": 50.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "部门",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 470.40625,
+                "bottom": 50.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "状态",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 790.734375,
+                "bottom": 50.875,
+                "left": 762.734375
+              }
+            },
+            {
+              "characters": "001",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 77.875,
+                "width": 23.359375,
+                "height": 16,
+                "top": 77.875,
+                "right": 65.359375,
+                "bottom": 93.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "张三",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 77.875,
+                "width": 28,
+                "height": 16,
+                "top": 77.875,
+                "right": 230.15625,
+                "bottom": 93.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "研发",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 77.875,
+                "width": 28,
+                "height": 16,
+                "top": 77.875,
+                "right": 470.40625,
+                "bottom": 93.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "启用",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 77.875,
+                "width": 28,
+                "height": 16,
+                "top": 77.875,
+                "right": 790.734375,
+                "bottom": 93.875,
+                "left": 762.734375
+              }
+            },
+            {
+              "characters": "002",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 125.875,
+                "width": 23.359375,
+                "height": 16,
+                "top": 125.875,
+                "right": 65.359375,
+                "bottom": 141.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "李四",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 125.875,
+                "width": 28,
+                "height": 16,
+                "top": 125.875,
+                "right": 230.15625,
+                "bottom": 141.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "财务",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 125.875,
+                "width": 28,
+                "height": 16,
+                "top": 125.875,
+                "right": 470.40625,
+                "bottom": 141.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "停用",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 125.875,
+                "width": 28,
+                "height": 16,
+                "top": 125.875,
+                "right": 790.734375,
+                "bottom": 141.875,
+                "left": 762.734375
+              }
+            },
+            {
+              "characters": "003",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 173.875,
+                "width": 23.359375,
+                "height": 16,
+                "top": 173.875,
+                "right": 65.359375,
+                "bottom": 189.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "王五",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 173.875,
+                "width": 28,
+                "height": 16,
+                "top": 173.875,
+                "right": 230.15625,
+                "bottom": 189.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "运营",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 173.875,
+                "width": 28,
+                "height": 16,
+                "top": 173.875,
+                "right": 470.40625,
+                "bottom": 189.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "启用",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 173.875,
+                "width": 28,
+                "height": 16,
+                "top": 173.875,
+                "right": 790.734375,
+                "bottom": 189.875,
+                "left": 762.734375
+              }
+            },
+            {
+              "characters": "004",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 221.875,
+                "width": 23.359375,
+                "height": 16,
+                "top": 221.875,
+                "right": 65.359375,
+                "bottom": 237.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "赵六",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 221.875,
+                "width": 28,
+                "height": 16,
+                "top": 221.875,
+                "right": 230.15625,
+                "bottom": 237.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "客服",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 221.875,
+                "width": 28,
+                "height": 16,
+                "top": 221.875,
+                "right": 470.40625,
+                "bottom": 237.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "启用",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 221.875,
+                "width": 28,
+                "height": 16,
+                "top": 221.875,
+                "right": 790.734375,
+                "bottom": 237.875,
+                "left": 762.734375
+              }
+            }
+          ],
+          "during": [
+            {
+              "characters": "编号",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 70,
+                "bottom": 50.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "姓名",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 230.15625,
+                "bottom": 50.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "部门",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 470.40625,
+                "bottom": 50.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "状态",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 34.875,
+                "width": 28,
+                "height": 16,
+                "top": 34.875,
+                "right": 790.734375,
+                "bottom": 50.875,
+                "left": 762.734375
+              }
+            },
+            {
+              "characters": "001",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 77.875,
+                "width": 23.359375,
+                "height": 16,
+                "top": 77.875,
+                "right": 65.359375,
+                "bottom": 93.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "张三",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 77.875,
+                "width": 28,
+                "height": 16,
+                "top": 77.875,
+                "right": 230.15625,
+                "bottom": 93.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "研发",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 77.875,
+                "width": 28,
+                "height": 16,
+                "top": 77.875,
+                "right": 470.40625,
+                "bottom": 93.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "启用",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 77.875,
+                "width": 28,
+                "height": 16,
+                "top": 77.875,
+                "right": 790.734375,
+                "bottom": 93.875,
+                "left": 762.734375
+              }
+            },
+            {
+              "characters": "002",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 125.875,
+                "width": 23.359375,
+                "height": 16,
+                "top": 125.875,
+                "right": 65.359375,
+                "bottom": 141.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "李四",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 125.875,
+                "width": 28,
+                "height": 16,
+                "top": 125.875,
+                "right": 230.15625,
+                "bottom": 141.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "财务",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 125.875,
+                "width": 28,
+                "height": 16,
+                "top": 125.875,
+                "right": 470.40625,
+                "bottom": 141.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "停用",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 125.875,
+                "width": 28,
+                "height": 16,
+                "top": 125.875,
+                "right": 790.734375,
+                "bottom": 141.875,
+                "left": 762.734375
+              }
+            },
+            {
+              "characters": "003",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 173.875,
+                "width": 23.359375,
+                "height": 16,
+                "top": 173.875,
+                "right": 65.359375,
+                "bottom": 189.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "王五",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 173.875,
+                "width": 28,
+                "height": 16,
+                "top": 173.875,
+                "right": 230.15625,
+                "bottom": 189.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "运营",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 173.875,
+                "width": 28,
+                "height": 16,
+                "top": 173.875,
+                "right": 470.40625,
+                "bottom": 189.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "启用",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 173.875,
+                "width": 28,
+                "height": 16,
+                "top": 173.875,
+                "right": 790.734375,
+                "bottom": 189.875,
+                "left": 762.734375
+              }
+            },
+            {
+              "characters": "004",
+              "style": null,
+              "bounds": {
+                "x": 42,
+                "y": 221.875,
+                "width": 23.359375,
+                "height": 16,
+                "top": 221.875,
+                "right": 65.359375,
+                "bottom": 237.875,
+                "left": 42
+              }
+            },
+            {
+              "characters": "赵六",
+              "style": null,
+              "bounds": {
+                "x": 202.15625,
+                "y": 221.875,
+                "width": 28,
+                "height": 16,
+                "top": 221.875,
+                "right": 230.15625,
+                "bottom": 237.875,
+                "left": 202.15625
+              }
+            },
+            {
+              "characters": "客服",
+              "style": null,
+              "bounds": {
+                "x": 442.40625,
+                "y": 221.875,
+                "width": 28,
+                "height": 16,
+                "top": 221.875,
+                "right": 470.40625,
+                "bottom": 237.875,
+                "left": 442.40625
+              }
+            },
+            {
+              "characters": "启用",
+              "style": null,
+              "bounds": {
+                "x": 762.734375,
+                "y": 221.875,
+                "width": 28,
+                "height": 16,
+                "top": 221.875,
+                "right": 790.734375,
+                "bottom": 237.875,
+                "left": 762.734375
+              }
+            }
+          ]
+        },
+        "ownerBoundsUnchanged": true,
+        "pngSha256": "6283af61df4d0e150b2f35306eae5989144076b27ffc7619e00881fdd0ba7bcf"
+      },
+      "ownerStatesRestored": true,
+      "temporaryFontFacesRemoved": true,
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN"
+    },
+    "status": "PASS"
+  },
+  "vectorBinding": {
+    "status": "PASS",
+    "captureSha256": "ad0e27e474233645644ab02c42f97c6f28aa54717cf5317ebcf62c8662b031f8",
+    "probe": {
+      "scope": "browser_raster_of_native_svg_diagnostic",
+      "status": "PASS",
+      "svgCaptureSha256": "ad0e27e474233645644ab02c42f97c6f28aa54717cf5317ebcf62c8662b031f8",
+      "referenceComponentIrSha256": "049b125dfa38f02155a56a4db7996cae9fb3cc1c2f68fd5fb5320f5c717dc22c",
+      "probeScriptSha256": "c3d1d39c95ab48c65cdf75e35d41be19bd4bded72121086b74464eda127fa773",
+      "referenceMatches": [
+        {
+          "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+          "screenshotMatches": true,
+          "environmentMatches": true
+        }
+      ],
+      "environment": {
+        "browser": "153.0.8010.12",
+        "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+        "node": "v24.15.0",
+        "operatingSystem": {
+          "platform": "win32",
+          "release": "10.0.19045"
+        },
+        "viewport": {
+          "width": 1008,
+          "height": 464
+        },
+        "deviceScaleFactor": 1,
+        "locale": "zh-CN",
+        "fontsStatus": "loaded"
+      },
+      "samples": [
+        {
+          "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+          "componentReference": "82:24",
+          "svgSha256": "7253aa32d13e67d2b0aa01beb3f4aecb0bd6069d0c8a851e97591206459f7258",
+          "browserBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 960,
+            "height": 231
+          },
+          "pngPath": "svg-raster-data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25.png",
+          "pngSha256": "54f90958f64e48e00f39e1b7a7d524a08061ea90e1b478340605d1a9701a44cd"
+        }
+      ],
+      "admissionEligible": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Browser rendering of native outlined SVG is a diagnostic sample, not native Figma PNG or editable component admission.",
+        "Official DOM/CSS/reference images are preserved; font hinting in live text is not represented by outlined SVG."
+      ]
+    },
+    "horizontalLines": [
+      {
+        "sourcePath": "0.0.0.0.1.0",
+        "region": {
+          "x": 0,
+          "y": 37.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "fill": "#e8eaec"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.0",
+        "region": {
+          "x": 0,
+          "y": 85.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "fill": "#e8eaec"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.1",
+        "region": {
+          "x": 0,
+          "y": 133.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "fill": "#e8eaec"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.2",
+        "region": {
+          "x": 0,
+          "y": 181.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "fill": "#e8eaec"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.3",
+        "region": {
+          "x": 0,
+          "y": 229.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "fill": "#e8eaec"
+      },
+      {
+        "sourcePath": "0.0::before",
+        "region": {
+          "x": 0,
+          "y": 229.875,
+          "width": 960.0,
+          "height": 1.0
+        },
+        "fill": "#dcdee2"
+      }
+    ],
+    "fractionalRootClip": {
+      "width": "960",
+      "height": "230.875",
+      "fill": "white"
+    },
+    "textPathCount": 20
+  },
+  "raster": {
+    "status": "PASS",
+    "pixelOwnership": {
+      "status": "PASS",
+      "scope": "native-png-source-pixel-ownership-only",
+      "platform": "figma",
+      "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+      "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+      "pngContext": {
+        "status": "PASS",
+        "scope": "raw-native-png-dimensions-and-alpha-only",
+        "platform": "figma",
+        "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+        "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+        "nativePngSha256": "539d03028df9ef6c73babdedad1109f44942b526d610c296ff981870928111d5",
+        "dimensions": [
+          960,
+          231
+        ],
+        "lastRowAlpha": 223,
+        "otherRowsAlpha": 255,
+        "productionAdmission": false,
+        "fidelityGate": "NOT_RUN",
+        "limitations": [
+          "Exact root clipping and independent vector evidence remain required.",
+          "This subgate does not verify PNG colors, content or edge coverage."
+        ]
+      },
+      "sourcePngSha256": "6283af61df4d0e150b2f35306eae5989144076b27ffc7619e00881fdd0ba7bcf",
+      "differentPixels": 14326,
+      "categories": {
+        "text": 4726,
+        "horizontal": 9600,
+        "outside": 0
+      },
+      "horizontalRegions": [
+        {
+          "sourcePath": "0.0.0.0.1.0",
+          "region": {
+            "x": 0,
+            "y": 37.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.0",
+          "region": {
+            "x": 0,
+            "y": 85.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.1",
+          "region": {
+            "x": 0,
+            "y": 133.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.2",
+          "region": {
+            "x": 0,
+            "y": 181.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0.1.0.1.3",
+          "region": {
+            "x": 0,
+            "y": 229.875,
+            "width": 961,
+            "height": 1.0
+          },
+          "fill": "#e8eaec"
+        },
+        {
+          "sourcePath": "0.0::before",
+          "region": {
+            "x": 0,
+            "y": 229.875,
+            "width": 960.0,
+            "height": 1.0
+          },
+          "fill": "#dcdee2"
+        }
+      ],
+      "pixelRegionPolicy": "positive-area-intersection-no-padding",
+      "fidelityGate": "NOT_RUN",
+      "productionAdmission": false,
+      "limitations": [
+        "Text requires independent glyph, baseline, paint and retention checks.",
+        "Horizontal regions require exact vector style, full coverage and edge checks.",
+        "Region ownership alone does not admit differences inside these regions."
+      ]
+    },
+    "changedPixelsOutsideEdgeBand": 0,
+    "horizontalCoverage": [
+      {
+        "sourcePath": "0.0.0.0.1.0",
+        "region": {
+          "x": 0,
+          "y": 37.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "sourceFill": "#e8eaec",
+        "rows": [
+          {
+            "y": 37,
+            "coveredPixels": 960,
+            "rgba": [
+              246,
+              246,
+              247,
+              255
+            ]
+          },
+          {
+            "y": 38,
+            "coveredPixels": 960,
+            "rgba": [
+              235,
+              237,
+              239,
+              255
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.0",
+        "region": {
+          "x": 0,
+          "y": 85.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "sourceFill": "#e8eaec",
+        "rows": [
+          {
+            "y": 85,
+            "coveredPixels": 960,
+            "rgba": [
+              252,
+              253,
+              253,
+              255
+            ]
+          },
+          {
+            "y": 86,
+            "coveredPixels": 960,
+            "rgba": [
+              235,
+              237,
+              239,
+              255
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.1",
+        "region": {
+          "x": 0,
+          "y": 133.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "sourceFill": "#e8eaec",
+        "rows": [
+          {
+            "y": 133,
+            "coveredPixels": 960,
+            "rgba": [
+              252,
+              253,
+              253,
+              255
+            ]
+          },
+          {
+            "y": 134,
+            "coveredPixels": 960,
+            "rgba": [
+              235,
+              237,
+              239,
+              255
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.2",
+        "region": {
+          "x": 0,
+          "y": 181.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "sourceFill": "#e8eaec",
+        "rows": [
+          {
+            "y": 181,
+            "coveredPixels": 960,
+            "rgba": [
+              252,
+              253,
+              253,
+              255
+            ]
+          },
+          {
+            "y": 182,
+            "coveredPixels": 960,
+            "rgba": [
+              235,
+              237,
+              239,
+              255
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "sourcePath": "0.0.1.0.1.3",
+        "region": {
+          "x": 0,
+          "y": 229.875,
+          "width": 961,
+          "height": 1.0
+        },
+        "sourceFill": "#e8eaec",
+        "rows": [
+          {
+            "y": 229,
+            "coveredPixels": 960,
+            "rgba": [
+              251,
+              251,
+              251,
+              255
+            ]
+          },
+          {
+            "y": 230,
+            "coveredPixels": 960,
+            "rgba": [
+              220,
+              223,
+              226,
+              223
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "sourcePath": "0.0::before",
+        "region": {
+          "x": 0,
+          "y": 229.875,
+          "width": 960.0,
+          "height": 1.0
+        },
+        "sourceFill": "#dcdee2",
+        "rows": [
+          {
+            "y": 229,
+            "coveredPixels": 960,
+            "rgba": [
+              251,
+              251,
+              251,
+              255
+            ]
+          },
+          {
+            "y": 230,
+            "coveredPixels": 960,
+            "rgba": [
+              220,
+              223,
+              226,
+              223
+            ]
+          }
+        ],
+        "status": "PASS"
+      }
+    ],
+    "glyphRetention": [
+      {
+        "character": "编",
+        "sourceInkProxy": 109.84378030869838,
+        "nativeInkProxy": 95.74975753041258,
+        "retentionRatio": 0.8716902974508269,
+        "status": "PASS"
+      },
+      {
+        "character": "号",
+        "sourceInkProxy": 67.80459722337683,
+        "nativeInkProxy": 66.05871920636237,
+        "retentionRatio": 0.9742513326749394,
+        "status": "PASS"
+      },
+      {
+        "character": "姓",
+        "sourceInkProxy": 94.9061434865741,
+        "nativeInkProxy": 81.58286917726605,
+        "retentionRatio": 0.8596163133402125,
+        "status": "PASS"
+      },
+      {
+        "character": "名",
+        "sourceInkProxy": 79.87789231579235,
+        "nativeInkProxy": 70.40162662454622,
+        "retentionRatio": 0.8813656017138973,
+        "status": "PASS"
+      },
+      {
+        "character": "部",
+        "sourceInkProxy": 100.65411366974257,
+        "nativeInkProxy": 89.43828802615904,
+        "retentionRatio": 0.8885706183814414,
+        "status": "PASS"
+      },
+      {
+        "character": "门",
+        "sourceInkProxy": 56.56301438191041,
+        "nativeInkProxy": 45.296879762795456,
+        "retentionRatio": 0.8008215307789888,
+        "status": "PASS"
+      },
+      {
+        "character": "状",
+        "sourceInkProxy": 84.2430238035858,
+        "nativeInkProxy": 70.64095103499874,
+        "retentionRatio": 0.8385376954143936,
+        "status": "PASS"
+      },
+      {
+        "character": "态",
+        "sourceInkProxy": 79.11448721146117,
+        "nativeInkProxy": 72.40687782303877,
+        "retentionRatio": 0.9152164208497748,
+        "status": "PASS"
+      },
+      {
+        "character": "0",
+        "sourceInkProxy": 27.32274660621959,
+        "nativeInkProxy": 27.627091663907493,
+        "retentionRatio": 1.0111388895880118,
+        "status": "PASS"
+      },
+      {
+        "character": "0",
+        "sourceInkProxy": 27.363191809082345,
+        "nativeInkProxy": 28.04226625576242,
+        "retentionRatio": 1.0248170773138636,
+        "status": "PASS"
+      },
+      {
+        "character": "1",
+        "sourceInkProxy": 16.717533046379536,
+        "nativeInkProxy": 14.634872526297023,
+        "retentionRatio": 0.8754205830307272,
+        "status": "PASS"
+      },
+      {
+        "character": "张",
+        "sourceInkProxy": 66.09585360262845,
+        "nativeInkProxy": 53.7454855716578,
+        "retentionRatio": 0.813144586871944,
+        "status": "PASS"
+      },
+      {
+        "character": "三",
+        "sourceInkProxy": 32.85104296666072,
+        "nativeInkProxy": 31.894760970888612,
+        "retentionRatio": 0.9708903611753635,
+        "status": "PASS"
+      },
+      {
+        "character": "研",
+        "sourceInkProxy": 72.13101393169146,
+        "nativeInkProxy": 57.40191783613072,
+        "retentionRatio": 0.7958007895257193,
+        "status": "PASS"
+      },
+      {
+        "character": "发",
+        "sourceInkProxy": 63.73663499987263,
+        "nativeInkProxy": 53.19639355118052,
+        "retentionRatio": 0.8346282095263866,
+        "status": "PASS"
+      },
+      {
+        "character": "启",
+        "sourceInkProxy": 63.15644499910858,
+        "nativeInkProxy": 53.718640959682155,
+        "retentionRatio": 0.8505646725435602,
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "sourceInkProxy": 67.68763212184498,
+        "nativeInkProxy": 60.016338537554454,
+        "retentionRatio": 0.8866662439826322,
+        "status": "PASS"
+      },
+      {
+        "character": "0",
+        "sourceInkProxy": 27.32274660621959,
+        "nativeInkProxy": 27.627091663907493,
+        "retentionRatio": 1.0111388895880118,
+        "status": "PASS"
+      },
+      {
+        "character": "0",
+        "sourceInkProxy": 27.499834449736397,
+        "nativeInkProxy": 28.04226625576242,
+        "retentionRatio": 1.0197249116905582,
+        "status": "PASS"
+      },
+      {
+        "character": "2",
+        "sourceInkProxy": 24.524106665308302,
+        "nativeInkProxy": 25.755112956218323,
+        "retentionRatio": 1.050195764832951,
+        "status": "PASS"
+      },
+      {
+        "character": "李",
+        "sourceInkProxy": 59.47561317270714,
+        "nativeInkProxy": 51.769579502330465,
+        "retentionRatio": 0.8704337246931838,
+        "status": "PASS"
+      },
+      {
+        "character": "四",
+        "sourceInkProxy": 73.65458574230196,
+        "nativeInkProxy": 56.822963095025855,
+        "retentionRatio": 0.7714789584702094,
+        "status": "PASS"
+      },
+      {
+        "character": "财",
+        "sourceInkProxy": 71.84401344777525,
+        "nativeInkProxy": 58.165575732878295,
+        "retentionRatio": 0.8096092206090342,
+        "status": "PASS"
+      },
+      {
+        "character": "务",
+        "sourceInkProxy": 58.66479892010292,
+        "nativeInkProxy": 54.082635050811206,
+        "retentionRatio": 0.9218924473681009,
+        "status": "PASS"
+      },
+      {
+        "character": "停",
+        "sourceInkProxy": 69.53890431194763,
+        "nativeInkProxy": 58.46720831317016,
+        "retentionRatio": 0.8407841465388861,
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "sourceInkProxy": 67.68763212184498,
+        "nativeInkProxy": 60.016338537554454,
+        "retentionRatio": 0.8866662439826322,
+        "status": "PASS"
+      },
+      {
+        "character": "0",
+        "sourceInkProxy": 27.32274660621959,
+        "nativeInkProxy": 27.627091663907493,
+        "retentionRatio": 1.0111388895880118,
+        "status": "PASS"
+      },
+      {
+        "character": "0",
+        "sourceInkProxy": 27.40566181901536,
+        "nativeInkProxy": 28.04226625576242,
+        "retentionRatio": 1.0232289386387068,
+        "status": "PASS"
+      },
+      {
+        "character": "3",
+        "sourceInkProxy": 24.452652624608415,
+        "nativeInkProxy": 25.06830858569136,
+        "retentionRatio": 1.0251774713579895,
+        "status": "PASS"
+      },
+      {
+        "character": "王",
+        "sourceInkProxy": 45.703117438810075,
+        "nativeInkProxy": 41.548531696508164,
+        "retentionRatio": 0.9090962285479911,
+        "status": "PASS"
+      },
+      {
+        "character": "五",
+        "sourceInkProxy": 52.261301989150105,
+        "nativeInkProxy": 46.193655604513154,
+        "retentionRatio": 0.8838979100463925,
+        "status": "PASS"
+      },
+      {
+        "character": "运",
+        "sourceInkProxy": 57.66782976339047,
+        "nativeInkProxy": 51.10304867177751,
+        "retentionRatio": 0.8861621614937119,
+        "status": "PASS"
+      },
+      {
+        "character": "营",
+        "sourceInkProxy": 66.09487303568247,
+        "nativeInkProxy": 59.05062017675674,
+        "retentionRatio": 0.8934220986380779,
+        "status": "PASS"
+      },
+      {
+        "character": "启",
+        "sourceInkProxy": 63.15644499910858,
+        "nativeInkProxy": 53.718640959682155,
+        "retentionRatio": 0.8505646725435602,
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "sourceInkProxy": 67.68763212184498,
+        "nativeInkProxy": 60.016338537554454,
+        "retentionRatio": 0.8866662439826322,
+        "status": "PASS"
+      },
+      {
+        "character": "0",
+        "sourceInkProxy": 27.32274660621959,
+        "nativeInkProxy": 27.627091663907493,
+        "retentionRatio": 1.0111388895880118,
+        "status": "PASS"
+      },
+      {
+        "character": "0",
+        "sourceInkProxy": 27.45736443980338,
+        "nativeInkProxy": 28.414181290273284,
+        "retentionRatio": 1.0348473668172922,
+        "status": "PASS"
+      },
+      {
+        "character": "4",
+        "sourceInkProxy": 24.12583093497695,
+        "nativeInkProxy": 24.88801161398772,
+        "retentionRatio": 1.031591893396956,
+        "status": "PASS"
+      },
+      {
+        "character": "赵",
+        "sourceInkProxy": 70.0058197284976,
+        "nativeInkProxy": 57.56630924789243,
+        "retentionRatio": 0.8223074805944832,
+        "status": "PASS"
+      },
+      {
+        "character": "六",
+        "sourceInkProxy": 33.226791126505866,
+        "nativeInkProxy": 29.78683493365255,
+        "retentionRatio": 0.8964704060721297,
+        "status": "PASS"
+      },
+      {
+        "character": "客",
+        "sourceInkProxy": 69.6492371953238,
+        "nativeInkProxy": 62.00469908055932,
+        "retentionRatio": 0.8902423282350358,
+        "status": "PASS"
+      },
+      {
+        "character": "服",
+        "sourceInkProxy": 81.86522935078825,
+        "nativeInkProxy": 68.90184142831676,
+        "retentionRatio": 0.8416496475332151,
+        "status": "PASS"
+      },
+      {
+        "character": "启",
+        "sourceInkProxy": 63.15644499910858,
+        "nativeInkProxy": 53.718640959682155,
+        "retentionRatio": 0.8505646725435602,
+        "status": "PASS"
+      },
+      {
+        "character": "用",
+        "sourceInkProxy": 67.68763212184498,
+        "nativeInkProxy": 60.016338537554454,
+        "retentionRatio": 0.8866662439826322,
+        "status": "PASS"
+      }
+    ],
+    "limitations": [
+      "Exact native and independent vector geometry and paint remain mandatory upstream."
+    ]
+  },
+  "realInstance": {
+    "status": "PASS",
+    "mainReference": "82:24",
+    "instanceReference": "87:22",
+    "nativeNodeCount": 52,
+    "mainUnchanged": true,
+    "nativePngBytesEqual": true,
+    "nativePngSha256": "539d03028df9ef6c73babdedad1109f44942b526d610c296ff981870928111d5"
+  },
+  "normalizerSha256": "0e4c6f9bbcdc4535416bac78838454f52d65f9ee0d5c94e9fe886c0fc9157bc2",
+  "rasterCheckerSha256": "5ff1c289e3e4a402fac38b9b8acc5656defaed1ce519a70b706675f586a907b9",
+  "nativeEvidenceSha256": "db9e08826a5851c3c1718288b23af16f5eb8e0ffca0f42cff70800f901359791"
+}

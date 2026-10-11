@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "requestSha256": "613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+  "requestFileSha256": "6351bc002ecbaf26aa3a50c3e89228837759af505cfc1a3d241c76afd322ac39",
+  "componentIrSha256": "c2d14fde6a010c8271c68c8c84363f197f37e7cd485fcd11ee6805fb2d496c61",
+  "observationSha256": "ac3ca5d3358e6b052b6a1c60c8036f5fae98c5cf4a1c189ecea0b05d8ac1cdbc",
+  "scriptSha256": "f934a0d0eb447769b6c30783238673167ef7182bb89a323b91745352a3dcc2bd",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false
+}

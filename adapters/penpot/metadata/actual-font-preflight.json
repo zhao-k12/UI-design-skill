@@ -1,0 +1,39 @@
+{
+  "scope": "penpot_adapter_preflight",
+  "adapterVersion": "0.1.0",
+  "status": "FAIL",
+  "nativeExecution": "NOT_RUN",
+  "issues": [
+    {
+      "code": "missing_icon_reference",
+      "nodeId": "header.settings",
+      "detail": "Source-ready SVG still requires a verified native component"
+    },
+    {
+      "code": "missing_component_reference",
+      "nodeId": "input.name",
+      "detail": "No platform component reference for this logical component variant"
+    },
+    {
+      "code": "missing_component_reference",
+      "nodeId": "select.status",
+      "detail": "No platform component reference for this logical component variant"
+    },
+    {
+      "code": "missing_component_reference",
+      "nodeId": "button.query",
+      "detail": "No platform component reference for this logical component variant"
+    },
+    {
+      "code": "missing_icon_reference",
+      "nodeId": "list.export",
+      "detail": "Source-ready SVG still requires a verified native component"
+    },
+    {
+      "code": "missing_component_reference",
+      "nodeId": "table.body",
+      "detail": "No platform component reference for this logical component variant"
+    }
+  ],
+  "plan": null
+}

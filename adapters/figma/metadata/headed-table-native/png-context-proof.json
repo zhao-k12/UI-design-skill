@@ -1,0 +1,47 @@
+{
+  "programSha256": "2a1a2fa2ea2da8c7835274cb4c2b715939504a2ec84d79098369a244184ba714",
+  "reports": [
+    {
+      "status": "PASS",
+      "scope": "raw-native-png-dimensions-and-alpha-only",
+      "platform": "figma",
+      "logicalId": "data.table.headed.613acb453dafc1629920ac3d697c42918bef2d556cc6f7e61648523f1f7f24aa",
+      "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+      "nativePngSha256": "0075f093d4f271072fff9ea6faac3f74026850e4d1ac0fd0f4097103aeadc556",
+      "dimensions": [
+        720,
+        135
+      ],
+      "lastRowAlpha": 223,
+      "otherRowsAlpha": 255,
+      "productionAdmission": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Exact root clipping and independent vector evidence remain required.",
+        "This subgate does not verify PNG colors, content or edge coverage."
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "raw-native-png-dimensions-and-alpha-only",
+      "platform": "figma",
+      "logicalId": "data.table.headed.5eca5bc513698ad31a2d57d0660cebee6ef0536e196c5ed468f8153f52b90c25",
+      "decisionSha256": "16ccb7f958dda5f6e8933e081d893080b0d924785ee8e3de8d87d9e8cb1e97aa",
+      "nativePngSha256": "539d03028df9ef6c73babdedad1109f44942b526d610c296ff981870928111d5",
+      "dimensions": [
+        960,
+        231
+      ],
+      "lastRowAlpha": 223,
+      "otherRowsAlpha": 255,
+      "productionAdmission": false,
+      "fidelityGate": "NOT_RUN",
+      "limitations": [
+        "Exact root clipping and independent vector evidence remain required.",
+        "This subgate does not verify PNG colors, content or edge coverage."
+      ]
+    }
+  ],
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false
+}

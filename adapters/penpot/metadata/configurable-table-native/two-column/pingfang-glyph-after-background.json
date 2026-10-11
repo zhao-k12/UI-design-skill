@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "scope": "observed-Type3-glyph-paths-in-font-units",
+  "unitsPerEm": 1000,
+  "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+  "nativePdfSha256": "2aa83d5e0c0bac3fe558919759385e6158949d11170da6eb07e6357c6008a13c",
+  "glyphs": [
+    {
+      "character": "赵",
+      "pathSha256": "15170d0304d16068bf5e0f5834a538ba65845e9d301cb7052a5c8ff1cee21a68",
+      "nativeUnicodeCharacter": "赵",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 51,
+      "nativeCommandCount": 51,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "六",
+      "pathSha256": "3aca47bcdb6b07ea9e4dd4cb3de650e0610c24b93d84f21a565bb1475dc1761d",
+      "nativeUnicodeCharacter": "六",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 24,
+      "nativeCommandCount": 24,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "钱",
+      "pathSha256": "3b455c70f49f3c5ecb1a0b63f8d920b73080fa56a886a72b2fe9d5bb3cea97d7",
+      "nativeUnicodeCharacter": "钱",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 74,
+      "nativeCommandCount": 74,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    },
+    {
+      "character": "七",
+      "pathSha256": "139ce79736bcf3d49139e330c9729e89613fd39fbf1f8469f62e079aed63a9e8",
+      "nativeUnicodeCharacter": "七",
+      "sourceCmapGlyphAlias": false,
+      "orderedCompleteContoursEqual": true,
+      "advanceFontUnitsEqual": true,
+      "fontIdentityEqual": true,
+      "sourceCommandCount": 22,
+      "nativeCommandCount": 22,
+      "fontMatrix": [
+        "0.0010000001",
+        "0",
+        "0",
+        "-0.0010000001",
+        "0",
+        "0"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "admissionEligible": false,
+  "limitations": [
+    "Font-unit contours are exact; the recorded PDF matrix has serializer rounding.",
+    "Unicode aliases are checked against the source cmap; this does not prove editable text content.",
+    "PDF glyph paths do not establish native PNG raster edges or full component fidelity."
+  ]
+}

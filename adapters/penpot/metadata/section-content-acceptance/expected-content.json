@@ -1,0 +1,51 @@
+{
+  "button.query": {
+    "id": "button.query",
+    "name": "button.query",
+    "type": "ComponentInstance",
+    "layout": {
+      "width": {
+        "mode": "fixed",
+        "value": 60
+      },
+      "height": {
+        "mode": "fixed",
+        "value": 32
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "gap": 0,
+      "direction": "vertical",
+      "wrap": false,
+      "alignment": {
+        "main": "start",
+        "cross": "start"
+      }
+    },
+    "style": {},
+    "componentReference": "10f3de97-3a09-806f-8008-c0aff4ac5af0",
+    "fidelityReportSha256": "f5f768a7041c2302f10efaf2360ebce52f99031898fba81fd6e99827847e6c11",
+    "nativeContent": [
+      {
+        "name": "official-source / action.button.primary.medium / 0.0",
+        "originalText": "查询",
+        "text": "导出",
+        "style": {
+          "fontId": "custom-5ad61700-1d7d-8066-8008-c08a8bdbd70d",
+          "fontVariantId": "normal-400",
+          "fontFamily": "PingFang SC",
+          "fontWeight": "400",
+          "fontStyle": "normal",
+          "fontSize": "14",
+          "lineHeight": "1.5",
+          "letterSpacing": "0",
+          "growType": "fixed"
+        }
+      }
+    ]
+  }
+}

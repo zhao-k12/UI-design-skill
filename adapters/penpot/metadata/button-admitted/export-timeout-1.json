@@ -1,0 +1,5 @@
+{
+  "type": "task010-result",
+  "status": "FAIL",
+  "error": "#error {:message \"http error\", :data {:type :server-error, :code :timeout, :hint \"ResourceRequest timed out\", :data {:type :internal, :code :timeout, :hint \"ResourceRequest timed out\"}, :uri \"https://design.penpot.app/api/export\", :status 500}}"
+}

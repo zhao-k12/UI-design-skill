@@ -1,0 +1,308 @@
+{
+  "status": "PASS",
+  "fidelityGate": "NOT_RUN",
+  "productionAdmission": false,
+  "textSamples": [
+    {
+      "path": "0.0.0.0.1.0.0.0.0",
+      "characters": "001",
+      "sourceTextBounds": {
+        "x": 18,
+        "y": 15,
+        "width": 23.359375,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "postScriptName": "ArialMT",
+      "fill": "#515a6e",
+      "sourceBaselineY": 28
+    },
+    {
+      "path": "0.0.0.0.1.0.1.0.0",
+      "characters": "张三",
+      "sourceTextBounds": {
+        "x": 178.15625,
+        "y": 15,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 28
+    },
+    {
+      "path": "0.0.0.0.1.0.2.0.0",
+      "characters": "研发",
+      "sourceTextBounds": {
+        "x": 418.40625,
+        "y": 15,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 28
+    },
+    {
+      "path": "0.0.0.0.1.0.3.0.0",
+      "characters": "启用",
+      "sourceTextBounds": {
+        "x": 738.734375,
+        "y": 15,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 28
+    },
+    {
+      "path": "0.0.0.0.1.1.0.0.0",
+      "characters": "002",
+      "sourceTextBounds": {
+        "x": 18,
+        "y": 63,
+        "width": 23.359375,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "postScriptName": "ArialMT",
+      "fill": "#515a6e",
+      "sourceBaselineY": 76
+    },
+    {
+      "path": "0.0.0.0.1.1.1.0.0",
+      "characters": "李四",
+      "sourceTextBounds": {
+        "x": 178.15625,
+        "y": 63,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 76
+    },
+    {
+      "path": "0.0.0.0.1.1.2.0.0",
+      "characters": "财务",
+      "sourceTextBounds": {
+        "x": 418.40625,
+        "y": 63,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 76
+    },
+    {
+      "path": "0.0.0.0.1.1.3.0.0",
+      "characters": "停用",
+      "sourceTextBounds": {
+        "x": 738.734375,
+        "y": 63,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 76
+    },
+    {
+      "path": "0.0.0.0.1.2.0.0.0",
+      "characters": "003",
+      "sourceTextBounds": {
+        "x": 18,
+        "y": 111,
+        "width": 23.359375,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "postScriptName": "ArialMT",
+      "fill": "#515a6e",
+      "sourceBaselineY": 124
+    },
+    {
+      "path": "0.0.0.0.1.2.1.0.0",
+      "characters": "王五",
+      "sourceTextBounds": {
+        "x": 178.15625,
+        "y": 111,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 124
+    },
+    {
+      "path": "0.0.0.0.1.2.2.0.0",
+      "characters": "运营",
+      "sourceTextBounds": {
+        "x": 418.40625,
+        "y": 111,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 124
+    },
+    {
+      "path": "0.0.0.0.1.2.3.0.0",
+      "characters": "启用",
+      "sourceTextBounds": {
+        "x": 738.734375,
+        "y": 111,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 124
+    },
+    {
+      "path": "0.0.0.0.1.3.0.0.0",
+      "characters": "004",
+      "sourceTextBounds": {
+        "x": 18,
+        "y": 159,
+        "width": 23.359375,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "postScriptName": "ArialMT",
+      "fill": "#515a6e",
+      "sourceBaselineY": 172
+    },
+    {
+      "path": "0.0.0.0.1.3.1.0.0",
+      "characters": "赵六",
+      "sourceTextBounds": {
+        "x": 178.15625,
+        "y": 159,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 172
+    },
+    {
+      "path": "0.0.0.0.1.3.2.0.0",
+      "characters": "客服",
+      "sourceTextBounds": {
+        "x": 418.40625,
+        "y": 159,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 172
+    },
+    {
+      "path": "0.0.0.0.1.3.3.0.0",
+      "characters": "启用",
+      "sourceTextBounds": {
+        "x": 738.734375,
+        "y": 159,
+        "width": 28,
+        "height": 16
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "fontFamily": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "fill": "#515a6e",
+      "sourceBaselineY": 172
+    }
+  ],
+  "sourcePaths": [
+    "candidate/data.table.config.b3eb343b6ad2c8cd567a53f7d65703db6627cb9e7e1bfaedfb3098baf7af8122/penpot-v1",
+    "official-source/0.0.0.0.1.0",
+    "official-source/0.0.0.0.1.0.0",
+    "official-source/0.0.0.0.1.0.0.0.0",
+    "official-source/0.0.0.0.1.0.1",
+    "official-source/0.0.0.0.1.0.1.0.0",
+    "official-source/0.0.0.0.1.0.2",
+    "official-source/0.0.0.0.1.0.2.0.0",
+    "official-source/0.0.0.0.1.0.3",
+    "official-source/0.0.0.0.1.0.3.0.0",
+    "official-source/row-border/0.0.0.0.1.0",
+    "official-source/0.0.0.0.1.1",
+    "official-source/0.0.0.0.1.1.0",
+    "official-source/0.0.0.0.1.1.0.0.0",
+    "official-source/0.0.0.0.1.1.1",
+    "official-source/0.0.0.0.1.1.1.0.0",
+    "official-source/0.0.0.0.1.1.2",
+    "official-source/0.0.0.0.1.1.2.0.0",
+    "official-source/0.0.0.0.1.1.3",
+    "official-source/0.0.0.0.1.1.3.0.0",
+    "official-source/row-border/0.0.0.0.1.1",
+    "official-source/0.0.0.0.1.2",
+    "official-source/0.0.0.0.1.2.0",
+    "official-source/0.0.0.0.1.2.0.0.0",
+    "official-source/0.0.0.0.1.2.1",
+    "official-source/0.0.0.0.1.2.1.0.0",
+    "official-source/0.0.0.0.1.2.2",
+    "official-source/0.0.0.0.1.2.2.0.0",
+    "official-source/0.0.0.0.1.2.3",
+    "official-source/0.0.0.0.1.2.3.0.0",
+    "official-source/row-border/0.0.0.0.1.2",
+    "official-source/0.0.0.0.1.3",
+    "official-source/0.0.0.0.1.3.0",
+    "official-source/0.0.0.0.1.3.0.0.0",
+    "official-source/0.0.0.0.1.3.1",
+    "official-source/0.0.0.0.1.3.1.0.0",
+    "official-source/0.0.0.0.1.3.2",
+    "official-source/0.0.0.0.1.3.2.0.0",
+    "official-source/0.0.0.0.1.3.3",
+    "official-source/0.0.0.0.1.3.3.0.0",
+    "official-source/row-border/0.0.0.0.1.3",
+    "official-source/0.0::before"
+  ],
+  "borderNormalization": "Contiguous same-color cell borders form one row region; independent bottom pseudo and outer clipping are preserved."
+}

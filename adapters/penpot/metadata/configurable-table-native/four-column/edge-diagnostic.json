@@ -1,0 +1,11 @@
+{
+  "status": "OBSERVED",
+  "scope": "diagnostic-only",
+  "nativeCaptureSha256": "8a50aad12feb7335d60de6e70422ca555529d11d4c6ea903ca69e0f8fd7d5bea",
+  "vectorEqualsSourcePixels": true,
+  "nativeDifferingPixels": 4178,
+  "outsideIndependentVectorBand": 522,
+  "fontGlyphAndBaselineProofs": "NOT_COMPLETED",
+  "fidelityGate": "NOT_RUN",
+  "admissionEligible": false
+}

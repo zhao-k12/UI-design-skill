@@ -1,0 +1,72 @@
+{
+  "scope": "mixed_font_calibration_diagnostic",
+  "status": "OBSERVED",
+  "observations": [
+    {
+      "textReference": "64:3",
+      "characters": "zhao@example.com",
+      "fontFamily": "Arial",
+      "sourceFontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+      "sourceUnshapedAdvancePx": 127.8251953125,
+      "nativeWidth": 128,
+      "contourEncoding": {
+        "status": "REVIEW",
+        "serializer": "six-significant-decimal-digits",
+        "translation": {
+          "x": "5E-7",
+          "y": "15.0000046875"
+        },
+        "exactSerializedDirectedGeometryEqual": false,
+        "nativeFillRule": "nonzero",
+        "nativePathCount": 1,
+        "admissionEligible": false
+      }
+    },
+    {
+      "textReference": "64:4",
+      "characters": "001",
+      "fontFamily": "Arial",
+      "sourceFontSha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+      "sourceUnshapedAdvancePx": 23.3583984375,
+      "nativeWidth": 24,
+      "contourEncoding": {
+        "status": "REVIEW",
+        "serializer": "six-significant-decimal-digits",
+        "translation": {
+          "x": "3.125E-7",
+          "y": "15.0000"
+        },
+        "exactSerializedDirectedGeometryEqual": false,
+        "nativeFillRule": "nonzero",
+        "nativePathCount": 1,
+        "admissionEligible": false
+      }
+    },
+    {
+      "textReference": "64:5",
+      "characters": "赵六",
+      "fontFamily": "PingFang SC",
+      "sourceFontSha256": "0934ea94dea57d9ec12a401f44ad28b98c96f5ee9917df920279f58024de523a",
+      "sourceUnshapedAdvancePx": 28.0,
+      "nativeWidth": 28,
+      "contourEncoding": {
+        "status": "REVIEW",
+        "serializer": "six-significant-decimal-digits",
+        "translation": {
+          "x": "0.000",
+          "y": "16.000"
+        },
+        "exactSerializedDirectedGeometryEqual": false,
+        "nativeFillRule": "nonzero",
+        "nativePathCount": 1,
+        "admissionEligible": false
+      }
+    }
+  ],
+  "admissionEligible": false,
+  "fidelityGate": "NOT_RUN",
+  "limitations": [
+    "Unshaped cmap/hmtx positions must be independently compared to actual source layout.",
+    "Encoding observations do not authorize tolerance changes or native PNG admission."
+  ]
+}
