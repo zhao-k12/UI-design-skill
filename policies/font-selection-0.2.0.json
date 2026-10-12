@@ -1,0 +1,23 @@
+{
+  "policyVersion": "0.2.0",
+  "scope": "new-v02-design-tasks",
+  "selectionStatus": "USER_SELECTED",
+  "implementationStatus": "PENDING_NATIVE_BINDINGS",
+  "selection": "platform-native-default",
+  "platforms": {
+    "figma": {"familySource": "target-native-text-default", "resolution": "read-from-actual-target-session"},
+    "penpot": {"familySource": "target-native-text-default", "resolution": "read-from-actual-target-session"}
+  },
+  "localFontInstallationRequired": false,
+  "fontUploadAllowed": false,
+  "rules": [
+    "Read the actual default font and available styles before measuring text and generating layout.",
+    "Save resolved family, style, native binding and observation evidence in Adapter Metadata for the target task.",
+    "Do not guess a family name or silently substitute an unavailable weight or glyph.",
+    "Default-font resolution or glyph coverage failure is Missing or Unsupported, never PASS.",
+    "Preserve existing version locks, registry admissions and historical evidence bytes.",
+    "Changing fonts in an admitted component requires new measurements and native fidelity admission in a new version."
+  ],
+  "nativeAcceptance": "NOT_RUN",
+  "releaseReady": false
+}

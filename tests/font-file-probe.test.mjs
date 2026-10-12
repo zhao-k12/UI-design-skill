@@ -4,9 +4,10 @@ import {mkdtemp,readFile,writeFile,unlink,rmdir} from 'node:fs/promises';
 import {join} from 'node:path';
 import {probeFontFile} from '../component-builder/runtime-renderer/font-file-probe.mjs';
 import {ROOT} from '../component-builder/source-reader/source-lock.mjs';
+const identityPath=process.env.UI_DESIGN_FONT_IDENTITY ?? join(ROOT,'adapters/figma/metadata/font-file-identity.json');
 test('actual hash-bound font reproduces official samples and restores source state',async()=>{
   const directory=await mkdtemp(join(ROOT,'artifacts/font-file-probe-test-'));
-  const report=await probeFontFile(join(ROOT,'artifacts/task-006'),join(ROOT,'adapters/figma/metadata/font-file-identity.json'),directory);
+  const report=await probeFontFile(join(ROOT,'artifacts/task-006'),identityPath,directory);
   assert.equal(report.status,'PASS');assert.equal(report.ownerStatesRestored,true);assert.equal(report.temporaryFontFaceRemoved,true);
   assert.equal(report.referenceMatches.length,3);
   for(const row of report.observations) {
@@ -20,7 +21,7 @@ test('nonempty output is rejected before existing evidence is changed',async()=>
   const directory=await mkdtemp(join(ROOT,'artifacts/font-file-probe-guard-'));const sentinel=join(directory,'sentinel');
   try {
     await writeFile(sentinel,'preserve');
-    await assert.rejects(probeFontFile(join(ROOT,'artifacts/task-006'),join(ROOT,'adapters/figma/metadata/font-file-identity.json'),directory),/requires_new_output/);
+    await assert.rejects(probeFontFile(join(ROOT,'artifacts/task-006'),identityPath,directory),/requires_new_output/);
     assert.equal(await readFile(sentinel,'utf8'),'preserve');
   } finally {await unlink(sentinel);await rmdir(directory);}
 });

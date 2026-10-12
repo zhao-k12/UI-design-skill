@@ -6,6 +6,7 @@ from collections import Counter
 from hashlib import sha256
 import importlib.metadata
 import json
+import os
 from pathlib import Path, PureWindowsPath
 import re
 import shutil
@@ -131,7 +132,26 @@ def runtime_reference(root):
     return result('runtime-reference', 'PASS', 'Extraction artifact hashes verified; fidelity NOT_RUN')
 
 
-def diagnose(group='core', root=ROOT, node=None):
+def font_reference(root, identity_path=None):
+    path = Path(identity_path) if identity_path else root / 'adapters/figma/metadata/font-file-identity.json'
+    try:
+        identity = json.loads(path.read_text(encoding='utf-8'))
+        if identity.get('status') != 'PASS' or identity.get('scope') != 'source_font_file_metadata':
+            raise ValueError('Passed font metadata required')
+        rows = [r for r in identity['requirements'] if r['familyName'] == 'PingFang SC']
+        if len(rows) != 1 or len(rows[0]['matches']) != 1:
+            raise ValueError('Ambiguous PingFang file identity')
+        match = rows[0]['matches'][0]
+        if sha256(Path(match['path']).read_bytes()).hexdigest() != match['fileSha256']:
+            raise ValueError('Font file hash differs; no substitution permitted')
+    except FileNotFoundError as exc:
+        return result('runtime-font-file', 'MISSING', str(exc))
+    except (OSError, ValueError, KeyError, TypeError, AttributeError) as exc:
+        return result('runtime-font-file', 'FAIL', str(exc))
+    return result('runtime-font-file', 'PASS', 'Raw file SHA256 matches supplied metadata', identity=str(path))
+
+
+def diagnose(group='core', root=ROOT, node=None, font_identity=None):
     root = Path(root).resolve()
     checks = [result('python', 'PASS' if sys.version_info >= (3, 11) else 'FAIL',
                      sys.version.split()[0], executable=sys.executable)]
@@ -169,6 +189,7 @@ def diagnose(group='core', root=ROOT, node=None):
         checks.append(result('host-test-python', 'PASS' if host_python.is_file() else 'MISSING',
                              str(host_python)))
         checks.append(runtime_reference(root))
+        checks.append(font_reference(root, font_identity or os.environ.get('UI_DESIGN_FONT_IDENTITY')))
     if group in ('historical', 'native'):
         for version in ('0.2.1', '0.3.0'):
             checks.append(evidence_check(root, f'releases/component-library-{version}/manifest.json'))
@@ -188,11 +209,12 @@ def main():
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument('--group', choices=GROUPS, default='core')
     cli.add_argument('--node', help='Explicit Node executable')
+    cli.add_argument('--font-identity', type=Path, help='Explicit identity with unchanged font file hashes')
     cli.add_argument('--output', type=Path, help='Save a report only inside artifacts')
     args = cli.parse_args()
     if args.output and not args.output.resolve().is_relative_to((ROOT / 'artifacts').resolve()):
         cli.error('Reports must be saved inside artifacts')
-    report = diagnose(args.group, node=args.node)
+    report = diagnose(args.group, node=args.node, font_identity=args.font_identity)
     payload = json.dumps(report, ensure_ascii=False, indent=2) + '\n'
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

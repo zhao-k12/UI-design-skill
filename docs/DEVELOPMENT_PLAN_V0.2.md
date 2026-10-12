@@ -10,6 +10,8 @@
 
 ## 架构原则
 
+2026-10-12 字体选择已明确：新设计使用 Figma 和 Penpot 各自的原生默认字体，不要求本机安装或上传苹方。实际默认字体在目标会话解析与测量；详见 [字体政策](FONT_POLICY.md)。涉及已有组件字体改变的配置在新版本重新验收。
+
 1. 原型必须经过Analysis、Page Tree、Skeleton、Component Mapping、UI-IR和Adapter；AI不直接画最终UI。
 2. Core保持平台无关，SDK和真实节点引用只在Adapter。
 3. 规范组件提前建设；页面生成只消费已准入Registry，不临时复刻控件。

@@ -15,6 +15,8 @@ rtk proxy .\.venv\Scripts\python.exe -X utf8 scripts/doctor.py --group native --
 
 不传 `--output` 时只输出 JSON。可通过 `--node` 指定 Node 可执行文件。Python 依赖按 requirements 的显式 pin 核对；Node 依赖按 package.json 核对，另外执行官方完整 source lock 校验。不会增加 npm scripts，因为 package.json 本身属于冻结来源锁。
 
+runtime 的历史字体探针支持 `--font-identity`；预检验证其实际文件哈希。路径迁移和运行复验见 [runtime 说明](RUNTIME_REPLAY.md)。此历史字体前提不用于新设计；新设计按 [平台默认字体政策](FONT_POLICY.md)。
+
 | 组 | 诊断范围 | 测试入口 |
 |---|---|---|
 | core | Python 3.11+ 与开发依赖版本 | 原基础 82 项、原型/结构/流水线 22 项、诊断与可移植证据包测试 |

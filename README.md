@@ -63,6 +63,8 @@ node --test tests/*.test.mjs
 
 新证据包可以使用[可移植证据契约](docs/PORTABLE_EVIDENCE.md)打包和验证原始字节；完整性通过不表示原生准入。
 
+官方运行环境支持[两次真实提取复验](docs/RUNTIME_REPLAY.md)。后续新设计字体使用 [Figma/Penpot 各自的默认字体](docs/FONT_POLICY.md)，实际绑定须在目标会话验证。
+
 完整内容见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
 
 - 提前建设18类组件，以及明确的变体、状态、尺寸和配置覆盖范围。
