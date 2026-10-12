@@ -17,7 +17,7 @@ rtk proxy .\.venv\Scripts\python.exe -X utf8 scripts/doctor.py --group native --
 
 | 组 | 诊断范围 | 测试入口 |
 |---|---|---|
-| core | Python 3.11+ 与开发依赖版本 | 原基础 82 项、原型/结构/流水线 22 项、新诊断测试 |
+| core | Python 3.11+ 与开发依赖版本 | 原基础 82 项、原型/结构/流水线 22 项、诊断与可移植证据包测试 |
 | runtime | core 前提、Node 24+、npm 包、来源锁、两个 Chromium 可执行文件、Windows host 测试用 .venv、官方默认提取参考 | 全部 tests/*.test.mjs，以显式文件列表运行 |
 | historical | Python 开发/诊断依赖、0.2.1 与 0.3.0 manifest 全部文件路径和原始字节哈希 | Python unittest discover 全套历史测试；包含 core |
 | native | runtime 与 historical 前提，以及 live-platform-and-fonts: NOT_RUN | 不提供自动原生执行；在实际会话按原 Adapter/Release Gate 工作流验收 |

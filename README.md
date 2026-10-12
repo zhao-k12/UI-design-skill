@@ -61,6 +61,8 @@ node --test tests/*.test.mjs
 
 开发环境预检与分组测试入口已新增，见[开发检查说明](docs/DEVELOPMENT_CHECKS.md)。它们区分依赖缺失、证据变化和实际测试失败，不替代原生验收。
 
+新证据包可以使用[可移植证据契约](docs/PORTABLE_EVIDENCE.md)打包和验证原始字节；完整性通过不表示原生准入。
+
 完整内容见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
 
 - 提前建设18类组件，以及明确的变体、状态、尺寸和配置覆盖范围。

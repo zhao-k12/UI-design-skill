@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ui-design-skill:evidence-package:0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scope", "contractVersion", "packageId", "releaseVersion", "purpose", "versions", "artifacts", "coverage", "evidenceSets"],
+  "properties": {
+    "scope": {"const": "portable-evidence-package"},
+    "contractVersion": {"const": "0.1.0"},
+    "packageId": {"$ref": "#/$defs/id"},
+    "releaseVersion": {"type": "string", "minLength": 1},
+    "purpose": {"enum": ["development", "native-acceptance"]},
+    "versions": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "minLength": 1}},
+    "artifacts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/artifact"}},
+    "coverage": {"type": "array", "items": {"$ref": "#/$defs/coverage"}},
+    "evidenceSets": {"type": "array", "items": {"$ref": "#/$defs/evidenceSet"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9._-]*$"},
+    "platform": {"enum": ["figma", "penpot"]},
+    "role": {"enum": ["source", "component-ir", "registry", "tokens", "rules", "program", "license", "font-identity", "ui-ir", "execution", "readback", "native-png", "visual-review", "fidelity", "diagnostic"]},
+    "artifact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "path", "role", "sha256", "bytes", "distribution"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "path": {"type": "string", "minLength": 1},
+        "role": {"$ref": "#/$defs/role"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "bytes": {"type": "integer", "minimum": 0},
+        "distribution": {
+          "type": "object", "additionalProperties": false, "required": ["status", "basis"],
+          "properties": {"status": {"const": "redistributable"}, "basis": {"type": "string", "minLength": 1}}
+        }
+      }
+    },
+    "coverage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "logicalId", "configurationId", "platforms"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "logicalId": {"$ref": "#/$defs/id"},
+        "configurationId": {"$ref": "#/$defs/id"},
+        "platforms": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/platform"}}
+      }
+    },
+    "evidenceSet": {
+      "type": "object", "additionalProperties": false, "required": ["coverageId", "platform", "artifacts"],
+      "properties": {
+        "coverageId": {"$ref": "#/$defs/id"}, "platform": {"$ref": "#/$defs/platform"},
+        "artifacts": {"type": "object", "minProperties": 1, "propertyNames": {"$ref": "#/$defs/role"}, "additionalProperties": {"$ref": "#/$defs/id"}}
+      }
+    }
+  }
+}

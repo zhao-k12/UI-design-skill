@@ -15,6 +15,7 @@ CORE_MODULES = (
     'tests.test_layout', 'tests.test_layout_builder', 'tests.test_component_registry',
     'tests.test_prototype_parser', 'tests.test_structure_gate', 'tests.test_pipeline',
     'tests.test_doctor',
+    'tests.test_evidence_package',
 )
 
 
