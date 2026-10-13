@@ -17,7 +17,7 @@ def main():
     parser.add_argument("--file-reference")
     parser.add_argument("--font-bindings", type=Path)
     parser.add_argument("--icon-bindings", type=Path)
-    parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0"), default="0.1.0")
+    parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0", "0.2.1"), default="0.1.0")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "artifacts/task-009")
     args = parser.parse_args()
     output = args.output_dir.resolve()
@@ -42,11 +42,11 @@ def main():
             for old in stale:
                 old.unlink()
         tokens = import_module("core.design-rules.tokens").TokenRegistry(load_json(ROOT / "registries/tokens/default.json"))
-        suffix = "/v0.2.0" if args.component_library_version == "0.2.0" else ""
+        suffix = "/v" + args.component_library_version if args.component_library_version != "0.1.0" else ""
         evidence_path = ROOT / f"registries/components{suffix}/fidelity-reports.json"
         components = import_module("core.component-resolver.registry").ComponentRegistry(
             load_json(ROOT / f"registries/components{suffix}/catalog.json"), load_json(evidence_path))
-        bindings_name = "component-bindings-0.2.0.json" if suffix else "component-bindings.json"
+        bindings_name = f"component-bindings-{args.component_library_version}.json" if suffix else "component-bindings.json"
         bindings = ComponentBindings(load_json(ROOT / "adapters/figma/metadata" / bindings_name), components, platform="figma")
         icons_module = import_module("icon-manager.remix-sync.manager")
         icons = icons_module.logical.IconRegistry(icons_module.current())

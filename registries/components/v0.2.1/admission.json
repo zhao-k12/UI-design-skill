@@ -1,0 +1,51 @@
+{
+  "version": "0.2.1",
+  "status": "PASS",
+  "registryAdmission": "PASS",
+  "registrySha256": "4d1948d4957f2d148df351e7914ca607d9afbd1aafc0d08656a5817d5a28dc3c",
+  "components": {
+    "action.button.primary.medium": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "查询",
+        "width": 60,
+        "height": 32
+      },
+      "fidelityReportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a"
+    },
+    "form.input.default.medium": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "placeholder": "请输入姓名",
+        "value": "",
+        "width": 240,
+        "height": 32
+      },
+      "fidelityReportSha256": "fd577dc95de3a217d5100c750fb615f6718b775ddea363fadc9a46b18e1f4821"
+    }
+  },
+  "bindings": {
+    "figma": {
+      "action.button.primary.medium": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "135:15"
+      },
+      "form.input.default.medium": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "141:3"
+      }
+    },
+    "penpot": {
+      "action.button.primary.medium": {
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentReference": "4b3abcb2-3ae8-803f-8008-c805b99e5b4e"
+      },
+      "form.input.default.medium": {
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentReference": "4b3abcb2-3ae8-803f-8008-c811d08712ea"
+      }
+    }
+  },
+  "scopedPageGenerationReady": true,
+  "releaseReady": false
+}

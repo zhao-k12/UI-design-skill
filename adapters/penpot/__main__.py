@@ -18,7 +18,7 @@ def main():
     parser.add_argument("--font-bindings", type=Path)
     parser.add_argument("--icon-bindings", type=Path)
     parser.add_argument("--native-fidelity", type=Path)
-    parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0"), default="0.1.0")
+    parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0", "0.2.1"), default="0.1.0")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "artifacts/task-010/preflight")
     args = parser.parse_args()
     output = args.output_dir.resolve()
@@ -30,11 +30,11 @@ def main():
     read_optional = lambda path: load_json(path) if path else None
     try:
         tokens = import_module("core.design-rules.tokens").TokenRegistry(load_json(ROOT / "registries/tokens/default.json"))
-        suffix = "/v0.2.0" if args.component_library_version == "0.2.0" else ""
+        suffix = "/v" + args.component_library_version if args.component_library_version != "0.1.0" else ""
         components = import_module("core.component-resolver.registry").ComponentRegistry(
             load_json(ROOT / f"registries/components{suffix}/catalog.json"),
             load_json(ROOT / f"registries/components{suffix}/fidelity-reports.json"))
-        bindings_name = "component-bindings-0.2.0.json" if suffix else "component-bindings.json"
+        bindings_name = f"component-bindings-{args.component_library_version}.json" if suffix else "component-bindings.json"
         bindings = ComponentBindings(load_json(ROOT / "adapters/penpot/metadata" / bindings_name), components, platform="penpot")
         icons = import_module("core.icon-resolver.registry").IconRegistry(import_module("icon-manager.remix-sync.manager").current())
         report = prepare(load_json(args.document), tokens, components, bindings, icons,

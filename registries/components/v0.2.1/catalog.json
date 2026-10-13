@@ -1,0 +1,53 @@
+{
+  "registryVersion": "0.2.1",
+  "libraryVersion": "0.2.1-default-font-query-input",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "scope": "production",
+  "components": {
+    "action.button.primary.medium": {
+      "componentType": "Button",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "查询",
+        "width": 60,
+        "height": 32
+      },
+      "fidelity": {
+        "reportId": "action.button.primary.medium.default-font-0.2.2",
+        "reportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a",
+        "componentIrSha256": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290"
+      }
+    },
+    "form.input.default.medium": {
+      "componentType": "Input",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "placeholder": "请输入姓名",
+        "value": "",
+        "width": 240,
+        "height": 32
+      },
+      "fidelity": {
+        "reportId": "form.input.default.medium.default-font-0.2.3",
+        "reportSha256": "fd577dc95de3a217d5100c750fb615f6718b775ddea363fadc9a46b18e1f4821",
+        "componentIrSha256": "c0255251a9e12c62bdf9cde32d94019068a3190381e5ebe1dfa3e7793a6d603c"
+      }
+    }
+  }
+}

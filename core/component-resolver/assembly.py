@@ -23,13 +23,20 @@ PROPS = {'Input': {'placeholder', 'value'}, 'Select': {'placeholder', 'value'},
 
 
 def normalize_fixed_native_content(node, scope, depth=0):
-    if (depth != 0 or node['props'] or set(node['slots']) != {'label'}
-            or len(node['slots']['label']) != 1
-            or node['slots']['label'][0].get('type') != 'Text'
-            or node['slots']['label'][0].get('text') != scope['text']):
+    if depth != 0:
+        raise ValueError('unsupported_component: nested fixed-native-content is not admitted')
+    if 'text' in scope:
+        valid = (not node['props'] and set(node['slots']) == {'label'}
+                 and len(node['slots']['label']) == 1
+                 and node['slots']['label'][0].get('type') == 'Text'
+                 and node['slots']['label'][0].get('text') == scope['text'])
+    else:
+        valid = node['props'] == {'placeholder': scope['placeholder']} and not node['slots']
+    if not valid:
         raise ValueError('unsupported_component: content is outside the admitted fixed-native-content scope')
     result = copy.deepcopy(node)
     result['slots'] = {}
+    result['props'] = {}
     return result
 
 

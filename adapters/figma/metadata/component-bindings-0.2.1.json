@@ -1,0 +1,30 @@
+{
+  "metadataVersion": "0.1.0",
+  "platform": "figma",
+  "scope": "production",
+  "libraryVersion": "0.2.1-default-font-query-input",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "registrySha256": "4d1948d4957f2d148df351e7914ca607d9afbd1aafc0d08656a5817d5a28dc3c",
+  "bindings": {
+    "action.button.primary.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "135:15",
+          "fidelityReportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a"
+        }
+      }
+    },
+    "form.input.default.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "141:3",
+          "fidelityReportSha256": "fd577dc95de3a217d5100c750fb615f6718b775ddea363fadc9a46b18e1f4821"
+        }
+      }
+    }
+  }
+}
