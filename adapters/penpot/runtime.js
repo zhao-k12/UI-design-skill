@@ -15,7 +15,12 @@ async function executePenpotAdapter(api, payload) {
       fonts.set(spec.id, {font, variant});
     }
     if (spec.componentReference) {
-      const component = api.library.local.components.find(c => c.id === spec.componentReference);
+      // Older accepted bindings may identify the component's main instance.
+      // Resolve only within this file's local library and reject ambiguity.
+      const matches = api.library.local.components.filter(c =>
+        c.id === spec.componentReference || c.mainInstance()?.id === spec.componentReference);
+      if (matches.length !== 1) throw new Error(`missing_native_component: ${spec.id}`);
+      const component = matches[0];
       const main = component?.mainInstance();
       if (!main || !main.isComponentMainInstance() || !main.isComponentRoot()) throw new Error(`missing_native_component: ${spec.id}`);
       function checkFonts(n) {
@@ -89,7 +94,7 @@ async function executePenpotAdapter(api, payload) {
       n.growType = spec.layout.width.mode === 'hug' ? 'auto-width' : spec.layout.height.mode === 'fixed' ? 'fixed' : 'auto-height';
     } else if (spec.componentReference) {
       n = record(masters.get(spec.componentReference).instance()); descendants(n);
-      if (!n.isComponentCopyInstance() || n.component()?.id !== spec.componentReference) throw new Error(`instance_creation_failed: ${spec.id}`);
+      if (!n.isComponentCopyInstance() || n.component()?.id !== masters.get(spec.componentReference).id) throw new Error(`instance_creation_failed: ${spec.id}`);
     } else {
       n = record(api.createBoard());
       flex = container(n, {...spec.layout, direction: spec.type === 'Grid' ? 'vertical' : spec.layout.direction});

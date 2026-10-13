@@ -28,6 +28,25 @@ test('missing component stops before page creation', async () => {
   const api = host(), p = payload(); p.page.children = [{id:'button',type:'ComponentInstance',componentReference:'missing',layout,style:{}}];
   await assert.rejects(execute(api,p), /missing_native_component/); assert.equal(api.writes(),0);
 });
+test('accepted main-instance reference resolves to its exact local component', async () => {
+  const api = host(), p = payload();
+  const main = {id:'main-id',width:100,height:10,children:[],isComponentMainInstance:()=>true,isComponentRoot:()=>true};
+  api.library.local.components = [{id:'library-id',mainInstance:()=>main}];
+  p.page.children = [{id:'native',type:'ComponentInstance',componentReference:'main-id',
+    layout:{...layout,height:{mode:'fixed',value:10}},style:{}}];
+  const result = await execute(api,p);
+  assert.equal(result.status,'FAIL');
+  assert.match(result.issues[0].detail,/deliberate local test failure/);
+  assert.equal(api.writes(),1);
+});
+test('ambiguous main-instance reference stops before writing', async () => {
+  const api = host(), p = payload();
+  const main = {id:'same-main',width:100,height:10,isComponentMainInstance:()=>true,isComponentRoot:()=>true};
+  api.library.local.components = [{id:'one',mainInstance:()=>main},{id:'two',mainInstance:()=>main}];
+  p.page.children = [{id:'native',type:'ComponentInstance',componentReference:'same-main',layout,style:{}}];
+  await assert.rejects(execute(api,p),/missing_native_component/);
+  assert.equal(api.writes(),0);
+});
 test('duplicate page needs explicit ledger and creates nothing', async () => {
   const api = host(); api.currentFile.pages.push({id:'existing',name:'test-only/page'});
   await assert.rejects(execute(api,payload()), /existing_page_requires_ledger/); assert.equal(api.writes(),0);
