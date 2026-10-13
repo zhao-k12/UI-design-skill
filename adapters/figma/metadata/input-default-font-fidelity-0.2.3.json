@@ -1,0 +1,21 @@
+{
+  "scope": "v02-default-font-input-native-fidelity",
+  "gateVersion": "0.2.3",
+  "platform": "figma",
+  "logicalComponentId": "form.input.default.medium",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "componentId": "141:3",
+  "instanceId": "141:7",
+  "status": "PASS",
+  "evidenceSha256": {
+    "input-native-fidelity.json": "d6013dac71c390f598e707978544d525c610894fdf76cb2bf7e04c902cd078fc",
+    "candidate-metadata.json": "36bba1aa7aad7bfdc4f52af7619a5f304c9ddb86f7689983c88e3d2ce819f12b",
+    "native-svg": "3836314dc7b6d0eccd7c74f343a46682d584ac79a842ec343a8e8405a0deb91b",
+    "native-png": "16f7ccb5f97b9ff6e70a7e0ab1f925b752a4a24861f42d924562b5ddb3df2566",
+    "visual-review.json": "1da8e80a4ab705196ad8480d79754b97bfcf23bfc1c353acf581ad043cb06ab5"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

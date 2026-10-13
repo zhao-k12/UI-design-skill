@@ -1,0 +1,21 @@
+{
+  "scope": "v02-default-font-input-native-fidelity",
+  "gateVersion": "0.2.3",
+  "platform": "penpot",
+  "logicalComponentId": "form.input.default.medium",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "componentId": "4b3abcb2-3ae8-803f-8008-c811d08712ea",
+  "instanceId": "4b3abcb2-3ae8-803f-8008-c811d09139b1",
+  "status": "PASS",
+  "evidenceSha256": {
+    "input-native-fidelity.json": "d6013dac71c390f598e707978544d525c610894fdf76cb2bf7e04c902cd078fc",
+    "candidate-metadata.json": "c0ce788a2615d34c3311aad2d28b803478f835745638ab579dbf82fc3690a77d",
+    "native-svg": "8af38ae94161da8a55ba48e9063472a30c4234bd76b6b581a40978fbbea8c696",
+    "native-png": "48d2e6800c672a52068988833c509ba28c03c7f254558cb9335336dd8d5b8c9a",
+    "visual-review.json": "1da8e80a4ab705196ad8480d79754b97bfcf23bfc1c353acf581ad043cb06ab5"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
