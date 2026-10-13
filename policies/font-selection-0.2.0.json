@@ -2,7 +2,7 @@
   "policyVersion": "0.2.0",
   "scope": "new-v02-design-tasks",
   "selectionStatus": "USER_SELECTED",
-  "implementationStatus": "PENDING_NATIVE_BINDINGS",
+  "implementationStatus": "NATIVE_BINDINGS_OBSERVED_SAMPLE_REVIEW_PASS",
   "selection": "platform-native-default",
   "platforms": {
     "figma": {"familySource": "target-native-text-default", "resolution": "read-from-actual-target-session"},

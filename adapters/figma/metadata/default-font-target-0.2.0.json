@@ -1,0 +1,28 @@
+{
+  "scope": "target-default-font-binding",
+  "version": "0.2.0",
+  "platform": "figma",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "0:1",
+  "defaultFont": {
+    "family": "Inter",
+    "style": "Regular",
+    "weight": 400
+  },
+  "bindings": {
+    "Inter:400": {
+      "family": "Inter",
+      "style": "Regular"
+    },
+    "Inter:600": {
+      "family": "Inter",
+      "style": "Semi Bold"
+    }
+  },
+  "status": "PASS",
+  "nativeAcceptance": "NOT_RUN",
+  "releaseReady": false,
+  "observationSha256": "68b19cfedcf7b8309b3094fc72576f2121bb3dd59feca38d19c24032ae72ca57",
+  "reviewSha256": "9c19440190683a17644cb470c653037978b26e3345a3420d7c5ae8eb98645a15",
+  "readyForPageGeneration": false
+}

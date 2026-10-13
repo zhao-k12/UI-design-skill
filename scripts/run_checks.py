@@ -19,6 +19,7 @@ CORE_MODULES = (
     'tests.test_evidence_package',
     'tests.test_browser_archives',
     'tests.test_font_relocation',
+    'tests.test_default_font_profile',
 )
 
 

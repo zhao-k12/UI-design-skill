@@ -1,0 +1,16 @@
+{
+  "scope": "new-default-font-minimum-component-coverage",
+  "version": "0.2.0",
+  "status": "PLANNED",
+  "components": [
+    {"type": "Button", "variant": "default", "measurement": "NOT_RUN", "nativeAdmission": "NOT_RUN"},
+    {"type": "Input", "variant": "default", "measurement": "NOT_RUN", "nativeAdmission": "NOT_RUN"},
+    {"type": "Select", "variant": "default", "measurement": "NOT_RUN", "nativeAdmission": "NOT_RUN"},
+    {"type": "Table", "variant": "minimum-static-list", "measurement": "NOT_RUN", "nativeAdmission": "NOT_RUN"}
+  ],
+  "iconSource": "locked-official-remix-source",
+  "requiredGates": ["native-text-render-review", "source-bound-component-measurement", "native-fidelity-admission", "new-version-registry"],
+  "reuseHistoricalFontGeometry": false,
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

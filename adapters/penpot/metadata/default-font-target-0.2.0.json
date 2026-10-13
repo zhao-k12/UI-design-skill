@@ -1,0 +1,36 @@
+{
+  "scope": "target-default-font-binding",
+  "version": "0.2.0",
+  "platform": "penpot",
+  "fileReference": "91396aad-60c8-808b-8008-c0885ca79899",
+  "pageReference": "91396aad-60c8-808b-8008-c0885ca7989a",
+  "defaultFont": {
+    "family": "sourcesanspro",
+    "fontId": "sourcesanspro",
+    "fontVariantId": "regular",
+    "weight": 400,
+    "style": "normal"
+  },
+  "bindings": {
+    "sourcesanspro:400": {
+      "family": "sourcesanspro",
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "weight": 400,
+      "style": "normal"
+    },
+    "sourcesanspro:600": {
+      "family": "sourcesanspro",
+      "fontId": "sourcesanspro",
+      "fontVariantId": "600",
+      "weight": 600,
+      "style": "normal"
+    }
+  },
+  "status": "PASS",
+  "nativeAcceptance": "NOT_RUN",
+  "releaseReady": false,
+  "observationSha256": "9af172306b8de1c2de1f054b9ac4646a5c313007be580de8d59bb2006798d118",
+  "reviewSha256": "f6efafad022c58d24d06ee502ecc58ce84199e8686c28fe0b67fa55a4e99f8e6",
+  "readyForPageGeneration": false
+}
