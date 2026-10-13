@@ -1,0 +1,27 @@
+{
+  "scope": "v02-button-default-font-candidate",
+  "version": "0.2.0",
+  "platform": "penpot",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "pageReference": "4b3abcb2-3ae8-803f-8008-c805b85ffe4b",
+  "componentId": "4b3abcb2-3ae8-803f-8008-c805b99e5b4e",
+  "mainId": "4b3abcb2-3ae8-803f-8008-c805b95132c8",
+  "instanceId": "4b3abcb2-3ae8-803f-8008-c805b9b03dc8",
+  "fontBinding": {
+    "family": "sourcesanspro",
+    "fontId": "sourcesanspro",
+    "fontVariantId": "regular",
+    "weight": 400
+  },
+  "sourceLogicalComponentId": "action.button.primary.medium",
+  "status": "CANDIDATE_REVIEW",
+  "evidenceSha256": {
+    "creation.json": "e675a1cda15fe63125f1772a89982822d407e5de76c46fd641b76b0579608a18",
+    "independent-capture.json": "0b44792f68639837ba433fcd1375dc711169b978a443d6896881ee2bf27abac2",
+    "component-native.png": "509636ff651f01474b7e82b810c543e60c3cb0025350f0593d2ca547a1eb6926",
+    "audit.json": "107c7d6969fc8b4177d0949a2f5552fb7d5f62f1ab14da016c73c5f2868e1833"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

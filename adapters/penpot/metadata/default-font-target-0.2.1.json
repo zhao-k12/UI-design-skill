@@ -1,0 +1,22 @@
+{
+  "scope": "target-default-font-binding",
+  "version": "0.2.1",
+  "platform": "penpot",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "pageReference": "4b3abcb2-3ae8-803f-8008-c805b85ffe4b",
+  "replacesDeletedTarget": "91396aad-60c8-808b-8008-c0885ca79899",
+  "replacementAuthorizedByUser": true,
+  "defaultFont": {
+    "family": "sourcesanspro",
+    "fontId": "sourcesanspro",
+    "fontVariantId": "regular",
+    "weight": 400,
+    "style": "normal"
+  },
+  "status": "OBSERVED_IN_REPLACEMENT_FILE",
+  "observationSource": "Native text creation in the replacement Penpot file before applying candidate typography",
+  "candidateCaptureSha256": "0b44792f68639837ba433fcd1375dc711169b978a443d6896881ee2bf27abac2",
+  "nativeAcceptance": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
