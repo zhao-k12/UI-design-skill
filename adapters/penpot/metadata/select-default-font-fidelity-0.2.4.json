@@ -1,0 +1,28 @@
+{
+  "scope": "v02-default-font-select-native-fidelity",
+  "gateVersion": "0.2.4",
+  "platform": "penpot",
+  "logicalComponentId": "form.select.default.medium",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "componentId": "4b3abcb2-3ae8-803f-8008-c8485c8b9729",
+  "instanceId": "4b3abcb2-3ae8-803f-8008-c8489b80a36f",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "modelValue": "enabled",
+    "selectedText": "启用",
+    "width": 240,
+    "height": 32
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "select-native-fidelity.json": "5fcbf64f6d13087b3871cda454fb74c7239ef4b5703be29e486638c7fb47e71c",
+    "candidate-metadata.json": "2e8b2e7ffc644680f1dab94c8b7c1e795df0177a12d37be3d42d91d1a6301880",
+    "native-svg": "3769691ac039a36b409ba1213a34a9bb8e5a9fb0e5a1a10085e2ae4440cb5299",
+    "native-png": "b01b389eb3cb29513f2677ecf04d303ce7456536f99530635fed3fc36560f56b",
+    "visual-review.json": "af54aa17ddeb927a5bb4947a04bcce0b2f1ea7b6f9aec14119a751f1e21473b5"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

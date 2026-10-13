@@ -1,0 +1,28 @@
+{
+  "scope": "v02-default-font-select-native-fidelity",
+  "gateVersion": "0.2.4",
+  "platform": "figma",
+  "logicalComponentId": "form.select.default.medium",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "componentId": "152:10",
+  "instanceId": "152:16",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "modelValue": "enabled",
+    "selectedText": "启用",
+    "width": 240,
+    "height": 32
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "select-native-fidelity.json": "5fcbf64f6d13087b3871cda454fb74c7239ef4b5703be29e486638c7fb47e71c",
+    "candidate-metadata.json": "14754bc4d5db23bae737e027f546434df58a9017df64a8a3f24991a983fdea00",
+    "native-svg": "9b3b5f54b5f6e29300c62098a2b23e597c8144a1f8ad7b5ab6040ff7a8439d9e",
+    "native-png": "4236ce1205c69b4d0018062f00ffda60bfe0102e1eb55a31cdacf5ea44336504",
+    "visual-review.json": "af54aa17ddeb927a5bb4947a04bcce0b2f1ea7b6f9aec14119a751f1e21473b5"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
