@@ -1,6 +1,6 @@
 # TASK-025 — ARCHITECTURE_CONFLICT: 默认字体与官方组件字体保真
 
-日期：2026-10-13。状态：OPEN；影响 V0.2 新字体组件的测量与原生准入，不影响 V0.1 历史任务。
+日期：2026-10-13。状态：RESOLVED（用户选择“采用新版本字体改编与重新验收”）；影响 V0.2 新字体组件的测量与原生准入，不影响 V0.1 历史任务。
 
 ## 当前设计
 
@@ -18,4 +18,4 @@ TASK-025 审计读取锁定官方 Component IR：Button、Input、Select 每类�
 
 另一个可行选择是维持 V0.1 原字体严格保真；这与用户要求的新设计使用平台默认字体不一致，因此只可用于历史复验。
 
-**依赖门**：在 V0.2 改编与 Fidelity 规则获明确架构决策前，继续保留 Button/Input/Select/Table 的 `measurement=NOT_RUN`、`nativeAdmission=NOT_RUN`，不得生成正式准入组件。独立的来源审计、环境准备、Core 与文档工作可继续。
+**决策执行**：用户已批准 V0.2 改编路径。版本化约束见 policies/font-adaptation-0.2.0.json；候选组件仍须真实测量、独立原生观察及新 Fidelity Gate，通过前保持 `measurement=NOT_RUN`、`nativeAdmission=NOT_RUN`。旧来源和历史准入不能自动升级。

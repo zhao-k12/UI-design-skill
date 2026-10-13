@@ -1,0 +1,35 @@
+{
+  "scope": "v02-platform-default-font-component-adaptation",
+  "version": "0.2.0",
+  "decisionStatus": "USER_APPROVED",
+  "decisionDate": "2026-10-13",
+  "fontSelection": "platform-native-default",
+  "sourceRule": "Keep official View UI Plus component structure, props, CSS and locked source evidence immutable.",
+  "adaptationRule": "Use the observed default font and exact native variant separately in each target platform; remeasure all text and resulting component geometry.",
+  "strictSourceProperties": [
+    "component structure and static props",
+    "non-text paint and opacity",
+    "borders and corner radius",
+    "padding and declared spacing",
+    "source icon identity and geometry"
+  ],
+  "newEvidenceRequired": [
+    "versioned platform-specific source-to-native measurement ledger",
+    "actual native component and editable text observation",
+    "independent native PNG and structure capture",
+    "complete glyph and content visual review",
+    "per-platform fidelity report with explicit typography deltas and strict non-text checks",
+    "new registry admission and target-file component binding"
+  ],
+  "forbiddenShortcuts": [
+    "reuse old source or native text geometry as a new measurement",
+    "reuse old fidelity PASS or native component IDs",
+    "rename original CSS screenshot as adapted-font reference",
+    "claim effective CJK fallback font identity from CSS family or default-font name",
+    "turn text sample PASS into component or page admission"
+  ],
+  "unresolvedCandidateChecks": "Missing actual measurement or unsupported glyph remains REVIEW or FAIL; do not grant admission.",
+  "componentAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
