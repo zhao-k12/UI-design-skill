@@ -1,0 +1,42 @@
+{
+  "scope": "v02-default-font-select-candidate",
+  "version": "0.2.0",
+  "platform": "penpot",
+  "logicalComponentId": "form.select.default.medium",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "ac0ffa896e31b8f84d21ebdb6dad08076f0136eb33b797ac6d5cb541258ae9a6",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "pageReference": "4b3abcb2-3ae8-803f-8008-c8485bd0ea25",
+  "componentId": "4b3abcb2-3ae8-803f-8008-c8485c8b9729",
+  "instanceId": "4b3abcb2-3ae8-803f-8008-c8489b80a36f",
+  "contentScope": {
+    "modelValue": "enabled",
+    "selectedText": "启用",
+    "width": 240,
+    "height": 32
+  },
+  "arrowSource": "Official Ionicons U+F116 outline; glyph provenance locked in TASK-036 audit",
+  "status": "CANDIDATE_REVIEW",
+  "checks": {
+    "sameNativeMainAndInstance": true,
+    "fixedSelectedValueAndDefaultFont": true,
+    "nativeRepeatStable": true,
+    "officialArrowPreserved": true,
+    "nonTextPixelsExact": true,
+    "cornerAntialiasWithinPolicy": true,
+    "arrowRasterWithinPolicy": true,
+    "textVisible": true
+  },
+  "evidenceSha256": {
+    "creation.json": "4d5ed8a8e4c9b64011f3254286bfe682c663b8a70cf25beb2ae5fc5653bb089d",
+    "independent-capture.json": "f2c9ddcfc5ff5c3b25c8723e86c918cd8e98018106f18d08af93b825ec0f95c7",
+    "component-native.png": "b01b389eb3cb29513f2677ecf04d303ce7456536f99530635fed3fc36560f56b",
+    "component-native.svg": "3769691ac039a36b409ba1213a34a9bb8e5a9fb0e5a1a10085e2ae4440cb5299",
+    "repeat-native-read.json": "abb33fafe2e324b16ea2de5206ac75859b7354b99bc8320469e941a9adcba44f",
+    "repeat-native.png": "b01b389eb3cb29513f2677ecf04d303ce7456536f99530635fed3fc36560f56b",
+    "candidate-audit.json": "1dd8112f6cceb8f2e65469e453f44451eac8620457754b0c61c4823b84cc510d"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

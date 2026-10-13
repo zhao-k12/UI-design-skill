@@ -1,0 +1,42 @@
+{
+  "scope": "v02-default-font-select-candidate",
+  "version": "0.2.0",
+  "platform": "figma",
+  "logicalComponentId": "form.select.default.medium",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "ac0ffa896e31b8f84d21ebdb6dad08076f0136eb33b797ac6d5cb541258ae9a6",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "152:9",
+  "componentId": "152:10",
+  "instanceId": "152:16",
+  "contentScope": {
+    "modelValue": "enabled",
+    "selectedText": "启用",
+    "width": 240,
+    "height": 32
+  },
+  "arrowSource": "Official Ionicons U+F116 outline; glyph provenance locked in TASK-036 audit",
+  "status": "CANDIDATE_REVIEW",
+  "checks": {
+    "sameNativeMainAndInstance": true,
+    "fixedSelectedValueAndDefaultFont": true,
+    "nativeRepeatStable": true,
+    "officialArrowPreserved": true,
+    "nonTextPixelsExact": true,
+    "cornerAntialiasWithinPolicy": true,
+    "arrowRasterWithinPolicy": true,
+    "textVisible": true
+  },
+  "evidenceSha256": {
+    "creation.json": "bbee5ab75b4e9ee000ded9a2375a9366fe628458c26582d36ab3819daec9e51b",
+    "independent-capture.json": "b0000f1f81b7369cf2c75026c32d0f8913e4f63fb1e13c7e5edd7bc891463534",
+    "component-native.png": "4236ce1205c69b4d0018062f00ffda60bfe0102e1eb55a31cdacf5ea44336504",
+    "component-native.svg": "9b3b5f54b5f6e29300c62098a2b23e597c8144a1f8ad7b5ab6040ff7a8439d9e",
+    "repeat-native-read.json": "986e41538d665ec372114b4bb25918bc60b3378a5a813a7c3317975d25bad3cc",
+    "repeat-native.png": "4236ce1205c69b4d0018062f00ffda60bfe0102e1eb55a31cdacf5ea44336504",
+    "candidate-audit.json": "1dd8112f6cceb8f2e65469e453f44451eac8620457754b0c61c4823b84cc510d"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
