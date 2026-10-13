@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from validators.ui_ir import ROOT, validate_document
+from adapters.component_bindings import validate_instance_scope
 
 tokens_module = import_module("core.design-rules.tokens")
 components_module = import_module("core.component-resolver.registry")
@@ -82,6 +83,7 @@ def prepare(document, tokens, components, component_bindings, icons, icon_bindin
         elif kind == "ComponentInstance":
             try:
                 choice = components.resolve(node["componentId"], node.get("variant"))
+                validate_instance_scope(node, choice["descriptor"], width, height)
                 reference = component_bindings.resolve(node["componentId"], node.get("variant"))
                 if reference["fileReference"] != file_reference:
                     issue("unsupported_remote_component", node_id, "V0.1 requires an admitted component in this target file")

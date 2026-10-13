@@ -11,6 +11,71 @@ def digest(value):
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False).encode("utf-8")).hexdigest()
 
 
+def valid_default_font_button_report(report):
+    """Validate the platform-neutral proof shape for the approved V0.2 Button fixture."""
+    hex_hash = lambda value: isinstance(value, str) and len(value) == 64 and all(c in "0123456789abcdef" for c in value)
+    if (report.get("gateVersion") != "0.2.2" or report.get("logicalComponentId") != "action.button.primary.medium"
+            or report.get("componentType") != "Button" or report.get("variants") != ["default"]
+            or report.get("candidateEvidenceKind") != "native-design-capture"
+            or report.get("admissionEligible") is not True or report.get("issues") != []
+            or report.get("effectiveCjkFontIdentity") != "UNVERIFIED"
+            or report.get("registryAdmission") != "NOT_RUN"
+            or report.get("readyForPageGeneration") is not False or report.get("releaseReady") is not False):
+        return False
+    checks = report.get("checks", {})
+    if not isinstance(checks, dict):
+        return False
+    screenshot = checks.get("screenshot", {})
+    if (checks.get("geometryAndStyle") != "PASS" or not isinstance(screenshot, dict)
+            or screenshot.get("policy") != "source-locked-default-font-regions-0.2.2"
+            or type(screenshot.get("changedPixelsOutsidePermittedRegions")) is not int
+            or screenshot["changedPixelsOutsidePermittedRegions"] != 0):
+        return False
+    rows = report.get("platforms", {})
+    evidence = report.get("evidenceSha256", {})
+    if (not isinstance(rows, dict) or len(rows) != 2 or not isinstance(evidence, dict)
+            or set(rows) != {k for k, v in evidence.items() if isinstance(v, dict)}
+            or not all(hex_hash(evidence.get(k)) for k in ("sourceComponentIrSha256", "sourceScreenshotSha256",
+                                                     "manifestSha256", "policySha256", "visualReviewSha256"))):
+        return False
+    for name, row in rows.items():
+        if not isinstance(row, dict) or row.get("status") != "PASS":
+            return False
+        if (name not in ("figma", "penpot") or not isinstance(row.get("fileReference"), str)
+                or not row["fileReference"] or not isinstance(row.get("componentId"), str)
+                or not row["componentId"]):
+            return False
+        row_checks = row.get("checks", {})
+        if (not isinstance(row_checks, dict) or len(row_checks) < 10
+                or not all(value is True for value in row_checks.values())
+                or not all(hex_hash(row.get(key)) for key in ("nativePngSha256", "nativeSvgSha256",
+                                                                 "repeatNativePngSha256"))
+                or row["nativePngSha256"] != row["repeatNativePngSha256"]):
+            return False
+        pixels = row.get("pixelDiagnostics", {})
+        if not isinstance(pixels, dict):
+            return False
+        corners, text, interior = (pixels.get(key, {}) for key in ("cornerEdge", "textZone", "nonTextInterior"))
+        if not all(isinstance(item, dict) for item in (corners, text, interior)):
+            return False
+        if (interior.get("different") != 0 or corners.get("outOfPalettePixels") != 0
+                or type(corners.get("maxPaletteResidual")) not in (int, float)
+                or corners["maxPaletteResidual"] > 2
+                or len(text.get("brightInkPixelsByHalf", [])) != 2
+                or not all(type(count) is int and count > 0 for count in text["brightInkPixelsByHalf"])
+                or len(text.get("inkFillFractionByHalf", [])) != 2
+                or not all(type(value) in (int, float) and 0 < value < .75
+                           for value in text["inkFillFractionByHalf"])):
+            return False
+        platform_evidence = evidence[name]
+        if (not isinstance(platform_evidence, dict)
+                or not all(hex_hash(platform_evidence.get(key)) for key in
+                           ("candidateMetadataSha256", "targetMetadataSha256", "priorAuditSha256",
+                            "repeatNativeReadSha256"))):
+            return False
+    return True
+
+
 class ComponentError(ValueError):
     def __init__(self, code, component_id, message):
         self.code, self.component_id = code, component_id
@@ -19,7 +84,9 @@ class ComponentError(ValueError):
 
 class ComponentRegistry:
     def __init__(self, data, evidence=None, *, allow_test_fixtures=False):
-        schema = json.loads((Path(__file__).resolve().parents[2] / "schemas/component-registry.schema.json").read_text(encoding="utf-8"))
+        version = data.get("registryVersion") if isinstance(data, dict) else None
+        schema_name = "component-registry-0.2.0.schema.json" if version == "0.2.0" else "component-registry.schema.json"
+        schema = json.loads((Path(__file__).resolve().parents[2] / "schemas" / schema_name).read_text(encoding="utf-8"))
         Draft202012Validator.check_schema(schema)
         Draft202012Validator(schema).validate(data)
         self._data = deepcopy(data)
@@ -48,7 +115,17 @@ class ComponentRegistry:
                     raise ComponentError("fidelity_variant_mismatch", logical_id, "Evidence must cover the declared component type and all variants")
                 if report.get("scope") != data["scope"] or report.get("sourceVersion") != data["sourceVersion"] or data["sourceVersion"] == "unresolved":
                     raise ComponentError("fidelity_source_mismatch", logical_id, "Evidence scope/source must match the registry")
+                if version == "0.2.0" and report.get("gateVersion") != "0.2.2":
+                    raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 active components require the scoped default-font gate")
                 if data["scope"] == "production":
+                    if report.get("gateVersion") == "0.2.2":
+                        expected_scope = {"kind": "fixed-native-content", "text": "查询", "width": 60, "height": 32}
+                        if (version != "0.2.0" or entry.get("contentScope") != expected_scope
+                                or entry["componentType"] != "Button" or entry["variants"] != ["default"]):
+                            raise ComponentError("invalid_content_scope", logical_id, "V0.2 Button requires its exact validated content and geometry scope")
+                        if not valid_default_font_button_report(report):
+                            raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 default-font Button proof is incomplete")
+                        continue
                     checks = report.get("checks", {})
                     capture = report.get("capture", {})
                     hashes = ("candidateSha256", "referenceScreenshotSha256", "candidateScreenshotSha256")
@@ -100,6 +177,12 @@ class ComponentRegistry:
         if logical_id not in self._data["components"]:
             raise ComponentError("missing_component", logical_id, "Logical component is not registered")
         return deepcopy(self._data["components"][logical_id])
+
+    def fidelity_report(self, logical_id):
+        entry = self.inspect(logical_id)
+        if entry["status"] != "active":
+            raise ComponentError("component_not_ready", logical_id, "Component is not admitted")
+        return deepcopy(self._evidence[entry["fidelity"]["reportId"]])
 
     def resolve(self, logical_id, variant=None):
         entry = self.inspect(logical_id)

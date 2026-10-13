@@ -12,6 +12,17 @@ class BindingError(ValueError):
         super().__init__(message)
 
 
+def validate_instance_scope(node, descriptor, width, height):
+    """Reject any override of a fixed-content native master before adapter writes."""
+    scope = descriptor.get("contentScope")
+    if not scope:
+        return
+    if (node.get("props") or node.get("slots") or node.get("style")
+            or width != {"mode": "fixed", "value": scope["width"]}
+            or height != {"mode": "fixed", "value": scope["height"]}):
+        raise BindingError("unsupported_component", "Instance exceeds the admitted native text/size/style scope")
+
+
 class ComponentBindings:
     def __init__(self, data, registry, *, platform, allow_test_fixtures=False):
         schema = json.loads((Path(__file__).resolve().parents[1] / "schemas/component-bindings.schema.json").read_text(encoding="utf-8"))
@@ -30,6 +41,11 @@ class ComponentBindings:
                 descriptor = registry.resolve(logical_id, variant)["descriptor"]
                 if reference["fidelityReportSha256"] != descriptor["fidelity"]["reportSha256"]:
                     raise BindingError("binding_fidelity_mismatch", "Binding must match the admitted fidelity report")
+                if "contentScope" in descriptor:
+                    row = registry.fidelity_report(logical_id)["platforms"].get(platform, {})
+                    if (reference["fileReference"] != row.get("fileReference") or
+                            reference["componentReference"] != row.get("componentId")):
+                        raise BindingError("binding_native_mismatch", "V0.2 binding must point to the audited native component")
 
     def resolve(self, logical_id, variant=None):
         choice = self._registry.resolve(logical_id, variant)

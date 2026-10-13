@@ -8,7 +8,7 @@
   "fontBinding": "sourcesanspro regular 400",
   "status": "PASS",
   "evidenceSha256": {
-    "button-native-fidelity.json": "4c0a7d49c5129e245da0018cac80cace7cb816e4f0d423bbf93901e2b4a01f73",
+    "button-native-fidelity.json": "1532bcf9cc726748ceaab17a5bd0b1eb6a521507b30e2f6e412f5e21c215167b",
     "visual-review.json": "a5ab76dc26b5ac3989e160489b7fd22f92994b80b177a3d7de900c4186bdda1f",
     "button-native.svg": "2f4b8aa018c9d4882df798d9fb222647aeb1296d6294f784fab32af05379ddee",
     "button-repeat.png": "509636ff651f01474b7e82b810c543e60c3cb0025350f0593d2ca547a1eb6926",

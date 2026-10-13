@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "status": "PASS",
+  "registryAdmission": "PASS",
+  "logicalComponentId": "action.button.primary.medium",
+  "variant": "default",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "text": "查询",
+    "width": 60,
+    "height": 32
+  },
+  "registrySha256": "2e78d1acf1e7f06e36badb5716e3e7ba1fe3a5f39138ff8e13ddb7bc529d72cb",
+  "fidelityReportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a",
+  "bindings": {
+    "figma": {
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentReference": "135:15"
+    },
+    "penpot": {
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "componentReference": "4b3abcb2-3ae8-803f-8008-c805b99e5b4e"
+    }
+  },
+  "scopedPageGenerationReady": true,
+  "releaseReady": false
+}

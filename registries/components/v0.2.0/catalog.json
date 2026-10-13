@@ -1,0 +1,31 @@
+{
+  "registryVersion": "0.2.0",
+  "libraryVersion": "0.2.0-default-font-query",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "scope": "production",
+  "components": {
+    "action.button.primary.medium": {
+      "componentType": "Button",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "查询",
+        "width": 60,
+        "height": 32
+      },
+      "fidelity": {
+        "reportId": "action.button.primary.medium.default-font-0.2.2",
+        "reportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a",
+        "componentIrSha256": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290"
+      }
+    }
+  }
+}

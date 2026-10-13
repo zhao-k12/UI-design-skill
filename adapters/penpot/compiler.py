@@ -8,6 +8,7 @@ from validators.ui_ir import ROOT, validate_document
 from adapters.penpot.admission import validate_receipt
 from adapters.penpot.icon_admission import verify_binding
 from adapters.penpot.content import prepare_content
+from adapters.component_bindings import validate_instance_scope
 
 tokens_module = import_module("core.design-rules.tokens")
 components_module = import_module("core.component-resolver.registry")
@@ -96,6 +97,7 @@ def prepare(document, tokens, components, component_bindings, icons, icon_bindin
         elif kind == "ComponentInstance":
             try:
                 choice = components.resolve(node["componentId"], node.get("variant"))
+                validate_instance_scope(node, choice["descriptor"], width, height)
                 reference = component_bindings.resolve(node["componentId"], node.get("variant"))
                 if reference["fileReference"] != file_reference:
                     issue("unsupported_remote_component", node_id, "V0.1 requires an admitted component in this target file")
@@ -106,10 +108,11 @@ def prepare(document, tokens, components, component_bindings, icons, icon_bindin
                             "sourceIrSha256": choice["descriptor"]["fidelity"]["componentIrSha256"],
                             "registryReportSha256": choice["descriptor"]["fidelity"]["reportSha256"]}
                 # Separate Penpot receipt is required: Figma admission cannot certify a Penpot master.
-                try:
-                    validate_receipt(proof, expected, components, choice["descriptor"])
-                except ValueError as exc:
-                    issue("missing_penpot_fidelity", node_id, str(exc))
+                if "contentScope" not in choice["descriptor"]:
+                    try:
+                        validate_receipt(proof, expected, components, choice["descriptor"])
+                    except ValueError as exc:
+                        issue("missing_penpot_fidelity", node_id, str(exc))
                 result["componentReference"] = reference["componentReference"]
                 result["fidelityReportSha256"] = choice["descriptor"]["fidelity"]["reportSha256"]
             except ValueError as exc:

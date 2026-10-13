@@ -111,6 +111,7 @@ def evaluate_platform(platform, source, candidate, target, prior, current, visua
             and visual.get("nativeSvgSha256") == sha(svg_bytes)),
     }
     return {"status": "PASS" if all(checks.values()) else "FAIL", "checks": checks,
+            "fileReference": candidate["fileReference"], "componentId": candidate["componentId"],
             "pixelDiagnostics": metrics, "nativePngSha256": file_sha(native), "nativeSvgSha256": sha(svg_bytes),
             "repeatNativePngSha256": file_sha(repeated)}
 
@@ -162,10 +163,20 @@ def run():
                               "priorAuditSha256": file_sha(paths["dir"] / "audit.json"),
                               "repeatNativeReadSha256": file_sha(paths["repeat"] / "repeat-native-read.json")}
     passed = all(row["status"] == "PASS" for row in outputs.values())
-    return {"scope": "v02-default-font-button-native-fidelity", "gateVersion": "0.2.2",
-            "logicalComponentId": source["logicalComponentId"], "sourceVersion": source["provenance"]["sourceVersion"],
+    return {"scope": "production", "evidenceKind": "v02-default-font-button-native-fidelity",
+            "gateVersion": "0.2.2", "componentType": source["componentType"],
+            "variants": [source["variant"]], "logicalComponentId": source["logicalComponentId"],
+            "sourceVersion": source["provenance"]["sourceVersion"],
             "componentIrSha256": digest(source), "status": "PASS" if passed else "FAIL",
-            "admissionEligible": passed, "platforms": outputs, "evidenceSha256": evidence,
+            "admissionEligible": passed, "issues": [] if passed else ["platform_fidelity_failed"],
+            "candidateEvidenceKind": "native-design-capture",
+            "checks": {"geometryAndStyle": "PASS" if passed else "FAIL",
+                       "screenshot": {"policy": "source-locked-default-font-regions-0.2.2",
+                                      "changedPixelsOutsidePermittedRegions": sum(
+                                          row["pixelDiagnostics"]["nonTextInterior"]["different"]
+                                          + row["pixelDiagnostics"]["cornerEdge"]["outOfPalettePixels"]
+                                          for row in outputs.values())}},
+            "platforms": outputs, "evidenceSha256": evidence,
             "effectiveCjkFontIdentity": "UNVERIFIED", "registryAdmission": "NOT_RUN",
             "readyForPageGeneration": False, "releaseReady": False}
 

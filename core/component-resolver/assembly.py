@@ -22,6 +22,17 @@ PROPS = {'Input': {'placeholder', 'value'}, 'Select': {'placeholder', 'value'},
          'Button': set(), 'Table': {'headers'}, 'Text': {'text'}}
 
 
+def normalize_fixed_native_content(node, scope, depth=0):
+    if (depth != 0 or node['props'] or set(node['slots']) != {'label'}
+            or len(node['slots']['label']) != 1
+            or node['slots']['label'][0].get('type') != 'Text'
+            or node['slots']['label'][0].get('text') != scope['text']):
+        raise ValueError('unsupported_component: content is outside the admitted fixed-native-content scope')
+    result = copy.deepcopy(node)
+    result['slots'] = {}
+    return result
+
+
 def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, registry,
              token_registry, content, *, previous=None, icon_registry=None, source_geometry=None,
              icon_sources=None, allow_text_primitives=False, allow_test_fixtures=False):
@@ -105,6 +116,10 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                     else:
                         nodes.append(payload(child['instance'], row, child_id, depth+1))
                 node['slots'][slot] = nodes
+            scope = descriptor.get('contentScope')
+            if scope:
+                # claim_value already verified the label against source evidence.
+                node = normalize_fixed_native_content(node, scope, depth)
             return node
         boxes = {}
         def walk(node):
@@ -140,6 +155,11 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                          {'instance':node,'instanceBox':{'x':box['x'],'y':box['y'],**{a:node['layout'][a]['value'] for a in ('width','height')}}}) if source_geometry else None
             if placement:
                 node = placement['instance']
+            if row.get('primitive') != 'Text':
+                scope = registry.inspect(row['componentId']).get('contentScope')
+                if scope and (node['layout']['width'] != {'mode': 'fixed', 'value': scope['width']}
+                              or node['layout']['height'] != {'mode': 'fixed', 'value': scope['height']}):
+                    raise ValueError('unsupported_component: geometry is outside the admitted fixed-native-content scope')
             issues = validate_document({'uiIrVersion': '0.1.0', 'documentId': 'assembly-validation',
                                         'pages': [{'id': 'assembly-page', 'type': 'Page', 'children': [node]}]})
             if issues:
