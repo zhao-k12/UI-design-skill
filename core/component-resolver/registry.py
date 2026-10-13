@@ -11,6 +11,55 @@ def digest(value):
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False).encode("utf-8")).hexdigest()
 
 
+TABLE_SCOPE = {
+    "kind": "fixed-native-content", "showHeader": False, "border": False, "stripe": False,
+    "columns": [{"title": title, "key": key, "width": 464} for title, key in
+                (("姓名", "name"), ("状态", "status"), ("角色", "role"))],
+    "data": [
+        {"name": "张三", "status": "启用", "role": "管理员"},
+        {"name": "李四", "status": "启用", "role": "编辑"},
+        {"name": "王五", "status": "停用", "role": "访客"},
+    ],
+    "width": 1392, "height": 144,
+}
+
+
+def valid_default_font_table_report(report):
+    """Validate the exact fixed 3x3 Table native gate."""
+    hash_ok = lambda value: isinstance(value, str) and len(value) == 64 and all(c in "0123456789abcdef" for c in value)
+    if (report.get("gateVersion") != "0.2.5" or report.get("status") != "PASS"
+            or report.get("logicalComponentId") != "data.table.default"
+            or report.get("componentType") != "Table" or report.get("variants") != ["default"]
+            or report.get("contentScopeProposal") != TABLE_SCOPE
+            or report.get("candidateEvidenceKind") != "native-design-capture"
+            or report.get("admissionEligible") is not True or report.get("issues") != []
+            or report.get("registryAdmission") != "NOT_RUN"
+            or report.get("readyForPageGeneration") is not False
+            or report.get("releaseReady") is not False
+            or report.get("effectiveCjkFontIdentity") != "UNVERIFIED"):
+        return False
+    evidence = report.get("evidenceSha256", {})
+    if not isinstance(evidence, dict) or not all(hash_ok(evidence.get(key)) for key in
+            ("sourceScreenshot", "candidateAudit", "visualReview", "policy")):
+        return False
+    rows = report.get("platforms", {})
+    if not isinstance(rows, dict) or set(rows) != {"figma", "penpot"}:
+        return False
+    for row in rows.values():
+        checks, pixels = row.get("checks", {}), row.get("pixelDiagnostics", {})
+        ink = row.get("visibleInkByCharacter", [])
+        if (row.get("status") != "PASS" or not isinstance(checks, dict) or len(checks) != 9
+                or not all(value is True for value in checks.values())
+                or not isinstance(pixels, dict) or pixels.get("nonTextDifferences") != 0
+                or len(ink) != 19 or not all(type(n) is int and n > 10 for n in ink)
+                or not isinstance(row.get("fileReference"), str) or not row["fileReference"]
+                or not isinstance(row.get("componentId"), str) or not row["componentId"]
+                or not all(hash_ok(row.get(key)) for key in
+                           ("nativePngSha256", "nativeSvgSha256", "candidateMetadataSha256"))):
+            return False
+    return True
+
+
 def valid_default_font_button_report(report):
     """Validate the platform-neutral proof shape for the approved V0.2 Button fixture."""
     hex_hash = lambda value: isinstance(value, str) and len(value) == 64 and all(c in "0123456789abcdef" for c in value)
@@ -166,7 +215,7 @@ class ComponentError(ValueError):
 class ComponentRegistry:
     def __init__(self, data, evidence=None, *, allow_test_fixtures=False):
         version = data.get("registryVersion") if isinstance(data, dict) else None
-        schema_name = (f"component-registry-{version}.schema.json" if version in ("0.2.0", "0.2.1", "0.2.2")
+        schema_name = (f"component-registry-{version}.schema.json" if version in ("0.2.0", "0.2.1", "0.2.2", "0.2.3")
                        else "component-registry.schema.json")
         schema = json.loads((Path(__file__).resolve().parents[2] / "schemas" / schema_name).read_text(encoding="utf-8"))
         Draft202012Validator.check_schema(schema)
@@ -198,13 +247,14 @@ class ComponentRegistry:
                 if report.get("scope") != data["scope"] or report.get("sourceVersion") != data["sourceVersion"] or data["sourceVersion"] == "unresolved":
                     raise ComponentError("fidelity_source_mismatch", logical_id, "Evidence scope/source must match the registry")
                 allowed_gates = {"0.2.0": ("0.2.2",), "0.2.1": ("0.2.2", "0.2.3"),
-                                 "0.2.2": ("0.2.2", "0.2.3", "0.2.4")}
+                                 "0.2.2": ("0.2.2", "0.2.3", "0.2.4"),
+                                 "0.2.3": ("0.2.2", "0.2.3", "0.2.4", "0.2.5")}
                 if version in allowed_gates and report.get("gateVersion") not in allowed_gates[version]:
                     raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 active components require the scoped default-font gate")
                 if data["scope"] == "production":
                     if report.get("gateVersion") == "0.2.2":
                         expected_scope = {"kind": "fixed-native-content", "text": "查询", "width": 60, "height": 32}
-                        if (version not in ("0.2.0", "0.2.1", "0.2.2") or entry.get("contentScope") != expected_scope
+                        if (version not in ("0.2.0", "0.2.1", "0.2.2", "0.2.3") or entry.get("contentScope") != expected_scope
                                 or entry["componentType"] != "Button" or entry["variants"] != ["default"]):
                             raise ComponentError("invalid_content_scope", logical_id, "V0.2 Button requires its exact validated content and geometry scope")
                         if not valid_default_font_button_report(report):
@@ -213,7 +263,7 @@ class ComponentRegistry:
                     if report.get("gateVersion") == "0.2.3":
                         expected_scope = {"kind": "fixed-native-content", "placeholder": "请输入姓名",
                                           "value": "", "width": 240, "height": 32}
-                        if (version not in ("0.2.1", "0.2.2") or entry.get("contentScope") != expected_scope
+                        if (version not in ("0.2.1", "0.2.2", "0.2.3") or entry.get("contentScope") != expected_scope
                                 or entry["componentType"] != "Input" or entry["variants"] != ["default"]):
                             raise ComponentError("invalid_content_scope", logical_id, "V0.2 Input requires its exact validated placeholder and geometry scope")
                         if not valid_default_font_input_report(report):
@@ -222,11 +272,19 @@ class ComponentRegistry:
                     if report.get("gateVersion") == "0.2.4":
                         expected_scope = {"kind": "fixed-native-content", "modelValue": "enabled",
                                           "selectedText": "启用", "width": 240, "height": 32}
-                        if (version != "0.2.2" or entry.get("contentScope") != expected_scope
+                        if (version not in ("0.2.2", "0.2.3") or entry.get("contentScope") != expected_scope
                                 or entry["componentType"] != "Select" or entry["variants"] != ["default"]):
                             raise ComponentError("invalid_content_scope", logical_id, "V0.2 Select requires its exact selected value and geometry scope")
                         if not valid_default_font_select_report(report):
                             raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 default-font Select proof is incomplete")
+                        continue
+                    if report.get("gateVersion") == "0.2.5":
+                        if (version != "0.2.3" or entry.get("contentScope") != TABLE_SCOPE
+                                or entry["componentType"] != "Table" or entry["variants"] != ["default"]
+                                or entry["slots"]):
+                            raise ComponentError("invalid_content_scope", logical_id, "V0.2 Table requires its exact fixed rows, columns and geometry")
+                        if not valid_default_font_table_report(report):
+                            raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 default-font Table proof is incomplete")
                         continue
                     checks = report.get("checks", {})
                     capture = report.get("capture", {})

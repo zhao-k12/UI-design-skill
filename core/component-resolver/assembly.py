@@ -22,10 +22,15 @@ PROPS = {'Input': {'placeholder', 'value'}, 'Select': {'placeholder', 'value'},
          'Button': set(), 'Table': {'headers'}, 'Text': {'text'}}
 
 
-def normalize_fixed_native_content(node, scope, depth=0):
+def normalize_fixed_native_content(node, scope, depth=0, *, table_records=None):
     if depth != 0:
         raise ValueError('unsupported_component: nested fixed-native-content is not admitted')
-    if 'text' in scope:
+    if 'data' in scope:
+        valid = (not node['props'] and not node['slots']
+                 and table_records == scope['data'])
+    elif table_records is not None:
+        valid = False
+    elif 'text' in scope:
         valid = (not node['props'] and set(node['slots']) == {'label'}
                  and len(node['slots']['label']) == 1
                  and node['slots']['label'][0].get('type') == 'Text'
@@ -128,7 +133,7 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                         nodes.append(payload(child['instance'], row, child_id, depth+1))
                 node['slots'][slot] = nodes
             scope = descriptor.get('contentScope')
-            if scope:
+            if scope and 'data' not in scope:
                 # claim_value already verified the label against source evidence.
                 node = normalize_fixed_native_content(node, scope, depth)
             return node
@@ -156,6 +161,17 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
             else:
                 if 'textStyle' in entry:raise ValueError('Primitive style cannot override an admitted component')
                 node = payload(spec, row, identifier)
+                scope = registry.inspect(row['componentId']).get('contentScope')
+                if scope and 'data' in scope:
+                    if source_geometry is None or 'tableRecords' not in entry:
+                        raise ValueError('unsupported_component: fixed Table requires admitted source geometry and records')
+                    source = source_geometry.source_component(row['componentId'], row['variant'])
+                    expected = {key: scope[key] for key in ('showHeader', 'border', 'stripe', 'columns', 'data')}
+                    if source['props'] != expected:
+                        raise ValueError('unsupported_component: Table source configuration is outside admitted scope')
+                    records = [{key: claim_value(claim, row) for key, claim in record.items()}
+                               for record in entry['tableRecords']]
+                    node = normalize_fixed_native_content(node, scope, table_records=records)
             box = copy.deepcopy(boxes[row['cellId']])
             node['layout'] = {axis: {'mode': 'fixed', 'value': box[axis]} for axis in ('width', 'height')}
             if 'textSize' in entry:
