@@ -1,0 +1,34 @@
+{
+  "scope": "v02-default-font-input-candidate",
+  "version": "0.2.0",
+  "platform": "figma",
+  "logicalComponentId": "form.input.default.medium",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "c0255251a9e12c62bdf9cde32d94019068a3190381e5ebe1dfa3e7793a6d603c",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "141:2",
+  "componentId": "141:3",
+  "instanceId": "141:7",
+  "status": "CANDIDATE_REVIEW",
+  "checks": {
+    "sameNativeComponentAndInstance": true,
+    "sourceGeometryAndField": true,
+    "placeholderAndDefaultFont": true,
+    "nativeRepeatStable": true,
+    "nonTextPixelsExact": true,
+    "visibleFiveGlyphs": true,
+    "hashBoundVisualReview": true
+  },
+  "evidenceSha256": {
+    "creation.json": "ebfaa911ae90937eb38b826b97e8bb1f636424819b3f5b80bbcefb5969d7b549",
+    "independent-capture.json": "18057db8ac4553c7e94b7667b72aae1c818a2e9d330505a6904869aac3357bd4",
+    "component-native.png": "16f7ccb5f97b9ff6e70a7e0ab1f925b752a4a24861f42d924562b5ddb3df2566",
+    "repeat-native-read.json": "8b1cbfb601ab13ca7275f2e05091f7e4361c42da2d465bf13459d9cdc81c28f2",
+    "repeat-native.png": "16f7ccb5f97b9ff6e70a7e0ab1f925b752a4a24861f42d924562b5ddb3df2566",
+    "candidate-audit.json": "778c5690161f466e3142095eb503dff8fee1891d0c555b78c17e2dfc5a4a6856",
+    "visual-review.json": "1da8e80a4ab705196ad8480d79754b97bfcf23bfc1c353acf581ad043cb06ab5"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

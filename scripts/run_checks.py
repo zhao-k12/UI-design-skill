@@ -28,6 +28,7 @@ CORE_MODULES = (
     'tests.test_button_fidelity_diagnostics_v02',
     'tests.test_default_font_button_gate_v02',
     'tests.test_default_font_button_admission',
+    'tests.test_default_font_input_candidate_audit_v02',
 )
 
 
