@@ -30,8 +30,12 @@ def normalize_fixed_native_content(node, scope, depth=0):
                  and len(node['slots']['label']) == 1
                  and node['slots']['label'][0].get('type') == 'Text'
                  and node['slots']['label'][0].get('text') == scope['text'])
-    else:
+    elif 'placeholder' in scope:
         valid = node['props'] == {'placeholder': scope['placeholder']} and not node['slots']
+    elif 'selectedText' in scope:
+        valid = node['props'] == {'value': scope['selectedText']} and not node['slots']
+    else:
+        raise ValueError('unsupported_component: unknown fixed-native-content scope')
     if not valid:
         raise ValueError('unsupported_component: content is outside the admitted fixed-native-content scope')
     result = copy.deepcopy(node)
