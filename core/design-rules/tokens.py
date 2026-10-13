@@ -32,7 +32,9 @@ class TokenRegistry:
         try:
             serialized = json.dumps(data, ensure_ascii=False, allow_nan=False, sort_keys=True, separators=(",", ":"))
             self._data = deepcopy(data)
-            schema_path = Path(__file__).resolve().parents[2] / "schemas" / "token-registry.schema.json"
+            schema_name = ("token-registry-0.2.0.schema.json" if self._data.get("registryVersion") == "0.2.0"
+                           else "token-registry.schema.json")
+            schema_path = Path(__file__).resolve().parents[2] / "schemas" / schema_name
             schema = json.loads(schema_path.read_text(encoding="utf-8"))
             Draft202012Validator.check_schema(schema)
             issues = [{"code": "invalid_token_registry", "path": pointer(tuple(error.absolute_path)), "message": error.message}

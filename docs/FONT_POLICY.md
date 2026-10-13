@@ -10,4 +10,4 @@
 
 历史 V0.1、组件库 0.2.1/0.3.0 和字体保真证据保持原有版本锁。已准入组件不能直接更换字体继续沿用旧保真 PASS；需要在新版本重新测量、实际生成与验收。历史字体探针的同字节文件路径迁移仅用于复验旧记录，不是新设计的字体选择流程。
 
-TASK-024 的临时字体探针已清理；此后在用户批准的新版本字体改编范围内创建了两端 Button 原生候选。TASK-031 中，锁定的“查询”Button 配置在 Figma/Penpot 的 0.2.2 新保真门均通过，但尚未加入新版本 Registry 或用于正式页面。具体中文回退字体身份未核实，不以原生字体家族名推断。Input、Select、Table 及其他配置仍须单独测量与验收；详见 [默认字体预检](DEFAULT_FONT_PREFLIGHT.md) 和 [TASK-031 验收](../.dev/TASK-031_ACCEPTANCE.md)。
+TASK-024 的临时字体探针已清理。Button、Input、Select、Table 的固定配置已依次通过双平台新保真门，进入独立 V0.2.3 Registry；其他配置仍须逐项测量与验收。TASK-042 新增平台无关的 `platform-default` 页面文字 Token，Adapter 根据各自目标文件观测元数据解析为 Inter Regular 400 或 `sourcesanspro` regular 400；这一步只通过双平台预检，原生页面尚未执行。具体中文回退字体身份未核实，不以原生字体家族名推断。详见 [默认字体预检](DEFAULT_FONT_PREFLIGHT.md)、[TASK-041 验收](../.dev/TASK-041_ACCEPTANCE.md) 和 [TASK-042 验收](../.dev/TASK-042_ACCEPTANCE.md)。

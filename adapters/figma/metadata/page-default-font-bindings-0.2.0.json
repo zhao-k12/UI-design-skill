@@ -1,0 +1,13 @@
+{
+  "kind": "platform-default-font-binding",
+  "version": "0.2.0",
+  "platform": "figma",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "targetMetadataSha256": "49bbc4569aaac299f9316f8dfd7e29dbb2630cbb1f07e914b0fdc8cb3cf36e35",
+  "bindings": {
+    "platform-default:400": {
+      "family": "Inter",
+      "style": "Regular"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "uiIrVersion": "0.1.0",
+  "documentId": "v02-adapter-contract",
+  "pages": [
+    {
+      "id": "page",
+      "type": "Page",
+      "layout": {
+        "width": {
+          "mode": "fixed",
+          "value": 1920
+        },
+        "height": {
+          "mode": "fixed",
+          "value": 1080
+        }
+      },
+      "children": [
+        {
+          "id": "page-title",
+          "type": "Text",
+          "text": "用户管理",
+          "style": {
+            "typographyToken": {
+              "token": "typography.heading"
+            },
+            "colorToken": {
+              "token": "color.text"
+            }
+          },
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 80
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 28
+            }
+          }
+        },
+        {
+          "id": "query",
+          "type": "ComponentInstance",
+          "componentId": "action.button.primary.medium",
+          "variant": "default",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 60
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32
+            }
+          }
+        },
+        {
+          "id": "name",
+          "type": "ComponentInstance",
+          "componentId": "form.input.default.medium",
+          "variant": "default",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 240
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32
+            }
+          }
+        },
+        {
+          "id": "status",
+          "type": "ComponentInstance",
+          "componentId": "form.select.default.medium",
+          "variant": "default",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 240
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 32
+            }
+          }
+        },
+        {
+          "id": "table",
+          "type": "ComponentInstance",
+          "componentId": "data.table.default",
+          "variant": "default",
+          "layout": {
+            "width": {
+              "mode": "fixed",
+              "value": 1392
+            },
+            "height": {
+              "mode": "fixed",
+              "value": 144
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

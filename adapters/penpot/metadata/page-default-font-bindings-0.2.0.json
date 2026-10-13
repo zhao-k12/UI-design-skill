@@ -1,0 +1,16 @@
+{
+  "kind": "platform-default-font-binding",
+  "version": "0.2.0",
+  "platform": "penpot",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "targetMetadataSha256": "14df4d84b5c54390e650f7b716f63107c159041d8ca0922db508fd24f389fe20",
+  "bindings": {
+    "platform-default:400": {
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "family": "sourcesanspro",
+      "weight": 400,
+      "style": "normal"
+    }
+  }
+}

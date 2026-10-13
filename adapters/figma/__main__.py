@@ -16,6 +16,7 @@ def main():
     parser.add_argument("document", type=Path)
     parser.add_argument("--file-reference")
     parser.add_argument("--font-bindings", type=Path)
+    parser.add_argument("--token-library-version", choices=("0.1.0", "0.2.0"), default="0.1.0")
     parser.add_argument("--icon-bindings", type=Path)
     parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0", "0.2.1", "0.2.2", "0.2.3"), default="0.1.0")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "artifacts/task-009")
@@ -41,7 +42,10 @@ def main():
                     stale.append(old)
             for old in stale:
                 old.unlink()
-        tokens = import_module("core.design-rules.tokens").TokenRegistry(load_json(ROOT / "registries/tokens/default.json"))
+        token_path = (ROOT / "registries/tokens/default.json" if args.token_library_version == "0.1.0"
+                      else ROOT / f"registries/tokens/v{args.token_library_version}/default.json")
+        tokens = import_module("core.design-rules.tokens").TokenRegistry(
+            load_json(token_path), expected_version=args.token_library_version)
         suffix = "/v" + args.component_library_version if args.component_library_version != "0.1.0" else ""
         evidence_path = ROOT / f"registries/components{suffix}/fidelity-reports.json"
         components = import_module("core.component-resolver.registry").ComponentRegistry(

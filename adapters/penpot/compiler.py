@@ -9,6 +9,7 @@ from adapters.penpot.admission import validate_receipt
 from adapters.penpot.icon_admission import verify_binding
 from adapters.penpot.content import prepare_content
 from adapters.component_bindings import validate_instance_scope
+from adapters.default_font import binding_for
 
 tokens_module = import_module("core.design-rules.tokens")
 components_module = import_module("core.component-resolver.registry")
@@ -82,11 +83,11 @@ def prepare(document, tokens, components, component_bindings, icons, icon_bindin
                 issue("missing_typography", node_id, "Text must declare a registered typographyToken")
             else:
                 key = f"{typography['fontFamily']}:{typography['fontWeight']}"
-                binding = font_bindings.get(key)
+                binding = binding_for(typography, font_bindings, platform="penpot", file_reference=file_reference)
                 valid_binding = (isinstance(binding, dict) and
                                  set(binding) == {"fontId", "fontVariantId", "family", "weight", "style"} and
                                  all(isinstance(binding.get(k), str) and binding[k] for k in ("fontId", "fontVariantId")) and
-                                 binding.get("family") == typography["fontFamily"] and
+                                 (typography["fontFamily"] == "platform-default" or binding.get("family") == typography["fontFamily"]) and
                                  binding.get("weight") == typography["fontWeight"] and binding.get("style") == "normal")
                 if not valid_binding:
                     issue("missing_font_binding", node_id, "Discover exact native font style: " + key)

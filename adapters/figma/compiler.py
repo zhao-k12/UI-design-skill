@@ -6,6 +6,7 @@ from pathlib import Path
 
 from validators.ui_ir import ROOT, validate_document
 from adapters.component_bindings import validate_instance_scope
+from adapters.default_font import binding_for
 
 tokens_module = import_module("core.design-rules.tokens")
 components_module = import_module("core.component-resolver.registry")
@@ -69,9 +70,10 @@ def prepare(document, tokens, components, component_bindings, icons, icon_bindin
                 issue("missing_typography", node_id, "Text must declare a registered typographyToken")
             else:
                 key = f"{typography['fontFamily']}:{typography['fontWeight']}"
-                binding = font_bindings.get(key)
+                binding = binding_for(typography, font_bindings, platform="figma", file_reference=file_reference)
                 valid_binding = (isinstance(binding, dict) and set(binding) in ({"family", "style"}, {"family", "style", "variationSettings"}) and
-                                 binding.get("family") == typography["fontFamily"] and isinstance(binding.get("style"), str) and bool(binding["style"]))
+                                 (typography["fontFamily"] == "platform-default" or binding.get("family") == typography["fontFamily"])
+                                 and isinstance(binding.get("style"), str) and bool(binding["style"]))
                 if valid_binding and "variationSettings" in binding:
                     valid_binding = binding["variationSettings"] == {"wght": typography["fontWeight"]}
                 if not valid_binding:

@@ -16,6 +16,7 @@ def main():
     parser.add_argument("document", type=Path)
     parser.add_argument("--file-reference")
     parser.add_argument("--font-bindings", type=Path)
+    parser.add_argument("--token-library-version", choices=("0.1.0", "0.2.0"), default="0.1.0")
     parser.add_argument("--icon-bindings", type=Path)
     parser.add_argument("--native-fidelity", type=Path)
     parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0", "0.2.1", "0.2.2", "0.2.3"), default="0.1.0")
@@ -29,7 +30,10 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     read_optional = lambda path: load_json(path) if path else None
     try:
-        tokens = import_module("core.design-rules.tokens").TokenRegistry(load_json(ROOT / "registries/tokens/default.json"))
+        token_path = (ROOT / "registries/tokens/default.json" if args.token_library_version == "0.1.0"
+                      else ROOT / f"registries/tokens/v{args.token_library_version}/default.json")
+        tokens = import_module("core.design-rules.tokens").TokenRegistry(
+            load_json(token_path), expected_version=args.token_library_version)
         suffix = "/v" + args.component_library_version if args.component_library_version != "0.1.0" else ""
         components = import_module("core.component-resolver.registry").ComponentRegistry(
             load_json(ROOT / f"registries/components{suffix}/catalog.json"),
