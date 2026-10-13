@@ -20,6 +20,7 @@ CORE_MODULES = (
     'tests.test_browser_archives',
     'tests.test_font_relocation',
     'tests.test_default_font_profile',
+    'tests.test_font_source_compatibility',
 )
 
 
