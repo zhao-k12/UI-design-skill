@@ -1,0 +1,21 @@
+{
+  "scope": "v02-default-font-button-native-fidelity",
+  "gateVersion": "0.2.2",
+  "platform": "penpot",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "componentId": "4b3abcb2-3ae8-803f-8008-c805b99e5b4e",
+  "instanceId": "4b3abcb2-3ae8-803f-8008-c805b9b03dc8",
+  "fontBinding": "sourcesanspro regular 400",
+  "status": "PASS",
+  "evidenceSha256": {
+    "button-native-fidelity.json": "4c0a7d49c5129e245da0018cac80cace7cb816e4f0d423bbf93901e2b4a01f73",
+    "visual-review.json": "a5ab76dc26b5ac3989e160489b7fd22f92994b80b177a3d7de900c4186bdda1f",
+    "button-native.svg": "2f4b8aa018c9d4882df798d9fb222647aeb1296d6294f784fab32af05379ddee",
+    "button-repeat.png": "509636ff651f01474b7e82b810c543e60c3cb0025350f0593d2ca547a1eb6926",
+    "repeat-native-read.json": "c4d01c92403623ecd7c182d211dec83aa1d093c5cd2b1bdf56feaf1dc4b44923"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

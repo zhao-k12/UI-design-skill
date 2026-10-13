@@ -23,6 +23,13 @@ class ButtonFidelityDiagnosticsTests(unittest.TestCase):
         native.putpixel((10, 16), (0, 0, 0, 255))
         self.assertEqual(inspect(native, self.source, self.span)["nonTextInterior"]["different"], 1)
 
+    def test_straight_edge_change_is_not_a_corner_exemption(self):
+        native = self.source.copy()
+        native.putpixel((30, 0), (255, 255, 255, 255))
+        report = inspect(native, self.source, self.span)
+        self.assertEqual(report["cornerEdge"]["different"], 0)
+        self.assertEqual(report["nonTextInterior"]["different"], 1)
+
     def test_off_palette_corner_is_reported(self):
         native = self.source.copy()
         native.putpixel((0, 0), (255, 0, 0, 255))

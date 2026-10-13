@@ -1,0 +1,21 @@
+{
+  "scope": "v02-default-font-button-native-fidelity",
+  "gateVersion": "0.2.2",
+  "platform": "figma",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "componentId": "135:15",
+  "instanceId": "135:18",
+  "fontBinding": "Inter Regular 400",
+  "status": "PASS",
+  "evidenceSha256": {
+    "button-native-fidelity.json": "4c0a7d49c5129e245da0018cac80cace7cb816e4f0d423bbf93901e2b4a01f73",
+    "visual-review.json": "a5ab76dc26b5ac3989e160489b7fd22f92994b80b177a3d7de900c4186bdda1f",
+    "button-outline.svg": "d5b5b32566f2c22352204d356b4ad61424df436224e940bbadee5ca79ed4ff07",
+    "button-repeat.png": "76f633f6616a8227a53f4c10635eb1f33146bc15becdf5f05b792940b74cd1be",
+    "repeat-native-read.json": "d970108d1dfc46775daee92758b59162d417d9d84e7ee658be7e8ebfa89991ab"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

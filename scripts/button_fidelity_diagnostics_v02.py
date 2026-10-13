@@ -34,7 +34,9 @@ def inspect(native, source, span):
     source = source.convert("RGB")
     x0, y0 = int(span["x"] - 2), int(span["y"] - 2)
     x1, y1 = int(span["x"] + span["width"] + 2), int(span["y"] + span["height"] + 2)
-    result = {"textZone": {"different": 0, "brightInkPixelsByHalf": [0, 0], "inkBoundsByHalf": []},
+    result = {"textZone": {"different": 0, "sourceBrightInkPixelsByHalf": [0, 0],
+                           "brightInkPixelsByHalf": [0, 0], "brightInkRetentionByHalf": [],
+                           "inkBoundsByHalf": [], "inkFillFractionByHalf": []},
               "cornerEdge": {"different": 0, "maxPaletteResidual": 0, "maxChannelDelta": 0,
                              "outOfPalettePixels": 0},
               "nonTextInterior": {"different": 0}}
@@ -46,12 +48,14 @@ def inspect(native, source, span):
             if x0 <= x < x1 and y0 <= y < y1:
                 half = 0 if x < midpoint else 1
                 # The glyph is white over locked blue. Count sufficiently bright antialias pixels.
+                if a[0] >= 180 and a[1] >= 200 and a[2] >= 240:
+                    result["textZone"]["sourceBrightInkPixelsByHalf"][half] += 1
                 if b[0] >= 180 and b[1] >= 200 and b[2] >= 240:
                     result["textZone"]["brightInkPixelsByHalf"][half] += 1
                     ink[half].append((x, y))
                 if a != b:
                     result["textZone"]["different"] += 1
-            elif x < 5 or x >= native.width-5 or y < 5 or y >= native.height-5:
+            elif (x < 5 or x >= native.width-5) and (y < 5 or y >= native.height-5):
                 if a != b:
                     edge = result["cornerEdge"]
                     edge["different"] += 1
@@ -67,6 +71,14 @@ def inspect(native, source, span):
             {"x": min(x for x, _ in pixels), "y": min(y for _, y in pixels),
              "width": max(x for x, _ in pixels) - min(x for x, _ in pixels) + 1,
              "height": max(y for _, y in pixels) - min(y for _, y in pixels) + 1} if pixels else None)
+    result["textZone"]["brightInkRetentionByHalf"] = [
+        round(native_count / source_count, 3) if source_count else None
+        for source_count, native_count in zip(result["textZone"]["sourceBrightInkPixelsByHalf"],
+                                              result["textZone"]["brightInkPixelsByHalf"])]
+    result["textZone"]["inkFillFractionByHalf"] = [
+        round(count / (box["width"] * box["height"]), 3) if box else None
+        for count, box in zip(result["textZone"]["brightInkPixelsByHalf"],
+                              result["textZone"]["inkBoundsByHalf"])]
     return result
 
 
