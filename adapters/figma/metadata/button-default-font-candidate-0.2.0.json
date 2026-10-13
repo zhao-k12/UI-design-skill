@@ -1,0 +1,27 @@
+{
+  "scope": "v02-button-default-font-candidate",
+  "version": "0.2.0",
+  "platform": "figma",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "135:14",
+  "componentId": "135:15",
+  "instanceId": "135:18",
+  "variableCollectionId": "VariableCollectionId:135:2",
+  "fontBinding": {
+    "family": "Inter",
+    "style": "Regular",
+    "weight": 400
+  },
+  "sourceLogicalComponentId": "action.button.primary.medium",
+  "status": "CANDIDATE_REVIEW",
+  "evidenceSha256": {
+    "creation.json": "2246d6a76621bdeef5a9c80406d37f806807197c1c99defa5901fafdc3d81ed7",
+    "independent-capture.json": "ed5dc5b68d69980c82183cdf7001b83258375f4f115bcf81021326d4639a29ac",
+    "component-export.json": "aa9a4fc1548dc7260fe28302088c37e6277686d69d48d4a8dc9d0161b181b5c2",
+    "audit.json": "22b2b1585d262608dc079d3c7ff1caae725ad20ea47f4dfdd006f381f17f1d06",
+    "component-native.png": "76f633f6616a8227a53f4c10635eb1f33146bc15becdf5f05b792940b74cd1be"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

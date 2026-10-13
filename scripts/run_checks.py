@@ -22,6 +22,7 @@ CORE_MODULES = (
     'tests.test_default_font_profile',
     'tests.test_font_source_compatibility',
     'tests.test_font_adaptation_manifest',
+    'tests.test_button_candidate_audit_v02',
 )
 
 
