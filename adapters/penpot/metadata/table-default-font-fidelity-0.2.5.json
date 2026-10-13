@@ -1,0 +1,63 @@
+{
+  "scope": "v02-default-font-table-native-fidelity",
+  "gateVersion": "0.2.5",
+  "platform": "penpot",
+  "logicalComponentId": "data.table.default",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "componentId": "4b3abcb2-3ae8-803f-8008-c85957bd3a28",
+  "instanceId": "4b3abcb2-3ae8-803f-8008-c8595889d2c7",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "showHeader": false,
+    "border": false,
+    "stripe": false,
+    "columns": [
+      {
+        "title": "姓名",
+        "key": "name",
+        "width": 464
+      },
+      {
+        "title": "状态",
+        "key": "status",
+        "width": 464
+      },
+      {
+        "title": "角色",
+        "key": "role",
+        "width": 464
+      }
+    ],
+    "data": [
+      {
+        "name": "张三",
+        "status": "启用",
+        "role": "管理员"
+      },
+      {
+        "name": "李四",
+        "status": "启用",
+        "role": "编辑"
+      },
+      {
+        "name": "王五",
+        "status": "停用",
+        "role": "访客"
+      }
+    ],
+    "width": 1392,
+    "height": 144
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "table-native-fidelity.json": "ec0e5ec3197eb1f8474bc5ac8650b20101ce72d4f5f98c95dc72ab2ce9cc255a",
+    "candidate-metadata.json": "141f9275f3234fbd0bdff5b15950babf74cc38dc4bebb9ddc47bd00eff317d8d",
+    "native-svg": "12bd1c032ed0b35286071153bade1f4c109634fb0e691f1335ed983a62110fd4",
+    "native-png": "42526d6ff0f7649e6082e8300d55f3e4aa05176362a40b3f477f04066905991a",
+    "visual-review.json": "a22e6af1cf64372b96749b838ddfb0ddf5873e967a72f021284404876ef290f5"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

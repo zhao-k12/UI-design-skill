@@ -1,0 +1,63 @@
+{
+  "scope": "v02-default-font-table-native-fidelity",
+  "gateVersion": "0.2.5",
+  "platform": "figma",
+  "logicalComponentId": "data.table.default",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "componentId": "157:3",
+  "instanceId": "157:29",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "showHeader": false,
+    "border": false,
+    "stripe": false,
+    "columns": [
+      {
+        "title": "姓名",
+        "key": "name",
+        "width": 464
+      },
+      {
+        "title": "状态",
+        "key": "status",
+        "width": 464
+      },
+      {
+        "title": "角色",
+        "key": "role",
+        "width": 464
+      }
+    ],
+    "data": [
+      {
+        "name": "张三",
+        "status": "启用",
+        "role": "管理员"
+      },
+      {
+        "name": "李四",
+        "status": "启用",
+        "role": "编辑"
+      },
+      {
+        "name": "王五",
+        "status": "停用",
+        "role": "访客"
+      }
+    ],
+    "width": 1392,
+    "height": 144
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "table-native-fidelity.json": "ec0e5ec3197eb1f8474bc5ac8650b20101ce72d4f5f98c95dc72ab2ce9cc255a",
+    "candidate-metadata.json": "d32c33dbb5d114bf4b55315ed9443cea0ba805c6f3b8eca33190ddf3a204fc60",
+    "native-svg": "e6a77c769553154ceebe9d93c961690e8904ccb593366493e09bb21f4f9da3bf",
+    "native-png": "a467f88343aa5da542758058bdff0eebc2ddbb3a8dcf777a062644c88b9029ea",
+    "visual-review.json": "a22e6af1cf64372b96749b838ddfb0ddf5873e967a72f021284404876ef290f5"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
