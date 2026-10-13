@@ -24,6 +24,7 @@ CORE_MODULES = (
     'tests.test_font_adaptation_manifest',
     'tests.test_button_candidate_audit_v02',
     'tests.test_penpot_button_candidate_audit_v02',
+    'tests.test_font_adaptation_manifest_v021',
 )
 
 
