@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "task052_independent_native_readback",
+  "uiIrSha256": "512b2f737222ac5e0209cf88a55ea4cd329e429eb339247e3990cd2ec84aa7b1",
+  "figmaPageId": "172:2",
+  "penpotPageId": "f1153c87-a7fc-80d8-8008-c997a361507f",
+  "counts": {
+    "figma": {
+      "plannedTextNodes": 12,
+      "nativeTextNodes": 24,
+      "nativeInstances": 6,
+      "nativePngSha256": "913aed715c5000fbe73a50d800b13fad0eecdefc3ac0633d14c56397e49e98dd"
+    },
+    "penpot": {
+      "plannedTextNodes": 12,
+      "nativeTextNodes": 24,
+      "nativeInstances": 6,
+      "nativePngSha256": "640f49aa12bdb0633928dc4043751bf94ef0e7de6d4e0b8ae231c64b5c4ceefa"
+    }
+  },
+  "contentAreaMeanRgbAbsDiff": [
+    0.684,
+    0.65,
+    0.597
+  ],
+  "issues": [],
+  "visualReview": "SEPARATE_MANUAL_CHECK",
+  "releaseReady": false
+}

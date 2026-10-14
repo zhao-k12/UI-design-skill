@@ -129,7 +129,6 @@ async function executePenpotAdapter(api, payload) {
     await api.openPage(page);
     const right = Math.max(80, ...page.root.children.map(n => n.x + n.width + 80));
     root = await build(payload.page, page.root); root.x = right; root.y = 80;
-    if (typeof api.waitForLayoutUpdate === 'function') await api.waitForLayoutUpdate();
   } catch (error) {
     return {status:'FAIL', nativeExecution:'PARTIAL', finalAcceptance:'NOT_RUN', issues:[{code:'native_write_failed',detail:String(error)}],
       scope:'penpot_partial_translation',fileReference:payload.fileReference,adapterVersion:payload.adapterVersion,

@@ -76,6 +76,18 @@ test('container translation sets native flex and literal colors, without claimin
   assert.equal(grid.children[0].children[0].width,42); assert.equal(result.helperNodeIds.length,2);
 });
 
+test('completed writes do not depend on Penpot layout waiter', async () => {
+  const api = host(), p = payload(); let calls = 0;
+  api.createBoard = () => ({id:'test-board',width:100,height:10,children:[],layoutChild:{},
+    addFlexLayout() { return this.flex = {}; }, resize(w,h) { this.width=w; this.height=h; },
+    appendChild(n) { this.children.push(n); n.parent=this; }});
+  api.createPage = () => ({id:'test-only-page',root:{children:[],appendChild(n) { this.children.push(n); n.parent=this; }}});
+  api.waitForLayoutUpdate = async () => { calls++; throw new Error('waitForLayoutUpdate timeout'); };
+  const result = await execute(api,p);
+  assert.equal(result.status,'EXECUTED'); assert.equal(result.finalAcceptance,'NOT_RUN');
+  assert.equal(calls,0); assert.equal(result.createdNodeIds.length,2);
+});
+
 const defaults=vm.runInNewContext(readFileSync(new URL('../adapters/penpot/page_recovery.js',import.meta.url),'utf8')+';restorePenpotPageDefaults');
 const resetCopies=vm.runInNewContext(readFileSync(new URL('../adapters/penpot/page_recovery.js',import.meta.url),'utf8')+';resetPenpotIconCopies');
 test('linked icon reset validates all references before resetting any copy',async()=>{
