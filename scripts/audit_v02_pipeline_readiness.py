@@ -77,10 +77,12 @@ def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT, geometry_path=None):
         block("canvas_min_height_unresolved", "The V0.2 list Page does not resolve to at least 1080px.",
               "Version the Page height rule to guarantee at least 1080px.")
 
-    cli = files["runnerCli"].read_text(encoding="utf-8")
-    old_loads = ("read('registries/tokens/default.json')", "read('registries/components/catalog.json')",
-                 "metadata/component-bindings.json", "metadata/font-bindings.json")
-    if all(marker in cli for marker in old_loads):
+    runner_cli = importlib.import_module("scripts.run_pipeline")
+    selected = runner_cli.profile_resources("v0.2")
+    if (selected.get("tokens") != "registries/tokens/v0.2.2/default.json"
+            or selected.get("components") != "registries/components/v0.2.3/catalog.json"
+            or selected.get("componentBindings") != "component-bindings-0.2.3.json"
+            or selected.get("fontBindings") != "page-default-font-bindings-0.2.0.json"):
         block("pipeline_cli_v01_pinned", "The production CLI loads V0.1 registries and adapter bindings unconditionally.",
               "Add an explicit V0.2 version route with an independent input and checkpoint lock.")
 
