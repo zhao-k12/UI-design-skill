@@ -256,6 +256,10 @@ class LayoutEngine:
                     dimensions[main] = widest + totals[main]
                 if dimensions[cross] is None:
                     dimensions[cross] = (cross_cursor - gap if lines else padding[cross]) + padding[cross + 2]
+            if node["type"] == "Page" and mode(node, "height") == "hug":
+                floor = node.get("constraints", {}).get("minHeight")
+                if floor is not None:
+                    dimensions[1] = max(dimensions[1], scalar(floor, (*path, "constraints", "minHeight")))
             result = {"id": node["id"], "type": node["type"], "box": {"x": 0.0, "y": 0.0, "width": dimensions[0], "height": dimensions[1]}, "children": children}
             if "role" in node:
                 result["role"] = node["role"]

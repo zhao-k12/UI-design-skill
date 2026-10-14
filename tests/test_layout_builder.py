@@ -37,6 +37,15 @@ class LayoutBuilderTests(unittest.TestCase):
         return generate(self.analysis, self.page, BASE, self.review, self.plan, self.registry,
                         allow_test_fixtures=kwargs.get('allow', True))
 
+    def test_v022_builder_selects_static_grow_policy(self):
+        self.registry = tokens.TokenRegistry(load_json(ROOT / 'registries/tokens/v0.2.2/default.json'))
+        self.plan['tokenRegistrySha256'] = self.registry.fingerprint
+        tree, report = self.run_plan()
+        self.assertEqual(report['status'], 'PASS', report)
+        self.assertEqual(tree['page']['constraints']['minHeight'], {'token': 'size.page-min-height'})
+        self.assertEqual(report['engineReport']['skeleton']['box']['width'], 1920)
+        self.assertGreaterEqual(report['engineReport']['skeleton']['box']['height'], 1080)
+
     def test_standard_patterns_with_complete_provenance(self):
         before = copy.deepcopy((self.analysis, self.page, self.plan))
         tree, report = self.run_plan()

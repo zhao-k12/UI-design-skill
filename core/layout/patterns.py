@@ -10,9 +10,11 @@ PATTERNS = {
 }
 
 
-def instantiate(pattern: str, regions: dict[str, list[dict]]) -> dict:
+def instantiate(pattern: str, regions: dict[str, list[dict]], *, canvas_policy: str = "0.1.0") -> dict:
     if pattern not in PATTERNS:
         raise ValueError(f"unsupported_pattern: {pattern}")
+    if canvas_policy not in ("0.1.0", "0.2.0-static-grow"):
+        raise ValueError(f"unsupported_canvas_policy: {canvas_policy}")
     expected = set(PATTERNS[pattern])
     if set(regions) != expected or any(not isinstance(value, list) for value in regions.values()):
         raise ValueError(f"pattern_regions_mismatch: expected {', '.join(PATTERNS[pattern])}")
@@ -31,8 +33,11 @@ def instantiate(pattern: str, regions: dict[str, list[dict]]) -> dict:
     if pattern == "sidebar-content":
         sections[0]["layout"]["width"] = fixed("size.sidebar")
         sections = [{"id": "pattern.shell", "type": "HorizontalStack", "layout": {**fill_hug, "gap": token("spacing.md")}, "children": sections}]
-    return {"layoutTreeVersion": "0.1.0", "pattern": pattern, "page": {
+    page = {
         "id": "pattern.page", "type": "Page",
         "layout": {"width": fixed("size.page"), "height": size("hug"), "direction": "vertical", "gap": token("spacing.section"), "padding": {edge: token("spacing.page") for edge in ("top", "right", "bottom", "left")}},
         "children": sections,
-    }}
+    }
+    if canvas_policy == "0.2.0-static-grow":
+        page["constraints"] = {"minHeight": token("size.page-min-height")}
+    return {"layoutTreeVersion": "0.1.0", "pattern": pattern, "page": page}
