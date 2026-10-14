@@ -1,0 +1,173 @@
+{
+  "registryVersion": "0.2.1",
+  "name": "v0.2.1-platform-default-1920-canvas",
+  "provenance": {
+    "kind": "project-baseline",
+    "description": "V0.2.1 page canvas is 1920px wide with platform-default semantic typography; V0.2.0 and V0.1 remain frozen."
+  },
+  "tokens": {
+    "color.primary": {
+      "type": "color",
+      "value": "#2563eb"
+    },
+    "color.page": {
+      "type": "color",
+      "value": "#f4f5f7"
+    },
+    "color.surface": {
+      "type": "color",
+      "value": "#ffffff"
+    },
+    "color.text": {
+      "type": "color",
+      "value": "#20252b"
+    },
+    "color.border": {
+      "type": "color",
+      "value": "#d8dee6"
+    },
+    "color.shadow": {
+      "type": "color",
+      "value": "#0000001a"
+    },
+    "spacing.none": {
+      "type": "spacing",
+      "value": 0
+    },
+    "spacing.xs": {
+      "type": "spacing",
+      "value": 4
+    },
+    "spacing.sm": {
+      "type": "spacing",
+      "value": 8
+    },
+    "spacing.md": {
+      "type": "spacing",
+      "value": 16
+    },
+    "spacing.lg": {
+      "type": "spacing",
+      "value": 24
+    },
+    "spacing.page": {
+      "type": "spacing",
+      "value": {
+        "token": "spacing.lg"
+      },
+      "role": "page-padding"
+    },
+    "spacing.section": {
+      "type": "spacing",
+      "value": {
+        "token": "spacing.lg"
+      },
+      "role": "section-gap"
+    },
+    "radius.sm": {
+      "type": "radius",
+      "value": 4
+    },
+    "radius.md": {
+      "type": "radius",
+      "value": 8
+    },
+    "size.page": {
+      "type": "size",
+      "value": 1920
+    },
+    "size.icon": {
+      "type": "size",
+      "value": 16
+    },
+    "size.heading": {
+      "type": "size",
+      "value": 20
+    },
+    "size.heading-line": {
+      "type": "size",
+      "value": 28
+    },
+    "size.body": {
+      "type": "size",
+      "value": 14
+    },
+    "size.body-line": {
+      "type": "size",
+      "value": 22
+    },
+    "typography.heading": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "platform-default",
+        "fontSize": {
+          "token": "size.heading"
+        },
+        "fontWeight": 400,
+        "lineHeight": {
+          "token": "size.heading-line"
+        },
+        "letterSpacing": 0
+      }
+    },
+    "typography.body": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "platform-default",
+        "fontSize": {
+          "token": "size.body"
+        },
+        "fontWeight": 400,
+        "lineHeight": {
+          "token": "size.body-line"
+        },
+        "letterSpacing": 0
+      }
+    },
+    "border.default": {
+      "type": "border",
+      "value": {
+        "color": {
+          "token": "color.border"
+        },
+        "width": 1,
+        "style": "solid"
+      }
+    },
+    "shadow.card": {
+      "type": "shadow",
+      "value": [
+        {
+          "offsetX": 0,
+          "offsetY": 2,
+          "blur": {
+            "token": "spacing.sm"
+          },
+          "spread": 0,
+          "color": {
+            "token": "color.shadow"
+          }
+        }
+      ]
+    },
+    "spacing.hairline": {
+      "type": "spacing",
+      "value": 1,
+      "description": "Declared thin stroke width scale"
+    },
+    "radius.none": {
+      "type": "radius",
+      "value": 0
+    },
+    "size.field-min": {
+      "type": "size",
+      "value": 160,
+      "description": "Project policy minimum width for a layout field cell, not official component metrics"
+    },
+    "size.sidebar": {
+      "type": "size",
+      "value": 240,
+      "description": "Initial sidebar pattern width"
+    }
+  }
+}

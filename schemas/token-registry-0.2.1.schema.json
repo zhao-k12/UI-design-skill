@@ -1,0 +1,552 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ui-design-skill:token-registry:0.2.0",
+  "title": "Design Token Registry V0.2",
+  "type": "object",
+  "properties": {
+    "registryVersion": {
+      "const": "0.2.1"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "const": "project-baseline"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "tokens": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^(color|typography|spacing|radius|border|shadow|size)\\.[a-zA-Z0-9_.-]+$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "required": [
+    "registryVersion",
+    "name",
+    "provenance",
+    "tokens"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "token": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "pattern": "^(color|typography|spacing|radius|border|shadow|size)\\.[a-zA-Z0-9_.-]+$"
+        }
+      },
+      "required": [
+        "token"
+      ],
+      "additionalProperties": false
+    },
+    "colorValue": {
+      "type": "string",
+      "pattern": "^#(?:[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$"
+    },
+    "entry": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "color",
+            "spacing",
+            "radius",
+            "size",
+            "typography",
+            "border",
+            "shadow"
+          ]
+        },
+        "value": {},
+        "description": {
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "page-padding",
+            "section-gap"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "value"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "color"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^#(?:[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "pattern": "^color\\.[a-zA-Z0-9_.-]+$"
+                      }
+                    },
+                    "required": [
+                      "token"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "spacing"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "pattern": "^spacing\\.[a-zA-Z0-9_.-]+$"
+                      }
+                    },
+                    "required": [
+                      "token"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "radius"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "pattern": "^radius\\.[a-zA-Z0-9_.-]+$"
+                      }
+                    },
+                    "required": [
+                      "token"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "size"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "pattern": "^size\\.[a-zA-Z0-9_.-]+$"
+                      }
+                    },
+                    "required": [
+                      "token"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "typography"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "fontFamily": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "fontSize": {
+                        "oneOf": [
+                          {
+                            "type": "number",
+                            "exclusiveMinimum": 0
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "token": {
+                                "type": "string",
+                                "pattern": "^size\\.[a-zA-Z0-9_.-]+$"
+                              }
+                            },
+                            "required": [
+                              "token"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      },
+                      "fontWeight": {
+                        "type": "integer",
+                        "minimum": 100,
+                        "maximum": 900,
+                        "multipleOf": 100
+                      },
+                      "lineHeight": {
+                        "oneOf": [
+                          {
+                            "type": "number",
+                            "exclusiveMinimum": 0
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "token": {
+                                "type": "string",
+                                "pattern": "^size\\.[a-zA-Z0-9_.-]+$"
+                              }
+                            },
+                            "required": [
+                              "token"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      },
+                      "letterSpacing": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "fontFamily",
+                      "fontSize",
+                      "fontWeight",
+                      "lineHeight",
+                      "letterSpacing"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "pattern": "^typography\\.[a-zA-Z0-9_.-]+$"
+                      }
+                    },
+                    "required": [
+                      "token"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "border"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "color": {
+                        "oneOf": [
+                          {
+                            "$ref": "#/$defs/colorValue"
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "token": {
+                                "type": "string",
+                                "pattern": "^color\\.[a-zA-Z0-9_.-]+$"
+                              }
+                            },
+                            "required": [
+                              "token"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      },
+                      "width": {
+                        "oneOf": [
+                          {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "token": {
+                                "type": "string",
+                                "pattern": "^spacing\\.[a-zA-Z0-9_.-]+$"
+                              }
+                            },
+                            "required": [
+                              "token"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      },
+                      "style": {
+                        "enum": [
+                          "solid",
+                          "dashed",
+                          "dotted"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "color",
+                      "width",
+                      "style"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "pattern": "^border\\.[a-zA-Z0-9_.-]+$"
+                      }
+                    },
+                    "required": [
+                      "token"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "shadow"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "offsetX": {
+                          "type": "number"
+                        },
+                        "offsetY": {
+                          "type": "number"
+                        },
+                        "blur": {
+                          "oneOf": [
+                            {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "token": {
+                                  "type": "string",
+                                  "pattern": "^spacing\\.[a-zA-Z0-9_.-]+$"
+                                }
+                              },
+                              "required": [
+                                "token"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        },
+                        "spread": {
+                          "type": "number"
+                        },
+                        "color": {
+                          "oneOf": [
+                            {
+                              "$ref": "#/$defs/colorValue"
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "token": {
+                                  "type": "string",
+                                  "pattern": "^color\\.[a-zA-Z0-9_.-]+$"
+                                }
+                              },
+                              "required": [
+                                "token"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "offsetX",
+                        "offsetY",
+                        "blur",
+                        "spread",
+                        "color"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "pattern": "^shadow\\.[a-zA-Z0-9_.-]+$"
+                      }
+                    },
+                    "required": [
+                      "token"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "dependentSchemas": {
+        "role": {
+          "properties": {
+            "type": {
+              "const": "spacing"
+            }
+          }
+        }
+      }
+    }
+  },
+  "": "urn:ui-design-skill:token-registry:0.2.1"
+}

@@ -15,7 +15,7 @@ class V02PipelineReadinessTests(unittest.TestCase):
         self.assertEqual(report["status"], "BLOCKED")
         self.assertEqual([item["code"] for item in report["blockers"]], [
             "legacy_input_lock", "source_geometry_mismatch", "penpot_icon_target_mismatch",
-            "canvas_width_policy_unresolved", "pipeline_cli_v01_pinned", "text_measurements_need_rebind"])
+            "canvas_min_height_unresolved", "pipeline_cli_v01_pinned", "text_measurements_need_rebind"])
         self.assertEqual(report["nativeExecution"], "NOT_RUN")
         self.assertEqual(report, module.audit())
 

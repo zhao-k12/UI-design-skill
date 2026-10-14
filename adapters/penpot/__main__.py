@@ -16,7 +16,7 @@ def main():
     parser.add_argument("document", type=Path)
     parser.add_argument("--file-reference")
     parser.add_argument("--font-bindings", type=Path)
-    parser.add_argument("--token-library-version", choices=("0.1.0", "0.2.0"), default="0.1.0")
+    parser.add_argument("--token-library-version", choices=("0.1.0", "0.2.0", "0.2.1"), default="0.1.0")
     parser.add_argument("--icon-bindings", type=Path)
     parser.add_argument("--native-fidelity", type=Path)
     parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0", "0.2.1", "0.2.2", "0.2.3"), default="0.1.0")

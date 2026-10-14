@@ -30,7 +30,7 @@ def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT):
         "content": source / "content.json",
         "catalog": ROOT / "registries/components/v0.2.3/catalog.json",
         "fidelity": ROOT / "registries/components/v0.2.3/fidelity-reports.json",
-        "tokens": ROOT / "registries/tokens/v0.2.0/default.json",
+        "tokens": ROOT / "registries/tokens/v0.2.1/default.json",
         "iconBindings": ROOT / "adapters/penpot/metadata/icon-bindings.json",
         "runnerCli": ROOT / "scripts/run_pipeline.py",
     }
@@ -67,6 +67,11 @@ def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT):
     if page_width != 1920:
         block("canvas_width_policy_unresolved", f"V0.2 size.page={page_width}; target canvas=1920.",
               "Version the Canvas/Layout policy and test the 1920-wide deterministic layout.")
+    pattern = importlib.import_module("core.layout.patterns").instantiate(
+        "list-page", {name: [] for name in ("header", "query", "toolbar", "table", "pagination")})
+    if pattern["page"]["layout"]["height"]["mode"] == "hug":
+        block("canvas_min_height_unresolved", "The list Page hugs content and has no 1080px minimum height.",
+              "Version the Page height rule to guarantee at least 1080px; define long-content behavior separately.")
 
     cli = files["runnerCli"].read_text(encoding="utf-8")
     old_loads = ("read('registries/tokens/default.json')", "read('registries/components/catalog.json')",
