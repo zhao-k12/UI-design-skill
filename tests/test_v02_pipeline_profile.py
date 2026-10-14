@@ -17,12 +17,14 @@ class V02PipelineProfileTests(unittest.TestCase):
         self.assertNotEqual(old['components'], new['components'])
         self.assertNotEqual(old['componentBindings'], new['componentBindings'])
         self.assertNotEqual(old['fontBindings'], new['fontBindings'])
+        self.assertNotEqual(old['penpotIconBindings'], new['penpotIconBindings'])
         for profile in (old, new):
             for key in ('tokens', 'components', 'fidelity'):
                 self.assertTrue((ROOT / profile[key]).is_file())
             for platform in ('figma', 'penpot'):
                 for key in ('componentBindings', 'fontBindings'):
                     self.assertTrue((ROOT / 'adapters' / platform / 'metadata' / profile[key]).is_file())
+            self.assertTrue((ROOT / 'adapters/penpot/metadata' / profile['penpotIconBindings']).is_file())
         self.assertEqual(load_json(ROOT / new['tokens'])['registryVersion'], '0.2.2')
         self.assertEqual(load_json(ROOT / new['components'])['registryVersion'], '0.2.3')
 

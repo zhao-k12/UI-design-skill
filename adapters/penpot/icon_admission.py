@@ -37,6 +37,9 @@ def build_gate(base=BASE):
 
 
 def verify_binding(icon_id,binding,file_reference,registry_sha):
+    if binding.get('fidelityReportPath')=='adapters/penpot/metadata/icons-native-v02/gate-report.json':
+        from adapters.penpot.icon_admission_v02 import verify_binding as verify_v02
+        return verify_v02(icon_id,binding,file_reference,registry_sha)
     if binding.get('fidelityReportPath')!='adapters/penpot/metadata/icons-native-v1/gate-report.json' or binding.get('fidelityReportSha256')!=sha(REPORT):raise ValueError('missing_or_unbound_penpot_icon_fidelity')
     report=json.loads(REPORT.read_bytes())
     if report!=build_gate():raise ValueError('penpot_icon_fidelity_proof_changed')

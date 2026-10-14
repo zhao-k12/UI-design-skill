@@ -1,0 +1,23 @@
+{
+  "metadataVersion": "0.1.0",
+  "platform": "penpot",
+  "scope": "production",
+  "registrySha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+  "sourceVersion": "remixicon@4.9.1+39eab8b69cadaa47e1bed6a41777b1cd22227c74",
+  "bindings": {
+    "remix.settings-3-line": {
+      "svgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1",
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "componentReference": "11686d7e-2c06-8039-8008-c982c49f20aa",
+      "fidelityReportPath": "adapters/penpot/metadata/icons-native-v02/gate-report.json",
+      "fidelityReportSha256": "becefcc688a22103579ebb69a7c3c444925f2556d460d7b12e79a67a3cd45333"
+    },
+    "remix.download-line": {
+      "svgSha256": "ad83ac7dc9d4c6af651a53068e928d82f9402cfd05a924742388549846032f43",
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "componentReference": "11686d7e-2c06-8039-8008-c982c4af394f",
+      "fidelityReportPath": "adapters/penpot/metadata/icons-native-v02/gate-report.json",
+      "fidelityReportSha256": "becefcc688a22103579ebb69a7c3c444925f2556d460d7b12e79a67a3cd45333"
+    }
+  }
+}

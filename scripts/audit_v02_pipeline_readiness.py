@@ -31,7 +31,7 @@ def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT, geometry_path=None):
         "catalog": ROOT / "registries/components/v0.2.3/catalog.json",
         "fidelity": ROOT / "registries/components/v0.2.3/fidelity-reports.json",
         "tokens": ROOT / "registries/tokens/v0.2.2/default.json",
-        "iconBindings": ROOT / "adapters/penpot/metadata/icon-bindings.json",
+        "iconBindings": ROOT / "adapters/penpot/metadata/icon-bindings-0.2.0.json",
         "runnerCli": ROOT / "scripts/run_pipeline.py",
     }
     versions, geometry, content = (load(files[k]) for k in ("versions", "geometry", "content"))
@@ -58,7 +58,19 @@ def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT, geometry_path=None):
     declared_icons = sorted({n["iconId"] for item in content["items"]
                              for slot in item.get("cellSlots", {}).values()
                              for n in slot if n["type"] == "IconInstance"})
-    stale_icons = [i for i in declared_icons if i not in icons or icons[i]["fileReference"] != penpot_file]
+    icon_registry = importlib.import_module("core.icon-resolver.registry").IconRegistry(
+        importlib.import_module("icon-manager.remix-sync.manager").current())
+    verify_icon = importlib.import_module("adapters.penpot.icon_admission").verify_binding
+    stale_icons = []
+    for icon_id in declared_icons:
+        binding = icons.get(icon_id)
+        if binding is None or binding["fileReference"] != penpot_file:
+            stale_icons.append(icon_id)
+            continue
+        try:
+            verify_icon(icon_id, binding, penpot_file, icon_registry.fingerprint)
+        except ValueError:
+            stale_icons.append(icon_id)
     if stale_icons:
         block("penpot_icon_target_mismatch", ", ".join(stale_icons),
               "Admit these native Remix icon components in the current Penpot target file, or use a new source that does not require them.")

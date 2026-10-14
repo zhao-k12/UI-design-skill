@@ -20,6 +20,7 @@ PROFILES = {
         'fidelity': 'registries/components/fidelity-reports.json',
         'componentBindings': 'component-bindings.json',
         'fontBindings': 'font-bindings.json',
+        'penpotIconBindings': 'icon-bindings.json',
     },
     'v0.2': {
         'tokens': 'registries/tokens/v0.2.2/default.json',
@@ -27,6 +28,7 @@ PROFILES = {
         'fidelity': 'registries/components/v0.2.3/fidelity-reports.json',
         'componentBindings': 'component-bindings-0.2.3.json',
         'fontBindings': 'page-default-font-bindings-0.2.0.json',
+        'penpotIconBindings': 'icon-bindings-0.2.0.json',
     },
 }
 
@@ -67,7 +69,8 @@ def main():
         document=load_json(output/'final_ui_ir.json');preflights={}
         for platform,target in (('figma',args.figma_file),('penpot',args.penpot_file)):
             binding=ComponentBindings(read('adapters/'+platform+'/metadata/'+paths['componentBindings']),components,platform=platform)
-            common=[document,tokens,components,binding,icons,read('adapters/'+platform+'/metadata/icon-bindings.json'),read('adapters/'+platform+'/metadata/'+paths['fontBindings'])]
+            icon_name=paths['penpotIconBindings'] if platform=='penpot' else 'icon-bindings.json'
+            common=[document,tokens,components,binding,icons,read('adapters/'+platform+'/metadata/'+icon_name),read('adapters/'+platform+'/metadata/'+paths['fontBindings'])]
             report=prepare_f(*common,file_reference=target) if platform=='figma' else prepare_p(*common,file_reference=target,native_fidelity=read('adapters/penpot/metadata/native-fidelity.json') if args.profile=='v0.1' else None)
             if report['status']=='PASS' and report['plan']['adapterVersion']!=versions[platform+'_adapter_version']:
                 report={'status':'FAIL','plan':None,'issues':[{'code':'adapter_version_changed','message':'Native plan differs from locked adapter version'}]}

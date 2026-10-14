@@ -14,15 +14,15 @@ class V02PipelineReadinessTests(unittest.TestCase):
         report = module.audit()
         self.assertEqual(report["status"], "BLOCKED")
         self.assertEqual([item["code"] for item in report["blockers"]], [
-            "legacy_input_lock", "source_geometry_mismatch", "penpot_icon_target_mismatch",
+            "legacy_input_lock", "source_geometry_mismatch",
             "text_measurements_need_rebind"])
         self.assertEqual(report["nativeExecution"], "NOT_RUN")
         self.assertEqual(report, module.audit())
 
-    def test_icon_blocker_tracks_target_file(self):
+    def test_icon_blocker_rejects_deleted_target_file(self):
         old_target = "91396aad-60c8-808b-8008-c0885ca79899"
         report = module.audit(penpot_file=old_target)
-        self.assertNotIn("penpot_icon_target_mismatch", [item["code"] for item in report["blockers"]])
+        self.assertIn("penpot_icon_target_mismatch", [item["code"] for item in report["blockers"]])
         self.assertEqual(report["status"], "BLOCKED")
 
     def test_explicit_admitted_geometry_removes_only_geometry_blocker(self):
@@ -30,7 +30,7 @@ class V02PipelineReadinessTests(unittest.TestCase):
         report = module.audit(geometry_path=path)
         self.assertEqual(report["geometry"], "examples/acceptance-prototype-v02/source-geometry.json")
         self.assertEqual([item["code"] for item in report["blockers"]], [
-            "legacy_input_lock", "penpot_icon_target_mismatch",
+            "legacy_input_lock",
             "text_measurements_need_rebind"])
 
 
