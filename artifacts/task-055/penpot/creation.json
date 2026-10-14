@@ -1,0 +1,74 @@
+{
+  "scope": "v02-tag-default-font-candidate",
+  "status": "CANDIDATE",
+  "fileId": "57949053-620f-8001-8008-c804c8d61529",
+  "pageId": "f1153c87-a7fc-80d8-8008-c9a7f252803d",
+  "componentId": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8",
+  "mainId": "f1153c87-a7fc-80d8-8008-c9a7f325f8b1",
+  "instanceId": "f1153c87-a7fc-80d8-8008-c9a7f35cf91d",
+  "reviewId": "f1153c87-a7fc-80d8-8008-c9a7f3510062",
+  "labelId": "f1153c87-a7fc-80d8-8008-c9a7f33a991b",
+  "defaultFont": {
+    "fontId": "sourcesanspro",
+    "fontFamily": "sourcesanspro",
+    "fontVariantId": "regular",
+    "fontWeight": "400"
+  },
+  "colors": {
+    "background": "f1153c87-a7fc-80d8-8008-c9a7f2fbc7ae",
+    "border": "f1153c87-a7fc-80d8-8008-c9a7f30b9508",
+    "text": "f1153c87-a7fc-80d8-8008-c9a7f3143a2f"
+  },
+  "typographyId": "f1153c87-a7fc-80d8-8008-c9a7f31bf496",
+  "main": {
+    "width": 42,
+    "height": 22,
+    "borderRadius": 3,
+    "fills": [
+      {
+        "fillColor": "#f7f7f7",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": "57949053-620f-8001-8008-c804c8d61529",
+        "fillColorRefId": "f1153c87-a7fc-80d8-8008-c9a7f2fbc7ae",
+        "fillImage": null
+      }
+    ],
+    "strokes": [
+      {
+        "strokeColor": "#e8eaec",
+        "strokeColorRefFile": "57949053-620f-8001-8008-c804c8d61529",
+        "strokeColorRefId": "f1153c87-a7fc-80d8-8008-c9a7f30b9508",
+        "strokeOpacity": 1,
+        "strokeStyle": "solid",
+        "strokeWidth": 1,
+        "strokeAlignment": "inner",
+        "strokeCapStart": null,
+        "strokeCapEnd": null,
+        "strokeColorGradient": null,
+        "strokeImage": null
+      }
+    ]
+  },
+  "label": {
+    "text": "启用",
+    "fontId": "sourcesanspro",
+    "fontVariantId": "regular",
+    "fontSize": "12",
+    "lineHeight": "1.167",
+    "textBounds": {
+      "x": null,
+      "y": null,
+      "width": null,
+      "height": null
+    },
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    }
+  },
+  "fileValidation": 0,
+  "fidelityGate": "NOT_RUN"
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "v02-default-font-tag-candidate",
+  "version": "0.2.0",
+  "platform": "penpot",
+  "logicalComponentId": "data.tag.default.enabled",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "ca7bd833b3e0bd8660c2efb02a120a4695a6a08e75d95c60929bd9dad762f604",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "pageReference": "f1153c87-a7fc-80d8-8008-c9a7f252803d",
+  "componentId": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8",
+  "instanceId": "f1153c87-a7fc-80d8-8008-c9a7f35cf91d",
+  "contentScope": {
+    "text": "启用",
+    "size": "default",
+    "color": "default",
+    "closable": false,
+    "checkable": false,
+    "checked": true,
+    "width": 42,
+    "height": 22
+  },
+  "font": "sourcesanspro",
+  "status": "CANDIDATE_REVIEW",
+  "checks": {
+    "fileAndNodeIdentity": true,
+    "fixedGeometry": true,
+    "fixedContentAndDefaultFont": true,
+    "nativeMainAndInstance": true,
+    "repeatNativePngStable": true,
+    "nativeSvgPresent": true,
+    "nativeSvgSemantics": true,
+    "visualCandidateReview": true
+  },
+  "pixelReview": {
+    "sourceSize": [
+      42,
+      22
+    ],
+    "nativeSize": [
+      42,
+      22
+    ],
+    "nonTextChangedPixels": 32,
+    "nonTextMaximumChannelDelta": 2,
+    "nonTextChangesOutsideFourCorners": 0,
+    "glyphPixelsByCharacterZone": [
+      8,
+      10
+    ]
+  },
+  "evidenceSha256": {
+    "creation.json": "4b48c0e9ab86d1fbbfafc3df205fa1f81da5dd9fc3af0c6ccca88009d8bb7d56",
+    "independent-read.json": "a6252b63ad70ba19db230f01d5abf26fb556b47f857e8bf640807b1c28ab0dd2",
+    "component-native.png": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+    "repeat-native.png": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+    "component-native.svg": "5e6efa7f1e04b3e234f19a4b8d221ff9816feed41ef4f4241bb1dd6c80b3ca93"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

@@ -1,0 +1,87 @@
+{
+  "scope": "v02-tag-default-font-candidate",
+  "status": "CANDIDATE",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "176:15",
+  "componentId": "176:16",
+  "labelId": "176:17",
+  "instanceId": "176:19",
+  "reviewFrameId": "176:18",
+  "collectionId": "VariableCollectionId:176:2",
+  "textStyleId": "S:28b6cb7859b8e5b58ad76de115dc751940355ec7,",
+  "variableIds": {
+    "color/tag/background": "VariableID:176:3",
+    "color/tag/border": "VariableID:176:4",
+    "color/tag/text": "VariableID:176:5",
+    "radius/tag": "VariableID:176:6",
+    "spacing/tag/content-inset": "VariableID:176:7",
+    "stroke/tag": "VariableID:176:8",
+    "size/tag/height": "VariableID:176:9",
+    "font/tag/family": "VariableID:176:10",
+    "font/tag/weight": "VariableID:176:11",
+    "font/tag/size": "VariableID:176:12",
+    "font/tag/line-height": "VariableID:176:13"
+  },
+  "component": {
+    "width": 42,
+    "height": 22,
+    "fill": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.9686274528503418,
+          "g": 0.9686274528503418,
+          "b": 0.9686274528503418
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:176:3"
+          }
+        }
+      }
+    ],
+    "stroke": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.9098039269447327,
+          "g": 0.9176470637321472,
+          "b": 0.9254902005195618
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:176:4"
+          }
+        }
+      }
+    ],
+    "radius": 3
+  },
+  "label": {
+    "text": "启用",
+    "fontName": {
+      "family": "Inter",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400,
+        "slnt": 0
+      }
+    },
+    "fontSize": 12,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 14
+    },
+    "width": 24,
+    "height": 14
+  },
+  "fidelityGate": "NOT_RUN"
+}

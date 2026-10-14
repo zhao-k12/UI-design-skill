@@ -1,0 +1,96 @@
+{
+  "scope": "v02-default-font-tag-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "fidelityGate": "NOT_RUN",
+  "registryAdmission": "NOT_RUN",
+  "sourceComponentIrSha256": "ca7bd833b3e0bd8660c2efb02a120a4695a6a08e75d95c60929bd9dad762f604",
+  "platforms": {
+    "figma": {
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "pageReference": "176:15",
+      "componentId": "176:16",
+      "instanceId": "176:19",
+      "font": "Inter",
+      "checks": {
+        "fileAndNodeIdentity": true,
+        "fixedGeometry": true,
+        "fixedContentAndDefaultFont": true,
+        "nativeMainAndInstance": true,
+        "repeatNativePngStable": true,
+        "nativeSvgPresent": true,
+        "nativeSvgSemantics": true,
+        "visualCandidateReview": true,
+        "candidateMetadataConsistent": true
+      },
+      "pixelReview": {
+        "sourceSize": [
+          42,
+          22
+        ],
+        "nativeSize": [
+          42,
+          22
+        ],
+        "nonTextChangedPixels": 24,
+        "nonTextMaximumChannelDelta": 3,
+        "nonTextChangesOutsideFourCorners": 0,
+        "glyphPixelsByCharacterZone": [
+          4,
+          9
+        ]
+      },
+      "candidateMetadataSha256": "aa5b85ee91676a3f9b6108a3efb134f7693adae6e792c667b7530ee848ad12b3",
+      "evidenceSha256": {
+        "creation.json": "2d71a2c2fac79a856ad44ea9528b6d7ac9ce590b3941ff718439673084b029a3",
+        "independent-read.json": "f7dc42c4b309072a279e941b1bd8965ec973f5d59d81e4592b51a7f85f316300",
+        "component-native.png": "8a960b898b36b6077c7372ef3150318a09f54da0978d11d03ff882f1aae5c3cb",
+        "repeat-native.png": "8a960b898b36b6077c7372ef3150318a09f54da0978d11d03ff882f1aae5c3cb",
+        "component-native.svg": "cdc713f5702f625b8b550f8d7ee8bb9b15dc824a17730e0f287231d790c347f9"
+      }
+    },
+    "penpot": {
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "pageReference": "f1153c87-a7fc-80d8-8008-c9a7f252803d",
+      "componentId": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8",
+      "instanceId": "f1153c87-a7fc-80d8-8008-c9a7f35cf91d",
+      "font": "sourcesanspro",
+      "checks": {
+        "fileAndNodeIdentity": true,
+        "fixedGeometry": true,
+        "fixedContentAndDefaultFont": true,
+        "nativeMainAndInstance": true,
+        "repeatNativePngStable": true,
+        "nativeSvgPresent": true,
+        "nativeSvgSemantics": true,
+        "visualCandidateReview": true,
+        "candidateMetadataConsistent": true
+      },
+      "pixelReview": {
+        "sourceSize": [
+          42,
+          22
+        ],
+        "nativeSize": [
+          42,
+          22
+        ],
+        "nonTextChangedPixels": 32,
+        "nonTextMaximumChannelDelta": 2,
+        "nonTextChangesOutsideFourCorners": 0,
+        "glyphPixelsByCharacterZone": [
+          8,
+          10
+        ]
+      },
+      "candidateMetadataSha256": "34418039a5a0d6c87396ca3d90ef8141deb6517d3daeea04496132d26f672c59",
+      "evidenceSha256": {
+        "creation.json": "4b48c0e9ab86d1fbbfafc3df205fa1f81da5dd9fc3af0c6ccca88009d8bb7d56",
+        "independent-read.json": "a6252b63ad70ba19db230f01d5abf26fb556b47f857e8bf640807b1c28ab0dd2",
+        "component-native.png": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+        "repeat-native.png": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+        "component-native.svg": "5e6efa7f1e04b3e234f19a4b8d221ff9816feed41ef4f4241bb1dd6c80b3ca93"
+      }
+    }
+  },
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "page": "4b3abcb2-3ae8-803f-8008-c86e5a61aac1",
+  "main": {
+    "id": "f1153c87-a7fc-80d8-8008-c9a7f325f8b1",
+    "width": 42,
+    "height": 22,
+    "bounds": {
+      "x": 800,
+      "y": 80,
+      "width": 42,
+      "height": 22
+    },
+    "borderRadius": 3,
+    "fills": [
+      {
+        "fillColor": "#f7f7f7",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": "57949053-620f-8001-8008-c804c8d61529",
+        "fillColorRefId": "f1153c87-a7fc-80d8-8008-c9a7f2fbc7ae",
+        "fillImage": null
+      }
+    ],
+    "strokes": [
+      {
+        "strokeColor": "#e8eaec",
+        "strokeColorRefFile": "57949053-620f-8001-8008-c804c8d61529",
+        "strokeColorRefId": "f1153c87-a7fc-80d8-8008-c9a7f30b9508",
+        "strokeOpacity": 1,
+        "strokeStyle": "solid",
+        "strokeWidth": 1,
+        "strokeAlignment": "inner",
+        "strokeCapStart": null,
+        "strokeCapEnd": null,
+        "strokeColorGradient": null,
+        "strokeImage": null
+      }
+    ],
+    "flex": {
+      "leftPadding": 9,
+      "rightPadding": 9,
+      "alignItems": "center",
+      "justifyContent": "center"
+    }
+  },
+  "label": {
+    "id": "f1153c87-a7fc-80d8-8008-c9a7f33a991b",
+    "text": "启用",
+    "fontId": "sourcesanspro",
+    "fontVariantId": "regular",
+    "fontSize": "12",
+    "lineHeight": "1.167",
+    "width": 24,
+    "height": 14,
+    "textBounds": {
+      "x": 809,
+      "y": 83,
+      "width": 24,
+      "height": 15
+    },
+    "bounds": {
+      "x": 809,
+      "y": 84,
+      "width": 24,
+      "height": 14
+    }
+  },
+  "instance": {
+    "id": "f1153c87-a7fc-80d8-8008-c9a7f35cf91d",
+    "width": 42,
+    "height": 22,
+    "componentId": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8"
+  }
+}

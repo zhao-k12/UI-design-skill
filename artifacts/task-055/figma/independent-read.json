@@ -1,0 +1,204 @@
+{
+  "status": "READ",
+  "fileKey": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "page": {
+    "id": "176:15",
+    "name": "V0.2 / Default-font Tag candidate"
+  },
+  "component": {
+    "id": "176:16",
+    "type": "COMPONENT",
+    "name": "V0.2/Tag/Default/Enabled",
+    "width": 42,
+    "height": 22,
+    "layoutMode": "HORIZONTAL",
+    "paddingLeft": 9,
+    "paddingRight": 9,
+    "paddingTop": 0,
+    "paddingBottom": 0,
+    "cornerRadius": 3,
+    "strokeWeight": 1,
+    "strokeAlign": "INSIDE",
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.9686274528503418,
+          "g": 0.9686274528503418,
+          "b": 0.9686274528503418
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:176:3"
+          }
+        }
+      }
+    ],
+    "strokes": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.9098039269447327,
+          "g": 0.9176470637321472,
+          "b": 0.9254902005195618
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:176:4"
+          }
+        }
+      }
+    ],
+    "boundVariables": {
+      "paddingLeft": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:7"
+      },
+      "paddingRight": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:7"
+      },
+      "height": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:9"
+      },
+      "topLeftRadius": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:6"
+      },
+      "topRightRadius": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:6"
+      },
+      "bottomLeftRadius": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:6"
+      },
+      "bottomRightRadius": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:6"
+      },
+      "strokeTopWeight": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:8"
+      },
+      "strokeBottomWeight": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:8"
+      },
+      "strokeLeftWeight": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:8"
+      },
+      "strokeRightWeight": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:176:8"
+      },
+      "fills": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:176:3"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:176:4"
+        }
+      ]
+    },
+    "children": [
+      {
+        "id": "176:17",
+        "type": "TEXT",
+        "name": "label"
+      }
+    ]
+  },
+  "label": {
+    "id": "176:17",
+    "characters": "启用",
+    "fontName": {
+      "family": "Inter",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400,
+        "slnt": 0
+      }
+    },
+    "fontSize": 12,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 14
+    },
+    "textStyleId": "S:28b6cb7859b8e5b58ad76de115dc751940355ec7,",
+    "width": 24,
+    "height": 14,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.3176470696926117,
+          "g": 0.3529411852359772,
+          "b": 0.4313725531101227
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:176:5"
+          }
+        }
+      }
+    ],
+    "boundVariables": {
+      "fills": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:176:5"
+        }
+      ],
+      "fontSize": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:176:12"
+        }
+      ],
+      "fontFamily": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:176:10"
+        }
+      ],
+      "lineHeight": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:176:13"
+        }
+      ],
+      "fontWeight": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:176:11"
+        }
+      ]
+    }
+  },
+  "instance": {
+    "id": "176:19",
+    "type": "INSTANCE",
+    "mainComponentId": "176:16",
+    "width": 42,
+    "height": 22
+  }
+}

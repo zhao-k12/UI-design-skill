@@ -1,0 +1,26 @@
+{
+  "scope": "v02-default-font-tag-candidate-visual-review",
+  "status": "PASS",
+  "reviewedAt": "2026-10-14",
+  "source": "artifacts/task-054/tag-source/data.tag.default.enabled.png",
+  "platforms": {
+    "figma": {
+      "image": "artifacts/task-055/figma/component-native.png",
+      "text": "启用",
+      "visibleCharacters": 2,
+      "clipped": false,
+      "detachedOrEmpty": false,
+      "assessment": "Native editable Tag and linked instance; text legible within 42x22 bounds."
+    },
+    "penpot": {
+      "image": "artifacts/task-055/penpot/component-native.png",
+      "text": "启用",
+      "visibleCharacters": 2,
+      "clipped": false,
+      "detachedOrEmpty": false,
+      "assessment": "Native editable Tag and linked instance; text legible within 42x22 bounds."
+    }
+  },
+  "chineseFallbackFontIdentity": "UNVERIFIED",
+  "fidelityGate": "NOT_RUN"
+}
