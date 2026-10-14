@@ -304,6 +304,7 @@
             "Select",
             "DatePicker",
             "Table",
+            "Tag",
             "FormItem",
             "Pagination",
             "Card",

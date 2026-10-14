@@ -7,8 +7,9 @@
 - TASK-051: V0.2 独立输入包、组合单元来源尺寸复算、1920×1080 Core 完整流水线与 Figma/Penpot Adapter 预检 PASS。
 - TASK-052: 同一最终 UI-IR 的 Figma/Penpot 1920×1080 原生完整页面、独立结构/文字/实例读回、双端原生 PNG 和视觉验收 PASS；Penpot 末尾布局等待误报已限定修正。
 - Current TASK-053: V0.2 发布就绪只读审计 PASS，结论 NOT_READY：18 类目标只准入 4 类固定配置，Adapter 运行时代码未纳入 Manifest 字节锁，新独立原型与全量 Release Gate 未验收；入口文档已按实际进展校正。架构冲突记录见 TASK-053。
+- TASK-054: Tag 默认静态固定“启用”配置的官方来源锁、真实浏览器 DOM/样式/截图/字体和 Component IR 完整性 PASS；Figma/Penpot 默认字体改编与 Fidelity Gate 尚未执行，未准入 Registry，V0.2 仍 NOT_READY。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: 先就版本化 Adapter 字节锁制定架构决策，或独立推进一个有官方来源和双端保真证据的限定组件配置；随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: 对 TASK-054 的 Tag 固定配置创建 Figma/Penpot 默认字体原生候选，独立读取、重复导出并执行双端保真门；或先就版本化 Adapter 字节锁制定架构决策。随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

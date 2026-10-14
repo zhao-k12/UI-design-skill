@@ -1,0 +1,14 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": { "width": 320, "height": 120 },
+  "containerWidth": 240,
+  "cases": [
+    {
+      "logicalId": "data.tag.default.enabled",
+      "componentType": "Tag",
+      "variant": "default",
+      "props": { "size": "default", "color": "default", "closable": false, "checkable": false, "checked": true },
+      "text": "启用"
+    }
+  ]
+}
