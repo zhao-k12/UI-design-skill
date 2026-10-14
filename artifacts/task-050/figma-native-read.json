@@ -1,0 +1,24 @@
+{
+  "kind": "native-default-font-text-measurement",
+  "status": "PASS",
+  "platform": "figma",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "169:2",
+  "pageName": "V0.2 / Default-font text measurements",
+  "method": "Independent use_figma readback of auto-width text nodes after native creation",
+  "font": {"family": "Inter", "style": "Regular", "weight": 400},
+  "rows": [
+    {"uiIrId": "title", "nodeId": "169:3", "characters": "用户管理", "width": 80, "height": 28, "fontSize": 20, "lineHeight": 28},
+    {"uiIrId": "label.name", "nodeId": "169:4", "characters": "姓名", "width": 28, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "label.status", "nodeId": "169:5", "characters": "状态", "width": 28, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "label.summary", "nodeId": "169:6", "characters": "范围", "width": 28, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "filter.description", "nodeId": "169:7", "characters": "查看用户信息", "width": 84, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "label.action", "nodeId": "169:8", "characters": "操作", "width": 28, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "list.title", "nodeId": "169:9", "characters": "用户列表", "width": 56, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "list.export.label", "nodeId": "169:10", "characters": "导出", "width": 28, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "column.name.label", "nodeId": "169:11", "characters": "姓名", "width": 28, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "column.status.label", "nodeId": "169:12", "characters": "状态", "width": 28, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "column.role.label", "nodeId": "169:13", "characters": "角色", "width": 28, "height": 22, "fontSize": 14, "lineHeight": 22},
+    {"uiIrId": "list.count", "nodeId": "169:14", "characters": "共 3 位用户", "width": 73, "height": 22, "fontSize": 14, "lineHeight": 22}
+  ]
+}
