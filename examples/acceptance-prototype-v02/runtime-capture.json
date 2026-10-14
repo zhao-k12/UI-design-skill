@@ -1,0 +1,381 @@
+{
+  "kind": "v02-derived-runtime-measurement-capture",
+  "status": "PASS",
+  "method": "Fixed source container geometry + admitted V0.2 components/icons + two-platform text envelope",
+  "sourceLocks": {
+    "sourceContainers": {
+      "path": "adapters/figma/metadata/list-independent-readback.json",
+      "sha256": "33b31177607f3139c8a69573547343381641aa8ec74c6e9dfb62ffdf9c26d540"
+    },
+    "sourceGeometry": {
+      "path": "examples/acceptance-prototype-v02/source-geometry.json",
+      "sha256": "f088447b0257f46350b40cc8d7d726e7c2d38b7b7fee2fb043eeba0e0e119113"
+    },
+    "componentCatalog": {
+      "path": "registries/components/v0.2.3/catalog.json",
+      "sha256": "62edd36a8ed4e94eebb70ea5607b7d21b7a73460c011566e810010b764c595fa"
+    },
+    "iconBindings": {
+      "path": "adapters/penpot/metadata/icon-bindings-0.2.0.json",
+      "sha256": "06e681be71bde9e001cee408e852eb3da4c66b3fdfa05eea8164b1ae7d2f2481"
+    },
+    "textEnvelope": {
+      "path": "artifacts/task-050/text-envelope.json",
+      "sha256": "6905edca36029f6e7a5ab06ddcb215bdf6f44acfc86d0093fe740227b562d6c8"
+    }
+  },
+  "evidence": [
+    {
+      "uiIrId": "acceptance-page",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 496,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "acceptance-page"
+      }
+    },
+    {
+      "uiIrId": "header",
+      "type": "FRAME",
+      "width": 1392,
+      "height": 28,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "header"
+      }
+    },
+    {
+      "uiIrId": "title",
+      "type": "TEXT",
+      "characters": "用户管理",
+      "width": 80,
+      "height": 28,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "title"
+      }
+    },
+    {
+      "uiIrId": "header.space",
+      "type": "FRAME",
+      "width": 1256,
+      "height": 24,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "header.space"
+      }
+    },
+    {
+      "uiIrId": "header.settings",
+      "type": "INSTANCE",
+      "width": 24,
+      "height": 24,
+      "provenance": {
+        "kind": "admitted-remix-icon",
+        "sourceUiIrId": "header.settings"
+      }
+    },
+    {
+      "uiIrId": "query",
+      "type": "FRAME",
+      "width": 1392,
+      "height": 94,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "query"
+      }
+    },
+    {
+      "uiIrId": "query.grid",
+      "type": "FRAME",
+      "width": 1360,
+      "height": 62,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "query.grid"
+      }
+    },
+    {
+      "uiIrId": "filter.name",
+      "type": "FRAME",
+      "width": 328,
+      "height": 62,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "filter.name"
+      }
+    },
+    {
+      "uiIrId": "label.name",
+      "type": "TEXT",
+      "characters": "姓名",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "label.name"
+      }
+    },
+    {
+      "uiIrId": "input.name",
+      "type": "INSTANCE",
+      "width": 240,
+      "height": 32,
+      "provenance": {
+        "kind": "admitted-v02-component-ir",
+        "logicalComponentId": "form.input.default.medium"
+      }
+    },
+    {
+      "uiIrId": "filter.status",
+      "type": "FRAME",
+      "width": 328,
+      "height": 62,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "filter.status"
+      }
+    },
+    {
+      "uiIrId": "label.status",
+      "type": "TEXT",
+      "characters": "状态",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "label.status"
+      }
+    },
+    {
+      "uiIrId": "select.status",
+      "type": "INSTANCE",
+      "width": 240,
+      "height": 32,
+      "provenance": {
+        "kind": "admitted-v02-component-ir",
+        "logicalComponentId": "form.select.default.medium"
+      }
+    },
+    {
+      "uiIrId": "filter.summary",
+      "type": "FRAME",
+      "width": 328,
+      "height": 52,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "filter.summary"
+      }
+    },
+    {
+      "uiIrId": "label.summary",
+      "type": "TEXT",
+      "characters": "范围",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "label.summary"
+      }
+    },
+    {
+      "uiIrId": "filter.description",
+      "type": "TEXT",
+      "characters": "查看用户信息",
+      "width": 84,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "filter.description"
+      }
+    },
+    {
+      "uiIrId": "filter.action",
+      "type": "FRAME",
+      "width": 328,
+      "height": 62,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "filter.action"
+      }
+    },
+    {
+      "uiIrId": "label.action",
+      "type": "TEXT",
+      "characters": "操作",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "label.action"
+      }
+    },
+    {
+      "uiIrId": "button.query",
+      "type": "INSTANCE",
+      "width": 60,
+      "height": 32,
+      "provenance": {
+        "kind": "admitted-v02-component-ir",
+        "logicalComponentId": "action.button.primary.medium"
+      }
+    },
+    {
+      "uiIrId": "list",
+      "type": "FRAME",
+      "width": 1392,
+      "height": 232,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "list"
+      }
+    },
+    {
+      "uiIrId": "list.toolbar",
+      "type": "FRAME",
+      "width": 1392,
+      "height": 40,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "list.toolbar"
+      }
+    },
+    {
+      "uiIrId": "list.title",
+      "type": "TEXT",
+      "characters": "用户列表",
+      "width": 56,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "list.title"
+      }
+    },
+    {
+      "uiIrId": "list.space",
+      "type": "FRAME",
+      "width": 1260,
+      "height": 24,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "list.space"
+      }
+    },
+    {
+      "uiIrId": "list.export",
+      "type": "INSTANCE",
+      "width": 24,
+      "height": 24,
+      "provenance": {
+        "kind": "admitted-remix-icon",
+        "sourceUiIrId": "list.export"
+      }
+    },
+    {
+      "uiIrId": "list.export.label",
+      "type": "TEXT",
+      "characters": "导出",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "list.export.label"
+      }
+    },
+    {
+      "uiIrId": "list.columns",
+      "type": "FRAME",
+      "width": 1392,
+      "height": 48,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "list.columns"
+      }
+    },
+    {
+      "uiIrId": "column.name",
+      "type": "FRAME",
+      "width": 464.328125,
+      "height": 48,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "column.name"
+      }
+    },
+    {
+      "uiIrId": "column.name.label",
+      "type": "TEXT",
+      "characters": "姓名",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "column.name.label"
+      }
+    },
+    {
+      "uiIrId": "column.status",
+      "type": "FRAME",
+      "width": 464.328125,
+      "height": 48,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "column.status"
+      }
+    },
+    {
+      "uiIrId": "column.status.label",
+      "type": "TEXT",
+      "characters": "状态",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "column.status.label"
+      }
+    },
+    {
+      "uiIrId": "column.role",
+      "type": "FRAME",
+      "width": 463.34375,
+      "height": 48,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "column.role"
+      }
+    },
+    {
+      "uiIrId": "column.role.label",
+      "type": "TEXT",
+      "characters": "角色",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "column.role.label"
+      }
+    },
+    {
+      "uiIrId": "table.body",
+      "type": "INSTANCE",
+      "width": 1392,
+      "height": 144,
+      "provenance": {
+        "kind": "admitted-v02-component-ir",
+        "logicalComponentId": "data.table.default"
+      }
+    },
+    {
+      "uiIrId": "list.count",
+      "type": "TEXT",
+      "characters": "共 3 位用户",
+      "width": 73,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "list.count"
+      }
+    }
+  ]
+}

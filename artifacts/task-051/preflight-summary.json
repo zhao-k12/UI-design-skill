@@ -1,0 +1,21 @@
+{
+  "kind": "v02-pipeline-preflight-summary",
+  "status": "PASS",
+  "readyForAdapter": true,
+  "nativeExecution": "NOT_RUN",
+  "finalVisualQa": "NOT_RUN",
+  "semanticItemCount": 9,
+  "instanceCount": 4,
+  "iconCount": 2,
+  "adapterPreflights": {
+    "figma": "PASS",
+    "penpot": "PASS"
+  },
+  "files": {
+    "qa_report.json": "ad86ad7f439a24661ff99cd06182bd12af4368ade5e89c784b7eb6491f9315d0",
+    "final_ui_ir.json": "6429aebffefdbec3444065ee0d0d02ef80ecbfa190ea80ee15954111b62c4eb2",
+    "figma_preflight.json": "0664be88eafda39509b62d8b8823c47aadbb1ee49724b6d37a24ec12defffaef",
+    "penpot_preflight.json": "d5bcbfdb3d2805e3517aa1760992f2fe31df913cb716e37ed0332c39a468937e",
+    "manifest.json": "a86aa7c305273e400a04ce93290d6644ec796fc7a3814f5e2a1743ee6fb33a2b"
+  }
+}

@@ -10,6 +10,7 @@ sys.path.insert(0,str(ROOT))
 from validators.ui_ir import load_json
 from adapters.component_bindings import ComponentBindings
 from adapters.figma.content_compiler import prepare as prepare_f
+from adapters.figma.compiler import prepare as prepare_f_layout
 from adapters.penpot.compiler import prepare as prepare_p
 
 
@@ -71,7 +72,8 @@ def main():
             binding=ComponentBindings(read('adapters/'+platform+'/metadata/'+paths['componentBindings']),components,platform=platform)
             icon_name=paths['penpotIconBindings'] if platform=='penpot' else 'icon-bindings.json'
             common=[document,tokens,components,binding,icons,read('adapters/'+platform+'/metadata/'+icon_name),read('adapters/'+platform+'/metadata/'+paths['fontBindings'])]
-            report=prepare_f(*common,file_reference=target) if platform=='figma' else prepare_p(*common,file_reference=target,native_fidelity=read('adapters/penpot/metadata/native-fidelity.json') if args.profile=='v0.1' else None)
+            report=(prepare_f(*common,file_reference=target) if args.profile=='v0.1' else
+                    prepare_f_layout(*common,file_reference=target)) if platform=='figma' else prepare_p(*common,file_reference=target,native_fidelity=read('adapters/penpot/metadata/native-fidelity.json') if args.profile=='v0.1' else None)
             if report['status']=='PASS' and report['plan']['adapterVersion']!=versions[platform+'_adapter_version']:
                 report={'status':'FAIL','plan':None,'issues':[{'code':'adapter_version_changed','message':'Native plan differs from locked adapter version'}]}
             runner.write(output/(platform+'_preflight.json'),report);preflights[platform]=report['status']

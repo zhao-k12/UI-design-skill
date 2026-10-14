@@ -1,0 +1,103 @@
+{
+  "version": "0.2.0",
+  "sourceCapture": "examples/acceptance-prototype-v02/runtime-capture.json",
+  "sourceCaptureSha256": "1d3536fe7d2713fa4ca1efbd0aaaa5564425a42d6157550648f3fc53bff02956",
+  "measurements": {
+    "header-title": {
+      "uiIrIds": [
+        "header"
+      ],
+      "width": 1392,
+      "height": 28,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "field-name": {
+      "uiIrIds": [
+        "filter.name"
+      ],
+      "width": 328,
+      "height": 62,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "field-status": {
+      "uiIrIds": [
+        "filter.status"
+      ],
+      "width": 328,
+      "height": 62,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "query-action": {
+      "uiIrIds": [
+        "filter.action"
+      ],
+      "width": 328,
+      "height": 62,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "scope-content": {
+      "uiIrIds": [
+        "filter.summary"
+      ],
+      "width": 328,
+      "height": 52,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "list-title": {
+      "uiIrIds": [
+        "list.title"
+      ],
+      "width": 56,
+      "height": 22,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "export-action": {
+      "uiIrIds": [
+        "list.export",
+        "list.export.label"
+      ],
+      "width": 60,
+      "height": 24,
+      "widthRule": "sum-with-spacing.sm",
+      "heightRule": "max"
+    },
+    "user-table": {
+      "uiIrIds": [
+        "list.columns",
+        "table.body"
+      ],
+      "width": 1392,
+      "height": 192,
+      "widthRule": "max",
+      "heightRule": "sum"
+    },
+    "list-summary": {
+      "uiIrIds": [
+        "list.count"
+      ],
+      "width": 73,
+      "height": 22,
+      "widthRule": "max",
+      "heightRule": "max"
+    }
+  },
+  "textMeasurements": {
+    "header-title": "title",
+    "scope-content": "filter.description",
+    "list-title": "list.title",
+    "export-action": "list.export.label",
+    "list-summary": "list.count"
+  },
+  "slotMeasurements": {
+    "field-name.label": "label.name",
+    "field-status.label": "label.status",
+    "scope-content.label": "label.summary",
+    "query-action.label": "label.action"
+  }
+}

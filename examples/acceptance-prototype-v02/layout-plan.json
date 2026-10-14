@@ -1,0 +1,124 @@
+{
+  "version": "0.1.0",
+  "pattern": "list-page",
+  "pageTreeSha256": "fda1415659d25c58b1eb25fbfd433fa2a6856d99ec17b7e52fec116d52fbec66",
+  "tokenRegistrySha256": "f0358b40a028686e28e525ee3d2461e1d0b1afb711f3b73a931fed8173e37e68",
+  "sectionRegions": {
+    "header": "header",
+    "query": "query",
+    "list": "table"
+  },
+  "measurements": {
+    "header-title": {
+      "width": 1392,
+      "height": 28,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.header-title"
+      }
+    },
+    "field-name": {
+      "width": 328,
+      "height": 62,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.field-name"
+      }
+    },
+    "field-status": {
+      "width": 328,
+      "height": 62,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.field-status"
+      }
+    },
+    "query-action": {
+      "width": 328,
+      "height": 62,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.query-action"
+      }
+    },
+    "scope-content": {
+      "width": 328,
+      "height": 52,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.scope-content"
+      }
+    },
+    "list-title": {
+      "width": 56,
+      "height": 22,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.list-title"
+      }
+    },
+    "export-action": {
+      "width": 60,
+      "height": 24,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.export-action"
+      }
+    },
+    "user-table": {
+      "width": 1392,
+      "height": 192,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.user-table"
+      }
+    },
+    "list-summary": {
+      "width": 73,
+      "height": 22,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.list-summary"
+      }
+    }
+  },
+  "sectionConfigs": {
+    "query": {
+      "inlineGrid": true,
+      "inlineOrder": [
+        "field-name",
+        "field-status",
+        "scope-content",
+        "query-action"
+      ],
+      "padding": {
+        "top": {
+          "token": "spacing.md"
+        },
+        "right": {
+          "token": "spacing.md"
+        },
+        "bottom": {
+          "token": "spacing.md"
+        },
+        "left": {
+          "token": "spacing.md"
+        }
+      }
+    },
+    "list": {
+      "contentOrder": [
+        "list-title",
+        "export-action",
+        "user-table",
+        "list-summary"
+      ],
+      "contentRows": [
+        [
+          "list-title",
+          "export-action"
+        ]
+      ]
+    }
+  }
+}

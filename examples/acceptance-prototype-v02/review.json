@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0",
+  "analysisSha256": "d4c77d7269898907607e875729a28a35fecadc04ce616636cd670a2ac58557d2",
+  "decision": "approved",
+  "reviewedBy": "human-user",
+  "reviewedAt": "2026-10-09T21:51:26+08:00",
+  "note": "User explicitly answered: 批准这份语义提取，继续端到端验收. Approved concrete .dev/TASK-017_SEMANTIC_REVIEW.md; no synthetic receipt."
+}

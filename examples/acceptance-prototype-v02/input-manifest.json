@@ -1,0 +1,18 @@
+{
+  "kind": "v02-independent-input-package",
+  "status": "READY_FOR_PREFLIGHT",
+  "sourcePackage": "examples/acceptance-prototype",
+  "policy": "fixed-source-containers/admitted-v02-components/max-default-font-text",
+  "files": {
+    "prototype.txt": "d7e05d66c4f8e1133af714149effa74206a95774612bf36dfd8cbc19dbd16721",
+    "observations.json": "656b9859e72420216f24fe8fee46acfc4be8f0587b184c249a1ddb594b5f54d7",
+    "review.json": "12ed3e6f1f160b804232c1908fc187e0230e5ac5b099f15fde8ed7f8cddebca2",
+    "decisions.json": "ee3c04621cd8eb11fb90f2561965aed91d00f7664abc351a567dd943b42b7ddf",
+    "source-geometry.json": "f088447b0257f46350b40cc8d7d726e7c2d38b7b7fee2fb043eeba0e0e119113",
+    "runtime-capture.json": "1d3536fe7d2713fa4ca1efbd0aaaa5564425a42d6157550648f3fc53bff02956",
+    "runtime-measurements.json": "6ef833de6bd142c93ffc1db004d73f0df874380ed98e8d4d8db220e0c0198dcb",
+    "layout-plan.json": "742a305eeddc155fcb68187568454d497078f0f16da9e5a9eae7bd367d1ef30b",
+    "content.json": "fd7e557c4abfcce92bc247b00e80e2b150088863b5a0d538745c1450ec5fbd5f",
+    "versions.json": "ed53ebb76f843333073282cef92e6c17489b360b4c4fa273372c2c628b41f9a4"
+  }
+}

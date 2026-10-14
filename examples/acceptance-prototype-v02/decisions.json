@@ -1,0 +1,107 @@
+{
+  "version": "0.1.0",
+  "layoutTreeSha256": "d9b2312a21c934af0cb11fe58e2e51e7445c28240915f68a630b8d75bb5140e5",
+  "registrySha256": "d4051196454607de93eef6fb501016684ab427b11b63a00d57f8c6f75b1946ff",
+  "items": [
+    {
+      "sourceId": "header-title",
+      "intent": "static",
+      "preferredId": null,
+      "variant": null,
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e1"
+      ]
+    },
+    {
+      "sourceId": "field-name",
+      "intent": "text",
+      "preferredId": "form.input.default.medium",
+      "variant": "default",
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e3"
+      ]
+    },
+    {
+      "sourceId": "field-status",
+      "intent": "choice",
+      "preferredId": "form.select.default.medium",
+      "variant": "default",
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e4"
+      ]
+    },
+    {
+      "sourceId": "query-action",
+      "intent": "action",
+      "preferredId": "action.button.primary.medium",
+      "variant": "default",
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e6"
+      ]
+    },
+    {
+      "sourceId": "scope-content",
+      "intent": "static",
+      "preferredId": null,
+      "variant": null,
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e5"
+      ]
+    },
+    {
+      "sourceId": "user-table",
+      "intent": "records",
+      "preferredId": "data.table.default",
+      "variant": "default",
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e10",
+        "e11"
+      ]
+    },
+    {
+      "sourceId": "list-title",
+      "intent": "static",
+      "preferredId": null,
+      "variant": null,
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e8"
+      ]
+    },
+    {
+      "sourceId": "export-action",
+      "intent": "static",
+      "preferredId": null,
+      "variant": null,
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e9"
+      ]
+    },
+    {
+      "sourceId": "list-summary",
+      "intent": "static",
+      "preferredId": null,
+      "variant": null,
+      "confidence": "high",
+      "rationale": "Explicit frozen prototype and admitted source state; no implicit resource substitution.",
+      "evidence": [
+        "e12"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "task": "TASK-044",
+  "status": "READY_FOR_PREFLIGHT",
+  "scope": "v02_pipeline_migration_readiness",
+  "nativeExecution": "NOT_RUN",
+  "targets": {
+    "figma": "0vGWSRoLxBiVPXiZ8xJAX9",
+    "penpot": "57949053-620f-8001-8008-c804c8d61529"
+  },
+  "source": "examples/acceptance-prototype-v02",
+  "geometry": "examples/acceptance-prototype-v02/source-geometry.json",
+  "inputSha256": {
+    "versions": "8f96490065cb843f523bf73be4e81ee9ad6e702b4fc7e87cd75fd2da3c46ca09",
+    "geometry": "f088447b0257f46350b40cc8d7d726e7c2d38b7b7fee2fb043eeba0e0e119113",
+    "measurements": "6ef833de6bd142c93ffc1db004d73f0df874380ed98e8d4d8db220e0c0198dcb",
+    "content": "46fa9b3c3c2ce3501c364284fb3e3deff84eb8e0aaaff7ca5aadd10ced319535",
+    "catalog": "62edd36a8ed4e94eebb70ea5607b7d21b7a73460c011566e810010b764c595fa",
+    "fidelity": "606614262ff8fdbbf97d61ef4f8fd9db878cffa66502d5bfabd3e93936607c79",
+    "tokens": "dc753c6588f6b68b800755a3fadf12268f61b0fb6a0aa96af5dcd24d149c607a",
+    "iconBindings": "06e681be71bde9e001cee408e852eb3da4c66b3fdfa05eea8164b1ae7d2f2481",
+    "runnerCli": "e475570cc5fe09d62f96f9fa8a51df3460ba5d9d7252e975a9d322985023ad0b"
+  },
+  "targetRegistrySha256": "d4051196454607de93eef6fb501016684ab427b11b63a00d57f8c6f75b1946ff",
+  "declaredIcons": [
+    "remix.download-line",
+    "remix.settings-3-line"
+  ],
+  "blockers": []
+}

@@ -41,6 +41,26 @@ class V02PipelineProfileTests(unittest.TestCase):
             self.assertIn('Input versions do not match the selected profile', result.stderr)
             self.assertFalse(output.exists())
 
+    def test_migrated_input_runs_core_and_both_adapter_preflights(self):
+        source = ROOT / 'examples/acceptance-prototype-v02'
+        manifest = load_json(source / 'input-manifest.json')
+        self.assertEqual(manifest['status'], 'READY_FOR_PREFLIGHT')
+        with tempfile.TemporaryDirectory(dir=ROOT / 'artifacts') as directory:
+            output = Path(directory) / 'run'
+            command = [sys.executable, 'scripts/run_pipeline.py', str(source),
+                       '--output-dir', str(output),
+                       '--figma-file', '0vGWSRoLxBiVPXiZ8xJAX9',
+                       '--penpot-file', '57949053-620f-8001-8008-c804c8d61529',
+                       '--profile', 'v0.2']
+            result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            qa = load_json(output / 'qa_report.json')
+            self.assertEqual(qa['status'], 'PASS')
+            self.assertTrue(qa['readyForAdapter'])
+            self.assertEqual(qa['adapterPreflights'], {'figma': 'PASS', 'penpot': 'PASS'})
+            self.assertEqual(qa['nativeExecution'], 'NOT_RUN')
+            self.assertEqual(qa['finalVisualQa'], 'NOT_RUN')
+
 
 if __name__ == '__main__':
     unittest.main()

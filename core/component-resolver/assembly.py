@@ -162,7 +162,12 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                 if 'textStyle' in entry:raise ValueError('Primitive style cannot override an admitted component')
                 node = payload(spec, row, identifier)
                 scope = registry.inspect(row['componentId']).get('contentScope')
+                table_headers = None
                 if scope and 'data' in scope:
+                    if 'tableHeaderStyle' in entry:
+                        table_headers = node['props'].pop('headers', None)
+                        if not table_headers:
+                            raise ValueError('Table header composition needs source-bound header claims')
                     if source_geometry is None or 'tableRecords' not in entry:
                         raise ValueError('unsupported_component: fixed Table requires admitted source geometry and records')
                     source = source_geometry.source_component(row['componentId'], row['variant'])
@@ -224,7 +229,8 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
             if 'tableHeaderStyle' in entry:
                 if not source_geometry or row['componentType']!='Table' or 'cellSlots' in entry:
                     raise ValueError('Table header composition requires a measured Table without competing Cell slots')
-                headers=section[-1]['instance'].get('props',{}).pop('headers',None)
+                headers=(table_headers if table_headers is not None else
+                         section[-1]['instance'].get('props',{}).pop('headers',None))
                 if not headers:raise ValueError('Table header composition needs source-bound header claims')
                 replacement,offset=table_header.compose(row['cellId'],box,section[-1]['instance'],headers,
                     entry['tableHeaderStyle'],source_geometry,token_registry)
