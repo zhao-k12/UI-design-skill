@@ -1,0 +1,232 @@
+{
+  "kind": "native-default-font-text-measurement",
+  "status": "PASS",
+  "platform": "penpot",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "pageId": "f1153c87-a7fc-80d8-8008-c98abc1a1948",
+  "pageName": "V0.2 / Default-font text measurements",
+  "method": "Two matching independent execute_code reads after native layout settled",
+  "font": {
+    "fontId": "sourcesanspro",
+    "fontVariantId": "regular",
+    "weight": 400
+  },
+  "rows": [
+    {
+      "uiIrId": "title",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abcc7f3aa",
+      "characters": "用户管理",
+      "width": 80,
+      "height": 28,
+      "textBounds": {
+        "x": 100,
+        "y": 1,
+        "width": 80,
+        "height": 26
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "20",
+      "lineHeight": "1.4",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "label.name",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abcffbc2d",
+      "characters": "姓名",
+      "width": 28,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 58,
+        "width": 28,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "label.status",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd0bc0ef",
+      "characters": "状态",
+      "width": 28,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 114,
+        "width": 28,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "label.summary",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd1c0627",
+      "characters": "范围",
+      "width": 28,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 170,
+        "width": 28,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "filter.description",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd2c721e",
+      "characters": "查看用户信息",
+      "width": 84,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 226,
+        "width": 84,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "label.action",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd3ebd80",
+      "characters": "操作",
+      "width": 28,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 282,
+        "width": 28,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "list.title",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd4fb367",
+      "characters": "用户列表",
+      "width": 56,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 338,
+        "width": 56,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "list.export.label",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd619de6",
+      "characters": "导出",
+      "width": 28,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 394,
+        "width": 28,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "column.name.label",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd7412b8",
+      "characters": "姓名",
+      "width": 28,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 450,
+        "width": 28,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "column.status.label",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd868ab4",
+      "characters": "状态",
+      "width": 28,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 506,
+        "width": 28,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "column.role.label",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abd97e7d1",
+      "characters": "角色",
+      "width": 28,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 562,
+        "width": 28,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    },
+    {
+      "uiIrId": "list.count",
+      "nodeId": "f1153c87-a7fc-80d8-8008-c98abdab54c2",
+      "characters": "共 3 位用户",
+      "width": 69,
+      "height": 22,
+      "textBounds": {
+        "x": 100,
+        "y": 618,
+        "width": 68.609375,
+        "height": 18
+      },
+      "fontId": "sourcesanspro",
+      "fontVariantId": "regular",
+      "fontSize": "14",
+      "lineHeight": "1.5714285714285714",
+      "growType": "auto-width"
+    }
+  ]
+}

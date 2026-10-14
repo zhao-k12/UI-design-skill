@@ -1,0 +1,240 @@
+{
+  "kind": "platform-neutral-text-envelope",
+  "status": "PASS",
+  "policy": {
+    "width": "max(figma,penpot)",
+    "height": "max(figma,penpot)"
+  },
+  "sources": {
+    "figma": {
+      "path": "artifacts/task-050/figma-native-read.json",
+      "sha256": "31e1e05bee00d406a0e7b5cfb13ce829aa7190719282894b19285bfdcf4b7131",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "pageId": "169:2"
+    },
+    "penpot": {
+      "path": "artifacts/task-050/penpot-native-read.json",
+      "sha256": "1deb6cb737777dfd07520ba3b6560fb6bede0e72527a0317b91fc75463cf16bd",
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "pageId": "f1153c87-a7fc-80d8-8008-c98abc1a1948"
+    }
+  },
+  "rows": [
+    {
+      "uiIrId": "column.name.label",
+      "characters": "姓名",
+      "width": 28,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:11",
+          "width": 28,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd7412b8",
+          "width": 28,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "column.role.label",
+      "characters": "角色",
+      "width": 28,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:13",
+          "width": 28,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd97e7d1",
+          "width": 28,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "column.status.label",
+      "characters": "状态",
+      "width": 28,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:12",
+          "width": 28,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd868ab4",
+          "width": 28,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "filter.description",
+      "characters": "查看用户信息",
+      "width": 84,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:7",
+          "width": 84,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd2c721e",
+          "width": 84,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "label.action",
+      "characters": "操作",
+      "width": 28,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:8",
+          "width": 28,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd3ebd80",
+          "width": 28,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "label.name",
+      "characters": "姓名",
+      "width": 28,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:4",
+          "width": 28,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abcffbc2d",
+          "width": 28,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "label.status",
+      "characters": "状态",
+      "width": 28,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:5",
+          "width": 28,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd0bc0ef",
+          "width": 28,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "label.summary",
+      "characters": "范围",
+      "width": 28,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:6",
+          "width": 28,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd1c0627",
+          "width": 28,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "list.count",
+      "characters": "共 3 位用户",
+      "width": 73,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:14",
+          "width": 73,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abdab54c2",
+          "width": 69,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "list.export.label",
+      "characters": "导出",
+      "width": 28,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:10",
+          "width": 28,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd619de6",
+          "width": 28,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "list.title",
+      "characters": "用户列表",
+      "width": 56,
+      "height": 22,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:9",
+          "width": 56,
+          "height": 22
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abd4fb367",
+          "width": 56,
+          "height": 22
+        }
+      }
+    },
+    {
+      "uiIrId": "title",
+      "characters": "用户管理",
+      "width": 80,
+      "height": 28,
+      "platformMeasurements": {
+        "figma": {
+          "nodeId": "169:3",
+          "width": 80,
+          "height": 28
+        },
+        "penpot": {
+          "nodeId": "f1153c87-a7fc-80d8-8008-c98abcc7f3aa",
+          "width": 80,
+          "height": 28
+        }
+      }
+    }
+  ]
+}

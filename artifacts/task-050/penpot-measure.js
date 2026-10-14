@@ -1,5 +1,7 @@
 // Execute with mcp__penpot__execute_code in file 57949053-620f-8001-8008-c804c8d61529.
 // Keep this page separate from the accepted component and adapter pages.
+// Immediate dimensions may be stale while Penpot recalculates layout;
+// capture evidence only after two independent reads agree.
 const specs = [
   ['title', '用户管理', 20, 28],
   ['label.name', '姓名', 14, 22],
