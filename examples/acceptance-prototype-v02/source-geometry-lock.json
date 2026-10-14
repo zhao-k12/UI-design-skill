@@ -1,0 +1,19 @@
+{
+  "scope": "v02-source-geometry-only",
+  "status": "PASS",
+  "componentLibraryVersion": "0.2.3-default-font-query-input-select-table",
+  "registrySha256": "d4051196454607de93eef6fb501016684ab427b11b63a00d57f8c6f75b1946ff",
+  "inputsSha256": {
+    "replay": "0da63d7c0f9b8dc364d55039708660eb7b03603dcc080f7cb3e9bb693614b890",
+    "frozenTableBundle": "f797763a7927032b2b782eaebc09e5aa2bfa83ad0b5e6cb363dd3c22c750fdaf",
+    "catalog": "62edd36a8ed4e94eebb70ea5607b7d21b7a73460c011566e810010b764c595fa",
+    "fidelity": "606614262ff8fdbbf97d61ef4f8fd9db878cffa66502d5bfabd3e93936607c79"
+  },
+  "componentIrSha256": {
+    "action.button.primary.medium": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290",
+    "form.input.default.medium": "c0255251a9e12c62bdf9cde32d94019068a3190381e5ebe1dfa3e7793a6d603c",
+    "form.select.default.medium": "ac0ffa896e31b8f84d21ebdb6dad08076f0136eb33b797ac6d5cb541258ae9a6",
+    "data.table.default": "f4595874472457b7b34a51cf6c40e7022b88c963ba2a0a813b8d2383cfff35ea"
+  },
+  "fullInputPackageReady": false
+}

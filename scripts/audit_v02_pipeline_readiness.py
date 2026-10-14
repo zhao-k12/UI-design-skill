@@ -21,11 +21,11 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT):
+def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT, geometry_path=None):
     source = Path(source).resolve()
     files = {
         "versions": source / "versions.json",
-        "geometry": source / "source-geometry.json",
+        "geometry": Path(geometry_path).resolve() if geometry_path is not None else source / "source-geometry.json",
         "measurements": source / "runtime-measurements.json",
         "content": source / "content.json",
         "catalog": ROOT / "registries/components/v0.2.3/catalog.json",
@@ -93,6 +93,7 @@ def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT):
         "scope": "v02_pipeline_migration_readiness", "nativeExecution": "NOT_RUN",
         "targets": {"figma": TARGET_FIGMA, "penpot": penpot_file},
         "source": source.relative_to(ROOT).as_posix() if source.is_relative_to(ROOT) else str(source),
+        "geometry": files["geometry"].relative_to(ROOT).as_posix() if files["geometry"].is_relative_to(ROOT) else str(files["geometry"]),
         "inputSha256": {k: digest(v) for k, v in files.items() if v.is_file()},
         "targetRegistrySha256": registry.fingerprint,
         "declaredIcons": declared_icons, "blockers": blockers,
@@ -102,13 +103,14 @@ def audit(source=DEFAULT_SOURCE, penpot_file=TARGET_PENPOT):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+    parser.add_argument("--geometry", type=Path, help="Explicit versioned Component IR geometry bundle")
     parser.add_argument("--penpot-file", default=TARGET_PENPOT)
     parser.add_argument("--output", type=Path, default=ROOT / "artifacts/task-044/readiness_report.json")
     args = parser.parse_args()
     output = args.output.resolve()
     if not output.is_relative_to((ROOT / "artifacts").resolve()):
         parser.error("Output must stay in project artifacts")
-    report = audit(args.source, args.penpot_file)
+    report = audit(args.source, args.penpot_file, args.geometry)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"status": report["status"], "blockers": [b["code"] for b in report["blockers"]]}, ensure_ascii=False))

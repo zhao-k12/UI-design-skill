@@ -25,6 +25,14 @@ class V02PipelineReadinessTests(unittest.TestCase):
         self.assertNotIn("penpot_icon_target_mismatch", [item["code"] for item in report["blockers"]])
         self.assertEqual(report["status"], "BLOCKED")
 
+    def test_explicit_admitted_geometry_removes_only_geometry_blocker(self):
+        path = ROOT / "examples/acceptance-prototype-v02/source-geometry.json"
+        report = module.audit(geometry_path=path)
+        self.assertEqual(report["geometry"], "examples/acceptance-prototype-v02/source-geometry.json")
+        self.assertEqual([item["code"] for item in report["blockers"]], [
+            "legacy_input_lock", "penpot_icon_target_mismatch",
+            "pipeline_cli_v01_pinned", "text_measurements_need_rebind"])
+
 
 if __name__ == "__main__":
     unittest.main()
