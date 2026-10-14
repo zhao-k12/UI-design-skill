@@ -2,7 +2,7 @@
 
 平台无关的静态 B 端 UI 设计 Skill。由 Codex 理解静态原型，再通过确定性布局、官方组件库和 UI-IR，生成 Figma 或 Penpot 原生可编辑设计稿。
 
-**已实现：V0.1 有限范围的设计流水线。待开发：V0.2 自主持续开发计划。** 当前并非任意截图、任意组件的一键生成工具。
+**已实现：V0.1 有限范围的设计流水线；V0.2 正在按限定范围开发。** 当前并非任意截图、任意组件的一键生成工具。
 
 ## 工作方式
 
@@ -57,7 +57,7 @@ node --test tests/*.test.mjs
 
 只验证平台无关基础能力可运行 `.\.venv\Scripts\python.exe -m unittest tests.test_architecture tests.test_ui_ir tests.test_tokens tests.test_layout tests.test_layout_builder tests.test_component_registry`。完整字体/原生保真检查还需要指定字体、固定FreeType诊断环境和实际平台证据，这些资源不会自动安装。公开版省略账号界面截图，因此部分历史Manifest检查也需要本机原证据。缺少环境或证据不能视作PASS；详见[公开快照说明](docs/PUBLICATION.md)与[本次检查结果](docs/PUBLICATION_VALIDATION.md)。
 
-## 新的待开发内容：V0.2
+## 开发中的 V0.2
 
 开发环境预检与分组测试入口已新增，见[开发检查说明](docs/DEVELOPMENT_CHECKS.md)。它们区分依赖缺失、证据变化和实际测试失败，不替代原生验收。
 
@@ -65,7 +65,9 @@ node --test tests/*.test.mjs
 
 官方运行环境支持[两次真实提取复验](docs/RUNTIME_REPLAY.md)。后续新设计字体使用 [Figma/Penpot 各自的默认字体](docs/FONT_POLICY.md)，实际绑定须在目标会话验证。
 
-完整内容见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
+截至 TASK-052，默认字体下的 Button、Input、Select、Table 各一项固定内容配置已通过双平台原生保真并进入独立 V0.2.3 Registry；冻结用户管理列表已完成同一 UI-IR 的 Figma/Penpot 原生整页验收。Figma 使用 Inter，Penpot 使用 Source Sans Pro。该范围的 [验收记录](.dev/TASK-052_ACCEPTANCE.md) 和 [发布就绪审计](docs/V02_RELEASE_READINESS.md) 可分别查看。V0.2 尚未发布。
+
+完整目标见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
 
 - 提前建设18类组件，以及明确的变体、状态、尺寸和配置覆盖范围。
 - 页面、Section、复杂表格模式和1920宽画布布局政策。
@@ -74,7 +76,7 @@ node --test tests/*.test.mjs
 - 用户选择目标平台；两平台能力分别通过发布验收。
 - 阶段自动推进、测试、记录、提交、断点恢复和冲突处理。
 
-计划状态为 **PLANNED**，尚未开发。阶段、覆盖矩阵和迁移政策仍有待决策事项。本次公开发布只整理文档，不启动开发或后台自动任务。
+计划状态为 **IN PROGRESS**，尚有组件覆盖、Adapter 字节锁、新独立原型端到端验收等发布门未完成。当前开发不意味着启动后台任务；未执行的检查不计为通过。
 
 ## 阅读入口
 

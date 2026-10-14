@@ -1,6 +1,6 @@
 # UI Design Skill V0.2 — Autonomous Development Plan
 
-状态：PLANNED。本文是新的未完成开发计划，不表示已实现，不授权开始开发或启动后台任务。已实现范围由README、正式Registry和历史验收限定。
+状态：IN PROGRESS（限定范围，未发布）。本文仍是完整目标计划，不表示各阶段均已实现，也不授权启动后台任务。当前已实现范围由 README、正式 Registry、[开发状态](../.dev/DEVELOPMENT_STATE.md) 和 [发布就绪审计](V02_RELEASE_READINESS.md) 限定。
 
 ## 项目目标
 

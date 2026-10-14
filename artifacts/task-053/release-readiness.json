@@ -1,0 +1,57 @@
+{
+  "scope": "v02-release-readiness-audit",
+  "status": "NOT_READY",
+  "releaseReady": false,
+  "evidenceValid": true,
+  "snapshots": {
+    "catalog": "62edd36a8ed4e94eebb70ea5607b7d21b7a73460c011566e810010b764c595fa",
+    "admission": "02935cc77b5a617769d751dbd99392fc3544b0a9b120591b3efdb099785712d4",
+    "manifest": "a86aa7c305273e400a04ce93290d6644ec796fc7a3814f5e2a1743ee6fb33a2b",
+    "coreQa": "ad86ad7f439a24661ff99cd06182bd12af4368ade5e89c784b7eb6491f9315d0",
+    "figmaPreflight": "0664be88eafda39509b62d8b8823c47aadbb1ee49724b6d37a24ec12defffaef",
+    "penpotPreflight": "d5bcbfdb3d2805e3517aa1760992f2fe31df913cb716e37ed0332c39a468937e",
+    "nativeQa": "e1bbed25de9431377d9bf76189b5c6d4b33df91a37a8e557e5fde9f13455722b",
+    "figmaPng": "913aed715c5000fbe73a50d800b13fad0eecdefc3ac0633d14c56397e49e98dd",
+    "penpotPng": "640f49aa12bdb0633928dc4043751bf94ef0e7de6d4e0b8ae231c64b5c4ceefa",
+    "penpotExecution": "df1c77fce38fb793f46dba762c28873280502e66bcf89a73dbee7da527e9024b"
+  },
+  "componentCoverage": {
+    "targetCount": 18,
+    "admittedTypeCount": 4,
+    "admittedTypes": [
+      "Button",
+      "Input",
+      "Select",
+      "Table"
+    ],
+    "missingTypes": [
+      "DatePicker",
+      "Checkbox",
+      "Radio",
+      "Switch",
+      "Tag",
+      "Pagination",
+      "Card",
+      "Tabs",
+      "Form",
+      "Modal",
+      "Drawer",
+      "Upload",
+      "Tree",
+      "Cascader"
+    ],
+    "admittedConfigurationCount": 4,
+    "contentScope": "fixed-native-content only"
+  },
+  "gates": {
+    "scopedRegistry": "PASS",
+    "targetComponentCoverage": "PARTIAL",
+    "frozenListCorePipeline": "PASS",
+    "frozenListDualNativeOutput": "PASS",
+    "adapterRuntimeByteLock": "NOT_IMPLEMENTED",
+    "newIndependentPrototypeE2E": "NOT_RUN",
+    "allReleaseGates": "NOT_RUN"
+  },
+  "nextAction": "Decide a bounded component coverage increment and versioned Adapter byte-lock migration before claiming V0.2 release readiness.",
+  "issues": []
+}
