@@ -1,0 +1,43 @@
+{
+  "scope": "v02-default-font-radio-candidate",
+  "version": "0.2.0",
+  "platform": "figma",
+  "logicalComponentId": "form.radio.default.enabled",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "ec34263843da0bd5dec6ef4d21fc82a67cdb8e85b701c73e27c6061bdf1e89d1",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "190:2",
+  "componentId": "190:3",
+  "instanceId": "190:7",
+  "contentScope": {
+    "text": "启用",
+    "modelValue": true,
+    "trueValue": true,
+    "falseValue": false,
+    "disabled": false,
+    "size": "default",
+    "border": false,
+    "width": 48,
+    "height": 21
+  },
+  "font": "Inter",
+  "status": "CANDIDATE_REVIEW",
+  "checks": {
+    "sourceLocked": true,
+    "nativeComponentAndInstance": true,
+    "nativeGeometry": true,
+    "defaultFontAndFixedText": true,
+    "sourceColors": true,
+    "nativeSvgSemantics": true,
+    "repeatNativePngStable": true
+  },
+  "evidenceSha256": {
+    "native-read.json": "595a81de64632e94784f535d9483b39795ae87e0a29ead3668320858107b4c2b",
+    "native.png": "3ded80ada17d11c65de420b9a4ce022f3aa43ecd6e528c4cafc60307b57dc2a3",
+    "native-repeat.png": "3ded80ada17d11c65de420b9a4ce022f3aa43ecd6e528c4cafc60307b57dc2a3",
+    "native.svg": "c74080bbd06d3c375476810f6fc1c820848310297606cd8e770c07438abe9138"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
