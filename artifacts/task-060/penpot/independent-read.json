@@ -1,0 +1,117 @@
+{
+  "fileId": "57949053-620f-8001-8008-c804c8d61529",
+  "pageId": "0b54f3e1-c822-80b2-8008-caa7ac12b701",
+  "componentId": "0b54f3e1-c822-80b2-8008-caa7c1f9e5d8",
+  "main": {
+    "id": "0b54f3e1-c822-80b2-8008-caa7c1a10fc1",
+    "type": "board",
+    "width": 52,
+    "height": 21,
+    "children": [
+      {
+        "id": "0b54f3e1-c822-80b2-8008-caa7c1cbd76e",
+        "type": "rectangle",
+        "name": "checked box",
+        "x": 800,
+        "y": 82.5,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "id": "0b54f3e1-c822-80b2-8008-caa7c1da4ea8",
+        "type": "group",
+        "name": "checked mark / official CSS geometry candidate",
+        "x": 800,
+        "y": 82.5,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "id": "0b54f3e1-c822-80b2-8008-caa7c1e7c828",
+        "type": "text",
+        "name": "label",
+        "x": 820,
+        "y": 80,
+        "width": 28,
+        "height": 21
+      }
+    ]
+  },
+  "box": {
+    "id": "0b54f3e1-c822-80b2-8008-caa7c1cbd76e",
+    "width": 16,
+    "height": 16,
+    "radius": 2,
+    "fills": [
+      {
+        "fillColor": "#2d8cf0",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": null,
+        "fillColorRefId": null,
+        "fillImage": null
+      }
+    ],
+    "strokes": [
+      {
+        "strokeColor": "#2d8cf0",
+        "strokeColorRefFile": null,
+        "strokeColorRefId": null,
+        "strokeOpacity": 1,
+        "strokeStyle": "solid",
+        "strokeWidth": 1,
+        "strokeAlignment": "inner",
+        "strokeCapStart": null,
+        "strokeCapEnd": null,
+        "strokeColorGradient": null,
+        "strokeImage": null
+      }
+    ]
+  },
+  "tick": {
+    "id": "0b54f3e1-c822-80b2-8008-caa7c1da4ea8",
+    "type": "group",
+    "children": [
+      {
+        "id": "0b54f3e1-c822-80b2-8008-caa7c1decddc",
+        "type": "rectangle",
+        "name": "base-background"
+      },
+      {
+        "id": "0b54f3e1-c822-80b2-8008-caa7c1e01fab",
+        "type": "path",
+        "name": "svg-path"
+      }
+    ]
+  },
+  "label": {
+    "id": "0b54f3e1-c822-80b2-8008-caa7c1e7c828",
+    "text": "启用",
+    "fontId": "sourcesanspro",
+    "fontFamily": "sourcesanspro",
+    "fontVariantId": "regular",
+    "fontSize": "14",
+    "lineHeight": "1.5",
+    "x": 820,
+    "y": 80,
+    "width": 28,
+    "height": 21,
+    "fills": [
+      {
+        "fillColor": "#515a6e",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": null,
+        "fillColorRefId": null,
+        "fillImage": null
+      }
+    ]
+  },
+  "instance": {
+    "id": "0b54f3e1-c822-80b2-8008-caa7c204ac97",
+    "type": "board",
+    "componentId": "0b54f3e1-c822-80b2-8008-caa7c1f9e5d8",
+    "isCopy": true
+  },
+  "fileValidation": 0
+}

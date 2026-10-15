@@ -1,0 +1,45 @@
+{
+  "scope": "v02-default-font-checkbox-candidate",
+  "version": "0.2.0",
+  "platform": "penpot",
+  "logicalComponentId": "form.checkbox.default.enabled",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "7e42801bfb2b889dc221077b61caea37417176c5c66cb2297600adefaf747a94",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "pageReference": "0b54f3e1-c822-80b2-8008-caa7ac12b701",
+  "componentId": "0b54f3e1-c822-80b2-8008-caa7c1f9e5d8",
+  "mainId": "0b54f3e1-c822-80b2-8008-caa7c1a10fc1",
+  "instanceId": "0b54f3e1-c822-80b2-8008-caa7c204ac97",
+  "contentScope": {
+    "text": "启用",
+    "modelValue": true,
+    "trueValue": true,
+    "falseValue": false,
+    "disabled": false,
+    "indeterminate": false,
+    "size": "default",
+    "border": false,
+    "width": 52,
+    "height": 21
+  },
+  "font": "sourcesanspro",
+  "status": "CANDIDATE_REVIEW",
+  "checks": {
+    "sourceLocked": true,
+    "nativeComponentAndInstance": true,
+    "nativeGeometry": true,
+    "defaultFontAndFixedText": true,
+    "sourceColors": true,
+    "editableVectorAndText": true,
+    "repeatNativePngStable": true
+  },
+  "evidenceSha256": {
+    "independent-read.json": "34744e2338f090ad07aebe1be8e23dbd19bace942e7aec269b9626932f8ca0c4",
+    "component-native.png": "d048ce8f58b0574dda39232d6e00fbc931818752db7ee0eb91559f4a74051a62",
+    "repeat-native.png": "d048ce8f58b0574dda39232d6e00fbc931818752db7ee0eb91559f4a74051a62",
+    "component-native.svg": "5a99971089b098471bbfd1f636529bb9a11eebe9410c4c195146adaecc07e24b"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
