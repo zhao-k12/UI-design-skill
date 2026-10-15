@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "figma-only-qa",
+  "nativePngSha256": "400d51bcb9d81cc4f5bfe120499df53144fca1e9003b58802746c7ccd3f7a21a",
+  "visiblePages": "1 2 3",
+  "activePage": 1,
+  "previousDisabledVisible": true,
+  "nextVisible": true,
+  "remixIconsComplete": true,
+  "digitsComplete": true,
+  "clippedOrDetached": false,
+  "iconAdaptation": "View UI Plus icon font to hash-locked Remix Icon 4.9.1",
+  "effectiveFontIdentity": "Inter Regular 14"
+}

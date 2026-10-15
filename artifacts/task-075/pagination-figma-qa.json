@@ -1,0 +1,91 @@
+{
+  "scope": "figma-only-qa",
+  "gateVersion": "0.2.10-figma-only",
+  "status": "PASS",
+  "logicalComponentId": "data.pagination.default.three-pages",
+  "componentType": "Pagination",
+  "checks": {
+    "sourceAndCandidateLocked": true,
+    "independentNativeStructure": true,
+    "nativeRepeatStable": true,
+    "nativeSvgStable": true,
+    "sourceGeometryAndVisibleContent": true,
+    "hashBoundVisualReview": true
+  },
+  "rasterDiagnostics": {
+    "sourceSize": [
+      400,
+      32
+    ],
+    "figmaSize": [
+      400,
+      32
+    ],
+    "outsideContentPixels": 11120,
+    "outsideContentExactRatio": 0.981295,
+    "outsideContentMaxChannelDelta": 19,
+    "ink": {
+      "previous": {
+        "pixels": 8,
+        "bounds": [
+          14,
+          12,
+          17,
+          19
+        ]
+      },
+      "page1": {
+        "pixels": 15,
+        "bounds": [
+          49,
+          11,
+          52,
+          20
+        ]
+      },
+      "page2": {
+        "pixels": 28,
+        "bounds": [
+          84,
+          11,
+          90,
+          20
+        ]
+      },
+      "page3": {
+        "pixels": 32,
+        "bounds": [
+          121,
+          11,
+          127,
+          20
+        ]
+      },
+      "next": {
+        "pixels": 28,
+        "bounds": [
+          157,
+          11,
+          162,
+          20
+        ]
+      }
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "24924e55210a6c50309cb9f198aed7d7cd77becbeaa3e56b8efa7c521b53e47f",
+    "candidateAudit": "79f95048ad57552a956354f9134093df2b358a7184d16dea2294d6eef508e82b",
+    "visualReview": "e8591da06a31a5cb3247c82d4312c4a9a38565bff57dd66cb15a82c95f3739d0",
+    "policy": "1ca93ecc1b0467a4901899cca8aca4e75db0c5f8c09e3bd9ebdb84cd839b8550",
+    "native-read.json": "750c113ee224d138df4f33bcef7fe52c79c9ede8b1e503100322bc26ca307484",
+    "native.png": "400d51bcb9d81cc4f5bfe120499df53144fca1e9003b58802746c7ccd3f7a21a",
+    "native-repeat.png": "400d51bcb9d81cc4f5bfe120499df53144fca1e9003b58802746c7ccd3f7a21a",
+    "native.svg": "d65f1503987f22607c45920f7fa0c17d9b78fbcdfd6d8253a9e86332ca667407"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false,
+  "iconAdaptation": "View UI Plus icon font to hash-locked Remix Icon 4.9.1"
+}
