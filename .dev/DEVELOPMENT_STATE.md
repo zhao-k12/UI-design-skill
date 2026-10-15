@@ -30,8 +30,9 @@
 - TASK-074: Pagination 固定三页 Figma Inter 原生主组件与实例、五格几何和变量、哈希锁定 Remix 左右箭头原生主组件/实例、独立读回与重复 PNG/SVG 候选审计 PASS；单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - TASK-075: Pagination 固定三页 Figma 独立复读、重复导出、数字和 Remix 图标可见性及来源非内容像素 QA PASS；`admissionEligible=false`，双端正式 Fidelity Gate 与 Registry 准入仍 DEFERRED，V0.2 仍 NOT_READY。
 - TASK-076: Tabs 固定“概览/详情”双标签配置的官方源码/CSS、真实浏览器 Component IR、320×73 截图和来源锁 PASS；Figma 候选与单端 QA 尚未执行，双端正式准入仍 DEFERRED。
+- TASK-077: Tabs 固定双标签 Figma Inter 原生主组件/实例、标签栏与内容几何、变量绑定、独立读回及重复 PNG/SVG 候选审计 PASS；单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: Penpot 线按用户决定暂缓；对 Tabs 建立 Figma 原生候选和单端 QA，随后继续其余未准入类的官方来源锁与 Figma 组件。Switch、Card、Pagination 均未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: Penpot 线按用户决定暂缓；对 Tabs 候选做 Figma 单端独立 QA，随后继续其余未准入类的官方来源锁与 Figma 组件。Switch、Card、Pagination 均未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

@@ -1,0 +1,26 @@
+{
+  "scope": "v02-default-font-tabs-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "navigation.tabs.line.overview",
+  "componentType": "Tabs",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "207:2",
+  "componentId": "207:3",
+  "instanceId": "207:14",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "activeTab": "overview",
+    "labels": ["概览", "详情"],
+    "visibleContent": "概览内容",
+    "width": 320,
+    "height": 73
+  },
+  "componentIrSha256": "332575bbd132f8f2b41a786ac87a9744906c23d289dc9b8291afd4accd6f3656",
+  "candidateAuditSha256": "9ba36a06d8068e6caf7d1ef5db88017da595322c9129cd1ad1c3bb7cef27a5fa",
+  "nativeAdmission": "NOT_RUN",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
