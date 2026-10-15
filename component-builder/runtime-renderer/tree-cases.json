@@ -1,0 +1,23 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {"width": 320, "height": 180},
+  "containerWidth": 240,
+  "cases": [
+    {
+      "logicalId": "navigation.tree.expanded.departments",
+      "componentType": "Tree",
+      "variant": "expanded",
+      "props": {
+        "data": [{"title": "部门", "expand": true,
+          "children": [{"title": "研发部"}, {"title": "设计部"}]}],
+        "multiple": false,
+        "showCheckbox": false,
+        "checkStrictly": false,
+        "checkDirectly": false,
+        "selectNode": true,
+        "expandNode": false
+      },
+      "text": null
+    }
+  ]
+}

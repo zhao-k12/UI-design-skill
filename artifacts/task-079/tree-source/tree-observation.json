@@ -1,0 +1,229 @@
+{
+  "scope": "official_tree_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 320,
+      "height": 180
+    },
+    "containerWidth": 240,
+    "cases": [
+      {
+        "logicalId": "navigation.tree.expanded.departments",
+        "componentType": "Tree",
+        "variant": "expanded",
+        "props": {
+          "data": [
+            {
+              "title": "部门",
+              "expand": true,
+              "children": [
+                {
+                  "title": "研发部"
+                },
+                {
+                  "title": "设计部"
+                }
+              ]
+            }
+          ],
+          "multiple": false,
+          "showCheckbox": false,
+          "checkStrictly": false,
+          "checkDirectly": false,
+          "selectNode": true,
+          "expandNode": false
+        },
+        "text": null
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 320,
+      "height": 180
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "e9bcffb1b19a9ec0cbe186856869917dbb0605864108cde120764e00567fe3ef",
+    "harnessBundleSha256": "f11a343738325732eda60316da9be569332f16e071fc526e510e464beaf4ca37",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "b5d79015f8ce554b67434a8e8ffb6ce90a5aea71b653661a92998bc17524119f"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-tree"
+    ],
+    "root": {
+      "x": 24,
+      "y": 32,
+      "width": 240,
+      "height": 79
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    "titles": [
+      {
+        "text": "部门",
+        "classes": [
+          "ivu-tree-title"
+        ],
+        "bounds": {
+          "x": 36,
+          "y": 32,
+          "width": 36,
+          "height": 21
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "0px 4px",
+          "margin": "0px"
+        }
+      },
+      {
+        "text": "研发部",
+        "classes": [
+          "ivu-tree-title"
+        ],
+        "bounds": {
+          "x": 54,
+          "y": 61,
+          "width": 50,
+          "height": 21
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "0px 4px",
+          "margin": "0px"
+        }
+      },
+      {
+        "text": "设计部",
+        "classes": [
+          "ivu-tree-title"
+        ],
+        "bounds": {
+          "x": 54,
+          "y": 90,
+          "width": 50,
+          "height": 21
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "0px 4px",
+          "margin": "0px"
+        }
+      }
+    ],
+    "arrows": [
+      {
+        "classes": [
+          "ivu-tree-arrow",
+          "ivu-tree-arrow-open"
+        ],
+        "bounds": {
+          "x": 24,
+          "y": 32,
+          "width": 12,
+          "height": 21
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "0px",
+          "margin": "0px"
+        },
+        "icon": "ivu-icon ivu-icon-ios-arrow-forward"
+      },
+      {
+        "classes": [
+          "ivu-tree-arrow"
+        ],
+        "bounds": {
+          "x": 42,
+          "y": 76,
+          "width": 12,
+          "height": 0
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "0px",
+          "margin": "0px"
+        },
+        "icon": null
+      },
+      {
+        "classes": [
+          "ivu-tree-arrow"
+        ],
+        "bounds": {
+          "x": 42,
+          "y": 105,
+          "width": 12,
+          "height": 0
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "0px",
+          "margin": "0px"
+        },
+        "icon": null
+      }
+    ]
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/tree/tree.vue": "185cea042ec5ec31d7b85147c137174a48828213fc8377079b7542402ebd7d68",
+    "node_modules/view-ui-plus/src/components/tree/node.vue": "a1e767b1348f5ef1e2c36436334d0faa644588bb648837ead823dd4af96a65eb",
+    "node_modules/view-ui-plus/src/styles/components/tree.less": "0caf61e28a9ba9e31b3234cdd90a6c55f14302fbdf55cf057585958384facd51"
+  },
+  "referenceComponentIrSha256": "1d48223064c3ca52c496c96773007ba29844471c2840eaa3d132418e910b00a7"
+}

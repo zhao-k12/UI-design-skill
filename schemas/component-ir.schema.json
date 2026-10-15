@@ -311,7 +311,8 @@
             "FormItem",
             "Pagination",
             "Card",
-            "Tabs"
+            "Tabs",
+            "Tree"
           ]
         },
         "variant": {
