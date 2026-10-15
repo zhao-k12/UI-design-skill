@@ -2,6 +2,8 @@
 
 截至 2026-10-14：**NOT_READY**。只读 [机器审计](../artifacts/task-053/release-readiness.json) 验证当前证据字节与范围；`evidenceValid=true` 表示现有证据一致，不表示已通过全量发布门。重新运行：
 
+2026-10-15 增量：Tag 和 Checkbox 各一个固定配置已陆续准入独立 V0.2.4、V0.2.5 Registry，当前为 18 类目标中的 6 类，仍有 12 类未准入。下表保留 TASK-053 在 2026-10-14 的只读审计快照，不代表今日覆盖数；V0.2 整体仍 **NOT_READY**。
+
 ```powershell
 .\.venv\Scripts\python.exe scripts/audit_v02_release_readiness.py --output artifacts/task-053/release-readiness.json
 ```

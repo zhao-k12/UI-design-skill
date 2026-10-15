@@ -1,0 +1,168 @@
+{
+  "version": "0.2.5",
+  "status": "PASS",
+  "registryAdmission": "PASS",
+  "registrySha256": "02d3f61a1518f0aaaeda788a376e324cf3b3b9464ed8f7e07bb31ae6d6c1b2bf",
+  "components": {
+    "action.button.primary.medium": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "查询",
+        "width": 60,
+        "height": 32
+      },
+      "fidelityReportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a"
+    },
+    "form.input.default.medium": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "placeholder": "请输入姓名",
+        "value": "",
+        "width": 240,
+        "height": 32
+      },
+      "fidelityReportSha256": "fd577dc95de3a217d5100c750fb615f6718b775ddea363fadc9a46b18e1f4821"
+    },
+    "form.select.default.medium": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "modelValue": "enabled",
+        "selectedText": "启用",
+        "width": 240,
+        "height": 32
+      },
+      "fidelityReportSha256": "9e2ca09d90fa48cd3bcb18cef783b90bac255e2cf85c43e7c85925eb79dc2a7a"
+    },
+    "data.table.default": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "showHeader": false,
+        "border": false,
+        "stripe": false,
+        "columns": [
+          {
+            "title": "姓名",
+            "key": "name",
+            "width": 464
+          },
+          {
+            "title": "状态",
+            "key": "status",
+            "width": 464
+          },
+          {
+            "title": "角色",
+            "key": "role",
+            "width": 464
+          }
+        ],
+        "data": [
+          {
+            "name": "张三",
+            "status": "启用",
+            "role": "管理员"
+          },
+          {
+            "name": "李四",
+            "status": "启用",
+            "role": "编辑"
+          },
+          {
+            "name": "王五",
+            "status": "停用",
+            "role": "访客"
+          }
+        ],
+        "width": 1392,
+        "height": 144
+      },
+      "fidelityReportSha256": "5de53c3d771de75895b3db979aeb22dfb0c61c240749b7de575cabe564d300cc"
+    },
+    "data.tag.default.enabled": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "size": "default",
+        "color": "default",
+        "closable": false,
+        "checkable": false,
+        "checked": true,
+        "width": 42,
+        "height": 22
+      },
+      "fidelityReportSha256": "921e68d45348ab792a13d07e00c0df89dd75330b21980cd98426b687c49c8d6a"
+    },
+    "form.checkbox.default.enabled": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "indeterminate": false,
+        "size": "default",
+        "border": false,
+        "width": 52,
+        "height": 21
+      },
+      "fidelityReportSha256": "dcff6a285ff77f2d84b3aea84f9677e7b4b165379c106fe788958478ee4be166"
+    }
+  },
+  "bindings": {
+    "figma": {
+      "action.button.primary.medium": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "135:15"
+      },
+      "form.input.default.medium": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "141:3"
+      },
+      "form.select.default.medium": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "152:10"
+      },
+      "data.table.default": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "157:3"
+      },
+      "data.tag.default.enabled": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "176:16"
+      },
+      "form.checkbox.default.enabled": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "182:12"
+      }
+    },
+    "penpot": {
+      "action.button.primary.medium": {
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentReference": "4b3abcb2-3ae8-803f-8008-c805b99e5b4e"
+      },
+      "form.input.default.medium": {
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentReference": "4b3abcb2-3ae8-803f-8008-c811d08712ea"
+      },
+      "form.select.default.medium": {
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentReference": "4b3abcb2-3ae8-803f-8008-c8485c8b9729"
+      },
+      "data.table.default": {
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentReference": "4b3abcb2-3ae8-803f-8008-c85957bd3a28"
+      },
+      "data.tag.default.enabled": {
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentReference": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8"
+      },
+      "form.checkbox.default.enabled": {
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentReference": "0b54f3e1-c822-80b2-8008-caa7c1f9e5d8"
+      }
+    }
+  },
+  "scopedPageGenerationReady": true,
+  "releaseReady": false
+}

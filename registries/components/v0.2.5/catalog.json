@@ -1,0 +1,190 @@
+{
+  "registryVersion": "0.2.5",
+  "libraryVersion": "0.2.5-default-font-query-input-select-table-tag-checkbox",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "scope": "production",
+  "components": {
+    "action.button.primary.medium": {
+      "componentType": "Button",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "查询",
+        "width": 60,
+        "height": 32
+      },
+      "fidelity": {
+        "reportId": "action.button.primary.medium.default-font-0.2.2",
+        "reportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a",
+        "componentIrSha256": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290"
+      }
+    },
+    "form.input.default.medium": {
+      "componentType": "Input",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "placeholder": "请输入姓名",
+        "value": "",
+        "width": 240,
+        "height": 32
+      },
+      "fidelity": {
+        "reportId": "form.input.default.medium.default-font-0.2.3",
+        "reportSha256": "fd577dc95de3a217d5100c750fb615f6718b775ddea363fadc9a46b18e1f4821",
+        "componentIrSha256": "c0255251a9e12c62bdf9cde32d94019068a3190381e5ebe1dfa3e7793a6d603c"
+      }
+    },
+    "form.select.default.medium": {
+      "componentType": "Select",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "modelValue": "enabled",
+        "selectedText": "启用",
+        "width": 240,
+        "height": 32
+      },
+      "fidelity": {
+        "reportId": "form.select.default.medium.default-font-0.2.4",
+        "reportSha256": "9e2ca09d90fa48cd3bcb18cef783b90bac255e2cf85c43e7c85925eb79dc2a7a",
+        "componentIrSha256": "ac0ffa896e31b8f84d21ebdb6dad08076f0136eb33b797ac6d5cb541258ae9a6"
+      }
+    },
+    "data.table.default": {
+      "componentType": "Table",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "showHeader": false,
+        "border": false,
+        "stripe": false,
+        "columns": [
+          {
+            "title": "姓名",
+            "key": "name",
+            "width": 464
+          },
+          {
+            "title": "状态",
+            "key": "status",
+            "width": 464
+          },
+          {
+            "title": "角色",
+            "key": "role",
+            "width": 464
+          }
+        ],
+        "data": [
+          {
+            "name": "张三",
+            "status": "启用",
+            "role": "管理员"
+          },
+          {
+            "name": "李四",
+            "status": "启用",
+            "role": "编辑"
+          },
+          {
+            "name": "王五",
+            "status": "停用",
+            "role": "访客"
+          }
+        ],
+        "width": 1392,
+        "height": 144
+      },
+      "fidelity": {
+        "reportId": "data.table.default.default-font-0.2.5",
+        "reportSha256": "5de53c3d771de75895b3db979aeb22dfb0c61c240749b7de575cabe564d300cc",
+        "componentIrSha256": "f4595874472457b7b34a51cf6c40e7022b88c963ba2a0a813b8d2383cfff35ea"
+      }
+    },
+    "data.tag.default.enabled": {
+      "componentType": "Tag",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "size": "default",
+        "color": "default",
+        "closable": false,
+        "checkable": false,
+        "checked": true,
+        "width": 42,
+        "height": 22
+      },
+      "fidelity": {
+        "reportId": "data.tag.default.enabled.default-font-0.2.5",
+        "reportSha256": "921e68d45348ab792a13d07e00c0df89dd75330b21980cd98426b687c49c8d6a",
+        "componentIrSha256": "7f81ea9558c0f97481b14d792c710f7ae20efdf32c88ad70a17bcaa2a22d9b80"
+      }
+    },
+    "form.checkbox.default.enabled": {
+      "componentType": "Checkbox",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "indeterminate": false,
+        "size": "default",
+        "border": false,
+        "width": 52,
+        "height": 21
+      },
+      "fidelity": {
+        "reportId": "form.checkbox.default.enabled.default-font-0.2.6",
+        "reportSha256": "dcff6a285ff77f2d84b3aea84f9677e7b4b165379c106fe788958478ee4be166",
+        "componentIrSha256": "7e42801bfb2b889dc221077b61caea37417176c5c66cb2297600adefaf747a94"
+      }
+    }
+  }
+}
