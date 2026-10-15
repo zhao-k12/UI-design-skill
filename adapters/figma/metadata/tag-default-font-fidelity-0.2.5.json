@@ -1,0 +1,33 @@
+{
+  "scope": "v02-default-font-tag-native-fidelity",
+  "gateVersion": "0.2.5",
+  "platform": "figma",
+  "logicalComponentId": "data.tag.default.enabled",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "componentId": "176:16",
+  "instanceId": "176:19",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "text": "启用",
+    "size": "default",
+    "color": "default",
+    "closable": false,
+    "checkable": false,
+    "checked": true,
+    "width": 42,
+    "height": 22
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "tag-native-fidelity.json": "310695333c627f3fe46fd575b27590f34f2f26bee00179295c291e558b2b78fa",
+    "candidate-metadata.json": "aa5b85ee91676a3f9b6108a3efb134f7693adae6e792c667b7530ee848ad12b3",
+    "native-svg": "cdc713f5702f625b8b550f8d7ee8bb9b15dc824a17730e0f287231d790c347f9",
+    "native-png": "8a960b898b36b6077c7372ef3150318a09f54da0978d11d03ff882f1aae5c3cb",
+    "native-read.json": "d323306c5bddcc0df8b6099099da8a5a89c0918f1ae9e598a68c10363d39c811",
+    "visual-review.json": "9acbc0cd0c7c71ac6258f5d6c53d05060c9ef7909c1d06fb25909f8275927114"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

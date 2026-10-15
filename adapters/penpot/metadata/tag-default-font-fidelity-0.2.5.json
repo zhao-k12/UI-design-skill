@@ -1,0 +1,33 @@
+{
+  "scope": "v02-default-font-tag-native-fidelity",
+  "gateVersion": "0.2.5",
+  "platform": "penpot",
+  "logicalComponentId": "data.tag.default.enabled",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "componentId": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8",
+  "instanceId": "f1153c87-a7fc-80d8-8008-c9a7f35cf91d",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "text": "启用",
+    "size": "default",
+    "color": "default",
+    "closable": false,
+    "checkable": false,
+    "checked": true,
+    "width": 42,
+    "height": 22
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "tag-native-fidelity.json": "310695333c627f3fe46fd575b27590f34f2f26bee00179295c291e558b2b78fa",
+    "candidate-metadata.json": "34418039a5a0d6c87396ca3d90ef8141deb6517d3daeea04496132d26f672c59",
+    "native-svg": "4b2aab5f6854e8a9d9d49755d468ea32b77e015e780e19e81dec908913470135",
+    "native-png": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+    "native-read.json": "08fc945d2d44bd2a71454c48b783be99439b3bcbe5d3927ba78922963bcb292d",
+    "visual-review.json": "9acbc0cd0c7c71ac6258f5d6c53d05060c9ef7909c1d06fb25909f8275927114"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

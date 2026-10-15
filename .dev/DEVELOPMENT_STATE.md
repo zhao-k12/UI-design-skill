@@ -9,8 +9,9 @@
 - Current TASK-053: V0.2 发布就绪只读审计 PASS，结论 NOT_READY：18 类目标只准入 4 类固定配置，Adapter 运行时代码未纳入 Manifest 字节锁，新独立原型与全量 Release Gate 未验收；入口文档已按实际进展校正。架构冲突记录见 TASK-053。
 - TASK-054: Tag 默认静态固定“启用”配置的官方来源锁、真实浏览器 DOM/样式/截图/字体和 Component IR 完整性 PASS；Figma/Penpot 默认字体改编与 Fidelity Gate 尚未执行，未准入 Registry，V0.2 仍 NOT_READY。
 - TASK-055: Tag 固定“启用”配置的 Figma Inter／Penpot sourcesanspro 默认字体原生候选、组件实例、独立读回、重复 PNG/SVG 和来源对照审计 PASS（候选状态）；正式 Fidelity Gate 与 Registry 准入仍 NOT_RUN。
+- TASK-056: Tag 固定“启用”配置的 Figma/Penpot 原生重复读回、双端正式 Fidelity Gate PASS，`admissionEligible=true`；Registry 准入尚未执行，V0.2 仍 NOT_READY。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: 对 TASK-055 Tag 固定配置执行正式双端 Fidelity Gate，合格后再按固定内容范围考虑独立 Registry 准入；或先就版本化 Adapter 字节锁制定架构决策。随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: 按 TASK-056 的固定内容范围考虑 Tag 独立 Registry 准入与双端 Adapter 绑定；或先就版本化 Adapter 字节锁制定架构决策。随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

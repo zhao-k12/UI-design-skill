@@ -1,0 +1,23 @@
+{
+  "scope": "v02-default-font-tag-native-fidelity-visual-review",
+  "status": "PASS",
+  "reviewedAt": "2026-10-14",
+  "expectedText": "启用",
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "platforms": {
+    "figma": {
+      "nativePngSha256": "8a960b898b36b6077c7372ef3150318a09f54da0978d11d03ff882f1aae5c3cb",
+      "legibleText": "启用",
+      "completeGlyphs": true,
+      "clippedText": false,
+      "emptyOrDetached": false
+    },
+    "penpot": {
+      "nativePngSha256": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+      "legibleText": "启用",
+      "completeGlyphs": true,
+      "clippedText": false,
+      "emptyOrDetached": false
+    }
+  }
+}

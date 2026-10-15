@@ -1,0 +1,128 @@
+{
+  "scope": "production",
+  "gateVersion": "0.2.5",
+  "status": "PASS",
+  "logicalComponentId": "data.tag.default.enabled",
+  "componentType": "Tag",
+  "variants": [
+    "default"
+  ],
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "7f81ea9558c0f97481b14d792c710f7ae20efdf32c88ad70a17bcaa2a22d9b80",
+  "candidateEvidenceKind": "native-design-capture",
+  "admissionEligible": true,
+  "issues": [],
+  "platforms": {
+    "figma": {
+      "status": "PASS",
+      "checks": {
+        "candidateEvidenceLocked": true,
+        "independentNativeStructure": true,
+        "nativeRepeatStable": true,
+        "nativeSvgSemanticallyStable": true,
+        "nonTextExactExceptCorners": true,
+        "cornerAntialiasWithinPolicy": true,
+        "twoVisibleUnclippedGlyphs": true,
+        "hashBoundVisualReview": true
+      },
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentId": "176:16",
+      "instanceId": "176:19",
+      "nativePngSha256": "8a960b898b36b6077c7372ef3150318a09f54da0978d11d03ff882f1aae5c3cb",
+      "nativeSvgSha256": "cdc713f5702f625b8b550f8d7ee8bb9b15dc824a17730e0f287231d790c347f9",
+      "candidateNativeSvgSha256": "cdc713f5702f625b8b550f8d7ee8bb9b15dc824a17730e0f287231d790c347f9",
+      "nativeReadSha256": "d323306c5bddcc0df8b6099099da8a5a89c0918f1ae9e598a68c10363d39c811",
+      "pixelDiagnostics": {
+        "sourceSize": [
+          42,
+          22
+        ],
+        "nativeSize": [
+          42,
+          22
+        ],
+        "nonTextChangedPixels": 24,
+        "nonTextMaximumChannelDelta": 3,
+        "nonTextChangesOutsideFourCorners": 0,
+        "glyphPixelsByCharacterZone": [
+          4,
+          9
+        ]
+      },
+      "glyphDiagnostics": {
+        "perCharacter": [
+          66,
+          66
+        ],
+        "outerEdgeInkPixels": 0
+      },
+      "candidateMetadataSha256": "aa5b85ee91676a3f9b6108a3efb134f7693adae6e792c667b7530ee848ad12b3"
+    },
+    "penpot": {
+      "status": "PASS",
+      "checks": {
+        "candidateEvidenceLocked": true,
+        "independentNativeStructure": true,
+        "nativeRepeatStable": true,
+        "nativeSvgSemanticallyStable": true,
+        "nonTextExactExceptCorners": true,
+        "cornerAntialiasWithinPolicy": true,
+        "twoVisibleUnclippedGlyphs": true,
+        "hashBoundVisualReview": true
+      },
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "componentId": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8",
+      "instanceId": "f1153c87-a7fc-80d8-8008-c9a7f35cf91d",
+      "nativePngSha256": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+      "nativeSvgSha256": "4b2aab5f6854e8a9d9d49755d468ea32b77e015e780e19e81dec908913470135",
+      "candidateNativeSvgSha256": "5e6efa7f1e04b3e234f19a4b8d221ff9816feed41ef4f4241bb1dd6c80b3ca93",
+      "nativeReadSha256": "08fc945d2d44bd2a71454c48b783be99439b3bcbe5d3927ba78922963bcb292d",
+      "pixelDiagnostics": {
+        "sourceSize": [
+          42,
+          22
+        ],
+        "nativeSize": [
+          42,
+          22
+        ],
+        "nonTextChangedPixels": 32,
+        "nonTextMaximumChannelDelta": 2,
+        "nonTextChangesOutsideFourCorners": 0,
+        "glyphPixelsByCharacterZone": [
+          8,
+          10
+        ]
+      },
+      "glyphDiagnostics": {
+        "perCharacter": [
+          54,
+          51
+        ],
+        "outerEdgeInkPixels": 0
+      },
+      "candidateMetadataSha256": "34418039a5a0d6c87396ca3d90ef8141deb6517d3daeea04496132d26f672c59"
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "7554a044db754107e45dfdd14d4ca5b786f2b66e49993bab834736b505249b7c",
+    "candidateAudit": "497e9b3f90f883cfadb361d97362aaa96206318e2189378cae6e5cc41eac7f34",
+    "visualReview": "9acbc0cd0c7c71ac6258f5d6c53d05060c9ef7909c1d06fb25909f8275927114",
+    "policy": "300d32d3250997e836a2b1e093a2e3bf9fcc8843c27a7e35a65614aa04042893"
+  },
+  "contentScopeProposal": {
+    "kind": "fixed-native-content",
+    "text": "启用",
+    "size": "default",
+    "color": "default",
+    "closable": false,
+    "checkable": false,
+    "checked": true,
+    "width": 42,
+    "height": 22
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
