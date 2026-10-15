@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "figma-only-qa",
+  "nativePngSha256": "34a991a54bf2247c7e162fd9fc9018fcc766ee028db76d1966ab85e6f97eb8ea",
+  "visibleLabels": ["概览", "详情"],
+  "activeLabel": "概览",
+  "visibleContent": "概览内容",
+  "activeInkVisible": true,
+  "inactiveContentHidden": true,
+  "completeText": true,
+  "clippedOrDetached": false,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}

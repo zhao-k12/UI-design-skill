@@ -1,0 +1,333 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "207:2",
+  "nodes": [
+    {
+      "id": "207:3",
+      "type": "COMPONENT",
+      "name": "Tabs / Line / Overview",
+      "x": 100,
+      "y": 100,
+      "width": 320,
+      "height": 73,
+      "fills": [],
+      "strokes": [],
+      "children": [
+        {
+          "id": "207:4",
+          "type": "FRAME"
+        },
+        {
+          "id": "207:12",
+          "type": "FRAME"
+        }
+      ]
+    },
+    {
+      "id": "207:4",
+      "type": "FRAME",
+      "name": "Tab bar / 36",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 36,
+      "fills": [],
+      "strokes": [],
+      "children": [
+        {
+          "id": "207:5",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "207:6",
+          "type": "FRAME"
+        },
+        {
+          "id": "207:11",
+          "type": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "id": "207:5",
+      "type": "RECTANGLE",
+      "name": "Base divider",
+      "x": 0,
+      "y": 35,
+      "width": 320,
+      "height": 1,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8627451062202454,
+            "g": 0.8705882430076599,
+            "b": 0.886274516582489
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:4"
+            }
+          }
+        }
+      ],
+      "strokes": []
+    },
+    {
+      "id": "207:6",
+      "type": "FRAME",
+      "name": "Two tabs",
+      "x": 0,
+      "y": 0,
+      "width": 136,
+      "height": 37,
+      "fills": [],
+      "strokes": [],
+      "children": [
+        {
+          "id": "207:7",
+          "type": "FRAME"
+        },
+        {
+          "id": "207:9",
+          "type": "FRAME"
+        }
+      ]
+    },
+    {
+      "id": "207:7",
+      "type": "FRAME",
+      "name": "Overview / Active",
+      "x": 0,
+      "y": 0,
+      "width": 60,
+      "height": 37,
+      "fills": [],
+      "strokes": [],
+      "children": [
+        {
+          "id": "207:8",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "id": "207:8",
+      "type": "TEXT",
+      "name": "Label / 概览",
+      "x": 16,
+      "y": 8,
+      "width": 28,
+      "height": 21,
+      "characters": "概览",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.1764705926179886,
+            "g": 0.5490196347236633,
+            "b": 0.9411764740943909
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:8"
+            }
+          }
+        }
+      ],
+      "strokes": []
+    },
+    {
+      "id": "207:9",
+      "type": "FRAME",
+      "name": "Details",
+      "x": 76,
+      "y": 0,
+      "width": 60,
+      "height": 37,
+      "fills": [],
+      "strokes": [],
+      "children": [
+        {
+          "id": "207:10",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "id": "207:10",
+      "type": "TEXT",
+      "name": "Label / 详情",
+      "x": 16,
+      "y": 8,
+      "width": 28,
+      "height": 21,
+      "characters": "详情",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:9"
+            }
+          }
+        }
+      ],
+      "strokes": []
+    },
+    {
+      "id": "207:11",
+      "type": "RECTANGLE",
+      "name": "Active ink bar",
+      "x": 0,
+      "y": 34,
+      "width": 60,
+      "height": 2,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.1764705926179886,
+            "g": 0.5490196347236633,
+            "b": 0.9411764740943909
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:8"
+            }
+          }
+        }
+      ],
+      "strokes": []
+    },
+    {
+      "id": "207:12",
+      "type": "FRAME",
+      "name": "Selected pane / 21",
+      "x": 0,
+      "y": 52,
+      "width": 320,
+      "height": 21,
+      "fills": [],
+      "strokes": [],
+      "children": [
+        {
+          "id": "207:13",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "id": "207:13",
+      "type": "TEXT",
+      "name": "Content / 概览内容",
+      "x": 0,
+      "y": 0,
+      "width": 120,
+      "height": 21,
+      "characters": "概览内容",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:9"
+            }
+          }
+        }
+      ],
+      "strokes": []
+    },
+    {
+      "id": "207:14",
+      "type": "INSTANCE",
+      "name": "Tabs / Line / Overview / Review",
+      "x": 100,
+      "y": 250,
+      "width": 320,
+      "height": 73,
+      "fills": [],
+      "strokes": [],
+      "children": [
+        {
+          "id": "I207:14;207:4",
+          "type": "FRAME"
+        },
+        {
+          "id": "I207:14;207:12",
+          "type": "FRAME"
+        }
+      ],
+      "mainComponentId": "207:3"
+    }
+  ]
+}

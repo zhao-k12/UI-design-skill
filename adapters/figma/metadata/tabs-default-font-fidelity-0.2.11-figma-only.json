@@ -1,0 +1,33 @@
+{
+  "scope": "v02-default-font-tabs-figma-qa",
+  "gateVersion": "0.2.11-figma-only",
+  "status": "PASS",
+  "logicalComponentId": "navigation.tabs.line.overview",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "207:2",
+  "componentId": "207:3",
+  "instanceId": "207:14",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "activeTab": "overview",
+    "labels": ["概览", "详情"],
+    "visibleContent": "概览内容",
+    "width": 320,
+    "height": 73
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "fc53be1cffc787259c0b0277e22d16198c25905ae8a5c6743917e397ab57f849",
+    "candidateAudit": "9ba36a06d8068e6caf7d1ef5db88017da595322c9129cd1ad1c3bb7cef27a5fa",
+    "visualReview": "0c7537849241010848187f52c66b49d425aca27ffdaf8483e7291fe577b7fad4",
+    "policy": "c120e74ad2fafdf67419c0064b0b8bdfb9edc5e71e7b150e7f1afb510cadce88",
+    "native-read.json": "911a84d0c3d01b05a3316325c45dd05c59ffb31535504acc6066bdf0f71e6eaa",
+    "native.png": "34a991a54bf2247c7e162fd9fc9018fcc766ee028db76d1966ab85e6f97eb8ea",
+    "native.svg": "2b488b178d3981c2746b61dd03593f21ebc8f0653d8a3285d9467412a8991456"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
