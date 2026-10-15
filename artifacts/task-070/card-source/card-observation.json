@@ -1,0 +1,122 @@
+{
+  "scope": "official_card_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 320,
+      "height": 180
+    },
+    "containerWidth": 240,
+    "cases": [
+      {
+        "logicalId": "content.card.default.user-info",
+        "componentType": "Card",
+        "variant": "default",
+        "props": {
+          "title": "用户信息",
+          "bordered": true,
+          "disHover": true,
+          "shadow": false,
+          "padding": 16
+        },
+        "text": "暂无内容"
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 320,
+      "height": 180
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "c76a90374421dadcead193d3f7d8ed61a65ec5714c9c0933becc7be7c1cc3321",
+    "harnessBundleSha256": "eba792997eab23fa296d597e73e80ae1823d7d054192e703d06f3e3ec8166ae9",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "25b7cdf06446773e2fca284c95dedaad010b76bdb8359e1f99e88f2721322047"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-card",
+      "ivu-card-bordered",
+      "ivu-card-dis-hover"
+    ],
+    "root": {
+      "x": 24,
+      "y": 24,
+      "width": 240,
+      "height": 106
+    },
+    "head": {
+      "x": 25,
+      "y": 25,
+      "width": 238,
+      "height": 51
+    },
+    "body": {
+      "x": 25,
+      "y": 76,
+      "width": 238,
+      "height": 53
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "border": "1px solid rgb(232, 234, 236)",
+      "borderRadius": "4px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "headStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "borderRadius": "0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "14px",
+      "padding": "14px 16px",
+      "boxShadow": "none"
+    },
+    "bodyStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "padding": "16px",
+      "boxShadow": "none"
+    },
+    "titleText": "用户信息",
+    "bodyText": "暂无内容"
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/card/card.vue": "331a7c5c8708f4fc467e43b0ce2dba9d38784d0508bc2b8d387f3af0cf9b0419",
+    "node_modules/view-ui-plus/src/styles/components/card.less": "7bb2bea25a5e1fda1d8e5089e34040e0e43c462b2433b1d3b61d3b193365d3d9"
+  },
+  "referenceComponentIrSha256": "2fb8a170bc335664864e735ee692532cc48b5eec000ce5c7edfc03bac2194f37"
+}

@@ -1,0 +1,14 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {"width": 320, "height": 180},
+  "containerWidth": 240,
+  "cases": [
+    {
+      "logicalId": "content.card.default.user-info",
+      "componentType": "Card",
+      "variant": "default",
+      "props": {"title": "用户信息", "bordered": true, "disHover": true, "shadow": false, "padding": 16},
+      "text": "暂无内容"
+    }
+  ]
+}

@@ -23,8 +23,9 @@
 - TASK-067: Switch 固定“开”选中态的官方源码/CSS、真实浏览器 Component IR、字体、截图和来源锁 PASS；双端默认字体候选、Fidelity Gate 与 Registry 准入均 NOT_RUN。
 - TASK-068: Switch 固定选中态 Figma Inter／Penpot sourcesanspro 原生主组件与实例、独立读回、重复 PNG/SVG 和来源对照审计 PASS（候选状态）；正式 Fidelity Gate 与 Registry 准入仍 NOT_RUN。
 - TASK-069: 用户决定暂缓连接不稳定的 Penpot 线，后续组件先走 Figma。Switch Figma 原生独立读回、重复导出、来源像素与字形质量核验 PASS；`admissionEligible=false`，双端正式 Fidelity Gate 与 Registry 准入均 DEFERRED，V0.2 仍 NOT_READY。
+- TASK-070: Card 固定“用户信息 / 暂无内容”配置的官方源码/CSS、真实浏览器 Component IR、240×106 截图和来源锁 PASS；Figma 原生候选与单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: Penpot 线按用户决定暂缓；继续其余 10 类官方来源锁、Figma 原生候选和单端 QA。Switch 尚未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: Penpot 线按用户决定暂缓；对 Card 建立 Figma 原生候选并做单端 QA，随后继续其余未准入类的官方来源锁和 Figma 核验。Switch 尚未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

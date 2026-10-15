@@ -1,0 +1,12 @@
+{
+  "scope": "component_runtime_extraction",
+  "status": "PASS",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentTypes": [
+    "Card"
+  ],
+  "componentIrSha256": "2fb8a170bc335664864e735ee692532cc48b5eec000ce5c7edfc03bac2194f37",
+  "runtimeManifestSha256": "696b3bca8758338663126b5fea2309cf321eff13ed898339c6d57c893193f013",
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}
