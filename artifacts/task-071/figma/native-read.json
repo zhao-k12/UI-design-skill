@@ -1,0 +1,286 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "198:2",
+  "nodes": [
+    {
+      "id": "198:8",
+      "type": "COMPONENT",
+      "name": "Card / Default / User Info",
+      "x": 100,
+      "y": 100,
+      "width": 240,
+      "height": 106,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:198:4"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9098039269447327,
+            "g": 0.9176470637321472,
+            "b": 0.9254902005195618
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:198:5"
+            }
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "cornerRadius": 4,
+      "children": [
+        {
+          "id": "198:9",
+          "type": "FRAME"
+        },
+        {
+          "id": "198:12",
+          "type": "FRAME"
+        }
+      ]
+    },
+    {
+      "id": "198:9",
+      "type": "FRAME",
+      "name": "Header / 51",
+      "x": 1,
+      "y": 1,
+      "width": 238,
+      "height": 51,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "cornerRadius": 0,
+      "children": [
+        {
+          "id": "198:10",
+          "type": "TEXT"
+        },
+        {
+          "id": "198:11",
+          "type": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "id": "198:10",
+      "type": "TEXT",
+      "name": "Title / 用户信息",
+      "x": 16,
+      "y": 14,
+      "width": 150,
+      "height": 22,
+      "characters": "用户信息",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.13725490868091583,
+            "b": 0.239215686917305
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:198:6"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1
+    },
+    {
+      "id": "198:11",
+      "type": "RECTANGLE",
+      "name": "Header divider",
+      "x": 0,
+      "y": 50,
+      "width": 238,
+      "height": 1,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9098039269447327,
+            "g": 0.9176470637321472,
+            "b": 0.9254902005195618
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:198:5"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "cornerRadius": 0
+    },
+    {
+      "id": "198:12",
+      "type": "FRAME",
+      "name": "Body / 53",
+      "x": 1,
+      "y": 52,
+      "width": 238,
+      "height": 53,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "cornerRadius": 0,
+      "children": [
+        {
+          "id": "198:13",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "id": "198:13",
+      "type": "TEXT",
+      "name": "Body / 暂无内容",
+      "x": 16,
+      "y": 16,
+      "width": 150,
+      "height": 21,
+      "characters": "暂无内容",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:198:7"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1
+    },
+    {
+      "id": "198:14",
+      "type": "INSTANCE",
+      "name": "Card / Default / User Info / Review",
+      "x": 100,
+      "y": 250,
+      "width": 240,
+      "height": 106,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:198:4"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9098039269447327,
+            "g": 0.9176470637321472,
+            "b": 0.9254902005195618
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:198:5"
+            }
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "cornerRadius": 4,
+      "children": [
+        {
+          "id": "I198:14;198:9",
+          "type": "FRAME"
+        },
+        {
+          "id": "I198:14;198:12",
+          "type": "FRAME"
+        }
+      ],
+      "mainComponentId": "198:8"
+    }
+  ]
+}

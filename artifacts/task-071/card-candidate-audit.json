@@ -1,0 +1,31 @@
+{
+  "scope": "figma-only-card-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "content.card.default.user-info",
+  "componentType": "Card",
+  "componentIrSha256": "2fb8a170bc335664864e735ee692532cc48b5eec000ce5c7edfc03bac2194f37",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "198:2",
+  "componentId": "198:8",
+  "instanceId": "198:14",
+  "checks": {
+    "officialSourceVerified": true,
+    "targetAndComponentLink": true,
+    "nativeGeometry": true,
+    "sourceColorsBound": true,
+    "defaultFontText": true,
+    "nativeRepeatStable": true,
+    "nativeSvgSourceColors": true,
+    "nativeRasterSize": true
+  },
+  "evidenceSha256": {
+    "native-read.json": "f420c8fcdc3269a05a35aacaf47254d266f0213134e40a7e3c18309332f6d467",
+    "native.png": "8fac33592fc7cc5612426024de538c331568c3dbac5713b369e533a7f407132d",
+    "native-repeat.png": "8fac33592fc7cc5612426024de538c331568c3dbac5713b369e533a7f407132d",
+    "native.svg": "5ce2b5d4a82fc7c9ae112f337323a37af468034266d4afba7513e879b5744a6b"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "releaseReady": false
+}

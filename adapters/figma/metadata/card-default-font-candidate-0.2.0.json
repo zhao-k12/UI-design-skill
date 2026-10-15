@@ -1,0 +1,25 @@
+{
+  "scope": "v02-default-font-card-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "content.card.default.user-info",
+  "componentType": "Card",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "198:2",
+  "componentId": "198:8",
+  "instanceId": "198:14",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "title": "用户信息",
+    "body": "暂无内容",
+    "width": 240,
+    "height": 106
+  },
+  "componentIrSha256": "2fb8a170bc335664864e735ee692532cc48b5eec000ce5c7edfc03bac2194f37",
+  "candidateAuditSha256": "219122e04f749495fa2dbb675c54b6d55948c7bf1afde01f4150f8ce3dc84e95",
+  "nativeAdmission": "NOT_RUN",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
