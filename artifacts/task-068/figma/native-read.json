@@ -1,0 +1,121 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "192:5",
+  "component": {
+    "id": "192:6",
+    "type": "COMPONENT",
+    "width": 44,
+    "height": 22,
+    "radius": 11,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.1764705926179886,
+          "g": 0.5490196347236633,
+          "b": 0.9411764740943909
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:182:4"
+          }
+        }
+      }
+    ],
+    "children": [
+      {
+        "id": "192:7",
+        "type": "TEXT",
+        "name": "open label",
+        "x": 8,
+        "y": 1,
+        "width": 12,
+        "height": 20
+      },
+      {
+        "id": "192:8",
+        "type": "ELLIPSE",
+        "name": "white knob",
+        "x": 24,
+        "y": 2,
+        "width": 18,
+        "height": 18
+      }
+    ]
+  },
+  "label": {
+    "id": "192:7",
+    "text": "开",
+    "fontName": {
+      "family": "Inter",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400,
+        "slnt": 0
+      }
+    },
+    "fontSize": 12,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 20
+    },
+    "x": 8,
+    "y": 1,
+    "width": 12,
+    "height": 20,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:135:4"
+          }
+        }
+      }
+    ]
+  },
+  "knob": {
+    "id": "192:8",
+    "x": 24,
+    "y": 2,
+    "width": 18,
+    "height": 18,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:182:6"
+          }
+        }
+      }
+    ]
+  },
+  "instance": {
+    "id": "192:9",
+    "type": "INSTANCE",
+    "mainComponentId": "192:6"
+  }
+}

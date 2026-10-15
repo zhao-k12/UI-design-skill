@@ -1,0 +1,94 @@
+{
+  "status": "CANDIDATE_REVIEW",
+  "issues": [],
+  "logicalComponentId": "form.switch.default.enabled",
+  "platforms": {
+    "figma": {
+      "scope": "v02-default-font-switch-candidate",
+      "version": "0.2.0",
+      "platform": "figma",
+      "logicalComponentId": "form.switch.default.enabled",
+      "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+      "componentIrSha256": "ab87af43fc5e538b45c07f93e478814c1a272ecf0ca10c7847c630772300cb38",
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "pageReference": "192:5",
+      "componentId": "192:6",
+      "instanceId": "192:9",
+      "contentScope": {
+        "text": "开",
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "size": "default",
+        "loading": false,
+        "width": 44,
+        "height": 22
+      },
+      "font": "Inter",
+      "status": "CANDIDATE_REVIEW",
+      "checks": {
+        "sourceLocked": true,
+        "nativeComponentAndInstance": true,
+        "nativeGeometry": true,
+        "defaultFontAndFixedText": true,
+        "sourceColors": true,
+        "nativeSvgSemantics": true,
+        "repeatNativePngStable": true
+      },
+      "evidenceSha256": {
+        "native-read.json": "ed1e83aed210280068a3cefafcc53a94c7ae6d919104913789e3dab11f46da99",
+        "native.png": "dd4525ac2c337a6857deaaa805a95eb7bbdb9b2fe330b065ea9487984a40b636",
+        "native-repeat.png": "dd4525ac2c337a6857deaaa805a95eb7bbdb9b2fe330b065ea9487984a40b636",
+        "native.svg": "a96197bf5672a02f475b450eb536bbc8a76f86c2327e92d16e0223310a703a2a"
+      },
+      "nativeAdmission": "NOT_RUN",
+      "readyForPageGeneration": false,
+      "releaseReady": false
+    },
+    "penpot": {
+      "scope": "v02-default-font-switch-candidate",
+      "version": "0.2.0",
+      "platform": "penpot",
+      "logicalComponentId": "form.switch.default.enabled",
+      "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+      "componentIrSha256": "ab87af43fc5e538b45c07f93e478814c1a272ecf0ca10c7847c630772300cb38",
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "pageReference": "0b54f3e1-c822-80b2-8008-cad5e6282af9",
+      "componentId": "0b54f3e1-c822-80b2-8008-cad5e70ee9dd",
+      "instanceId": "0b54f3e1-c822-80b2-8008-cad5e711ce82",
+      "contentScope": {
+        "text": "开",
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "size": "default",
+        "loading": false,
+        "width": 44,
+        "height": 22
+      },
+      "font": "sourcesanspro",
+      "status": "CANDIDATE_REVIEW",
+      "checks": {
+        "sourceLocked": true,
+        "nativeComponentAndInstance": true,
+        "nativeGeometry": true,
+        "defaultFontAndFixedText": true,
+        "sourceColors": true,
+        "nativeSvgSemantics": true,
+        "repeatNativePngStable": true
+      },
+      "evidenceSha256": {
+        "native-read.json": "bbc075a0e592b47ab73af8f2d1cb1ec0cc1055795b7e02146ecab335f46903a1",
+        "native.png": "a987b90390e6b332f81133f6e060c22e9c45fc09eb7505102b30c3e93dc55e94",
+        "native-repeat.png": "a987b90390e6b332f81133f6e060c22e9c45fc09eb7505102b30c3e93dc55e94",
+        "native.svg": "8e9414b74d9baf57421b6be129a56076d54a4e162779e44b7315204fc78d0849"
+      },
+      "nativeAdmission": "NOT_RUN",
+      "readyForPageGeneration": false,
+      "releaseReady": false
+    }
+  },
+  "sourceComponentIrSha256": "ab87af43fc5e538b45c07f93e478814c1a272ecf0ca10c7847c630772300cb38"
+}

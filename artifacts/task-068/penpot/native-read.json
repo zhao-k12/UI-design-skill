@@ -1,0 +1,90 @@
+{
+  "fileId": "57949053-620f-8001-8008-c804c8d61529",
+  "pageId": "0b54f3e1-c822-80b2-8008-cad5e6282af9",
+  "componentId": "0b54f3e1-c822-80b2-8008-cad5e70ee9dd",
+  "main": {
+    "id": "0b54f3e1-c822-80b2-8008-cad5e6e04ea0",
+    "type": "board",
+    "x": 800,
+    "y": 80,
+    "width": 44,
+    "height": 22,
+    "borderRadius": 11,
+    "fills": [
+      {
+        "fillColor": "#2d8cf0",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": "57949053-620f-8001-8008-c804c8d61529",
+        "fillColorRefId": "4b3abcb2-3ae8-803f-8008-c805b93e86e2",
+        "fillImage": null
+      }
+    ],
+    "children": [
+      {
+        "id": "0b54f3e1-c822-80b2-8008-cad5e6e9bc9c",
+        "type": "text",
+        "name": "open label",
+        "x": 808,
+        "y": 81,
+        "width": 12,
+        "height": 20
+      },
+      {
+        "id": "0b54f3e1-c822-80b2-8008-cad5e706f20e",
+        "type": "ellipse",
+        "name": "white knob",
+        "x": 824,
+        "y": 82,
+        "width": 18,
+        "height": 18
+      }
+    ]
+  },
+  "label": {
+    "id": "0b54f3e1-c822-80b2-8008-cad5e6e9bc9c",
+    "text": "开",
+    "fontId": "sourcesanspro",
+    "fontVariantId": "regular",
+    "fontSize": "12",
+    "lineHeight": "1.6666667",
+    "growType": "fixed",
+    "x": 808,
+    "y": 81,
+    "width": 12,
+    "height": 20,
+    "fills": [
+      {
+        "fillColor": "#ffffff",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": "57949053-620f-8001-8008-c804c8d61529",
+        "fillColorRefId": "4b3abcb2-3ae8-803f-8008-c805b94681ad",
+        "fillImage": null
+      }
+    ]
+  },
+  "knob": {
+    "id": "0b54f3e1-c822-80b2-8008-cad5e706f20e",
+    "x": 824,
+    "y": 82,
+    "width": 18,
+    "height": 18,
+    "fills": [
+      {
+        "fillColor": "#ffffff",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": "57949053-620f-8001-8008-c804c8d61529",
+        "fillColorRefId": "4b3abcb2-3ae8-803f-8008-c805b94681ad",
+        "fillImage": null
+      }
+    ]
+  },
+  "instance": {
+    "id": "0b54f3e1-c822-80b2-8008-cad5e711ce82",
+    "componentId": "0b54f3e1-c822-80b2-8008-cad5e70ee9dd",
+    "isCopy": true
+  },
+  "fileValidation": 0
+}
