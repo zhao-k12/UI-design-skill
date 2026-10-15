@@ -23,6 +23,50 @@ TABLE_SCOPE = {
     "width": 1392, "height": 144,
 }
 
+TAG_SCOPE = {"kind": "fixed-native-content", "text": "启用", "size": "default",
+             "color": "default", "closable": False, "checkable": False,
+             "checked": True, "width": 42, "height": 22}
+
+
+def valid_default_font_tag_report(report):
+    """Validate the fixed enabled Tag and both independent native proofs."""
+    hash_ok = lambda value: isinstance(value, str) and len(value) == 64 and all(c in "0123456789abcdef" for c in value)
+    if (report.get("gateVersion") != "0.2.5" or report.get("status") != "PASS"
+            or report.get("logicalComponentId") != "data.tag.default.enabled"
+            or report.get("componentType") != "Tag" or report.get("variants") != ["default"]
+            or report.get("contentScopeProposal") != TAG_SCOPE
+            or report.get("candidateEvidenceKind") != "native-design-capture"
+            or report.get("admissionEligible") is not True or report.get("issues") != []
+            or report.get("registryAdmission") != "NOT_RUN"
+            or report.get("readyForPageGeneration") is not False
+            or report.get("releaseReady") is not False
+            or report.get("effectiveCjkFontIdentity") != "UNVERIFIED"):
+        return False
+    evidence = report.get("evidenceSha256", {})
+    if not isinstance(evidence, dict) or not all(hash_ok(evidence.get(key)) for key in
+            ("sourceScreenshot", "candidateAudit", "visualReview", "policy")):
+        return False
+    rows = report.get("platforms", {})
+    if not isinstance(rows, dict) or set(rows) != {"figma", "penpot"}:
+        return False
+    for row in rows.values():
+        checks, pixels, glyphs = row.get("checks", {}), row.get("pixelDiagnostics", {}), row.get("glyphDiagnostics", {})
+        if (row.get("status") != "PASS" or not isinstance(checks, dict) or len(checks) != 8
+                or not all(value is True for value in checks.values())
+                or pixels.get("sourceSize") != [42, 22] or pixels.get("nativeSize") != [42, 22]
+                or pixels.get("nonTextChangesOutsideFourCorners") != 0
+                or type(pixels.get("nonTextMaximumChannelDelta")) is not int
+                or pixels["nonTextMaximumChannelDelta"] > 3
+                or len(glyphs.get("perCharacter", [])) != 2
+                or not all(type(n) is int and n > 10 for n in glyphs["perCharacter"])
+                or glyphs.get("outerEdgeInkPixels") != 0
+                or not isinstance(row.get("fileReference"), str) or not row["fileReference"]
+                or not isinstance(row.get("componentId"), str) or not row["componentId"]
+                or not all(hash_ok(row.get(key)) for key in
+                           ("nativePngSha256", "nativeSvgSha256", "nativeReadSha256", "candidateMetadataSha256"))):
+            return False
+    return True
+
 
 def valid_default_font_table_report(report):
     """Validate the exact fixed 3x3 Table native gate."""
@@ -215,7 +259,7 @@ class ComponentError(ValueError):
 class ComponentRegistry:
     def __init__(self, data, evidence=None, *, allow_test_fixtures=False):
         version = data.get("registryVersion") if isinstance(data, dict) else None
-        schema_name = (f"component-registry-{version}.schema.json" if version in ("0.2.0", "0.2.1", "0.2.2", "0.2.3")
+        schema_name = (f"component-registry-{version}.schema.json" if version in ("0.2.0", "0.2.1", "0.2.2", "0.2.3", "0.2.4")
                        else "component-registry.schema.json")
         schema = json.loads((Path(__file__).resolve().parents[2] / "schemas" / schema_name).read_text(encoding="utf-8"))
         Draft202012Validator.check_schema(schema)
@@ -248,13 +292,14 @@ class ComponentRegistry:
                     raise ComponentError("fidelity_source_mismatch", logical_id, "Evidence scope/source must match the registry")
                 allowed_gates = {"0.2.0": ("0.2.2",), "0.2.1": ("0.2.2", "0.2.3"),
                                  "0.2.2": ("0.2.2", "0.2.3", "0.2.4"),
-                                 "0.2.3": ("0.2.2", "0.2.3", "0.2.4", "0.2.5")}
+                                 "0.2.3": ("0.2.2", "0.2.3", "0.2.4", "0.2.5"),
+                                 "0.2.4": ("0.2.2", "0.2.3", "0.2.4", "0.2.5")}
                 if version in allowed_gates and report.get("gateVersion") not in allowed_gates[version]:
                     raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 active components require the scoped default-font gate")
                 if data["scope"] == "production":
                     if report.get("gateVersion") == "0.2.2":
                         expected_scope = {"kind": "fixed-native-content", "text": "查询", "width": 60, "height": 32}
-                        if (version not in ("0.2.0", "0.2.1", "0.2.2", "0.2.3") or entry.get("contentScope") != expected_scope
+                        if (version not in ("0.2.0", "0.2.1", "0.2.2", "0.2.3", "0.2.4") or entry.get("contentScope") != expected_scope
                                 or entry["componentType"] != "Button" or entry["variants"] != ["default"]):
                             raise ComponentError("invalid_content_scope", logical_id, "V0.2 Button requires its exact validated content and geometry scope")
                         if not valid_default_font_button_report(report):
@@ -263,7 +308,7 @@ class ComponentRegistry:
                     if report.get("gateVersion") == "0.2.3":
                         expected_scope = {"kind": "fixed-native-content", "placeholder": "请输入姓名",
                                           "value": "", "width": 240, "height": 32}
-                        if (version not in ("0.2.1", "0.2.2", "0.2.3") or entry.get("contentScope") != expected_scope
+                        if (version not in ("0.2.1", "0.2.2", "0.2.3", "0.2.4") or entry.get("contentScope") != expected_scope
                                 or entry["componentType"] != "Input" or entry["variants"] != ["default"]):
                             raise ComponentError("invalid_content_scope", logical_id, "V0.2 Input requires its exact validated placeholder and geometry scope")
                         if not valid_default_font_input_report(report):
@@ -272,19 +317,27 @@ class ComponentRegistry:
                     if report.get("gateVersion") == "0.2.4":
                         expected_scope = {"kind": "fixed-native-content", "modelValue": "enabled",
                                           "selectedText": "启用", "width": 240, "height": 32}
-                        if (version not in ("0.2.2", "0.2.3") or entry.get("contentScope") != expected_scope
+                        if (version not in ("0.2.2", "0.2.3", "0.2.4") or entry.get("contentScope") != expected_scope
                                 or entry["componentType"] != "Select" or entry["variants"] != ["default"]):
                             raise ComponentError("invalid_content_scope", logical_id, "V0.2 Select requires its exact selected value and geometry scope")
                         if not valid_default_font_select_report(report):
                             raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 default-font Select proof is incomplete")
                         continue
                     if report.get("gateVersion") == "0.2.5":
-                        if (version != "0.2.3" or entry.get("contentScope") != TABLE_SCOPE
-                                or entry["componentType"] != "Table" or entry["variants"] != ["default"]
-                                or entry["slots"]):
-                            raise ComponentError("invalid_content_scope", logical_id, "V0.2 Table requires its exact fixed rows, columns and geometry")
-                        if not valid_default_font_table_report(report):
-                            raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 default-font Table proof is incomplete")
+                        if entry["componentType"] == "Table":
+                            if (version not in ("0.2.3", "0.2.4") or entry.get("contentScope") != TABLE_SCOPE
+                                    or entry["variants"] != ["default"] or entry["slots"]):
+                                raise ComponentError("invalid_content_scope", logical_id, "V0.2 Table requires its exact fixed rows, columns and geometry")
+                            if not valid_default_font_table_report(report):
+                                raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 default-font Table proof is incomplete")
+                        elif entry["componentType"] == "Tag":
+                            if (version != "0.2.4" or entry.get("contentScope") != TAG_SCOPE
+                                    or entry["variants"] != ["default"] or entry["slots"] != ["label"]):
+                                raise ComponentError("invalid_content_scope", logical_id, "V0.2 Tag requires its exact fixed text, props and geometry")
+                            if not valid_default_font_tag_report(report):
+                                raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 default-font Tag proof is incomplete")
+                        else:
+                            raise ComponentError("invalid_fidelity_gate_report", logical_id, "Unknown 0.2.5 gate component type")
                         continue
                     checks = report.get("checks", {})
                     capture = report.get("capture", {})

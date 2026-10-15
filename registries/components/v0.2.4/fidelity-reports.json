@@ -1,0 +1,659 @@
+{
+  "action.button.primary.medium.default-font-0.2.2": {
+    "scope": "production",
+    "evidenceKind": "v02-default-font-button-native-fidelity",
+    "gateVersion": "0.2.2",
+    "componentType": "Button",
+    "variants": [
+      "default"
+    ],
+    "logicalComponentId": "action.button.primary.medium",
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290",
+    "status": "PASS",
+    "admissionEligible": true,
+    "issues": [],
+    "candidateEvidenceKind": "native-design-capture",
+    "checks": {
+      "geometryAndStyle": "PASS",
+      "screenshot": {
+        "policy": "source-locked-default-font-regions-0.2.2",
+        "changedPixelsOutsidePermittedRegions": 0
+      }
+    },
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "lockedSourceAndNativeCandidate": true,
+          "currentNativeComponentAndInstance": true,
+          "currentNativeTextAndFont": true,
+          "currentNativeGeometry": true,
+          "stableIndependentNativePng": true,
+          "independentNativeSvg": true,
+          "nonTextPixelsExact": true,
+          "roundedCornerPaintBound": true,
+          "separateVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "135:15",
+        "pixelDiagnostics": {
+          "textZone": {
+            "different": 308,
+            "sourceBrightInkPixelsByHalf": [
+              76,
+              70
+            ],
+            "brightInkPixelsByHalf": [
+              35,
+              43
+            ],
+            "brightInkRetentionByHalf": [
+              0.461,
+              0.614
+            ],
+            "inkBoundsByHalf": [
+              {
+                "x": 17,
+                "y": 11,
+                "width": 12,
+                "height": 11
+              },
+              {
+                "x": 31,
+                "y": 10,
+                "width": 12,
+                "height": 12
+              }
+            ],
+            "inkFillFractionByHalf": [
+              0.265,
+              0.299
+            ]
+          },
+          "cornerEdge": {
+            "different": 27,
+            "maxPaletteResidual": 0.976,
+            "maxChannelDelta": 17,
+            "outOfPalettePixels": 0
+          },
+          "nonTextInterior": {
+            "different": 0
+          }
+        },
+        "nativePngSha256": "76f633f6616a8227a53f4c10635eb1f33146bc15becdf5f05b792940b74cd1be",
+        "nativeSvgSha256": "d5b5b32566f2c22352204d356b4ad61424df436224e940bbadee5ca79ed4ff07",
+        "repeatNativePngSha256": "76f633f6616a8227a53f4c10635eb1f33146bc15becdf5f05b792940b74cd1be"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "lockedSourceAndNativeCandidate": true,
+          "currentNativeComponentAndInstance": true,
+          "currentNativeTextAndFont": true,
+          "currentNativeGeometry": true,
+          "stableIndependentNativePng": true,
+          "independentNativeSvg": true,
+          "nonTextPixelsExact": true,
+          "roundedCornerPaintBound": true,
+          "separateVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "4b3abcb2-3ae8-803f-8008-c805b99e5b4e",
+        "pixelDiagnostics": {
+          "textZone": {
+            "different": 303,
+            "sourceBrightInkPixelsByHalf": [
+              76,
+              70
+            ],
+            "brightInkPixelsByHalf": [
+              53,
+              40
+            ],
+            "brightInkRetentionByHalf": [
+              0.697,
+              0.571
+            ],
+            "inkBoundsByHalf": [
+              {
+                "x": 17,
+                "y": 9,
+                "width": 12,
+                "height": 12
+              },
+              {
+                "x": 31,
+                "y": 9,
+                "width": 12,
+                "height": 13
+              }
+            ],
+            "inkFillFractionByHalf": [
+              0.368,
+              0.256
+            ]
+          },
+          "cornerEdge": {
+            "different": 42,
+            "maxPaletteResidual": 1.167,
+            "maxChannelDelta": 39,
+            "outOfPalettePixels": 0
+          },
+          "nonTextInterior": {
+            "different": 0
+          }
+        },
+        "nativePngSha256": "509636ff651f01474b7e82b810c543e60c3cb0025350f0593d2ca547a1eb6926",
+        "nativeSvgSha256": "2f4b8aa018c9d4882df798d9fb222647aeb1296d6294f784fab32af05379ddee",
+        "repeatNativePngSha256": "509636ff651f01474b7e82b810c543e60c3cb0025350f0593d2ca547a1eb6926"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIrSha256": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290",
+      "sourceScreenshotSha256": "3615e5a30dc737e7f4af547fcb1d7e03a07069e0e13d14a424705b790e2f3a6d",
+      "manifestSha256": "846de27ebef99cdf169b5a2ecad116ab2a7fd9625449483091d09fddb31e807e",
+      "policySha256": "99fc3f20cb167f1b785a314d0b17fdfb6666b4b4d8f694a15ad9d2fcb46fa661",
+      "visualReviewSha256": "a5ab76dc26b5ac3989e160489b7fd22f92994b80b177a3d7de900c4186bdda1f",
+      "figma": {
+        "candidateMetadataSha256": "1737d132fd088c1bf42506dbc1aa4f17cf6aba669856fcd78e385871b4f1181c",
+        "targetMetadataSha256": "49bbc4569aaac299f9316f8dfd7e29dbb2630cbb1f07e914b0fdc8cb3cf36e35",
+        "priorAuditSha256": "22b2b1585d262608dc079d3c7ff1caae725ad20ea47f4dfdd006f381f17f1d06",
+        "repeatNativeReadSha256": "d970108d1dfc46775daee92758b59162d417d9d84e7ee658be7e8ebfa89991ab"
+      },
+      "penpot": {
+        "candidateMetadataSha256": "d4ad1edd57921a696bc60bc5b4bc6cc934b70bd37982a4d42d05de13c66bf80e",
+        "targetMetadataSha256": "14df4d84b5c54390e650f7b716f63107c159041d8ca0922db508fd24f389fe20",
+        "priorAuditSha256": "107c7d6969fc8b4177d0949a2f5552fb7d5f62f1ab14da016c73c5f2868e1833",
+        "repeatNativeReadSha256": "c4d01c92403623ecd7c182d211dec83aa1d093c5cd2b1bdf56feaf1dc4b44923"
+      }
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "form.input.default.medium.default-font-0.2.3": {
+    "scope": "production",
+    "gateVersion": "0.2.3",
+    "status": "PASS",
+    "logicalComponentId": "form.input.default.medium",
+    "componentType": "Input",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "c0255251a9e12c62bdf9cde32d94019068a3190381e5ebe1dfa3e7793a6d603c",
+    "candidateEvidenceKind": "native-design-capture",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "nativeRepeatStable": true,
+          "geometryAndStyle": true,
+          "defaultFontAndText": true,
+          "hashBoundVisualReview": true,
+          "nonTextExact": true,
+          "roundedCornerPalette": true,
+          "visibleFiveGlyphs": true,
+          "independentNativeSvg": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "141:3",
+        "nativePngSha256": "16f7ccb5f97b9ff6e70a7e0ab1f925b752a4a24861f42d924562b5ddb3df2566",
+        "nativeSvgSha256": "3836314dc7b6d0eccd7c74f343a46682d584ac79a842ec343a8e8405a0deb91b",
+        "maxCornerPaletteResidual": 1.914,
+        "pixelDiagnostics": {
+          "textZoneDifferences": 682,
+          "cornerDifferences": 41,
+          "nonTextDifferences": 0,
+          "visibleInkByCharacter": [
+            66,
+            75,
+            30,
+            61,
+            56
+          ]
+        },
+        "candidateMetadataSha256": "36bba1aa7aad7bfdc4f52af7619a5f304c9ddb86f7689983c88e3d2ce819f12b"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "nativeRepeatStable": true,
+          "geometryAndStyle": true,
+          "defaultFontAndText": true,
+          "hashBoundVisualReview": true,
+          "nonTextExact": true,
+          "roundedCornerPalette": true,
+          "visibleFiveGlyphs": true,
+          "independentNativeSvg": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "4b3abcb2-3ae8-803f-8008-c811d08712ea",
+        "nativePngSha256": "48d2e6800c672a52068988833c509ba28c03c7f254558cb9335336dd8d5b8c9a",
+        "nativeSvgSha256": "8af38ae94161da8a55ba48e9063472a30c4234bd76b6b581a40978fbbea8c696",
+        "maxCornerPaletteResidual": 0.886,
+        "pixelDiagnostics": {
+          "textZoneDifferences": 735,
+          "cornerDifferences": 44,
+          "nonTextDifferences": 0,
+          "visibleInkByCharacter": [
+            71,
+            68,
+            35,
+            57,
+            54
+          ]
+        },
+        "candidateMetadataSha256": "c0ce788a2615d34c3311aad2d28b803478f835745638ab579dbf82fc3690a77d"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "f989ae9e14e58a68f6c902cae89b31124843a1a6a57577952951e29a313271f3",
+      "candidateAudit": "778c5690161f466e3142095eb503dff8fee1891d0c555b78c17e2dfc5a4a6856",
+      "visualReview": "1da8e80a4ab705196ad8480d79754b97bfcf23bfc1c353acf581ad043cb06ab5",
+      "policy": "99d970febb4c5362e249c03ed29ca2200d029f83a9b8f5e484c0d6f7de9548c8"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "placeholder": "请输入姓名",
+      "value": "",
+      "width": 240,
+      "height": 32
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "form.select.default.medium.default-font-0.2.4": {
+    "scope": "production",
+    "gateVersion": "0.2.4",
+    "status": "PASS",
+    "logicalComponentId": "form.select.default.medium",
+    "componentType": "Select",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "ac0ffa896e31b8f84d21ebdb6dad08076f0136eb33b797ac6d5cb541258ae9a6",
+    "candidateEvidenceKind": "native-design-capture",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "sameNativeMainAndInstance": true,
+          "nativeRepeatStable": true,
+          "fixedSelectedValueAndDefaultFont": true,
+          "sourceArrowOutline": true,
+          "nonTextExact": true,
+          "roundedCornerPalette": true,
+          "arrowRasterWithinPolicy": true,
+          "twoVisibleGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "152:10",
+        "nativePngSha256": "4236ce1205c69b4d0018062f00ffda60bfe0102e1eb55a31cdacf5ea44336504",
+        "nativeSvgSha256": "9b3b5f54b5f6e29300c62098a2b23e597c8144a1f8ad7b5ab6040ff7a8439d9e",
+        "maxCornerPaletteResidual": 1.914,
+        "visibleInkByCharacter": [
+          37,
+          26
+        ],
+        "pixelDiagnostics": {
+          "textDifferences": 262,
+          "arrowDifferences": 34,
+          "arrowAbsoluteError": 1343,
+          "cornerDifferences": 45,
+          "nonTextDifferences": 0
+        },
+        "candidateMetadataSha256": "14754bc4d5db23bae737e027f546434df58a9017df64a8a3f24991a983fdea00"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "sameNativeMainAndInstance": true,
+          "nativeRepeatStable": true,
+          "fixedSelectedValueAndDefaultFont": true,
+          "sourceArrowOutline": true,
+          "nonTextExact": true,
+          "roundedCornerPalette": true,
+          "arrowRasterWithinPolicy": true,
+          "twoVisibleGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "4b3abcb2-3ae8-803f-8008-c8485c8b9729",
+        "nativePngSha256": "b01b389eb3cb29513f2677ecf04d303ce7456536f99530635fed3fc36560f56b",
+        "nativeSvgSha256": "3769691ac039a36b409ba1213a34a9bb8e5a9fb0e5a1a10085e2ae4440cb5299",
+        "maxCornerPaletteResidual": 0.886,
+        "visibleInkByCharacter": [
+          18,
+          16
+        ],
+        "pixelDiagnostics": {
+          "textDifferences": 295,
+          "arrowDifferences": 34,
+          "arrowAbsoluteError": 1358,
+          "cornerDifferences": 48,
+          "nonTextDifferences": 0
+        },
+        "candidateMetadataSha256": "2e8b2e7ffc644680f1dab94c8b7c1e795df0177a12d37be3d42d91d1a6301880"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "6dc6a7e1e30308041c05bb63b996526189bf32ac9a592d24a360643a26e54a0c",
+      "candidateAudit": "1dd8112f6cceb8f2e65469e453f44451eac8620457754b0c61c4823b84cc510d",
+      "visualReview": "af54aa17ddeb927a5bb4947a04bcce0b2f1ea7b6f9aec14119a751f1e21473b5",
+      "policy": "e45d1dbf76eeab43a32be2e78ce3924f055a2cf325717c761538b98643549c5c"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "modelValue": "enabled",
+      "selectedText": "启用",
+      "width": 240,
+      "height": 32
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "data.table.default.default-font-0.2.5": {
+    "scope": "production",
+    "gateVersion": "0.2.5",
+    "status": "PASS",
+    "logicalComponentId": "data.table.default",
+    "componentType": "Table",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "f4595874472457b7b34a51cf6c40e7022b88c963ba2a0a813b8d2383cfff35ea",
+    "candidateEvidenceKind": "native-design-capture",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "sameNativeMainAndInstance": true,
+          "fixedDataAndDefaultFont": true,
+          "nativeHierarchy": true,
+          "nativeRepeatStable": true,
+          "nonTextExact": true,
+          "nineteenVisibleGlyphs": true,
+          "independentNativeSvg": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "157:3",
+        "nativePngSha256": "a467f88343aa5da542758058bdff0eebc2ddbb3a8dcf777a062644c88b9029ea",
+        "nativeSvgSha256": "e6a77c769553154ceebe9d93c961690e8904ccb593366493e09bb21f4f9da3bf",
+        "visibleInkByCharacter": [
+          39,
+          20,
+          29,
+          46,
+          30,
+          37,
+          24,
+          42,
+          44,
+          29,
+          46,
+          40,
+          30,
+          22,
+          20,
+          29,
+          46,
+          32,
+          34
+        ],
+        "pixelDiagnostics": {
+          "textDifferences": 2582,
+          "nonTextDifferences": 0
+        },
+        "candidateMetadataSha256": "d32c33dbb5d114bf4b55315ed9443cea0ba805c6f3b8eca33190ddf3a204fc60"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "sameNativeMainAndInstance": true,
+          "fixedDataAndDefaultFont": true,
+          "nativeHierarchy": true,
+          "nativeRepeatStable": true,
+          "nonTextExact": true,
+          "nineteenVisibleGlyphs": true,
+          "independentNativeSvg": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "4b3abcb2-3ae8-803f-8008-c85957bd3a28",
+        "nativePngSha256": "42526d6ff0f7649e6082e8300d55f3e4aa05176362a40b3f477f04066905991a",
+        "nativeSvgSha256": "12bd1c032ed0b35286071153bade1f4c109634fb0e691f1335ed983a62110fd4",
+        "visibleInkByCharacter": [
+          28,
+          12,
+          45,
+          27,
+          26,
+          26,
+          37,
+          25,
+          22,
+          45,
+          27,
+          33,
+          16,
+          24,
+          33,
+          24,
+          27,
+          28,
+          29
+        ],
+        "pixelDiagnostics": {
+          "textDifferences": 3142,
+          "nonTextDifferences": 0
+        },
+        "candidateMetadataSha256": "141f9275f3234fbd0bdff5b15950babf74cc38dc4bebb9ddc47bd00eff317d8d"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "a2730f5b7f2e386d5a7ff1a9779841d73c359b2e90009aa80a2e5f1e1e99b02a",
+      "candidateAudit": "222def95b1fde9dbc2c20d6fc3dc53ac84bcd5e76b42b1018fd08b4dbe8b2c1d",
+      "visualReview": "a22e6af1cf64372b96749b838ddfb0ddf5873e967a72f021284404876ef290f5",
+      "policy": "25669aeace1da515a8231424ccfff76cb730c332e2e071f25875f38876fc8b06"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "showHeader": false,
+      "border": false,
+      "stripe": false,
+      "columns": [
+        {
+          "title": "姓名",
+          "key": "name",
+          "width": 464
+        },
+        {
+          "title": "状态",
+          "key": "status",
+          "width": 464
+        },
+        {
+          "title": "角色",
+          "key": "role",
+          "width": 464
+        }
+      ],
+      "data": [
+        {
+          "name": "张三",
+          "status": "启用",
+          "role": "管理员"
+        },
+        {
+          "name": "李四",
+          "status": "启用",
+          "role": "编辑"
+        },
+        {
+          "name": "王五",
+          "status": "停用",
+          "role": "访客"
+        }
+      ],
+      "width": 1392,
+      "height": 144
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "data.tag.default.enabled.default-font-0.2.5": {
+    "scope": "production",
+    "gateVersion": "0.2.5",
+    "status": "PASS",
+    "logicalComponentId": "data.tag.default.enabled",
+    "componentType": "Tag",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "7f81ea9558c0f97481b14d792c710f7ae20efdf32c88ad70a17bcaa2a22d9b80",
+    "candidateEvidenceKind": "native-design-capture",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "independentNativeStructure": true,
+          "nativeRepeatStable": true,
+          "nativeSvgSemanticallyStable": true,
+          "nonTextExactExceptCorners": true,
+          "cornerAntialiasWithinPolicy": true,
+          "twoVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "176:16",
+        "instanceId": "176:19",
+        "nativePngSha256": "8a960b898b36b6077c7372ef3150318a09f54da0978d11d03ff882f1aae5c3cb",
+        "nativeSvgSha256": "cdc713f5702f625b8b550f8d7ee8bb9b15dc824a17730e0f287231d790c347f9",
+        "candidateNativeSvgSha256": "cdc713f5702f625b8b550f8d7ee8bb9b15dc824a17730e0f287231d790c347f9",
+        "nativeReadSha256": "d323306c5bddcc0df8b6099099da8a5a89c0918f1ae9e598a68c10363d39c811",
+        "pixelDiagnostics": {
+          "sourceSize": [
+            42,
+            22
+          ],
+          "nativeSize": [
+            42,
+            22
+          ],
+          "nonTextChangedPixels": 24,
+          "nonTextMaximumChannelDelta": 3,
+          "nonTextChangesOutsideFourCorners": 0,
+          "glyphPixelsByCharacterZone": [
+            4,
+            9
+          ]
+        },
+        "glyphDiagnostics": {
+          "perCharacter": [
+            66,
+            66
+          ],
+          "outerEdgeInkPixels": 0
+        },
+        "candidateMetadataSha256": "aa5b85ee91676a3f9b6108a3efb134f7693adae6e792c667b7530ee848ad12b3"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "independentNativeStructure": true,
+          "nativeRepeatStable": true,
+          "nativeSvgSemanticallyStable": true,
+          "nonTextExactExceptCorners": true,
+          "cornerAntialiasWithinPolicy": true,
+          "twoVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8",
+        "instanceId": "f1153c87-a7fc-80d8-8008-c9a7f35cf91d",
+        "nativePngSha256": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+        "nativeSvgSha256": "4b2aab5f6854e8a9d9d49755d468ea32b77e015e780e19e81dec908913470135",
+        "candidateNativeSvgSha256": "5e6efa7f1e04b3e234f19a4b8d221ff9816feed41ef4f4241bb1dd6c80b3ca93",
+        "nativeReadSha256": "08fc945d2d44bd2a71454c48b783be99439b3bcbe5d3927ba78922963bcb292d",
+        "pixelDiagnostics": {
+          "sourceSize": [
+            42,
+            22
+          ],
+          "nativeSize": [
+            42,
+            22
+          ],
+          "nonTextChangedPixels": 32,
+          "nonTextMaximumChannelDelta": 2,
+          "nonTextChangesOutsideFourCorners": 0,
+          "glyphPixelsByCharacterZone": [
+            8,
+            10
+          ]
+        },
+        "glyphDiagnostics": {
+          "perCharacter": [
+            54,
+            51
+          ],
+          "outerEdgeInkPixels": 0
+        },
+        "candidateMetadataSha256": "34418039a5a0d6c87396ca3d90ef8141deb6517d3daeea04496132d26f672c59"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "7554a044db754107e45dfdd14d4ca5b786f2b66e49993bab834736b505249b7c",
+      "candidateAudit": "497e9b3f90f883cfadb361d97362aaa96206318e2189378cae6e5cc41eac7f34",
+      "visualReview": "9acbc0cd0c7c71ac6258f5d6c53d05060c9ef7909c1d06fb25909f8275927114",
+      "policy": "300d32d3250997e836a2b1e093a2e3bf9fcc8843c27a7e35a65614aa04042893"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "text": "启用",
+      "size": "default",
+      "color": "default",
+      "closable": false,
+      "checkable": false,
+      "checked": true,
+      "width": 42,
+      "height": 22
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  }
+}
