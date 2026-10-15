@@ -1,0 +1,62 @@
+{
+  "scope": "figma-only-qa",
+  "gateVersion": "0.2.9-figma-only",
+  "status": "PASS",
+  "logicalComponentId": "content.card.default.user-info",
+  "componentType": "Card",
+  "checks": {
+    "sourceAndCandidateLocked": true,
+    "independentNativeStructure": true,
+    "nativeRepeatStable": true,
+    "nativeSvgStable": true,
+    "sourceGeometryAndTextRaster": true,
+    "hashBoundVisualReview": true
+  },
+  "rasterDiagnostics": {
+    "sourceSize": [
+      240,
+      106
+    ],
+    "figmaSize": [
+      240,
+      106
+    ],
+    "outsideTextPixels": 21310,
+    "outsideTextExactRatio": 0.998217,
+    "outsideTextMaxChannelDelta": 3,
+    "titleInk": {
+      "pixels": 421,
+      "bounds": [
+        18,
+        18,
+        79,
+        32
+      ]
+    },
+    "bodyInk": {
+      "pixels": 263,
+      "bounds": [
+        18,
+        72,
+        71,
+        84
+      ]
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "2586208b59051e11524aff5456958621b9454073ed84fcfa7298a69a53689286",
+    "candidateAudit": "219122e04f749495fa2dbb675c54b6d55948c7bf1afde01f4150f8ce3dc84e95",
+    "visualReview": "0254e2f808799832a1ef2a7da57a25cae2da9c6a2c939af194b0ccea291c2830",
+    "policy": "ab559d62b378ff3ebf2391be1824e55fc1d9412e1682537ff3a16d41ddd38831",
+    "native-read.json": "f420c8fcdc3269a05a35aacaf47254d266f0213134e40a7e3c18309332f6d467",
+    "native.png": "8fac33592fc7cc5612426024de538c331568c3dbac5713b369e533a7f407132d",
+    "native-repeat.png": "8fac33592fc7cc5612426024de538c331568c3dbac5713b369e533a7f407132d",
+    "native.svg": "5ce2b5d4a82fc7c9ae112f337323a37af468034266d4afba7513e879b5744a6b"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}
