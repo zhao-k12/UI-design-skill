@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "figma-only-qa",
+  "expectedText": "开",
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "platforms": {
+    "figma": {
+      "nativePngSha256": "dd4525ac2c337a6857deaaa805a95eb7bbdb9b2fe330b065ea9487984a40b636",
+      "legibleText": "开",
+      "completeGlyph": true,
+      "clippedText": false,
+      "emptyOrDetached": false,
+      "knobVisible": true
+    }
+  }
+}

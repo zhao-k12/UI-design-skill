@@ -1,0 +1,36 @@
+{
+  "scope": "v02-default-font-switch-figma-qa",
+  "gateVersion": "0.2.8-figma-only",
+  "platform": "figma",
+  "logicalComponentId": "form.switch.default.enabled",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "componentId": "192:6",
+  "instanceId": "192:9",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "text": "开",
+    "modelValue": true,
+    "trueValue": true,
+    "falseValue": false,
+    "disabled": false,
+    "size": "default",
+    "loading": false,
+    "width": 44,
+    "height": 22
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "switch-figma-qa.json": "f9f12437e982d44fe1a5935a4942215df624d380e52f2c2b7ade1c6c5120c0eb",
+    "candidate-metadata.json": "aa8d808c883e76b6e781b5a5c05278b20871abcb6c634eecf4538c45f2a7f93c",
+    "native-svg": "a96197bf5672a02f475b450eb536bbc8a76f86c2327e92d16e0223310a703a2a",
+    "native-png": "dd4525ac2c337a6857deaaa805a95eb7bbdb9b2fe330b065ea9487984a40b636",
+    "native-read.json": "ed1e83aed210280068a3cefafcc53a94c7ae6d919104913789e3dab11f46da99",
+    "visual-review.json": "9bb57029b613f63230cda9a605d620732c11aa81e776651e92258d283f86fce8"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
