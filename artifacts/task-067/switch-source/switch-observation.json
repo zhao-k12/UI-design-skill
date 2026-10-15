@@ -1,0 +1,129 @@
+{
+  "scope": "official_switch_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 320,
+      "height": 120
+    },
+    "containerWidth": 240,
+    "cases": [
+      {
+        "logicalId": "form.switch.default.enabled",
+        "componentType": "Switch",
+        "variant": "default",
+        "props": {
+          "modelValue": true,
+          "trueValue": true,
+          "falseValue": false,
+          "disabled": false,
+          "size": "default",
+          "loading": false
+        },
+        "text": "开"
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 320,
+      "height": 120
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "0be5846f1074e7c0f41b0bc115b1f2611bffc323bc5af8a102c3715fea0f393c",
+    "harnessBundleSha256": "3b7e58f87ba29217dcdf0acfb529ddb2852f4d2daa53573da70d94a9d68b86a4",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "cf4464edd51730dfb37ea0f38f5aff3898cfed6128155548b635e2dec77ebe19"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-switch",
+      "ivu-switch-checked",
+      "ivu-switch-default"
+    ],
+    "text": "开",
+    "value": "true",
+    "root": {
+      "x": 24,
+      "y": 24.375,
+      "width": 44,
+      "height": 22
+    },
+    "inner": {
+      "x": 32,
+      "y": 25.375,
+      "width": 12,
+      "height": 20
+    },
+    "rootStyle": {
+      "display": "inline-block",
+      "width": "44px",
+      "height": "22px",
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgb(45, 140, 240)",
+      "border": "1px solid rgb(45, 140, 240)",
+      "borderRadius": "22px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "left": "0px",
+      "top": "0px"
+    },
+    "innerStyle": {
+      "display": "block",
+      "width": "12px",
+      "height": "20px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "20px",
+      "left": "7px",
+      "top": "0px"
+    },
+    "knobStyle": {
+      "content": "\"\"",
+      "width": "18px",
+      "height": "18px",
+      "left": "23px",
+      "top": "1px",
+      "borderRadius": "18px",
+      "backgroundColor": "rgb(255, 255, 255)"
+    }
+  },
+  "fonts": [
+    {
+      "familyName": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "isCustomFont": false,
+      "glyphCount": 1
+    }
+  ],
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/switch/switch.vue": "3be5adae3a2af42b5b92afe2c0ddc117b42ed88fde1edead6dc1a9e70724aaac",
+    "node_modules/view-ui-plus/src/styles/components/switch.less": "b796ef0cdd70cd87703335cb91c7719319cdb018fe3e34d295b0a90c26e64d52"
+  },
+  "referenceComponentIrSha256": "ab87af43fc5e538b45c07f93e478814c1a272ecf0ca10c7847c630772300cb38"
+}
