@@ -1,0 +1,44 @@
+{
+  "scope": "v02-default-font-checkbox-candidate",
+  "version": "0.2.0",
+  "platform": "figma",
+  "logicalComponentId": "form.checkbox.default.enabled",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "7e42801bfb2b889dc221077b61caea37417176c5c66cb2297600adefaf747a94",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "182:2",
+  "componentId": "182:12",
+  "instanceId": "182:18",
+  "contentScope": {
+    "text": "启用",
+    "modelValue": true,
+    "trueValue": true,
+    "falseValue": false,
+    "disabled": false,
+    "indeterminate": false,
+    "size": "default",
+    "border": false,
+    "width": 52,
+    "height": 21
+  },
+  "font": "Inter",
+  "status": "CANDIDATE_REVIEW",
+  "checks": {
+    "sourceLocked": true,
+    "nativeComponentAndInstance": true,
+    "nativeGeometry": true,
+    "defaultFontAndFixedText": true,
+    "sourceColors": true,
+    "editableVectorAndText": true,
+    "repeatNativePngStable": true
+  },
+  "evidenceSha256": {
+    "independent-read.json": "e09ad51baa98c27a895327db1d88fa2777c95b4984efe4cb4e1463e2b08f4792",
+    "component-native.png": "036cd9bad08ccade503af187789e7c3a450c834ab176e9b634ad6c1602bfeafa",
+    "repeat-native.png": "036cd9bad08ccade503af187789e7c3a450c834ab176e9b634ad6c1602bfeafa",
+    "component-native.svg": "72dba9ac660fa6ae42c69e9d1833437a08eaa60d383a6eb86b66e48c567aa969"
+  },
+  "nativeAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
