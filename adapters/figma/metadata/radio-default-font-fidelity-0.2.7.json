@@ -1,0 +1,34 @@
+{
+  "scope": "v02-default-font-radio-native-fidelity",
+  "gateVersion": "0.2.7",
+  "platform": "figma",
+  "logicalComponentId": "form.radio.default.enabled",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "componentId": "190:3",
+  "instanceId": "190:7",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "text": "启用",
+    "modelValue": true,
+    "trueValue": true,
+    "falseValue": false,
+    "disabled": false,
+    "size": "default",
+    "border": false,
+    "width": 48,
+    "height": 21
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "radio-native-fidelity.json": "7f4597116f791f1d62c9d06f2cd661f702e413618154b1872abb20df4a9ecf66",
+    "candidate-metadata.json": "66dd046272ba808a75af5ed9c1fb06440ebc19720dda41e7e552dbe3e8133a00",
+    "native-svg": "c74080bbd06d3c375476810f6fc1c820848310297606cd8e770c07438abe9138",
+    "native-png": "3ded80ada17d11c65de420b9a4ce022f3aa43ecd6e528c4cafc60307b57dc2a3",
+    "native-read.json": "595a81de64632e94784f535d9483b39795ae87e0a29ead3668320858107b4c2b",
+    "visual-review.json": "66a74cff8908352d4d400997c75a1b7245078b10f006e4c0bb49f4ea3f16b538"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

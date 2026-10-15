@@ -1,0 +1,115 @@
+{
+  "scope": "production",
+  "gateVersion": "0.2.7",
+  "status": "PASS",
+  "logicalComponentId": "form.radio.default.enabled",
+  "componentType": "Radio",
+  "variants": [
+    "default"
+  ],
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "ec34263843da0bd5dec6ef4d21fc82a67cdb8e85b701c73e27c6061bdf1e89d1",
+  "admissionEligible": true,
+  "issues": [],
+  "platforms": {
+    "figma": {
+      "status": "PASS",
+      "checks": {
+        "candidateSourceLocked": true,
+        "independentNativeStructure": true,
+        "nativeRepeatAndCandidateStable": true,
+        "nativeSvgSemantics": true,
+        "sourceColorsAndControlRaster": true,
+        "twoVisibleUnclippedGlyphs": true,
+        "hashBoundVisualReview": true
+      },
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentId": "190:3",
+      "instanceId": "190:7",
+      "pixelDiagnostics": {
+        "sourceTopBlankRowCropped": true,
+        "maximumControlChannelDelta": 22,
+        "exactBlueCenter": true,
+        "sourceBluePixels": 140,
+        "nativeBluePixels": 136,
+        "blueIntersectionOverUnion": 0.9714,
+        "pass": true
+      },
+      "glyphDiagnostics": {
+        "perCharacterDarkPixels": [
+          75,
+          87
+        ],
+        "textOuterEdgeInkPixels": 0,
+        "pass": true
+      },
+      "evidenceSha256": {
+        "native-read.json": "595a81de64632e94784f535d9483b39795ae87e0a29ead3668320858107b4c2b",
+        "native.png": "3ded80ada17d11c65de420b9a4ce022f3aa43ecd6e528c4cafc60307b57dc2a3",
+        "native-repeat.png": "3ded80ada17d11c65de420b9a4ce022f3aa43ecd6e528c4cafc60307b57dc2a3",
+        "native.svg": "c74080bbd06d3c375476810f6fc1c820848310297606cd8e770c07438abe9138"
+      },
+      "candidateMetadataSha256": "66dd046272ba808a75af5ed9c1fb06440ebc19720dda41e7e552dbe3e8133a00"
+    },
+    "penpot": {
+      "status": "PASS",
+      "checks": {
+        "candidateSourceLocked": true,
+        "independentNativeStructure": true,
+        "nativeRepeatAndCandidateStable": true,
+        "nativeSvgSemantics": true,
+        "sourceColorsAndControlRaster": true,
+        "twoVisibleUnclippedGlyphs": true,
+        "hashBoundVisualReview": true
+      },
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "componentId": "0b54f3e1-c822-80b2-8008-caaf723c9fe4",
+      "instanceId": "0b54f3e1-c822-80b2-8008-caaf723f745e",
+      "pixelDiagnostics": {
+        "sourceTopBlankRowCropped": true,
+        "maximumControlChannelDelta": 39,
+        "exactBlueCenter": true,
+        "sourceBluePixels": 140,
+        "nativeBluePixels": 140,
+        "blueIntersectionOverUnion": 1.0,
+        "pass": true
+      },
+      "glyphDiagnostics": {
+        "perCharacterDarkPixels": [
+          67,
+          80
+        ],
+        "textOuterEdgeInkPixels": 0,
+        "pass": true
+      },
+      "evidenceSha256": {
+        "native-read.json": "08cbf43bda9fb72141a580dcb5c7b597b4a453021a6dd7c5ba036dbece1e2377",
+        "native.png": "614fb273141e63fd81b4f56b4ac91e50c9428d0eb0bef639436320751a2ca20a",
+        "native-repeat.png": "614fb273141e63fd81b4f56b4ac91e50c9428d0eb0bef639436320751a2ca20a",
+        "native.svg": "c10be963d48f7de3fb9240c90e40feda03566826dd13a459792d185568dfa1ee"
+      },
+      "candidateMetadataSha256": "4c9bfa998dc35517eb06006da8ebfd07d0db9ea2b43a50f5a9681b4b094d9e9b"
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "b78d1af9ca728875171fd32257413fb34d624272033cbf331137ecc72253b06a",
+    "visualReview": "66a74cff8908352d4d400997c75a1b7245078b10f006e4c0bb49f4ea3f16b538",
+    "policy": "4de2f699dab79aba8e5a610ec9554ca37f076b9765dfcbb3a882571ad210eb14"
+  },
+  "contentScopeProposal": {
+    "kind": "fixed-native-content",
+    "text": "启用",
+    "modelValue": true,
+    "trueValue": true,
+    "falseValue": false,
+    "disabled": false,
+    "size": "default",
+    "border": false,
+    "width": 48,
+    "height": 21
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

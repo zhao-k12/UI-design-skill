@@ -1,0 +1,120 @@
+{
+  "fileId": "57949053-620f-8001-8008-c804c8d61529",
+  "pageId": "0b54f3e1-c822-80b2-8008-caaf714570e5",
+  "componentId": "0b54f3e1-c822-80b2-8008-caaf723c9fe4",
+  "main": {
+    "id": "0b54f3e1-c822-80b2-8008-caaf721abe9f",
+    "type": "board",
+    "x": 800,
+    "y": 80,
+    "width": 48,
+    "height": 21,
+    "children": [
+      {
+        "id": "0b54f3e1-c822-80b2-8008-caaf72234842",
+        "type": "ellipse",
+        "name": "radio ring",
+        "x": 800,
+        "y": 82,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "id": "0b54f3e1-c822-80b2-8008-caaf722b527c",
+        "type": "ellipse",
+        "name": "selected dot",
+        "x": 803,
+        "y": 85,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "id": "0b54f3e1-c822-80b2-8008-caaf72319c20",
+        "type": "text",
+        "name": "label",
+        "x": 820,
+        "y": 80,
+        "width": 28,
+        "height": 21
+      }
+    ]
+  },
+  "ring": {
+    "id": "0b54f3e1-c822-80b2-8008-caaf72234842",
+    "x": 800,
+    "y": 82,
+    "width": 16,
+    "height": 16,
+    "fills": [
+      {
+        "fillColor": "#ffffff",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": null,
+        "fillColorRefId": null,
+        "fillImage": null
+      }
+    ],
+    "strokes": [
+      {
+        "strokeColor": "#2d8cf0",
+        "strokeColorRefFile": null,
+        "strokeColorRefId": null,
+        "strokeOpacity": 1,
+        "strokeStyle": "solid",
+        "strokeWidth": 1,
+        "strokeAlignment": "inner",
+        "strokeCapStart": null,
+        "strokeCapEnd": null,
+        "strokeColorGradient": null,
+        "strokeImage": null
+      }
+    ]
+  },
+  "dot": {
+    "id": "0b54f3e1-c822-80b2-8008-caaf722b527c",
+    "x": 803,
+    "y": 85,
+    "width": 10,
+    "height": 10,
+    "fills": [
+      {
+        "fillColor": "#2d8cf0",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": null,
+        "fillColorRefId": null,
+        "fillImage": null
+      }
+    ]
+  },
+  "label": {
+    "id": "0b54f3e1-c822-80b2-8008-caaf72319c20",
+    "text": "启用",
+    "fontId": "sourcesanspro",
+    "fontVariantId": "regular",
+    "fontSize": "14",
+    "lineHeight": "1.5",
+    "growType": "fixed",
+    "x": 820,
+    "y": 80,
+    "width": 28,
+    "height": 21,
+    "fills": [
+      {
+        "fillColor": "#515a6e",
+        "fillOpacity": 1,
+        "fillColorGradient": null,
+        "fillColorRefFile": null,
+        "fillColorRefId": null,
+        "fillImage": null
+      }
+    ]
+  },
+  "instance": {
+    "id": "0b54f3e1-c822-80b2-8008-caaf723f745e",
+    "componentId": "0b54f3e1-c822-80b2-8008-caaf723c9fe4",
+    "isCopy": true
+  },
+  "fileValidation": 0
+}
