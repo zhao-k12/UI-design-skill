@@ -1,0 +1,314 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ui-design-skill:component-registry:0.2.6",
+  "title": "Logical Component Registry V0.2.6",
+  "type": "object",
+  "properties": {
+    "registryVersion": {
+      "const": "0.2.6"
+    },
+    "libraryVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "enum": [
+        "production",
+        "test-fixture"
+      ]
+    },
+    "components": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "componentType": {
+            "enum": [
+              "Button",
+              "Input",
+              "Select",
+              "DatePicker",
+              "Table",
+              "FormItem",
+              "Pagination",
+              "Card",
+              "Tabs",
+              "Tag",
+              "Checkbox",
+              "Radio"
+            ]
+          },
+          "tier": {
+            "enum": [
+              "base",
+              "composite",
+              "block"
+            ]
+          },
+          "status": {
+            "enum": [
+              "planned",
+              "active",
+              "deprecated"
+            ]
+          },
+          "variants": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+            }
+          },
+          "defaultVariant": {
+            "type": "string",
+            "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+          },
+          "slots": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "leading-icon",
+                "trailing-icon",
+                "label",
+                "control",
+                "content",
+                "actions"
+              ]
+            }
+          },
+          "fidelity": {
+            "type": "object",
+            "properties": {
+              "reportId": {
+                "type": "string",
+                "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+              },
+              "reportSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "componentIrSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "reportId",
+              "reportSha256",
+              "componentIrSha256"
+            ],
+            "additionalProperties": false
+          },
+          "contentScope": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "const": "fixed-native-content"
+              },
+              "text": {
+                "type": "string"
+              },
+              "size": {
+                "const": "default"
+              },
+              "color": {
+                "const": "default"
+              },
+              "closable": {
+                "const": false
+              },
+              "checkable": {
+                "const": false
+              },
+              "checked": {
+                "const": true
+              },
+              "placeholder": {
+                "type": "string"
+              },
+              "value": {
+                "const": ""
+              },
+              "width": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "height": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "modelValue": {
+                "enum": [
+                  "enabled",
+                  true
+                ]
+              },
+              "trueValue": {
+                "const": true
+              },
+              "falseValue": {
+                "const": false
+              },
+              "disabled": {
+                "const": false
+              },
+              "indeterminate": {
+                "const": false
+              },
+              "selectedText": {
+                "const": "启用"
+              },
+              "showHeader": {
+                "const": false
+              },
+              "border": {
+                "const": false
+              },
+              "stripe": {
+                "const": false
+              },
+              "columns": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "title",
+                    "key",
+                    "width"
+                  ],
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "data": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "status",
+                    "role"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "oneOf": [
+              {
+                "required": [
+                  "kind",
+                  "text",
+                  "width",
+                  "height"
+                ]
+              },
+              {
+                "required": [
+                  "kind",
+                  "placeholder",
+                  "value",
+                  "width",
+                  "height"
+                ]
+              },
+              {
+                "required": [
+                  "kind",
+                  "modelValue",
+                  "selectedText",
+                  "width",
+                  "height"
+                ]
+              },
+              {
+                "required": [
+                  "kind",
+                  "showHeader",
+                  "border",
+                  "stripe",
+                  "columns",
+                  "data",
+                  "width",
+                  "height"
+                ]
+              }
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "componentType",
+          "tier",
+          "status",
+          "variants",
+          "defaultVariant",
+          "slots"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "active"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            },
+            "then": {
+              "required": [
+                "fidelity"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "registryVersion",
+    "libraryVersion",
+    "sourceVersion",
+    "scope",
+    "components"
+  ],
+  "additionalProperties": false
+}

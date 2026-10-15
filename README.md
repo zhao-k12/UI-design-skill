@@ -65,7 +65,7 @@ node --test tests/*.test.mjs
 
 官方运行环境支持[两次真实提取复验](docs/RUNTIME_REPLAY.md)。后续新设计字体使用 [Figma/Penpot 各自的默认字体](docs/FONT_POLICY.md)，实际绑定须在目标会话验证。
 
-截至 TASK-062，默认字体下的 Button、Input、Select、Table、Tag、Checkbox 各一项固定内容配置已通过双平台原生保真，最新独立快照为 V0.2.5 Registry；其中冻结用户管理列表已完成同一 UI-IR 的 Figma/Penpot 原生整页验收。Figma 使用 Inter，Penpot 使用 Source Sans Pro。该范围的 [验收记录](.dev/TASK-062_ACCEPTANCE.md) 和 [发布就绪审计](docs/V02_RELEASE_READINESS.md) 可分别查看。V0.2 尚未发布。
+截至 TASK-066，默认字体下的 Button、Input、Select、Table、Tag、Checkbox、Radio 各一项固定内容配置已通过双平台原生保真，最新独立快照为 V0.2.6 Registry；其中冻结用户管理列表已完成同一 UI-IR 的 Figma/Penpot 原生整页验收。Figma 使用 Inter，Penpot 使用 Source Sans Pro。该范围的 [验收记录](.dev/TASK-066_ACCEPTANCE.md) 和 [发布就绪审计](docs/V02_RELEASE_READINESS.md) 可分别查看。V0.2 尚未发布。
 
 完整目标见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
 

@@ -18,7 +18,7 @@ def main():
     parser.add_argument("--font-bindings", type=Path)
     parser.add_argument("--token-library-version", choices=("0.1.0", "0.2.0", "0.2.1", "0.2.2"), default="0.1.0")
     parser.add_argument("--icon-bindings", type=Path)
-    parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0", "0.2.1", "0.2.2", "0.2.3", "0.2.4", "0.2.5"), default="0.1.0")
+    parser.add_argument("--component-library-version", choices=("0.1.0", "0.2.0", "0.2.1", "0.2.2", "0.2.3", "0.2.4", "0.2.5", "0.2.6"), default="0.1.0")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "artifacts/task-009")
     args = parser.parse_args()
     output = args.output_dir.resolve()
