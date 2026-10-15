@@ -1,0 +1,148 @@
+{
+  "scope": "official_checkbox_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 320,
+      "height": 120
+    },
+    "containerWidth": 240,
+    "cases": [
+      {
+        "logicalId": "form.checkbox.default.enabled",
+        "componentType": "Checkbox",
+        "variant": "default",
+        "props": {
+          "modelValue": true,
+          "trueValue": true,
+          "falseValue": false,
+          "disabled": false,
+          "indeterminate": false,
+          "size": "default",
+          "border": false
+        },
+        "text": "启用"
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 320,
+      "height": 120
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "8d1e4192da280364e21c261f6c5616f1848eacae59e9c04b779c3752fd000a52",
+    "harnessBundleSha256": "da07f0daeba4dde03aaea99ac6e742f18bc460d3af092f3b92d5b0a04fb2c250",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "2961ea7d5704a61006880234b4659c4cffc00022bc4044cff9ea56e7fb491973"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-checkbox-wrapper",
+      "ivu-checkbox-wrapper-checked",
+      "ivu-checkbox-default"
+    ],
+    "text": "启用",
+    "checked": true,
+    "disabled": false,
+    "root": {
+      "x": 24,
+      "y": 24,
+      "width": 52,
+      "height": 21
+    },
+    "box": {
+      "x": 24,
+      "y": 26.375,
+      "width": 16,
+      "height": 18
+    },
+    "inner": {
+      "x": 24,
+      "y": 26.375,
+      "width": 16,
+      "height": 16
+    },
+    "label": {
+      "x": 40,
+      "y": 26,
+      "width": 32,
+      "height": 16
+    },
+    "rootStyle": {
+      "display": "inline-block",
+      "width": "52px",
+      "height": "21px",
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px"
+    },
+    "innerStyle": {
+      "display": "inline-block",
+      "width": "16px",
+      "height": "16px",
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgb(45, 140, 240)",
+      "border": "1px solid rgb(45, 140, 240)",
+      "borderRadius": "2px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "14px"
+    },
+    "labelStyle": {
+      "display": "inline",
+      "width": "auto",
+      "height": "auto",
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px"
+    },
+    "checkmarkStyle": {
+      "content": "\"\"",
+      "border": "",
+      "transform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+    }
+  },
+  "fonts": [
+    {
+      "familyName": "PingFang SC",
+      "postScriptName": "PingFangSC-Regular",
+      "isCustomFont": false,
+      "glyphCount": 2
+    }
+  ],
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/checkbox/checkbox.vue": "1c12c2c7b2e2168e4c35a9f640516ecbea6d894b0c021cdc340e424936233092",
+    "node_modules/view-ui-plus/src/styles/components/checkbox.less": "dc6c193b61823851edf87c502a3ef7af8454c1f34fd8175055481eb8746e2ab4",
+    "node_modules/view-ui-plus/src/styles/mixins/checkbox.less": "81cfbfadb6cd7c05207240ef4ffbf81ad2c654a490496a627a3a3cf010858c9d"
+  },
+  "referenceComponentIrSha256": "7e42801bfb2b889dc221077b61caea37417176c5c66cb2297600adefaf747a94"
+}
