@@ -1,0 +1,137 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "182:2",
+  "component": {
+    "id": "182:12",
+    "type": "COMPONENT",
+    "width": 52,
+    "height": 21,
+    "layoutMode": "NONE",
+    "children": [
+      {
+        "id": "182:13",
+        "type": "FRAME",
+        "name": "checked box",
+        "x": 0,
+        "y": 2,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "id": "182:16",
+        "type": "TEXT",
+        "name": "label",
+        "x": 20,
+        "y": 0,
+        "width": 28,
+        "height": 21
+      }
+    ]
+  },
+  "box": {
+    "id": "182:13",
+    "x": 0,
+    "y": 2,
+    "width": 16,
+    "height": 16,
+    "radius": 2,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.1764705926179886,
+          "g": 0.5490196347236633,
+          "b": 0.9411764740943909
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:182:4"
+          }
+        }
+      }
+    ],
+    "strokes": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.1764705926179886,
+          "g": 0.5490196347236633,
+          "b": 0.9411764740943909
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:182:4"
+          }
+        }
+      }
+    ]
+  },
+  "tick": {
+    "id": "182:15",
+    "x": 4.5,
+    "y": 5.25,
+    "width": 7,
+    "height": 4.949999809265137,
+    "vectorPaths": [
+      {
+        "windingRule": "NONE",
+        "data": "M 0 2.8499999046325684 L 2.0999999046325684 4.949999809265137 L 7 0"
+      }
+    ],
+    "strokeWeight": 2,
+    "strokeCap": "SQUARE"
+  },
+  "label": {
+    "id": "182:16",
+    "text": "启用",
+    "fontName": {
+      "family": "Inter",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400,
+        "slnt": 0
+      }
+    },
+    "fontSize": 14,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 21
+    },
+    "x": 20,
+    "y": 0,
+    "width": 28,
+    "height": 21,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.3176470696926117,
+          "g": 0.3529411852359772,
+          "b": 0.4313725531101227
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:182:5"
+          }
+        }
+      }
+    ]
+  },
+  "instance": {
+    "id": "182:18",
+    "type": "INSTANCE",
+    "mainComponentId": "182:12"
+  }
+}

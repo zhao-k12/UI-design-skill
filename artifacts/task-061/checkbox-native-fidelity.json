@@ -1,0 +1,136 @@
+{
+  "scope": "production",
+  "gateVersion": "0.2.6",
+  "status": "PASS",
+  "logicalComponentId": "form.checkbox.default.enabled",
+  "componentType": "Checkbox",
+  "variants": [
+    "default"
+  ],
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentIrSha256": "7e42801bfb2b889dc221077b61caea37417176c5c66cb2297600adefaf747a94",
+  "admissionEligible": true,
+  "issues": [],
+  "platforms": {
+    "figma": {
+      "status": "PASS",
+      "checks": {
+        "candidateSourceLocked": true,
+        "independentNativeStructure": true,
+        "nativeRepeatStable": true,
+        "nativeSvgSemantics": true,
+        "sourceColorsAndMarkRaster": true,
+        "twoVisibleUnclippedGlyphs": true,
+        "hashBoundVisualReview": true
+      },
+      "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+      "componentId": "182:12",
+      "instanceId": "182:18",
+      "pixelDiagnostics": {
+        "nonMarkChangesOutsideCorners": [],
+        "cornerMaximumChannelDelta": 17,
+        "sourceMarkPixels": 14,
+        "nativeMarkPixels": 16,
+        "missingSourceMarkPixels": [],
+        "extraNativeMarkPixels": [
+          [
+            4,
+            9
+          ],
+          [
+            11,
+            6
+          ]
+        ],
+        "markIntersectionOverUnion": 0.875,
+        "pass": true
+      },
+      "glyphDiagnostics": {
+        "perCharacterDarkPixels": [
+          75,
+          87
+        ],
+        "textOuterEdgeInkPixels": 0,
+        "pass": true
+      },
+      "evidenceSha256": {
+        "native-read.json": "613779bde6b5770fcc5cbde8d2d5e27958445794633f22b9844293d88ac017f1",
+        "native.png": "6af9bb2d73b06df3aa405951e3ebb0476319e89a2437ed8c82c97afb68851691",
+        "native-repeat.png": "6af9bb2d73b06df3aa405951e3ebb0476319e89a2437ed8c82c97afb68851691",
+        "native.svg": "0d74068bf3524f316a8e8d8ac78e783deff403167e902ba476a051e4ee2856cb"
+      },
+      "candidateMetadataSha256": "296379e6eff29f1e938363bf77bc235e1509dc033c9fa33394a0b5e9fb5e3ab4"
+    },
+    "penpot": {
+      "status": "PASS",
+      "checks": {
+        "candidateSourceLocked": true,
+        "independentNativeStructure": true,
+        "nativeRepeatStable": true,
+        "nativeSvgSemantics": true,
+        "sourceColorsAndMarkRaster": true,
+        "twoVisibleUnclippedGlyphs": true,
+        "hashBoundVisualReview": true
+      },
+      "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+      "componentId": "0b54f3e1-c822-80b2-8008-caa7c1f9e5d8",
+      "instanceId": "0b54f3e1-c822-80b2-8008-caa7c204ac97",
+      "pixelDiagnostics": {
+        "nonMarkChangesOutsideCorners": [],
+        "cornerMaximumChannelDelta": 39,
+        "sourceMarkPixels": 14,
+        "nativeMarkPixels": 16,
+        "missingSourceMarkPixels": [],
+        "extraNativeMarkPixels": [
+          [
+            4,
+            9
+          ],
+          [
+            11,
+            6
+          ]
+        ],
+        "markIntersectionOverUnion": 0.875,
+        "pass": true
+      },
+      "glyphDiagnostics": {
+        "perCharacterDarkPixels": [
+          67,
+          80
+        ],
+        "textOuterEdgeInkPixels": 0,
+        "pass": true
+      },
+      "evidenceSha256": {
+        "native-read.json": "735a85b5a48d52fc4bf7c53c451b87df06290768caaa050eedaab9d7400e1d4b",
+        "native.png": "7d55d0bfb8f53ad2a8b7f8f6b911739eb96c3586afb7bcbacdc221874716f794",
+        "native-repeat.png": "7d55d0bfb8f53ad2a8b7f8f6b911739eb96c3586afb7bcbacdc221874716f794",
+        "native.svg": "8042c6553114795ed882c2c03d848893ff26de48f9eb18d2b12e8303f019ba9c"
+      },
+      "candidateMetadataSha256": "afb0be82fe46cd5d3782ea8813515d926cc02675e41ee9bf14ddd2187c17d065"
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "14a63db1f2d81d2623f7fcfb70eff97e2b9299e9fc94cf940fac77af6a540b91",
+    "visualReview": "e17347266261b012889f148fa71834d3fce33aa70859a4afb2e1d8c31ef04ebf",
+    "policy": "2494c27108036da5e2291113e4b8feab2ef120d1829bca2c4bf6b6036d041d3e"
+  },
+  "contentScopeProposal": {
+    "kind": "fixed-native-content",
+    "text": "启用",
+    "modelValue": true,
+    "trueValue": true,
+    "falseValue": false,
+    "disabled": false,
+    "indeterminate": false,
+    "size": "default",
+    "border": false,
+    "width": 52,
+    "height": 21
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

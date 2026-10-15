@@ -1,0 +1,35 @@
+{
+  "scope": "v02-default-font-checkbox-native-fidelity",
+  "gateVersion": "0.2.6",
+  "platform": "penpot",
+  "logicalComponentId": "form.checkbox.default.enabled",
+  "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+  "componentId": "0b54f3e1-c822-80b2-8008-caa7c1f9e5d8",
+  "instanceId": "0b54f3e1-c822-80b2-8008-caa7c204ac97",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "text": "启用",
+    "modelValue": true,
+    "trueValue": true,
+    "falseValue": false,
+    "disabled": false,
+    "indeterminate": false,
+    "size": "default",
+    "border": false,
+    "width": 52,
+    "height": 21
+  },
+  "status": "PASS",
+  "evidenceSha256": {
+    "checkbox-native-fidelity.json": "d2659ebee6933d70b36ff66f0620dc3de1830df827162a3d1f03779e05b4cdec",
+    "candidate-metadata.json": "afb0be82fe46cd5d3782ea8813515d926cc02675e41ee9bf14ddd2187c17d065",
+    "native-svg": "8042c6553114795ed882c2c03d848893ff26de48f9eb18d2b12e8303f019ba9c",
+    "native-png": "7d55d0bfb8f53ad2a8b7f8f6b911739eb96c3586afb7bcbacdc221874716f794",
+    "native-read.json": "735a85b5a48d52fc4bf7c53c451b87df06290768caaa050eedaab9d7400e1d4b",
+    "visual-review.json": "e17347266261b012889f148fa71834d3fce33aa70859a4afb2e1d8c31ef04ebf"
+  },
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "registryAdmission": "NOT_RUN",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

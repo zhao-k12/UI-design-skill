@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "expectedText": "启用",
+  "effectiveCjkFontIdentity": "UNVERIFIED",
+  "platforms": {
+    "figma": {
+      "nativePngSha256": "6af9bb2d73b06df3aa405951e3ebb0476319e89a2437ed8c82c97afb68851691",
+      "legibleText": "启用",
+      "completeGlyphs": true,
+      "clippedText": false,
+      "emptyOrDetached": false,
+      "checkedMarkVisible": true
+    },
+    "penpot": {
+      "nativePngSha256": "7d55d0bfb8f53ad2a8b7f8f6b911739eb96c3586afb7bcbacdc221874716f794",
+      "legibleText": "启用",
+      "completeGlyphs": true,
+      "clippedText": false,
+      "emptyOrDetached": false,
+      "checkedMarkVisible": true
+    }
+  }
+}

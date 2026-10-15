@@ -14,8 +14,9 @@
 - TASK-058: Checkbox 固定“启用”选中态的官方源码/CSS、真实浏览器 Component IR、字体、截图和来源锁 PASS；双端默认字体候选、Fidelity Gate 与 Registry 准入均 NOT_RUN。
 - TASK-059: Checkbox 固定选中态 Figma 默认 Inter 原生候选、主组件实例、独立读回和重复 PNG PASS（候选状态）。
 - TASK-060: Checkbox 固定选中态 Penpot 默认 sourcesanspro 原生候选、主组件实例、独立读回、文件校验和重复 PNG PASS（候选状态）；正式 Gate 尚未执行。
+- TASK-061: Checkbox 固定“启用”选中态的 Figma/Penpot 原生勾选标记及方框栅格位置修正、重复独立读回、双端正式 Fidelity Gate PASS，`admissionEligible=true`；Registry 准入尚未执行，V0.2 仍 NOT_READY。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: 执行 Checkbox 双端正式 Fidelity Gate 和限定 Registry 准入；版本化 Adapter 字节锁待单独架构决策。新 V0.2.4 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: 执行 Checkbox 限定 Registry 准入；版本化 Adapter 字节锁待单独架构决策。新 V0.2.4 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 
