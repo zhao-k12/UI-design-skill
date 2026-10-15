@@ -1,0 +1,236 @@
+{
+  "scope": "official_tabs_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 420,
+      "height": 180
+    },
+    "containerWidth": 320,
+    "cases": [
+      {
+        "logicalId": "navigation.tabs.line.overview",
+        "componentType": "Tabs",
+        "variant": "line",
+        "props": {
+          "modelValue": "overview",
+          "type": "line",
+          "size": "default",
+          "animated": false,
+          "captureFocus": false,
+          "closable": false,
+          "draggable": false
+        },
+        "text": "概览内容",
+        "tabs": [
+          {
+            "name": "overview",
+            "label": "概览",
+            "text": "概览内容"
+          },
+          {
+            "name": "details",
+            "label": "详情",
+            "text": "详情内容"
+          }
+        ]
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 420,
+      "height": 180
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "8508d8d7087fe6b302e862de7e7c949f88bcfc376d34f70964e8095a53737d0b",
+    "harnessBundleSha256": "c84d10bec615a6a47e70a79ec7191e7c79cbed20f6848b79585fa0c32f1e54e4",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "e01c1fb94d878a226018f2a55f9552a21722f978b7f2ff3eba8e508d40bf6fc5"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-tabs",
+      "ivu-tabs-no-animation"
+    ],
+    "root": {
+      "x": 24,
+      "y": 24,
+      "width": 320,
+      "height": 73
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    "bar": {
+      "bounds": {
+        "x": 24,
+        "y": 24,
+        "width": 320,
+        "height": 36
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "",
+        "borderRadius": "0px",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "0px",
+        "margin": "0px 0px 16px"
+      }
+    },
+    "ink": {
+      "bounds": {
+        "x": 24,
+        "y": 58,
+        "width": 60,
+        "height": 2
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgb(45, 140, 240)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderRadius": "0px",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    "tabs": [
+      {
+        "text": "概览",
+        "classes": [
+          "ivu-tabs-tab",
+          "ivu-tabs-tab-active",
+          "ivu-tabs-tab-focused"
+        ],
+        "bounds": {
+          "x": 24,
+          "y": 24,
+          "width": 60,
+          "height": 37
+        },
+        "style": {
+          "color": "rgb(45, 140, 240)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "0px none rgb(45, 140, 240)",
+          "borderRadius": "0px",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "8px 16px",
+          "margin": "0px 16px 0px 0px"
+        }
+      },
+      {
+        "text": "详情",
+        "classes": [
+          "ivu-tabs-tab"
+        ],
+        "bounds": {
+          "x": 100,
+          "y": 24,
+          "width": 60,
+          "height": 37
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "0px none rgb(81, 90, 110)",
+          "borderRadius": "0px",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "8px 16px",
+          "margin": "0px 16px 0px 0px"
+        }
+      }
+    ],
+    "panes": [
+      {
+        "text": "概览内容",
+        "classes": [
+          "ivu-tabs-tabpane"
+        ],
+        "bounds": {
+          "x": 24,
+          "y": 76,
+          "width": 320,
+          "height": 21
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "0px none rgb(81, 90, 110)",
+          "borderRadius": "0px",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "0px",
+          "margin": "0px"
+        }
+      },
+      {
+        "text": "详情内容",
+        "classes": [
+          "ivu-tabs-tabpane"
+        ],
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "0px none rgb(81, 90, 110)",
+          "borderRadius": "0px",
+          "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "padding": "0px",
+          "margin": "0px"
+        }
+      }
+    ]
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/tabs/tabs.vue": "43a7f906f8c727e498ed40792e23352930161bbbdcda274ac5330990ca36e791",
+    "node_modules/view-ui-plus/src/components/tabs/pane.vue": "21db23cd3784150ae86c7af0b4b25d1d9a1de0bc88a178fd73422f7546655c51",
+    "node_modules/view-ui-plus/src/styles/components/tabs.less": "e4b1caac336a1640ba40ea5d4008add052a821c52b83f3582f96ad6605afbdbd"
+  },
+  "referenceComponentIrSha256": "332575bbd132f8f2b41a786ac87a9744906c23d289dc9b8291afd4accd6f3656"
+}

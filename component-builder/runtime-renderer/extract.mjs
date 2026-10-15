@@ -33,7 +33,7 @@ export async function extractRuntime(outputDirectory, { observePage, casesData, 
     const identities = new Set();
     if (cases.casesVersion !== '0.1.0' || !Number.isFinite(cases.containerWidth) || cases.containerWidth <= 0 || !Array.isArray(cases.cases)) throw new Error('invalid_runtime_cases');
     for (const item of cases.cases) {
-      if (!/^[a-zA-Z][a-zA-Z0-9_.-]*$/.test(item.logicalId) || identities.has(item.logicalId) || !['Button', 'Input', 'Select', 'Table', 'Tag', 'Checkbox', 'Radio', 'Switch', 'Card', 'Pagination'].includes(item.componentType) || !item.props || typeof item.props !== 'object') throw new Error('invalid_runtime_case');
+      if (!/^[a-zA-Z][a-zA-Z0-9_.-]*$/.test(item.logicalId) || identities.has(item.logicalId) || !['Button', 'Input', 'Select', 'Table', 'Tag', 'Checkbox', 'Radio', 'Switch', 'Card', 'Pagination', 'Tabs'].includes(item.componentType) || !item.props || typeof item.props !== 'object') throw new Error('invalid_runtime_case');
       if (Object.keys(item.props).some(name => ['style', 'class', 'innerHTML', 'textContent'].includes(name) || name.startsWith('on'))) throw new Error('component_css_override_forbidden');
       identities.add(item.logicalId);
     }
