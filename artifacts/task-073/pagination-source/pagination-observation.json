@@ -1,0 +1,212 @@
+{
+  "scope": "official_pagination_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 480,
+      "height": 140
+    },
+    "containerWidth": 400,
+    "cases": [
+      {
+        "logicalId": "data.pagination.default.three-pages",
+        "componentType": "Pagination",
+        "variant": "default",
+        "props": {
+          "modelValue": 1,
+          "total": 30,
+          "pageSize": 10,
+          "size": "default",
+          "simple": false,
+          "showTotal": false,
+          "showElevator": false,
+          "showSizer": false,
+          "disabled": false
+        },
+        "text": null
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 480,
+      "height": 140
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "84901443925edc0aeb55033e1f82ef809fe639ce1749e583a51ecf2a704b669e",
+    "harnessBundleSha256": "c969ba2e0e6cd084bf227ecc9503c85d11f68e061d067ab6a776bf725e2f6a8f",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "96942a29ce7f000d1803777d11d03cd558786a3459119265775c1dddb8afb3af"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-page"
+    ],
+    "root": {
+      "x": 24,
+      "y": 24,
+      "width": 400,
+      "height": 32
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "margin": "0px"
+    },
+    "items": [
+      {
+        "classes": [
+          "ivu-page-prev",
+          "ivu-page-disabled"
+        ],
+        "title": "上一页",
+        "text": "",
+        "bounds": {
+          "x": 24,
+          "y": 24,
+          "width": 32,
+          "height": 32
+        },
+        "style": {
+          "color": "rgb(102, 102, 102)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "border": "1px solid rgb(220, 222, 226)",
+          "borderRadius": "4px",
+          "fontFamily": "Arial",
+          "fontSize": "14px",
+          "lineHeight": "30px",
+          "margin": "0px 4px 0px 0px"
+        },
+        "icon": "ivu-icon ivu-icon-ios-arrow-back"
+      },
+      {
+        "classes": [
+          "ivu-page-item",
+          "ivu-page-item-active"
+        ],
+        "title": "1",
+        "text": "1",
+        "bounds": {
+          "x": 60,
+          "y": 24,
+          "width": 32,
+          "height": 32
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "border": "1px solid rgb(45, 140, 240)",
+          "borderRadius": "4px",
+          "fontFamily": "Arial",
+          "fontSize": "14px",
+          "lineHeight": "30px",
+          "margin": "0px 4px 0px 0px"
+        },
+        "icon": null
+      },
+      {
+        "classes": [
+          "ivu-page-item"
+        ],
+        "title": "2",
+        "text": "2",
+        "bounds": {
+          "x": 96,
+          "y": 24,
+          "width": 32,
+          "height": 32
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "border": "1px solid rgb(220, 222, 226)",
+          "borderRadius": "4px",
+          "fontFamily": "Arial",
+          "fontSize": "14px",
+          "lineHeight": "30px",
+          "margin": "0px 4px 0px 0px"
+        },
+        "icon": null
+      },
+      {
+        "classes": [
+          "ivu-page-item"
+        ],
+        "title": "3",
+        "text": "3",
+        "bounds": {
+          "x": 132,
+          "y": 24,
+          "width": 32,
+          "height": 32
+        },
+        "style": {
+          "color": "rgb(81, 90, 110)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "border": "1px solid rgb(220, 222, 226)",
+          "borderRadius": "4px",
+          "fontFamily": "Arial",
+          "fontSize": "14px",
+          "lineHeight": "30px",
+          "margin": "0px 4px 0px 0px"
+        },
+        "icon": null
+      },
+      {
+        "classes": [
+          "ivu-page-next"
+        ],
+        "title": "下一页",
+        "text": "",
+        "bounds": {
+          "x": 168,
+          "y": 24,
+          "width": 32,
+          "height": 32
+        },
+        "style": {
+          "color": "rgb(102, 102, 102)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "border": "1px solid rgb(220, 222, 226)",
+          "borderRadius": "4px",
+          "fontFamily": "Arial",
+          "fontSize": "14px",
+          "lineHeight": "30px",
+          "margin": "0px"
+        },
+        "icon": "ivu-icon ivu-icon-ios-arrow-forward"
+      }
+    ]
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/page/page.vue": "5b6c83c22dd4d328c26fe4ae4ee0bbf61172b06edf25c69e1c2963a8e0f90f32",
+    "node_modules/view-ui-plus/src/components/page/options.vue": "05959da9384a22f0484538234220eb754c27bf9bedef2e985810c37071dbebb4",
+    "node_modules/view-ui-plus/src/styles/components/page.less": "4aeed5e3854d9dbd01e67587df631e8edd5b5d25bb477eec7ea82e0feca76938"
+  },
+  "referenceComponentIrSha256": "396df8c411b03a5d4aa79ff5b5a5744eaa5383939bdf2387c5c8face31193066"
+}

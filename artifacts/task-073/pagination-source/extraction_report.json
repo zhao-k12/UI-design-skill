@@ -1,0 +1,12 @@
+{
+  "scope": "component_runtime_extraction",
+  "status": "PASS",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentTypes": [
+    "Pagination"
+  ],
+  "componentIrSha256": "396df8c411b03a5d4aa79ff5b5a5744eaa5383939bdf2387c5c8face31193066",
+  "runtimeManifestSha256": "ee96c0c461ea576adbb469e4e03a1e1db089af468e56137a666d7c29feaa916f",
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}

@@ -1,0 +1,14 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {"width": 480, "height": 140},
+  "containerWidth": 400,
+  "cases": [
+    {
+      "logicalId": "data.pagination.default.three-pages",
+      "componentType": "Pagination",
+      "variant": "default",
+      "props": {"modelValue": 1, "total": 30, "pageSize": 10, "size": "default", "simple": false, "showTotal": false, "showElevator": false, "showSizer": false, "disabled": false},
+      "text": null
+    }
+  ]
+}
