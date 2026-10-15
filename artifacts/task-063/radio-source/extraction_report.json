@@ -1,0 +1,12 @@
+{
+  "scope": "component_runtime_extraction",
+  "status": "PASS",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentTypes": [
+    "Radio"
+  ],
+  "componentIrSha256": "ec34263843da0bd5dec6ef4d21fc82a67cdb8e85b701c73e27c6061bdf1e89d1",
+  "runtimeManifestSha256": "751f8f1cc4bc1b9a10d7bda4a33108d3804c84024acbf1ce72fd1cbede65a19c",
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}

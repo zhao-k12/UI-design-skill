@@ -306,6 +306,7 @@
             "Table",
             "Tag",
             "Checkbox",
+            "Radio",
             "FormItem",
             "Pagination",
             "Card",
