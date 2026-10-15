@@ -1,0 +1,31 @@
+{
+  "scope": "v02-default-font-pagination-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "data.pagination.default.three-pages",
+  "componentType": "Pagination",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "205:2",
+  "componentId": "205:16",
+  "instanceId": "205:29",
+  "iconComponents": {
+    "remix.arrow-left-s-line": "205:12",
+    "remix.arrow-right-s-line": "205:15"
+  },
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "modelValue": 1,
+    "total": 30,
+    "pageSize": 10,
+    "pages": [1, 2, 3],
+    "width": 400,
+    "height": 32
+  },
+  "componentIrSha256": "396df8c411b03a5d4aa79ff5b5a5744eaa5383939bdf2387c5c8face31193066",
+  "candidateAuditSha256": "79f95048ad57552a956354f9134093df2b358a7184d16dea2294d6eef508e82b",
+  "nativeAdmission": "NOT_RUN",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
