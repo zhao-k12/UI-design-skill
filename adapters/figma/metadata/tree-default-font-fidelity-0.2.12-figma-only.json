@@ -1,0 +1,18 @@
+{
+  "scope": "v02-default-font-tree-figma-only-qa",
+  "status": "FIGMA_QA_PASS",
+  "logicalComponentId": "navigation.tree.expanded.departments",
+  "componentType": "Tree",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "210:2",
+  "componentId": "210:6",
+  "instanceId": "210:15",
+  "candidateAuditSha256": "84729149bc588fb6122da272028bd8ca11802ab69a46b971e3247565442d967b",
+  "figmaQaSha256": "57ef350445f782a3ca687b0061814cb4f98d9b0ff0fb024b0790b7b783dd3d49",
+  "nativeAdmission": "FIGMA_QA_PASS_ONLY",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

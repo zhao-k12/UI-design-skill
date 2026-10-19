@@ -1,0 +1,82 @@
+{
+  "scope": "figma-only-qa",
+  "gateVersion": "0.2.12-figma-only",
+  "status": "PASS",
+  "logicalComponentId": "navigation.tree.expanded.departments",
+  "componentType": "Tree",
+  "checks": {
+    "sourceAndCandidateLocked": true,
+    "independentNativeStructure": true,
+    "nativeRepeatStable": true,
+    "nativeSvgStable": true,
+    "sourceGeometryAndVisibleContent": true,
+    "hashBoundVisualReview": true
+  },
+  "rasterDiagnostics": {
+    "sourceSize": [
+      240,
+      79
+    ],
+    "figmaSize": [
+      240,
+      79
+    ],
+    "outsideContentPixels": 11862,
+    "outsideContentExactRatio": 1.0,
+    "outsideContentMaxChannelDelta": 0,
+    "ink": {
+      "arrow": {
+        "pixels": 18,
+        "bounds": [
+          1,
+          8,
+          10,
+          12
+        ]
+      },
+      "parent": {
+        "pixels": 155,
+        "bounds": [
+          17,
+          4,
+          42,
+          16
+        ]
+      },
+      "child1": {
+        "pixels": 246,
+        "bounds": [
+          34,
+          33,
+          74,
+          45
+        ]
+      },
+      "child2": {
+        "pixels": 210,
+        "bounds": [
+          35,
+          62,
+          74,
+          74
+        ]
+      }
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "52df434232bb7ed7deb47d3e114c95fdbb2200793acae3cf5c2e78c2bd99dcee",
+    "candidateAudit": "84729149bc588fb6122da272028bd8ca11802ab69a46b971e3247565442d967b",
+    "visualReview": "d353208a8511d0c1e915a7078757c8d257b18b2d3f070c79016a6ad1ff943505",
+    "policy": "87b4bffdbfb2465875dd4066aaad5b4229f016241190c1cd876bab4c59d80da2",
+    "native-read.json": "da5e9b6a9cbc4b57e9f296cfd803083fa951e11394bb12ec0309f99f98bdab01",
+    "native.png": "6357d56083d950579fff688397135ca001fa3d769737304c94bd6ba05953798e",
+    "native-repeat.png": "6357d56083d950579fff688397135ca001fa3d769737304c94bd6ba05953798e",
+    "native.svg": "f675ebd0a5b022903e6d83fed16f35df8259300e2af81cb586755c90ea51a2cb"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}

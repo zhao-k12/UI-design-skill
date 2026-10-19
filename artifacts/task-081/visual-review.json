@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "figma-only-qa",
+  "nativePngSha256": "6357d56083d950579fff688397135ca001fa3d769737304c94bd6ba05953798e",
+  "visibleLabels": ["部门", "研发部", "设计部"],
+  "expandedArrowVisible": true,
+  "extraChildIcons": false,
+  "completeText": true,
+  "clippedOrDetached": false,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}
