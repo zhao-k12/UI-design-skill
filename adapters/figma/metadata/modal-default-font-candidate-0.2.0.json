@@ -1,0 +1,27 @@
+{
+  "scope": "v02-default-font-modal-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "overlay.modal.notice.open",
+  "componentType": "Modal",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "222:2",
+  "componentId": "222:13",
+  "instanceId": "222:14",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "title": "提示",
+    "body": "操作已完成",
+    "closable": false,
+    "footerHide": true,
+    "width": 320,
+    "height": 104
+  },
+  "componentIrSha256": "583dbd261ad76a8218bb9f3e0585955943bd8d0ef0845922b62b8a4a47b38e53",
+  "candidateAuditSha256": "4d8aef1f1ac0582322100e910a4572eee3818709024f6311c40f683a2711c07f",
+  "nativeAdmission": "NOT_RUN",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

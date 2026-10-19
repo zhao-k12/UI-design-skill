@@ -42,8 +42,9 @@
 - TASK-086: Form 固定单字段 Figma Inter 原生主组件/实例、已准入 Input 原生实例复用、标签颜色变量、独立读回和重复 PNG/SVG 候选审计 PASS；单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - TASK-087: Form 固定单字段 Figma 独立复读、重复导出、非文字区域仅 Input 四角抗锯齿 41 像素差异（最大通道差 4）、标签和占位完整性 QA PASS；`admissionEligible=false`，双端正式 Fidelity Gate 与 Registry 准入仍 DEFERRED，V0.2 仍 NOT_READY。
 - TASK-088: Modal 固定“提示 / 操作已完成”打开态内容框的官方源码/CSS、真实浏览器 Component IR、320×104 截图和来源锁 PASS；Component IR 契约补列 Modal 类型。Figma 候选与单端 QA 尚未执行，双端正式准入仍 DEFERRED。
+- TASK-089: Modal 固定通知内容框 Figma Inter 原生主组件/实例、来源颜色变量及阴影、独立读回和重复 PNG/SVG 候选审计 PASS；单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: Penpot 线按用户决定暂缓；为 Modal 建立 Figma 原生候选与单端 QA，随后继续 Drawer、Upload、Cascader 等未准入类。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form 均未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: Penpot 线按用户决定暂缓；为 Modal 做 Figma 单端独立 QA，随后继续 Drawer、Upload、Cascader 等未准入类。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal 均未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

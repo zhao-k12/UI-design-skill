@@ -1,0 +1,32 @@
+{
+  "scope": "figma-only-modal-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "overlay.modal.notice.open",
+  "componentType": "Modal",
+  "componentIrSha256": "583dbd261ad76a8218bb9f3e0585955943bd8d0ef0845922b62b8a4a47b38e53",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "222:2",
+  "componentId": "222:13",
+  "instanceId": "222:14",
+  "checks": {
+    "officialSourceVerified": true,
+    "targetAndComponentLink": true,
+    "nativeGeometry": true,
+    "sourceColorsBound": true,
+    "editableDefaultFontText": true,
+    "sourceShadow": true,
+    "nativeRepeatStable": true,
+    "nativeSvgSemantics": true,
+    "nativeRasterSize": true
+  },
+  "evidenceSha256": {
+    "native-read.json": "8e1a57d6c28840ce06aa6bd3a14c4211d3f73a91eed02b92abe8187c51c20be7",
+    "native.png": "76b7910b6faee8dca930c34fa7243367ff5c901ea700e81ecf78376bf5c4fd64",
+    "native-repeat.png": "76b7910b6faee8dca930c34fa7243367ff5c901ea700e81ecf78376bf5c4fd64",
+    "native.svg": "6caedccd3db421447c49ed60f3e7abe196483004b5cf0fda892acb036eef3a09"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "releaseReady": false
+}
