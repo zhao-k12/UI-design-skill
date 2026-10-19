@@ -314,7 +314,8 @@
             "Tabs",
             "Tree",
             "DatePicker",
-            "Form"
+            "Form",
+            "Modal"
           ]
         },
         "variant": {

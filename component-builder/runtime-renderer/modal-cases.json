@@ -1,0 +1,22 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {"width": 800, "height": 500},
+  "containerWidth": 320,
+  "cases": [
+    {
+      "logicalId": "overlay.modal.notice.open",
+      "componentType": "Modal",
+      "variant": "notice-open-no-footer",
+      "props": {
+        "modelValue": true,
+        "title": "提示",
+        "width": 320,
+        "closable": false,
+        "footerHide": true,
+        "mask": true,
+        "transfer": true
+      },
+      "text": "操作已完成"
+    }
+  ]
+}

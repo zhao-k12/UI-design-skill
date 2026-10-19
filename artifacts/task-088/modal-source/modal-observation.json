@@ -1,0 +1,131 @@
+{
+  "scope": "official_modal_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 800,
+      "height": 500
+    },
+    "containerWidth": 320,
+    "cases": [
+      {
+        "logicalId": "overlay.modal.notice.open",
+        "componentType": "Modal",
+        "variant": "notice-open-no-footer",
+        "props": {
+          "modelValue": true,
+          "title": "提示",
+          "width": 320,
+          "closable": false,
+          "footerHide": true,
+          "mask": true,
+          "transfer": true
+        },
+        "text": "操作已完成"
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 500
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "76ed0636a1cb5536560a2c45caac6b3c09fae248a99d2dc2a802d7284e783321",
+    "harnessBundleSha256": "94b25a93776de9b7b4060aa48785b779f72004f89f6bf0c8684370bf2ff9d0f9",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "081fd44ec9834c5cca574b950435100e7f762fbd43c57ecb3f783ae310e2e73e"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-modal-content"
+    ],
+    "root": {
+      "x": 240,
+      "y": 100,
+      "width": 320,
+      "height": 104
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "6px",
+      "boxShadow": "rgba(0, 0, 0, 0.15) 0px 4px 12px 0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    "header": {
+      "text": "提示",
+      "bounds": {
+        "x": 240,
+        "y": 100,
+        "width": 320,
+        "height": 51
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "14px",
+        "padding": "14px 16px",
+        "margin": "0px"
+      }
+    },
+    "body": {
+      "text": "操作已完成",
+      "bounds": {
+        "x": 240,
+        "y": 151,
+        "width": 320,
+        "height": 53
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "16px",
+        "margin": "0px"
+      }
+    },
+    "footerCount": 0,
+    "closeCount": 0
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/modal/modal.vue": "840f204a1f47c1a043d2ba7aaffeac80ba113f51a76b392570d3353f4e8f7858",
+    "node_modules/view-ui-plus/src/styles/components/modal.less": "bdbb3671d90c79b0d5e628f5865ed3dd230fda18758fdcc9060213843e50c0e1"
+  },
+  "referenceComponentIrSha256": "583dbd261ad76a8218bb9f3e0585955943bd8d0ef0845922b62b8a4a47b38e53"
+}

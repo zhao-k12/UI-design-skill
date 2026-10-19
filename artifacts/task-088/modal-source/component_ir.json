@@ -1,0 +1,432 @@
+{
+  "status": "PASS",
+  "componentIrVersion": "0.1.0",
+  "components": [
+    {
+      "componentIrVersion": "0.1.0",
+      "evidenceKind": "official-runtime",
+      "logicalComponentId": "overlay.modal.notice.open",
+      "componentType": "Modal",
+      "variant": "notice-open-no-footer",
+      "state": "default-static",
+      "props": {
+        "modelValue": true,
+        "title": "提示",
+        "width": 320,
+        "closable": false,
+        "footerHide": true,
+        "mask": true,
+        "transfer": true
+      },
+      "resolvedProps": {
+        "title": "提示",
+        "lockScroll": true,
+        "modelValue": true,
+        "closable": false,
+        "maskClosable": true,
+        "width": 320,
+        "loading": false,
+        "styles": {},
+        "footerHide": true,
+        "scrollable": false,
+        "transitionNames": [
+          "ease",
+          "fade"
+        ],
+        "transfer": true,
+        "fullscreen": false,
+        "mask": true,
+        "draggable": false,
+        "sticky": false,
+        "stickyDistance": 10,
+        "resetDragPosition": false,
+        "zIndex": 1000,
+        "okText": {
+          "runtimeType": "undefined"
+        },
+        "cancelText": {
+          "runtimeType": "undefined"
+        },
+        "className": {
+          "runtimeType": "undefined"
+        },
+        "beforeClose": {
+          "runtimeType": "undefined"
+        },
+        "render": {
+          "runtimeType": "undefined"
+        }
+      },
+      "content": {
+        "text": "操作已完成",
+        "options": []
+      },
+      "fixtureContext": {
+        "containerWidth": 320
+      },
+      "provenance": {
+        "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+        "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+        "packageVersion": "1.3.24",
+        "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+        "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+        "casesSha256": "76ed0636a1cb5536560a2c45caac6b3c09fae248a99d2dc2a802d7284e783321",
+        "harnessBundleSha256": "94b25a93776de9b7b4060aa48785b779f72004f89f6bf0c8684370bf2ff9d0f9",
+        "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+        "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+        "rendererSha256": "081fd44ec9834c5cca574b950435100e7f762fbd43c57ecb3f783ae310e2e73e"
+      },
+      "environment": {
+        "browser": "153.0.8010.12",
+        "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+        "node": "v24.15.0",
+        "operatingSystem": {
+          "platform": "win32",
+          "release": "10.0.19045"
+        },
+        "viewport": {
+          "width": 800,
+          "height": 500
+        },
+        "deviceScaleFactor": 1,
+        "locale": "zh-CN",
+        "fontsStatus": "loaded"
+      },
+      "rootBounds": {
+        "width": 320,
+        "height": 104
+      },
+      "nodes": [
+        {
+          "path": "0",
+          "parentPath": null,
+          "tag": "div",
+          "attributes": {
+            "class": "ivu-modal-content"
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 104
+          },
+          "visible": true,
+          "computedStyle": {
+            "display": "block",
+            "position": "relative",
+            "box-sizing": "border-box",
+            "width": "320px",
+            "height": "104px",
+            "min-width": "0px",
+            "min-height": "0px",
+            "max-width": "none",
+            "max-height": "none",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "gap": "normal",
+            "row-gap": "normal",
+            "column-gap": "normal",
+            "align-items": "normal",
+            "justify-content": "normal",
+            "vertical-align": "baseline",
+            "flex-direction": "row",
+            "flex-wrap": "nowrap",
+            "background-color": "rgb(255, 255, 255)",
+            "color": "rgb(81, 90, 110)",
+            "opacity": "1",
+            "visibility": "visible",
+            "border-top-width": "0px",
+            "border-right-width": "0px",
+            "border-bottom-width": "0px",
+            "border-left-width": "0px",
+            "border-top-style": "none",
+            "border-right-style": "none",
+            "border-bottom-style": "none",
+            "border-left-style": "none",
+            "border-top-color": "rgb(81, 90, 110)",
+            "border-right-color": "rgb(81, 90, 110)",
+            "border-bottom-color": "rgb(81, 90, 110)",
+            "border-left-color": "rgb(81, 90, 110)",
+            "border-top-left-radius": "6px",
+            "border-top-right-radius": "6px",
+            "border-bottom-left-radius": "6px",
+            "border-bottom-right-radius": "6px",
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "font-style": "normal",
+            "line-height": "21px",
+            "letter-spacing": "normal",
+            "text-align": "start",
+            "text-transform": "none",
+            "box-shadow": "rgba(0, 0, 0, 0.15) 0px 4px 12px 0px",
+            "transform": "none",
+            "content": "normal"
+          },
+          "pseudoElements": {},
+          "textRuns": [],
+          "value": null
+        },
+        {
+          "path": "0.0",
+          "parentPath": "0",
+          "tag": "div",
+          "attributes": {
+            "class": "ivu-modal-header"
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 51
+          },
+          "visible": true,
+          "computedStyle": {
+            "display": "block",
+            "position": "static",
+            "box-sizing": "border-box",
+            "width": "320px",
+            "height": "51px",
+            "min-width": "0px",
+            "min-height": "0px",
+            "max-width": "none",
+            "max-height": "none",
+            "padding-top": "14px",
+            "padding-right": "16px",
+            "padding-bottom": "14px",
+            "padding-left": "16px",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "gap": "normal",
+            "row-gap": "normal",
+            "column-gap": "normal",
+            "align-items": "normal",
+            "justify-content": "normal",
+            "vertical-align": "baseline",
+            "flex-direction": "row",
+            "flex-wrap": "nowrap",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(81, 90, 110)",
+            "opacity": "1",
+            "visibility": "visible",
+            "border-top-width": "0px",
+            "border-right-width": "0px",
+            "border-bottom-width": "1px",
+            "border-left-width": "0px",
+            "border-top-style": "none",
+            "border-right-style": "none",
+            "border-bottom-style": "solid",
+            "border-left-style": "none",
+            "border-top-color": "rgb(81, 90, 110)",
+            "border-right-color": "rgb(81, 90, 110)",
+            "border-bottom-color": "rgb(232, 234, 236)",
+            "border-left-color": "rgb(81, 90, 110)",
+            "border-top-left-radius": "0px",
+            "border-top-right-radius": "0px",
+            "border-bottom-left-radius": "0px",
+            "border-bottom-right-radius": "0px",
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "font-style": "normal",
+            "line-height": "14px",
+            "letter-spacing": "normal",
+            "text-align": "start",
+            "text-transform": "none",
+            "box-shadow": "none",
+            "transform": "none",
+            "content": "normal"
+          },
+          "pseudoElements": {},
+          "textRuns": [],
+          "value": null
+        },
+        {
+          "path": "0.0.0",
+          "parentPath": "0.0",
+          "tag": "div",
+          "attributes": {
+            "class": "ivu-modal-header-inner"
+          },
+          "bounds": {
+            "x": 16,
+            "y": 14,
+            "width": 288,
+            "height": 20
+          },
+          "visible": true,
+          "computedStyle": {
+            "display": "inline-block",
+            "position": "static",
+            "box-sizing": "border-box",
+            "width": "288px",
+            "height": "20px",
+            "min-width": "0px",
+            "min-height": "0px",
+            "max-width": "none",
+            "max-height": "none",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "gap": "normal",
+            "row-gap": "normal",
+            "column-gap": "normal",
+            "align-items": "normal",
+            "justify-content": "normal",
+            "vertical-align": "baseline",
+            "flex-direction": "row",
+            "flex-wrap": "nowrap",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(23, 35, 61)",
+            "opacity": "1",
+            "visibility": "visible",
+            "border-top-width": "0px",
+            "border-right-width": "0px",
+            "border-bottom-width": "0px",
+            "border-left-width": "0px",
+            "border-top-style": "none",
+            "border-right-style": "none",
+            "border-bottom-style": "none",
+            "border-left-style": "none",
+            "border-top-color": "rgb(23, 35, 61)",
+            "border-right-color": "rgb(23, 35, 61)",
+            "border-bottom-color": "rgb(23, 35, 61)",
+            "border-left-color": "rgb(23, 35, 61)",
+            "border-top-left-radius": "0px",
+            "border-top-right-radius": "0px",
+            "border-bottom-left-radius": "0px",
+            "border-bottom-right-radius": "0px",
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-size": "16px",
+            "font-weight": "500",
+            "font-style": "normal",
+            "line-height": "20px",
+            "letter-spacing": "normal",
+            "text-align": "start",
+            "text-transform": "none",
+            "box-shadow": "none",
+            "transform": "none",
+            "content": "normal"
+          },
+          "pseudoElements": {},
+          "textRuns": [
+            {
+              "text": "提示",
+              "bounds": {
+                "x": 16,
+                "y": 15,
+                "width": 32,
+                "height": 17
+              }
+            }
+          ],
+          "value": null
+        },
+        {
+          "path": "0.1",
+          "parentPath": "0",
+          "tag": "div",
+          "attributes": {
+            "class": "ivu-modal-body"
+          },
+          "bounds": {
+            "x": 0,
+            "y": 51,
+            "width": 320,
+            "height": 53
+          },
+          "visible": true,
+          "computedStyle": {
+            "display": "block",
+            "position": "static",
+            "box-sizing": "border-box",
+            "width": "320px",
+            "height": "53px",
+            "min-width": "0px",
+            "min-height": "0px",
+            "max-width": "none",
+            "max-height": "none",
+            "padding-top": "16px",
+            "padding-right": "16px",
+            "padding-bottom": "16px",
+            "padding-left": "16px",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "gap": "normal",
+            "row-gap": "normal",
+            "column-gap": "normal",
+            "align-items": "normal",
+            "justify-content": "normal",
+            "vertical-align": "baseline",
+            "flex-direction": "row",
+            "flex-wrap": "nowrap",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(81, 90, 110)",
+            "opacity": "1",
+            "visibility": "visible",
+            "border-top-width": "0px",
+            "border-right-width": "0px",
+            "border-bottom-width": "0px",
+            "border-left-width": "0px",
+            "border-top-style": "none",
+            "border-right-style": "none",
+            "border-bottom-style": "none",
+            "border-left-style": "none",
+            "border-top-color": "rgb(81, 90, 110)",
+            "border-right-color": "rgb(81, 90, 110)",
+            "border-bottom-color": "rgb(81, 90, 110)",
+            "border-left-color": "rgb(81, 90, 110)",
+            "border-top-left-radius": "0px",
+            "border-top-right-radius": "0px",
+            "border-bottom-left-radius": "0px",
+            "border-bottom-right-radius": "0px",
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "font-style": "normal",
+            "line-height": "21px",
+            "letter-spacing": "normal",
+            "text-align": "start",
+            "text-transform": "none",
+            "box-shadow": "none",
+            "transform": "none",
+            "content": "normal"
+          },
+          "pseudoElements": {},
+          "textRuns": [
+            {
+              "text": "操作已完成",
+              "bounds": {
+                "x": 16,
+                "y": 69,
+                "width": 70,
+                "height": 16
+              }
+            }
+          ],
+          "value": null
+        }
+      ],
+      "iconMetrics": [],
+      "screenshot": {
+        "path": "overlay.modal.notice.open.png",
+        "sha256": "a3069f00956014ac0796ca0f4b079356ca1f625b7620434691e0460521b3d963"
+      }
+    }
+  ]
+}
