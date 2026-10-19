@@ -1,0 +1,28 @@
+{
+  "scope": "v02-default-font-form-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "form.single.name.empty",
+  "componentType": "Form",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "220:2",
+  "componentId": "220:9",
+  "instanceId": "220:10",
+  "inputComponentId": "141:3",
+  "inputInstanceId": "220:6",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "label": "姓名",
+    "placeholder": "请输入姓名",
+    "labelWidth": 80,
+    "width": 320,
+    "height": 34
+  },
+  "componentIrSha256": "cd979fda5656f4fb49a25cc79302ed03058e43c9a81af870c5ad1ecb32a4643f",
+  "candidateAuditSha256": "8ae0337ec50a0929ad1260426779e89458a09514ab4ed5ae072730bda5b96d79",
+  "nativeAdmission": "NOT_RUN",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

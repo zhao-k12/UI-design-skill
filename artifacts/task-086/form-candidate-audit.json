@@ -1,0 +1,31 @@
+{
+  "scope": "figma-only-form-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "form.single.name.empty",
+  "componentType": "Form",
+  "componentIrSha256": "cd979fda5656f4fb49a25cc79302ed03058e43c9a81af870c5ad1ecb32a4643f",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "220:2",
+  "componentId": "220:9",
+  "instanceId": "220:10",
+  "checks": {
+    "officialSourceVerified": true,
+    "targetAndComponentLink": true,
+    "nativeGeometry": true,
+    "editableDefaultFontLabel": true,
+    "admittedInputInstance": true,
+    "nativeRepeatStable": true,
+    "nativeSvgSemantics": true,
+    "nativeRasterSize": true
+  },
+  "evidenceSha256": {
+    "native-read.json": "e7a0abd7c74e5461d371bfc282f4431cc57e915cdd74c966ab6f3aa8408cf65a",
+    "native.png": "313548edb6f4415a8c6632166fdf0281d10198fefcf098b98a530d30cc5a2bfa",
+    "native-repeat.png": "313548edb6f4415a8c6632166fdf0281d10198fefcf098b98a530d30cc5a2bfa",
+    "native.svg": "7a5765b1a655f83eef8431fafe0e33787c8005d75ff404090fe381d08dc6d78d"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "releaseReady": false
+}
