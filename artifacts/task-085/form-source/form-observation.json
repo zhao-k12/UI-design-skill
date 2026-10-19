@@ -1,0 +1,146 @@
+{
+  "scope": "official_form_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 420,
+      "height": 180
+    },
+    "containerWidth": 320,
+    "cases": [
+      {
+        "logicalId": "form.single.name.empty",
+        "componentType": "Form",
+        "variant": "single-field-empty",
+        "props": {
+          "model": {
+            "name": ""
+          },
+          "labelWidth": 80,
+          "labelPosition": "right",
+          "showMessage": true
+        },
+        "text": null
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 420,
+      "height": 180
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "00ea658838962b51f925f69430954364396a1dfbabdf43198fb778d6aec9e275",
+    "harnessBundleSha256": "255fc6700fa491e93ba3ff4b63fa3699af203e7e3f439dd4c413dbe74aaf3fea",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "f2f3c63d6a708bbc6c059f2c5522cc3bb7fe2826111d9bbfecf664d33fc8a33b"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-form",
+      "ivu-form-label-right"
+    ],
+    "root": {
+      "x": 24,
+      "y": 24,
+      "width": 320,
+      "height": 34
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    "item": {
+      "classes": [
+        "ivu-form-item"
+      ],
+      "bounds": {
+        "x": 24,
+        "y": 24,
+        "width": 320,
+        "height": 34
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(81, 90, 110)",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "0px",
+        "margin": "0px 0px 24px"
+      }
+    },
+    "label": {
+      "text": "姓名",
+      "bounds": {
+        "x": 24,
+        "y": 24,
+        "width": 80,
+        "height": 34
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(81, 90, 110)",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "14px",
+        "padding": "10px 12px 10px 0px",
+        "margin": "0px"
+      }
+    },
+    "input": {
+      "value": "",
+      "placeholder": "请输入姓名",
+      "bounds": {
+        "x": 104,
+        "y": 25.375,
+        "width": 240,
+        "height": 32
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "4px 7px",
+        "margin": "0px"
+      }
+    }
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/form/form.vue": "2363ec85717ad9ab1b294620bc3902162e687d738880050832bb01e83540b0b7",
+    "node_modules/view-ui-plus/src/components/form/form-item.vue": "999242e8ff0ba286d59124e78f838ea19a47f13480758bda6624e8798e39ae4f",
+    "node_modules/view-ui-plus/src/styles/components/form.less": "b7b56f605e9bec35412432c3c4b723a394f0db6f8195ba349d0f94f0ad83c99c"
+  },
+  "referenceComponentIrSha256": "cd979fda5656f4fb49a25cc79302ed03058e43c9a81af870c5ad1ecb32a4643f"
+}

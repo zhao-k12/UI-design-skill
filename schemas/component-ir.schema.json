@@ -313,7 +313,8 @@
             "Card",
             "Tabs",
             "Tree",
-            "DatePicker"
+            "DatePicker",
+            "Form"
           ]
         },
         "variant": {
