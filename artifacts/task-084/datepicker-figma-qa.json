@@ -1,0 +1,64 @@
+{
+  "scope": "figma-only-qa",
+  "gateVersion": "0.2.13-figma-only",
+  "status": "PASS",
+  "logicalComponentId": "form.datepicker.date.selected",
+  "componentType": "DatePicker",
+  "checks": {
+    "sourceAndCandidateLocked": true,
+    "independentNativeStructure": true,
+    "nativeRepeatStable": true,
+    "nativeSvgStable": true,
+    "sourceGeometryAndVisibleContent": true,
+    "hashBoundVisualReview": true
+  },
+  "rasterDiagnostics": {
+    "sourceSize": [
+      211,
+      32
+    ],
+    "figmaSize": [
+      211,
+      32
+    ],
+    "outsideContentPixels": 3690,
+    "outsideContentMismatchPixels": 41,
+    "outsideContentMaxChannelDelta": 4,
+    "outOfCornerMismatchPixels": 0,
+    "ink": {
+      "date": {
+        "pixels": 260,
+        "bounds": [
+          9,
+          11,
+          83,
+          21
+        ]
+      },
+      "calendar": {
+        "pixels": 86,
+        "bounds": [
+          188,
+          9,
+          201,
+          21
+        ]
+      }
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "e3f13e5586a8ed5849e6027d15c92c39662e8b773a93c5960fcf99a26a8ecf9e",
+    "candidateAudit": "6d3c84280c608c90d34079d680c3576b050d5874a917a82ad6fae2585322ae58",
+    "visualReview": "3376a3665d274f84a9d9a8610536811991fa2f7e54bcfa2c9b94bd949679b1ab",
+    "policy": "b6a72cca86a648767f33f6698b7877afbe0b46ee08f85faec66ecb3195ff3430",
+    "native-read.json": "865f15c0151b2d1d93dd4ba94b10ea95070be404229eb05ebe86d5b0d53f2699",
+    "native.png": "6cde5507421597666381d4398cbf8117d126a290fd6607576eaba91160a44823",
+    "native-repeat.png": "6cde5507421597666381d4398cbf8117d126a290fd6607576eaba91160a44823",
+    "native.svg": "b461e08fbbe7351901fdb6d83bec01f56f39d97b0643b9daa5d15cbeee591d8a"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

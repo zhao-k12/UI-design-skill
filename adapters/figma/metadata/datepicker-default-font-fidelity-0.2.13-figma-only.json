@@ -1,0 +1,18 @@
+{
+  "scope": "v02-default-font-datepicker-figma-only-qa",
+  "status": "FIGMA_QA_PASS",
+  "logicalComponentId": "form.datepicker.date.selected",
+  "componentType": "DatePicker",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "218:2",
+  "componentId": "218:16",
+  "instanceId": "218:17",
+  "candidateAuditSha256": "6d3c84280c608c90d34079d680c3576b050d5874a917a82ad6fae2585322ae58",
+  "figmaQaSha256": "b036c70119e7e6d5a05e0280b4e977fbf88b391be4e67200229710206ce4c063",
+  "nativeAdmission": "FIGMA_QA_PASS_ONLY",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
