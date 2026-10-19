@@ -1,0 +1,32 @@
+{
+  "scope": "figma-only-datepicker-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "form.datepicker.date.selected",
+  "componentType": "DatePicker",
+  "componentIrSha256": "5e13199967563a08b7e1d1556530f39253ed1425940764c5b1e8202d94f10acc",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "218:2",
+  "componentId": "218:16",
+  "instanceId": "218:17",
+  "checks": {
+    "officialSourceVerified": true,
+    "targetAndComponentLink": true,
+    "nativeGeometry": true,
+    "sourceColorsBound": true,
+    "editableDefaultFontText": true,
+    "officialRemixCalendarLinked": true,
+    "nativeRepeatStable": true,
+    "nativeSvgSemantics": true,
+    "nativeRasterSize": true
+  },
+  "evidenceSha256": {
+    "native-read.json": "681a5323347b6aeadc1be6152bfff5ef21ff951790c964b2714be71385f0dd48",
+    "native.png": "6cde5507421597666381d4398cbf8117d126a290fd6607576eaba91160a44823",
+    "native-repeat.png": "6cde5507421597666381d4398cbf8117d126a290fd6607576eaba91160a44823",
+    "native.svg": "b461e08fbbe7351901fdb6d83bec01f56f39d97b0643b9daa5d15cbeee591d8a"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "releaseReady": false
+}

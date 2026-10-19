@@ -1,0 +1,30 @@
+{
+  "scope": "v02-default-font-datepicker-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "form.datepicker.date.selected",
+  "componentType": "DatePicker",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "218:2",
+  "componentId": "218:16",
+  "instanceId": "218:17",
+  "iconComponentId": "218:10",
+  "iconInstanceId": "218:14",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "type": "date",
+    "value": "2024-01-01",
+    "readonly": true,
+    "clearable": false,
+    "open": false,
+    "width": 211,
+    "height": 32
+  },
+  "componentIrSha256": "5e13199967563a08b7e1d1556530f39253ed1425940764c5b1e8202d94f10acc",
+  "candidateAuditSha256": "6d3c84280c608c90d34079d680c3576b050d5874a917a82ad6fae2585322ae58",
+  "nativeAdmission": "NOT_RUN",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
