@@ -1,0 +1,23 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {"width": 320, "height": 180},
+  "containerWidth": 240,
+  "cases": [
+    {
+      "logicalId": "form.datepicker.date.selected",
+      "componentType": "DatePicker",
+      "variant": "date-selected",
+      "props": {
+        "type": "date",
+        "modelValue": "2024-01-01",
+        "format": "yyyy-MM-dd",
+        "size": "default",
+        "disabled": false,
+        "clearable": false,
+        "readonly": true,
+        "open": false
+      },
+      "text": null
+    }
+  ]
+}

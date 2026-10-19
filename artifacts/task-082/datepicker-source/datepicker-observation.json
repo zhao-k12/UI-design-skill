@@ -1,0 +1,136 @@
+{
+  "scope": "official_datepicker_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 320,
+      "height": 180
+    },
+    "containerWidth": 240,
+    "cases": [
+      {
+        "logicalId": "form.datepicker.date.selected",
+        "componentType": "DatePicker",
+        "variant": "date-selected",
+        "props": {
+          "type": "date",
+          "modelValue": "2024-01-01",
+          "format": "yyyy-MM-dd",
+          "size": "default",
+          "disabled": false,
+          "clearable": false,
+          "readonly": true,
+          "open": false
+        },
+        "text": null
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 320,
+      "height": 180
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "3e81ff8e64e069a33363c03386e9c4410aa0c132dc3b4d2ddb7421032354fefe",
+    "harnessBundleSha256": "e7adaff2d4603f9c3b1ab3955b37bd57cb10517adc15ccf5fccdee7b2fbcd96a",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "f86110ea75fc9bd7330db658004316ccb43fdf882040af4feff76f71920f0250"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-date-picker"
+    ],
+    "root": {
+      "x": 24,
+      "y": 24,
+      "width": 211,
+      "height": 32
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "0px",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "normal",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    "input": {
+      "value": "2024-01-01",
+      "classes": [
+        "ivu-input",
+        "ivu-input-default",
+        "ivu-input-with-suffix"
+      ],
+      "bounds": {
+        "x": 24,
+        "y": 24,
+        "width": 211,
+        "height": 32
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderRadius": "4px",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "4px 32px 4px 7px",
+        "margin": "0px"
+      }
+    },
+    "icon": {
+      "classes": [
+        "ivu-icon",
+        "ivu-icon-ios-calendar-outline"
+      ],
+      "bounds": {
+        "x": 211,
+        "y": 24,
+        "width": 16,
+        "height": 32
+      },
+      "style": {
+        "color": "rgb(128, 134, 149)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(128, 134, 149)",
+        "borderRadius": "0px",
+        "fontFamily": "Ionicons",
+        "fontSize": "16px",
+        "lineHeight": "32px",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    }
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/date-picker/picker.vue": "78bdc81975fc442515728b87c948c9855f0424eb6a121af6f6c23117c54f43cf",
+    "node_modules/view-ui-plus/src/components/date-picker/picker/date-picker.js": "e1aa9b034b05ea9086c99228497e405ab421b3e1d0b047e4ef453ff86479bc60",
+    "node_modules/view-ui-plus/src/styles/components/date-picker.less": "1bddb458d32f046aadbdbfe7513aaed780d1cf5bb562b5c9f5eb546e1a581148"
+  },
+  "referenceComponentIrSha256": "5e13199967563a08b7e1d1556530f39253ed1425940764c5b1e8202d94f10acc"
+}

@@ -35,8 +35,9 @@
 - TASK-079: Tree 固定展开三节点的官方源码/CSS、真实浏览器 Component IR、240×79 截图和来源锁 PASS；Component IR 契约补列 Tree 类型。Figma 候选与单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - TASK-080: Tree 固定展开三节点 Figma Inter 原生主组件/实例、哈希锁定 Remix 展开箭头、文字颜色变量、独立读回和重复 PNG/SVG 候选审计 PASS；单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - TASK-081: Tree 固定展开三节点 Figma 独立复读、重复导出、非内容区域 11,862 像素完全一致及完整文字/展开箭头 QA PASS；`admissionEligible=false`，双端正式 Fidelity Gate 与 Registry 准入仍 DEFERRED，V0.2 仍 NOT_READY。
+- TASK-082: DatePicker 固定 `2024-01-01` 单日期的官方源码/CSS、真实浏览器 Component IR、211×32 截图和来源锁 PASS；Component IR 契约补列 DatePicker 类型。Figma 候选与单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: Penpot 线按用户决定暂缓；继续其余未准入类的官方来源锁和 Figma 单端候选/QA。Switch、Card、Pagination、Tabs、Tree 均未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: Penpot 线按用户决定暂缓；为 DatePicker 建立 Figma 原生候选与单端 QA，随后继续其余未准入类。Switch、Card、Pagination、Tabs、Tree 均未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

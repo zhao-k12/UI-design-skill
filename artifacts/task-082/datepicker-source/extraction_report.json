@@ -1,0 +1,12 @@
+{
+  "scope": "component_runtime_extraction",
+  "status": "PASS",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentTypes": [
+    "DatePicker"
+  ],
+  "componentIrSha256": "5e13199967563a08b7e1d1556530f39253ed1425940764c5b1e8202d94f10acc",
+  "runtimeManifestSha256": "a5a437331c2568d51c6cee500711ad0fdab30d2661f37279da3d3d5dd37d470c",
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}

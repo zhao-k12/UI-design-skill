@@ -312,7 +312,8 @@
             "Pagination",
             "Card",
             "Tabs",
-            "Tree"
+            "Tree",
+            "DatePicker"
           ]
         },
         "variant": {
