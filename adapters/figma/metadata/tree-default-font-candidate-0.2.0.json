@@ -1,0 +1,27 @@
+{
+  "scope": "v02-default-font-tree-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "navigation.tree.expanded.departments",
+  "componentType": "Tree",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "210:2",
+  "componentId": "210:6",
+  "instanceId": "210:15",
+  "iconComponentId": "210:5",
+  "iconInstanceId": "210:13",
+  "contentScope": {
+    "kind": "fixed-native-content",
+    "expanded": true,
+    "labels": ["部门", "研发部", "设计部"],
+    "width": 240,
+    "height": 79
+  },
+  "componentIrSha256": "1d48223064c3ca52c496c96773007ba29844471c2840eaa3d132418e910b00a7",
+  "candidateAuditSha256": "84729149bc588fb6122da272028bd8ca11802ab69a46b971e3247565442d967b",
+  "nativeAdmission": "NOT_RUN",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

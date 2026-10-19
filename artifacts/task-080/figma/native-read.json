@@ -1,0 +1,280 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "210:2",
+  "nodes": [
+    {
+      "id": "210:6",
+      "name": "Tree / Expanded / Departments",
+      "type": "COMPONENT",
+      "x": 100,
+      "y": 100,
+      "width": 240,
+      "height": 79,
+      "visible": true,
+      "fills": [],
+      "children": [
+        "210:7",
+        "210:9",
+        "210:11"
+      ],
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 8
+    },
+    {
+      "id": "210:7",
+      "name": "Parent / 部门",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "fills": [],
+      "children": [
+        "210:8",
+        "210:13"
+      ],
+      "layoutMode": "NONE",
+      "itemSpacing": 0
+    },
+    {
+      "id": "210:8",
+      "name": "Title / 部门",
+      "type": "TEXT",
+      "x": 16,
+      "y": 0,
+      "width": 90,
+      "height": 21,
+      "visible": true,
+      "characters": "部门",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:9"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "210:9",
+      "name": "Child / 研发部",
+      "type": "FRAME",
+      "x": 0,
+      "y": 29,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "fills": [],
+      "children": [
+        "210:10"
+      ],
+      "layoutMode": "NONE",
+      "itemSpacing": 0
+    },
+    {
+      "id": "210:10",
+      "name": "Title / 研发部",
+      "type": "TEXT",
+      "x": 34,
+      "y": 0,
+      "width": 110,
+      "height": 21,
+      "visible": true,
+      "characters": "研发部",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:9"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "210:11",
+      "name": "Child / 设计部",
+      "type": "FRAME",
+      "x": 0,
+      "y": 58,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "fills": [],
+      "children": [
+        "210:12"
+      ],
+      "layoutMode": "NONE",
+      "itemSpacing": 0
+    },
+    {
+      "id": "210:12",
+      "name": "Title / 设计部",
+      "type": "TEXT",
+      "x": 34,
+      "y": 0,
+      "width": 110,
+      "height": 21,
+      "visible": true,
+      "characters": "设计部",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:9"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "210:13",
+      "name": "remix.arrow-right-s-line / expanded",
+      "type": "INSTANCE",
+      "x": -3,
+      "y": 1.5,
+      "width": 18,
+      "height": 18,
+      "visible": true,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "I210:13;210:4"
+      ],
+      "mainComponentId": "210:5",
+      "layoutMode": "NONE",
+      "itemSpacing": 0
+    },
+    {
+      "id": "210:15",
+      "name": "Tree / Expanded / Departments / Review",
+      "type": "INSTANCE",
+      "x": 100,
+      "y": 250,
+      "width": 240,
+      "height": 79,
+      "visible": true,
+      "fills": [],
+      "children": [
+        "I210:15;210:7",
+        "I210:15;210:9",
+        "I210:15;210:11"
+      ],
+      "mainComponentId": "210:6",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 8
+    },
+    {
+      "id": "210:5",
+      "name": "remix.arrow-right-s-line / expanded tree",
+      "type": "COMPONENT",
+      "x": 100,
+      "y": 20,
+      "width": 18,
+      "height": 18,
+      "visible": true,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "210:4"
+      ],
+      "layoutMode": "NONE",
+      "itemSpacing": 0
+    }
+  ]
+}
