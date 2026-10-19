@@ -1,0 +1,65 @@
+{
+  "scope": "figma-only-qa",
+  "gateVersion": "0.2.14-figma-only",
+  "status": "PASS",
+  "logicalComponentId": "form.single.name.empty",
+  "componentType": "Form",
+  "checks": {
+    "sourceAndCandidateLocked": true,
+    "independentNativeStructure": true,
+    "nativeRepeatStable": true,
+    "nativeSvgStable": true,
+    "sourceGeometryAndVisibleContent": true,
+    "hashBoundVisualReview": true
+  },
+  "rasterDiagnostics": {
+    "sourceSize": [
+      320,
+      34
+    ],
+    "figmaSize": [
+      320,
+      34
+    ],
+    "outsideContentPixels": 7458,
+    "outsideContentMismatchPixels": 41,
+    "outsideContentMaxChannelDelta": 4,
+    "outOfCornerMismatchPixels": 0,
+    "ink": {
+      "label": {
+        "pixels": 148,
+        "bounds": [
+          41,
+          10,
+          66,
+          22
+        ]
+      },
+      "placeholder": {
+        "pixels": 226,
+        "bounds": [
+          89,
+          11,
+          155,
+          22
+        ]
+      }
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "7c1a91a199461c19571a81311b0d882c1307a6636b63d7664ae2a117f5be568c",
+    "candidateAudit": "8ae0337ec50a0929ad1260426779e89458a09514ab4ed5ae072730bda5b96d79",
+    "visualReview": "4841e2614ce3d96e451a75ac86c0f9f462744301239a8a04c20b0eb200702995",
+    "policy": "8222314ddb5424dab1894566ceba26a4bc0d425193f3f381805d07d79db81d0d",
+    "native-read.json": "e7a0abd7c74e5461d371bfc282f4431cc57e915cdd74c966ab6f3aa8408cf65a",
+    "native.png": "313548edb6f4415a8c6632166fdf0281d10198fefcf098b98a530d30cc5a2bfa",
+    "native-repeat.png": "313548edb6f4415a8c6632166fdf0281d10198fefcf098b98a530d30cc5a2bfa",
+    "native.svg": "7a5765b1a655f83eef8431fafe0e33787c8005d75ff404090fe381d08dc6d78d"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}

@@ -1,0 +1,113 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "220:2",
+  "nodes": [
+    {
+      "id": "220:9",
+      "name": "Form / Name / Empty",
+      "type": "COMPONENT",
+      "x": 100,
+      "y": 100,
+      "width": 320,
+      "height": 34,
+      "visible": true,
+      "children": [
+        "220:4",
+        "220:6"
+      ],
+      "fills": [],
+      "layoutMode": "HORIZONTAL"
+    },
+    {
+      "id": "220:4",
+      "name": "Label / 姓名",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 34,
+      "visible": true,
+      "children": [
+        "220:5"
+      ],
+      "fills": [],
+      "layoutMode": "HORIZONTAL"
+    },
+    {
+      "id": "220:5",
+      "name": "Text / 姓名",
+      "type": "TEXT",
+      "x": 40,
+      "y": 10,
+      "width": 28,
+      "height": 14,
+      "visible": true,
+      "characters": "姓名",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 14
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:205:9"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "220:6",
+      "name": "Input / 请输入姓名",
+      "type": "INSTANCE",
+      "x": 80,
+      "y": 1,
+      "width": 240,
+      "height": 32,
+      "visible": true,
+      "children": [
+        "I220:6;141:4"
+      ],
+      "fills": [],
+      "layoutMode": "NONE",
+      "mainComponentId": "141:3"
+    },
+    {
+      "id": "220:10",
+      "name": "Form / Name / Empty / Review",
+      "type": "INSTANCE",
+      "x": 100,
+      "y": 250,
+      "width": 320,
+      "height": 34,
+      "visible": true,
+      "children": [
+        "I220:10;220:4",
+        "I220:10;220:6"
+      ],
+      "fills": [],
+      "layoutMode": "HORIZONTAL",
+      "mainComponentId": "220:9"
+    }
+  ]
+}

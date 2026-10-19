@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "figma-only-qa",
+  "nativePngSha256": "313548edb6f4415a8c6632166fdf0281d10198fefcf098b98a530d30cc5a2bfa",
+  "visibleLabel": "姓名",
+  "visiblePlaceholder": "请输入姓名",
+  "admittedInputInstanceVisible": true,
+  "completeText": true,
+  "clippedOrDetached": false,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}

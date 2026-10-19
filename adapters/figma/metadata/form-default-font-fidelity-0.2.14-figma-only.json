@@ -1,0 +1,18 @@
+{
+  "scope": "v02-default-font-form-figma-only-qa",
+  "status": "FIGMA_QA_PASS",
+  "logicalComponentId": "form.single.name.empty",
+  "componentType": "Form",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "220:2",
+  "componentId": "220:9",
+  "instanceId": "220:10",
+  "candidateAuditSha256": "8ae0337ec50a0929ad1260426779e89458a09514ab4ed5ae072730bda5b96d79",
+  "figmaQaSha256": "d9c06ef2710339c1805c4f67bbad197969f278d4c24600bf7c8620b552ea5393",
+  "nativeAdmission": "FIGMA_QA_PASS_ONLY",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
