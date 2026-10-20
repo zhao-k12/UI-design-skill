@@ -1,0 +1,17 @@
+{
+  "scope": "v02-default-font-cascader-figma-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "form.cascader.region.selected",
+  "componentType": "Cascader",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "231:7",
+  "componentId": "231:13",
+  "instanceId": "231:19",
+  "componentIrSha256": "e6d748e4cfc858181ff72e5e2bb7751f2c7155e7dedeaec3bbd9823166181d03",
+  "candidateAuditSha256": "24ed06b8888fbafd58da2983e673929d4b3db314652ccf4358526ebe21c12167",
+  "nativeAdmission": "CANDIDATE_REVIEW_ONLY",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "releaseReady": false
+}

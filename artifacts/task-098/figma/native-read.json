@@ -1,0 +1,189 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "231:7",
+  "nodes": [
+    {
+      "id": "231:13",
+      "name": "Cascader / Region / Selected / Closed",
+      "type": "COMPONENT",
+      "x": 100,
+      "y": 100,
+      "width": 240,
+      "height": 32,
+      "visible": true,
+      "children": [
+        "231:14"
+      ],
+      "fills": [],
+      "strokes": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "layoutMode": "HORIZONTAL"
+    },
+    {
+      "id": "231:14",
+      "name": "source/0.0",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "width": 240,
+      "height": 32,
+      "visible": true,
+      "children": [
+        "231:15"
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:231:9"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8627451062202454,
+            "g": 0.8705882430076599,
+            "b": 0.886274516582489
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:231:10"
+            }
+          }
+        }
+      ],
+      "effects": [],
+      "cornerRadius": 4,
+      "layoutMode": "HORIZONTAL"
+    },
+    {
+      "id": "231:17",
+      "name": "Text / 浙江 / 杭州",
+      "type": "TEXT",
+      "x": 8,
+      "y": 0,
+      "width": 120,
+      "height": 30,
+      "visible": true,
+      "children": [],
+      "characters": "浙江 / 杭州",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 30
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:231:11"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "effects": [],
+      "cornerRadius": null,
+      "layoutMode": null
+    },
+    {
+      "id": "231:18",
+      "name": "Arrow / Official Ionicons",
+      "type": "TEXT",
+      "x": 216,
+      "y": 8,
+      "width": 14,
+      "height": 14,
+      "visible": true,
+      "children": [],
+      "characters": "",
+      "fontName": {
+        "family": "Ionicons",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 14
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.501960813999176,
+            "g": 0.5254902243614197,
+            "b": 0.5843137502670288
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:231:12"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "effects": [],
+      "cornerRadius": null,
+      "layoutMode": null
+    },
+    {
+      "id": "231:19",
+      "name": "Cascader / Region / Selected / Review",
+      "type": "INSTANCE",
+      "x": 470,
+      "y": 100,
+      "width": 240,
+      "height": 32,
+      "visible": true,
+      "children": [
+        "I231:19;231:14"
+      ],
+      "fills": [],
+      "strokes": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "layoutMode": "HORIZONTAL",
+      "mainComponentId": "231:13"
+    }
+  ]
+}
