@@ -1,0 +1,32 @@
+{
+  "scope": "figma-only-drawer-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "overlay.drawer.detail.open",
+  "componentType": "Drawer",
+  "componentIrSha256": "d0ff27358b995fc667a7f32b7c7faf776209ada1bc26b7876ed941bc0997582e",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "226:2",
+  "componentId": "226:8",
+  "instanceId": "226:13",
+  "checks": {
+    "officialSourceVerified": true,
+    "targetAndComponentLink": true,
+    "nativeGeometry": true,
+    "sourceColorsBound": true,
+    "editableDefaultFontText": true,
+    "sourceShadow": true,
+    "nativeRepeatStable": true,
+    "nativeSvgSemantics": true,
+    "nativeRasterSize": true
+  },
+  "evidenceSha256": {
+    "native-read.json": "2b616fb1aadacea4c2867bdbbf9cdb849317cde6035d1dd1d20b524e7cf65e8e",
+    "native.png": "c7ff9ce87701ca191e31bd0106278628a591a7439e5756eb7b606dd1c96c02a6",
+    "native-repeat.png": "c7ff9ce87701ca191e31bd0106278628a591a7439e5756eb7b606dd1c96c02a6",
+    "native.svg": "026e74473f5f6003dfc221eebdd73d4be51e67fec6d69e0e3bb7cb680d7ecfa7"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "releaseReady": false
+}
