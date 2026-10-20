@@ -66,6 +66,7 @@
 - TASK-111: `v0.2.6` 七个已准入 Figma 主组件逐页只读原生复读并与生产绑定、固定内容、尺寸、字体及 Fidelity 哈希核对 PASS；Tag、Checkbox、Radio 虽未被 TASK-110 页面使用，其当前 Figma 主组件引用存活。审计拒绝文案或引用篡改；不扩大双端准入或发布结论。
 - TASK-112: 将 TASK-111 七组件 Figma 主组件审计纳入当前发布就绪汇总，固定文案漂移将使总证据 `INVALID_EVIDENCE`；新报告 `evidenceValid=true`、`releaseReady=false`。README 和发布就绪说明已更新当前 Figma/Penpot 进度，旧报告不覆盖。
 - TASK-113: 新增 `v0.2.6` 生产准入边界审计：7 个正式组件均可解析且与 Registry、admission、双端绑定一致；11 个 Figma 单端候选均返回 `missing_component`，不在生产绑定中。私自加入候选绑定的测试 FAIL，当前就绪汇总加入该门并仍为 `releaseReady=false`。
+- TASK-114: V0.2.6 紧凑查询输入迁移改为已有目标先验锁与语义：原目标完全一致即复用、无写入；内容被修改且同步改写清单哈希时仍拒绝覆盖。隔离新建包逐文件与已验收包字节一致，相关回归 7 项 PASS，当前证据仍有效且整体未发布。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
 - Next action: Penpot 线按用户决定暂缓；七组件 `v0.2.6` 生产 Profile、Figma 原生主组件存活审计、独立迁移的新紧凑查询输入及 Figma 单端发布门已通过。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal、Drawer、Upload、Cascader 尚未双端正式准入。Penpot 原生复验、新原型双端 E2E 与全量 Release Gate 仍待完成，不得将 Figma 单端 PASS 声称为 V0.2 发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
