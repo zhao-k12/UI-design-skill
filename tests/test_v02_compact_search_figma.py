@@ -15,7 +15,7 @@ class V02CompactSearchFigmaTests(unittest.TestCase):
         self.assertFalse(result["releaseReady"])
 
     def test_right_alignment_readback_drift_fails(self):
-        source = ROOT / "artifacts/task-108/figma"
+        source = ROOT / "artifacts/task-110/figma"
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory)
             for name in ("native-read.json", "native.png", "native-repeat.png", "layout-read.json"):

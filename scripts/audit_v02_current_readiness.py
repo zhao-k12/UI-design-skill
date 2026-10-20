@@ -15,7 +15,7 @@ from scripts.audit_v02_figma_release_gates import audit as audit_figma_release_g
 def audit(root=ROOT, *, native_dir=None):
     root = Path(root)
     coverage = audit_coverage(root)
-    task = root / "artifacts/task-106"
+    task = root / "artifacts/task-110"
     native_dir = Path(native_dir) if native_dir else task / "figma"
     try:
         figma_lock = audit_figma_lock(task / "run", task / "figma-execution", native_dir)

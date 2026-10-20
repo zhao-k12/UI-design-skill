@@ -1,0 +1,965 @@
+{
+  "scope": "resource-resolution",
+  "status": "PASS",
+  "readyForAdapter": true,
+  "assetRegistrySha256": "47a61c4b2eaecb3685f1d002e7ee0152586d741c7a911656c3d6c887370adc9f",
+  "resolvedAssets": {},
+  "issues": [],
+  "document": {
+    "uiIrVersion": "0.1.0",
+    "documentId": "user-management-compact-search",
+    "pages": [
+      {
+        "id": "pattern.page",
+        "type": "Page",
+        "sourceIds": [
+          "user-management-compact-search"
+        ],
+        "layout": {
+          "width": {
+            "mode": "fixed",
+            "value": 1920.0
+          },
+          "height": {
+            "mode": "fixed",
+            "value": 1080.0
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.section"
+          },
+          "padding": {
+            "top": {
+              "token": "spacing.page"
+            },
+            "right": {
+              "token": "spacing.page"
+            },
+            "bottom": {
+              "token": "spacing.page"
+            },
+            "left": {
+              "token": "spacing.page"
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "pattern.header",
+            "type": "Section",
+            "sourceIds": [
+              "header"
+            ],
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1872.0
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 28.0
+              },
+              "direction": "vertical",
+              "gap": {
+                "token": "spacing.md"
+              }
+            },
+            "children": [
+              {
+                "id": "layout.item.0.0",
+                "type": "Frame",
+                "sourceIds": [
+                  "header-title"
+                ],
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1872.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 28.0
+                  },
+                  "direction": "horizontal",
+                  "gap": {
+                    "token": "spacing.sm"
+                  },
+                  "alignment": {
+                    "main": "space-between",
+                    "cross": "start"
+                  }
+                },
+                "children": [
+                  {
+                    "id": "layout.item.0.0.slot.content",
+                    "type": "Frame",
+                    "sourceIds": [
+                      "header-title"
+                    ],
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 80
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 28.0
+                      },
+                      "direction": "horizontal",
+                      "gap": {
+                        "token": "spacing.sm"
+                      },
+                      "alignment": {
+                        "main": "start",
+                        "cross": "center"
+                      }
+                    },
+                    "children": [
+                      {
+                        "id": "layout.item.0.0.instance",
+                        "type": "Text",
+                        "sourceIds": [
+                          "header-title"
+                        ],
+                        "text": "用户管理",
+                        "style": {
+                          "typographyToken": {
+                            "token": "typography.heading"
+                          },
+                          "colorToken": {
+                            "token": "color.text"
+                          }
+                        },
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 80
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 28
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "layout.item.0.0.slot.trailing-icon",
+                    "type": "Frame",
+                    "sourceIds": [
+                      "header-title"
+                    ],
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 24
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 28.0
+                      },
+                      "direction": "horizontal",
+                      "gap": {
+                        "token": "spacing.sm"
+                      },
+                      "alignment": {
+                        "main": "start",
+                        "cross": "center"
+                      }
+                    },
+                    "children": [
+                      {
+                        "id": "header-title.icon",
+                        "type": "IconInstance",
+                        "sourceIds": [
+                          "header-title"
+                        ],
+                        "iconId": "remix.settings-3-line",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 24
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 24
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "pattern.query",
+            "type": "Section",
+            "sourceIds": [
+              "query"
+            ],
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1872.0
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 142.0
+              },
+              "direction": "vertical",
+              "gap": {
+                "token": "spacing.md"
+              },
+              "padding": {
+                "top": {
+                  "token": "spacing.md"
+                },
+                "right": {
+                  "token": "spacing.md"
+                },
+                "bottom": {
+                  "token": "spacing.md"
+                },
+                "left": {
+                  "token": "spacing.md"
+                }
+              }
+            },
+            "children": [
+              {
+                "id": "pattern.query.grid",
+                "type": "Grid",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1840.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 110.0
+                  },
+                  "gridColumns": 24,
+                  "gap": {
+                    "token": "spacing.md"
+                  },
+                  "wrap": false
+                },
+                "children": [
+                  {
+                    "id": "layout.group.1.fields",
+                    "type": "Grid",
+                    "sourceIds": [
+                      "query"
+                    ],
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1840.0
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 62.0
+                      },
+                      "gap": {
+                        "token": "spacing.md"
+                      },
+                      "wrap": false,
+                      "gridColumns": 24,
+                      "span": 24
+                    },
+                    "children": [
+                      {
+                        "id": "layout.item.1.0",
+                        "type": "Frame",
+                        "sourceIds": [
+                          "field-name"
+                        ],
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 448.0
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 62.0
+                          },
+                          "direction": "vertical",
+                          "gap": {
+                            "token": "spacing.sm"
+                          },
+                          "alignment": {
+                            "main": "start",
+                            "cross": "start"
+                          },
+                          "span": 6
+                        },
+                        "children": [
+                          {
+                            "id": "layout.item.1.0.slot.label",
+                            "type": "Frame",
+                            "sourceIds": [
+                              "field-name"
+                            ],
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 28
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 22
+                              },
+                              "direction": "horizontal",
+                              "gap": {
+                                "token": "spacing.sm"
+                              },
+                              "alignment": {
+                                "main": "start",
+                                "cross": "center"
+                              }
+                            },
+                            "children": [
+                              {
+                                "id": "field-name.label",
+                                "type": "Text",
+                                "sourceIds": [
+                                  "field-name"
+                                ],
+                                "text": "姓名",
+                                "style": {
+                                  "typographyToken": {
+                                    "token": "typography.body"
+                                  },
+                                  "colorToken": {
+                                    "token": "color.text"
+                                  }
+                                },
+                                "layout": {
+                                  "width": {
+                                    "mode": "fixed",
+                                    "value": 28
+                                  },
+                                  "height": {
+                                    "mode": "fixed",
+                                    "value": 22
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "id": "layout.item.1.0.slot.control",
+                            "type": "Frame",
+                            "sourceIds": [
+                              "field-name"
+                            ],
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 240
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 32
+                              },
+                              "direction": "horizontal",
+                              "gap": {
+                                "token": "spacing.sm"
+                              },
+                              "alignment": {
+                                "main": "start",
+                                "cross": "center"
+                              }
+                            },
+                            "children": [
+                              {
+                                "id": "layout.item.1.0.instance",
+                                "type": "ComponentInstance",
+                                "componentId": "form.input.default.medium",
+                                "variant": "default",
+                                "sourceIds": [
+                                  "field-name"
+                                ],
+                                "props": {},
+                                "slots": {},
+                                "layout": {
+                                  "width": {
+                                    "mode": "fixed",
+                                    "value": 240
+                                  },
+                                  "height": {
+                                    "mode": "fixed",
+                                    "value": 32
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "layout.item.1.1",
+                        "type": "Frame",
+                        "sourceIds": [
+                          "field-status"
+                        ],
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 448.0
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 62.0
+                          },
+                          "direction": "vertical",
+                          "gap": {
+                            "token": "spacing.sm"
+                          },
+                          "alignment": {
+                            "main": "start",
+                            "cross": "start"
+                          },
+                          "span": 6
+                        },
+                        "children": [
+                          {
+                            "id": "layout.item.1.1.slot.label",
+                            "type": "Frame",
+                            "sourceIds": [
+                              "field-status"
+                            ],
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 28
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 22
+                              },
+                              "direction": "horizontal",
+                              "gap": {
+                                "token": "spacing.sm"
+                              },
+                              "alignment": {
+                                "main": "start",
+                                "cross": "center"
+                              }
+                            },
+                            "children": [
+                              {
+                                "id": "field-status.label",
+                                "type": "Text",
+                                "sourceIds": [
+                                  "field-status"
+                                ],
+                                "text": "状态",
+                                "style": {
+                                  "typographyToken": {
+                                    "token": "typography.body"
+                                  },
+                                  "colorToken": {
+                                    "token": "color.text"
+                                  }
+                                },
+                                "layout": {
+                                  "width": {
+                                    "mode": "fixed",
+                                    "value": 28
+                                  },
+                                  "height": {
+                                    "mode": "fixed",
+                                    "value": 22
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "id": "layout.item.1.1.slot.control",
+                            "type": "Frame",
+                            "sourceIds": [
+                              "field-status"
+                            ],
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 240
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 32
+                              },
+                              "direction": "horizontal",
+                              "gap": {
+                                "token": "spacing.sm"
+                              },
+                              "alignment": {
+                                "main": "start",
+                                "cross": "center"
+                              }
+                            },
+                            "children": [
+                              {
+                                "id": "layout.item.1.1.instance",
+                                "type": "ComponentInstance",
+                                "componentId": "form.select.default.medium",
+                                "variant": "default",
+                                "sourceIds": [
+                                  "field-status"
+                                ],
+                                "props": {},
+                                "slots": {},
+                                "layout": {
+                                  "width": {
+                                    "mode": "fixed",
+                                    "value": 240
+                                  },
+                                  "height": {
+                                    "mode": "fixed",
+                                    "value": 32
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "layout.group.1.buttons",
+                    "type": "HorizontalStack",
+                    "sourceIds": [
+                      "query"
+                    ],
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1840.0
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 32.0
+                      },
+                      "gap": {
+                        "token": "spacing.sm"
+                      },
+                      "wrap": true,
+                      "alignment": {
+                        "main": "end",
+                        "cross": "center"
+                      },
+                      "span": 24
+                    },
+                    "children": [
+                      {
+                        "id": "layout.item.1.2",
+                        "type": "Frame",
+                        "sourceIds": [
+                          "query-action"
+                        ],
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 60.0
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 32.0
+                          }
+                        },
+                        "children": [
+                          {
+                            "id": "layout.item.1.2.instance",
+                            "type": "ComponentInstance",
+                            "componentId": "action.button.primary.medium",
+                            "variant": "default",
+                            "sourceIds": [
+                              "query-action"
+                            ],
+                            "props": {},
+                            "slots": {},
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 60
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 32
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "pattern.table",
+            "type": "Section",
+            "sourceIds": [
+              "list"
+            ],
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1872.0
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 268.0
+              },
+              "direction": "vertical",
+              "gap": {
+                "token": "spacing.md"
+              }
+            },
+            "children": [
+              {
+                "id": "layout.item.2.1",
+                "type": "Frame",
+                "sourceIds": [
+                  "list-title"
+                ],
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1872.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 22.0
+                  }
+                },
+                "children": [
+                  {
+                    "id": "layout.item.2.1.instance",
+                    "type": "Text",
+                    "sourceIds": [
+                      "list-title"
+                    ],
+                    "text": "用户列表",
+                    "style": {
+                      "typographyToken": {
+                        "token": "typography.body"
+                      },
+                      "colorToken": {
+                        "token": "color.text"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 56
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 22
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "layout.item.2.0",
+                "type": "Frame",
+                "sourceIds": [
+                  "user-table"
+                ],
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1872.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 192.0
+                  },
+                  "direction": "vertical",
+                  "gap": {
+                    "token": "spacing.none"
+                  }
+                },
+                "children": [
+                  {
+                    "id": "layout.item.2.0.header",
+                    "type": "Row",
+                    "sourceIds": [
+                      "user-table"
+                    ],
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1392
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 48
+                      },
+                      "direction": "horizontal",
+                      "gap": {
+                        "token": "spacing.none"
+                      }
+                    },
+                    "children": [
+                      {
+                        "id": "layout.item.2.0.header.column.0",
+                        "type": "Frame",
+                        "sourceIds": [
+                          "user-table"
+                        ],
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 464.328125
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 48
+                          },
+                          "direction": "horizontal",
+                          "gap": {
+                            "token": "spacing.none"
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": {
+                              "token": "spacing.md"
+                            }
+                          },
+                          "alignment": {
+                            "main": "start",
+                            "cross": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "id": "layout.item.2.0.header.column.0.text",
+                            "type": "Text",
+                            "sourceIds": [
+                              "user-table"
+                            ],
+                            "text": "姓名",
+                            "style": {
+                              "typographyToken": {
+                                "token": "typography.body"
+                              },
+                              "colorToken": {
+                                "token": "color.text"
+                              }
+                            },
+                            "layout": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "layout.item.2.0.header.column.1",
+                        "type": "Frame",
+                        "sourceIds": [
+                          "user-table"
+                        ],
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 464.328125
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 48
+                          },
+                          "direction": "horizontal",
+                          "gap": {
+                            "token": "spacing.none"
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": {
+                              "token": "spacing.md"
+                            }
+                          },
+                          "alignment": {
+                            "main": "start",
+                            "cross": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "id": "layout.item.2.0.header.column.1.text",
+                            "type": "Text",
+                            "sourceIds": [
+                              "user-table"
+                            ],
+                            "text": "状态",
+                            "style": {
+                              "typographyToken": {
+                                "token": "typography.body"
+                              },
+                              "colorToken": {
+                                "token": "color.text"
+                              }
+                            },
+                            "layout": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "layout.item.2.0.header.column.2",
+                        "type": "Frame",
+                        "sourceIds": [
+                          "user-table"
+                        ],
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 463.34375
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 48
+                          },
+                          "direction": "horizontal",
+                          "gap": {
+                            "token": "spacing.none"
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": {
+                              "token": "spacing.md"
+                            }
+                          },
+                          "alignment": {
+                            "main": "start",
+                            "cross": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "id": "layout.item.2.0.header.column.2.text",
+                            "type": "Text",
+                            "sourceIds": [
+                              "user-table"
+                            ],
+                            "text": "角色",
+                            "style": {
+                              "typographyToken": {
+                                "token": "typography.body"
+                              },
+                              "colorToken": {
+                                "token": "color.text"
+                              }
+                            },
+                            "layout": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "layout.item.2.0.instance",
+                    "type": "ComponentInstance",
+                    "componentId": "data.table.default",
+                    "variant": "default",
+                    "sourceIds": [
+                      "user-table"
+                    ],
+                    "props": {},
+                    "slots": {},
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1392
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 144
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "layout.item.2.2",
+                "type": "Frame",
+                "sourceIds": [
+                  "list-summary"
+                ],
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1872.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 22.0
+                  }
+                },
+                "children": [
+                  {
+                    "id": "layout.item.2.2.instance",
+                    "type": "Text",
+                    "sourceIds": [
+                      "list-summary"
+                    ],
+                    "text": "共 3 位用户",
+                    "style": {
+                      "typographyToken": {
+                        "token": "typography.body"
+                      },
+                      "colorToken": {
+                        "token": "color.text"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 73
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 22
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

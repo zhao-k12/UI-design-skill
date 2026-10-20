@@ -34,9 +34,9 @@ def walk(node):
 
 def audit(root=ROOT, *, geometry_path=None, visual_path=None):
     root = Path(root)
-    source = root / "examples/user-management-compact-search"
-    task = root / "artifacts/task-108"
-    run = task / "run-v5"
+    source = root / "examples/user-management-compact-search-v026"
+    task = root / "artifacts/task-110"
+    run = task / "run"
     gates = {}
     issues = []
 
@@ -57,9 +57,9 @@ def audit(root=ROOT, *, geometry_path=None, visual_path=None):
         manifest = load_json(run / "manifest.json")
         preflight = load_json(run / "figma_preflight.json")
         native = load_json(task / "figma/native-read.json")
-        geometry = load_json(geometry_path or root / "artifacts/task-109/native-geometry-read.json")
-        visual = load_json(visual_path or root / "artifacts/task-109/visual-review.json")
-        admission = load_json(root / "registries/components/v0.2.3/admission.json")
+        geometry = load_json(geometry_path or task / "figma/native-geometry-read.json")
+        visual = load_json(visual_path or task / "visual-review.json")
+        admission = load_json(root / "registries/components/v0.2.6/admission.json")
 
         gate("completePageTreeAndHumanReview", structure["status"] == "PASS"
              and structure["readyForLayout"] is True and structure["issues"] == [])
@@ -73,6 +73,7 @@ def audit(root=ROOT, *, geometry_path=None, visual_path=None):
         components = [node["componentId"] for node in nodes if node["type"] == "ComponentInstance"]
         icons = [node["iconId"] for node in nodes if node["type"] == "IconInstance"]
         gate("admittedComponentsAndRemixIcon", admission["status"] == "PASS"
+             and len(admission["components"]) == 7
              and len(components) == 4 and set(components) <= set(admission["components"])
              and icons == ["remix.settings-3-line"]
              and manifest["registries"]["components"] == admission["registrySha256"])

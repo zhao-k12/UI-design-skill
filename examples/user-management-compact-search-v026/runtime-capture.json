@@ -1,0 +1,146 @@
+{
+  "kind": "v02-reused-native-metrics-for-new-prototype",
+  "status": "PASS",
+  "method": "Reuse identical fixed component and text measurements; calculate a new layout from reviewed semantics",
+  "sourceLocks": {
+    "prototype": {
+      "path": "examples/user-management-compact-search/prototype.txt",
+      "sha256": "389221d44730b662f4c53041d564304c536633a6ce4df019eb51182c9b8724c1"
+    },
+    "priorCapture": {
+      "path": "examples/acceptance-prototype-v02/runtime-capture.json",
+      "sha256": "1d3536fe7d2713fa4ca1efbd0aaaa5564425a42d6157550648f3fc53bff02956"
+    },
+    "componentCatalog": {
+      "path": "registries/components/v0.2.3/catalog.json",
+      "sha256": "62edd36a8ed4e94eebb70ea5607b7d21b7a73460c011566e810010b764c595fa"
+    }
+  },
+  "evidence": [
+    {
+      "uiIrId": "header",
+      "type": "FRAME",
+      "width": 1392,
+      "height": 28,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "header"
+      }
+    },
+    {
+      "uiIrId": "title",
+      "type": "TEXT",
+      "characters": "用户管理",
+      "width": 80,
+      "height": 28,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "title"
+      }
+    },
+    {
+      "uiIrId": "filter.name",
+      "type": "FRAME",
+      "width": 328,
+      "height": 62,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "filter.name"
+      }
+    },
+    {
+      "uiIrId": "label.name",
+      "type": "TEXT",
+      "characters": "姓名",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "label.name"
+      }
+    },
+    {
+      "uiIrId": "filter.status",
+      "type": "FRAME",
+      "width": 328,
+      "height": 62,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "filter.status"
+      }
+    },
+    {
+      "uiIrId": "label.status",
+      "type": "TEXT",
+      "characters": "状态",
+      "width": 28,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "label.status"
+      }
+    },
+    {
+      "uiIrId": "filter.action",
+      "type": "FRAME",
+      "width": 328,
+      "height": 62,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "filter.action"
+      }
+    },
+    {
+      "uiIrId": "button.query",
+      "type": "INSTANCE",
+      "width": 60,
+      "height": 32,
+      "provenance": {
+        "kind": "admitted-v02-component-ir",
+        "logicalComponentId": "action.button.primary.medium"
+      }
+    },
+    {
+      "uiIrId": "list.title",
+      "type": "TEXT",
+      "characters": "用户列表",
+      "width": 56,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "list.title"
+      }
+    },
+    {
+      "uiIrId": "list.columns",
+      "type": "FRAME",
+      "width": 1392,
+      "height": 48,
+      "provenance": {
+        "kind": "frozen-source-container-geometry",
+        "sourceUiIrId": "list.columns"
+      }
+    },
+    {
+      "uiIrId": "table.body",
+      "type": "INSTANCE",
+      "width": 1392,
+      "height": 144,
+      "provenance": {
+        "kind": "admitted-v02-component-ir",
+        "logicalComponentId": "data.table.default"
+      }
+    },
+    {
+      "uiIrId": "list.count",
+      "type": "TEXT",
+      "characters": "共 3 位用户",
+      "width": 73,
+      "height": 22,
+      "provenance": {
+        "kind": "two-platform-default-font-envelope",
+        "row": "list.count"
+      }
+    }
+  ]
+}

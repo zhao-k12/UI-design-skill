@@ -19,8 +19,8 @@ def digest(path):
 
 def audit(root=ROOT, *, native_dir=None):
     root = Path(root)
-    source = root / "examples/user-management-compact-search"
-    task = root / "artifacts/task-108"
+    source = root / "examples/user-management-compact-search-v026"
+    task = root / "artifacts/task-110"
     native_dir = Path(native_dir) if native_dir else task / "figma"
     issues = []
     try:
@@ -41,7 +41,7 @@ def audit(root=ROOT, *, native_dir=None):
         if (plan["sectionConfigs"]["query"].get("buttonAlignment") != "end"
                 or plan["sectionConfigs"]["query"].get("inlineGrid") is True):
             issues.append("new_layout_plan_invalid")
-        run = task / "run-v5"
+        run = task / "run"
         qa = load_json(run / "qa_report.json")
         if (qa["status"] != "PASS" or qa["readyForAdapter"] is not True
                 or qa["semanticItemCount"] != 7 or qa["instanceCount"] != 4

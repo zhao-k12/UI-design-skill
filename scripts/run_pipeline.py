@@ -32,6 +32,14 @@ PROFILES = {
         'fontBindings': 'page-default-font-bindings-0.2.0.json',
         'penpotIconBindings': 'icon-bindings-0.2.0.json',
     },
+    'v0.2.6': {
+        'tokens': 'registries/tokens/v0.2.2/default.json',
+        'components': 'registries/components/v0.2.6/catalog.json',
+        'fidelity': 'registries/components/v0.2.6/fidelity-reports.json',
+        'componentBindings': 'component-bindings-0.2.6.json',
+        'fontBindings': 'page-default-font-bindings-0.2.0.json',
+        'penpotIconBindings': 'icon-bindings-0.2.0.json',
+    },
 }
 
 
@@ -79,7 +87,7 @@ def main():
                 report={'status':'FAIL','plan':None,'issues':[{'code':'adapter_version_changed','message':'Native plan differs from locked adapter version'}]}
             runner.write(output/(platform+'_preflight.json'),report);preflights[platform]=report['status']
         qa['adapterPreflights']=preflights;qa['readyForAdapter']=all(s=='PASS' for s in preflights.values())
-        if args.profile=='v0.2' and qa['readyForAdapter']:
+        if args.profile in ('v0.2','v0.2.6') and qa['readyForAdapter']:
             byte_lock=build_adapter_byte_lock({platform:load_json(output/(platform+'_preflight.json'))['plan']
                                                for platform in ('figma','penpot')})
             lock_path=output/'adapter-execution-lock.json'

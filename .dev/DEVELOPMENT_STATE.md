@@ -62,8 +62,9 @@
 - TASK-107: 新增只读当前就绪审计，重算 18 类 Figma 覆盖与 TASK-106 当前 Figma 字节锁原生回执；18/18 Figma 证据、7 类正式准入、11 类单端 QA、Figma 锁 PASS，Penpot 与独立新原型/全量发布门仍待办。`evidenceValid=true`、`releaseReady=false`，重复 PNG 篡改拒绝测试 PASS；TASK-053 历史快照不变。
 - TASK-108: 用户批准另一份用户管理紧凑查询原型；新的源码/语义/人工审核回执、两行查询布局与右对齐按钮、7 项语义和独立 UI-IR 经九阶段 Core PASS。Figma 新页 `240:2` 实际执行、37 项完整回执、5 个真实实例/21 个文字节点、重复原生 PNG 和目视复核 PASS；九阶段断点复用 PASS。Figma 独立原型 E2E 已闭合，Penpot 与全量发布门仍暂缓/未完成。
 - TASK-109: 新独立原型的 Figma 单端发布门九项 PASS；21 个原生文字节点的字体与裁剪祖先边界独立读取全部通过，实际视觉复核绑定原生 PNG 哈希，字体/视觉证据篡改测试拒绝。当前就绪汇总仍 `releaseReady=false`，Penpot 原生执行、11 类双端准入及全量 Release Gate 未完成。
+- TASK-110: 生产 CLI 新增显式 `v0.2.6` 七组件 Profile，并把已审核紧凑查询原型隔离迁移到新版输入锁；旧输入直接被新版拒绝，原型文字/审核语义不变。九阶段 Core、双端静态预检、新 Adapter 字节锁及 Figma 新页 `243:2` 原生执行 PASS；37 项回执、5 个实例/21 个文字、重复 PNG、独立 QA 与九项 Figma 单端发布门均 PASS。该页面实际使用四类组件，新增三类在 Profile 中可用但未由此页验证。当前就绪仍 `releaseReady=false`。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: Penpot 线按用户决定暂缓；Figma 冻结列表和新独立紧凑查询原型均完成当前字节锁原生执行与回执。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal、Drawer、Upload、Cascader 尚未双端正式准入。Penpot 原生复验、新原型双端 E2E 与全量 Release Gate 仍待完成，不得将 Figma 单端 PASS 声称为 V0.2 发布通过。
+- Next action: Penpot 线按用户决定暂缓；七组件 `v0.2.6` 生产 Profile、独立迁移的新紧凑查询输入及 Figma 单端发布门已通过。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal、Drawer、Upload、Cascader 尚未双端正式准入。Penpot 原生复验、新原型双端 E2E 与全量 Release Gate 仍待完成，不得将 Figma 单端 PASS 声称为 V0.2 发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

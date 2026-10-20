@@ -20,7 +20,7 @@ class V02CurrentReadinessTests(unittest.TestCase):
         self.assertEqual(report["gates"]["figmaScopedReleaseGates"], "PASS")
 
     def test_native_png_drift_invalidates_current_report(self):
-        source = ROOT / "artifacts/task-106/figma"
+        source = ROOT / "artifacts/task-110/figma"
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory)
             (target / "native-read.json").write_bytes((source / "native-read.json").read_bytes())

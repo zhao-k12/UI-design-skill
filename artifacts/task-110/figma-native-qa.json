@@ -1,0 +1,23 @@
+{
+  "scope": "v02-figma-adapter-byte-lock-native-readback",
+  "status": "PASS",
+  "releaseReady": false,
+  "nativeExecution": "OBSERVED_FROM_FIGMA_TOOL",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "243:2",
+  "rootReference": "243:3",
+  "rootSize": [
+    1920,
+    1080
+  ],
+  "expectedInstanceCount": 5,
+  "actualInstanceCount": 5,
+  "textNodeCount": 21,
+  "executionScriptSha256": "18a8bdd13ce22561093884e3e7483e1ed74338a5cf3dfa25fd5c6c3136ad8119",
+  "executionReceiptPersisted": true,
+  "executionResultSha256": "746a6ac6e477bbedc1690e4848eb5b0d4885f968c224b4742523ea2032caa5d1",
+  "nativeReadSha256": "63e059dd800513351c38ca11b1c374c4e310075a38913e81a622bd1c425537ed",
+  "nativePngSha256": "71afd671d755ca36569f031df262f295472ea7d4374b49c7033157efa8ffedfc",
+  "nativeRepeatSha256": "71afd671d755ca36569f031df262f295472ea7d4374b49c7033157efa8ffedfc",
+  "issues": []
+}

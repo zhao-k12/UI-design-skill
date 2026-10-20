@@ -15,7 +15,7 @@ class V02FigmaReleaseGateTests(unittest.TestCase):
         self.assertEqual(len(result["gates"]), 9)
 
     def test_wrong_native_font_fails_gate(self):
-        source = ROOT / "artifacts/task-109/native-geometry-read.json"
+        source = ROOT / "artifacts/task-110/figma/native-geometry-read.json"
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory) / "geometry.json"
             value = json.loads(source.read_text(encoding="utf-8"))
@@ -26,7 +26,7 @@ class V02FigmaReleaseGateTests(unittest.TestCase):
         self.assertIn("defaultFontsAndNoTextClipping", result["issues"])
 
     def test_mismatched_visual_image_fails_gate(self):
-        source = ROOT / "artifacts/task-109/visual-review.json"
+        source = ROOT / "artifacts/task-110/visual-review.json"
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory) / "visual.json"
             value = json.loads(source.read_text(encoding="utf-8"))
