@@ -6,6 +6,8 @@
 
 2026-10-20 Figma 线增量：18 类目标现均具备来源和 Figma 原生证据；其中 7 类已有双平台正式固定配置准入，另 11 类完成 Figma 独立单端 QA，未进入正式 Registry。新的 [覆盖审计](../artifacts/task-100/coverage-audit.json)核对 18/18 类的证据哈希及准入边界，结果 `FIGMA_EVIDENCE_COMPLETE`、`releaseReady=false`。用户已决定暂缓不稳定的 Penpot 连接，双端保真与全量发布门保持待办。
 
+TASK-101 进一步核对 11 类组件的原生读回、首次/重复 PNG 与 SVG 字节，并在重复导出被篡改时拒绝证据；这是 Figma 单端证据完整性检查，不改变正式准入数。
+
 ```powershell
 .\.venv\Scripts\python.exe scripts/audit_v02_release_readiness.py --output artifacts/task-053/release-readiness.json
 ```

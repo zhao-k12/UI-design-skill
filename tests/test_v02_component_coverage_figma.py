@@ -27,6 +27,14 @@ class ComponentCoverageFigmaTests(unittest.TestCase):
             self.assertEqual(report["status"], "INVALID_EVIDENCE")
             self.assertLess(report["figmaEvidenceTypeCount"], 18)
 
+    def test_changed_repeat_export_is_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "native-repeat.png"
+            path.write_bytes(b"tampered export")
+            report = audit(native_overrides={("Cascader", "native-repeat.png"): path})
+            self.assertEqual(report["status"], "INVALID_EVIDENCE")
+            self.assertIn("Cascader", [issue.get("componentType") for issue in report["issues"]])
+
 
 if __name__ == "__main__":
     unittest.main()

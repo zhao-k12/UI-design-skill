@@ -23,9 +23,10 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def audit(root=ROOT, *, qa_overrides=None):
+def audit(root=ROOT, *, qa_overrides=None, native_overrides=None):
     root = Path(root)
     qa_overrides = qa_overrides or {}
+    native_overrides = native_overrides or {}
     catalog_path = root / "registries/components/v0.2.6/catalog.json"
     admission_path = root / "registries/components/v0.2.6/admission.json"
     issues, rows = [], []
@@ -70,9 +71,13 @@ def audit(root=ROOT, *, qa_overrides=None):
             native_path = folder / "figma/native.png"
             native_read_path = folder / "figma/native-read.json"
             native = read(native_read_path)
-            evidence_hash = qa.get("evidenceSha256", {}).get("native.png")
-            if not evidence_hash:
-                evidence_hash = qa.get("platforms", {}).get("figma", {}).get("evidenceSha256", {}).get("native.png")
+            evidence_hashes = qa.get("platforms", {}).get("figma", {}).get("evidenceSha256") \
+                or qa.get("evidenceSha256", {})
+            native_files = ("native-read.json", "native.png", "native-repeat.png", "native.svg")
+            native_hashes_valid = all(
+                evidence_hashes.get(name) == sha(Path(native_overrides.get((kind, name), folder / "figma" / name)))
+                for name in native_files
+            )
             checks = qa.get("checks") or qa.get("platforms", {}).get("figma", {}).get("checks", {})
             metadata_hashes = metadata.get("evidenceSha256", {})
             metadata_qa_locked = metadata.get("figmaQaSha256") == sha(qa_path) \
@@ -87,13 +92,19 @@ def audit(root=ROOT, *, qa_overrides=None):
                 and metadata.get("componentType", kind) == kind \
                 and qa.get("logicalComponentId") == metadata.get("logicalComponentId") \
                 and metadata_qa_locked \
-                and evidence_hash == sha(native_path) \
+                and native_hashes_valid \
+                and evidence_hashes["native.png"] == evidence_hashes["native-repeat.png"] \
                 and native.get("fileReference") == metadata.get("fileReference") \
                 and metadata.get("componentId") in native_ids \
-                and all(checks.values()) and qa.get("admissionEligible") is False \
+                and bool(checks) and all(value is True for value in checks.values()) \
+                and qa.get("admissionEligible") is False \
                 and qa.get("registryAdmission") == "DEFERRED_PENPOT" \
+                and qa.get("readyForPageGeneration") is False \
+                and qa.get("dualPlatformFidelity") == "DEFERRED" \
                 and metadata.get("admissionEligible") is False \
                 and metadata.get("registryAdmission") == "DEFERRED_PENPOT" \
+                and metadata.get("readyForPageGeneration") is False \
+                and metadata.get("dualPlatformFidelity") == "DEFERRED" \
                 and qa.get("releaseReady") is False and metadata.get("releaseReady") is False
         except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
             valid = False
