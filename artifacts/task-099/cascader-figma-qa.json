@@ -1,0 +1,66 @@
+{
+  "scope": "figma-only-qa",
+  "gateVersion": "0.2.18-figma-only",
+  "status": "PASS",
+  "logicalComponentId": "form.cascader.region.selected",
+  "componentType": "Cascader",
+  "checks": {
+    "sourceAndCandidateLocked": true,
+    "independentNativeStructure": true,
+    "nativeRepeatStable": true,
+    "nativeSvgStable": true,
+    "sourceGeometryAndVisibleContent": true,
+    "hashBoundVisualReview": true
+  },
+  "rasterDiagnostics": {
+    "sourceSize": [
+      240,
+      32
+    ],
+    "nativeSize": [
+      240,
+      32
+    ],
+    "outsideContentPixels": 3910,
+    "outsideContentMismatchPixels": 41,
+    "cornerMismatchPixels": 41,
+    "noncornerMismatchPixels": 0,
+    "outsideContentMaxChannelDelta": 4,
+    "ink": {
+      "text": {
+        "pixels": 310,
+        "bounds": [
+          10,
+          9,
+          76,
+          22
+        ]
+      },
+      "arrow": {
+        "pixels": 16,
+        "bounds": [
+          220,
+          13,
+          227,
+          17
+        ]
+      }
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "46a2a1ef4ffab5d416712414715fe8d08dbedc2e29388c353e7a9fb3aa266c65",
+    "candidateAudit": "24ed06b8888fbafd58da2983e673929d4b3db314652ccf4358526ebe21c12167",
+    "visualReview": "ab3e643719e23addaea4169d6a53ce955e700798e3c51ff52c1bdcc5c9b3bf10",
+    "policy": "3e14f3ead30c9a90266dc8ed0fafb6b15fd23ec63e82031c53d3eae2130e45d5",
+    "native-read.json": "fb6dd728f1a0ad343f9dfcde808bacf676d6ea9187312e354ec48a4cf0e2d5c6",
+    "native.png": "185bd2de61a246eadeafd0908b26bf077143d96987b9e58362fe9d8303fd5ecd",
+    "native-repeat.png": "185bd2de61a246eadeafd0908b26bf077143d96987b9e58362fe9d8303fd5ecd",
+    "native.svg": "2b47e361f78756ec35cf9bc63d1c070364b4fb5dc24b88c00516a92301b2c0da"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}

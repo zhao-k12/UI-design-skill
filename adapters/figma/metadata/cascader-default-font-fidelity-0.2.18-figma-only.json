@@ -1,0 +1,18 @@
+{
+  "scope": "v02-default-font-cascader-figma-only-qa",
+  "status": "FIGMA_QA_PASS",
+  "logicalComponentId": "form.cascader.region.selected",
+  "componentType": "Cascader",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "231:7",
+  "componentId": "231:13",
+  "instanceId": "231:19",
+  "candidateAuditSha256": "24ed06b8888fbafd58da2983e673929d4b3db314652ccf4358526ebe21c12167",
+  "figmaQaSha256": "0148ed0f481edffbbe8e7950e2258acf0fce706aa3732c6f2048353c73753111",
+  "nativeAdmission": "FIGMA_QA_PASS_ONLY",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
