@@ -8,7 +8,9 @@
 
 TASK-101 进一步核对 11 类组件的原生读回、首次/重复 PNG 与 SVG 字节，并在重复导出被篡改时拒绝证据；这是 Figma 单端证据完整性检查，不改变正式准入数。
 
-Adapter 字节锁 [版本化迁移方案](../.dev/TASK-102_ADAPTER_BYTE_LOCK_PROPOSAL.md)已获批准，新 V0.2 任务的预检锁与执行脚本受控导出已实现；冻结列表样张的 [Figma 原生读回审计](../artifacts/task-102/figma-native-qa.json) PASS。正式执行回执持久化、新独立原型与 Penpot 原生发布锁仍未完成，不据此改变 `NOT_READY` 结论。
+Adapter 字节锁 [版本化迁移方案](../.dev/TASK-102_ADAPTER_BYTE_LOCK_PROPOSAL.md)已获批准，新 V0.2 任务的预检锁与执行脚本受控导出已实现；冻结列表样张的 [Figma 原生读回审计](../artifacts/task-102/figma-native-qa.json) PASS。该阶段尚未保存完整执行回执，后续 TASK-104 已补齐；新独立原型与 Penpot 原生发布锁仍未完成。
+
+TASK-104 已在新的 Figma 验证页 [保存完整执行回执](../artifacts/task-104/figma-execution/execution-result.json)并通过 [回执/原生读回审计](../artifacts/task-104/figma-native-qa.json)。这使冻结列表样张的 Figma 单端执行证据闭环；独立新原型、11 类组件双端准入和 Penpot 发布锁仍未完成。
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/audit_v02_release_readiness.py --output artifacts/task-053/release-readiness.json
@@ -26,4 +28,4 @@ Adapter 字节锁 [版本化迁移方案](../.dev/TASK-102_ADAPTER_BYTE_LOCK_PRO
 
 当前 `policies/component-coverage-0.2.0.json` 是早期计划快照，不能将其中的 `NOT_RUN` 理解为 V0.2.3 四个固定配置尚未准入，也不能原地改写它来扩展准入。实际准入以 `registries/components/v0.2.3/admission.json` 和对应两端绑定为准。除这四项固定配置以外的文本、尺寸、状态和 Props 仍按 Missing/Unsupported 处理。
 
-下一步继续把 Adapter 字节锁的真实执行回执持久化，并准备独立新原型；Penpot 原生线在用户决定恢复前保持暂缓。V0.2 全量发布前，11 类 Figma 单端组件仍须双平台正式准入，且需以独立新原型执行 A–H 阶段和全部 Release Gate；不能从 TASK-052 或 TASK-102 冻结列表样张的 PASS 外推。
+下一步准备独立新原型；Penpot 原生线在用户决定恢复前保持暂缓。V0.2 全量发布前，11 类 Figma 单端组件仍须双平台正式准入，且需以独立新原型执行 A–H 阶段和全部 Release Gate；不能从 TASK-052、TASK-102 或 TASK-104 冻结列表样张的 PASS 外推。

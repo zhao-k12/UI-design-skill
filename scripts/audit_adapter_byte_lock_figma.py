@@ -53,6 +53,24 @@ def audit(run_dir, execution_dir, native_dir):
     page = plan["pages"][page_index]
     native = load_json(native_dir / "native-read.json")
     root = native["root"]
+    result_path = execution_dir / "execution-result.json"
+    if result_path.is_file():
+        result = load_json(result_path)
+        expected_ids = {node["id"] for node in walk(page)}
+        evidence = result.get("evidence", [])
+        node_map = result.get("nodeMap", {})
+        if (result.get("status") != "PASS" or result.get("scope") != "figma_native_translation"
+                or result.get("adapterVersion") != plan["adapterVersion"]
+                or result.get("uiIrSha256") != plan["uiIrSha256"]
+                or result.get("pageReference") != intent["pageReference"]
+                or result.get("rootReference") != root["id"]
+                or node_map.get(page["id"]) != root["id"]
+                or set(node_map) != expected_ids
+                or len(evidence) != len(expected_ids)
+                or {row.get("uiIrId") for row in evidence} != expected_ids
+                or any(node_map.get(row.get("uiIrId")) != row.get("nodeId") for row in evidence)
+                or root["id"] not in result.get("createdNodeIds", [])):
+            issues.append("native_execution_receipt_mismatch")
     if native["fileReference"] != plan["fileReference"] or native["page"]["id"] != intent["pageReference"]:
         issues.append("native_target_mismatch")
     if (root["name"] != f"UI-IR/{plan['documentId']}/{page['id']}"
@@ -90,6 +108,8 @@ def audit(run_dir, execution_dir, native_dir):
             "actualInstanceCount": len(native["instances"]),
             "textNodeCount": len(native["texts"]),
             "executionScriptSha256": digest(execution_dir / "execution.js"),
+            "executionReceiptPersisted": result_path.is_file(),
+            "executionResultSha256": digest(result_path) if result_path.is_file() else None,
             "nativeReadSha256": digest(native_dir / "native-read.json"),
             "nativePngSha256": digest(png), "nativeRepeatSha256": digest(repeat),
             "issues": issues}
