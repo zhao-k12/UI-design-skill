@@ -103,6 +103,11 @@ class V02PipelineProfileTests(unittest.TestCase):
             rejected = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
             self.assertNotEqual(rejected.returncode, 0)
             self.assertIn('Adapter byte lock changed', rejected.stdout)
+            blocked = load_json(output / 'qa_report.json')
+            self.assertEqual(blocked['status'], 'MIGRATION_REQUIRED')
+            self.assertFalse(blocked['readyForAdapter'])
+            self.assertIsNotNone(load_json(output / 'final_ui_ir.json'))
+            self.assertEqual(len(load_json(output / 'checkpoint.json')['stages']), 9)
 
 
 if __name__ == '__main__':

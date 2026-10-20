@@ -61,6 +61,9 @@ def audit(run_dir, execution_dir, native_dir):
         if (result.get("status") != "PASS" or result.get("scope") != "figma_native_translation"
                 or result.get("adapterVersion") != plan["adapterVersion"]
                 or result.get("uiIrSha256") != plan["uiIrSha256"]
+                or result.get("tokensSha256") != plan["tokensSha256"]
+                or result.get("componentsSha256") != plan["componentsSha256"]
+                or result.get("iconsSha256") != plan["iconsSha256"]
                 or result.get("pageReference") != intent["pageReference"]
                 or result.get("rootReference") != root["id"]
                 or node_map.get(page["id"]) != root["id"]

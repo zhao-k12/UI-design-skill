@@ -14,6 +14,8 @@ TASK-104 已在新的 Figma 验证页 [保存完整执行回执](../artifacts/ta
 
 TASK-105 将执行校验改为真正逐端失效，并在新的 Figma 页以 [当前字节锁](../artifacts/task-105/run/adapter-execution-lock.json)重新执行冻结样张；[完整回执与原生审计](../artifacts/task-105/figma-native-qa.json) PASS。TASK-102/104 的锁和证据保持其旧代码字节快照，不迁移复用。Figma 当前锁仅在这一限定样张通过。
 
+TASK-106 修复锁漂移时错误清空 Core 成果的问题：现在明确标记迁移需求并保留九阶段 Checkpoint 和最终 UI-IR。审计还核对原生执行回执的三项资源哈希。变更后的 [当前字节锁](../artifacts/task-106/run/adapter-execution-lock.json)在新 Figma 页完成真实执行，[完整回执和独立原生审计](../artifacts/task-106/figma-native-qa.json) PASS；此前锁是各自代码版本的历史快照。全量结论仍为 **NOT_READY**。
+
 ```powershell
 .\.venv\Scripts\python.exe scripts/audit_v02_release_readiness.py --output artifacts/task-053/release-readiness.json
 ```

@@ -84,7 +84,12 @@ def main():
                                                for platform in ('figma','penpot')})
             lock_path=output/'adapter-execution-lock.json'
             if lock_path.exists() and load_json(lock_path)!=byte_lock:
-                raise ValueError('Adapter byte lock changed; use a new task directory')
+                qa['status']='MIGRATION_REQUIRED'
+                qa['readyForAdapter']=False
+                qa['adapterLockIssues']=['Adapter byte lock changed; use a new task directory']
+                runner.write(output/'qa_report.json',qa)
+                print(json.dumps(qa,ensure_ascii=False))
+                return 1
             if not lock_path.exists():runner.write(lock_path,byte_lock)
             from hashlib import sha256
             qa['adapterExecutionLockSha256']=sha256(lock_path.read_bytes()).hexdigest()
