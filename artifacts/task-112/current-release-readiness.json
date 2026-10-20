@@ -1,0 +1,46 @@
+{
+  "scope": "v02-current-release-readiness",
+  "status": "NOT_READY",
+  "releaseReady": false,
+  "evidenceValid": true,
+  "componentCoverage": {
+    "targetTypeCount": 18,
+    "formallyAdmittedTypeCount": 7,
+    "figmaOnlyQaTypeCount": 11,
+    "dualPlatformPendingTypes": [
+      "Card",
+      "Cascader",
+      "DatePicker",
+      "Drawer",
+      "Form",
+      "Modal",
+      "Pagination",
+      "Switch",
+      "Tabs",
+      "Tree",
+      "Upload"
+    ]
+  },
+  "gates": {
+    "figmaComponentEvidence": "PASS",
+    "sevenAdmittedFigmaMasters": "PASS",
+    "figmaAdapterByteLockNativeReceipt": "PASS",
+    "penpotAdapterByteLockNativeReceipt": "DEFERRED",
+    "dualPlatformAdmissionForRemainingTypes": "DEFERRED",
+    "newIndependentPrototypeFigmaE2E": "PASS",
+    "newIndependentPrototypePenpotE2E": "DEFERRED",
+    "newIndependentPrototypeE2E": "FIGMA_PASS_PENPOT_DEFERRED",
+    "figmaScopedReleaseGates": "PASS",
+    "allReleaseGates": "NOT_RUN"
+  },
+  "currentFigmaSample": {
+    "pageReference": "243:2",
+    "rootReference": "243:3",
+    "nativePngSha256": "71afd671d755ca36569f031df262f295472ea7d4374b49c7033157efa8ffedfc"
+  },
+  "independentFigmaSample": {
+    "pageReference": "243:2",
+    "nativePngSha256": "71afd671d755ca36569f031df262f295472ea7d4374b49c7033157efa8ffedfc"
+  },
+  "issues": []
+}

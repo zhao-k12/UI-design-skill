@@ -65,7 +65,7 @@ node --test tests/*.test.mjs
 
 官方运行环境支持[两次真实提取复验](docs/RUNTIME_REPLAY.md)。后续新设计字体使用 [Figma/Penpot 各自的默认字体](docs/FONT_POLICY.md)，实际绑定须在目标会话验证。
 
-截至 TASK-066，默认字体下的 Button、Input、Select、Table、Tag、Checkbox、Radio 各一项固定内容配置已通过双平台原生保真，最新独立快照为 V0.2.6 Registry；其中冻结用户管理列表已完成同一 UI-IR 的 Figma/Penpot 原生整页验收。Figma 使用 Inter，Penpot 使用 Source Sans Pro。该范围的 [验收记录](.dev/TASK-066_ACCEPTANCE.md) 和 [发布就绪审计](docs/V02_RELEASE_READINESS.md) 可分别查看。V0.2 尚未发布。
+当前 V0.2.6 生产 Profile 包含 Button、Input、Select、Table、Tag、Checkbox、Radio 各一项固定内容配置，均有历史双平台原生保真准入；七个 Figma 主组件引用已再次核验。经审核的新用户管理紧凑查询原型已通过当前字节锁的 Figma 原生端到端验收和九项 Figma 单端发布门，页面实际使用前四类。18 类目标组件均有 Figma 原生证据，其中 11 类仍只有 Figma 单端 QA。Figma 使用 Inter，历史 Penpot 配置使用 Source Sans Pro；用户已决定暂缓不稳定的 Penpot 原生连接。详见[当前发布就绪审计](docs/V02_RELEASE_READINESS.md)。V0.2 尚未发布。
 
 完整目标见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
 
@@ -76,7 +76,7 @@ node --test tests/*.test.mjs
 - 用户选择目标平台；两平台能力分别通过发布验收。
 - 阶段自动推进、测试、记录、提交、断点恢复和冲突处理。
 
-计划状态为 **IN PROGRESS**，尚有组件覆盖、Adapter 字节锁、新独立原型端到端验收等发布门未完成。当前开发不意味着启动后台任务；未执行的检查不计为通过。
+计划状态为 **IN PROGRESS**。Figma 侧组件证据、当前 Adapter 字节锁和新独立原型单端验收已通过；剩余 11 类组件的双端正式准入、Penpot 新原型验收、跨平台对比和全量发布门尚未完成。当前开发不意味着启动后台任务；未执行的检查不计为通过。
 
 ## 阅读入口
 

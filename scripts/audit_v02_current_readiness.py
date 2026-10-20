@@ -10,9 +10,10 @@ from scripts.audit_adapter_byte_lock_figma import audit as audit_figma_lock
 from scripts.audit_v02_compact_search_figma import audit as audit_independent_figma
 from scripts.audit_v02_component_coverage_figma import audit as audit_coverage
 from scripts.audit_v02_figma_release_gates import audit as audit_figma_release_gates
+from scripts.audit_v026_figma_masters import audit as audit_figma_masters
 
 
-def audit(root=ROOT, *, native_dir=None):
+def audit(root=ROOT, *, native_dir=None, figma_master_path=None):
     root = Path(root)
     coverage = audit_coverage(root)
     task = root / "artifacts/task-110"
@@ -23,12 +24,17 @@ def audit(root=ROOT, *, native_dir=None):
         figma_lock = {"status": "FAIL", "issues": ["figma_lock_evidence_invalid: " + str(exc)]}
     independent = audit_independent_figma(root)
     figma_gates = audit_figma_release_gates(root)
+    try:
+        figma_masters = audit_figma_masters(root, native_path=figma_master_path)
+    except (OSError, ValueError, KeyError, TypeError, IndexError) as exc:
+        figma_masters = {"status": "FAIL", "issues": ["figma_master_evidence_invalid: " + str(exc)]}
     evidence_valid = (coverage.get("status") == "FIGMA_EVIDENCE_COMPLETE"
                       and coverage.get("evidenceValid") is True
                       and figma_lock.get("status") == "PASS"
                       and figma_lock.get("executionReceiptPersisted") is True
                       and independent.get("status") == "PASS"
-                      and figma_gates.get("status") == "FIGMA_SCOPED_PASS")
+                      and figma_gates.get("status") == "FIGMA_SCOPED_PASS"
+                      and figma_masters.get("status") == "PASS")
     return {
         "scope": "v02-current-release-readiness",
         "status": "NOT_READY" if evidence_valid else "INVALID_EVIDENCE",
@@ -42,6 +48,7 @@ def audit(root=ROOT, *, native_dir=None):
         },
         "gates": {
             "figmaComponentEvidence": "PASS" if coverage.get("status") == "FIGMA_EVIDENCE_COMPLETE" else "INVALID",
+            "sevenAdmittedFigmaMasters": "PASS" if figma_masters.get("status") == "PASS" else "INVALID",
             "figmaAdapterByteLockNativeReceipt": "PASS" if figma_lock.get("status") == "PASS" and figma_lock.get("executionReceiptPersisted") else "INVALID",
             "penpotAdapterByteLockNativeReceipt": "DEFERRED",
             "dualPlatformAdmissionForRemainingTypes": "DEFERRED",
@@ -59,7 +66,8 @@ def audit(root=ROOT, *, native_dir=None):
         "independentFigmaSample": {"pageReference": independent.get("figmaPageReference"),
                                     "nativePngSha256": independent.get("figmaNativePngSha256")},
         "issues": (list(coverage.get("issues", [])) + list(figma_lock.get("issues", []))
-                   + list(independent.get("issues", [])) + list(figma_gates.get("issues", []))),
+                   + list(independent.get("issues", [])) + list(figma_gates.get("issues", []))
+                   + list(figma_masters.get("issues", []))),
     }
 
 

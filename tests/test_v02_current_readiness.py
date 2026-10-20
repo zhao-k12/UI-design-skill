@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import tempfile
 import unittest
 
@@ -14,6 +15,7 @@ class V02CurrentReadinessTests(unittest.TestCase):
         self.assertEqual(report["componentCoverage"]["formallyAdmittedTypeCount"], 7)
         self.assertEqual(report["componentCoverage"]["figmaOnlyQaTypeCount"], 11)
         self.assertEqual(report["gates"]["figmaAdapterByteLockNativeReceipt"], "PASS")
+        self.assertEqual(report["gates"]["sevenAdmittedFigmaMasters"], "PASS")
         self.assertEqual(report["gates"]["penpotAdapterByteLockNativeReceipt"], "DEFERRED")
         self.assertEqual(report["gates"]["newIndependentPrototypeFigmaE2E"], "PASS")
         self.assertEqual(report["gates"]["newIndependentPrototypePenpotE2E"], "DEFERRED")
@@ -30,6 +32,17 @@ class V02CurrentReadinessTests(unittest.TestCase):
         self.assertEqual(report["status"], "INVALID_EVIDENCE")
         self.assertFalse(report["evidenceValid"])
         self.assertEqual(report["gates"]["figmaAdapterByteLockNativeReceipt"], "INVALID")
+
+    def test_drifted_component_master_invalidates_current_report(self):
+        source = ROOT / "artifacts/task-111/figma-live-masters.json"
+        native = json.loads(source.read_text(encoding="utf-8"))
+        native["components"]["data.tag.default.enabled"]["texts"][0]["characters"] = "停用"
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "figma-live-masters.json"
+            path.write_text(json.dumps(native, ensure_ascii=False), encoding="utf-8")
+            report = audit(figma_master_path=path)
+        self.assertEqual(report["status"], "INVALID_EVIDENCE")
+        self.assertEqual(report["gates"]["sevenAdmittedFigmaMasters"], "INVALID")
 
 
 if __name__ == "__main__":
