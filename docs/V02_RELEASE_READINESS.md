@@ -4,6 +4,8 @@
 
 2026-10-15 增量：Tag、Checkbox、Radio 各一个固定配置已陆续准入独立 V0.2.4、V0.2.5、V0.2.6 Registry，当前为 18 类目标中的 7 类，仍有 11 类未准入。下表保留 TASK-053 在 2026-10-14 的只读审计快照，不代表今日覆盖数；V0.2 整体仍 **NOT_READY**。
 
+2026-10-20 Figma 线增量：18 类目标现均具备来源和 Figma 原生证据；其中 7 类已有双平台正式固定配置准入，另 11 类完成 Figma 独立单端 QA，未进入正式 Registry。新的 [覆盖审计](../artifacts/task-100/coverage-audit.json)核对 18/18 类的证据哈希及准入边界，结果 `FIGMA_EVIDENCE_COMPLETE`、`releaseReady=false`。用户已决定暂缓不稳定的 Penpot 连接，双端保真与全量发布门保持待办。
+
 ```powershell
 .\.venv\Scripts\python.exe scripts/audit_v02_release_readiness.py --output artifacts/task-053/release-readiness.json
 ```

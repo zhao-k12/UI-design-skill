@@ -53,8 +53,9 @@
 - TASK-097: Cascader 固定“浙江 / 杭州”两级选中闭合态的官方源码/CSS、真实浏览器 Component IR、240×32 截图和来源锁 PASS；Component IR 契约补列 Cascader 类型。Figma 候选与单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - TASK-098: Cascader 固定两级地区选中态 Figma Inter 原生主组件/实例、复用已准入 Select 几何与官方箭头、来源颜色变量、独立读回和重复 PNG/SVG 候选审计 PASS；单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - TASK-099: Cascader 固定两级地区选中态 Figma 独立复读、重复导出及来源像素 QA PASS；非文字及箭头区 3,910 像素中仅四角 41 像素抗锯齿有差异，其他像素完全一致，文字与箭头完整。`admissionEligible=false`，双端正式 Fidelity Gate 与 Registry 准入仍 DEFERRED，V0.2 仍 NOT_READY。
+- TASK-100: 十八类目标组件的 Figma 证据只读总审计 PASS：7 类固定配置双端正式准入，另 11 类 Figma 单端独立 QA，Figma 侧 18/18 类具备可核验来源/原生证据。`releaseReady=false`；Penpot 暂缓、Adapter 字节锁架构冲突及新独立原型全量 Release Gate 仍未完成。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: Penpot 线按用户决定暂缓；对 18 类目标的 Figma 侧证据与剩余架构/发布任务进行总审计，继续完成不依赖 Penpot 的版本化 Adapter 字节锁、独立输入包、页面及 Release Gate 前置工作。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal、Drawer、Upload、Cascader 均未双端正式准入。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: Penpot 线按用户决定暂缓；在不修改未决架构契约的前提下，继续独立输入包与 Figma 页面等可分离发布前置工作。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal、Drawer、Upload、Cascader 均未双端正式准入。Adapter 字节锁架构决策、新独立原型全量 Release Gate 尚待完成。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

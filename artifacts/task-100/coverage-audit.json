@@ -1,0 +1,150 @@
+{
+  "scope": "v02-18-type-figma-evidence-audit",
+  "status": "FIGMA_EVIDENCE_COMPLETE",
+  "evidenceValid": true,
+  "releaseReady": false,
+  "targetTypeCount": 18,
+  "formalAdmissionTypeCount": 7,
+  "figmaOnlyQaTypeCount": 11,
+  "figmaEvidenceTypeCount": 18,
+  "dualPlatformPendingTypes": [
+    "Card",
+    "Cascader",
+    "DatePicker",
+    "Drawer",
+    "Form",
+    "Modal",
+    "Pagination",
+    "Switch",
+    "Tabs",
+    "Tree",
+    "Upload"
+  ],
+  "rows": [
+    {
+      "componentType": "Button",
+      "logicalComponentId": "action.button.primary.medium",
+      "state": "FORMALLY_ADMITTED_FIXED_CONFIG",
+      "figmaComponentId": "135:15"
+    },
+    {
+      "componentType": "Input",
+      "logicalComponentId": "form.input.default.medium",
+      "state": "FORMALLY_ADMITTED_FIXED_CONFIG",
+      "figmaComponentId": "141:3"
+    },
+    {
+      "componentType": "Select",
+      "logicalComponentId": "form.select.default.medium",
+      "state": "FORMALLY_ADMITTED_FIXED_CONFIG",
+      "figmaComponentId": "152:10"
+    },
+    {
+      "componentType": "DatePicker",
+      "logicalComponentId": "form.datepicker.date.selected",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "218:16",
+      "qaSha256": "b036c70119e7e6d5a05e0280b4e977fbf88b391be4e67200229710206ce4c063"
+    },
+    {
+      "componentType": "Checkbox",
+      "logicalComponentId": "form.checkbox.default.enabled",
+      "state": "FORMALLY_ADMITTED_FIXED_CONFIG",
+      "figmaComponentId": "182:12"
+    },
+    {
+      "componentType": "Radio",
+      "logicalComponentId": "form.radio.default.enabled",
+      "state": "FORMALLY_ADMITTED_FIXED_CONFIG",
+      "figmaComponentId": "190:3"
+    },
+    {
+      "componentType": "Switch",
+      "logicalComponentId": "form.switch.default.enabled",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "192:6",
+      "qaSha256": "f9f12437e982d44fe1a5935a4942215df624d380e52f2c2b7ade1c6c5120c0eb"
+    },
+    {
+      "componentType": "Tag",
+      "logicalComponentId": "data.tag.default.enabled",
+      "state": "FORMALLY_ADMITTED_FIXED_CONFIG",
+      "figmaComponentId": "176:16"
+    },
+    {
+      "componentType": "Table",
+      "logicalComponentId": "data.table.default",
+      "state": "FORMALLY_ADMITTED_FIXED_CONFIG",
+      "figmaComponentId": "157:3"
+    },
+    {
+      "componentType": "Pagination",
+      "logicalComponentId": "data.pagination.default.three-pages",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "205:16",
+      "qaSha256": "607c7a693f3207d49bd1ddd03ca099de02308b0e06314b265023a3546a0d2580"
+    },
+    {
+      "componentType": "Card",
+      "logicalComponentId": "content.card.default.user-info",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "198:8",
+      "qaSha256": "78150ef652e661b709a416a10ee3633e4dd014866352ba6326997b26ec9ae922"
+    },
+    {
+      "componentType": "Tabs",
+      "logicalComponentId": "navigation.tabs.line.overview",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "207:3",
+      "qaSha256": "4350b98f9b15fcb43dbd1da2a02c02b678029efc3eafd367cbf5d628663a90c9"
+    },
+    {
+      "componentType": "Form",
+      "logicalComponentId": "form.single.name.empty",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "220:9",
+      "qaSha256": "d9c06ef2710339c1805c4f67bbad197969f278d4c24600bf7c8620b552ea5393"
+    },
+    {
+      "componentType": "Modal",
+      "logicalComponentId": "overlay.modal.notice.open",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "222:13",
+      "qaSha256": "272ab025f6494ec0b0b3fd9f006d45423356e72812e8a3cc2323ee9570b6a5e7"
+    },
+    {
+      "componentType": "Drawer",
+      "logicalComponentId": "overlay.drawer.detail.open",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "226:8",
+      "qaSha256": "2653b6806190a6477f8586d200340b366fc4fdba573ff9ac223764e02bd7f7d7"
+    },
+    {
+      "componentType": "Upload",
+      "logicalComponentId": "data.upload.drag.empty",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "229:7",
+      "qaSha256": "a76a863488be92d0547c5f1fb001254d4bc281c46cc43b47df62cc447472eb2c"
+    },
+    {
+      "componentType": "Tree",
+      "logicalComponentId": "navigation.tree.expanded.departments",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "210:6",
+      "qaSha256": "57ef350445f782a3ca687b0061814cb4f98d9b0ff0fb024b0790b7b783dd3d49"
+    },
+    {
+      "componentType": "Cascader",
+      "logicalComponentId": "form.cascader.region.selected",
+      "state": "FIGMA_QA_PASS_ONLY",
+      "figmaComponentId": "231:13",
+      "qaSha256": "0148ed0f481edffbbe8e7950e2258acf0fce706aa3732c6f2048353c73753111"
+    }
+  ],
+  "issues": [],
+  "remainingReleaseGates": [
+    "dual-platform Fidelity Gate and formal Registry admission for 11 types",
+    "versioned Adapter byte lock architecture decision",
+    "new independent prototype and full release gates"
+  ]
+}
