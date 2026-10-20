@@ -1,0 +1,132 @@
+{
+  "scope": "official_upload_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 800,
+      "height": 500
+    },
+    "containerWidth": 320,
+    "cases": [
+      {
+        "logicalId": "data.upload.drag.empty",
+        "componentType": "Upload",
+        "variant": "drag-empty-static",
+        "props": {
+          "action": "/upload",
+          "type": "drag",
+          "showUploadList": false,
+          "multiple": false,
+          "disabled": false
+        },
+        "text": "上传文件"
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 500
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "00b4fa7e845c238bf86c7b653396341af203cd34587e6776174272ef70f0adfe",
+    "harnessBundleSha256": "a012bb289a868eaf48463e7743dd3127309d95f97b96f43207a8a751b901fad5",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "20875f77e6460ceec6c1ec4429abcdca89ff45278905f9e4d5b42a59367af703"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-upload"
+    ],
+    "root": {
+      "x": 24,
+      "y": 24,
+      "width": 320,
+      "height": 82
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    "drag": {
+      "classes": [
+        "ivu-upload",
+        "ivu-upload-drag"
+      ],
+      "bounds": {
+        "x": 24,
+        "y": 24,
+        "width": 320,
+        "height": 82
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px dashed rgb(220, 222, 226)",
+        "borderRadius": "4px",
+        "boxShadow": "none",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    "content": {
+      "text": "上传文件",
+      "bounds": {
+        "x": 25,
+        "y": 25,
+        "width": 318,
+        "height": 80
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    "fileInputPresent": true,
+    "uploadListCount": 0
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/upload/upload.vue": "8292b6fac2b6127d0ec515a547bbe9f7122271ba1f0b9efa99e1ceadcd5e8c2b",
+    "node_modules/view-ui-plus/src/styles/components/upload.less": "27f7446cb8927ce1f45ed6290965d35cb34ea5c8d3cf73503e6392b9e8538757"
+  },
+  "referenceComponentIrSha256": "1a347724e0e6e088de584947190f02b526135d1e37fcf096bf8c5aa9312ef94a"
+}

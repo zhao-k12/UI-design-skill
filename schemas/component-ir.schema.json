@@ -316,7 +316,8 @@
             "DatePicker",
             "Form",
             "Modal",
-            "Drawer"
+            "Drawer",
+            "Upload"
           ]
         },
         "variant": {

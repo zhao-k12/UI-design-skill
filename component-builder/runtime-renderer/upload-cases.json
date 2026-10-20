@@ -1,0 +1,20 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {"width": 800, "height": 500},
+  "containerWidth": 320,
+  "cases": [
+    {
+      "logicalId": "data.upload.drag.empty",
+      "componentType": "Upload",
+      "variant": "drag-empty-static",
+      "props": {
+        "action": "/upload",
+        "type": "drag",
+        "showUploadList": false,
+        "multiple": false,
+        "disabled": false
+      },
+      "text": "上传文件"
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "status": "PASS",
+  "componentIrVersion": "0.1.0",
+  "components": [
+    {
+      "componentIrVersion": "0.1.0",
+      "evidenceKind": "official-runtime",
+      "logicalComponentId": "data.upload.drag.empty",
+      "componentType": "Upload",
+      "variant": "drag-empty-static",
+      "state": "default-static",
+      "props": {
+        "action": "/upload",
+        "type": "drag",
+        "showUploadList": false,
+        "multiple": false,
+        "disabled": false
+      },
+      "resolvedProps": {
+        "action": "/upload",
+        "headers": {},
+        "multiple": false,
+        "name": "file",
+        "withCredentials": false,
+        "showUploadList": false,
+        "type": "drag",
+        "format": [],
+        "onProgress": {
+          "runtimeType": "function"
+        },
+        "onSuccess": {
+          "runtimeType": "function"
+        },
+        "onError": {
+          "runtimeType": "function"
+        },
+        "onRemove": {
+          "runtimeType": "function"
+        },
+        "onPreview": {
+          "runtimeType": "function"
+        },
+        "onExceededSize": {
+          "runtimeType": "function"
+        },
+        "onFormatError": {
+          "runtimeType": "function"
+        },
+        "defaultFileList": [],
+        "paste": false,
+        "disabled": false,
+        "webkitdirectory": false,
+        "data": {
+          "runtimeType": "undefined"
+        },
+        "accept": {
+          "runtimeType": "undefined"
+        },
+        "maxSize": {
+          "runtimeType": "undefined"
+        },
+        "beforeUpload": {
+          "runtimeType": "undefined"
+        }
+      },
+      "content": {
+        "text": "上传文件",
+        "options": []
+      },
+      "fixtureContext": {
+        "containerWidth": 320
+      },
+      "provenance": {
+        "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+        "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+        "packageVersion": "1.3.24",
+        "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+        "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+        "casesSha256": "00b4fa7e845c238bf86c7b653396341af203cd34587e6776174272ef70f0adfe",
+        "harnessBundleSha256": "a012bb289a868eaf48463e7743dd3127309d95f97b96f43207a8a751b901fad5",
+        "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+        "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+        "rendererSha256": "20875f77e6460ceec6c1ec4429abcdca89ff45278905f9e4d5b42a59367af703"
+      },
+      "environment": {
+        "browser": "153.0.8010.12",
+        "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+        "node": "v24.15.0",
+        "operatingSystem": {
+          "platform": "win32",
+          "release": "10.0.19045"
+        },
+        "viewport": {
+          "width": 800,
+          "height": 500
+        },
+        "deviceScaleFactor": 1,
+        "locale": "zh-CN",
+        "fontsStatus": "loaded"
+      },
+      "rootBounds": {
+        "width": 320,
+        "height": 82
+      },
+      "nodes": [
+        {
+          "path": "0",
+          "parentPath": null,
+          "tag": "div",
+          "attributes": {
+            "class": "ivu-upload ivu-upload-drag"
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 82
+          },
+          "visible": true,
+          "computedStyle": {
+            "display": "block",
+            "position": "relative",
+            "box-sizing": "border-box",
+            "width": "320px",
+            "height": "82px",
+            "min-width": "0px",
+            "min-height": "0px",
+            "max-width": "none",
+            "max-height": "none",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "gap": "normal",
+            "row-gap": "normal",
+            "column-gap": "normal",
+            "align-items": "normal",
+            "justify-content": "normal",
+            "vertical-align": "baseline",
+            "flex-direction": "row",
+            "flex-wrap": "nowrap",
+            "background-color": "rgb(255, 255, 255)",
+            "color": "rgb(81, 90, 110)",
+            "opacity": "1",
+            "visibility": "visible",
+            "border-top-width": "1px",
+            "border-right-width": "1px",
+            "border-bottom-width": "1px",
+            "border-left-width": "1px",
+            "border-top-style": "dashed",
+            "border-right-style": "dashed",
+            "border-bottom-style": "dashed",
+            "border-left-style": "dashed",
+            "border-top-color": "rgb(220, 222, 226)",
+            "border-right-color": "rgb(220, 222, 226)",
+            "border-bottom-color": "rgb(220, 222, 226)",
+            "border-left-color": "rgb(220, 222, 226)",
+            "border-top-left-radius": "4px",
+            "border-top-right-radius": "4px",
+            "border-bottom-left-radius": "4px",
+            "border-bottom-right-radius": "4px",
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "font-style": "normal",
+            "line-height": "21px",
+            "letter-spacing": "normal",
+            "text-align": "center",
+            "text-transform": "none",
+            "box-shadow": "none",
+            "transform": "none",
+            "content": "normal"
+          },
+          "pseudoElements": {},
+          "textRuns": [],
+          "value": null
+        },
+        {
+          "path": "0.0",
+          "parentPath": "0",
+          "tag": "input",
+          "attributes": {
+            "type": "file",
+            "class": "ivu-upload-input"
+          },
+          "bounds": {
+            "x": -24,
+            "y": -24,
+            "width": 0,
+            "height": 0
+          },
+          "visible": false,
+          "computedStyle": {
+            "display": "none",
+            "position": "static",
+            "box-sizing": "border-box",
+            "width": "auto",
+            "height": "auto",
+            "min-width": "0px",
+            "min-height": "0px",
+            "max-width": "none",
+            "max-height": "none",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "gap": "normal",
+            "row-gap": "normal",
+            "column-gap": "normal",
+            "align-items": "baseline",
+            "justify-content": "normal",
+            "vertical-align": "baseline",
+            "flex-direction": "row",
+            "flex-wrap": "nowrap",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(81, 90, 110)",
+            "opacity": "1",
+            "visibility": "visible",
+            "border-top-width": "0px",
+            "border-right-width": "0px",
+            "border-bottom-width": "0px",
+            "border-left-width": "0px",
+            "border-top-style": "none",
+            "border-right-style": "none",
+            "border-bottom-style": "none",
+            "border-left-style": "none",
+            "border-top-color": "rgb(81, 90, 110)",
+            "border-right-color": "rgb(81, 90, 110)",
+            "border-bottom-color": "rgb(81, 90, 110)",
+            "border-left-color": "rgb(81, 90, 110)",
+            "border-top-left-radius": "0px",
+            "border-top-right-radius": "0px",
+            "border-bottom-left-radius": "0px",
+            "border-bottom-right-radius": "0px",
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "font-style": "normal",
+            "line-height": "21px",
+            "letter-spacing": "normal",
+            "text-align": "start",
+            "text-transform": "none",
+            "box-shadow": "none",
+            "transform": "none",
+            "content": "normal"
+          },
+          "pseudoElements": {
+            "::placeholder": {
+              "display": "inline",
+              "position": "static",
+              "box-sizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "min-width": "0px",
+              "min-height": "0px",
+              "max-width": "none",
+              "max-height": "none",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "gap": "normal",
+              "row-gap": "normal",
+              "column-gap": "normal",
+              "align-items": "normal",
+              "justify-content": "normal",
+              "vertical-align": "baseline",
+              "flex-direction": "row",
+              "flex-wrap": "nowrap",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "color": "rgb(81, 90, 110)",
+              "opacity": "1",
+              "visibility": "visible",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-color": "rgb(81, 90, 110)",
+              "border-right-color": "rgb(81, 90, 110)",
+              "border-bottom-color": "rgb(81, 90, 110)",
+              "border-left-color": "rgb(81, 90, 110)",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+              "font-size": "14px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "21px",
+              "letter-spacing": "normal",
+              "text-align": "start",
+              "text-transform": "none",
+              "box-shadow": "none",
+              "transform": "none",
+              "content": "normal"
+            }
+          },
+          "textRuns": [],
+          "value": ""
+        },
+        {
+          "path": "0.1",
+          "parentPath": "0",
+          "tag": "div",
+          "attributes": {
+            "style": "width: 100%; height: 80px; display: flex; align-items: center; justify-content: center;"
+          },
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 318,
+            "height": 80
+          },
+          "visible": true,
+          "computedStyle": {
+            "display": "flex",
+            "position": "static",
+            "box-sizing": "border-box",
+            "width": "318px",
+            "height": "80px",
+            "min-width": "0px",
+            "min-height": "0px",
+            "max-width": "none",
+            "max-height": "none",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "gap": "normal",
+            "row-gap": "normal",
+            "column-gap": "normal",
+            "align-items": "center",
+            "justify-content": "center",
+            "vertical-align": "baseline",
+            "flex-direction": "row",
+            "flex-wrap": "nowrap",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(81, 90, 110)",
+            "opacity": "1",
+            "visibility": "visible",
+            "border-top-width": "0px",
+            "border-right-width": "0px",
+            "border-bottom-width": "0px",
+            "border-left-width": "0px",
+            "border-top-style": "none",
+            "border-right-style": "none",
+            "border-bottom-style": "none",
+            "border-left-style": "none",
+            "border-top-color": "rgb(81, 90, 110)",
+            "border-right-color": "rgb(81, 90, 110)",
+            "border-bottom-color": "rgb(81, 90, 110)",
+            "border-left-color": "rgb(81, 90, 110)",
+            "border-top-left-radius": "0px",
+            "border-top-right-radius": "0px",
+            "border-bottom-left-radius": "0px",
+            "border-bottom-right-radius": "0px",
+            "font-family": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "font-style": "normal",
+            "line-height": "21px",
+            "letter-spacing": "normal",
+            "text-align": "center",
+            "text-transform": "none",
+            "box-shadow": "none",
+            "transform": "none",
+            "content": "normal"
+          },
+          "pseudoElements": {},
+          "textRuns": [
+            {
+              "text": "上传文件",
+              "bounds": {
+                "x": 132,
+                "y": 32.5,
+                "width": 56,
+                "height": 16
+              }
+            }
+          ],
+          "value": null
+        }
+      ],
+      "iconMetrics": [],
+      "screenshot": {
+        "path": "data.upload.drag.empty.png",
+        "sha256": "cb3427ae4ec8a1a0b7e243ec3d00506b48af5dc63a33488d53cbc3507bf10f62"
+      }
+    }
+  ]
+}

@@ -47,8 +47,9 @@
 - TASK-091: Drawer 固定“详情 / 抽屉内容”右侧打开态的官方源码/CSS、真实浏览器 Component IR、320×500 截图和来源锁 PASS；Component IR 契约补列 Drawer 类型。Figma 候选与单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - TASK-092: Drawer 固定详情面板 Figma Inter 原生主组件/实例、来源颜色变量及阴影、独立读回和重复 PNG/SVG 候选审计 PASS；单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - TASK-093: Drawer 固定详情面板 Figma 独立复读、重复导出及来源面板像素 QA PASS；非文字区域 151,464 像素完全一致，标题和正文完整。`admissionEligible=false`，双端正式 Fidelity Gate 与 Registry 准入仍 DEFERRED，V0.2 仍 NOT_READY。
+- TASK-094: Upload 固定“上传文件”拖拽空态的官方源码/CSS、真实浏览器 Component IR、320×82 截图和来源锁 PASS；Component IR 契约补列 Upload 类型。Figma 候选与单端 QA 尚未执行，双端正式准入仍 DEFERRED。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
-- Next action: Penpot 线按用户决定暂缓；继续 Upload、Cascader 的官方来源、Figma 原生候选及单端独立 QA。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal、Drawer 均未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
+- Next action: Penpot 线按用户决定暂缓；为 Upload 制作 Figma 原生候选及单端独立 QA，继续 Cascader 的官方来源与单端开发。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal、Drawer、Upload 均未双端正式准入。版本化 Adapter 字节锁待单独架构决策。新 V0.2.4–0.2.6 快照需独立输入包和页面验收，随后用新独立原型执行全量 Release Gate。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 
