@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from scripts.migrate_compact_search_v026 import TARGET, digest, migrate
 from validators.ui_ir import ROOT
@@ -36,6 +37,21 @@ class V026MigrationTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "content mapping differs"):
                 migrate(target)
             self.assertEqual(before, (digest(content_path), digest(manifest_path)))
+
+    def test_failed_stage_leaves_no_target_or_staging_directory(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / "artifacts") as directory:
+            parent = Path(directory)
+            target = parent / "v026"
+            with patch("scripts.migrate_compact_search_v026.check", return_value={"status": "FAIL"}):
+                with self.assertRaisesRegex(ValueError, "Human-approved semantics"):
+                    migrate(target)
+            self.assertFalse(target.exists())
+            self.assertEqual(list(parent.iterdir()), [])
+
+    def test_target_outside_repository_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(ValueError, "inside the repository"):
+                migrate(Path(directory) / "v026")
 
 
 if __name__ == "__main__":

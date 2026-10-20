@@ -1,6 +1,6 @@
 # V0.2 发布就绪状态
 
-当前状态见 [TASK-114 实时重算审计](../artifacts/task-114/current-release-readiness.json)：**NOT_READY**，现有证据有效。18 类目标在 Figma 侧都有证据，7 类固定配置正式双端准入、11 类仅完成 Figma QA。生产 CLI 已提供独立的 `v0.2.6` 七组件 Profile；经用户审核的[紧凑查询原型](../examples/user-management-compact-search-v026/prototype.txt)已迁移并在新锁下通过 Figma 原生端到端与[九项单端发布门](../artifacts/task-110/figma-release-gates.json)。该页面实际使用 Button、Input、Select、Table 四类；Tag、Checkbox、Radio 虽在 Profile 中可用，未在该页面内行使。Penpot 线暂缓，双端及全量 Release Gate 未完成。下方 TASK-053 表格是 2026-10-14 历史快照。
+当前状态见 [TASK-115 实时重算审计](../artifacts/task-115/current-release-readiness.json)：**NOT_READY**，现有证据有效。18 类目标在 Figma 侧都有证据，7 类固定配置正式双端准入、11 类仅完成 Figma QA。生产 CLI 已提供独立的 `v0.2.6` 七组件 Profile；经用户审核的[紧凑查询原型](../examples/user-management-compact-search-v026/prototype.txt)已迁移并在新锁下通过 Figma 原生端到端与[九项单端发布门](../artifacts/task-110/figma-release-gates.json)。该页面实际使用 Button、Input、Select、Table 四类；Tag、Checkbox、Radio 虽在 Profile 中可用，未在该页面内行使。Penpot 线暂缓，双端及全量 Release Gate 未完成。下方 TASK-053 表格是 2026-10-14 历史快照。
 
 TASK-111 对七个已准入 Figma 主组件做[当前原生引用审计](../artifacts/task-111/figma-master-liveness.json)，核对真实主组件 ID、尺寸、固定文案、默认字体与登记哈希，全部 PASS。Tag、Checkbox、Radio 的主组件引用有效，但 TASK-110 页面仍未使用它们；此项不改变 Penpot 和全量发布状态。
 
@@ -9,6 +9,8 @@ TASK-112 将七组件主组件审计纳入当前就绪汇总，文案漂移会�
 TASK-113 增加[生产准入边界审计](../artifacts/task-113/admission-boundary.json)：七个正式组件可解析，11 个 Figma 单端候选均被拒绝且未进入双端生产绑定。该边界现是当前就绪汇总的独立检查项。
 
 TASK-114 加固 V0.2.6 输入迁移：已存在的目标包须通过字节锁和语义复核才可复用，修改后不得被脚本静默覆盖；重新生成的隔离包与已验收输入逐文件一致。该修正不改变当前原生验收结论。
+
+TASK-115 将新包生成移到隔离目录，完成核验后才进入目标路径；结构门失败不会留下半成品。该修正不改变已冻结的原型或原生验收证据。
 
 截至 2026-10-14：**NOT_READY**。只读 [机器审计](../artifacts/task-053/release-readiness.json) 验证当前证据字节与范围；`evidenceValid=true` 表示现有证据一致，不表示已通过全量发布门。重新运行：
 

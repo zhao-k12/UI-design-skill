@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import shutil
 import sys
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -70,7 +71,9 @@ def verify_existing(target, prior, components, tokens, catalog):
 
 
 def migrate(target=TARGET):
-    target = Path(target)
+    target = Path(target).resolve()
+    if not target.is_relative_to(ROOT.resolve()) or target == ROOT.resolve():
+        raise ValueError("Migration target must stay inside the repository")
     prior = load_json(SOURCE / "input-manifest.json")
     if prior["status"] != "READY_FOR_PREFLIGHT" or any(
             digest(SOURCE / name) != expected for name, expected in prior["files"].items()):
@@ -90,37 +93,49 @@ def migrate(target=TARGET):
         return {"status": "PASS", "action": "REUSED", "sourcePrototypeSha256": digest(target / "prototype.txt"),
                 "componentRegistryVersion": catalog["registryVersion"],
                 "componentCount": len(admission["components"])}
-    target.mkdir(parents=True)
-    for name in prior["files"]:
-        shutil.copyfile(SOURCE / name, target / name)
-    analysis = parse(load_json(target / "observations.json"), target)
-    review = load_json(target / "review.json")
-    page_tree = builder.build(analysis)
-    if check(analysis, page_tree, target, review)["status"] != "PASS":
-        raise ValueError("Human-approved semantics did not survive migration")
-    plan = load_json(target / "layout-plan.json")
-    decisions = load_json(target / "decisions.json")
-    decisions["registrySha256"] = components.fingerprint
-    save(target / "decisions.json", decisions)
-    mapping = import_module("core.component-resolver.primitive_mapping").resolve(
-        analysis, page_tree, target, review, plan, decisions, components, tokens,
-        allow_text_primitives=True)
-    if mapping["status"] != "PASS":
-        raise ValueError("Seven-component mapping failed: " + str(mapping["issues"]))
-    content = load_json(target / "content.json")
-    content["mappingSha256"] = builder.fingerprint(mapping)
-    save(target / "content.json", content)
-    versions = load_json(target / "versions.json")
-    versions["component_library_version"] = catalog["libraryVersion"]
-    save(target / "versions.json", versions)
-    save(target / "input-manifest.json", {
-        "kind": "v02-versioned-profile-migration", "status": "READY_FOR_PREFLIGHT",
-        "sourcePackage": SOURCE.relative_to(ROOT).as_posix(),
-        "targetComponentRegistrySha256": components.fingerprint,
-        "policy": "same-approved-semantics/new-v0.2.6-component-registry/no-native-evidence-reuse",
-        "files": {name: digest(target / name) for name in prior["files"]},
-    })
-    verify_existing(target, prior, components, tokens, catalog)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    stage = Path(tempfile.mkdtemp(prefix=".v026-stage-", dir=target.parent)).resolve()
+    try:
+        for name in prior["files"]:
+            shutil.copyfile(SOURCE / name, stage / name)
+        analysis = parse(load_json(stage / "observations.json"), stage)
+        review = load_json(stage / "review.json")
+        page_tree = builder.build(analysis)
+        if check(analysis, page_tree, stage, review)["status"] != "PASS":
+            raise ValueError("Human-approved semantics did not survive migration")
+        plan = load_json(stage / "layout-plan.json")
+        decisions = load_json(stage / "decisions.json")
+        decisions["registrySha256"] = components.fingerprint
+        save(stage / "decisions.json", decisions)
+        mapping = import_module("core.component-resolver.primitive_mapping").resolve(
+            analysis, page_tree, stage, review, plan, decisions, components, tokens,
+            allow_text_primitives=True)
+        if mapping["status"] != "PASS":
+            raise ValueError("Seven-component mapping failed: " + str(mapping["issues"]))
+        content = load_json(stage / "content.json")
+        content["mappingSha256"] = builder.fingerprint(mapping)
+        save(stage / "content.json", content)
+        versions = load_json(stage / "versions.json")
+        versions["component_library_version"] = catalog["libraryVersion"]
+        save(stage / "versions.json", versions)
+        save(stage / "input-manifest.json", {
+            "kind": "v02-versioned-profile-migration", "status": "READY_FOR_PREFLIGHT",
+            "sourcePackage": SOURCE.relative_to(ROOT).as_posix(),
+            "targetComponentRegistrySha256": components.fingerprint,
+            "policy": "same-approved-semantics/new-v0.2.6-component-registry/no-native-evidence-reuse",
+            "files": {name: digest(stage / name) for name in prior["files"]},
+        })
+        verify_existing(stage, prior, components, tokens, catalog)
+        if target.exists():
+            raise ValueError("Migration target appeared during staging")
+        stage.rename(target)
+    finally:
+        if stage.exists():
+            # Verify the resolved deletion target before recursive cleanup on Windows.
+            if (not stage.is_relative_to(ROOT.resolve()) or not stage.is_relative_to(target.parent)
+                    or not stage.name.startswith(".v026-stage-") or stage == target):
+                raise ValueError("Unsafe migration staging cleanup target")
+            shutil.rmtree(stage)
     return {"status": "PASS", "action": "CREATED", "sourcePrototypeSha256": digest(target / "prototype.txt"),
             "componentRegistryVersion": catalog["registryVersion"],
             "componentCount": len(admission["components"])}
