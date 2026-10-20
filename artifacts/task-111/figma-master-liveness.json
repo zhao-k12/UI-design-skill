@@ -1,0 +1,17 @@
+{
+  "scope": "v026-seven-component-figma-native-liveness",
+  "status": "PASS",
+  "releaseReady": false,
+  "nativeReadMethod": "Figma use_figma read-only Plugin API; each component page loaded independently",
+  "componentCount": 7,
+  "checkedLogicalIds": [
+    "action.button.primary.medium",
+    "data.table.default",
+    "data.tag.default.enabled",
+    "form.checkbox.default.enabled",
+    "form.input.default.medium",
+    "form.radio.default.enabled",
+    "form.select.default.medium"
+  ],
+  "issues": []
+}

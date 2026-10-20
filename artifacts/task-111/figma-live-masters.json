@@ -1,0 +1,212 @@
+{
+  "scope": "v026-seven-component-figma-native-liveness",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "readMethod": "Figma use_figma read-only Plugin API; each component page loaded independently",
+  "components": {
+    "action.button.primary.medium": {
+      "found": true,
+      "id": "135:15",
+      "type": "COMPONENT",
+      "name": "V0.2/Button/Primary/Medium/Default",
+      "pageId": "135:14",
+      "width": 60,
+      "height": 32,
+      "texts": [
+        {
+          "id": "135:16",
+          "characters": "查询",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        }
+      ]
+    },
+    "form.input.default.medium": {
+      "found": true,
+      "id": "141:3",
+      "type": "COMPONENT",
+      "name": "V0.2/Input/Default/Medium",
+      "pageId": "141:2",
+      "width": 240,
+      "height": 32,
+      "texts": [
+        {
+          "id": "141:5",
+          "characters": "请输入姓名",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 70,
+          "height": 21
+        }
+      ]
+    },
+    "form.select.default.medium": {
+      "found": true,
+      "id": "152:10",
+      "type": "COMPONENT",
+      "name": "candidate/v0.2/form.select.default.medium/Inter",
+      "pageId": "152:9",
+      "width": 240,
+      "height": 32,
+      "texts": [
+        {
+          "id": "152:14",
+          "characters": "启用",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 30
+        },
+        {
+          "id": "152:15",
+          "characters": "",
+          "fontFamily": "Ionicons",
+          "fontSize": 14,
+          "width": 14,
+          "height": 14
+        }
+      ]
+    },
+    "data.table.default": {
+      "found": true,
+      "id": "157:3",
+      "type": "COMPONENT",
+      "name": "V0.2 / Table / Default / Fixed 3x3",
+      "pageId": "157:2",
+      "width": 1392,
+      "height": 144,
+      "texts": [
+        {
+          "id": "157:6",
+          "characters": "张三",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        },
+        {
+          "id": "157:8",
+          "characters": "启用",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        },
+        {
+          "id": "157:10",
+          "characters": "管理员",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 42,
+          "height": 21
+        },
+        {
+          "id": "157:14",
+          "characters": "李四",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        },
+        {
+          "id": "157:16",
+          "characters": "启用",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        },
+        {
+          "id": "157:18",
+          "characters": "编辑",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        },
+        {
+          "id": "157:22",
+          "characters": "王五",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        },
+        {
+          "id": "157:24",
+          "characters": "停用",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        },
+        {
+          "id": "157:26",
+          "characters": "访客",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        }
+      ]
+    },
+    "data.tag.default.enabled": {
+      "found": true,
+      "id": "176:16",
+      "type": "COMPONENT",
+      "name": "V0.2/Tag/Default/Enabled",
+      "pageId": "176:15",
+      "width": 42,
+      "height": 22,
+      "texts": [
+        {
+          "id": "176:17",
+          "characters": "启用",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "width": 24,
+          "height": 14
+        }
+      ]
+    },
+    "form.checkbox.default.enabled": {
+      "found": true,
+      "id": "182:12",
+      "type": "COMPONENT",
+      "name": "V0.2/Checkbox/Default/Enabled",
+      "pageId": "182:2",
+      "width": 52,
+      "height": 21,
+      "texts": [
+        {
+          "id": "182:16",
+          "characters": "启用",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        }
+      ]
+    },
+    "form.radio.default.enabled": {
+      "found": true,
+      "id": "190:3",
+      "type": "COMPONENT",
+      "name": "V0.2/Radio/Default/Enabled",
+      "pageId": "190:2",
+      "width": 48,
+      "height": 21,
+      "texts": [
+        {
+          "id": "190:6",
+          "characters": "启用",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "width": 28,
+          "height": 21
+        }
+      ]
+    }
+  }
+}
