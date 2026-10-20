@@ -1,0 +1,21 @@
+{
+  "scope": "v026-production-admission-boundary",
+  "status": "PASS",
+  "releaseReady": false,
+  "admittedCount": 7,
+  "figmaOnlyCandidateCount": 11,
+  "rejectedCandidateIds": [
+    "content.card.default.user-info",
+    "data.pagination.default.three-pages",
+    "data.upload.drag.empty",
+    "form.cascader.region.selected",
+    "form.datepicker.date.selected",
+    "form.single.name.empty",
+    "form.switch.default.enabled",
+    "navigation.tabs.line.overview",
+    "navigation.tree.expanded.departments",
+    "overlay.drawer.detail.open",
+    "overlay.modal.notice.open"
+  ],
+  "issues": []
+}

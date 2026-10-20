@@ -11,6 +11,7 @@ from scripts.audit_v02_compact_search_figma import audit as audit_independent_fi
 from scripts.audit_v02_component_coverage_figma import audit as audit_coverage
 from scripts.audit_v02_figma_release_gates import audit as audit_figma_release_gates
 from scripts.audit_v026_figma_masters import audit as audit_figma_masters
+from scripts.audit_v026_admission_boundary import audit as audit_admission_boundary
 
 
 def audit(root=ROOT, *, native_dir=None, figma_master_path=None):
@@ -25,6 +26,10 @@ def audit(root=ROOT, *, native_dir=None, figma_master_path=None):
     independent = audit_independent_figma(root)
     figma_gates = audit_figma_release_gates(root)
     try:
+        admission_boundary = audit_admission_boundary(root)
+    except (OSError, ValueError, KeyError, TypeError, IndexError) as exc:
+        admission_boundary = {"status": "FAIL", "issues": ["admission_boundary_invalid: " + str(exc)]}
+    try:
         figma_masters = audit_figma_masters(root, native_path=figma_master_path)
     except (OSError, ValueError, KeyError, TypeError, IndexError) as exc:
         figma_masters = {"status": "FAIL", "issues": ["figma_master_evidence_invalid: " + str(exc)]}
@@ -34,7 +39,8 @@ def audit(root=ROOT, *, native_dir=None, figma_master_path=None):
                       and figma_lock.get("executionReceiptPersisted") is True
                       and independent.get("status") == "PASS"
                       and figma_gates.get("status") == "FIGMA_SCOPED_PASS"
-                      and figma_masters.get("status") == "PASS")
+                      and figma_masters.get("status") == "PASS"
+                      and admission_boundary.get("status") == "PASS")
     return {
         "scope": "v02-current-release-readiness",
         "status": "NOT_READY" if evidence_valid else "INVALID_EVIDENCE",
@@ -49,6 +55,7 @@ def audit(root=ROOT, *, native_dir=None, figma_master_path=None):
         "gates": {
             "figmaComponentEvidence": "PASS" if coverage.get("status") == "FIGMA_EVIDENCE_COMPLETE" else "INVALID",
             "sevenAdmittedFigmaMasters": "PASS" if figma_masters.get("status") == "PASS" else "INVALID",
+            "productionAdmissionBoundary": "PASS" if admission_boundary.get("status") == "PASS" else "INVALID",
             "figmaAdapterByteLockNativeReceipt": "PASS" if figma_lock.get("status") == "PASS" and figma_lock.get("executionReceiptPersisted") else "INVALID",
             "penpotAdapterByteLockNativeReceipt": "DEFERRED",
             "dualPlatformAdmissionForRemainingTypes": "DEFERRED",
@@ -67,7 +74,7 @@ def audit(root=ROOT, *, native_dir=None, figma_master_path=None):
                                     "nativePngSha256": independent.get("figmaNativePngSha256")},
         "issues": (list(coverage.get("issues", [])) + list(figma_lock.get("issues", []))
                    + list(independent.get("issues", [])) + list(figma_gates.get("issues", []))
-                   + list(figma_masters.get("issues", []))),
+                   + list(figma_masters.get("issues", [])) + list(admission_boundary.get("issues", []))),
     }
 
 

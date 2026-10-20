@@ -16,6 +16,7 @@ class V02CurrentReadinessTests(unittest.TestCase):
         self.assertEqual(report["componentCoverage"]["figmaOnlyQaTypeCount"], 11)
         self.assertEqual(report["gates"]["figmaAdapterByteLockNativeReceipt"], "PASS")
         self.assertEqual(report["gates"]["sevenAdmittedFigmaMasters"], "PASS")
+        self.assertEqual(report["gates"]["productionAdmissionBoundary"], "PASS")
         self.assertEqual(report["gates"]["penpotAdapterByteLockNativeReceipt"], "DEFERRED")
         self.assertEqual(report["gates"]["newIndependentPrototypeFigmaE2E"], "PASS")
         self.assertEqual(report["gates"]["newIndependentPrototypePenpotE2E"], "DEFERRED")
