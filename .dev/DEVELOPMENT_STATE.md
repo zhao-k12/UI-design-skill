@@ -55,7 +55,7 @@
 - TASK-099: Cascader 固定两级地区选中态 Figma 独立复读、重复导出及来源像素 QA PASS；非文字及箭头区 3,910 像素中仅四角 41 像素抗锯齿有差异，其他像素完全一致，文字与箭头完整。`admissionEligible=false`，双端正式 Fidelity Gate 与 Registry 准入仍 DEFERRED，V0.2 仍 NOT_READY。
 - TASK-100: 十八类目标组件的 Figma 证据只读总审计 PASS：7 类固定配置双端正式准入，另 11 类 Figma 单端独立 QA，Figma 侧 18/18 类具备可核验来源/原生证据。`releaseReady=false`；Penpot 暂缓、Adapter 字节锁架构冲突及新独立原型全量 Release Gate 仍未完成。
 - TASK-101: Figma 覆盖审计补齐 11 类组件的原生读回、首次/重复 PNG、SVG 逐文件哈希和单端准入边界检查；篡改重复导出被拒绝，定向 3 项测试 PASS，审计仍 `FIGMA_EVIDENCE_COMPLETE`、`releaseReady=false`。
-- TASK-102: Adapter 字节锁架构冲突已形成可评审的版本化逐端迁移方案，状态 PROPOSED/NOT_IMPLEMENTED；待明确架构决策，不改变主链路或历史锁。
+- TASK-102: 用户批准版本化逐端 Adapter 字节锁迁移方案；新 V0.2 任务已实现原始源码字节、两端计划及创建脚本锁，受控导出 Figma 执行脚本并拒绝锁漂移/脚本篡改，旧锁与历史证据保持不变。冻结列表样张在 Figma 新页实际执行，独立读回的 6 个实例/25 个文字节点与计划一致、1920×1080 原生 PNG 重复字节一致，单端样张 QA PASS。正式执行回执持久化、新独立原型及 Penpot 原生线仍待完成，V0.2 仍 NOT_READY。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
 - Next action: Penpot 线按用户决定暂缓；在不修改未决架构契约的前提下，继续独立输入包与 Figma 页面等可分离发布前置工作。Switch、Card、Pagination、Tabs、Tree、DatePicker、Form、Modal、Drawer、Upload、Cascader 均未双端正式准入。Adapter 字节锁架构决策、新独立原型全量 Release Gate 尚待完成。TASK-043 仅证明 Adapter 契约样张，TASK-052 仅证明冻结列表页全链路，均不代表 V0.2 整体发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。

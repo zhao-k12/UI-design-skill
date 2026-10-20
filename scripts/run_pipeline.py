@@ -12,6 +12,7 @@ from adapters.component_bindings import ComponentBindings
 from adapters.figma.content_compiler import prepare as prepare_f
 from adapters.figma.compiler import prepare as prepare_f_layout
 from adapters.penpot.compiler import prepare as prepare_p
+from adapters.byte_lock import build as build_adapter_byte_lock
 
 
 PROFILES = {
@@ -78,6 +79,15 @@ def main():
                 report={'status':'FAIL','plan':None,'issues':[{'code':'adapter_version_changed','message':'Native plan differs from locked adapter version'}]}
             runner.write(output/(platform+'_preflight.json'),report);preflights[platform]=report['status']
         qa['adapterPreflights']=preflights;qa['readyForAdapter']=all(s=='PASS' for s in preflights.values())
+        if args.profile=='v0.2' and qa['readyForAdapter']:
+            byte_lock=build_adapter_byte_lock({platform:load_json(output/(platform+'_preflight.json'))['plan']
+                                               for platform in ('figma','penpot')})
+            lock_path=output/'adapter-execution-lock.json'
+            if lock_path.exists() and load_json(lock_path)!=byte_lock:
+                raise ValueError('Adapter byte lock changed; use a new task directory')
+            if not lock_path.exists():runner.write(lock_path,byte_lock)
+            from hashlib import sha256
+            qa['adapterExecutionLockSha256']=sha256(lock_path.read_bytes()).hexdigest()
         if not qa['readyForAdapter']:qa['status']='FAIL'
         runner.write(output/'qa_report.json',qa);print(json.dumps(qa,ensure_ascii=False));return 0 if qa['readyForAdapter'] else 1
     except (ValueError,OSError) as exc:

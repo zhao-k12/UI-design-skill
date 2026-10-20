@@ -1,6 +1,6 @@
 # TASK-102 — V0.2 Adapter 字节锁迁移方案（待决策）
 
-日期：2026-10-20。状态：**PROPOSED / NOT_IMPLEMENTED**。依据 [TASK-053 架构冲突](TASK-053_ARCHITECTURE_CONFLICT.md)；本记录不改变 V0.1 Manifest、现有 V0.2 输入、Adapter、Checkpoint 或历史原生证据。
+日期：2026-10-20。状态：**APPROVED / FIGMA_SAMPLE_NATIVE_PASS / RELEASE_PENDING**。用户已批准推荐方案。依据 [TASK-053 架构冲突](TASK-053_ARCHITECTURE_CONFLICT.md)；实施不改变 V0.1 Manifest、历史 V0.2 输入、Checkpoint 或既有原生证据。
 
 ## 现状与风险
 
@@ -21,4 +21,4 @@
 
 ## 待明确选择
 
-推荐采用上述**版本化、逐端原始字节锁**，并在用户明确架构决策后实施。若选择维持现状，则 TASK-053 风险保持开放，V0.2 全量 Release Gate 继续阻塞。其他方案须先补充其覆盖的执行依赖、迁移和恢复语义。
+用户已选择上述**版本化、逐端原始字节锁**。当前实现覆盖新 V0.2 任务的预检、创建脚本导出与修改拒绝；Figma 已以冻结列表样张实际执行、独立读回并重复导出通过。该样张不是新独立原型，也未完成 Penpot 原生锁验证、正式执行回执持久化与全量 Release Gate，因此 TASK-053 的发布风险仍开放。

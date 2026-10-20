@@ -8,7 +8,7 @@
 
 TASK-101 进一步核对 11 类组件的原生读回、首次/重复 PNG 与 SVG 字节，并在重复导出被篡改时拒绝证据；这是 Figma 单端证据完整性检查，不改变正式准入数。
 
-Adapter 字节锁已有 [版本化迁移提案](../.dev/TASK-102_ADAPTER_BYTE_LOCK_PROPOSAL.md)，目前待架构决策，尚未实现或验收。
+Adapter 字节锁 [版本化迁移方案](../.dev/TASK-102_ADAPTER_BYTE_LOCK_PROPOSAL.md)已获批准，新 V0.2 任务的预检锁与执行脚本受控导出已实现；冻结列表样张的 [Figma 原生读回审计](../artifacts/task-102/figma-native-qa.json) PASS。正式执行回执持久化、新独立原型与 Penpot 原生发布锁仍未完成，不据此改变 `NOT_READY` 结论。
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/audit_v02_release_readiness.py --output artifacts/task-053/release-readiness.json
