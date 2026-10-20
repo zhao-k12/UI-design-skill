@@ -1,0 +1,18 @@
+{
+  "scope": "v02-default-font-modal-figma-only-qa",
+  "status": "FIGMA_QA_PASS",
+  "logicalComponentId": "overlay.modal.notice.open",
+  "componentType": "Modal",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "222:2",
+  "componentId": "222:13",
+  "instanceId": "222:14",
+  "candidateAuditSha256": "4d8aef1f1ac0582322100e910a4572eee3818709024f6311c40f683a2711c07f",
+  "figmaQaSha256": "272ab025f6494ec0b0b3fd9f006d45423356e72812e8a3cc2323ee9570b6a5e7",
+  "nativeAdmission": "FIGMA_QA_PASS_ONLY",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}

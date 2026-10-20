@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "figma-only-qa",
+  "nativePngSha256": "76b7910b6faee8dca930c34fa7243367ff5c901ea700e81ecf78376bf5c4fd64",
+  "visibleTitle": "提示",
+  "visibleBody": "操作已完成",
+  "completeText": true,
+  "clippedOrDetached": false,
+  "roundedCornersAndShadowVisible": true,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}
