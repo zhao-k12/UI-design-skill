@@ -1,0 +1,64 @@
+{
+  "scope": "figma-only-qa",
+  "gateVersion": "0.2.16-figma-only",
+  "status": "PASS",
+  "logicalComponentId": "overlay.drawer.detail.open",
+  "componentType": "Drawer",
+  "checks": {
+    "sourceAndCandidateLocked": true,
+    "independentNativeStructure": true,
+    "nativeRepeatStable": true,
+    "nativeSvgStable": true,
+    "sourceGeometryAndVisibleContent": true,
+    "hashBoundVisualReview": true
+  },
+  "rasterDiagnostics": {
+    "sourceSize": [
+      320,
+      500
+    ],
+    "nativeSize": [
+      344,
+      524
+    ],
+    "outsideContentPixels": 151464,
+    "outsideContentMismatchPixels": 0,
+    "outsideContentMaxChannelDelta": 0,
+    "ink": {
+      "title": {
+        "pixels": 278,
+        "bounds": [
+          16,
+          16,
+          47,
+          31
+        ]
+      },
+      "body": {
+        "pixels": 355,
+        "bounds": [
+          16,
+          71,
+          70,
+          83
+        ]
+      }
+    }
+  },
+  "evidenceSha256": {
+    "sourceScreenshot": "407d157f1b0c86dd7bf0e1fed62117c3fe0fec77b9b930e1276e6574e6cdf5d2",
+    "candidateAudit": "36158c10ecdcf0831b3818a2bb245a515123c97b53f67373e12f8fe5b35d286b",
+    "visualReview": "c10da7369a925c3efd0515498267b3614c5d1e7ad1428c94d37cea1daa398007",
+    "policy": "c5e2793f0dd69c48922c6e1bd157edcf029964615a2b0887d3a84a6a38e790e7",
+    "native-read.json": "2b616fb1aadacea4c2867bdbbf9cdb849317cde6035d1dd1d20b524e7cf65e8e",
+    "native.png": "c7ff9ce87701ca191e31bd0106278628a591a7439e5756eb7b606dd1c96c02a6",
+    "native-repeat.png": "c7ff9ce87701ca191e31bd0106278628a591a7439e5756eb7b606dd1c96c02a6",
+    "native.svg": "026e74473f5f6003dfc221eebdd73d4be51e67fec6d69e0e3bb7cb680d7ecfa7"
+  },
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false,
+  "effectiveCjkFontIdentity": "UNVERIFIED"
+}

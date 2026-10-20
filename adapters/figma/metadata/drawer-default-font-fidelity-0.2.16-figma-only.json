@@ -1,0 +1,18 @@
+{
+  "scope": "v02-default-font-drawer-figma-only-qa",
+  "status": "FIGMA_QA_PASS",
+  "logicalComponentId": "overlay.drawer.detail.open",
+  "componentType": "Drawer",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "226:2",
+  "componentId": "226:8",
+  "instanceId": "226:13",
+  "candidateAuditSha256": "36158c10ecdcf0831b3818a2bb245a515123c97b53f67373e12f8fe5b35d286b",
+  "figmaQaSha256": "2653b6806190a6477f8586d200340b366fc4fdba573ff9ac223764e02bd7f7d7",
+  "nativeAdmission": "FIGMA_QA_PASS_ONLY",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "readyForPageGeneration": false,
+  "releaseReady": false
+}
