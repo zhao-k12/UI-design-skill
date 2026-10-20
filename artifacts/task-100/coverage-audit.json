@@ -144,7 +144,7 @@
   "issues": [],
   "remainingReleaseGates": [
     "dual-platform Fidelity Gate and formal Registry admission for 11 types",
-    "versioned Adapter byte lock architecture decision",
+    "Adapter byte lock native receipt and full platform release validation",
     "new independent prototype and full release gates"
   ]
 }

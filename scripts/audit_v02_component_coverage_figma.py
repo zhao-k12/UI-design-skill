@@ -132,7 +132,8 @@ def audit(root=ROOT, *, qa_overrides=None, native_overrides=None):
             "dualPlatformPendingTypes": sorted(figma_only_types),
             "rows": rows, "issues": issues,
             "remainingReleaseGates": ["dual-platform Fidelity Gate and formal Registry admission for 11 types",
-                "versioned Adapter byte lock architecture decision", "new independent prototype and full release gates"]}
+                "Adapter byte lock native receipt and full platform release validation",
+                "new independent prototype and full release gates"]}
 
 
 def main():

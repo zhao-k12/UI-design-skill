@@ -26,4 +26,4 @@ Adapter 字节锁 [版本化迁移方案](../.dev/TASK-102_ADAPTER_BYTE_LOCK_PRO
 
 当前 `policies/component-coverage-0.2.0.json` 是早期计划快照，不能将其中的 `NOT_RUN` 理解为 V0.2.3 四个固定配置尚未准入，也不能原地改写它来扩展准入。实际准入以 `registries/components/v0.2.3/admission.json` 和对应两端绑定为准。除这四项固定配置以外的文本、尺寸、状态和 Props 仍按 Missing/Unsupported 处理。
 
-下一步先为 Adapter 字节锁制定版本化迁移决策，再选择一个有官方来源与双平台保真可验收的有限组件覆盖增量。V0.2 全量发布前，还需以独立新原型执行 A–H 阶段和全部 Release Gate；不能从 TASK-052 的单页 PASS 外推。
+下一步继续把 Adapter 字节锁的真实执行回执持久化，并准备独立新原型；Penpot 原生线在用户决定恢复前保持暂缓。V0.2 全量发布前，11 类 Figma 单端组件仍须双平台正式准入，且需以独立新原型执行 A–H 阶段和全部 Release Gate；不能从 TASK-052 或 TASK-102 冻结列表样张的 PASS 外推。
