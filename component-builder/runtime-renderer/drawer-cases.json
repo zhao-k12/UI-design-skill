@@ -1,0 +1,22 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {"width": 800, "height": 500},
+  "containerWidth": 320,
+  "cases": [
+    {
+      "logicalId": "overlay.drawer.detail.open",
+      "componentType": "Drawer",
+      "variant": "right-open-no-close",
+      "props": {
+        "modelValue": true,
+        "title": "详情",
+        "width": 320,
+        "placement": "right",
+        "closable": false,
+        "mask": true,
+        "transfer": true
+      },
+      "text": "抽屉内容"
+    }
+  ]
+}

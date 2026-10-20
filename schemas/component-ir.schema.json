@@ -315,7 +315,8 @@
             "Tree",
             "DatePicker",
             "Form",
-            "Modal"
+            "Modal",
+            "Drawer"
           ]
         },
         "variant": {

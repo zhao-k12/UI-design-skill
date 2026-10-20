@@ -1,0 +1,12 @@
+{
+  "scope": "component_runtime_extraction",
+  "status": "PASS",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentTypes": [
+    "Drawer"
+  ],
+  "componentIrSha256": "d0ff27358b995fc667a7f32b7c7faf776209ada1bc26b7876ed941bc0997582e",
+  "runtimeManifestSha256": "204527667350c584e8ef19460775bb0b2a7906460c8172a28526aeadeb501283",
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}
