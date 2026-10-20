@@ -1,0 +1,179 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "229:2",
+  "nodes": [
+    {
+      "id": "229:7",
+      "name": "Upload / Drag / Empty / Static",
+      "type": "COMPONENT",
+      "x": 100,
+      "y": 100,
+      "width": 320,
+      "height": 82,
+      "visible": true,
+      "children": [
+        "229:8"
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:229:4"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8627451062202454,
+            "g": 0.8705882430076599,
+            "b": 0.886274516582489
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:229:5"
+            }
+          }
+        }
+      ],
+      "effects": [],
+      "cornerRadius": 4,
+      "layoutMode": "HORIZONTAL",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "229:8",
+      "name": "Text / 上传文件",
+      "type": "TEXT",
+      "x": 110,
+      "y": 30.5,
+      "width": 100,
+      "height": 21,
+      "visible": true,
+      "children": [],
+      "characters": "上传文件",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 21
+      },
+      "textAlignHorizontal": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3176470696926117,
+            "g": 0.3529411852359772,
+            "b": 0.4313725531101227
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:229:6"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "effects": [],
+      "cornerRadius": null,
+      "layoutMode": null,
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "dashPattern": []
+    },
+    {
+      "id": "229:9",
+      "name": "Upload / Drag / Empty / Review",
+      "type": "INSTANCE",
+      "x": 470,
+      "y": 100,
+      "width": 320,
+      "height": 82,
+      "visible": true,
+      "children": [
+        "I229:9;229:8"
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:229:4"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8627451062202454,
+            "g": 0.8705882430076599,
+            "b": 0.886274516582489
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:229:5"
+            }
+          }
+        }
+      ],
+      "effects": [],
+      "cornerRadius": 4,
+      "layoutMode": "HORIZONTAL",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [
+        3,
+        2
+      ],
+      "mainComponentId": "229:7"
+    }
+  ]
+}
