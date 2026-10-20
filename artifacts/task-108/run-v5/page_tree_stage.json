@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "tree": {
+    "version": "0.1.0",
+    "documentId": "user-management-compact-search",
+    "analysisSha256": "8e11c3f6f98c48c2c515d5e590b0e2de5b01ee40bd2f388b3a818296dcaadfae",
+    "stage": "page-tree",
+    "page": {
+      "id": "user-management-compact-search",
+      "kind": "Page",
+      "identity": {
+        "text": "用户管理",
+        "evidence": [
+          "e0"
+        ]
+      },
+      "primaryTask": {
+        "text": "按姓名与状态查询并查看用户列表",
+        "evidence": [
+          "e2"
+        ]
+      },
+      "children": [
+        {
+          "id": "header",
+          "kind": "Section",
+          "purpose": {
+            "text": "页头",
+            "evidence": [
+              "e1"
+            ]
+          },
+          "children": [
+            {
+              "id": "header-title",
+              "kind": "staticContent",
+              "description": {
+                "text": "用户管理标题和设置图标",
+                "evidence": [
+                  "e1"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "query",
+          "kind": "Section",
+          "purpose": {
+            "text": "紧凑查询区",
+            "evidence": [
+              "e2"
+            ]
+          },
+          "children": [
+            {
+              "id": "field-name",
+              "kind": "fields",
+              "description": {
+                "text": "姓名输入框",
+                "evidence": [
+                  "e2"
+                ]
+              }
+            },
+            {
+              "id": "field-status",
+              "kind": "fields",
+              "description": {
+                "text": "状态选择框",
+                "evidence": [
+                  "e2"
+                ]
+              }
+            },
+            {
+              "id": "query-action",
+              "kind": "buttons",
+              "description": {
+                "text": "查询按钮",
+                "evidence": [
+                  "e2"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "kind": "Section",
+          "purpose": {
+            "text": "用户列表区",
+            "evidence": [
+              "e3"
+            ]
+          },
+          "children": [
+            {
+              "id": "user-table",
+              "kind": "dataRegions",
+              "description": {
+                "text": "姓名、状态、角色三列表格与三行固定用户",
+                "evidence": [
+                  "e3"
+                ]
+              }
+            },
+            {
+              "id": "list-title",
+              "kind": "staticContent",
+              "description": {
+                "text": "用户列表标题",
+                "evidence": [
+                  "e3"
+                ]
+              }
+            },
+            {
+              "id": "list-summary",
+              "kind": "staticContent",
+              "description": {
+                "text": "共 3 位用户",
+                "evidence": [
+                  "e3"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "stage": "layout-qa",
+  "status": "PASS",
+  "readyForMapping": true,
+  "structureReport": {
+    "version": "0.1.0",
+    "stage": "structure-qa",
+    "status": "PASS",
+    "readyForLayout": true,
+    "analysisSha256": "8e11c3f6f98c48c2c515d5e590b0e2de5b01ee40bd2f388b3a818296dcaadfae",
+    "pageTreeSha256": "38d19f5710a24bed2c791569d6aee5d1a3f88dbf55c180377fc7ed77cb0fbf5d",
+    "reviewSha256": "177e8e146607ee9c9dcdabba92b659d3d28684779c8efff647c6db62314bdad7",
+    "issues": [],
+    "reviewReasons": [],
+    "freeze": {
+      "pageTreeSha256": "38d19f5710a24bed2c791569d6aee5d1a3f88dbf55c180377fc7ed77cb0fbf5d",
+      "analysisSha256": "8e11c3f6f98c48c2c515d5e590b0e2de5b01ee40bd2f388b3a818296dcaadfae"
+    }
+  },
+  "pageTreeSha256": "38d19f5710a24bed2c791569d6aee5d1a3f88dbf55c180377fc7ed77cb0fbf5d",
+  "planSha256": "eb586a90b3c6be4fbcc0fe9fbdab1bb5525b8fdfea520ec7b3613683616eb908",
+  "rulesSha256": "5e995ec984a07cd12feb31f11b9043a4226066dc8df190e50a8b126549b2dd6e",
+  "tokenRegistrySha256": "f0358b40a028686e28e525ee3d2461e1d0b1afb711f3b73a931fed8173e37e68",
+  "issues": [],
+  "testFixture": false,
+  "engineReport": {
+    "scope": "layout",
+    "status": "PASS",
+    "engineVersion": "0.1.0",
+    "tokenRegistryVersion": "0.2.2",
+    "tokenRegistrySha256": "f0358b40a028686e28e525ee3d2461e1d0b1afb711f3b73a931fed8173e37e68",
+    "pattern": "list-page",
+    "skeleton": {
+      "id": "pattern.page",
+      "type": "Page",
+      "box": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1920.0,
+        "height": 1080.0
+      },
+      "children": [
+        {
+          "id": "pattern.header",
+          "type": "Section",
+          "box": {
+            "x": 24.0,
+            "y": 24.0,
+            "width": 1872.0,
+            "height": 28.0
+          },
+          "children": [
+            {
+              "id": "layout.item.0.0",
+              "type": "Cell",
+              "box": {
+                "x": 24.0,
+                "y": 24.0,
+                "width": 1872.0,
+                "height": 28.0
+              },
+              "children": [],
+              "sourceIds": [
+                "header-title"
+              ]
+            }
+          ],
+          "role": "header",
+          "sourceIds": [
+            "header"
+          ]
+        },
+        {
+          "id": "pattern.query",
+          "type": "Section",
+          "box": {
+            "x": 24.0,
+            "y": 76.0,
+            "width": 1872.0,
+            "height": 142.0
+          },
+          "children": [
+            {
+              "id": "pattern.query.grid",
+              "type": "Grid",
+              "box": {
+                "x": 40.0,
+                "y": 92.0,
+                "width": 1840.0,
+                "height": 110.0
+              },
+              "children": [
+                {
+                  "id": "layout.group.1.fields",
+                  "type": "Grid",
+                  "box": {
+                    "x": 40.0,
+                    "y": 92.0,
+                    "width": 1840.0,
+                    "height": 62.0
+                  },
+                  "children": [
+                    {
+                      "id": "layout.item.1.0",
+                      "type": "Cell",
+                      "box": {
+                        "x": 40.0,
+                        "y": 92.0,
+                        "width": 448.0,
+                        "height": 62.0
+                      },
+                      "children": [],
+                      "role": "field",
+                      "sourceIds": [
+                        "field-name"
+                      ]
+                    },
+                    {
+                      "id": "layout.item.1.1",
+                      "type": "Cell",
+                      "box": {
+                        "x": 504.0,
+                        "y": 92.0,
+                        "width": 448.0,
+                        "height": 62.0
+                      },
+                      "children": [],
+                      "role": "field",
+                      "sourceIds": [
+                        "field-status"
+                      ]
+                    }
+                  ],
+                  "sourceIds": [
+                    "query"
+                  ]
+                },
+                {
+                  "id": "layout.group.1.buttons",
+                  "type": "HorizontalStack",
+                  "box": {
+                    "x": 40.0,
+                    "y": 170.0,
+                    "width": 1840.0,
+                    "height": 32.0
+                  },
+                  "children": [
+                    {
+                      "id": "layout.item.1.2",
+                      "type": "Cell",
+                      "box": {
+                        "x": 1820.0,
+                        "y": 170.0,
+                        "width": 60.0,
+                        "height": 32.0
+                      },
+                      "children": [],
+                      "sourceIds": [
+                        "query-action"
+                      ]
+                    }
+                  ],
+                  "sourceIds": [
+                    "query"
+                  ]
+                }
+              ]
+            }
+          ],
+          "role": "query",
+          "sourceIds": [
+            "query"
+          ]
+        },
+        {
+          "id": "pattern.table",
+          "type": "Section",
+          "box": {
+            "x": 24.0,
+            "y": 242.0,
+            "width": 1872.0,
+            "height": 268.0
+          },
+          "children": [
+            {
+              "id": "layout.item.2.1",
+              "type": "Cell",
+              "box": {
+                "x": 24.0,
+                "y": 242.0,
+                "width": 1872.0,
+                "height": 22.0
+              },
+              "children": [],
+              "sourceIds": [
+                "list-title"
+              ]
+            },
+            {
+              "id": "layout.item.2.0",
+              "type": "Cell",
+              "box": {
+                "x": 24.0,
+                "y": 280.0,
+                "width": 1872.0,
+                "height": 192.0
+              },
+              "children": [],
+              "sourceIds": [
+                "user-table"
+              ]
+            },
+            {
+              "id": "layout.item.2.2",
+              "type": "Cell",
+              "box": {
+                "x": 24.0,
+                "y": 488.0,
+                "width": 1872.0,
+                "height": 22.0
+              },
+              "children": [],
+              "sourceIds": [
+                "list-summary"
+              ]
+            }
+          ],
+          "role": "table",
+          "sourceIds": [
+            "list"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "user-management-compact-search"
+      ]
+    },
+    "issues": []
+  },
+  "layoutTreeSha256": "f7cd30465b931be7e0a18893bf060737152e364c85a5e754850e2855acf93e5b"
+}

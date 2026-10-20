@@ -1,0 +1,274 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "page": {
+    "id": "240:2",
+    "name": "V0.2 / Independent compact search / TASK-108"
+  },
+  "root": {
+    "id": "240:3",
+    "name": "UI-IR/user-management-compact-search/pattern.page",
+    "type": "FRAME",
+    "width": 1920,
+    "height": 1080
+  },
+  "texts": [
+    {
+      "id": "240:7",
+      "name": "layout.item.0.0.instance",
+      "characters": "用户管理",
+      "fontFamily": "Inter",
+      "width": 80,
+      "height": 28,
+      "x": 104,
+      "y": 104
+    },
+    {
+      "id": "240:20",
+      "name": "field-name.label",
+      "characters": "姓名",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 22,
+      "x": 120,
+      "y": 172
+    },
+    {
+      "id": "I240:22;141:5",
+      "name": "placeholder",
+      "characters": "请输入姓名",
+      "fontFamily": "Inter",
+      "width": 70,
+      "height": 21,
+      "x": 128,
+      "y": 207.5
+    },
+    {
+      "id": "240:28",
+      "name": "field-status.label",
+      "characters": "状态",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 22,
+      "x": 584,
+      "y": 172
+    },
+    {
+      "id": "I240:30;152:14",
+      "name": "source/selected-value-text",
+      "characters": "启用",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 30,
+      "x": 593,
+      "y": 203
+    },
+    {
+      "id": "I240:30;152:15",
+      "name": "source/ionicons-arrow",
+      "characters": "",
+      "fontFamily": "Ionicons",
+      "width": 14,
+      "height": 14,
+      "x": 801,
+      "y": 211
+    },
+    {
+      "id": "I240:40;135:16",
+      "name": "label",
+      "characters": "查询",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 1916,
+      "y": 255.5
+    },
+    {
+      "id": "240:44",
+      "name": "layout.item.2.1.instance",
+      "characters": "用户列表",
+      "fontFamily": "Inter",
+      "width": 56,
+      "height": 22,
+      "x": 104,
+      "y": 322
+    },
+    {
+      "id": "240:48",
+      "name": "layout.item.2.0.header.column.0.text",
+      "characters": "姓名",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 22,
+      "x": 120,
+      "y": 373
+    },
+    {
+      "id": "240:50",
+      "name": "layout.item.2.0.header.column.1.text",
+      "characters": "状态",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 22,
+      "x": 584.328125,
+      "y": 373
+    },
+    {
+      "id": "240:52",
+      "name": "layout.item.2.0.header.column.2.text",
+      "characters": "角色",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 22,
+      "x": 1048.65625,
+      "y": 373
+    },
+    {
+      "id": "I240:53;157:6",
+      "name": "source/0.0.0.0.1.0.0.0.0",
+      "characters": "张三",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 122,
+      "y": 420
+    },
+    {
+      "id": "I240:53;157:8",
+      "name": "source/0.0.0.0.1.0.1.0.0",
+      "characters": "启用",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 586.328125,
+      "y": 420
+    },
+    {
+      "id": "I240:53;157:10",
+      "name": "source/0.0.0.0.1.0.2.0.0",
+      "characters": "管理员",
+      "fontFamily": "Inter",
+      "width": 42,
+      "height": 21,
+      "x": 1050.65625,
+      "y": 420
+    },
+    {
+      "id": "I240:53;157:14",
+      "name": "source/0.0.0.0.1.1.0.0.0",
+      "characters": "李四",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 122,
+      "y": 468
+    },
+    {
+      "id": "I240:53;157:16",
+      "name": "source/0.0.0.0.1.1.1.0.0",
+      "characters": "启用",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 586.328125,
+      "y": 468
+    },
+    {
+      "id": "I240:53;157:18",
+      "name": "source/0.0.0.0.1.1.2.0.0",
+      "characters": "编辑",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 1050.65625,
+      "y": 468
+    },
+    {
+      "id": "I240:53;157:22",
+      "name": "source/0.0.0.0.1.2.0.0.0",
+      "characters": "王五",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 122,
+      "y": 516
+    },
+    {
+      "id": "I240:53;157:24",
+      "name": "source/0.0.0.0.1.2.1.0.0",
+      "characters": "停用",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 586.328125,
+      "y": 516
+    },
+    {
+      "id": "I240:53;157:26",
+      "name": "source/0.0.0.0.1.2.2.0.0",
+      "characters": "访客",
+      "fontFamily": "Inter",
+      "width": 28,
+      "height": 21,
+      "x": 1050.65625,
+      "y": 516
+    },
+    {
+      "id": "240:80",
+      "name": "layout.item.2.2.instance",
+      "characters": "共 3 位用户",
+      "fontFamily": "Inter",
+      "width": 73,
+      "height": 22,
+      "x": 104,
+      "y": 568
+    }
+  ],
+  "instances": [
+    {
+      "id": "240:9",
+      "name": "header-title.icon",
+      "mainComponentId": "3:16",
+      "width": 24,
+      "height": 24,
+      "x": 1952,
+      "y": 106
+    },
+    {
+      "id": "240:22",
+      "name": "layout.item.1.0.instance",
+      "mainComponentId": "141:3",
+      "width": 240,
+      "height": 32,
+      "x": 120,
+      "y": 202
+    },
+    {
+      "id": "240:30",
+      "name": "layout.item.1.1.instance",
+      "mainComponentId": "152:10",
+      "width": 240,
+      "height": 32,
+      "x": 584,
+      "y": 202
+    },
+    {
+      "id": "240:40",
+      "name": "layout.item.1.2.instance",
+      "mainComponentId": "135:15",
+      "width": 60,
+      "height": 32,
+      "x": 1900,
+      "y": 250
+    },
+    {
+      "id": "240:53",
+      "name": "layout.item.2.0.instance",
+      "mainComponentId": "157:3",
+      "width": 1392,
+      "height": 144,
+      "x": 104,
+      "y": 408
+    }
+  ],
+  "descendantCount": 77
+}

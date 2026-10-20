@@ -1,0 +1,10 @@
+{
+  "scope": "v02-independent-compact-search-figma",
+  "status": "PASS",
+  "releaseReady": false,
+  "prototypeSha256": "389221d44730b662f4c53041d564304c536633a6ce4df019eb51182c9b8724c1",
+  "figmaPageReference": "240:2",
+  "figmaNativePngSha256": "71afd671d755ca36569f031df262f295472ea7d4374b49c7033157efa8ffedfc",
+  "nativeInstanceCount": 5,
+  "issues": []
+}

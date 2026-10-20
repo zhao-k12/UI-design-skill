@@ -1,0 +1,32 @@
+{
+  "scope": "static-core-pipeline",
+  "status": "PASS",
+  "readyForAdapter": true,
+  "nativeExecution": "NOT_RUN",
+  "finalVisualQa": "NOT_RUN",
+  "v01Ready": false,
+  "semanticItemCount": 7,
+  "instanceCount": 4,
+  "iconCount": 1,
+  "layoutRepeatable": true,
+  "issues": [],
+  "uiIrSha256": "6e3768d799efb28b01e7e02e80dc8bfd5b5feee2ba598bc379cf28f4f598ae65",
+  "manifestSha256": "23a9aea73d4111333216ce97875a3e84e4e531a672cf6ad5cf95d106ca9cbbc3",
+  "executedStages": [],
+  "reusedStages": [
+    "semantic-parse",
+    "page-tree",
+    "structure-qa",
+    "layout",
+    "component-mapping",
+    "component-assembly",
+    "content-injection",
+    "resource-resolution",
+    "design-rules"
+  ],
+  "adapterPreflights": {
+    "figma": "PASS",
+    "penpot": "PASS"
+  },
+  "adapterExecutionLockSha256": "24dd78795d5fdc486bfb6cf69c74554e3f3846630ac5741612fdb2bb1aa10103"
+}

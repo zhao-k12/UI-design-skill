@@ -1,0 +1,80 @@
+{
+  "version": "0.2.0",
+  "sourceCapture": "examples/user-management-compact-search/runtime-capture.json",
+  "sourceCaptureSha256": "8f23f90cdc170a2c6b1b6f732cb57cc8e3d3ce9267554c94eff80fd4cbb16072",
+  "measurements": {
+    "header-title": {
+      "uiIrIds": [
+        "header"
+      ],
+      "width": 1392,
+      "height": 28,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "field-name": {
+      "uiIrIds": [
+        "filter.name"
+      ],
+      "width": 328,
+      "height": 62,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "field-status": {
+      "uiIrIds": [
+        "filter.status"
+      ],
+      "width": 328,
+      "height": 62,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "query-action": {
+      "uiIrIds": [
+        "button.query"
+      ],
+      "width": 60,
+      "height": 32,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "list-title": {
+      "uiIrIds": [
+        "list.title"
+      ],
+      "width": 56,
+      "height": 22,
+      "widthRule": "max",
+      "heightRule": "max"
+    },
+    "user-table": {
+      "uiIrIds": [
+        "list.columns",
+        "table.body"
+      ],
+      "width": 1392,
+      "height": 192,
+      "widthRule": "max",
+      "heightRule": "sum"
+    },
+    "list-summary": {
+      "uiIrIds": [
+        "list.count"
+      ],
+      "width": 73,
+      "height": 22,
+      "widthRule": "max",
+      "heightRule": "max"
+    }
+  },
+  "textMeasurements": {
+    "header-title": "title",
+    "list-title": "list.title",
+    "list-summary": "list.count"
+  },
+  "slotMeasurements": {
+    "field-name.label": "label.name",
+    "field-status.label": "label.status"
+  }
+}

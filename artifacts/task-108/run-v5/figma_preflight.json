@@ -1,0 +1,1289 @@
+{
+  "scope": "figma_adapter_preflight",
+  "adapterVersion": "0.1.0",
+  "status": "PASS",
+  "nativeExecution": "NOT_RUN",
+  "issues": [],
+  "plan": {
+    "adapterVersion": "0.1.0",
+    "documentId": "user-management-compact-search",
+    "uiIrSha256": "6e3768d799efb28b01e7e02e80dc8bfd5b5feee2ba598bc379cf28f4f598ae65",
+    "tokensSha256": "f0358b40a028686e28e525ee3d2461e1d0b1afb711f3b73a931fed8173e37e68",
+    "componentsSha256": "d4051196454607de93eef6fb501016684ab427b11b63a00d57f8c6f75b1946ff",
+    "iconsSha256": "642072b677f35e538592cca05b02b2f37ca5770d08f602fd8953754cd217ebde",
+    "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+    "pages": [
+      {
+        "id": "pattern.page",
+        "name": "pattern.page",
+        "type": "Page",
+        "layout": {
+          "width": {
+            "mode": "fixed",
+            "value": 1920.0
+          },
+          "height": {
+            "mode": "fixed",
+            "value": 1080.0
+          },
+          "padding": {
+            "top": 24,
+            "right": 24,
+            "bottom": 24,
+            "left": 24
+          },
+          "gap": 24,
+          "direction": "vertical",
+          "wrap": false,
+          "alignment": {
+            "main": "start",
+            "cross": "start"
+          }
+        },
+        "style": {
+          "fill": "#f4f5f7"
+        },
+        "children": [
+          {
+            "id": "pattern.header",
+            "name": "pattern.header",
+            "type": "Section",
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1872.0
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 28.0
+              },
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "gap": 16,
+              "direction": "vertical",
+              "wrap": false,
+              "alignment": {
+                "main": "start",
+                "cross": "start"
+              }
+            },
+            "style": {
+              "fill": "#ffffff"
+            },
+            "children": [
+              {
+                "id": "layout.item.0.0",
+                "name": "layout.item.0.0",
+                "type": "Frame",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1872.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 28.0
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 8,
+                  "direction": "horizontal",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "space-between",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "children": [
+                  {
+                    "id": "layout.item.0.0.slot.content",
+                    "name": "layout.item.0.0.slot.content",
+                    "type": "Frame",
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 80
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 28.0
+                      },
+                      "padding": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "gap": 8,
+                      "direction": "horizontal",
+                      "wrap": false,
+                      "alignment": {
+                        "main": "start",
+                        "cross": "center"
+                      }
+                    },
+                    "style": {},
+                    "children": [
+                      {
+                        "id": "layout.item.0.0.instance",
+                        "name": "layout.item.0.0.instance",
+                        "type": "Text",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 80
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 28
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": 0
+                          },
+                          "gap": 0,
+                          "direction": "vertical",
+                          "wrap": false,
+                          "alignment": {
+                            "main": "start",
+                            "cross": "start"
+                          }
+                        },
+                        "style": {
+                          "typographyToken": {
+                            "fontFamily": "platform-default",
+                            "fontSize": 20,
+                            "fontWeight": 400,
+                            "lineHeight": 28,
+                            "letterSpacing": 0
+                          },
+                          "colorToken": "#20252b"
+                        },
+                        "text": "用户管理",
+                        "fontName": {
+                          "family": "Inter",
+                          "style": "Regular"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "layout.item.0.0.slot.trailing-icon",
+                    "name": "layout.item.0.0.slot.trailing-icon",
+                    "type": "Frame",
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 24
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 28.0
+                      },
+                      "padding": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "gap": 8,
+                      "direction": "horizontal",
+                      "wrap": false,
+                      "alignment": {
+                        "main": "start",
+                        "cross": "center"
+                      }
+                    },
+                    "style": {},
+                    "children": [
+                      {
+                        "id": "header-title.icon",
+                        "name": "header-title.icon",
+                        "type": "IconInstance",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 24
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 24
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": 0
+                          },
+                          "gap": 0,
+                          "direction": "vertical",
+                          "wrap": false,
+                          "alignment": {
+                            "main": "start",
+                            "cross": "start"
+                          }
+                        },
+                        "style": {},
+                        "componentReference": "3:16",
+                        "svgSha256": "f2e1fd30e6eadb8d5636f5037cf477f38ef81b235757d3ed290b92b2c002fec1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "pattern.query",
+            "name": "pattern.query",
+            "type": "Section",
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1872.0
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 142.0
+              },
+              "padding": {
+                "top": 16,
+                "right": 16,
+                "bottom": 16,
+                "left": 16
+              },
+              "gap": 16,
+              "direction": "vertical",
+              "wrap": false,
+              "alignment": {
+                "main": "start",
+                "cross": "start"
+              }
+            },
+            "style": {
+              "fill": "#ffffff"
+            },
+            "children": [
+              {
+                "id": "pattern.query.grid",
+                "name": "pattern.query.grid",
+                "type": "Grid",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1840.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 110.0
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 16,
+                  "direction": "horizontal",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "start",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "gridWidth": 1840.0,
+                "gridCells": [
+                  {
+                    "id": "layout.group.1.fields",
+                    "row": 0,
+                    "width": 1840.0
+                  },
+                  {
+                    "id": "layout.group.1.buttons",
+                    "row": 1,
+                    "width": 1840.0
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "layout.group.1.fields",
+                    "name": "layout.group.1.fields",
+                    "type": "Grid",
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1840.0
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 62.0
+                      },
+                      "padding": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "gap": 16,
+                      "direction": "horizontal",
+                      "wrap": false,
+                      "alignment": {
+                        "main": "start",
+                        "cross": "start"
+                      }
+                    },
+                    "style": {},
+                    "gridWidth": 1840.0,
+                    "gridCells": [
+                      {
+                        "id": "layout.item.1.0",
+                        "row": 0,
+                        "width": 448.0
+                      },
+                      {
+                        "id": "layout.item.1.1",
+                        "row": 0,
+                        "width": 448.0
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "layout.item.1.0",
+                        "name": "layout.item.1.0",
+                        "type": "Frame",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 448.0
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 62.0
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": 0
+                          },
+                          "gap": 8,
+                          "direction": "vertical",
+                          "wrap": false,
+                          "alignment": {
+                            "main": "start",
+                            "cross": "start"
+                          }
+                        },
+                        "style": {},
+                        "children": [
+                          {
+                            "id": "layout.item.1.0.slot.label",
+                            "name": "layout.item.1.0.slot.label",
+                            "type": "Frame",
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 28
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 22
+                              },
+                              "padding": {
+                                "top": 0,
+                                "right": 0,
+                                "bottom": 0,
+                                "left": 0
+                              },
+                              "gap": 8,
+                              "direction": "horizontal",
+                              "wrap": false,
+                              "alignment": {
+                                "main": "start",
+                                "cross": "center"
+                              }
+                            },
+                            "style": {},
+                            "children": [
+                              {
+                                "id": "field-name.label",
+                                "name": "field-name.label",
+                                "type": "Text",
+                                "layout": {
+                                  "width": {
+                                    "mode": "fixed",
+                                    "value": 28
+                                  },
+                                  "height": {
+                                    "mode": "fixed",
+                                    "value": 22
+                                  },
+                                  "padding": {
+                                    "top": 0,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0
+                                  },
+                                  "gap": 0,
+                                  "direction": "vertical",
+                                  "wrap": false,
+                                  "alignment": {
+                                    "main": "start",
+                                    "cross": "start"
+                                  }
+                                },
+                                "style": {
+                                  "typographyToken": {
+                                    "fontFamily": "platform-default",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": 22,
+                                    "letterSpacing": 0
+                                  },
+                                  "colorToken": "#20252b"
+                                },
+                                "text": "姓名",
+                                "fontName": {
+                                  "family": "Inter",
+                                  "style": "Regular"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "id": "layout.item.1.0.slot.control",
+                            "name": "layout.item.1.0.slot.control",
+                            "type": "Frame",
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 240
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 32
+                              },
+                              "padding": {
+                                "top": 0,
+                                "right": 0,
+                                "bottom": 0,
+                                "left": 0
+                              },
+                              "gap": 8,
+                              "direction": "horizontal",
+                              "wrap": false,
+                              "alignment": {
+                                "main": "start",
+                                "cross": "center"
+                              }
+                            },
+                            "style": {},
+                            "children": [
+                              {
+                                "id": "layout.item.1.0.instance",
+                                "name": "layout.item.1.0.instance",
+                                "type": "ComponentInstance",
+                                "layout": {
+                                  "width": {
+                                    "mode": "fixed",
+                                    "value": 240
+                                  },
+                                  "height": {
+                                    "mode": "fixed",
+                                    "value": 32
+                                  },
+                                  "padding": {
+                                    "top": 0,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0
+                                  },
+                                  "gap": 0,
+                                  "direction": "vertical",
+                                  "wrap": false,
+                                  "alignment": {
+                                    "main": "start",
+                                    "cross": "start"
+                                  }
+                                },
+                                "style": {},
+                                "componentReference": "141:3",
+                                "fidelityReportSha256": "fd577dc95de3a217d5100c750fb615f6718b775ddea363fadc9a46b18e1f4821"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "layout.item.1.1",
+                        "name": "layout.item.1.1",
+                        "type": "Frame",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 448.0
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 62.0
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": 0
+                          },
+                          "gap": 8,
+                          "direction": "vertical",
+                          "wrap": false,
+                          "alignment": {
+                            "main": "start",
+                            "cross": "start"
+                          }
+                        },
+                        "style": {},
+                        "children": [
+                          {
+                            "id": "layout.item.1.1.slot.label",
+                            "name": "layout.item.1.1.slot.label",
+                            "type": "Frame",
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 28
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 22
+                              },
+                              "padding": {
+                                "top": 0,
+                                "right": 0,
+                                "bottom": 0,
+                                "left": 0
+                              },
+                              "gap": 8,
+                              "direction": "horizontal",
+                              "wrap": false,
+                              "alignment": {
+                                "main": "start",
+                                "cross": "center"
+                              }
+                            },
+                            "style": {},
+                            "children": [
+                              {
+                                "id": "field-status.label",
+                                "name": "field-status.label",
+                                "type": "Text",
+                                "layout": {
+                                  "width": {
+                                    "mode": "fixed",
+                                    "value": 28
+                                  },
+                                  "height": {
+                                    "mode": "fixed",
+                                    "value": 22
+                                  },
+                                  "padding": {
+                                    "top": 0,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0
+                                  },
+                                  "gap": 0,
+                                  "direction": "vertical",
+                                  "wrap": false,
+                                  "alignment": {
+                                    "main": "start",
+                                    "cross": "start"
+                                  }
+                                },
+                                "style": {
+                                  "typographyToken": {
+                                    "fontFamily": "platform-default",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": 22,
+                                    "letterSpacing": 0
+                                  },
+                                  "colorToken": "#20252b"
+                                },
+                                "text": "状态",
+                                "fontName": {
+                                  "family": "Inter",
+                                  "style": "Regular"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "id": "layout.item.1.1.slot.control",
+                            "name": "layout.item.1.1.slot.control",
+                            "type": "Frame",
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 240
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 32
+                              },
+                              "padding": {
+                                "top": 0,
+                                "right": 0,
+                                "bottom": 0,
+                                "left": 0
+                              },
+                              "gap": 8,
+                              "direction": "horizontal",
+                              "wrap": false,
+                              "alignment": {
+                                "main": "start",
+                                "cross": "center"
+                              }
+                            },
+                            "style": {},
+                            "children": [
+                              {
+                                "id": "layout.item.1.1.instance",
+                                "name": "layout.item.1.1.instance",
+                                "type": "ComponentInstance",
+                                "layout": {
+                                  "width": {
+                                    "mode": "fixed",
+                                    "value": 240
+                                  },
+                                  "height": {
+                                    "mode": "fixed",
+                                    "value": 32
+                                  },
+                                  "padding": {
+                                    "top": 0,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0
+                                  },
+                                  "gap": 0,
+                                  "direction": "vertical",
+                                  "wrap": false,
+                                  "alignment": {
+                                    "main": "start",
+                                    "cross": "start"
+                                  }
+                                },
+                                "style": {},
+                                "componentReference": "152:10",
+                                "fidelityReportSha256": "9e2ca09d90fa48cd3bcb18cef783b90bac255e2cf85c43e7c85925eb79dc2a7a"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "layout.group.1.buttons",
+                    "name": "layout.group.1.buttons",
+                    "type": "HorizontalStack",
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1840.0
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 32.0
+                      },
+                      "padding": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "gap": 8,
+                      "direction": "horizontal",
+                      "wrap": true,
+                      "alignment": {
+                        "main": "end",
+                        "cross": "center"
+                      }
+                    },
+                    "style": {},
+                    "children": [
+                      {
+                        "id": "layout.item.1.2",
+                        "name": "layout.item.1.2",
+                        "type": "Frame",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 60.0
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 32.0
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": 0
+                          },
+                          "gap": 0,
+                          "direction": "vertical",
+                          "wrap": false,
+                          "alignment": {
+                            "main": "start",
+                            "cross": "start"
+                          }
+                        },
+                        "style": {},
+                        "children": [
+                          {
+                            "id": "layout.item.1.2.instance",
+                            "name": "layout.item.1.2.instance",
+                            "type": "ComponentInstance",
+                            "layout": {
+                              "width": {
+                                "mode": "fixed",
+                                "value": 60
+                              },
+                              "height": {
+                                "mode": "fixed",
+                                "value": 32
+                              },
+                              "padding": {
+                                "top": 0,
+                                "right": 0,
+                                "bottom": 0,
+                                "left": 0
+                              },
+                              "gap": 0,
+                              "direction": "vertical",
+                              "wrap": false,
+                              "alignment": {
+                                "main": "start",
+                                "cross": "start"
+                              }
+                            },
+                            "style": {},
+                            "componentReference": "135:15",
+                            "fidelityReportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "pattern.table",
+            "name": "pattern.table",
+            "type": "Section",
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 1872.0
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 268.0
+              },
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "gap": 16,
+              "direction": "vertical",
+              "wrap": false,
+              "alignment": {
+                "main": "start",
+                "cross": "start"
+              }
+            },
+            "style": {
+              "fill": "#ffffff"
+            },
+            "children": [
+              {
+                "id": "layout.item.2.1",
+                "name": "layout.item.2.1",
+                "type": "Frame",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1872.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 22.0
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 0,
+                  "direction": "vertical",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "start",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "children": [
+                  {
+                    "id": "layout.item.2.1.instance",
+                    "name": "layout.item.2.1.instance",
+                    "type": "Text",
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 56
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 22
+                      },
+                      "padding": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "gap": 0,
+                      "direction": "vertical",
+                      "wrap": false,
+                      "alignment": {
+                        "main": "start",
+                        "cross": "start"
+                      }
+                    },
+                    "style": {
+                      "typographyToken": {
+                        "fontFamily": "platform-default",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": 22,
+                        "letterSpacing": 0
+                      },
+                      "colorToken": "#20252b"
+                    },
+                    "text": "用户列表",
+                    "fontName": {
+                      "family": "Inter",
+                      "style": "Regular"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "layout.item.2.0",
+                "name": "layout.item.2.0",
+                "type": "Frame",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1872.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 192.0
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 0,
+                  "direction": "vertical",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "start",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "children": [
+                  {
+                    "id": "layout.item.2.0.header",
+                    "name": "layout.item.2.0.header",
+                    "type": "Row",
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1392
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 48
+                      },
+                      "padding": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "gap": 0,
+                      "direction": "horizontal",
+                      "wrap": false,
+                      "alignment": {
+                        "main": "start",
+                        "cross": "start"
+                      }
+                    },
+                    "style": {},
+                    "children": [
+                      {
+                        "id": "layout.item.2.0.header.column.0",
+                        "name": "layout.item.2.0.header.column.0",
+                        "type": "Frame",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 464.328125
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 48
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": 16
+                          },
+                          "gap": 0,
+                          "direction": "horizontal",
+                          "wrap": false,
+                          "alignment": {
+                            "main": "start",
+                            "cross": "center"
+                          }
+                        },
+                        "style": {},
+                        "children": [
+                          {
+                            "id": "layout.item.2.0.header.column.0.text",
+                            "name": "layout.item.2.0.header.column.0.text",
+                            "type": "Text",
+                            "layout": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              },
+                              "padding": {
+                                "top": 0,
+                                "right": 0,
+                                "bottom": 0,
+                                "left": 0
+                              },
+                              "gap": 0,
+                              "direction": "vertical",
+                              "wrap": false,
+                              "alignment": {
+                                "main": "start",
+                                "cross": "start"
+                              }
+                            },
+                            "style": {
+                              "typographyToken": {
+                                "fontFamily": "platform-default",
+                                "fontSize": 14,
+                                "fontWeight": 400,
+                                "lineHeight": 22,
+                                "letterSpacing": 0
+                              },
+                              "colorToken": "#20252b"
+                            },
+                            "text": "姓名",
+                            "fontName": {
+                              "family": "Inter",
+                              "style": "Regular"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "layout.item.2.0.header.column.1",
+                        "name": "layout.item.2.0.header.column.1",
+                        "type": "Frame",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 464.328125
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 48
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": 16
+                          },
+                          "gap": 0,
+                          "direction": "horizontal",
+                          "wrap": false,
+                          "alignment": {
+                            "main": "start",
+                            "cross": "center"
+                          }
+                        },
+                        "style": {},
+                        "children": [
+                          {
+                            "id": "layout.item.2.0.header.column.1.text",
+                            "name": "layout.item.2.0.header.column.1.text",
+                            "type": "Text",
+                            "layout": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              },
+                              "padding": {
+                                "top": 0,
+                                "right": 0,
+                                "bottom": 0,
+                                "left": 0
+                              },
+                              "gap": 0,
+                              "direction": "vertical",
+                              "wrap": false,
+                              "alignment": {
+                                "main": "start",
+                                "cross": "start"
+                              }
+                            },
+                            "style": {
+                              "typographyToken": {
+                                "fontFamily": "platform-default",
+                                "fontSize": 14,
+                                "fontWeight": 400,
+                                "lineHeight": 22,
+                                "letterSpacing": 0
+                              },
+                              "colorToken": "#20252b"
+                            },
+                            "text": "状态",
+                            "fontName": {
+                              "family": "Inter",
+                              "style": "Regular"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "layout.item.2.0.header.column.2",
+                        "name": "layout.item.2.0.header.column.2",
+                        "type": "Frame",
+                        "layout": {
+                          "width": {
+                            "mode": "fixed",
+                            "value": 463.34375
+                          },
+                          "height": {
+                            "mode": "fixed",
+                            "value": 48
+                          },
+                          "padding": {
+                            "top": 0,
+                            "right": 0,
+                            "bottom": 0,
+                            "left": 16
+                          },
+                          "gap": 0,
+                          "direction": "horizontal",
+                          "wrap": false,
+                          "alignment": {
+                            "main": "start",
+                            "cross": "center"
+                          }
+                        },
+                        "style": {},
+                        "children": [
+                          {
+                            "id": "layout.item.2.0.header.column.2.text",
+                            "name": "layout.item.2.0.header.column.2.text",
+                            "type": "Text",
+                            "layout": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              },
+                              "padding": {
+                                "top": 0,
+                                "right": 0,
+                                "bottom": 0,
+                                "left": 0
+                              },
+                              "gap": 0,
+                              "direction": "vertical",
+                              "wrap": false,
+                              "alignment": {
+                                "main": "start",
+                                "cross": "start"
+                              }
+                            },
+                            "style": {
+                              "typographyToken": {
+                                "fontFamily": "platform-default",
+                                "fontSize": 14,
+                                "fontWeight": 400,
+                                "lineHeight": 22,
+                                "letterSpacing": 0
+                              },
+                              "colorToken": "#20252b"
+                            },
+                            "text": "角色",
+                            "fontName": {
+                              "family": "Inter",
+                              "style": "Regular"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "layout.item.2.0.instance",
+                    "name": "layout.item.2.0.instance",
+                    "type": "ComponentInstance",
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1392
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 144
+                      },
+                      "padding": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "gap": 0,
+                      "direction": "vertical",
+                      "wrap": false,
+                      "alignment": {
+                        "main": "start",
+                        "cross": "start"
+                      }
+                    },
+                    "style": {},
+                    "componentReference": "157:3",
+                    "fidelityReportSha256": "5de53c3d771de75895b3db979aeb22dfb0c61c240749b7de575cabe564d300cc"
+                  }
+                ]
+              },
+              {
+                "id": "layout.item.2.2",
+                "name": "layout.item.2.2",
+                "type": "Frame",
+                "layout": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1872.0
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 22.0
+                  },
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "gap": 0,
+                  "direction": "vertical",
+                  "wrap": false,
+                  "alignment": {
+                    "main": "start",
+                    "cross": "start"
+                  }
+                },
+                "style": {},
+                "children": [
+                  {
+                    "id": "layout.item.2.2.instance",
+                    "name": "layout.item.2.2.instance",
+                    "type": "Text",
+                    "layout": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 73
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 22
+                      },
+                      "padding": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "gap": 0,
+                      "direction": "vertical",
+                      "wrap": false,
+                      "alignment": {
+                        "main": "start",
+                        "cross": "start"
+                      }
+                    },
+                    "style": {
+                      "typographyToken": {
+                        "fontFamily": "platform-default",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": 22,
+                        "letterSpacing": 0
+                      },
+                      "colorToken": "#20252b"
+                    },
+                    "text": "共 3 位用户",
+                    "fontName": {
+                      "family": "Inter",
+                      "style": "Regular"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

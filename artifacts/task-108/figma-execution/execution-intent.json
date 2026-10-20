@@ -1,0 +1,14 @@
+{
+  "platform": "figma",
+  "pageIndex": 0,
+  "pageReference": "240:2",
+  "executionScriptSha256": "46d882f34b61daade135cc9bd2a851a6f1ecdca07224d7b3aab5f57f814810b8",
+  "planSha256": "af713602ff886143d2c0f6e7430254f623300d19c658eff35d931c77bfb4286b",
+  "scope": "v02-verified-adapter-execution-intent",
+  "status": "READY_TO_EXECUTE",
+  "lockSha256": "24dd78795d5fdc486bfb6cf69c74554e3f3846630ac5741612fdb2bb1aa10103",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "uiIrSha256": "6e3768d799efb28b01e7e02e80dc8bfd5b5feee2ba598bc379cf28f4f598ae65",
+  "nativeExecution": "NOT_RUN",
+  "releaseReady": false
+}

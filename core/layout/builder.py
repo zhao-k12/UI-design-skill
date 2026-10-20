@@ -60,6 +60,8 @@ def generate(analysis, page_tree, source_root, review, plan, registry, *, allow_
             role = plan['sectionRegions'][section['id']]
             config=plan.get('sectionConfigs',{}).get(section['id'],{})
             if 'inlineOrder' in config and not config.get('inlineGrid'):raise ValueError('Inline order requires inline Grid')
+            if 'buttonAlignment' in config and config.get('inlineGrid'):
+                raise ValueError('Button alignment requires a separate action row')
             groups = {'fields': [], 'buttons': [], 'content': []}
             for item in section['children']:
                 category = item['kind']
@@ -91,11 +93,13 @@ def generate(analysis, page_tree, source_root, review, plan, registry, *, allow_
                 region_nodes[role]=ordered;region_sources[role]=section['id'];continue
             for category, node_type, gap in (('fields', 'Grid', RULES['fieldGap']), ('buttons', 'HorizontalStack', RULES['buttonGap'])):
                 if groups[category]:
-                    config = {**layout(), 'gap': {'token': gap}, 'wrap': True}
+                    group_layout = {**layout(), 'gap': {'token': gap}, 'wrap': True}
                     if node_type == 'Grid':
-                        config['gridColumns'] = RULES['gridColumns']
+                        group_layout['gridColumns'] = RULES['gridColumns']
+                    elif 'buttonAlignment' in config:
+                        group_layout['alignment'] = {'main': config['buttonAlignment'], 'cross': 'center'}
                     nodes.append({'id': f'layout.group.{index}.{category}', 'type': node_type,
-                                  'layout': config, 'children': groups[category],
+                                  'layout': group_layout, 'children': groups[category],
                                   'sourceIds': [section['id']],
                                   'constraints': {'minWidth': max(c['measurement']['width'] for c in groups[category])}})
             content=groups['content'];row_groups=config.get('contentRows',[]);claimed=set();row_starts={}

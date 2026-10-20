@@ -106,6 +106,16 @@ class LayoutBuilderTests(unittest.TestCase):
         self.assertFalse(report['readyForMapping'])
         self.assertIsNone(report['engineReport']['skeleton'])
 
+    def test_explicit_button_row_alignment(self):
+        self.plan['sectionConfigs'] = {'filters': {'buttonAlignment': 'end'}}
+        tree, report = self.run_plan()
+        self.assertEqual(report['status'], 'PASS', report)
+        query = next(node for node in tree['page']['children'] if node['role'] == 'query')
+        buttons = next(node for node in query['children'][0]['children'] if node['id'].endswith('.buttons'))
+        self.assertEqual(buttons['layout']['alignment'], {'main': 'end', 'cross': 'center'})
+        self.plan['sectionConfigs']['filters']['inlineGrid'] = True
+        self.assertEqual(self.run_plan()[1]['status'], 'FAIL')
+
     def test_all_standard_pattern_families(self):
         for pattern, region in [('list-page', 'query'), ('detail-page', 'detail'),
                                 ('form-page', 'form'), ('dashboard-basic', 'content'),

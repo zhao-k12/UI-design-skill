@@ -88,6 +88,9 @@
           "inlineGrid": {
             "type": "boolean"
           },
+          "buttonAlignment": {
+            "enum": ["start", "end"]
+          },
           "contentOrder": {
             "type": "array",
             "minItems": 1,

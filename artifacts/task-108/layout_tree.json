@@ -1,0 +1,378 @@
+{
+  "layoutTreeVersion": "0.1.0",
+  "pattern": "list-page",
+  "page": {
+    "id": "pattern.page",
+    "type": "Page",
+    "layout": {
+      "width": {
+        "mode": "fixed",
+        "value": {
+          "token": "size.page"
+        }
+      },
+      "height": {
+        "mode": "hug"
+      },
+      "direction": "vertical",
+      "gap": {
+        "token": "spacing.section"
+      },
+      "padding": {
+        "top": {
+          "token": "spacing.page"
+        },
+        "right": {
+          "token": "spacing.page"
+        },
+        "bottom": {
+          "token": "spacing.page"
+        },
+        "left": {
+          "token": "spacing.page"
+        }
+      }
+    },
+    "children": [
+      {
+        "id": "pattern.header",
+        "type": "Section",
+        "role": "header",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "layout.item.0.0",
+            "type": "Cell",
+            "sourceIds": [
+              "header-title"
+            ],
+            "measurement": {
+              "width": 1392,
+              "height": 28,
+              "source": {
+                "kind": "runtime",
+                "reference": "metrics.header-title"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "constraints": {
+              "minWidth": 1392
+            }
+          }
+        ],
+        "sourceIds": [
+          "header"
+        ]
+      },
+      {
+        "id": "pattern.query",
+        "type": "Section",
+        "role": "query",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          },
+          "padding": {
+            "top": {
+              "token": "spacing.md"
+            },
+            "right": {
+              "token": "spacing.md"
+            },
+            "bottom": {
+              "token": "spacing.md"
+            },
+            "left": {
+              "token": "spacing.md"
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "pattern.query.grid",
+            "type": "Grid",
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              },
+              "gridColumns": 24,
+              "gap": {
+                "token": "spacing.md"
+              },
+              "wrap": true
+            },
+            "children": [
+              {
+                "id": "layout.group.1.fields",
+                "type": "Grid",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "gap": {
+                    "token": "spacing.md"
+                  },
+                  "wrap": true,
+                  "gridColumns": 24,
+                  "span": 24
+                },
+                "children": [
+                  {
+                    "id": "layout.item.1.0",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "field-name"
+                    ],
+                    "measurement": {
+                      "width": 328,
+                      "height": 62,
+                      "source": {
+                        "kind": "runtime",
+                        "reference": "metrics.field-name"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "fill"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      },
+                      "span": 6
+                    },
+                    "role": "field"
+                  },
+                  {
+                    "id": "layout.item.1.1",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "field-status"
+                    ],
+                    "measurement": {
+                      "width": 328,
+                      "height": 62,
+                      "source": {
+                        "kind": "runtime",
+                        "reference": "metrics.field-status"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "fill"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      },
+                      "span": 6
+                    },
+                    "role": "field"
+                  }
+                ],
+                "sourceIds": [
+                  "query"
+                ],
+                "constraints": {
+                  "minWidth": 328
+                }
+              },
+              {
+                "id": "layout.group.1.buttons",
+                "type": "HorizontalStack",
+                "layout": {
+                  "width": {
+                    "mode": "fill"
+                  },
+                  "height": {
+                    "mode": "hug"
+                  },
+                  "gap": {
+                    "token": "spacing.sm"
+                  },
+                  "wrap": true,
+                  "alignment": {
+                    "main": "end",
+                    "cross": "center"
+                  },
+                  "span": 24
+                },
+                "children": [
+                  {
+                    "id": "layout.item.1.2",
+                    "type": "Cell",
+                    "sourceIds": [
+                      "query-action"
+                    ],
+                    "measurement": {
+                      "width": 60,
+                      "height": 32,
+                      "source": {
+                        "kind": "runtime",
+                        "reference": "metrics.query-action"
+                      }
+                    },
+                    "layout": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    }
+                  }
+                ],
+                "sourceIds": [
+                  "query"
+                ],
+                "constraints": {
+                  "minWidth": 60
+                }
+              }
+            ]
+          }
+        ],
+        "sourceIds": [
+          "query"
+        ]
+      },
+      {
+        "id": "pattern.table",
+        "type": "Section",
+        "role": "table",
+        "layout": {
+          "width": {
+            "mode": "fill"
+          },
+          "height": {
+            "mode": "hug"
+          },
+          "direction": "vertical",
+          "gap": {
+            "token": "spacing.md"
+          }
+        },
+        "children": [
+          {
+            "id": "layout.item.2.1",
+            "type": "Cell",
+            "sourceIds": [
+              "list-title"
+            ],
+            "measurement": {
+              "width": 56,
+              "height": 22,
+              "source": {
+                "kind": "runtime",
+                "reference": "metrics.list-title"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "constraints": {
+              "minWidth": 56
+            }
+          },
+          {
+            "id": "layout.item.2.0",
+            "type": "Cell",
+            "sourceIds": [
+              "user-table"
+            ],
+            "measurement": {
+              "width": 1392,
+              "height": 192,
+              "source": {
+                "kind": "runtime",
+                "reference": "metrics.user-table"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "constraints": {
+              "minWidth": 1392
+            }
+          },
+          {
+            "id": "layout.item.2.2",
+            "type": "Cell",
+            "sourceIds": [
+              "list-summary"
+            ],
+            "measurement": {
+              "width": 73,
+              "height": 22,
+              "source": {
+                "kind": "runtime",
+                "reference": "metrics.list-summary"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fill"
+              },
+              "height": {
+                "mode": "hug"
+              }
+            },
+            "constraints": {
+              "minWidth": 73
+            }
+          }
+        ],
+        "sourceIds": [
+          "list"
+        ]
+      }
+    ],
+    "constraints": {
+      "minHeight": {
+        "token": "size.page-min-height"
+      }
+    },
+    "sourceIds": [
+      "user-management-compact-search"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 # V0.2 发布就绪状态
 
-当前状态见 [TASK-107 实时重算审计](../artifacts/task-107/current-release-readiness.json)：**NOT_READY**，现有证据有效。18 类目标在 Figma 侧都有证据，7 类固定配置正式双端准入、11 类仅完成 Figma QA；当前 Figma Adapter 字节锁和冻结样张原生回执 PASS。Penpot 线暂缓，独立新原型和全量 Release Gate 未执行。下方 TASK-053 表格是 2026-10-14 历史快照。
+当前状态见 [TASK-108 实时重算审计](../artifacts/task-108/current-release-readiness.json)：**NOT_READY**，现有证据有效。18 类目标在 Figma 侧都有证据，7 类固定配置正式双端准入、11 类仅完成 Figma QA；当前 Figma Adapter 字节锁和冻结样张原生回执 PASS。另一份经用户审核的[紧凑查询原型](../examples/user-management-compact-search/prototype.txt)已通过 Figma 九阶段到原生输出的独立端到端验收；Penpot 线暂缓，双端及全量 Release Gate 未完成。下方 TASK-053 表格是 2026-10-14 历史快照。
 
 截至 2026-10-14：**NOT_READY**。只读 [机器审计](../artifacts/task-053/release-readiness.json) 验证当前证据字节与范围；`evidenceValid=true` 表示现有证据一致，不表示已通过全量发布门。重新运行：
 
@@ -34,4 +34,4 @@ TASK-106 修复锁漂移时错误清空 Core 成果的问题：现在明确标�
 
 当前 `policies/component-coverage-0.2.0.json` 是早期计划快照，不能将其中的 `NOT_RUN` 理解为 V0.2.3 四个固定配置尚未准入，也不能原地改写它来扩展准入。实际准入以 `registries/components/v0.2.3/admission.json` 和对应两端绑定为准。除这四项固定配置以外的文本、尺寸、状态和 Props 仍按 Missing/Unsupported 处理。
 
-下一步准备独立新原型；Penpot 原生线在用户决定恢复前保持暂缓。V0.2 全量发布前，11 类 Figma 单端组件仍须双平台正式准入，且需以独立新原型执行 A–H 阶段和全部 Release Gate；不能从 TASK-052、TASK-102 或 TASK-104 冻结列表样张的 PASS 外推。
+独立新原型现已在 Figma 单端通过；Penpot 原生线在用户决定恢复前保持暂缓。V0.2 全量发布前，11 类 Figma 单端组件仍须双平台正式准入，且需完成新原型的 Penpot 端到端验收和全部 Release Gate；不能从单端 PASS 外推双端发布。

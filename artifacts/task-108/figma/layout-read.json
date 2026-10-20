@@ -1,0 +1,56 @@
+[
+  {
+    "name": "pattern.query",
+    "id": "240:11",
+    "type": "FRAME",
+    "x": 104,
+    "y": 156,
+    "width": 1872,
+    "height": 142
+  },
+  {
+    "name": "layout.group.1.fields",
+    "id": "240:15",
+    "type": "FRAME",
+    "x": 120,
+    "y": 172,
+    "width": 1840,
+    "height": 62
+  },
+  {
+    "name": "layout.group.1.buttons",
+    "id": "240:38",
+    "type": "FRAME",
+    "x": 120,
+    "y": 250,
+    "width": 1840,
+    "height": 32
+  },
+  {
+    "name": "layout.item.1.0.instance",
+    "id": "240:22",
+    "type": "INSTANCE",
+    "x": 120,
+    "y": 202,
+    "width": 240,
+    "height": 32
+  },
+  {
+    "name": "layout.item.1.1.instance",
+    "id": "240:30",
+    "type": "INSTANCE",
+    "x": 584,
+    "y": 202,
+    "width": 240,
+    "height": 32
+  },
+  {
+    "name": "layout.item.1.2.instance",
+    "id": "240:40",
+    "type": "INSTANCE",
+    "x": 1900,
+    "y": 250,
+    "width": 60,
+    "height": 32
+  }
+]
