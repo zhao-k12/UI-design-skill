@@ -10,7 +10,7 @@ import unittest
 
 from scripts.run_pipeline import profile_resources
 from validators.ui_ir import ROOT, load_json
-from adapters.byte_lock import verify as verify_byte_lock, verify_execution_script, script_for_page
+from adapters.byte_lock import verify as verify_byte_lock, verify_platform, verify_execution_script, script_for_page
 from scripts.prepare_adapter_execution import prepare as prepare_execution
 
 
@@ -89,6 +89,13 @@ class V02PipelineProfileTests(unittest.TestCase):
             changed['platforms']['figma']['sourceFiles']['adapters/figma/runtime.js'] = '0' * 64
             with self.assertRaisesRegex(ValueError, 'byte lock changed'):
                 verify_byte_lock(changed, plans)
+            penpot_changed = deepcopy(lock)
+            penpot_changed['platforms']['penpot']['sourceFiles']['adapters/penpot/runtime.js'] = '0' * 64
+            self.assertEqual(verify_execution_script(penpot_changed, {'figma': plans['figma']},
+                                                     'figma', script)['executionScriptSha256'],
+                             receipt['executionScriptSha256'])
+            with self.assertRaisesRegex(ValueError, 'byte lock changed for penpot'):
+                verify_platform(penpot_changed, 'penpot', plans['penpot'])
             repeated = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
             self.assertEqual(repeated.returncode, 0, repeated.stdout + repeated.stderr)
             (output / 'adapter-execution-lock.json').write_text(

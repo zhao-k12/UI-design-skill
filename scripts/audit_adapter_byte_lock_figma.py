@@ -33,8 +33,7 @@ def audit(run_dir, execution_dir, native_dir):
     run_dir, execution_dir, native_dir = map(Path, (run_dir, execution_dir, native_dir))
     issues = []
     lock = load_json(run_dir / "adapter-execution-lock.json")
-    plans = {platform: load_json(run_dir / f"{platform}_preflight.json")["plan"]
-             for platform in ("figma", "penpot")}
+    plans = {"figma": load_json(run_dir / "figma_preflight.json")["plan"]}
     intent = load_json(execution_dir / "execution-intent.json")
     script = (execution_dir / "execution.js").read_text(encoding="utf-8")
     page_index = intent["pageIndex"]

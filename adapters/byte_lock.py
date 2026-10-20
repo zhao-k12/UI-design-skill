@@ -48,29 +48,31 @@ def script_for_page(platform, plan, index, page_reference=None):
     return compile_script(plan, index, page_reference=page_reference)
 
 
+def build_platform(platform, plan, root=ROOT):
+    root = Path(root).resolve()
+    if not isinstance(plan, dict) or not plan.get("pages") or not plan.get("fileReference"):
+        raise ValueError("Complete Adapter plan required: " + platform)
+    files = {}
+    for path in source_files(platform, root):
+        if not path.is_relative_to(root) or not path.is_file():
+            raise ValueError("Adapter source missing or escaped root")
+        files[path.relative_to(root).as_posix()] = digest(path.read_bytes())
+    return {
+        "adapterVersion": plan["adapterVersion"],
+        "fileReference": plan["fileReference"],
+        "uiIrSha256": plan["uiIrSha256"],
+        "sourceFiles": files,
+        "planSha256": digest(canonical(plan)),
+        "createScriptSha256": [digest(script_for_page(platform, plan, index).encode("utf-8"))
+                               for index in range(len(plan["pages"]))],
+    }
+
+
 def build(plans, root=ROOT):
     if set(plans) != {"figma", "penpot"}:
         raise ValueError("Both Adapter plans are required")
-    root = Path(root).resolve()
-    platforms = {}
-    for platform in ("figma", "penpot"):
-        plan = plans[platform]
-        if not isinstance(plan, dict) or not plan.get("pages") or not plan.get("fileReference"):
-            raise ValueError("Complete Adapter plan required: " + platform)
-        files = {}
-        for path in source_files(platform, root):
-            if not path.is_relative_to(root) or not path.is_file():
-                raise ValueError("Adapter source missing or escaped root")
-            files[path.relative_to(root).as_posix()] = digest(path.read_bytes())
-        platforms[platform] = {
-            "adapterVersion": plan["adapterVersion"],
-            "fileReference": plan["fileReference"],
-            "uiIrSha256": plan["uiIrSha256"],
-            "sourceFiles": files,
-            "planSha256": digest(canonical(plan)),
-            "createScriptSha256": [digest(script_for_page(platform, plan, index).encode("utf-8"))
-                                   for index in range(len(plan["pages"]))],
-        }
+    platforms = {platform: build_platform(platform, plans[platform], root)
+                 for platform in ("figma", "penpot")}
     if platforms["figma"]["uiIrSha256"] != platforms["penpot"]["uiIrSha256"]:
         raise ValueError("Adapter plans do not share one UI-IR")
     return {"lockSchemaVersion": VERSION, "scope": "v02-adapter-preflight-byte-lock",
@@ -83,11 +85,17 @@ def verify(lock, plans, root=ROOT):
     return True
 
 
+def verify_platform(lock, platform, plan, root=ROOT):
+    if lock.get("lockSchemaVersion") != VERSION or lock.get("scope") != "v02-adapter-preflight-byte-lock":
+        raise ValueError("Unsupported Adapter byte lock schema")
+    if lock.get("platforms", {}).get(platform) != build_platform(platform, plan, root):
+        raise ValueError("Adapter byte lock changed for " + platform)
+    return True
+
+
 def verify_execution_script(lock, plans, platform, script, page_index=0,
                             page_reference=None, root=ROOT):
-    verify(lock, plans, root)
-    if platform not in lock["platforms"]:
-        raise ValueError("Unknown Adapter platform")
+    verify_platform(lock, platform, plans[platform], root)
     expected = script_for_page(platform, plans[platform], page_index,
                                page_reference=page_reference)
     if script != expected:

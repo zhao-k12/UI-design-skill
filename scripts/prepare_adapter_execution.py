@@ -20,8 +20,7 @@ def prepare(run_dir, platform, output_dir, *, page_index=0, page_reference=None)
         raise ValueError("Execution output needs its own directory")
     lock_path = run_dir / "adapter-execution-lock.json"
     lock = load_json(lock_path)
-    plans = {name: load_json(run_dir / f"{name}_preflight.json")["plan"]
-             for name in ("figma", "penpot")}
+    plans = {platform: load_json(run_dir / f"{platform}_preflight.json")["plan"]}
     script = script_for_page(platform, plans[platform], page_index,
                              page_reference=page_reference)
     receipt = verify_execution_script(lock, plans, platform, script, page_index,

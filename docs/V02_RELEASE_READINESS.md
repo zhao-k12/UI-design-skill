@@ -12,6 +12,8 @@ Adapter 字节锁 [版本化迁移方案](../.dev/TASK-102_ADAPTER_BYTE_LOCK_PRO
 
 TASK-104 已在新的 Figma 验证页 [保存完整执行回执](../artifacts/task-104/figma-execution/execution-result.json)并通过 [回执/原生读回审计](../artifacts/task-104/figma-native-qa.json)。这使冻结列表样张的 Figma 单端执行证据闭环；独立新原型、11 类组件双端准入和 Penpot 发布锁仍未完成。
 
+TASK-105 将执行校验改为真正逐端失效，并在新的 Figma 页以 [当前字节锁](../artifacts/task-105/run/adapter-execution-lock.json)重新执行冻结样张；[完整回执与原生审计](../artifacts/task-105/figma-native-qa.json) PASS。TASK-102/104 的锁和证据保持其旧代码字节快照，不迁移复用。Figma 当前锁仅在这一限定样张通过。
+
 ```powershell
 .\.venv\Scripts\python.exe scripts/audit_v02_release_readiness.py --output artifacts/task-053/release-readiness.json
 ```
