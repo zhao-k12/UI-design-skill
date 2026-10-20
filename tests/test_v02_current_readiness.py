@@ -17,6 +17,7 @@ class V02CurrentReadinessTests(unittest.TestCase):
         self.assertEqual(report["gates"]["penpotAdapterByteLockNativeReceipt"], "DEFERRED")
         self.assertEqual(report["gates"]["newIndependentPrototypeFigmaE2E"], "PASS")
         self.assertEqual(report["gates"]["newIndependentPrototypePenpotE2E"], "DEFERRED")
+        self.assertEqual(report["gates"]["figmaScopedReleaseGates"], "PASS")
 
     def test_native_png_drift_invalidates_current_report(self):
         source = ROOT / "artifacts/task-106/figma"

@@ -1,0 +1,757 @@
+{
+  "pageReference": "240:2",
+  "root": {
+    "id": "240:3",
+    "box": {
+      "x": 80,
+      "y": 80,
+      "width": 1920,
+      "height": 1080
+    },
+    "clipsContent": false,
+    "visible": true
+  },
+  "texts": [
+    {
+      "id": "240:7",
+      "name": "layout.item.0.0.instance",
+      "characters": "用户管理",
+      "visible": true,
+      "box": {
+        "x": 104,
+        "y": 104,
+        "width": 80,
+        "height": 28
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": []
+    },
+    {
+      "id": "240:20",
+      "name": "field-name.label",
+      "characters": "姓名",
+      "visible": true,
+      "box": {
+        "x": 120,
+        "y": 172,
+        "width": 28,
+        "height": 22
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:17",
+          "name": "layout.group.1.fields/grid-cell/layout.item.1.0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 448,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:16",
+          "name": "layout.group.1.fields/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:14",
+          "name": "pattern.query.grid/grid-cell/layout.group.1.fields",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:13",
+          "name": "pattern.query.grid/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:22;141:5",
+      "name": "placeholder",
+      "characters": "请输入姓名",
+      "visible": true,
+      "box": {
+        "x": 128,
+        "y": 207.5,
+        "width": 70,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "clippingAncestors": [
+        {
+          "id": "I240:22;141:4",
+          "name": "field",
+          "box": {
+            "x": 120,
+            "y": 202,
+            "width": 240,
+            "height": 32
+          }
+        },
+        {
+          "id": "240:17",
+          "name": "layout.group.1.fields/grid-cell/layout.item.1.0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 448,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:16",
+          "name": "layout.group.1.fields/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:14",
+          "name": "pattern.query.grid/grid-cell/layout.group.1.fields",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:13",
+          "name": "pattern.query.grid/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        }
+      ]
+    },
+    {
+      "id": "240:28",
+      "name": "field-status.label",
+      "characters": "状态",
+      "visible": true,
+      "box": {
+        "x": 584,
+        "y": 172,
+        "width": 28,
+        "height": 22
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:25",
+          "name": "layout.group.1.fields/grid-cell/layout.item.1.1",
+          "box": {
+            "x": 584,
+            "y": 172,
+            "width": 448,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:16",
+          "name": "layout.group.1.fields/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:14",
+          "name": "pattern.query.grid/grid-cell/layout.group.1.fields",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:13",
+          "name": "pattern.query.grid/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:30;152:14",
+      "name": "source/selected-value-text",
+      "characters": "启用",
+      "visible": true,
+      "box": {
+        "x": 593,
+        "y": 203,
+        "width": 28,
+        "height": 30
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "clippingAncestors": [
+        {
+          "id": "I240:30;152:13",
+          "name": "source/selected-value",
+          "box": {
+            "x": 585,
+            "y": 203,
+            "width": 238,
+            "height": 30
+          }
+        },
+        {
+          "id": "I240:30;152:12",
+          "name": "source/0.0.1",
+          "box": {
+            "x": 585,
+            "y": 203,
+            "width": 238,
+            "height": 30
+          }
+        },
+        {
+          "id": "I240:30;152:11",
+          "name": "source/0.0",
+          "box": {
+            "x": 584,
+            "y": 202,
+            "width": 240,
+            "height": 32
+          }
+        },
+        {
+          "id": "240:30",
+          "name": "layout.item.1.1.instance",
+          "box": {
+            "x": 584,
+            "y": 202,
+            "width": 240,
+            "height": 32
+          }
+        },
+        {
+          "id": "240:25",
+          "name": "layout.group.1.fields/grid-cell/layout.item.1.1",
+          "box": {
+            "x": 584,
+            "y": 172,
+            "width": 448,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:16",
+          "name": "layout.group.1.fields/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:14",
+          "name": "pattern.query.grid/grid-cell/layout.group.1.fields",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:13",
+          "name": "pattern.query.grid/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:30;152:15",
+      "name": "source/ionicons-arrow",
+      "characters": "",
+      "visible": true,
+      "box": {
+        "x": 801,
+        "y": 211,
+        "width": 14,
+        "height": 14
+      },
+      "fontFamily": "Ionicons",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "I240:30;152:12",
+          "name": "source/0.0.1",
+          "box": {
+            "x": 585,
+            "y": 203,
+            "width": 238,
+            "height": 30
+          }
+        },
+        {
+          "id": "I240:30;152:11",
+          "name": "source/0.0",
+          "box": {
+            "x": 584,
+            "y": 202,
+            "width": 240,
+            "height": 32
+          }
+        },
+        {
+          "id": "240:30",
+          "name": "layout.item.1.1.instance",
+          "box": {
+            "x": 584,
+            "y": 202,
+            "width": 240,
+            "height": 32
+          }
+        },
+        {
+          "id": "240:25",
+          "name": "layout.group.1.fields/grid-cell/layout.item.1.1",
+          "box": {
+            "x": 584,
+            "y": 172,
+            "width": 448,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:16",
+          "name": "layout.group.1.fields/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:14",
+          "name": "pattern.query.grid/grid-cell/layout.group.1.fields",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        },
+        {
+          "id": "240:13",
+          "name": "pattern.query.grid/grid-row/0",
+          "box": {
+            "x": 120,
+            "y": 172,
+            "width": 1840,
+            "height": 62
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:40;135:16",
+      "name": "label",
+      "characters": "查询",
+      "visible": true,
+      "box": {
+        "x": 1916,
+        "y": 255.5,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "clippingAncestors": [
+        {
+          "id": "240:37",
+          "name": "pattern.query.grid/grid-cell/layout.group.1.buttons",
+          "box": {
+            "x": 120,
+            "y": 250,
+            "width": 1840,
+            "height": 32
+          }
+        },
+        {
+          "id": "240:36",
+          "name": "pattern.query.grid/grid-row/1",
+          "box": {
+            "x": 120,
+            "y": 250,
+            "width": 1840,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "id": "240:44",
+      "name": "layout.item.2.1.instance",
+      "characters": "用户列表",
+      "visible": true,
+      "box": {
+        "x": 104,
+        "y": 322,
+        "width": 56,
+        "height": 22
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": []
+    },
+    {
+      "id": "240:48",
+      "name": "layout.item.2.0.header.column.0.text",
+      "characters": "姓名",
+      "visible": true,
+      "box": {
+        "x": 120,
+        "y": 373,
+        "width": 28,
+        "height": 22
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "clippingAncestors": []
+    },
+    {
+      "id": "240:50",
+      "name": "layout.item.2.0.header.column.1.text",
+      "characters": "状态",
+      "visible": true,
+      "box": {
+        "x": 584.328125,
+        "y": 373,
+        "width": 28,
+        "height": 22
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "clippingAncestors": []
+    },
+    {
+      "id": "240:52",
+      "name": "layout.item.2.0.header.column.2.text",
+      "characters": "角色",
+      "visible": true,
+      "box": {
+        "x": 1048.65625,
+        "y": 373,
+        "width": 28,
+        "height": 22
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "clippingAncestors": []
+    },
+    {
+      "id": "I240:53;157:6",
+      "name": "source/0.0.0.0.1.0.0.0.0",
+      "characters": "张三",
+      "visible": true,
+      "box": {
+        "x": 122,
+        "y": 420,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:53;157:8",
+      "name": "source/0.0.0.0.1.0.1.0.0",
+      "characters": "启用",
+      "visible": true,
+      "box": {
+        "x": 586.328125,
+        "y": 420,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:53;157:10",
+      "name": "source/0.0.0.0.1.0.2.0.0",
+      "characters": "管理员",
+      "visible": true,
+      "box": {
+        "x": 1050.65625,
+        "y": 420,
+        "width": 42,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:53;157:14",
+      "name": "source/0.0.0.0.1.1.0.0.0",
+      "characters": "李四",
+      "visible": true,
+      "box": {
+        "x": 122,
+        "y": 468,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:53;157:16",
+      "name": "source/0.0.0.0.1.1.1.0.0",
+      "characters": "启用",
+      "visible": true,
+      "box": {
+        "x": 586.328125,
+        "y": 468,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:53;157:18",
+      "name": "source/0.0.0.0.1.1.2.0.0",
+      "characters": "编辑",
+      "visible": true,
+      "box": {
+        "x": 1050.65625,
+        "y": 468,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:53;157:22",
+      "name": "source/0.0.0.0.1.2.0.0.0",
+      "characters": "王五",
+      "visible": true,
+      "box": {
+        "x": 122,
+        "y": 516,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:53;157:24",
+      "name": "source/0.0.0.0.1.2.1.0.0",
+      "characters": "停用",
+      "visible": true,
+      "box": {
+        "x": 586.328125,
+        "y": 516,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "I240:53;157:26",
+      "name": "source/0.0.0.0.1.2.2.0.0",
+      "characters": "访客",
+      "visible": true,
+      "box": {
+        "x": 1050.65625,
+        "y": 516,
+        "width": 28,
+        "height": 21
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": [
+        {
+          "id": "240:53",
+          "name": "layout.item.2.0.instance",
+          "box": {
+            "x": 104,
+            "y": 408,
+            "width": 1392,
+            "height": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "240:80",
+      "name": "layout.item.2.2.instance",
+      "characters": "共 3 位用户",
+      "visible": true,
+      "box": {
+        "x": 104,
+        "y": 568,
+        "width": 73,
+        "height": 22
+      },
+      "fontFamily": "Inter",
+      "fontStyle": "Regular",
+      "textAutoResize": "NONE",
+      "clippingAncestors": []
+    }
+  ]
+}

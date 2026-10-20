@@ -1,0 +1,16 @@
+{
+  "scope": "v02-independent-compact-search-figma-visual-review",
+  "status": "PASS",
+  "reviewer": "Codex visual inspection of native Figma PNG",
+  "sourceImage": "artifacts/task-108/figma/native.png",
+  "sourceImageSha256": "71afd671d755ca36569f031df262f295472ea7d4374b49c7033157efa8ffedfc",
+  "checks": {
+    "headerAndSettingsIcon": "PASS",
+    "twoFieldsSameRow": "PASS",
+    "queryButtonSecondRowRight": "PASS",
+    "fixedThreeRowTableAndSummary": "PASS",
+    "removedScopeAndExportAbsent": "PASS",
+    "visibleTextAndControlsUnclipped": "PASS"
+  },
+  "limits": "Figma single-platform visual review; Penpot native and cross-platform visual comparison deferred."
+}

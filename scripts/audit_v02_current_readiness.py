@@ -9,6 +9,7 @@ sys.path.insert(0, str(ROOT))
 from scripts.audit_adapter_byte_lock_figma import audit as audit_figma_lock
 from scripts.audit_v02_compact_search_figma import audit as audit_independent_figma
 from scripts.audit_v02_component_coverage_figma import audit as audit_coverage
+from scripts.audit_v02_figma_release_gates import audit as audit_figma_release_gates
 
 
 def audit(root=ROOT, *, native_dir=None):
@@ -21,11 +22,13 @@ def audit(root=ROOT, *, native_dir=None):
     except (OSError, ValueError, KeyError, TypeError, IndexError) as exc:
         figma_lock = {"status": "FAIL", "issues": ["figma_lock_evidence_invalid: " + str(exc)]}
     independent = audit_independent_figma(root)
+    figma_gates = audit_figma_release_gates(root)
     evidence_valid = (coverage.get("status") == "FIGMA_EVIDENCE_COMPLETE"
                       and coverage.get("evidenceValid") is True
                       and figma_lock.get("status") == "PASS"
                       and figma_lock.get("executionReceiptPersisted") is True
-                      and independent.get("status") == "PASS")
+                      and independent.get("status") == "PASS"
+                      and figma_gates.get("status") == "FIGMA_SCOPED_PASS")
     return {
         "scope": "v02-current-release-readiness",
         "status": "NOT_READY" if evidence_valid else "INVALID_EVIDENCE",
@@ -45,6 +48,7 @@ def audit(root=ROOT, *, native_dir=None):
             "newIndependentPrototypeFigmaE2E": "PASS" if independent.get("status") == "PASS" else "INVALID",
             "newIndependentPrototypePenpotE2E": "DEFERRED",
             "newIndependentPrototypeE2E": "FIGMA_PASS_PENPOT_DEFERRED" if independent.get("status") == "PASS" else "INVALID",
+            "figmaScopedReleaseGates": "PASS" if figma_gates.get("status") == "FIGMA_SCOPED_PASS" else "INVALID",
             "allReleaseGates": "NOT_RUN",
         },
         "currentFigmaSample": {
@@ -54,7 +58,8 @@ def audit(root=ROOT, *, native_dir=None):
         },
         "independentFigmaSample": {"pageReference": independent.get("figmaPageReference"),
                                     "nativePngSha256": independent.get("figmaNativePngSha256")},
-        "issues": list(coverage.get("issues", [])) + list(figma_lock.get("issues", [])) + list(independent.get("issues", [])),
+        "issues": (list(coverage.get("issues", [])) + list(figma_lock.get("issues", []))
+                   + list(independent.get("issues", [])) + list(figma_gates.get("issues", []))),
     }
 
 

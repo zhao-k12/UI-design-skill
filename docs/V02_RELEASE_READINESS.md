@@ -1,6 +1,6 @@
 # V0.2 发布就绪状态
 
-当前状态见 [TASK-108 实时重算审计](../artifacts/task-108/current-release-readiness.json)：**NOT_READY**，现有证据有效。18 类目标在 Figma 侧都有证据，7 类固定配置正式双端准入、11 类仅完成 Figma QA；当前 Figma Adapter 字节锁和冻结样张原生回执 PASS。另一份经用户审核的[紧凑查询原型](../examples/user-management-compact-search/prototype.txt)已通过 Figma 九阶段到原生输出的独立端到端验收；Penpot 线暂缓，双端及全量 Release Gate 未完成。下方 TASK-053 表格是 2026-10-14 历史快照。
+当前状态见 [TASK-109 实时重算审计](../artifacts/task-109/current-release-readiness.json)：**NOT_READY**，现有证据有效。18 类目标在 Figma 侧都有证据，7 类固定配置正式双端准入、11 类仅完成 Figma QA；当前 Figma Adapter 字节锁和冻结样张原生回执 PASS。另一份经用户审核的[紧凑查询原型](../examples/user-management-compact-search/prototype.txt)已通过 Figma 独立端到端和[九项单端发布门](../artifacts/task-109/figma-release-gates.json)；Penpot 线暂缓，双端及全量 Release Gate 未完成。下方 TASK-053 表格是 2026-10-14 历史快照。
 
 截至 2026-10-14：**NOT_READY**。只读 [机器审计](../artifacts/task-053/release-readiness.json) 验证当前证据字节与范围；`evidenceValid=true` 表示现有证据一致，不表示已通过全量发布门。重新运行：
 
