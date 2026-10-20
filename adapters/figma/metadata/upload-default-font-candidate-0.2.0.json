@@ -1,0 +1,17 @@
+{
+  "scope": "v02-default-font-upload-figma-candidate",
+  "status": "CANDIDATE_REVIEW",
+  "logicalComponentId": "data.upload.drag.empty",
+  "componentType": "Upload",
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageReference": "229:2",
+  "componentId": "229:7",
+  "instanceId": "229:9",
+  "componentIrSha256": "1a347724e0e6e088de584947190f02b526135d1e37fcf096bf8c5aa9312ef94a",
+  "candidateAuditSha256": "a2ed4df5e6af508fd9ef5431d8e5270ab36a5ec4657be64fb65e649f73a085d6",
+  "nativeAdmission": "CANDIDATE_REVIEW_ONLY",
+  "admissionEligible": false,
+  "dualPlatformFidelity": "DEFERRED",
+  "registryAdmission": "DEFERRED_PENPOT",
+  "releaseReady": false
+}
