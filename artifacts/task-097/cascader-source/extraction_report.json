@@ -1,0 +1,12 @@
+{
+  "scope": "component_runtime_extraction",
+  "status": "PASS",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "componentTypes": [
+    "Cascader"
+  ],
+  "componentIrSha256": "e6d748e4cfc858181ff72e5e2bb7751f2c7155e7dedeaec3bbd9823166181d03",
+  "runtimeManifestSha256": "f8c95144bbdf9f910274ce353c6dbbdffdc3bae083366bcc8e5981c1c4a200f2",
+  "fidelityGate": "NOT_RUN",
+  "issues": []
+}

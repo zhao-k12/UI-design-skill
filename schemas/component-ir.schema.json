@@ -317,7 +317,8 @@
             "Form",
             "Modal",
             "Drawer",
-            "Upload"
+            "Upload",
+            "Cascader"
           ]
         },
         "variant": {

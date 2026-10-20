@@ -1,0 +1,164 @@
+{
+  "scope": "official_cascader_runtime_source",
+  "status": "PASS",
+  "candidateOnly": true,
+  "fidelityGate": "NOT_RUN",
+  "cases": {
+    "casesVersion": "0.1.0",
+    "viewport": {
+      "width": 800,
+      "height": 500
+    },
+    "containerWidth": 240,
+    "cases": [
+      {
+        "logicalId": "form.cascader.region.selected",
+        "componentType": "Cascader",
+        "variant": "region-selected-closed",
+        "props": {
+          "data": [
+            {
+              "value": "zhejiang",
+              "label": "浙江",
+              "children": [
+                {
+                  "value": "hangzhou",
+                  "label": "杭州"
+                }
+              ]
+            }
+          ],
+          "modelValue": [
+            "zhejiang",
+            "hangzhou"
+          ],
+          "placeholder": "请选择地区",
+          "clearable": false,
+          "transfer": false,
+          "disabled": false
+        },
+        "text": "浙江 / 杭州"
+      }
+    ]
+  },
+  "environment": {
+    "browser": "153.0.8010.12",
+    "browserExecutableSha256": "9b07943f834485b43c9d54caea2951c78715f9f07070a80ab6658465ebd3e711",
+    "node": "v24.15.0",
+    "operatingSystem": {
+      "platform": "win32",
+      "release": "10.0.19045"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 500
+    },
+    "deviceScaleFactor": 1,
+    "locale": "zh-CN",
+    "fontsStatus": "loaded"
+  },
+  "provenance": {
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "sourceLockSha256": "a5a7b7c7ed15ae6fe317239f297e6f6a330097c28170a02d23c2adccbb588ce9",
+    "packageVersion": "1.3.24",
+    "officialCssSha256": "2d059d634433353c716d57a1cdc1defba7fcd20bf091922cbe19deb555a38bff",
+    "officialRuntimeSha256": "3f85f7e6b5cee96580aa12d515ebd295a211fa523de7eadd07cbccbcf46d7d8d",
+    "casesSha256": "f133c2c90bf1c0602c7400f9631a21a3959e41c6199a5488e01e50b382475494",
+    "harnessBundleSha256": "a23ba74329bda57e2b7aa0e3a5a877c10f60d86a64fc6a644c164cdf4e2172e8",
+    "extractorSha256": "2775f8d828015e69ce0a65613ea3403f6b38c89448bb2903028fd56b0ca2687c",
+    "assemblySha256": "5b7a8adf32a3125d8121564d7121307efb45a04b5b9d947f278b0844dbfdc59b",
+    "rendererSha256": "ca0c898dd02c7b463a78d538aa938e7e7b127f999579c8da228093499d2a24fa"
+  },
+  "metrics": {
+    "classes": [
+      "ivu-cascader",
+      "ivu-cascader-size-default"
+    ],
+    "root": {
+      "x": 24,
+      "y": 24,
+      "width": 240,
+      "height": 32
+    },
+    "rootStyle": {
+      "color": "rgb(81, 90, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(81, 90, 110)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "normal",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    "rel": {
+      "bounds": {
+        "x": 24,
+        "y": 24,
+        "width": 240,
+        "height": 32
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "normal",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    "input": {
+      "value": "浙江 / 杭州",
+      "placeholder": "请选择地区",
+      "bounds": {
+        "x": 24,
+        "y": 24,
+        "width": 240,
+        "height": 32
+      },
+      "style": {
+        "color": "rgb(81, 90, 110)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderRadius": "4px",
+        "boxShadow": "none",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "padding": "4px 24px 4px 7px",
+        "margin": "0px"
+      }
+    },
+    "arrow": {
+      "bounds": {
+        "x": 242,
+        "y": 33,
+        "width": 14,
+        "height": 14
+      },
+      "style": {
+        "color": "rgb(128, 134, 149)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(128, 134, 149)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "lineHeight": "14px",
+        "padding": "0px",
+        "margin": "0px"
+      }
+    },
+    "visibleDropdownCount": 0
+  },
+  "sourceFiles": {
+    "node_modules/view-ui-plus/src/components/cascader/cascader.vue": "a5699bbba3b4e00c804c47c47c585cc99c888a2a2f69faf1bb163068514c955e",
+    "node_modules/view-ui-plus/src/styles/components/cascader.less": "359cb21d264660692b0806c2fa95c7a2b0ec2ab305d2b0ab650b70ea32c2e890"
+  },
+  "referenceComponentIrSha256": "e6d748e4cfc858181ff72e5e2bb7751f2c7155e7dedeaec3bbd9823166181d03"
+}

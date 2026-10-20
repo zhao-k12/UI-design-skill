@@ -1,0 +1,25 @@
+{
+  "casesVersion": "0.1.0",
+  "viewport": {"width": 800, "height": 500},
+  "containerWidth": 240,
+  "cases": [
+    {
+      "logicalId": "form.cascader.region.selected",
+      "componentType": "Cascader",
+      "variant": "region-selected-closed",
+      "props": {
+        "data": [
+          {"value": "zhejiang", "label": "浙江", "children": [
+            {"value": "hangzhou", "label": "杭州"}
+          ]}
+        ],
+        "modelValue": ["zhejiang", "hangzhou"],
+        "placeholder": "请选择地区",
+        "clearable": false,
+        "transfer": false,
+        "disabled": false
+      },
+      "text": "浙江 / 杭州"
+    }
+  ]
+}
