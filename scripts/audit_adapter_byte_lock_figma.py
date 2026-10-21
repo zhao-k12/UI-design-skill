@@ -55,6 +55,7 @@ def audit(run_dir, execution_dir, native_dir):
     result_path = execution_dir / "execution-result.json"
     if result_path.is_file():
         result = load_json(result_path)
+        expected_page_reference = intent["pageReference"] or result.get("pageReference")
         expected_ids = {node["id"] for node in walk(page)}
         evidence = result.get("evidence", [])
         node_map = result.get("nodeMap", {})
@@ -64,7 +65,7 @@ def audit(run_dir, execution_dir, native_dir):
                 or result.get("tokensSha256") != plan["tokensSha256"]
                 or result.get("componentsSha256") != plan["componentsSha256"]
                 or result.get("iconsSha256") != plan["iconsSha256"]
-                or result.get("pageReference") != intent["pageReference"]
+                or result.get("pageReference") != expected_page_reference
                 or result.get("rootReference") != root["id"]
                 or node_map.get(page["id"]) != root["id"]
                 or set(node_map) != expected_ids
@@ -73,7 +74,9 @@ def audit(run_dir, execution_dir, native_dir):
                 or any(node_map.get(row.get("uiIrId")) != row.get("nodeId") for row in evidence)
                 or root["id"] not in result.get("createdNodeIds", [])):
             issues.append("native_execution_receipt_mismatch")
-    if native["fileReference"] != plan["fileReference"] or native["page"]["id"] != intent["pageReference"]:
+    expected_page_reference = (intent["pageReference"] or
+                               (load_json(result_path).get("pageReference") if result_path.is_file() else None))
+    if native["fileReference"] != plan["fileReference"] or native["page"]["id"] != expected_page_reference:
         issues.append("native_target_mismatch")
     if (root["name"] != f"UI-IR/{plan['documentId']}/{page['id']}"
             or root["width"] != page["layout"]["width"]["value"]

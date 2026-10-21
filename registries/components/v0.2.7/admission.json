@@ -1,0 +1,458 @@
+{
+  "version": "0.2.7",
+  "scope": "figma-only-production",
+  "status": "PASS",
+  "registryAdmission": "PASS",
+  "registrySha256": "c2632f55d2f512814a9e6fb6d4990b3d5f38f67d0ec953ada48d1cffa9c4b4ba",
+  "components": {
+    "action.button.primary.medium": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "查询",
+        "width": 60,
+        "height": 32
+      },
+      "fidelityReportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a"
+    },
+    "form.input.default.medium": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "placeholder": "请输入姓名",
+        "value": "",
+        "width": 240,
+        "height": 32
+      },
+      "fidelityReportSha256": "fd577dc95de3a217d5100c750fb615f6718b775ddea363fadc9a46b18e1f4821"
+    },
+    "form.select.default.medium": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "modelValue": "enabled",
+        "selectedText": "启用",
+        "width": 240,
+        "height": 32
+      },
+      "fidelityReportSha256": "9e2ca09d90fa48cd3bcb18cef783b90bac255e2cf85c43e7c85925eb79dc2a7a"
+    },
+    "data.table.default": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "showHeader": false,
+        "border": false,
+        "stripe": false,
+        "columns": [
+          {
+            "title": "姓名",
+            "key": "name",
+            "width": 464
+          },
+          {
+            "title": "状态",
+            "key": "status",
+            "width": 464
+          },
+          {
+            "title": "角色",
+            "key": "role",
+            "width": 464
+          }
+        ],
+        "data": [
+          {
+            "name": "张三",
+            "status": "启用",
+            "role": "管理员"
+          },
+          {
+            "name": "李四",
+            "status": "启用",
+            "role": "编辑"
+          },
+          {
+            "name": "王五",
+            "status": "停用",
+            "role": "访客"
+          }
+        ],
+        "width": 1392,
+        "height": 144
+      },
+      "fidelityReportSha256": "5de53c3d771de75895b3db979aeb22dfb0c61c240749b7de575cabe564d300cc"
+    },
+    "data.tag.default.enabled": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "size": "default",
+        "color": "default",
+        "closable": false,
+        "checkable": false,
+        "checked": true,
+        "width": 42,
+        "height": 22
+      },
+      "fidelityReportSha256": "921e68d45348ab792a13d07e00c0df89dd75330b21980cd98426b687c49c8d6a"
+    },
+    "form.checkbox.default.enabled": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "indeterminate": false,
+        "size": "default",
+        "border": false,
+        "width": 52,
+        "height": 21
+      },
+      "fidelityReportSha256": "dcff6a285ff77f2d84b3aea84f9677e7b4b165379c106fe788958478ee4be166"
+    },
+    "form.radio.default.enabled": {
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "size": "default",
+        "border": false,
+        "width": 48,
+        "height": 21
+      },
+      "fidelityReportSha256": "875e2f6450551373a132257dab726f08a817d586914129de20fa4f6cf24a2b2c"
+    },
+    "form.switch.default.enabled": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": true,
+          "trueValue": true,
+          "falseValue": false,
+          "disabled": false,
+          "size": "default",
+          "loading": false
+        },
+        "visibleText": [
+          "开"
+        ],
+        "width": 44,
+        "height": 22
+      },
+      "fidelityReportSha256": "3ec34206052ad8fca5b6e1542f362b43c3ac4143d7a1eb7db0d44cb1e4b44381"
+    },
+    "content.card.default.user-info": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "title": "用户信息",
+          "bordered": true,
+          "disHover": true,
+          "shadow": false,
+          "padding": 16
+        },
+        "visibleText": [
+          "暂无内容",
+          "用户信息"
+        ],
+        "width": 240,
+        "height": 106
+      },
+      "fidelityReportSha256": "c9f681f4de361f049427b86a6f2ae5cb2caac0523b4092bd3be8891294e791c0"
+    },
+    "data.pagination.default.three-pages": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": 1,
+          "total": 30,
+          "pageSize": 10,
+          "size": "default",
+          "simple": false,
+          "showTotal": false,
+          "showElevator": false,
+          "showSizer": false,
+          "disabled": false
+        },
+        "visibleText": [
+          "1",
+          "2",
+          "3"
+        ],
+        "width": 400,
+        "height": 32
+      },
+      "fidelityReportSha256": "bdd3f7da06736f0f5c9b9df7550505b0bd9cc1e551f8b8b9ec333d8af9a8913d"
+    },
+    "navigation.tabs.line.overview": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": "overview",
+          "type": "line",
+          "size": "default",
+          "animated": false,
+          "captureFocus": false,
+          "closable": false,
+          "draggable": false
+        },
+        "visibleText": [
+          "概览",
+          "概览内容",
+          "详情"
+        ],
+        "width": 320,
+        "height": 73
+      },
+      "fidelityReportSha256": "bc294997d471ddc4a63c15522b3e5073b44cac4c323e8c17b90a3fefa4b2c487"
+    },
+    "navigation.tree.expanded.departments": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "data": [
+            {
+              "title": "部门",
+              "expand": true,
+              "children": [
+                {
+                  "title": "研发部"
+                },
+                {
+                  "title": "设计部"
+                }
+              ]
+            }
+          ],
+          "multiple": false,
+          "showCheckbox": false,
+          "checkStrictly": false,
+          "checkDirectly": false,
+          "selectNode": true,
+          "expandNode": false
+        },
+        "visibleText": [
+          "研发部",
+          "设计部",
+          "部门"
+        ],
+        "width": 240,
+        "height": 79
+      },
+      "fidelityReportSha256": "7cca7a410c1973b7d90c78e1c537024e9ff88b512e405e1c448dca5f42732908"
+    },
+    "form.datepicker.date.selected": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "type": "date",
+          "modelValue": "2024-01-01",
+          "format": "yyyy-MM-dd",
+          "size": "default",
+          "disabled": false,
+          "clearable": false,
+          "readonly": true,
+          "open": false
+        },
+        "visibleText": [
+          "2024-01-01"
+        ],
+        "width": 211,
+        "height": 32
+      },
+      "fidelityReportSha256": "59b23a03e51dd91da70376e12bcd69dd44777dfa1e8c1507b474a6c5d24393e7"
+    },
+    "form.single.name.empty": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "model": {
+            "name": ""
+          },
+          "labelWidth": 80,
+          "labelPosition": "right",
+          "showMessage": true
+        },
+        "visibleText": [
+          "姓名"
+        ],
+        "width": 320,
+        "height": 34
+      },
+      "fidelityReportSha256": "dfc749409f5026a7c5e3236b30d8e5ee9738f9c4cdb34c20ec6e898118aa2c7e"
+    },
+    "overlay.modal.notice.open": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": true,
+          "title": "提示",
+          "width": 320,
+          "closable": false,
+          "footerHide": true,
+          "mask": true,
+          "transfer": true
+        },
+        "visibleText": [
+          "提示",
+          "操作已完成"
+        ],
+        "width": 320,
+        "height": 104
+      },
+      "fidelityReportSha256": "e7b3d7761481b41d8c25cd21225b9a63e2ff369eb52c2550ca4353f9d361d6ce"
+    },
+    "overlay.drawer.detail.open": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": true,
+          "title": "详情",
+          "width": 320,
+          "placement": "right",
+          "closable": false,
+          "mask": true,
+          "transfer": true
+        },
+        "visibleText": [
+          "抽屉内容",
+          "详情"
+        ],
+        "width": 320,
+        "height": 500
+      },
+      "fidelityReportSha256": "6ec21b38a66b004e625eaded5a5fa8c5711ca1f202adce64e39e144a294f6909"
+    },
+    "data.upload.drag.empty": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "action": "/upload",
+          "type": "drag",
+          "showUploadList": false,
+          "multiple": false,
+          "disabled": false
+        },
+        "visibleText": [
+          "上传文件"
+        ],
+        "width": 320,
+        "height": 82
+      },
+      "fidelityReportSha256": "8755710d15ae4b94be68c693d81f444fe50cc646bf02f5698a9a8bc3dd5001fa"
+    },
+    "form.cascader.region.selected": {
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "data": [
+            {
+              "value": "zhejiang",
+              "label": "浙江",
+              "children": [
+                {
+                  "value": "hangzhou",
+                  "label": "杭州"
+                }
+              ]
+            }
+          ],
+          "modelValue": [
+            "zhejiang",
+            "hangzhou"
+          ],
+          "placeholder": "请选择地区",
+          "clearable": false,
+          "transfer": false,
+          "disabled": false
+        },
+        "visibleText": [
+          "浙江 / 杭州"
+        ],
+        "width": 240,
+        "height": 32
+      },
+      "fidelityReportSha256": "e18f9b723ff9ce1a18593a61cf08692db2a6b7693dddaa3fb93cd6f8db990cb0"
+    }
+  },
+  "bindings": {
+    "figma": {
+      "action.button.primary.medium": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "135:15"
+      },
+      "form.input.default.medium": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "141:3"
+      },
+      "form.select.default.medium": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "152:10"
+      },
+      "data.table.default": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "157:3"
+      },
+      "data.tag.default.enabled": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "176:16"
+      },
+      "form.checkbox.default.enabled": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "182:12"
+      },
+      "form.radio.default.enabled": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "190:3"
+      },
+      "form.switch.default.enabled": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "192:6"
+      },
+      "content.card.default.user-info": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "198:8"
+      },
+      "data.pagination.default.three-pages": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "205:16"
+      },
+      "navigation.tabs.line.overview": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "207:3"
+      },
+      "navigation.tree.expanded.departments": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "210:6"
+      },
+      "form.datepicker.date.selected": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "218:16"
+      },
+      "form.single.name.empty": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "220:9"
+      },
+      "overlay.modal.notice.open": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "222:13"
+      },
+      "overlay.drawer.detail.open": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "226:8"
+      },
+      "data.upload.drag.empty": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "229:7"
+      },
+      "form.cascader.region.selected": {
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentReference": "231:13"
+      }
+    }
+  },
+  "scopedPageGenerationReady": true,
+  "releaseReady": false
+}

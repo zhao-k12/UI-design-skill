@@ -65,12 +65,12 @@ node --test tests/*.test.mjs
 
 官方运行环境支持[两次真实提取复验](docs/RUNTIME_REPLAY.md)。后续新设计字体使用 [Figma/Penpot 各自的默认字体](docs/FONT_POLICY.md)，实际绑定须在目标会话验证。
 
-当前开发范围已按用户决定改为 **仅 Figma**，不再安排 Penpot 开发或验收。V0.2.6 生产 Profile 包含 Button、Input、Select、Table、Tag、Checkbox、Radio 各一项固定内容配置；七个 Figma 主组件引用已再次核验。经审核的新用户管理紧凑查询原型已通过 Figma 原生端到端验收和九项单端发布门，页面实际使用前四类。18 类目标组件均有 Figma 原生证据，其中 11 类仍只有候选 QA。Figma 使用 Inter。历史双平台 V0.2 发布目标未变更为已发布状态；当前单端范围决策见 [TASK-116](.dev/TASK-116_FIGMA_SCOPE.md)。
+当前开发范围已按用户决定改为 **仅 Figma**，不再安排 Penpot 开发或验收。新的 `v0.2.7-figma` 生产 Profile 一次准入 18 类已锁定的固定配置和 Figma 主组件引用；它不表示任意文字、状态或尺寸均可用。经审核的用户管理紧凑查询原型已完成新版九阶段 Core、Figma 原生页面、独立读回、重复 PNG、视觉复核和 10 项单端发布门。页面实际使用其中四类，其余 14 类有各自的原生主组件证据。Figma 使用 Inter。历史双平台 V0.2 发布目标未变更为已发布状态；单端范围与批量准入见 [TASK-116](.dev/TASK-116_FIGMA_SCOPE.md)、[TASK-118](.dev/TASK-118_FIGMA_BATCH_ADMISSION.md)。
 
 当前原型可只提供 Figma 文件运行生产预检，无需 Penpot 文件：
 
 ```powershell
-.\.venv\Scripts\python.exe scripts/run_figma_pipeline.py examples/user-management-compact-search-v026 --output-dir artifacts/my-figma-run --figma-file <Figma文件ID> --profile v0.2.6
+.\.venv\Scripts\python.exe scripts/run_figma_pipeline.py examples/user-management-compact-search-v027-figma --output-dir artifacts/my-figma-run --figma-file <Figma文件ID> --profile v0.2.7-figma
 ```
 
 该命令保存九阶段 Core、Figma 原生计划和字节锁；实际写入 Figma 与原生复验仍需执行已校验的计划。旧双平台命令只用于历史复验。
@@ -81,7 +81,7 @@ node --test tests/*.test.mjs
 .\.venv\Scripts\python.exe scripts/audit_figma_candidate_batch.py --output artifacts/figma-candidate-batch.json
 ```
 
-当前批次 11/11 证据通过，7 类还需确定固定内容范围；报告不表示正式组件库已准入。
+当前批次 11/11 证据通过，并已按官方运行属性、可见文字和尺寸快照准入新的 18 类 Figma 固定配置 Registry。该报告本身只负责证据核验；正式准入结果见新版本的 `admission.json`。
 
 完整目标见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
 
@@ -92,7 +92,7 @@ node --test tests/*.test.mjs
 - 用户选择目标平台；两平台能力分别通过发布验收。
 - 阶段自动推进、测试、记录、提交、断点恢复和冲突处理。
 
-当前 Figma 范围状态为 **IN PROGRESS**。Figma 侧组件证据、当前 Adapter 字节锁和新独立原型单端验收已通过；剩余 11 类组件尚未进入正式生产 Registry。旧版完整目标计划保留作历史背景，不作为当前 Penpot 工作队列。当前开发不意味着启动后台任务；未执行的检查不计为通过。
+当前定义的 Figma 固定配置范围已通过 10 项单端发布门；扩展到其他文案、状态或尺寸仍需新的来源与保真证据。旧版完整目标计划保留作历史背景。当前开发不意味着启动后台任务；未执行的检查不计为通过。
 
 ## 阅读入口
 

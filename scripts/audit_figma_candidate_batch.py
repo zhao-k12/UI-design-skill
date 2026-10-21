@@ -73,6 +73,15 @@ def audit(root=ROOT, *, source_overrides=None, qa_overrides=None):
                                        if node.get("visible") is True
                                        for run in node.get("textRuns", [])
                                        if isinstance(run.get("text"), str) and run["text"].strip()})
+                native_read = read(root / f"artifacts/task-{task_id:03d}/figma/native-read.json")
+                native_text = {node.get("characters") for node in native_read.get("nodes", [])
+                               if node.get("type") == "TEXT"}
+                native_text.add(native_read.get("label", {}).get("text"))
+                native_text = sorted(text for text in native_text
+                                     if isinstance(text, str) and text.strip()
+                                     and not all(0xE000 <= ord(char) <= 0xF8FF for char in text))
+                if not native_text:
+                    row_issues.append("native_visible_text_missing")
                 if scope and (scope.get("width") != bounds.get("width") or
                               scope.get("height") != bounds.get("height")):
                     row_issues.append("fixed_scope_geometry_mismatch")
@@ -86,6 +95,7 @@ def audit(root=ROOT, *, source_overrides=None, qa_overrides=None):
                              "sourceVariant": component.get("variant"),
                              "sourceProps": component.get("props"),
                              "sourceVisibleText": visible_text,
+                             "nativeVisibleText": native_text,
                              "sourceSize": bounds,
                              "contentScope": scope,
                              "scopeStatus": scope_status,

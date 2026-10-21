@@ -1,0 +1,190 @@
+{
+  "metadataVersion": "0.1.0",
+  "platform": "figma",
+  "scope": "production",
+  "libraryVersion": "0.2.7-figma-fixed-eighteen",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "registrySha256": "c2632f55d2f512814a9e6fb6d4990b3d5f38f67d0ec953ada48d1cffa9c4b4ba",
+  "bindings": {
+    "action.button.primary.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "135:15",
+          "fidelityReportSha256": "ac50d26db0d2cc0bc8ac18d1bf193b1055bf37119a7ab38afcf9f61b1f497d3a"
+        }
+      }
+    },
+    "form.input.default.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "141:3",
+          "fidelityReportSha256": "fd577dc95de3a217d5100c750fb615f6718b775ddea363fadc9a46b18e1f4821"
+        }
+      }
+    },
+    "form.select.default.medium": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "152:10",
+          "fidelityReportSha256": "9e2ca09d90fa48cd3bcb18cef783b90bac255e2cf85c43e7c85925eb79dc2a7a"
+        }
+      }
+    },
+    "data.table.default": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "157:3",
+          "fidelityReportSha256": "5de53c3d771de75895b3db979aeb22dfb0c61c240749b7de575cabe564d300cc"
+        }
+      }
+    },
+    "data.tag.default.enabled": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "176:16",
+          "fidelityReportSha256": "921e68d45348ab792a13d07e00c0df89dd75330b21980cd98426b687c49c8d6a"
+        }
+      }
+    },
+    "form.checkbox.default.enabled": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "182:12",
+          "fidelityReportSha256": "dcff6a285ff77f2d84b3aea84f9677e7b4b165379c106fe788958478ee4be166"
+        }
+      }
+    },
+    "form.radio.default.enabled": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "190:3",
+          "fidelityReportSha256": "875e2f6450551373a132257dab726f08a817d586914129de20fa4f6cf24a2b2c"
+        }
+      }
+    },
+    "form.switch.default.enabled": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "192:6",
+          "fidelityReportSha256": "3ec34206052ad8fca5b6e1542f362b43c3ac4143d7a1eb7db0d44cb1e4b44381"
+        }
+      }
+    },
+    "content.card.default.user-info": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "198:8",
+          "fidelityReportSha256": "c9f681f4de361f049427b86a6f2ae5cb2caac0523b4092bd3be8891294e791c0"
+        }
+      }
+    },
+    "data.pagination.default.three-pages": {
+      "variants": {
+        "default": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "205:16",
+          "fidelityReportSha256": "bdd3f7da06736f0f5c9b9df7550505b0bd9cc1e551f8b8b9ec333d8af9a8913d"
+        }
+      }
+    },
+    "navigation.tabs.line.overview": {
+      "variants": {
+        "line": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "207:3",
+          "fidelityReportSha256": "bc294997d471ddc4a63c15522b3e5073b44cac4c323e8c17b90a3fefa4b2c487"
+        }
+      }
+    },
+    "navigation.tree.expanded.departments": {
+      "variants": {
+        "expanded": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "210:6",
+          "fidelityReportSha256": "7cca7a410c1973b7d90c78e1c537024e9ff88b512e405e1c448dca5f42732908"
+        }
+      }
+    },
+    "form.datepicker.date.selected": {
+      "variants": {
+        "date-selected": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "218:16",
+          "fidelityReportSha256": "59b23a03e51dd91da70376e12bcd69dd44777dfa1e8c1507b474a6c5d24393e7"
+        }
+      }
+    },
+    "form.single.name.empty": {
+      "variants": {
+        "single-field-empty": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "220:9",
+          "fidelityReportSha256": "dfc749409f5026a7c5e3236b30d8e5ee9738f9c4cdb34c20ec6e898118aa2c7e"
+        }
+      }
+    },
+    "overlay.modal.notice.open": {
+      "variants": {
+        "notice-open-no-footer": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "222:13",
+          "fidelityReportSha256": "e7b3d7761481b41d8c25cd21225b9a63e2ff369eb52c2550ca4353f9d361d6ce"
+        }
+      }
+    },
+    "overlay.drawer.detail.open": {
+      "variants": {
+        "right-open-no-close": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "226:8",
+          "fidelityReportSha256": "6ec21b38a66b004e625eaded5a5fa8c5711ca1f202adce64e39e144a294f6909"
+        }
+      }
+    },
+    "data.upload.drag.empty": {
+      "variants": {
+        "drag-empty-static": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "229:7",
+          "fidelityReportSha256": "8755710d15ae4b94be68c693d81f444fe50cc646bf02f5698a9a8bc3dd5001fa"
+        }
+      }
+    },
+    "form.cascader.region.selected": {
+      "variants": {
+        "region-selected-closed": {
+          "kind": "component",
+          "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+          "componentReference": "231:13",
+          "fidelityReportSha256": "e18f9b723ff9ce1a18593a61cf08692db2a6b7693dddaa3fb93cd6f8db990cb0"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0",
+  "analysisSha256": "8e11c3f6f98c48c2c515d5e590b0e2de5b01ee40bd2f388b3a818296dcaadfae",
+  "decision": "approved",
+  "reviewedBy": "human-user",
+  "reviewedAt": "2026-10-20T15:12:37+08:00",
+  "note": "User explicitly approved this compact user-management semantic structure: two fields on first query row, separate query button row, fixed three-row table and summary, no scope field or export."
+}

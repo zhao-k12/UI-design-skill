@@ -1,0 +1,1448 @@
+{
+  "action.button.primary.medium.default-font-0.2.2": {
+    "scope": "production",
+    "evidenceKind": "v02-default-font-button-native-fidelity",
+    "gateVersion": "0.2.2",
+    "componentType": "Button",
+    "variants": [
+      "default"
+    ],
+    "logicalComponentId": "action.button.primary.medium",
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290",
+    "status": "PASS",
+    "admissionEligible": true,
+    "issues": [],
+    "candidateEvidenceKind": "native-design-capture",
+    "checks": {
+      "geometryAndStyle": "PASS",
+      "screenshot": {
+        "policy": "source-locked-default-font-regions-0.2.2",
+        "changedPixelsOutsidePermittedRegions": 0
+      }
+    },
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "lockedSourceAndNativeCandidate": true,
+          "currentNativeComponentAndInstance": true,
+          "currentNativeTextAndFont": true,
+          "currentNativeGeometry": true,
+          "stableIndependentNativePng": true,
+          "independentNativeSvg": true,
+          "nonTextPixelsExact": true,
+          "roundedCornerPaintBound": true,
+          "separateVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "135:15",
+        "pixelDiagnostics": {
+          "textZone": {
+            "different": 308,
+            "sourceBrightInkPixelsByHalf": [
+              76,
+              70
+            ],
+            "brightInkPixelsByHalf": [
+              35,
+              43
+            ],
+            "brightInkRetentionByHalf": [
+              0.461,
+              0.614
+            ],
+            "inkBoundsByHalf": [
+              {
+                "x": 17,
+                "y": 11,
+                "width": 12,
+                "height": 11
+              },
+              {
+                "x": 31,
+                "y": 10,
+                "width": 12,
+                "height": 12
+              }
+            ],
+            "inkFillFractionByHalf": [
+              0.265,
+              0.299
+            ]
+          },
+          "cornerEdge": {
+            "different": 27,
+            "maxPaletteResidual": 0.976,
+            "maxChannelDelta": 17,
+            "outOfPalettePixels": 0
+          },
+          "nonTextInterior": {
+            "different": 0
+          }
+        },
+        "nativePngSha256": "76f633f6616a8227a53f4c10635eb1f33146bc15becdf5f05b792940b74cd1be",
+        "nativeSvgSha256": "d5b5b32566f2c22352204d356b4ad61424df436224e940bbadee5ca79ed4ff07",
+        "repeatNativePngSha256": "76f633f6616a8227a53f4c10635eb1f33146bc15becdf5f05b792940b74cd1be"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "lockedSourceAndNativeCandidate": true,
+          "currentNativeComponentAndInstance": true,
+          "currentNativeTextAndFont": true,
+          "currentNativeGeometry": true,
+          "stableIndependentNativePng": true,
+          "independentNativeSvg": true,
+          "nonTextPixelsExact": true,
+          "roundedCornerPaintBound": true,
+          "separateVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "4b3abcb2-3ae8-803f-8008-c805b99e5b4e",
+        "pixelDiagnostics": {
+          "textZone": {
+            "different": 303,
+            "sourceBrightInkPixelsByHalf": [
+              76,
+              70
+            ],
+            "brightInkPixelsByHalf": [
+              53,
+              40
+            ],
+            "brightInkRetentionByHalf": [
+              0.697,
+              0.571
+            ],
+            "inkBoundsByHalf": [
+              {
+                "x": 17,
+                "y": 9,
+                "width": 12,
+                "height": 12
+              },
+              {
+                "x": 31,
+                "y": 9,
+                "width": 12,
+                "height": 13
+              }
+            ],
+            "inkFillFractionByHalf": [
+              0.368,
+              0.256
+            ]
+          },
+          "cornerEdge": {
+            "different": 42,
+            "maxPaletteResidual": 1.167,
+            "maxChannelDelta": 39,
+            "outOfPalettePixels": 0
+          },
+          "nonTextInterior": {
+            "different": 0
+          }
+        },
+        "nativePngSha256": "509636ff651f01474b7e82b810c543e60c3cb0025350f0593d2ca547a1eb6926",
+        "nativeSvgSha256": "2f4b8aa018c9d4882df798d9fb222647aeb1296d6294f784fab32af05379ddee",
+        "repeatNativePngSha256": "509636ff651f01474b7e82b810c543e60c3cb0025350f0593d2ca547a1eb6926"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIrSha256": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290",
+      "sourceScreenshotSha256": "3615e5a30dc737e7f4af547fcb1d7e03a07069e0e13d14a424705b790e2f3a6d",
+      "manifestSha256": "846de27ebef99cdf169b5a2ecad116ab2a7fd9625449483091d09fddb31e807e",
+      "policySha256": "99fc3f20cb167f1b785a314d0b17fdfb6666b4b4d8f694a15ad9d2fcb46fa661",
+      "visualReviewSha256": "a5ab76dc26b5ac3989e160489b7fd22f92994b80b177a3d7de900c4186bdda1f",
+      "figma": {
+        "candidateMetadataSha256": "1737d132fd088c1bf42506dbc1aa4f17cf6aba669856fcd78e385871b4f1181c",
+        "targetMetadataSha256": "49bbc4569aaac299f9316f8dfd7e29dbb2630cbb1f07e914b0fdc8cb3cf36e35",
+        "priorAuditSha256": "22b2b1585d262608dc079d3c7ff1caae725ad20ea47f4dfdd006f381f17f1d06",
+        "repeatNativeReadSha256": "d970108d1dfc46775daee92758b59162d417d9d84e7ee658be7e8ebfa89991ab"
+      },
+      "penpot": {
+        "candidateMetadataSha256": "d4ad1edd57921a696bc60bc5b4bc6cc934b70bd37982a4d42d05de13c66bf80e",
+        "targetMetadataSha256": "14df4d84b5c54390e650f7b716f63107c159041d8ca0922db508fd24f389fe20",
+        "priorAuditSha256": "107c7d6969fc8b4177d0949a2f5552fb7d5f62f1ab14da016c73c5f2868e1833",
+        "repeatNativeReadSha256": "c4d01c92403623ecd7c182d211dec83aa1d093c5cd2b1bdf56feaf1dc4b44923"
+      }
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "form.input.default.medium.default-font-0.2.3": {
+    "scope": "production",
+    "gateVersion": "0.2.3",
+    "status": "PASS",
+    "logicalComponentId": "form.input.default.medium",
+    "componentType": "Input",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "c0255251a9e12c62bdf9cde32d94019068a3190381e5ebe1dfa3e7793a6d603c",
+    "candidateEvidenceKind": "native-design-capture",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "nativeRepeatStable": true,
+          "geometryAndStyle": true,
+          "defaultFontAndText": true,
+          "hashBoundVisualReview": true,
+          "nonTextExact": true,
+          "roundedCornerPalette": true,
+          "visibleFiveGlyphs": true,
+          "independentNativeSvg": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "141:3",
+        "nativePngSha256": "16f7ccb5f97b9ff6e70a7e0ab1f925b752a4a24861f42d924562b5ddb3df2566",
+        "nativeSvgSha256": "3836314dc7b6d0eccd7c74f343a46682d584ac79a842ec343a8e8405a0deb91b",
+        "maxCornerPaletteResidual": 1.914,
+        "pixelDiagnostics": {
+          "textZoneDifferences": 682,
+          "cornerDifferences": 41,
+          "nonTextDifferences": 0,
+          "visibleInkByCharacter": [
+            66,
+            75,
+            30,
+            61,
+            56
+          ]
+        },
+        "candidateMetadataSha256": "36bba1aa7aad7bfdc4f52af7619a5f304c9ddb86f7689983c88e3d2ce819f12b"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "nativeRepeatStable": true,
+          "geometryAndStyle": true,
+          "defaultFontAndText": true,
+          "hashBoundVisualReview": true,
+          "nonTextExact": true,
+          "roundedCornerPalette": true,
+          "visibleFiveGlyphs": true,
+          "independentNativeSvg": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "4b3abcb2-3ae8-803f-8008-c811d08712ea",
+        "nativePngSha256": "48d2e6800c672a52068988833c509ba28c03c7f254558cb9335336dd8d5b8c9a",
+        "nativeSvgSha256": "8af38ae94161da8a55ba48e9063472a30c4234bd76b6b581a40978fbbea8c696",
+        "maxCornerPaletteResidual": 0.886,
+        "pixelDiagnostics": {
+          "textZoneDifferences": 735,
+          "cornerDifferences": 44,
+          "nonTextDifferences": 0,
+          "visibleInkByCharacter": [
+            71,
+            68,
+            35,
+            57,
+            54
+          ]
+        },
+        "candidateMetadataSha256": "c0ce788a2615d34c3311aad2d28b803478f835745638ab579dbf82fc3690a77d"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "f989ae9e14e58a68f6c902cae89b31124843a1a6a57577952951e29a313271f3",
+      "candidateAudit": "778c5690161f466e3142095eb503dff8fee1891d0c555b78c17e2dfc5a4a6856",
+      "visualReview": "1da8e80a4ab705196ad8480d79754b97bfcf23bfc1c353acf581ad043cb06ab5",
+      "policy": "99d970febb4c5362e249c03ed29ca2200d029f83a9b8f5e484c0d6f7de9548c8"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "placeholder": "请输入姓名",
+      "value": "",
+      "width": 240,
+      "height": 32
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "form.select.default.medium.default-font-0.2.4": {
+    "scope": "production",
+    "gateVersion": "0.2.4",
+    "status": "PASS",
+    "logicalComponentId": "form.select.default.medium",
+    "componentType": "Select",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "ac0ffa896e31b8f84d21ebdb6dad08076f0136eb33b797ac6d5cb541258ae9a6",
+    "candidateEvidenceKind": "native-design-capture",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "sameNativeMainAndInstance": true,
+          "nativeRepeatStable": true,
+          "fixedSelectedValueAndDefaultFont": true,
+          "sourceArrowOutline": true,
+          "nonTextExact": true,
+          "roundedCornerPalette": true,
+          "arrowRasterWithinPolicy": true,
+          "twoVisibleGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "152:10",
+        "nativePngSha256": "4236ce1205c69b4d0018062f00ffda60bfe0102e1eb55a31cdacf5ea44336504",
+        "nativeSvgSha256": "9b3b5f54b5f6e29300c62098a2b23e597c8144a1f8ad7b5ab6040ff7a8439d9e",
+        "maxCornerPaletteResidual": 1.914,
+        "visibleInkByCharacter": [
+          37,
+          26
+        ],
+        "pixelDiagnostics": {
+          "textDifferences": 262,
+          "arrowDifferences": 34,
+          "arrowAbsoluteError": 1343,
+          "cornerDifferences": 45,
+          "nonTextDifferences": 0
+        },
+        "candidateMetadataSha256": "14754bc4d5db23bae737e027f546434df58a9017df64a8a3f24991a983fdea00"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "sameNativeMainAndInstance": true,
+          "nativeRepeatStable": true,
+          "fixedSelectedValueAndDefaultFont": true,
+          "sourceArrowOutline": true,
+          "nonTextExact": true,
+          "roundedCornerPalette": true,
+          "arrowRasterWithinPolicy": true,
+          "twoVisibleGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "4b3abcb2-3ae8-803f-8008-c8485c8b9729",
+        "nativePngSha256": "b01b389eb3cb29513f2677ecf04d303ce7456536f99530635fed3fc36560f56b",
+        "nativeSvgSha256": "3769691ac039a36b409ba1213a34a9bb8e5a9fb0e5a1a10085e2ae4440cb5299",
+        "maxCornerPaletteResidual": 0.886,
+        "visibleInkByCharacter": [
+          18,
+          16
+        ],
+        "pixelDiagnostics": {
+          "textDifferences": 295,
+          "arrowDifferences": 34,
+          "arrowAbsoluteError": 1358,
+          "cornerDifferences": 48,
+          "nonTextDifferences": 0
+        },
+        "candidateMetadataSha256": "2e8b2e7ffc644680f1dab94c8b7c1e795df0177a12d37be3d42d91d1a6301880"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "6dc6a7e1e30308041c05bb63b996526189bf32ac9a592d24a360643a26e54a0c",
+      "candidateAudit": "1dd8112f6cceb8f2e65469e453f44451eac8620457754b0c61c4823b84cc510d",
+      "visualReview": "af54aa17ddeb927a5bb4947a04bcce0b2f1ea7b6f9aec14119a751f1e21473b5",
+      "policy": "e45d1dbf76eeab43a32be2e78ce3924f055a2cf325717c761538b98643549c5c"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "modelValue": "enabled",
+      "selectedText": "启用",
+      "width": 240,
+      "height": 32
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "data.table.default.default-font-0.2.5": {
+    "scope": "production",
+    "gateVersion": "0.2.5",
+    "status": "PASS",
+    "logicalComponentId": "data.table.default",
+    "componentType": "Table",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "f4595874472457b7b34a51cf6c40e7022b88c963ba2a0a813b8d2383cfff35ea",
+    "candidateEvidenceKind": "native-design-capture",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "sameNativeMainAndInstance": true,
+          "fixedDataAndDefaultFont": true,
+          "nativeHierarchy": true,
+          "nativeRepeatStable": true,
+          "nonTextExact": true,
+          "nineteenVisibleGlyphs": true,
+          "independentNativeSvg": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "157:3",
+        "nativePngSha256": "a467f88343aa5da542758058bdff0eebc2ddbb3a8dcf777a062644c88b9029ea",
+        "nativeSvgSha256": "e6a77c769553154ceebe9d93c961690e8904ccb593366493e09bb21f4f9da3bf",
+        "visibleInkByCharacter": [
+          39,
+          20,
+          29,
+          46,
+          30,
+          37,
+          24,
+          42,
+          44,
+          29,
+          46,
+          40,
+          30,
+          22,
+          20,
+          29,
+          46,
+          32,
+          34
+        ],
+        "pixelDiagnostics": {
+          "textDifferences": 2582,
+          "nonTextDifferences": 0
+        },
+        "candidateMetadataSha256": "d32c33dbb5d114bf4b55315ed9443cea0ba805c6f3b8eca33190ddf3a204fc60"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "sameNativeMainAndInstance": true,
+          "fixedDataAndDefaultFont": true,
+          "nativeHierarchy": true,
+          "nativeRepeatStable": true,
+          "nonTextExact": true,
+          "nineteenVisibleGlyphs": true,
+          "independentNativeSvg": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "4b3abcb2-3ae8-803f-8008-c85957bd3a28",
+        "nativePngSha256": "42526d6ff0f7649e6082e8300d55f3e4aa05176362a40b3f477f04066905991a",
+        "nativeSvgSha256": "12bd1c032ed0b35286071153bade1f4c109634fb0e691f1335ed983a62110fd4",
+        "visibleInkByCharacter": [
+          28,
+          12,
+          45,
+          27,
+          26,
+          26,
+          37,
+          25,
+          22,
+          45,
+          27,
+          33,
+          16,
+          24,
+          33,
+          24,
+          27,
+          28,
+          29
+        ],
+        "pixelDiagnostics": {
+          "textDifferences": 3142,
+          "nonTextDifferences": 0
+        },
+        "candidateMetadataSha256": "141f9275f3234fbd0bdff5b15950babf74cc38dc4bebb9ddc47bd00eff317d8d"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "a2730f5b7f2e386d5a7ff1a9779841d73c359b2e90009aa80a2e5f1e1e99b02a",
+      "candidateAudit": "222def95b1fde9dbc2c20d6fc3dc53ac84bcd5e76b42b1018fd08b4dbe8b2c1d",
+      "visualReview": "a22e6af1cf64372b96749b838ddfb0ddf5873e967a72f021284404876ef290f5",
+      "policy": "25669aeace1da515a8231424ccfff76cb730c332e2e071f25875f38876fc8b06"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "showHeader": false,
+      "border": false,
+      "stripe": false,
+      "columns": [
+        {
+          "title": "姓名",
+          "key": "name",
+          "width": 464
+        },
+        {
+          "title": "状态",
+          "key": "status",
+          "width": 464
+        },
+        {
+          "title": "角色",
+          "key": "role",
+          "width": 464
+        }
+      ],
+      "data": [
+        {
+          "name": "张三",
+          "status": "启用",
+          "role": "管理员"
+        },
+        {
+          "name": "李四",
+          "status": "启用",
+          "role": "编辑"
+        },
+        {
+          "name": "王五",
+          "status": "停用",
+          "role": "访客"
+        }
+      ],
+      "width": 1392,
+      "height": 144
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "data.tag.default.enabled.default-font-0.2.5": {
+    "scope": "production",
+    "gateVersion": "0.2.5",
+    "status": "PASS",
+    "logicalComponentId": "data.tag.default.enabled",
+    "componentType": "Tag",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "7f81ea9558c0f97481b14d792c710f7ae20efdf32c88ad70a17bcaa2a22d9b80",
+    "candidateEvidenceKind": "native-design-capture",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "independentNativeStructure": true,
+          "nativeRepeatStable": true,
+          "nativeSvgSemanticallyStable": true,
+          "nonTextExactExceptCorners": true,
+          "cornerAntialiasWithinPolicy": true,
+          "twoVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "176:16",
+        "instanceId": "176:19",
+        "nativePngSha256": "8a960b898b36b6077c7372ef3150318a09f54da0978d11d03ff882f1aae5c3cb",
+        "nativeSvgSha256": "cdc713f5702f625b8b550f8d7ee8bb9b15dc824a17730e0f287231d790c347f9",
+        "candidateNativeSvgSha256": "cdc713f5702f625b8b550f8d7ee8bb9b15dc824a17730e0f287231d790c347f9",
+        "nativeReadSha256": "d323306c5bddcc0df8b6099099da8a5a89c0918f1ae9e598a68c10363d39c811",
+        "pixelDiagnostics": {
+          "sourceSize": [
+            42,
+            22
+          ],
+          "nativeSize": [
+            42,
+            22
+          ],
+          "nonTextChangedPixels": 24,
+          "nonTextMaximumChannelDelta": 3,
+          "nonTextChangesOutsideFourCorners": 0,
+          "glyphPixelsByCharacterZone": [
+            4,
+            9
+          ]
+        },
+        "glyphDiagnostics": {
+          "perCharacter": [
+            66,
+            66
+          ],
+          "outerEdgeInkPixels": 0
+        },
+        "candidateMetadataSha256": "aa5b85ee91676a3f9b6108a3efb134f7693adae6e792c667b7530ee848ad12b3"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateEvidenceLocked": true,
+          "independentNativeStructure": true,
+          "nativeRepeatStable": true,
+          "nativeSvgSemanticallyStable": true,
+          "nonTextExactExceptCorners": true,
+          "cornerAntialiasWithinPolicy": true,
+          "twoVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "f1153c87-a7fc-80d8-8008-c9a7f34bb9d8",
+        "instanceId": "f1153c87-a7fc-80d8-8008-c9a7f35cf91d",
+        "nativePngSha256": "a32c5b6e8d14c83004821215aa6df55eb72fdb3cdfe71b68e267f1506b008ee7",
+        "nativeSvgSha256": "4b2aab5f6854e8a9d9d49755d468ea32b77e015e780e19e81dec908913470135",
+        "candidateNativeSvgSha256": "5e6efa7f1e04b3e234f19a4b8d221ff9816feed41ef4f4241bb1dd6c80b3ca93",
+        "nativeReadSha256": "08fc945d2d44bd2a71454c48b783be99439b3bcbe5d3927ba78922963bcb292d",
+        "pixelDiagnostics": {
+          "sourceSize": [
+            42,
+            22
+          ],
+          "nativeSize": [
+            42,
+            22
+          ],
+          "nonTextChangedPixels": 32,
+          "nonTextMaximumChannelDelta": 2,
+          "nonTextChangesOutsideFourCorners": 0,
+          "glyphPixelsByCharacterZone": [
+            8,
+            10
+          ]
+        },
+        "glyphDiagnostics": {
+          "perCharacter": [
+            54,
+            51
+          ],
+          "outerEdgeInkPixels": 0
+        },
+        "candidateMetadataSha256": "34418039a5a0d6c87396ca3d90ef8141deb6517d3daeea04496132d26f672c59"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "7554a044db754107e45dfdd14d4ca5b786f2b66e49993bab834736b505249b7c",
+      "candidateAudit": "497e9b3f90f883cfadb361d97362aaa96206318e2189378cae6e5cc41eac7f34",
+      "visualReview": "9acbc0cd0c7c71ac6258f5d6c53d05060c9ef7909c1d06fb25909f8275927114",
+      "policy": "300d32d3250997e836a2b1e093a2e3bf9fcc8843c27a7e35a65614aa04042893"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "text": "启用",
+      "size": "default",
+      "color": "default",
+      "closable": false,
+      "checkable": false,
+      "checked": true,
+      "width": 42,
+      "height": 22
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "form.checkbox.default.enabled.default-font-0.2.6": {
+    "scope": "production",
+    "gateVersion": "0.2.6",
+    "status": "PASS",
+    "logicalComponentId": "form.checkbox.default.enabled",
+    "componentType": "Checkbox",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "7e42801bfb2b889dc221077b61caea37417176c5c66cb2297600adefaf747a94",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateSourceLocked": true,
+          "independentNativeStructure": true,
+          "nativeRepeatStable": true,
+          "nativeSvgSemantics": true,
+          "sourceColorsAndMarkRaster": true,
+          "twoVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "182:12",
+        "instanceId": "182:18",
+        "pixelDiagnostics": {
+          "nonMarkChangesOutsideCorners": [],
+          "cornerMaximumChannelDelta": 17,
+          "sourceMarkPixels": 14,
+          "nativeMarkPixels": 16,
+          "missingSourceMarkPixels": [],
+          "extraNativeMarkPixels": [
+            [
+              4,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ],
+          "markIntersectionOverUnion": 0.875,
+          "pass": true
+        },
+        "glyphDiagnostics": {
+          "perCharacterDarkPixels": [
+            75,
+            87
+          ],
+          "textOuterEdgeInkPixels": 0,
+          "pass": true
+        },
+        "evidenceSha256": {
+          "native-read.json": "613779bde6b5770fcc5cbde8d2d5e27958445794633f22b9844293d88ac017f1",
+          "native.png": "6af9bb2d73b06df3aa405951e3ebb0476319e89a2437ed8c82c97afb68851691",
+          "native-repeat.png": "6af9bb2d73b06df3aa405951e3ebb0476319e89a2437ed8c82c97afb68851691",
+          "native.svg": "0d74068bf3524f316a8e8d8ac78e783deff403167e902ba476a051e4ee2856cb"
+        },
+        "candidateMetadataSha256": "296379e6eff29f1e938363bf77bc235e1509dc033c9fa33394a0b5e9fb5e3ab4"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateSourceLocked": true,
+          "independentNativeStructure": true,
+          "nativeRepeatStable": true,
+          "nativeSvgSemantics": true,
+          "sourceColorsAndMarkRaster": true,
+          "twoVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "0b54f3e1-c822-80b2-8008-caa7c1f9e5d8",
+        "instanceId": "0b54f3e1-c822-80b2-8008-caa7c204ac97",
+        "pixelDiagnostics": {
+          "nonMarkChangesOutsideCorners": [],
+          "cornerMaximumChannelDelta": 39,
+          "sourceMarkPixels": 14,
+          "nativeMarkPixels": 16,
+          "missingSourceMarkPixels": [],
+          "extraNativeMarkPixels": [
+            [
+              4,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ],
+          "markIntersectionOverUnion": 0.875,
+          "pass": true
+        },
+        "glyphDiagnostics": {
+          "perCharacterDarkPixels": [
+            67,
+            80
+          ],
+          "textOuterEdgeInkPixels": 0,
+          "pass": true
+        },
+        "evidenceSha256": {
+          "native-read.json": "735a85b5a48d52fc4bf7c53c451b87df06290768caaa050eedaab9d7400e1d4b",
+          "native.png": "7d55d0bfb8f53ad2a8b7f8f6b911739eb96c3586afb7bcbacdc221874716f794",
+          "native-repeat.png": "7d55d0bfb8f53ad2a8b7f8f6b911739eb96c3586afb7bcbacdc221874716f794",
+          "native.svg": "8042c6553114795ed882c2c03d848893ff26de48f9eb18d2b12e8303f019ba9c"
+        },
+        "candidateMetadataSha256": "afb0be82fe46cd5d3782ea8813515d926cc02675e41ee9bf14ddd2187c17d065"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "14a63db1f2d81d2623f7fcfb70eff97e2b9299e9fc94cf940fac77af6a540b91",
+      "visualReview": "e17347266261b012889f148fa71834d3fce33aa70859a4afb2e1d8c31ef04ebf",
+      "policy": "2494c27108036da5e2291113e4b8feab2ef120d1829bca2c4bf6b6036d041d3e"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "text": "启用",
+      "modelValue": true,
+      "trueValue": true,
+      "falseValue": false,
+      "disabled": false,
+      "indeterminate": false,
+      "size": "default",
+      "border": false,
+      "width": 52,
+      "height": 21
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "form.radio.default.enabled.default-font-0.2.7": {
+    "scope": "production",
+    "gateVersion": "0.2.7",
+    "status": "PASS",
+    "logicalComponentId": "form.radio.default.enabled",
+    "componentType": "Radio",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "ec34263843da0bd5dec6ef4d21fc82a67cdb8e85b701c73e27c6061bdf1e89d1",
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "checks": {
+          "candidateSourceLocked": true,
+          "independentNativeStructure": true,
+          "nativeRepeatAndCandidateStable": true,
+          "nativeSvgSemantics": true,
+          "sourceColorsAndControlRaster": true,
+          "twoVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "190:3",
+        "instanceId": "190:7",
+        "pixelDiagnostics": {
+          "sourceTopBlankRowCropped": true,
+          "maximumControlChannelDelta": 22,
+          "exactBlueCenter": true,
+          "sourceBluePixels": 140,
+          "nativeBluePixels": 136,
+          "blueIntersectionOverUnion": 0.9714,
+          "pass": true
+        },
+        "glyphDiagnostics": {
+          "perCharacterDarkPixels": [
+            75,
+            87
+          ],
+          "textOuterEdgeInkPixels": 0,
+          "pass": true
+        },
+        "evidenceSha256": {
+          "native-read.json": "595a81de64632e94784f535d9483b39795ae87e0a29ead3668320858107b4c2b",
+          "native.png": "3ded80ada17d11c65de420b9a4ce022f3aa43ecd6e528c4cafc60307b57dc2a3",
+          "native-repeat.png": "3ded80ada17d11c65de420b9a4ce022f3aa43ecd6e528c4cafc60307b57dc2a3",
+          "native.svg": "c74080bbd06d3c375476810f6fc1c820848310297606cd8e770c07438abe9138"
+        },
+        "candidateMetadataSha256": "66dd046272ba808a75af5ed9c1fb06440ebc19720dda41e7e552dbe3e8133a00"
+      },
+      "penpot": {
+        "status": "PASS",
+        "checks": {
+          "candidateSourceLocked": true,
+          "independentNativeStructure": true,
+          "nativeRepeatAndCandidateStable": true,
+          "nativeSvgSemantics": true,
+          "sourceColorsAndControlRaster": true,
+          "twoVisibleUnclippedGlyphs": true,
+          "hashBoundVisualReview": true
+        },
+        "fileReference": "57949053-620f-8001-8008-c804c8d61529",
+        "componentId": "0b54f3e1-c822-80b2-8008-caaf723c9fe4",
+        "instanceId": "0b54f3e1-c822-80b2-8008-caaf723f745e",
+        "pixelDiagnostics": {
+          "sourceTopBlankRowCropped": true,
+          "maximumControlChannelDelta": 39,
+          "exactBlueCenter": true,
+          "sourceBluePixels": 140,
+          "nativeBluePixels": 140,
+          "blueIntersectionOverUnion": 1.0,
+          "pass": true
+        },
+        "glyphDiagnostics": {
+          "perCharacterDarkPixels": [
+            67,
+            80
+          ],
+          "textOuterEdgeInkPixels": 0,
+          "pass": true
+        },
+        "evidenceSha256": {
+          "native-read.json": "08cbf43bda9fb72141a580dcb5c7b597b4a453021a6dd7c5ba036dbece1e2377",
+          "native.png": "614fb273141e63fd81b4f56b4ac91e50c9428d0eb0bef639436320751a2ca20a",
+          "native-repeat.png": "614fb273141e63fd81b4f56b4ac91e50c9428d0eb0bef639436320751a2ca20a",
+          "native.svg": "c10be963d48f7de3fb9240c90e40feda03566826dd13a459792d185568dfa1ee"
+        },
+        "candidateMetadataSha256": "4c9bfa998dc35517eb06006da8ebfd07d0db9ea2b43a50f5a9681b4b094d9e9b"
+      }
+    },
+    "evidenceSha256": {
+      "sourceScreenshot": "b78d1af9ca728875171fd32257413fb34d624272033cbf331137ecc72253b06a",
+      "visualReview": "66a74cff8908352d4d400997c75a1b7245078b10f006e4c0bb49f4ea3f16b538",
+      "policy": "4de2f699dab79aba8e5a610ec9554ca37f076b9765dfcbb3a882571ad210eb14"
+    },
+    "contentScopeProposal": {
+      "kind": "fixed-native-content",
+      "text": "启用",
+      "modelValue": true,
+      "trueValue": true,
+      "falseValue": false,
+      "disabled": false,
+      "size": "default",
+      "border": false,
+      "width": 48,
+      "height": 21
+    },
+    "effectiveCjkFontIdentity": "UNVERIFIED",
+    "registryAdmission": "NOT_RUN",
+    "readyForPageGeneration": false,
+    "releaseReady": false
+  },
+  "form.switch.default.enabled.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "form.switch.default.enabled",
+    "componentType": "Switch",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "ab87af43fc5e538b45c07f93e478814c1a272ecf0ca10c7847c630772300cb38",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "size": "default",
+        "loading": false
+      },
+      "visibleText": [
+        "开"
+      ],
+      "width": 44,
+      "height": 22
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "192:6"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "ab87af43fc5e538b45c07f93e478814c1a272ecf0ca10c7847c630772300cb38",
+      "sourceScreenshot": "3f804718dacc89bc06554dde0c7cfbcad73f7481b5b7f199cbf64317ee7925a1",
+      "figmaQa": "f9f12437e982d44fe1a5935a4942215df624d380e52f2c2b7ade1c6c5120c0eb",
+      "nativeRead": "ed1e83aed210280068a3cefafcc53a94c7ae6d919104913789e3dab11f46da99",
+      "nativePng": "dd4525ac2c337a6857deaaa805a95eb7bbdb9b2fe330b065ea9487984a40b636",
+      "nativeSvg": "a96197bf5672a02f475b450eb536bbc8a76f86c2327e92d16e0223310a703a2a"
+    }
+  },
+  "content.card.default.user-info.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "content.card.default.user-info",
+    "componentType": "Card",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "2fb8a170bc335664864e735ee692532cc48b5eec000ce5c7edfc03bac2194f37",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "title": "用户信息",
+        "bordered": true,
+        "disHover": true,
+        "shadow": false,
+        "padding": 16
+      },
+      "visibleText": [
+        "暂无内容",
+        "用户信息"
+      ],
+      "width": 240,
+      "height": 106
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "198:8"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "2fb8a170bc335664864e735ee692532cc48b5eec000ce5c7edfc03bac2194f37",
+      "sourceScreenshot": "2586208b59051e11524aff5456958621b9454073ed84fcfa7298a69a53689286",
+      "figmaQa": "78150ef652e661b709a416a10ee3633e4dd014866352ba6326997b26ec9ae922",
+      "nativeRead": "f420c8fcdc3269a05a35aacaf47254d266f0213134e40a7e3c18309332f6d467",
+      "nativePng": "8fac33592fc7cc5612426024de538c331568c3dbac5713b369e533a7f407132d",
+      "nativeSvg": "5ce2b5d4a82fc7c9ae112f337323a37af468034266d4afba7513e879b5744a6b"
+    }
+  },
+  "data.pagination.default.three-pages.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "data.pagination.default.three-pages",
+    "componentType": "Pagination",
+    "variants": [
+      "default"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "396df8c411b03a5d4aa79ff5b5a5744eaa5383939bdf2387c5c8face31193066",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "modelValue": 1,
+        "total": 30,
+        "pageSize": 10,
+        "size": "default",
+        "simple": false,
+        "showTotal": false,
+        "showElevator": false,
+        "showSizer": false,
+        "disabled": false
+      },
+      "visibleText": [
+        "1",
+        "2",
+        "3"
+      ],
+      "width": 400,
+      "height": 32
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "205:16"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "396df8c411b03a5d4aa79ff5b5a5744eaa5383939bdf2387c5c8face31193066",
+      "sourceScreenshot": "24924e55210a6c50309cb9f198aed7d7cd77becbeaa3e56b8efa7c521b53e47f",
+      "figmaQa": "607c7a693f3207d49bd1ddd03ca099de02308b0e06314b265023a3546a0d2580",
+      "nativeRead": "750c113ee224d138df4f33bcef7fe52c79c9ede8b1e503100322bc26ca307484",
+      "nativePng": "400d51bcb9d81cc4f5bfe120499df53144fca1e9003b58802746c7ccd3f7a21a",
+      "nativeSvg": "d65f1503987f22607c45920f7fa0c17d9b78fbcdfd6d8253a9e86332ca667407"
+    }
+  },
+  "navigation.tabs.line.overview.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "navigation.tabs.line.overview",
+    "componentType": "Tabs",
+    "variants": [
+      "line"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "332575bbd132f8f2b41a786ac87a9744906c23d289dc9b8291afd4accd6f3656",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "modelValue": "overview",
+        "type": "line",
+        "size": "default",
+        "animated": false,
+        "captureFocus": false,
+        "closable": false,
+        "draggable": false
+      },
+      "visibleText": [
+        "概览",
+        "概览内容",
+        "详情"
+      ],
+      "width": 320,
+      "height": 73
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "207:3"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "332575bbd132f8f2b41a786ac87a9744906c23d289dc9b8291afd4accd6f3656",
+      "sourceScreenshot": "fc53be1cffc787259c0b0277e22d16198c25905ae8a5c6743917e397ab57f849",
+      "figmaQa": "4350b98f9b15fcb43dbd1da2a02c02b678029efc3eafd367cbf5d628663a90c9",
+      "nativeRead": "911a84d0c3d01b05a3316325c45dd05c59ffb31535504acc6066bdf0f71e6eaa",
+      "nativePng": "34a991a54bf2247c7e162fd9fc9018fcc766ee028db76d1966ab85e6f97eb8ea",
+      "nativeSvg": "2b488b178d3981c2746b61dd03593f21ebc8f0653d8a3285d9467412a8991456"
+    }
+  },
+  "navigation.tree.expanded.departments.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "navigation.tree.expanded.departments",
+    "componentType": "Tree",
+    "variants": [
+      "expanded"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "1d48223064c3ca52c496c96773007ba29844471c2840eaa3d132418e910b00a7",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "data": [
+          {
+            "title": "部门",
+            "expand": true,
+            "children": [
+              {
+                "title": "研发部"
+              },
+              {
+                "title": "设计部"
+              }
+            ]
+          }
+        ],
+        "multiple": false,
+        "showCheckbox": false,
+        "checkStrictly": false,
+        "checkDirectly": false,
+        "selectNode": true,
+        "expandNode": false
+      },
+      "visibleText": [
+        "研发部",
+        "设计部",
+        "部门"
+      ],
+      "width": 240,
+      "height": 79
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "210:6"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "1d48223064c3ca52c496c96773007ba29844471c2840eaa3d132418e910b00a7",
+      "sourceScreenshot": "52df434232bb7ed7deb47d3e114c95fdbb2200793acae3cf5c2e78c2bd99dcee",
+      "figmaQa": "57ef350445f782a3ca687b0061814cb4f98d9b0ff0fb024b0790b7b783dd3d49",
+      "nativeRead": "da5e9b6a9cbc4b57e9f296cfd803083fa951e11394bb12ec0309f99f98bdab01",
+      "nativePng": "6357d56083d950579fff688397135ca001fa3d769737304c94bd6ba05953798e",
+      "nativeSvg": "f675ebd0a5b022903e6d83fed16f35df8259300e2af81cb586755c90ea51a2cb"
+    }
+  },
+  "form.datepicker.date.selected.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "form.datepicker.date.selected",
+    "componentType": "DatePicker",
+    "variants": [
+      "date-selected"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "5e13199967563a08b7e1d1556530f39253ed1425940764c5b1e8202d94f10acc",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "type": "date",
+        "modelValue": "2024-01-01",
+        "format": "yyyy-MM-dd",
+        "size": "default",
+        "disabled": false,
+        "clearable": false,
+        "readonly": true,
+        "open": false
+      },
+      "visibleText": [
+        "2024-01-01"
+      ],
+      "width": 211,
+      "height": 32
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "218:16"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "5e13199967563a08b7e1d1556530f39253ed1425940764c5b1e8202d94f10acc",
+      "sourceScreenshot": "e3f13e5586a8ed5849e6027d15c92c39662e8b773a93c5960fcf99a26a8ecf9e",
+      "figmaQa": "b036c70119e7e6d5a05e0280b4e977fbf88b391be4e67200229710206ce4c063",
+      "nativeRead": "865f15c0151b2d1d93dd4ba94b10ea95070be404229eb05ebe86d5b0d53f2699",
+      "nativePng": "6cde5507421597666381d4398cbf8117d126a290fd6607576eaba91160a44823",
+      "nativeSvg": "b461e08fbbe7351901fdb6d83bec01f56f39d97b0643b9daa5d15cbeee591d8a"
+    }
+  },
+  "form.single.name.empty.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "form.single.name.empty",
+    "componentType": "Form",
+    "variants": [
+      "single-field-empty"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "cd979fda5656f4fb49a25cc79302ed03058e43c9a81af870c5ad1ecb32a4643f",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "model": {
+          "name": ""
+        },
+        "labelWidth": 80,
+        "labelPosition": "right",
+        "showMessage": true
+      },
+      "visibleText": [
+        "姓名"
+      ],
+      "width": 320,
+      "height": 34
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "220:9"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "cd979fda5656f4fb49a25cc79302ed03058e43c9a81af870c5ad1ecb32a4643f",
+      "sourceScreenshot": "7c1a91a199461c19571a81311b0d882c1307a6636b63d7664ae2a117f5be568c",
+      "figmaQa": "d9c06ef2710339c1805c4f67bbad197969f278d4c24600bf7c8620b552ea5393",
+      "nativeRead": "e7a0abd7c74e5461d371bfc282f4431cc57e915cdd74c966ab6f3aa8408cf65a",
+      "nativePng": "313548edb6f4415a8c6632166fdf0281d10198fefcf098b98a530d30cc5a2bfa",
+      "nativeSvg": "7a5765b1a655f83eef8431fafe0e33787c8005d75ff404090fe381d08dc6d78d"
+    }
+  },
+  "overlay.modal.notice.open.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "overlay.modal.notice.open",
+    "componentType": "Modal",
+    "variants": [
+      "notice-open-no-footer"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "583dbd261ad76a8218bb9f3e0585955943bd8d0ef0845922b62b8a4a47b38e53",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "modelValue": true,
+        "title": "提示",
+        "width": 320,
+        "closable": false,
+        "footerHide": true,
+        "mask": true,
+        "transfer": true
+      },
+      "visibleText": [
+        "提示",
+        "操作已完成"
+      ],
+      "width": 320,
+      "height": 104
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "222:13"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "583dbd261ad76a8218bb9f3e0585955943bd8d0ef0845922b62b8a4a47b38e53",
+      "sourceScreenshot": "a3069f00956014ac0796ca0f4b079356ca1f625b7620434691e0460521b3d963",
+      "figmaQa": "272ab025f6494ec0b0b3fd9f006d45423356e72812e8a3cc2323ee9570b6a5e7",
+      "nativeRead": "8e1a57d6c28840ce06aa6bd3a14c4211d3f73a91eed02b92abe8187c51c20be7",
+      "nativePng": "76b7910b6faee8dca930c34fa7243367ff5c901ea700e81ecf78376bf5c4fd64",
+      "nativeSvg": "6caedccd3db421447c49ed60f3e7abe196483004b5cf0fda892acb036eef3a09"
+    }
+  },
+  "overlay.drawer.detail.open.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "overlay.drawer.detail.open",
+    "componentType": "Drawer",
+    "variants": [
+      "right-open-no-close"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "d0ff27358b995fc667a7f32b7c7faf776209ada1bc26b7876ed941bc0997582e",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "modelValue": true,
+        "title": "详情",
+        "width": 320,
+        "placement": "right",
+        "closable": false,
+        "mask": true,
+        "transfer": true
+      },
+      "visibleText": [
+        "抽屉内容",
+        "详情"
+      ],
+      "width": 320,
+      "height": 500
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "226:8"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "d0ff27358b995fc667a7f32b7c7faf776209ada1bc26b7876ed941bc0997582e",
+      "sourceScreenshot": "407d157f1b0c86dd7bf0e1fed62117c3fe0fec77b9b930e1276e6574e6cdf5d2",
+      "figmaQa": "2653b6806190a6477f8586d200340b366fc4fdba573ff9ac223764e02bd7f7d7",
+      "nativeRead": "2b616fb1aadacea4c2867bdbbf9cdb849317cde6035d1dd1d20b524e7cf65e8e",
+      "nativePng": "c7ff9ce87701ca191e31bd0106278628a591a7439e5756eb7b606dd1c96c02a6",
+      "nativeSvg": "026e74473f5f6003dfc221eebdd73d4be51e67fec6d69e0e3bb7cb680d7ecfa7"
+    }
+  },
+  "data.upload.drag.empty.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "data.upload.drag.empty",
+    "componentType": "Upload",
+    "variants": [
+      "drag-empty-static"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "1a347724e0e6e088de584947190f02b526135d1e37fcf096bf8c5aa9312ef94a",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "action": "/upload",
+        "type": "drag",
+        "showUploadList": false,
+        "multiple": false,
+        "disabled": false
+      },
+      "visibleText": [
+        "上传文件"
+      ],
+      "width": 320,
+      "height": 82
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "229:7"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "1a347724e0e6e088de584947190f02b526135d1e37fcf096bf8c5aa9312ef94a",
+      "sourceScreenshot": "cb3427ae4ec8a1a0b7e243ec3d00506b48af5dc63a33488d53cbc3507bf10f62",
+      "figmaQa": "a76a863488be92d0547c5f1fb001254d4bc281c46cc43b47df62cc447472eb2c",
+      "nativeRead": "1e8e939c1c12f6392edb9f1d2ae79fc01f5103b6302de20ae4c6df2fb3fcba3a",
+      "nativePng": "497a18a98f127090ab10e57bb8841e391c2fcadaa15697e0e43bfab933cfd1d4",
+      "nativeSvg": "80c0d7a6de400c69731ddd6935657b17cdd478eb0f52ec2085ca269c23972926"
+    }
+  },
+  "form.cascader.region.selected.figma-batch-0.2.8": {
+    "scope": "production",
+    "gateVersion": "0.2.8-figma-batch",
+    "status": "PASS",
+    "logicalComponentId": "form.cascader.region.selected",
+    "componentType": "Cascader",
+    "variants": [
+      "region-selected-closed"
+    ],
+    "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "componentIrSha256": "e6d748e4cfc858181ff72e5e2bb7751f2c7155e7dedeaec3bbd9823166181d03",
+    "contentScopeProposal": {
+      "kind": "fixed-native-snapshot",
+      "props": {
+        "data": [
+          {
+            "value": "zhejiang",
+            "label": "浙江",
+            "children": [
+              {
+                "value": "hangzhou",
+                "label": "杭州"
+              }
+            ]
+          }
+        ],
+        "modelValue": [
+          "zhejiang",
+          "hangzhou"
+        ],
+        "placeholder": "请选择地区",
+        "clearable": false,
+        "transfer": false,
+        "disabled": false
+      },
+      "visibleText": [
+        "浙江 / 杭州"
+      ],
+      "width": 240,
+      "height": 32
+    },
+    "admissionEligible": true,
+    "issues": [],
+    "platforms": {
+      "figma": {
+        "status": "PASS",
+        "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+        "componentId": "231:13"
+      }
+    },
+    "evidenceSha256": {
+      "sourceComponentIr": "e6d748e4cfc858181ff72e5e2bb7751f2c7155e7dedeaec3bbd9823166181d03",
+      "sourceScreenshot": "46a2a1ef4ffab5d416712414715fe8d08dbedc2e29388c353e7a9fb3aa266c65",
+      "figmaQa": "0148ed0f481edffbbe8e7950e2258acf0fce706aa3732c6f2048353c73753111",
+      "nativeRead": "fb6dd728f1a0ad343f9dfcde808bacf676d6ea9187312e354ec48a4cf0e2d5c6",
+      "nativePng": "185bd2de61a246eadeafd0908b26bf077143d96987b9e58362fe9d8303fd5ecd",
+      "nativeSvg": "2b47e361f78756ec35cf9bc63d1c070364b4fb5dc24b88c00516a92301b2c0da"
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "version": "0.1.0",
+  "mappingSha256": "ab582e68875a64450c61d8896edc237a98746759fdf2c52c521ee489c0c848db",
+  "items": [
+    {
+      "sourceId": "header-title",
+      "props": {
+        "text": {
+          "text": "用户管理",
+          "evidence": [
+            "e1"
+          ]
+        }
+      },
+      "slots": {},
+      "textStyle": {
+        "typographyToken": {
+          "token": "typography.heading"
+        },
+        "colorToken": {
+          "token": "color.text"
+        }
+      },
+      "textSize": {
+        "width": 80,
+        "height": 28
+      },
+      "cellSlots": {
+        "trailing-icon": [
+          {
+            "id": "header-title.icon",
+            "type": "IconInstance",
+            "sourceIds": [
+              "header-title"
+            ],
+            "iconId": "remix.settings-3-line",
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 24
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 24
+              }
+            }
+          }
+        ]
+      },
+      "cellOrder": [
+        "content",
+        "trailing-icon"
+      ],
+      "cellMain": "space-between"
+    },
+    {
+      "sourceId": "field-name",
+      "props": {
+        "placeholder": {
+          "text": "请输入姓名",
+          "evidence": [
+            "e2"
+          ]
+        }
+      },
+      "slots": {},
+      "cellSlots": {
+        "label": [
+          {
+            "id": "field-name.label",
+            "type": "Text",
+            "sourceIds": [
+              "field-name"
+            ],
+            "text": "姓名",
+            "style": {
+              "typographyToken": {
+                "token": "typography.body"
+              },
+              "colorToken": {
+                "token": "color.text"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 28
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 22
+              }
+            }
+          }
+        ]
+      },
+      "cellDirection": "vertical"
+    },
+    {
+      "sourceId": "field-status",
+      "props": {
+        "value": {
+          "text": "启用",
+          "evidence": [
+            "e2"
+          ]
+        }
+      },
+      "slots": {},
+      "cellSlots": {
+        "label": [
+          {
+            "id": "field-status.label",
+            "type": "Text",
+            "sourceIds": [
+              "field-status"
+            ],
+            "text": "状态",
+            "style": {
+              "typographyToken": {
+                "token": "typography.body"
+              },
+              "colorToken": {
+                "token": "color.text"
+              }
+            },
+            "layout": {
+              "width": {
+                "mode": "fixed",
+                "value": 28
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 22
+              }
+            }
+          }
+        ]
+      },
+      "cellDirection": "vertical"
+    },
+    {
+      "sourceId": "query-action",
+      "props": {},
+      "slots": {
+        "label": [
+          {
+            "kind": "text",
+            "claim": {
+              "text": "查询",
+              "evidence": [
+                "e2"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "list-title",
+      "props": {
+        "text": {
+          "text": "用户列表",
+          "evidence": [
+            "e3"
+          ]
+        }
+      },
+      "slots": {},
+      "textStyle": {
+        "typographyToken": {
+          "token": "typography.body"
+        },
+        "colorToken": {
+          "token": "color.text"
+        }
+      },
+      "textSize": {
+        "width": 56,
+        "height": 22
+      }
+    },
+    {
+      "sourceId": "user-table",
+      "props": {
+        "headers": [
+          {
+            "text": "姓名",
+            "evidence": [
+              "e3"
+            ]
+          },
+          {
+            "text": "状态",
+            "evidence": [
+              "e3"
+            ]
+          },
+          {
+            "text": "角色",
+            "evidence": [
+              "e3"
+            ]
+          }
+        ]
+      },
+      "slots": {},
+      "tableHeaderStyle": {
+        "typographyToken": {
+          "token": "typography.body"
+        },
+        "colorToken": {
+          "token": "color.text"
+        }
+      },
+      "tableRecords": [
+        {
+          "name": {
+            "text": "张三",
+            "evidence": [
+              "e3"
+            ]
+          },
+          "status": {
+            "text": "启用",
+            "evidence": [
+              "e3"
+            ]
+          },
+          "role": {
+            "text": "管理员",
+            "evidence": [
+              "e3"
+            ]
+          }
+        },
+        {
+          "name": {
+            "text": "李四",
+            "evidence": [
+              "e3"
+            ]
+          },
+          "status": {
+            "text": "启用",
+            "evidence": [
+              "e3"
+            ]
+          },
+          "role": {
+            "text": "编辑",
+            "evidence": [
+              "e3"
+            ]
+          }
+        },
+        {
+          "name": {
+            "text": "王五",
+            "evidence": [
+              "e3"
+            ]
+          },
+          "status": {
+            "text": "停用",
+            "evidence": [
+              "e3"
+            ]
+          },
+          "role": {
+            "text": "访客",
+            "evidence": [
+              "e3"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "list-summary",
+      "props": {
+        "text": {
+          "text": "共 3 位用户",
+          "evidence": [
+            "e3"
+          ]
+        }
+      },
+      "slots": {},
+      "textStyle": {
+        "typographyToken": {
+          "token": "typography.body"
+        },
+        "colorToken": {
+          "token": "color.text"
+        }
+      },
+      "textSize": {
+        "width": 73,
+        "height": 22
+      }
+    }
+  ]
+}

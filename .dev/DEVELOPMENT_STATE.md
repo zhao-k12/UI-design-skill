@@ -71,7 +71,8 @@
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
 - TASK-116: 用户明确将 Penpot 全线搁置。新增 Figma-only 生产入口，当前 V0.2.6 紧凑查询输入九阶段 Core 与 Figma Adapter 预检 PASS，仅产出 Figma 字节锁；无 Penpot 文件参数、预检或活动验收门。新 Figma 锁内的平台源码/计划哈希与 TASK-110 已原生执行且九项单端发布门通过的锁完全一致；TASK-116 自身尚未执行新的原生页面。定向回归 5 项 PASS。详见 [范围决策](TASK-116_FIGMA_SCOPE.md)。
 - TASK-117: 11 类剩余 Figma 候选改为一次批量核验，逐类输出来源 Component IR／官方截图／Figma 原生 QA／独立导出哈希链；11/11 PASS、0 问题，7 类固定内容范围需集中补齐。篡改来源身份会阻断整批；定向 5 项测试 PASS。尚未变更正式 Registry 准入；批量迁移的架构冲突与建议见 [TASK-117](TASK-117_FIGMA_BATCH.md)。
-- Next action: 当前开发和验收仅走 Figma。将 7 类缺失的固定内容范围集中确定，随后用一个版本化 Figma-only 准入门批量处理 11 类并迁移生产 Registry；每类失败仍独立显示。历史双平台 V0.2 发布目标不作为当前任务队列，也不得把单端结果写成双端发布通过。
+- TASK-118: 用户批准版本化 Figma-only 批量准入。新增独立 `0.2.7` Registry：原有 7 类固定配置与新增 11 类官方运行属性／原生可见文字／尺寸快照，共 18 类均可解析且绑定到已核验 Figma 主组件；旧版不变。新独立原型迁移、九阶段 Core、Figma 预检、新字节锁及 Figma 原生页面 `252:1244` 执行 PASS；独立复读 5 个实例、21 个文字，重复原生 PNG 与视觉复核 PASS，10 项单端发布门全 PASS。首轮编码损坏草稿已删除并以无损传输重跑。详见 [TASK-118](TASK-118_FIGMA_BATCH_ADMISSION.md)。
+- Next action: 当前定义的 Figma 固定配置范围已通过批量准入与单端发布门。后续扩展不同文字、尺寸或状态须另做来源与保真准入；历史双平台 V0.2 发布目标不作为当前任务队列，也不得把单端结果写成双端发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

@@ -1,0 +1,19 @@
+{
+  "kind": "figma-only-profile-migration",
+  "status": "READY_FOR_PREFLIGHT",
+  "sourcePackage": "examples/user-management-compact-search-v026",
+  "targetComponentRegistrySha256": "c2632f55d2f512814a9e6fb6d4990b3d5f38f67d0ec953ada48d1cffa9c4b4ba",
+  "policy": "same-approved-semantics/new-18-component-figma-registry/no-native-evidence-reuse",
+  "files": {
+    "prototype.txt": "389221d44730b662f4c53041d564304c536633a6ce4df019eb51182c9b8724c1",
+    "observations.json": "eae4051cba4aaac0dccf8f6a1bcf7c1838aa3b6a39e85b60cffa445f2b29d3a0",
+    "review.json": "6b93f68d828dc132c721e4fc0c4ba9d77532720f2c695c6a150f18e4301b17e1",
+    "decisions.json": "fda3869f490371636cc317b28c40b6cba34198e1cd76f7024e2f4eebede0d094",
+    "source-geometry.json": "f088447b0257f46350b40cc8d7d726e7c2d38b7b7fee2fb043eeba0e0e119113",
+    "runtime-capture.json": "8f23f90cdc170a2c6b1b6f732cb57cc8e3d3ce9267554c94eff80fd4cbb16072",
+    "runtime-measurements.json": "42fe7e59e164d89452151d6c18506501649ccba3ccf46e99cc339e37766080c8",
+    "layout-plan.json": "00fb63c9b50b9702bbdedaad45e37b92a310c13acebb02dccfd49635d7391dce",
+    "content.json": "291dc43f3b9c642c8ef2682da9f44a6d7c529b3ab780e68a1763beb1d8409840",
+    "versions.json": "1f8167b0e5322641bab22ac0da201616b194a2954fb05f9044dd7f4899281b5a"
+  }
+}
