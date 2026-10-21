@@ -1,0 +1,172 @@
+{
+  "version": "0.1.0",
+  "documentId": "workflow-v03-user-management-smoke",
+  "sources": [
+    {
+      "id": "prototype",
+      "path": "prototype.txt",
+      "sha256": "a112c269ea5fe956007818e52456fb86bb5ce07da14c9e11bed33d922c17b954"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e0",
+      "sourceId": "prototype",
+      "quote": "用户管理｜组件流程验证页",
+      "start": 0,
+      "end": 12
+    },
+    {
+      "id": "e1",
+      "sourceId": "prototype",
+      "quote": "页头左侧是“用户管理”，右侧是已准入的 remix.settings-3-line 设置图标。",
+      "start": 14,
+      "end": 61
+    },
+    {
+      "id": "e2",
+      "sourceId": "prototype",
+      "quote": "查询区分两行：第一行依次放“姓名”输入框（占位文字“请输入姓名”）和“状态”选择框（显示“启用”）；第二行在右侧放“查询”按钮。此页没有范围字段。",
+      "start": 63,
+      "end": 136
+    },
+    {
+      "id": "e3",
+      "sourceId": "prototype",
+      "quote": "列表区先显示“用户列表”，再显示三列表格。列名为“姓名／状态／角色”；三条固定记录依次是：张三／启用／管理员，李四／启用／编辑，王五／停用／访客。表格下方显示“共 3 位用户”，不放导出操作。",
+      "start": 138,
+      "end": 234
+    },
+    {
+      "id": "e4",
+      "sourceId": "prototype",
+      "quote": "这是一张只展示固定静态数据的用户查询页。输入、选择、按钮和表格均使用当前已准入的默认组件配置，不增加交互或新业务数据。",
+      "start": 236,
+      "end": 295
+    }
+  ],
+  "page": {
+    "identity": {
+      "text": "用户管理",
+      "evidence": [
+        "e0"
+      ]
+    },
+    "primaryTask": {
+      "text": "按姓名与状态查询并查看用户列表",
+      "evidence": [
+        "e2"
+      ]
+    },
+    "blocks": [
+      {
+        "id": "header",
+        "purpose": {
+          "text": "页头",
+          "evidence": [
+            "e1"
+          ]
+        },
+        "fields": [],
+        "buttons": [],
+        "dataRegions": [],
+        "staticContent": [
+          {
+            "id": "header-title",
+            "description": {
+              "text": "用户管理标题和设置图标",
+              "evidence": [
+                "e1"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "query",
+        "purpose": {
+          "text": "紧凑查询区",
+          "evidence": [
+            "e2"
+          ]
+        },
+        "fields": [
+          {
+            "id": "field-name",
+            "description": {
+              "text": "姓名输入框",
+              "evidence": [
+                "e2"
+              ]
+            }
+          },
+          {
+            "id": "field-status",
+            "description": {
+              "text": "状态选择框",
+              "evidence": [
+                "e2"
+              ]
+            }
+          }
+        ],
+        "buttons": [
+          {
+            "id": "query-action",
+            "description": {
+              "text": "查询按钮",
+              "evidence": [
+                "e2"
+              ]
+            }
+          }
+        ],
+        "dataRegions": [],
+        "staticContent": []
+      },
+      {
+        "id": "list",
+        "purpose": {
+          "text": "用户列表区",
+          "evidence": [
+            "e3"
+          ]
+        },
+        "fields": [],
+        "buttons": [],
+        "dataRegions": [
+          {
+            "id": "user-table",
+            "description": {
+              "text": "姓名、状态、角色三列表格与三行固定用户",
+              "evidence": [
+                "e3"
+              ]
+            }
+          }
+        ],
+        "staticContent": [
+          {
+            "id": "list-title",
+            "description": {
+              "text": "用户列表标题",
+              "evidence": [
+                "e3"
+              ]
+            }
+          },
+          {
+            "id": "list-summary",
+            "description": {
+              "text": "共 3 位用户",
+              "evidence": [
+                "e3"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "unknowns": []
+}

@@ -1,0 +1,95 @@
+{
+  "version": "0.1.0",
+  "pattern": "list-page",
+  "pageTreeSha256": "776a3965ecc2dc8ea02d91fcb0a9d2db33ca8a9811007c4123511c8cbe5b029c",
+  "tokenRegistrySha256": "f0358b40a028686e28e525ee3d2461e1d0b1afb711f3b73a931fed8173e37e68",
+  "sectionRegions": {
+    "header": "header",
+    "query": "query",
+    "list": "table"
+  },
+  "measurements": {
+    "header-title": {
+      "width": 1392,
+      "height": 28,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.header-title"
+      }
+    },
+    "field-name": {
+      "width": 328,
+      "height": 62,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.field-name"
+      }
+    },
+    "field-status": {
+      "width": 328,
+      "height": 62,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.field-status"
+      }
+    },
+    "query-action": {
+      "width": 60,
+      "height": 32,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.query-action"
+      }
+    },
+    "list-title": {
+      "width": 56,
+      "height": 22,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.list-title"
+      }
+    },
+    "user-table": {
+      "width": 1392,
+      "height": 192,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.user-table"
+      }
+    },
+    "list-summary": {
+      "width": 73,
+      "height": 22,
+      "source": {
+        "kind": "runtime",
+        "reference": "metrics.list-summary"
+      }
+    }
+  },
+  "sectionConfigs": {
+    "query": {
+      "padding": {
+        "top": {
+          "token": "spacing.md"
+        },
+        "right": {
+          "token": "spacing.md"
+        },
+        "bottom": {
+          "token": "spacing.md"
+        },
+        "left": {
+          "token": "spacing.md"
+        }
+      },
+      "buttonAlignment": "end"
+    },
+    "list": {
+      "contentOrder": [
+        "list-title",
+        "user-table",
+        "list-summary"
+      ]
+    }
+  }
+}

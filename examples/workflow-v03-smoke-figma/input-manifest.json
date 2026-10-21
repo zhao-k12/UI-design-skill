@@ -1,0 +1,18 @@
+{
+  "kind": "workflow-v03-independent-smoke",
+  "status": "READY_FOR_PREFLIGHT",
+  "sourcePackage": "examples/workflow-v03-smoke-figma",
+  "policy": "new-prototype/same-admitted-component-configurations",
+  "files": {
+    "content.json": "f47f5812b3409fa953aed3b8c99b122924dc3f10da77fec0f55876852a90b3ef",
+    "decisions.json": "24d4b6b577cf2e3a2b1d14e5f019dfb7f742b215459577180d4f77ad61b8f7eb",
+    "layout-plan.json": "36237ca16f96baac684ce1e239ca49aa79fee7ef5e38d16e4bb9372d17a60945",
+    "observations.json": "ac03b491bf99022e7f94093258ce3f71a1980f5be0a29a2dc685327603f5c1b3",
+    "prototype.txt": "a112c269ea5fe956007818e52456fb86bb5ce07da14c9e11bed33d922c17b954",
+    "review.json": "2d419e14ffa35c0911bab761eb6c6cb9a7a9a23b6eb88573f8f6b48caad657c4",
+    "runtime-capture.json": "8f23f90cdc170a2c6b1b6f732cb57cc8e3d3ce9267554c94eff80fd4cbb16072",
+    "runtime-measurements.json": "42fe7e59e164d89452151d6c18506501649ccba3ccf46e99cc339e37766080c8",
+    "source-geometry.json": "f088447b0257f46350b40cc8d7d726e7c2d38b7b7fee2fb043eeba0e0e119113",
+    "versions.json": "1f8167b0e5322641bab22ac0da201616b194a2954fb05f9044dd7f4899281b5a"
+  }
+}

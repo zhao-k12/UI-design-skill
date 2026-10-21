@@ -20,7 +20,7 @@ async function executeAnnotatedSkeleton(api, payload) {
                          b:parseInt(hex.slice(5,7),16)/255});
   for (const cell of payload.cells) {
     const rect = api.createRectangle();
-    rect.name = `${cell.componentType} · ${cell.sourceId}`;
+    rect.name = `骨架/${cell.cellId}/${cell.sourceId}/${cell.componentType}/${cell.componentId || 'Text'}`;
     rect.resize(cell.box.width, cell.box.height);
     rect.fills = [{type:'SOLID',color:color(cell.color)}];
     root.appendChild(rect);
@@ -31,8 +31,10 @@ async function executeAnnotatedSkeleton(api, payload) {
     root.appendChild(label);
     label.x = rect.x + 4; label.y = rect.y + 4;
     cells.push({cellId:cell.cellId,sourceId:cell.sourceId,componentType:cell.componentType,
-                color:cell.color,box:cell.box,rectangleId:rect.id,labelId:label.id});
+                componentId:cell.componentId || null,color:cell.color,box:cell.box,
+                rectangleId:rect.id,labelId:label.id});
   }
   return {status:'EXECUTED',stage:'annotated-skeleton-page',pageReference:page.id,
-          rootReference:root.id,revision:payload.revision,cells};
+          rootReference:root.id,revision:payload.revision,cells,
+          createdNodeIds:[page.id,root.id,...cells.flatMap(cell => [cell.rectangleId,cell.labelId])]};
 }

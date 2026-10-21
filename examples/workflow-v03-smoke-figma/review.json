@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0",
+  "analysisSha256": "e32264b52fdf4d8cdf54f24703ad6ae33e4371000386ed30abc323c2fc9c2799",
+  "decision": "approved",
+  "reviewedBy": "human-user",
+  "reviewedAt": "2026-10-21T13:50:47+08:00",
+  "note": "The user approved the newly authored workflow-v03 user-management prototype structure in this conversation: header and settings icon; name Input and status Select on the first query row; Query Button on the second row; fixed three-row user Table and summary; no scope, export or interaction."
+}
