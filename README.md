@@ -75,6 +75,14 @@ node --test tests/*.test.mjs
 
 该命令保存九阶段 Core、Figma 原生计划和字节锁；实际写入 Figma 与原生复验仍需执行已校验的计划。旧双平台命令只用于历史复验。
 
+剩余 11 类 Figma 候选可一次完成来源与原生证据核验，逐类问题写入同一报告：
+
+```powershell
+.\.venv\Scripts\python.exe scripts/audit_figma_candidate_batch.py --output artifacts/figma-candidate-batch.json
+```
+
+当前批次 11/11 证据通过，7 类还需确定固定内容范围；报告不表示正式组件库已准入。
+
 完整目标见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
 
 - 提前建设18类组件，以及明确的变体、状态、尺寸和配置覆盖范围。

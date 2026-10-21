@@ -70,7 +70,8 @@
 - TASK-115: V0.2.6 新输入迁移改为仓库内同级隔离目录生成、自验后移动；结构门失败不留下目标或临时目录，仓库外目标被拒绝。已有目标继续只读复用；相关回归 9 项 PASS，当前发布状态不变。
 - Pending scope: [V0.2 Autonomous Development Plan](../docs/DEVELOPMENT_PLAN_V0.2.md)。
 - TASK-116: 用户明确将 Penpot 全线搁置。新增 Figma-only 生产入口，当前 V0.2.6 紧凑查询输入九阶段 Core 与 Figma Adapter 预检 PASS，仅产出 Figma 字节锁；无 Penpot 文件参数、预检或活动验收门。新 Figma 锁内的平台源码/计划哈希与 TASK-110 已原生执行且九项单端发布门通过的锁完全一致；TASK-116 自身尚未执行新的原生页面。定向回归 5 项 PASS。详见 [范围决策](TASK-116_FIGMA_SCOPE.md)。
-- Next action: 当前开发和验收仅走 Figma。七组件正式准入、18 类目标的 Figma 证据、新独立原型端到端与九项 Figma 门已通过；余下 11 类目前仅为 Figma 单端候选，后续如需进入正式 Registry，按 Figma-only 新范围分别完成正式准入。历史双平台 V0.2 发布目标不作为当前任务队列，也不得把单端结果写成双端发布通过。
+- TASK-117: 11 类剩余 Figma 候选改为一次批量核验，逐类输出来源 Component IR／官方截图／Figma 原生 QA／独立导出哈希链；11/11 PASS、0 问题，7 类固定内容范围需集中补齐。篡改来源身份会阻断整批；定向 5 项测试 PASS。尚未变更正式 Registry 准入；批量迁移的架构冲突与建议见 [TASK-117](TASK-117_FIGMA_BATCH.md)。
+- Next action: 当前开发和验收仅走 Figma。将 7 类缺失的固定内容范围集中确定，随后用一个版本化 Figma-only 准入门批量处理 11 类并迁移生产 Registry；每类失败仍独立显示。历史双平台 V0.2 发布目标不作为当前任务队列，也不得把单端结果写成双端发布通过。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 
