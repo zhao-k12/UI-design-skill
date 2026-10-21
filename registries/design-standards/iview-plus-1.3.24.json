@@ -1,0 +1,22 @@
+{
+  "standard": "View UI Plus",
+  "version": "1.3.24",
+  "source": {
+    "repository": "https://github.com/view-design/ViewUIPlus",
+    "commit": "23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+    "path": "node_modules/view-ui-plus/src/styles/custom.less",
+    "sha256": "2b1a624dc45888b17622d51b1eb82e7fadfd2e2d03fea79a2ceb537b6c4d7788"
+  },
+  "colors": {
+    "primary": "#2d8cf0",
+    "text": "#515a6e",
+    "body": "#ffffff",
+    "layoutBody": "#f5f7f9",
+    "surface": "#ffffff",
+    "tableHeader": "#f8f8f9",
+    "border": "#dcdee2"
+  },
+  "gridColumns": 24,
+  "baseFontSize": 14,
+  "fontPolicy": "platform-default adaptation approved by user; source font family is not enforced"
+}
