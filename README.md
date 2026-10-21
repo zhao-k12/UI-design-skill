@@ -34,9 +34,9 @@ AI 理解内容、选择规则和组件；程序计算布局与验证；官方�
 
 ## 如何使用 Skill
 
-克隆仓库，在 Codex 项目对话中读取 [SKILL.md](SKILL.md)，提供静态原型并选择目标平台。例如：
+克隆仓库，在 Codex 项目对话中读取 [SKILL.md](SKILL.md)，提供静态原型。当前开发只走 Figma，例如：
 
-> 读取 SKILL.md，分析我提供的静态原型，使用已准入组件生成 Penpot 可编辑设计稿。先核对原型内容，保存分析、布局、UI-IR 和验收结果。
+> 读取 SKILL.md，分析我提供的静态原型，使用已准入组件生成 Figma 可编辑设计稿。先核对原型内容，保存分析、布局、UI-IR 和验收结果。
 
 Skill依赖整个仓库的程序、Schema、Registry和证据，不能只复制SKILL.md。平台执行需要当前会话可用的连接器或公开插件SDK、目标文件权限和合法字体。历史平台ID仅供追溯原验收，不授予访问权限，也不能直接照搬到其他账号。
 
@@ -65,7 +65,15 @@ node --test tests/*.test.mjs
 
 官方运行环境支持[两次真实提取复验](docs/RUNTIME_REPLAY.md)。后续新设计字体使用 [Figma/Penpot 各自的默认字体](docs/FONT_POLICY.md)，实际绑定须在目标会话验证。
 
-当前 V0.2.6 生产 Profile 包含 Button、Input、Select、Table、Tag、Checkbox、Radio 各一项固定内容配置，均有历史双平台原生保真准入；七个 Figma 主组件引用已再次核验。经审核的新用户管理紧凑查询原型已通过当前字节锁的 Figma 原生端到端验收和九项 Figma 单端发布门，页面实际使用前四类。18 类目标组件均有 Figma 原生证据，其中 11 类仍只有 Figma 单端 QA。Figma 使用 Inter，历史 Penpot 配置使用 Source Sans Pro；用户已决定暂缓不稳定的 Penpot 原生连接。详见[当前发布就绪审计](docs/V02_RELEASE_READINESS.md)。V0.2 尚未发布。
+当前开发范围已按用户决定改为 **仅 Figma**，不再安排 Penpot 开发或验收。V0.2.6 生产 Profile 包含 Button、Input、Select、Table、Tag、Checkbox、Radio 各一项固定内容配置；七个 Figma 主组件引用已再次核验。经审核的新用户管理紧凑查询原型已通过 Figma 原生端到端验收和九项单端发布门，页面实际使用前四类。18 类目标组件均有 Figma 原生证据，其中 11 类仍只有候选 QA。Figma 使用 Inter。历史双平台 V0.2 发布目标未变更为已发布状态；当前单端范围决策见 [TASK-116](.dev/TASK-116_FIGMA_SCOPE.md)。
+
+当前原型可只提供 Figma 文件运行生产预检，无需 Penpot 文件：
+
+```powershell
+.\.venv\Scripts\python.exe scripts/run_figma_pipeline.py examples/user-management-compact-search-v026 --output-dir artifacts/my-figma-run --figma-file <Figma文件ID> --profile v0.2.6
+```
+
+该命令保存九阶段 Core、Figma 原生计划和字节锁；实际写入 Figma 与原生复验仍需执行已校验的计划。旧双平台命令只用于历史复验。
 
 完整目标见 [V0.2 自主持续开发计划](docs/DEVELOPMENT_PLAN_V0.2.md)：
 
@@ -76,7 +84,7 @@ node --test tests/*.test.mjs
 - 用户选择目标平台；两平台能力分别通过发布验收。
 - 阶段自动推进、测试、记录、提交、断点恢复和冲突处理。
 
-计划状态为 **IN PROGRESS**。Figma 侧组件证据、当前 Adapter 字节锁和新独立原型单端验收已通过；剩余 11 类组件的双端正式准入、Penpot 新原型验收、跨平台对比和全量发布门尚未完成。当前开发不意味着启动后台任务；未执行的检查不计为通过。
+当前 Figma 范围状态为 **IN PROGRESS**。Figma 侧组件证据、当前 Adapter 字节锁和新独立原型单端验收已通过；剩余 11 类组件尚未进入正式生产 Registry。旧版完整目标计划保留作历史背景，不作为当前 Penpot 工作队列。当前开发不意味着启动后台任务；未执行的检查不计为通过。
 
 ## 阅读入口
 
