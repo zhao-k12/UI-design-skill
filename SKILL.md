@@ -1,6 +1,6 @@
 ---
 name: ui-design-skill
-description: Turn a prototype into a source-checked page content Tree, retained color-annotated skeleton page, separate default-copy component page, filled prototype page and final proofread. Figma is the active native adapter; Penpot is deferred.
+description: Understand a UI prototype's content and hierarchy, normalize its layout against project design rules and admitted components, then generate and audit editable native pages through a retained color skeleton, default-copy page, content fill and final proofread. Figma is active; Penpot is deferred.
 ---
 
 # UI Design Skill
@@ -11,14 +11,18 @@ description: Turn a prototype into a source-checked page content Tree, retained 
 
 当前新任务使用 [分阶段主流程](docs/WORKFLOW_V03.md)。Figma 是当前执行平台；Penpot 全线按用户决定搁置。平台只影响原生执行与读取，不改变以下阶段顺序。
 
-在解析原型前锁定本任务的设计规范来源。当前规范是官方 View UI Plus 1.3.24，原型提供内容与结构，不充当视觉 Token 或组件外观的来源。Tree 的组件选型、布局计划与后续原生页面都必须使用同一份规范快照；Figma 默认字体是用户已批准的专项改编。
+在解析原型前锁定本任务的设计规范来源。当前组件视觉来源是官方 View UI Plus 1.3.24；页面留白等官方未指定的行为使用显式的项目布局规则。原型提供内容、层级、顺序和明确的业务关系；原型的留白、控件尺寸、贴边或残缺画法默认不是最终几何依据。Figma 默认字体是用户已批准的专项改编。
+
+模型在语义 Tree 审核后、Core 布局运行前完成**规范化布局决策**，这是 Tree → 骨架之间的内部工作，不增加用户可见的主步骤。逐项分清来源事实、规范要求、项目规则和设计推断；从这些依据决定容器、24 栅格、内边距、对齐与占宽，并写入来源绑定的布局意图和布局计划。可补充展示所需的容器、背景和留白，不得补造业务字段、操作或数据。不得从旧示例复制布局计划再只更新哈希，也不得以“忠实原型”为由保留无依据的空白或零内边距。适用的列表页规则和决策契约见 [布局决策与质量门](docs/WORKFLOW_V03.md#规范化布局决策)。
+
+Core 仍只按固定规则执行几何。执行前检查选定组件是否支持布局所需尺寸；例如列表 Table 应占满内容区，而正式组件宽度不足时应先走官方来源配置与保真准入，不能把固定组件拉伸、拼接或让多余空白进入页面。其它页面模式没有已批准的项目规则时标为 Review，不套用列表页数值。
 
 1. **统一页面内容 Tree**：阅读原型，保存有原文、位置与来源证据的 observations。把页面内容、层级和布局关系合成一棵 Tree，不再把旧 Page Tree 与 Layout Tree 当成两个对用户交付的步骤。Tree QA 核对原型内容正确、完整；遗漏源图内容须人工复核，不把来源观察自身当作完整性证明。原型或审核指纹变化后重新检查。
-   在建立原生骨架前，执行独立的 iView／View UI Plus 设计规范审计。必须核对官方来源锁、页面 Token 和组件组合；源原型要求表头时，必须使用已准入的原生带表头 Table，不能在 `showHeader=false` 的表格上另拼 Frame/Text。审计 FAIL 时停止后续原生阶段；用户批准的平台默认字体改编继续有效。当前审计只覆盖明确列出的阻断规则，不代表 iView 全量规范已验证。
-2. **保留彩色组件骨架页**：按 Tree 和确定性布局规则计算每个 Cell，标明选用组件、类型和不同颜色。在设计文件中新建并保留独立骨架页面。骨架 QA 核对组件选择、内容放置完整、位置、栅格与间距；必须独立读取原生页面，旧 HTML 标注不代替页面。
+   在建立原生骨架前，独立运行布局质量门与 iView／View UI Plus 组件规范门。布局门要把模型的布局意图与实际 Core 几何、项目规则及正式组件尺寸逐项比较；只有原生页面忠实于**合格**布局计划才有意义。iView 门核对官方来源锁、页面 Token 和组件组合；源原型要求表头时必须使用已准入的原生带表头 Table，不能在 `showHeader=false` 的表格上另拼 Frame/Text。任一门 FAIL/Review 时停止后续原生阶段；平台默认字体改编继续有效。当前两门只覆盖明确列出的规则，不代表 iView 全量规范已验证。
+2. **保留彩色组件骨架页**：按已通过布局质量门的 Tree、布局意图和确定性规则计算每个 Cell，标明选用组件、类型和不同颜色。在设计文件中新建并保留独立骨架页面。骨架 QA 核对组件选择、内容放置完整、位置、栅格与间距，尤其核对区域内边距、内容边界和填充策略；必须独立读取原生页面，旧 HTML 标注不代替页面。
 3. **新建默认文案组件页**：仅在骨架 QA 通过后，按该骨架新建另一页面，放入正式 Registry 准入的真实组件实例，组件保留官方主组件默认内容；骨架页不被覆盖。独立读回组件引用、默认文字和结构。骨架修订时生成新 revision 的组件页，不能静默覆盖旧版。
 4. **填入原型内容**：仅在默认文案组件页 QA 通过后，在该组件页填入来源绑定的原型文字。逐项读回，检查填写正确、无疏漏。固定内容范围外的组件文字不得私自改写；先扩展准入或报告 Unsupported。
-5. **最终原型校对**：把完成页面和原型逐项对照，并审核完整原生 PNG、文字、组件、栅格、间距及溢出。Tree、iView 规范、骨架、默认组件页、填入内容及最终原型校对全部 PASS，才允许交付；内容正确不能代替设计规范通过。
+5. **最终原型校对**：把完成页面的内容和原型逐项对照；把页面几何与布局意图及规范逐项对照，并审核完整原生 PNG、文字、组件、栅格、间距、占宽及溢出。Tree、布局质量、iView 组件规范、骨架、默认组件页、填入内容及最终校对全部 PASS，才允许交付；内容正确不能代替设计规范通过。
 
 旧 `scripts/run_pipeline.py` 与既有任务目录保留历史版本语义；新任务使用 `scripts/prepare_revised_workflow.py` 和 `scripts/run_revised_figma_stages.py` 的分阶段门。阶段准备结果不等于原生 QA 或可交付结论。
 

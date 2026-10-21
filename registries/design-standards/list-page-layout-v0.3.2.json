@@ -1,0 +1,14 @@
+{
+  "version": "0.3.2",
+  "pattern": "list-page",
+  "provenance": "project-page-layout-rule; not an official View UI Plus spacing mandate",
+  "pagePaddingToken": "spacing.page",
+  "sectionPaddingToken": {
+    "header": "spacing.md",
+    "query": "spacing.md",
+    "table": "spacing.md"
+  },
+  "startAlignedContentRoles": ["header", "table"],
+  "startAlignedComponentTypes": ["Text", "Table"],
+  "tableWidthPolicy": "fill-section-content"
+}

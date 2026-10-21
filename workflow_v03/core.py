@@ -175,8 +175,9 @@ def prepare(run_dir, source_dir):
             "finalPageSha256": fingerprint(final),
             "targets": [{"uiIrId": node_id, "expectedDefault": "文本", "text": value}
                         for node_id, value in target_text.items()]}
-    workflow = {"version": "0.3.0", "status": "AWAITING_NATIVE_STAGES",
+    workflow = {"version": "0.3.2", "status": "AWAITING_NATIVE_STAGES",
                 "contentTree": tree_qa, "annotatedSkeleton": skeleton_qa,
+                "normativeLayout": {"status": "NOT_RUN"},
                 "defaultComponentPage": {"status": "NOT_RUN", "distinctPageRequired": True},
                 "filledContent": {"status": "NOT_RUN"},
                 "prototypeProofread": {"status": "NOT_RUN"},

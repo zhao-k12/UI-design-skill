@@ -79,6 +79,7 @@
 - TASK-121: 用户明确要求把主流程调整为统一内容 Tree、保留彩色组件骨架原生页、另建默认文案组件页、后填原型内容和最终原型逐项校对；架构决策见 [TASK-121](TASK-121_WORKFLOW_DECISION.md)。新增 V0.3 分阶段契约、Figma 骨架／文案填入脚本与独立 QA 门；已用 TASK-118 冻结原型生成新准备产物，Tree/骨架计算完整，原生页面执行与最终校对仍 NOT_RUN，不能宣称新流程已完成原生验收。Penpot 继续搁置，旧任务字节锁不迁移。
 - TASK-122: V0.3 content/native stage gates passed on pages 259:2 and 261:2, but this is no longer a compliant deliverable: the subsequently specified iView standard fails on four palette tokens and a synthetic Table header. Historical stage evidence remains; see [TASK-122](TASK-122_WORKFLOW_NATIVE_SMOKE.md). Penpot remains deferred.
 - TASK-123: User specified iView/View UI Plus as the design norm. An official-source-bound audit now blocks new native stages when known iView palette or native Table-header rules fail; TASK-122 audit is FAIL. A source-bound Figma headed Table and separate corrected skeleton, default-copy and filled-page candidates exist, but formal Registry, Core and Adapter migration and full stage QA remain open; see [TASK-123](TASK-123_IVIEW_CONFORMANCE_CONFLICT.md).
+- TASK-124: 用户要求 skill 本身从原型提取内容后主动按规范补页面布局。已记录[架构冲突与批准方向](TASK-124_LAYOUT_INTENT_ARCHITECTURE_CONFLICT.md)，新增 V0.3.2 列表页项目布局规则、模型布局意图契约及独立质量门。TASK-122 冻结布局因页头／列表零内边距和 1392 px Table 无法填满内容区而 FAIL；合规计算样本 PASS；新原生骨架缺该门 PASS 时阻断。未修改 Figma 页面或旧锁，正式 1840 px Table 组件准入与新页面运行仍待后续任务。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 
 保留V0.1来源和版本锁。V0.2使用新版本与新验收目录，不覆盖历史批准和失败。
