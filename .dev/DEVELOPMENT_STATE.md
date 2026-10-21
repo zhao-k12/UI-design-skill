@@ -76,6 +76,7 @@
 - TASK-119: 新增 Figma 组件批次规划入口：逐项区分已准入配置复用、新配置官方采集和既有逻辑 ID 变更迁移；18 个现有固定配置可在一次批次全部复用。Figma-only 发布审计消除重复的 11 类候选重审，仍由 Registry builder 执行完整来源核验并保留 10 项发布门。未新增组件、原生页面或放宽视觉门；详见 [TASK-119](TASK-119_FIGMA_BATCH_WORKFLOW.md)。
 - TASK-120: 18 类已准入 Figma 主组件用一次只读原生调用取得 ID／页面／尺寸／文字／字体，批量审计 18/18 PASS，变更文案、引用或尺寸会逐项 FAIL。编译入口从 V0.2.7 Registry 与绑定生成同批脚本；审计工具置于 Adapter 目录外，旧执行锁及 10 项单端发布门仍 PASS。无新变体或页面；详见 [TASK-120](TASK-120_FIGMA_BATCH_NATIVE_READ.md)。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
+- TASK-121: 用户明确要求把主流程调整为统一内容 Tree、保留彩色组件骨架原生页、另建默认文案组件页、后填原型内容和最终原型逐项校对；架构决策见 [TASK-121](TASK-121_WORKFLOW_DECISION.md)。新增 V0.3 分阶段契约、Figma 骨架／文案填入脚本与独立 QA 门；已用 TASK-118 冻结原型生成新准备产物，Tree/骨架计算完整，原生页面执行与最终校对仍 NOT_RUN，不能宣称新流程已完成原生验收。Penpot 继续搁置，旧任务字节锁不迁移。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 
 保留V0.1来源和版本锁。V0.2使用新版本与新验收目录，不覆盖历史批准和失败。

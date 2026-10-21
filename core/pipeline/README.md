@@ -1,5 +1,7 @@
 # 静态 UI 流水线
 
+> 本文保留 V0.1/V0.2 历史入口及验收边界。新任务的用户可见主流程已改为[统一内容 Tree → 保留彩色骨架页 → 独立默认组件页 → 填入原型内容 → 最终原型校对](../../docs/WORKFLOW_V03.md)。旧的一次性执行不能被视为新流程通过。Penpot 当前搁置。
+
 入口是项目根目录的 `SKILL.md`。AI 阅读原型、提供来源绑定的语义观察和组件选择；程序验证这些判断并执行布局。当前不自动调用模型或 OCR，不生成交互。
 
 准备输入目录：原型文件、`observations.json`、匹配当前分析指纹的人类 `review.json`、`layout-plan.json`、`decisions.json`、`content.json`、`source-geometry.json`、`runtime-measurements.json` 和 `versions.json`。完整实际样例在 `examples/acceptance-prototype`。语义复核批准只允许冻结对应的分析；原型改变后重新复核。不得把样例批准记录用于另一份原型。

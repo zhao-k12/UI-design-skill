@@ -1,19 +1,23 @@
 ---
 name: ui-design-skill
-description: Assemble editable static UI designs from prototypes through source-bound semantic review, deterministic layouts, admitted components, platform-neutral UI-IR, and Figma or Penpot adapters. Use for this static design pipeline and its development.
+description: Turn a prototype into a source-checked page content Tree, retained color-annotated skeleton page, separate default-copy component page, filled prototype page and final proofread. Figma is the active native adapter; Penpot is deferred.
 ---
 
 # UI Design Skill
 
 读取 [开发状态](.dev/DEVELOPMENT_STATE.md)、[架构](ARCHITECTURE.md) 和 [约束](CONSTRAINTS.md)。V0.1 的具体验收范围及命令见 [流水线使用说明](core/pipeline/README.md)。AI 负责理解和选择，程序负责布局与执行，官方组件负责视觉真值。公开环境与证据边界见 [发布说明](docs/PUBLICATION.md)。
 
-## 生成静态设计
+## 主流程：原型 → 页面
 
-1. 阅读原型，按 [观察流程](core/prototype/README.md) 保存有实际文字来源、引用及精确位置的 observations；只提取页面任务、Section、字段、按钮、数据与静态内容。截图先准备并核对转录，当前无自动 OCR。不在语义阶段选择视觉样式或组件。
-2. 运行分析和 Page Tree 检查，提供具体语义复核稿。只在用户批准该稿且当前来源、分析及 review 指纹重新通过后冻结结构；已有对应批准可复用，内容改变则重新复核。未知项保持 Review，不替用户批准。
-3. 提供标准 Pattern 映射、来源绑定的实际测量、显式组件决策和内容契约；运行 `scripts/run_pipeline.py`。前一门失败时停止依赖阶段。它保存中间 JSON、标注、manifest、checkpoint、最终 UI-IR 和两平台预检计划。
-4. 通过实际可用的 Adapter 主机执行 UI-IR：保存完整实际创建／修改节点账本，保持官方组件和图标为真实关联实例。随后用独立读取及原生导出验证，不能将执行时的自报结果充作独立证据。Figma 主机操作前读取对应能力指南；Penpot 使用公开插件 SDK。
-5. 检查内容遗漏、组件类型／Variant、图标来源、栅格、间距、文字与组件溢出、真实可编辑性和完整截图，进行实际视觉复核。按使用说明运行最终证据检查。只有全部 Release Gate 通过才报告 V0.1 Ready。
+当前新任务使用 [分阶段主流程](docs/WORKFLOW_V03.md)。Figma 是当前执行平台；Penpot 全线按用户决定搁置。平台只影响原生执行与读取，不改变以下阶段顺序。
+
+1. **统一页面内容 Tree**：阅读原型，保存有原文、位置与来源证据的 observations。把页面内容、层级和布局关系合成一棵 Tree，不再把旧 Page Tree 与 Layout Tree 当成两个对用户交付的步骤。Tree QA 核对原型内容正确、完整；遗漏源图内容须人工复核，不把来源观察自身当作完整性证明。原型或审核指纹变化后重新检查。
+2. **保留彩色组件骨架页**：按 Tree 和确定性布局规则计算每个 Cell，标明选用组件、类型和不同颜色。在设计文件中新建并保留独立骨架页面。骨架 QA 核对组件选择、内容放置完整、位置、栅格与间距；必须独立读取原生页面，旧 HTML 标注不代替页面。
+3. **新建默认文案组件页**：仅在骨架 QA 通过后，按该骨架新建另一页面，放入正式 Registry 准入的真实组件实例，组件保留官方主组件默认内容；骨架页不被覆盖。独立读回组件引用、默认文字和结构。骨架修订时生成新 revision 的组件页，不能静默覆盖旧版。
+4. **填入原型内容**：仅在默认文案组件页 QA 通过后，在该组件页填入来源绑定的原型文字。逐项读回，检查填写正确、无疏漏。固定内容范围外的组件文字不得私自改写；先扩展准入或报告 Unsupported。
+5. **最终原型校对**：把完成页面和原型逐项对照，并审核完整原生 PNG、文字、组件、栅格、间距及溢出。只有四类检查（Tree、骨架、填入内容、最终原型校对）和中间默认组件页的原生检查都 PASS，才允许交付。
+
+旧 `scripts/run_pipeline.py` 与既有任务目录保留历史版本语义；新任务使用 `scripts/prepare_revised_workflow.py` 和 `scripts/run_revised_figma_stages.py` 的分阶段门。阶段准备结果不等于原生 QA 或可交付结论。
 
 只使用正式准入 Registry 和锁定的 Token／Remix 版本。静态文字与布局原语可按显式契约组合；不得用它们模拟缺失官方控件。缺失记录 Missing，不确定记录 Review，不支持记录 Unsupported；不得偷偷替换原型内容、图片、字体、图标或组件。组件保持来源尺寸，不为填满 Cell 拉伸。当前原生 Image 未准入。
 
