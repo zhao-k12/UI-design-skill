@@ -73,6 +73,7 @@
 - TASK-117: 11 类剩余 Figma 候选改为一次批量核验，逐类输出来源 Component IR／官方截图／Figma 原生 QA／独立导出哈希链；11/11 PASS、0 问题，7 类固定内容范围需集中补齐。篡改来源身份会阻断整批；定向 5 项测试 PASS。尚未变更正式 Registry 准入；批量迁移的架构冲突与建议见 [TASK-117](TASK-117_FIGMA_BATCH.md)。
 - TASK-118: 用户批准版本化 Figma-only 批量准入。新增独立 `0.2.7` Registry：原有 7 类固定配置与新增 11 类官方运行属性／原生可见文字／尺寸快照，共 18 类均可解析且绑定到已核验 Figma 主组件；旧版不变。新独立原型迁移、九阶段 Core、Figma 预检、新字节锁及 Figma 原生页面 `252:1244` 执行 PASS；独立复读 5 个实例、21 个文字，重复原生 PNG 与视觉复核 PASS，10 项单端发布门全 PASS。首轮编码损坏草稿已删除并以无损传输重跑。详见 [TASK-118](TASK-118_FIGMA_BATCH_ADMISSION.md)。
 - Next action: 当前定义的 Figma 固定配置范围已通过批量准入与单端发布门。后续扩展不同文字、尺寸或状态须另做来源与保真准入；历史双平台 V0.2 发布目标不作为当前任务队列，也不得把单端结果写成双端发布通过。
+- TASK-119: 新增 Figma 组件批次规划入口：逐项区分已准入配置复用、新配置官方采集和既有逻辑 ID 变更迁移；18 个现有固定配置可在一次批次全部复用。Figma-only 发布审计消除重复的 11 类候选重审，仍由 Registry builder 执行完整来源核验并保留 10 项发布门。未新增组件、原生页面或放宽视觉门；详见 [TASK-119](TASK-119_FIGMA_BATCH_WORKFLOW.md)。
 - Background execution: 未配置，不因公开发布或读取计划而启动。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 

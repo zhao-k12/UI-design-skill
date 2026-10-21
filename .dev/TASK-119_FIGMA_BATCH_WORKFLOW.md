@@ -1,0 +1,11 @@
+# TASK-119 — Figma batch workflow preparation
+
+The user approved faster component development without changing the current visual output. This task is limited to read-only planning and removing a duplicated evidence audit. It does not change the V0.2.7 Registry, Figma masters, Core, Adapter, or release criteria. Penpot remains deferred.
+
+`scripts/plan_figma_variant_batch.py` accepts one list of requested component configurations. It compares each request to the 18 admitted fixed configurations and reports `REUSE_ADMITTED`, `NEEDS_OFFICIAL_CAPTURE`, or `MIGRATION_REQUIRED`. The last state blocks the capture queue: an existing logical ID cannot silently acquire different text, dimensions, type, or variant. New IDs are only queued; their official runtime capture, native Figma construction, independent QA, and new versioned Registry admission still have to happen before use. Unknown component types and duplicate IDs are rejected. This prepares one batch for all new configurations instead of rediscovering unchanged work one component at a time.
+
+The current Figma-only release audit previously called the eleven-candidate audit directly and then called `build()`, which ran the same audit again. It now invokes `build()` once. That builder still rechecks all eleven official and Figma evidence rows, and the release gate still compares the rebuilt catalog, admission and bindings to the frozen V0.2.7 files. No gate was removed.
+
+Input contract: a JSON object with `components`, each containing `logicalComponentId`, `componentType`, `variant`, and `contentScope`. Run `python scripts/plan_figma_variant_batch.py --request <request.json> --output artifacts/<task>/figma-batch-plan.json`. This command only writes the plan under `artifacts/`; it cannot promote a component. Use distinct logical IDs for new fixed configurations.
+
+Acceptance: all 18 existing configurations are recognized as reusable in one request; a changed existing ID requires migration; a new ID enters the official-capture queue; duplicate and unknown requests fail. The Figma-only 10-gate release audit remains PASS, and targeted tests pass. Actual time savings for future native creation are not claimed until a new variant batch is executed.

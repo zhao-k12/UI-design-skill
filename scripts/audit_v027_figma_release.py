@@ -9,7 +9,6 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from scripts.audit_adapter_byte_lock_figma import audit as audit_native
-from scripts.audit_figma_candidate_batch import audit as audit_batch
 from scripts.audit_v02_figma_release_gates import inside, walk
 from scripts.build_figma_batch_registry import build
 from validators.ui_ir import load_json, validate_document
@@ -34,7 +33,6 @@ def audit(root=ROOT, *, visual_path=None, geometry_path=None, native_dir=None):
     try:
         source = root / "examples/user-management-compact-search-v027-figma"
         manifest = load_json(source / "input-manifest.json")
-        batch = audit_batch(root)
         outputs = build(root)
         catalog = load_json(root / "registries/components/v0.2.7/catalog.json")
         admission = load_json(root / "registries/components/v0.2.7/admission.json")
@@ -42,8 +40,8 @@ def audit(root=ROOT, *, visual_path=None, geometry_path=None, native_dir=None):
         gate("approvedIndependentPrototype", manifest["status"] == "READY_FOR_PREFLIGHT"
              and manifest["sourcePackage"] == "examples/user-management-compact-search-v026"
              and all(digest(source / name) == expected for name, expected in manifest["files"].items()))
-        gate("eighteenFixedFigmaComponents", batch["status"] == "PASS"
-             and len(catalog["components"]) == len(admission["components"]) == len(binding["bindings"]) == 18
+        gate("eighteenFixedFigmaComponents",
+             len(catalog["components"]) == len(admission["components"]) == len(binding["bindings"]) == 18
              and catalog == outputs["catalog.json"] and admission == outputs["admission.json"]
              and binding == outputs["component-bindings-0.2.7-figma.json"])
 
