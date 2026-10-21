@@ -80,6 +80,7 @@
 - TASK-122: V0.3 content/native stage gates passed on pages 259:2 and 261:2, but this is no longer a compliant deliverable: the subsequently specified iView standard fails on four palette tokens and a synthetic Table header. Historical stage evidence remains; see [TASK-122](TASK-122_WORKFLOW_NATIVE_SMOKE.md). Penpot remains deferred.
 - TASK-123: User specified iView/View UI Plus as the design norm. An official-source-bound audit now blocks new native stages when known iView palette or native Table-header rules fail; TASK-122 audit is FAIL. A source-bound Figma headed Table and separate corrected skeleton, default-copy and filled-page candidates exist, but formal Registry, Core and Adapter migration and full stage QA remain open; see [TASK-123](TASK-123_IVIEW_CONFORMANCE_CONFLICT.md).
 - TASK-124: 用户要求 skill 本身从原型提取内容后主动按规范补页面布局。已记录[架构冲突与批准方向](TASK-124_LAYOUT_INTENT_ARCHITECTURE_CONFLICT.md)，新增 V0.3.2 列表页项目布局规则、模型布局意图契约及独立质量门。TASK-122 冻结布局因页头／列表零内边距和 1392 px Table 无法填满内容区而 FAIL；合规计算样本 PASS；新原生骨架缺该门 PASS 时阻断。未修改 Figma 页面或旧锁，正式 1840 px Table 组件准入与新页面运行仍待后续任务。
+- TASK-125: 仅取 TASK-122 原型原文，在全新 `artifacts/task-125` 独立重建语义观察、Tree、布局意图与试算；语义和 Core 几何试算 PASS，V0.3.2 规范化布局门因正式 Table 1392 px 与所需 1840 px 不符而 FAIL，iView 资源预检另发现四项色彩 Token 与原生表头能力缺口；原生入口按门阻断，未创建新 Figma 页面。试算使用显式 test-fixture，非生产测量；详见 [TASK-125](TASK-125_INDEPENDENT_SKILL_TRIAL.md)。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 
 保留V0.1来源和版本锁。V0.2使用新版本与新验收目录，不覆盖历史批准和失败。
