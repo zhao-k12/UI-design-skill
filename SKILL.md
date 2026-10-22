@@ -1,6 +1,6 @@
 ---
 name: ui-design-skill
-description: Understand a UI prototype's content and hierarchy, normalize its layout against project design rules and admitted components, then generate and audit editable native pages through a retained color skeleton, default-copy page, content fill and final proofread. Figma is active; Penpot is deferred.
+description: Understand a UI prototype, normalize its layout against iView and project rules, and generate staged, audited HTML or editable Figma pages through a retained color skeleton, default-copy page, content fill and final proofread. Penpot is deferred.
 ---
 
 # UI Design Skill
@@ -9,7 +9,9 @@ description: Understand a UI prototype's content and hierarchy, normalize its la
 
 ## 主流程：原型 → 页面
 
-当前新任务使用 [分阶段主流程](docs/WORKFLOW_V03.md)。Figma 是当前执行平台；Penpot 全线按用户决定搁置。平台只影响原生执行与读取，不改变以下阶段顺序。
+用户指定 HTML 交付时，优先使用 [HTML 执行说明](docs/HTML_WORKFLOW.md)：以官方 View UI Plus 运行包/CSS 输出自包含 `skeleton.html`、`default.html`、`final.html`，逐阶段浏览器截图和 QA。复用同一内容 Tree、布局决策与 iView 规范门；不为 HTML 交付等待 Figma 原生写入。用户指定 Figma 原生可编辑交付时继续下述 Figma 阶段。HTML→Figma 导入是后续独立验收，不把 HTML 页面当成已完成的 Figma 原生实例。HTML 首版仍受当前 Core 固定内容范围约束，不能宣称任意新文案已可生成；版本化迁移决定见 [TASK-128](.dev/TASK-128_HTML_DELIVERY_DECISION.md)。
+
+当前新任务使用 [分阶段主流程](docs/WORKFLOW_V03.md)。Figma 原生路线与 HTML 路线都遵循相同阶段顺序；Penpot 全线按用户决定搁置。下文的原生页面要求适用于 Figma 路线，HTML 路线的浏览器 QA 细节见 [HTML 执行说明](docs/HTML_WORKFLOW.md)。
 
 在解析原型前锁定本任务的设计规范来源。当前组件视觉来源是官方 View UI Plus 1.3.24；页面留白等官方未指定的行为使用显式的项目布局规则。原型提供内容、层级、顺序和明确的业务关系；原型的留白、控件尺寸、贴边或残缺画法默认不是最终几何依据。Figma 默认字体是用户已批准的专项改编。
 
