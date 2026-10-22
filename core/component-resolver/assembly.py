@@ -232,12 +232,19 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                 headers=(table_headers if table_headers is not None else
                          section[-1]['instance'].get('props',{}).pop('headers',None))
                 if not headers:raise ValueError('Table header composition needs source-bound header claims')
-                replacement,offset=table_header.compose(row['cellId'],box,section[-1]['instance'],headers,
-                    entry['tableHeaderStyle'],source_geometry,token_registry)
-                section[-1]['replacement']=replacement;section[-1]['instanceBox']['y']+=offset
-                document={'uiIrVersion':'0.1.0','documentId':'header-validation','pages':[{'id':'header-page','type':'Page','children':[replacement]}]}
-                if validate_document(document) or resolver.tokens.check_references(document,token_registry):
-                    raise ValueError('Invalid table header primitives or tokens')
+                if scope and scope.get('showHeader') is True:
+                    # The admitted native Table already owns its header. Verify
+                    # source claims, then preserve the linked instance unchanged.
+                    expected_headers=[column['title'] for column in scope['columns']]
+                    if headers != expected_headers:
+                        raise ValueError('Source header claims differ from the admitted native Table')
+                else:
+                    replacement,offset=table_header.compose(row['cellId'],box,section[-1]['instance'],headers,
+                        entry['tableHeaderStyle'],source_geometry,token_registry)
+                    section[-1]['replacement']=replacement;section[-1]['instanceBox']['y']+=offset
+                    document={'uiIrVersion':'0.1.0','documentId':'header-validation','pages':[{'id':'header-page','type':'Page','children':[replacement]}]}
+                    if validate_document(document) or resolver.tokens.check_references(document,token_registry):
+                        raise ValueError('Invalid table header primitives or tokens')
         for section_id, operations in result['sections'].items():
             if previous is None or previous['sections'].get(section_id) != operations:
                 result['changedSections'].append(section_id)

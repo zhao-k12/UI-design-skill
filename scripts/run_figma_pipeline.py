@@ -22,16 +22,24 @@ FIGMA_BATCH_PROFILE = {
     "componentBindings": "component-bindings-0.2.7-figma.json",
     "fontBindings": "page-default-font-bindings-0.2.0.json",
 }
+FIGMA_BATCH_PROFILE_028 = {
+    "tokens": "registries/tokens/v0.2.3/default.json",
+    "components": "registries/components/v0.2.8/catalog.json",
+    "fidelity": "registries/components/v0.2.8/fidelity-reports.json",
+    "componentBindings": "component-bindings-0.2.8-figma.json",
+    "fontBindings": "page-default-font-bindings-0.2.0.json",
+}
 
 
 def run(input_dir, output_dir, figma_file, profile="v0.2.6"):
     base, output = Path(input_dir).resolve(), Path(output_dir).resolve()
     if not output.is_relative_to((ROOT / "artifacts").resolve()):
         raise ValueError("Use an artifact task directory")
-    if profile not in ("v0.2", "v0.2.6", "v0.2.7-figma"):
+    if profile not in ("v0.2", "v0.2.6", "v0.2.7-figma", "v0.2.8-figma"):
         raise ValueError("Figma-only entry supports V0.2 profiles")
     read = lambda path: load_json(ROOT / path)
-    paths = FIGMA_BATCH_PROFILE if profile == "v0.2.7-figma" else profile_resources(profile)
+    paths = (FIGMA_BATCH_PROFILE_028 if profile == "v0.2.8-figma" else
+             FIGMA_BATCH_PROFILE if profile == "v0.2.7-figma" else profile_resources(profile))
     resolver = importlib.import_module("core.component-resolver.resolver")
     tokens = resolver.tokens.TokenRegistry(read(paths["tokens"]))
     components = resolver.registry_module.ComponentRegistry(
@@ -106,7 +114,7 @@ def main():
     parser.add_argument("input_dir", type=Path)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--figma-file", required=True)
-    parser.add_argument("--profile", choices=("v0.2", "v0.2.6", "v0.2.7-figma"),
+    parser.add_argument("--profile", choices=("v0.2", "v0.2.6", "v0.2.7-figma", "v0.2.8-figma"),
                         default="v0.2.6")
     args = parser.parse_args()
     try:

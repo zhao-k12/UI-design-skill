@@ -33,7 +33,7 @@ class TokenRegistry:
             serialized = json.dumps(data, ensure_ascii=False, allow_nan=False, sort_keys=True, separators=(",", ":"))
             self._data = deepcopy(data)
             version = self._data.get("registryVersion")
-            schema_name = (f"token-registry-{version}.schema.json" if version in ("0.2.0", "0.2.1", "0.2.2")
+            schema_name = (f"token-registry-{version}.schema.json" if version in ("0.2.0", "0.2.1", "0.2.2", "0.2.3")
                            else "token-registry.schema.json")
             schema_path = Path(__file__).resolve().parents[2] / "schemas" / schema_name
             schema = json.loads(schema_path.read_text(encoding="utf-8"))

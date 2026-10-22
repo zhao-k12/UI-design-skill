@@ -26,10 +26,10 @@ def skeleton_script(skeleton, file_reference, revision):
     return _embed(payload, "skeleton_runtime.js", "executeAnnotatedSkeleton")
 
 
-def _resources(file_reference):
+def _resources(file_reference, profile="v0.2.7-figma"):
     resolver = importlib.import_module("core.component-resolver.resolver")
-    from scripts.run_figma_pipeline import FIGMA_BATCH_PROFILE
-    paths = FIGMA_BATCH_PROFILE
+    from scripts.run_figma_pipeline import FIGMA_BATCH_PROFILE, FIGMA_BATCH_PROFILE_028
+    paths = FIGMA_BATCH_PROFILE_028 if profile == "v0.2.8-figma" else FIGMA_BATCH_PROFILE
     read = lambda relative: load_json(ROOT / relative)
     tokens = resolver.tokens.TokenRegistry(read(paths["tokens"]))
     components = resolver.registry_module.ComponentRegistry(
@@ -44,7 +44,8 @@ def _resources(file_reference):
             read("adapters/figma/metadata/" + paths["fontBindings"]))
 
 
-def component_script(default_document, skeleton, file_reference, revision, skeleton_qa):
+def component_script(default_document, skeleton, file_reference, revision, skeleton_qa,
+                     profile="v0.2.7-figma"):
     if (skeleton_qa.get("status") != "PASS" or
         skeleton_qa.get("skeletonSha256") != fingerprint(skeleton) or
         not skeleton_qa.get("independentReadback") or
@@ -52,7 +53,7 @@ def component_script(default_document, skeleton, file_reference, revision, skele
         raise ValueError("Independent native skeleton QA must PASS before component construction")
     document = deepcopy(default_document)
     document["documentId"] += ".default." + revision
-    report = prepare(document, *_resources(file_reference), file_reference=file_reference)
+    report = prepare(document, *_resources(file_reference, profile), file_reference=file_reference)
     if report["status"] != "PASS":
         raise ValueError("Default component page preflight failed: " + str(report["issues"]))
     return script_for_page(report["plan"]), report

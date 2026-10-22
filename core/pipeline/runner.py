@@ -161,7 +161,11 @@ def run(observations, source_root, review, layout_plan, decisions, content, comp
         def walk(node):
             covered.update(node.get('sourceIds',[]))
             if node['type']=='Text':texts.append(node['text'])
-            if node['type']=='ComponentInstance':instances.append(node['componentId'])
+            if node['type']=='ComponentInstance':
+                instances.append(node['componentId'])
+                scope=components.inspect(node['componentId']).get('contentScope') or {}
+                if scope.get('kind')=='fixed-native-snapshot':
+                    texts.extend(scope.get('visibleText',[]))
             if node['type']=='IconInstance':icon_ids.append(node['iconId'])
             for child in node.get('children',[]):walk(child)
             for children in node.get('slots',{}).values():
