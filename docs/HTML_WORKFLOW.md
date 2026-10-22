@@ -23,3 +23,13 @@ rtk proxy node scripts/export_html_page.mjs --core-dir artifacts/<任务>/core -
 当前已在用户管理列表页实测 Input、Select、Button、带表头 Table、Remix 设置图标和静态 Text；这些控件由官方组件运行包渲染。其他现有组件虽已接入渲染映射，尚未逐类完成页面实测。复杂 CSS 与字体回退仍需逐例核对。
 
 来源支持的组件文字与 Table 行内容可随新原型变化。组件类型、Table 列结构、可用属性、设计 Token 和已定义的布局模式仍由当前正式目录与 Core 规则决定。超出这些范围的新页面需要补充相应的组件或布局契约，不能仅凭浏览器能显示就宣称已验收。当前实测了 1660px 用户管理页和同一来源内的表格行内容变体；后者是开发验证，不是新的用户审核原型。
+
+## 复杂客户列表截图模式
+
+当原型包括管理侧栏、顶栏、面包屑、多列筛选、工具栏和带行内操作的客户表格时，使用 `source-tree.json` 记录内容，使用 `layout-intent.json` 记录布局决策。先保存原图与 SHA-256，逐项校对所有可见文字、列和行数；再明确哪些几何从项目列表页规则规范化，不能直接复刻截图的空白。缺少的业务数据或筛选选项不能猜填。
+
+```powershell
+rtk proxy node scripts/export_prototype_html.mjs --input-dir artifacts/<任务>/input --output-dir artifacts/<任务>/html-r1
+```
+
+此模式同样只输出 `page.html` 和三个状态截图；使用锁定的官方 Input、Select、DatePicker、Button、Table、Breadcrumb、Badge 及 Remix 图标源码，浏览器检查可见文字、五个筛选项、六个工具栏操作、表格列与行数、占宽和溢出。导出前还核对来源图片、内容 Tree 审核和布局意图。客户管理截图的本地验收在 `artifacts/task-132/customer-management/html-final-r2/qa.json`，三状态 PASS。此模式目前只验收该结构，遇到不同页面结构要扩展适配和 QA，不能套用客户管理页面或宣称任意截图可自动生成。

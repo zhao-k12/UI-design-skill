@@ -1,5 +1,7 @@
 # Development State — public edition
 
+- TASK-132: 用户提供客户管理截图。独立记录原图、内容 Tree、布局意图和分阶段审核；新增复杂客户列表 HTML 模式，使用官方 View UI Plus 控件和来源锁定 Remix 图标，保留侧栏、顶栏、五项筛选、六个工具栏操作、九列表格、十条可见重复记录及浮动标签。列表页按项目规则使用 24 px 内边距并填满可用表格宽度。`artifacts/task-132/customer-management/html-final-r2` 的同页骨架、组件、交付三状态浏览器 QA 全 PASS，最后截图已与原型人工校对；不增加未见记录、分页总数或业务交互。此模式只验收当前结构，非任意截图通用能力。
+
 - TASK-131: 当前 Skill 主路线收敛为 HTML 单页交付。入口 `run_html_pipeline.py` 不再导入平台专用配置；新增 `prepare_html_workflow.py` 与 `run_html_checks.py`，独立执行来源 Tree、布局和 iView 规范门。当前 `SKILL.md` 与 `docs/HTML_WORKFLOW.md` 只描述 HTML 页面制作与三状态 QA。原用户管理原型按新入口从 Core 到单页重新跑通，见 `artifacts/task-131/html`，骨架、组件、交付均 PASS。历史任务资料保留作版本证据，不参与当前交付。
 
 - TASK-128/129/130: 新增用户批准的 HTML 交付路线，复用 Tree、布局、iView 规范门和 UI-IR，以锁定的 View UI Plus 1.3.24 官方运行包/CSS 渲染。按用户最新决定只生成一个 `page.html`，同一页面依次显示彩色骨架、默认文案组件、最终内容；各状态独立浏览器 QA、截图与哈希均保存。1660px 用户管理原型单页实测见 `artifacts/task-130/single-page-r2`，合成原型“赵六”变体见 `artifacts/task-130/single-page-dynamic`，三状态均 PASS；变体不是用户审核的新原型。`html-official-runtime` Core 内容模式允许来源支持的文案与 Table 行内容变化；历史 Figma 原生内容模式不变。HTML→Figma 导入和更多组件类型的网页验收仍未执行。见 [TASK-128 架构决定](TASK-128_HTML_DELIVERY_DECISION.md) 和 [HTML 流程](../docs/HTML_WORKFLOW.md)。

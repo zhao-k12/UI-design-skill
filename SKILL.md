@@ -19,6 +19,6 @@ description: Read a UI prototype, normalize its layout against iView rules, and 
 
 ## 执行与恢复
 
-按顺序运行 HTML Core、分阶段准备、`run_html_checks.py` 和 `export_html_page.mjs`。检查或渲染失败是待修复工作：读取具体 issue，找出最早受影响的来源、布局、组件或渲染阶段，修正后使用新 revision 重跑依赖阶段。不得复制旧页面、改写原型事实或虚构 PASS。所有任务保存来源指纹、版本锁、checkpoint、截图和 QA；仅在实际浏览器校对通过后报告交付。
+常规列表页按顺序运行 HTML Core、分阶段准备、`run_html_checks.py` 和 `export_html_page.mjs`。包含完整管理外壳、多列筛选和操作表格的截图，先独立建立来源 Tree 与布局意图，再使用已验收的复杂客户列表 HTML 模式；具体输入和适用范围见 [HTML 执行说明](docs/HTML_WORKFLOW.md)。不能为了使旧 Core 通过而删掉新原型中的字段、操作或记录。检查或渲染失败是待修复工作：读取具体 issue，找出最早受影响的来源、布局、组件或渲染阶段，修正后使用新 revision 重跑依赖阶段。不得复制旧页面、改写原型事实或虚构 PASS。所有任务保存来源指纹、截图和 QA；仅在实际浏览器校对通过后报告交付。
 
-当前已实测用户管理列表页的 Input、Select、Button、带表头 Table、静态文字和 Remix 图标。新组件结构、属性或页面模式若超出正式目录和规则，先补来源与验收契约，再生成。当前只处理静态页面，不增加交互或业务逻辑。
+当前已实测简单用户列表和复杂客户管理列表；后者还覆盖 DatePicker、Breadcrumb、Badge、表格选择列与行内操作。新组件结构、属性或页面模式若超出已验收模式和规则，先补来源与验收契约，再生成。当前只处理静态页面，不增加交互或业务逻辑。
