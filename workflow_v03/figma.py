@@ -38,8 +38,10 @@ def skeleton_script(skeleton, file_reference, revision):
 
 def _resources(file_reference, profile="v0.2.7-figma"):
     resolver = importlib.import_module("core.component-resolver.resolver")
-    from scripts.run_figma_pipeline import FIGMA_BATCH_PROFILE, FIGMA_BATCH_PROFILE_028
-    paths = FIGMA_BATCH_PROFILE_028 if profile == "v0.2.8-figma" else FIGMA_BATCH_PROFILE
+    from scripts.run_figma_pipeline import (FIGMA_BATCH_PROFILE, FIGMA_BATCH_PROFILE_028,
+                                            FIGMA_ADAPTIVE_PROFILE_029)
+    paths = (FIGMA_ADAPTIVE_PROFILE_029 if profile == "v0.2.9-figma" else
+             FIGMA_BATCH_PROFILE_028 if profile == "v0.2.8-figma" else FIGMA_BATCH_PROFILE)
     read = lambda relative: load_json(ROOT / relative)
     tokens = resolver.tokens.TokenRegistry(read(paths["tokens"]))
     components = resolver.registry_module.ComponentRegistry(

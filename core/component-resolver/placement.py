@@ -15,6 +15,7 @@ class SourceGeometry:
         schema = load_json(Path(__file__).resolve().parents[2] / 'schemas/component-ir.schema.json')
         Draft202012Validator(schema).validate(bundle)
         self._sizes = {}
+        self._sizing = {}
         self._components = {}
         self.registry_sha256 = registry.fingerprint
         for component in bundle['components']:
@@ -32,6 +33,8 @@ class SourceGeometry:
             if any(type(v) not in (int, float) or not math.isfinite(v) or v <= 0 for v in size.values()):
                 raise ValueError('Source geometry must have finite positive dimensions')
             self._sizes[key] = size
+            self._sizing[key] = deepcopy(descriptor.get('sizingPolicy',
+                                                       {'width': 'intrinsic', 'height': 'intrinsic'}))
             self._components[key] = deepcopy(component)
         self.fingerprint = registry_module.digest({'registrySha256': self.registry_sha256,
                                                  'sourceBundle': bundle})
@@ -70,9 +73,12 @@ class SourceGeometry:
         if any(type(box.get(k)) not in (int, float) or not math.isfinite(box[k])
                for k in ('x', 'y', 'width', 'height')):
             raise ValueError('Invalid layout envelope')
-        if any(size[axis] > box[axis] for axis in ('width', 'height')):
+        policy = self._sizing[(instance['componentId'], instance['variant'])]
+        placed_size = {'width': box['width'] if policy['width'] == 'fill-cell' else size['width'],
+                       'height': size['height']}
+        if any(placed_size[axis] > box[axis] for axis in ('width', 'height')):
             raise ValueError('Source component does not fit existing layout envelope')
         node = deepcopy(instance)
-        node['layout'] = {axis: {'mode': 'fixed', 'value': size[axis]} for axis in size}
-        return {'instance': node, 'instanceBox': {'x': box['x'], 'y': box['y'], **size},
+        node['layout'] = {axis: {'mode': 'fixed', 'value': placed_size[axis]} for axis in placed_size}
+        return {'instance': node, 'instanceBox': {'x': box['x'], 'y': box['y'], **placed_size},
                 'cellBox': deepcopy(box), 'sourceGeometrySha256': self.fingerprint}

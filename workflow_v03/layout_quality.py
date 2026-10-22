@@ -139,6 +139,9 @@ def audit(tree, plan, layout_tree, layout_report, catalog, tokens, rule, intent)
                       actual=cell["width"], expected=inner_width)
             component_id = item["component"]["id"]
             scope = catalog.get("components", {}).get(component_id, {}).get("contentScope", {})
+            sizing = catalog.get("components", {}).get(component_id, {}).get("sizingPolicy", {})
+            if sizing.get("width") == "fill-cell":
+                continue
             if abs(scope.get("width", -1) - inner_width) > EPSILON:
                 issue("table_component_width_capability_mismatch", sourceId=source_id,
                       componentId=component_id, admittedWidth=scope.get("width"),
@@ -148,4 +151,6 @@ def audit(tree, plan, layout_tree, layout_report, catalog, tokens, rule, intent)
             "scope": "project-list-page-layout", "ruleSha256": fingerprint(rule),
             "intentSha256": fingerprint(intent),
             "checked": ["decision-provenance", "page-and-section-insets",
-                        "start-alignment", "table-content-width", "admitted-component-width"]}
+                        "start-alignment", "table-content-width",
+                        "native-sizing-policy" if catalog.get("registryVersion") == "0.2.9"
+                        else "admitted-component-width"]}

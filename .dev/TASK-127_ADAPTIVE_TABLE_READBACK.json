@@ -1,0 +1,19 @@
+{
+  "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9",
+  "pageId": "299:2",
+  "masterId": "299:3",
+  "instanceId": "299:36",
+  "instanceType": "INSTANCE",
+  "mainComponentId": "299:3",
+  "requestedWidth": 1660,
+  "actualWidth": 1660,
+  "actualHeight": 182.875,
+  "rows": [
+    {"width": 1660, "cellWidths": [553.3333129882812, 553.3333740234375, 553.3333740234375], "borderWidth": 1660},
+    {"width": 1660, "cellWidths": [553.3333129882812, 553.3333740234375, 553.3333740234375], "borderWidth": 1660},
+    {"width": 1660, "cellWidths": [553.3333129882812, 553.3333740234375, 553.3333740234375], "borderWidth": 1660},
+    {"width": 1660, "cellWidths": [553.3333129882812, 553.3333740234375, 553.3333740234375], "borderWidth": 1660}
+  ],
+  "nativeScreenshotReviewed": true,
+  "source": "Independent Figma Plugin API read after master and instance creation; screenshot reviewed at original 1660 px width"
+}

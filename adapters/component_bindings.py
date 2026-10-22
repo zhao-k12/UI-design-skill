@@ -1,6 +1,7 @@
 """Adapter-owned lookup only; does not generate or verify native design objects."""
 from copy import deepcopy
 import json
+import math
 from pathlib import Path
 
 from jsonschema import Draft202012Validator
@@ -17,9 +18,14 @@ def validate_instance_scope(node, descriptor, width, height):
     scope = descriptor.get("contentScope")
     if not scope:
         return
-    if (node.get("props") or node.get("slots") or node.get("style")
-            or width != {"mode": "fixed", "value": scope["width"]}
-            or height != {"mode": "fixed", "value": scope["height"]}):
+    dimensions_valid = (width.get("mode") == "fixed" and height.get("mode") == "fixed"
+                        and all(type(axis.get("value")) in (int, float) and
+                                math.isfinite(axis["value"]) and axis["value"] > 0
+                                for axis in (width, height)))
+    if "width" in scope:
+        dimensions_valid = (width == {"mode": "fixed", "value": scope["width"]}
+                            and height == {"mode": "fixed", "value": scope["height"]})
+    if (node.get("props") or node.get("slots") or node.get("style") or not dimensions_valid):
         raise BindingError("unsupported_component", "Instance exceeds the admitted native text/size/style scope")
 
 

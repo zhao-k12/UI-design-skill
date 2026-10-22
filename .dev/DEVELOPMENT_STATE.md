@@ -83,6 +83,7 @@
 - TASK-125: 仅取 TASK-122 原型原文，在全新 `artifacts/task-125` 独立重建语义观察、Tree、布局意图与试算；语义和 Core 几何试算 PASS，V0.3.2 规范化布局门因正式 Table 1392 px 与所需 1840 px 不符而 FAIL，iView 资源预检另发现四项色彩 Token 与原生表头能力缺口；原生入口按门阻断，未创建新 Figma 页面。试算使用显式 test-fixture，非生产测量；详见 [TASK-125](TASK-125_INDEPENDENT_SKILL_TRIAL.md)。
 - TASK-125 恢复验收：按用户要求追查 FAIL 并继续，新版 1840 px 原生表头 Table、0.2.8 组件库、0.2.3 Token 和 Figma-only 绑定已完成；新任务原生测量替代试算尺寸，Core、Figma Adapter、iView 有界规则及 V0.3 全阶段 QA PASS。保留骨架页 `288:2`，最终页 `289:2`；乱码骨架候选已排除。详情见 [TASK-125 恢复验收](TASK-125_RECOVERY_ACCEPTANCE.md)。Penpot 仍搁置，旧版任务锁不迁移。
 - TASK-126: 新 Figma-only 路径在完整 Core 前检查已知组件和来源能力，骨架脚本前预编译默认组件页，生成脚本使用 ASCII/Unicode 转义；目标是把 TASK-125 中的可预见 FAIL 前移为资源/输入诊断，避免原生写入后返工。针对性 13 项测试与 Skill 格式校验 PASS；全仓旧证据依赖未齐，结果和边界见 [TASK-126](TASK-126_FAILURE_PREVENTION.md)。Penpot 与历史锁未迁移。
+- TASK-127: 用户要求移除所有固定尺寸准入条件。新增独立 Figma-only V0.2.9 内容/尺寸分离版本、可自适应原生 Table 主组件与 1660 px 实例；所有 19 个内容范围不再以样本宽高或列像素宽度准入。1740 画布/1660 Table 的预检、九阶段 Core、Adapter 和规范布局门 PASS；原生组件截图及读回已保存，未宣称整页原生 QA 完成。详见 [架构决策](TASK-127_DIMENSION_POLICY_DECISION.md)和[验收记录](TASK-127_ADAPTIVE_SIZE_ACCEPTANCE.md)。旧版本与 Penpot 不迁移。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 
 保留V0.1来源和版本锁。V0.2使用新版本与新验收目录，不覆盖历史批准和失败。

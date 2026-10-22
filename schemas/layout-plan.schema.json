@@ -30,6 +30,11 @@
       "type": "string",
       "pattern": "^[a-f0-9]{64}$"
     },
+    "canvasWidth": {
+      "type": "number",
+      "minimum": 320,
+      "maximum": 10000
+    },
     "sectionRegions": {
       "type": "object",
       "minProperties": 1,

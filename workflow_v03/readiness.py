@@ -12,11 +12,15 @@ from validators.ui_ir import load_json
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def table_capability_issues(scope, box, headers, records, source_props):
+def table_capability_issues(scope, box, headers, records, source_props, sizing=None,
+                            source_height=None):
     """Check the exact native Table configuration needed by one source item."""
     issues = []
-    height = scope.get("height")
-    if (box is None or scope.get("width") != box["width"] or
+    sizing = sizing or {}
+    flexible = sizing.get("width") == "fill-cell" and sizing.get("height") == "intrinsic"
+    height = source_height if flexible else scope.get("height")
+    if (box is None or not isinstance(box.get("width"), (int, float)) or box["width"] <= 0 or
+            (not flexible and scope.get("width") != box["width"]) or
             not isinstance(height, (int, float)) or height <= 0 or height > box["height"]):
         issues.append({"code": "table_native_geometry_unavailable",
                        "admittedWidth": scope.get("width"),
@@ -28,8 +32,15 @@ def table_capability_issues(scope, box, headers, records, source_props):
     missing = [key for key in required if key not in scope]
     if missing:
         issues.append({"code": "table_content_scope_incomplete", "missing": missing})
-    elif source_props != {key: scope[key] for key in required}:
-        issues.append({"code": "table_source_configuration_mismatch"})
+    else:
+        expected_props = {key: scope[key] for key in required}
+        source_props = {key: source_props.get(key) for key in required}
+        if flexible:
+            for config in (expected_props, source_props):
+                config["columns"] = [{key: value for key, value in column.items() if key != "width"}
+                                     for column in config["columns"]]
+        if source_props != expected_props:
+            issues.append({"code": "table_source_configuration_mismatch"})
     if records != scope.get("data"):
         issues.append({"code": "table_fixed_records_outside_scope"})
     return issues
@@ -103,14 +114,17 @@ def audit(source_root, tokens, components, geometry, bindings, file_reference):
                   detail=str(exc))
         if row["componentType"] != "Table":
             continue
-        scope = components.inspect(component_id).get("contentScope") or {}
+        descriptor = components.inspect(component_id)
+        scope = descriptor.get("contentScope") or {}
         item = by_content.get(identifier, {})
         box = cells.get(identifier)
         headers = [claim["text"] for claim in item.get("props", {}).get("headers", [])]
         source = geometry.source_component(component_id, row["variant"])
         records = [{key: claim["text"] for key, claim in record.items()}
                    for record in item.get("tableRecords", [])]
-        for problem in table_capability_issues(scope, box, headers, records, source["props"]):
+        for problem in table_capability_issues(scope, box, headers, records, source["props"],
+                                               descriptor.get("sizingPolicy"),
+                                               source["rootBounds"]["height"]):
             issue(problem.pop("code"), identifier, **problem)
     return {"status": "READY" if not issues else "NEEDS_RESOURCE", "issues": issues,
             "checked": ["source-lock", "palette", "structure", "layout", "mapping",

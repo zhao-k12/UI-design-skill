@@ -1,0 +1,742 @@
+{
+  "registryVersion": "0.2.9",
+  "libraryVersion": "0.2.9-figma-adaptive-size",
+  "sourceVersion": "view-ui-plus@1.3.24+23a8e5bd2c07143bebfbcadcfb30d6f5bd47834b",
+  "scope": "production",
+  "components": {
+    "action.button.primary.medium": {
+      "componentType": "Button",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "查询"
+      },
+      "fidelity": {
+        "reportId": "action.button.primary.medium.default-font-0.2.2",
+        "reportSha256": "cf322c09fdf6e26824a6fbcaf8618c4e6af31ab4361acdcb9de4c774f65f3902",
+        "componentIrSha256": "c5c002a0193ece138d140d6a849cf6be8d8ccb11dda5083a332bda40e560f290"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "form.input.default.medium": {
+      "componentType": "Input",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "placeholder": "请输入姓名",
+        "value": ""
+      },
+      "fidelity": {
+        "reportId": "form.input.default.medium.default-font-0.2.3",
+        "reportSha256": "e09670f6dfe2f18836e61241916d05082987bf460cb7e0b98ec4e6a2177b550a",
+        "componentIrSha256": "c0255251a9e12c62bdf9cde32d94019068a3190381e5ebe1dfa3e7793a6d603c"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "form.select.default.medium": {
+      "componentType": "Select",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "modelValue": "enabled",
+        "selectedText": "启用"
+      },
+      "fidelity": {
+        "reportId": "form.select.default.medium.default-font-0.2.4",
+        "reportSha256": "7e1a482550930615acf4ee935154ff0faa7562255e7629e4ca9110b0613773cf",
+        "componentIrSha256": "ac0ffa896e31b8f84d21ebdb6dad08076f0136eb33b797ac6d5cb541258ae9a6"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "data.table.default": {
+      "componentType": "Table",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "showHeader": false,
+        "border": false,
+        "stripe": false,
+        "columns": [
+          {
+            "title": "姓名",
+            "key": "name"
+          },
+          {
+            "title": "状态",
+            "key": "status"
+          },
+          {
+            "title": "角色",
+            "key": "role"
+          }
+        ],
+        "data": [
+          {
+            "name": "张三",
+            "status": "启用",
+            "role": "管理员"
+          },
+          {
+            "name": "李四",
+            "status": "启用",
+            "role": "编辑"
+          },
+          {
+            "name": "王五",
+            "status": "停用",
+            "role": "访客"
+          }
+        ]
+      },
+      "fidelity": {
+        "reportId": "data.table.default.default-font-0.2.5",
+        "reportSha256": "dec5a51618a2542caefcad81a370aca99bef0a7da2c0d339f1bb582f9061e586",
+        "componentIrSha256": "f4595874472457b7b34a51cf6c40e7022b88c963ba2a0a813b8d2383cfff35ea"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "data.tag.default.enabled": {
+      "componentType": "Tag",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "size": "default",
+        "color": "default",
+        "closable": false,
+        "checkable": false,
+        "checked": true
+      },
+      "fidelity": {
+        "reportId": "data.tag.default.enabled.default-font-0.2.5",
+        "reportSha256": "b2a29271aaf80c4fc11c4cc9622dc7eb1a9d2940772e15719bb0ea7f0de87e4e",
+        "componentIrSha256": "7f81ea9558c0f97481b14d792c710f7ae20efdf32c88ad70a17bcaa2a22d9b80"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "form.checkbox.default.enabled": {
+      "componentType": "Checkbox",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "indeterminate": false,
+        "size": "default",
+        "border": false
+      },
+      "fidelity": {
+        "reportId": "form.checkbox.default.enabled.default-font-0.2.6",
+        "reportSha256": "a56e124fa17c9f2ef4b68de8bd795e6f88b114f0cbf6b4c35f8821b1aa895f27",
+        "componentIrSha256": "7e42801bfb2b889dc221077b61caea37417176c5c66cb2297600adefaf747a94"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "form.radio.default.enabled": {
+      "componentType": "Radio",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [
+        "label"
+      ],
+      "contentScope": {
+        "kind": "fixed-native-content",
+        "text": "启用",
+        "modelValue": true,
+        "trueValue": true,
+        "falseValue": false,
+        "disabled": false,
+        "size": "default",
+        "border": false
+      },
+      "fidelity": {
+        "reportId": "form.radio.default.enabled.default-font-0.2.7",
+        "reportSha256": "2e5580bb66f1f630c7f3824e9237db691c28a99c6fe4c940deb446c1f16c92a1",
+        "componentIrSha256": "ec34263843da0bd5dec6ef4d21fc82a67cdb8e85b701c73e27c6061bdf1e89d1"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "form.switch.default.enabled": {
+      "componentType": "Switch",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": true,
+          "trueValue": true,
+          "falseValue": false,
+          "disabled": false,
+          "size": "default",
+          "loading": false
+        },
+        "visibleText": [
+          "开"
+        ]
+      },
+      "fidelity": {
+        "reportId": "form.switch.default.enabled.figma-batch-0.2.8",
+        "reportSha256": "80e1ec69332bdd80492c5989e8512d4be64918d6519e846d170814ff659ac266",
+        "componentIrSha256": "ab87af43fc5e538b45c07f93e478814c1a272ecf0ca10c7847c630772300cb38"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "content.card.default.user-info": {
+      "componentType": "Card",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "title": "用户信息",
+          "bordered": true,
+          "disHover": true,
+          "shadow": false,
+          "padding": 16
+        },
+        "visibleText": [
+          "暂无内容",
+          "用户信息"
+        ]
+      },
+      "fidelity": {
+        "reportId": "content.card.default.user-info.figma-batch-0.2.8",
+        "reportSha256": "9c72c18c242f9727b4ac7a39adcac912abad61053ba9a2694c04dd13e0e03478",
+        "componentIrSha256": "2fb8a170bc335664864e735ee692532cc48b5eec000ce5c7edfc03bac2194f37"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "data.pagination.default.three-pages": {
+      "componentType": "Pagination",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": 1,
+          "total": 30,
+          "pageSize": 10,
+          "size": "default",
+          "simple": false,
+          "showTotal": false,
+          "showElevator": false,
+          "showSizer": false,
+          "disabled": false
+        },
+        "visibleText": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "fidelity": {
+        "reportId": "data.pagination.default.three-pages.figma-batch-0.2.8",
+        "reportSha256": "9e3107743106b37b9a0200817da18a795e427d501ac14dd723eea02f32a80b5b",
+        "componentIrSha256": "396df8c411b03a5d4aa79ff5b5a5744eaa5383939bdf2387c5c8face31193066"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "navigation.tabs.line.overview": {
+      "componentType": "Tabs",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "line"
+      ],
+      "defaultVariant": "line",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": "overview",
+          "type": "line",
+          "size": "default",
+          "animated": false,
+          "captureFocus": false,
+          "closable": false,
+          "draggable": false
+        },
+        "visibleText": [
+          "概览",
+          "概览内容",
+          "详情"
+        ]
+      },
+      "fidelity": {
+        "reportId": "navigation.tabs.line.overview.figma-batch-0.2.8",
+        "reportSha256": "10ab49230005d1fdc7e1959364cb1c58275e3132cf4e4c6a2dbc4ad93a9008ff",
+        "componentIrSha256": "332575bbd132f8f2b41a786ac87a9744906c23d289dc9b8291afd4accd6f3656"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "navigation.tree.expanded.departments": {
+      "componentType": "Tree",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "expanded"
+      ],
+      "defaultVariant": "expanded",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "data": [
+            {
+              "title": "部门",
+              "expand": true,
+              "children": [
+                {
+                  "title": "研发部"
+                },
+                {
+                  "title": "设计部"
+                }
+              ]
+            }
+          ],
+          "multiple": false,
+          "showCheckbox": false,
+          "checkStrictly": false,
+          "checkDirectly": false,
+          "selectNode": true,
+          "expandNode": false
+        },
+        "visibleText": [
+          "研发部",
+          "设计部",
+          "部门"
+        ]
+      },
+      "fidelity": {
+        "reportId": "navigation.tree.expanded.departments.figma-batch-0.2.8",
+        "reportSha256": "71059e53c372d1efc94c08b589f6379512377621e4402e47b582dda536cde8f6",
+        "componentIrSha256": "1d48223064c3ca52c496c96773007ba29844471c2840eaa3d132418e910b00a7"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "form.datepicker.date.selected": {
+      "componentType": "DatePicker",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "date-selected"
+      ],
+      "defaultVariant": "date-selected",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "type": "date",
+          "modelValue": "2024-01-01",
+          "format": "yyyy-MM-dd",
+          "size": "default",
+          "disabled": false,
+          "clearable": false,
+          "readonly": true,
+          "open": false
+        },
+        "visibleText": [
+          "2024-01-01"
+        ]
+      },
+      "fidelity": {
+        "reportId": "form.datepicker.date.selected.figma-batch-0.2.8",
+        "reportSha256": "e01af95bf6254879fa38876cebafc46433a519d51a3fee3b190fd96497e59b91",
+        "componentIrSha256": "5e13199967563a08b7e1d1556530f39253ed1425940764c5b1e8202d94f10acc"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "form.single.name.empty": {
+      "componentType": "Form",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "single-field-empty"
+      ],
+      "defaultVariant": "single-field-empty",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "model": {
+            "name": ""
+          },
+          "labelWidth": 80,
+          "labelPosition": "right",
+          "showMessage": true
+        },
+        "visibleText": [
+          "姓名"
+        ]
+      },
+      "fidelity": {
+        "reportId": "form.single.name.empty.figma-batch-0.2.8",
+        "reportSha256": "89c79294c03b7a36c59e3aec6856cf397041732b1f2857b323ded0c35e501278",
+        "componentIrSha256": "cd979fda5656f4fb49a25cc79302ed03058e43c9a81af870c5ad1ecb32a4643f"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "overlay.modal.notice.open": {
+      "componentType": "Modal",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "notice-open-no-footer"
+      ],
+      "defaultVariant": "notice-open-no-footer",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": true,
+          "title": "提示",
+          "width": 320,
+          "closable": false,
+          "footerHide": true,
+          "mask": true,
+          "transfer": true
+        },
+        "visibleText": [
+          "提示",
+          "操作已完成"
+        ]
+      },
+      "fidelity": {
+        "reportId": "overlay.modal.notice.open.figma-batch-0.2.8",
+        "reportSha256": "9d5be6f9d9389088df73e17f7298de7159ee7d73e2497913e1c8c539db8cca52",
+        "componentIrSha256": "583dbd261ad76a8218bb9f3e0585955943bd8d0ef0845922b62b8a4a47b38e53"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "overlay.drawer.detail.open": {
+      "componentType": "Drawer",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "right-open-no-close"
+      ],
+      "defaultVariant": "right-open-no-close",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "modelValue": true,
+          "title": "详情",
+          "width": 320,
+          "placement": "right",
+          "closable": false,
+          "mask": true,
+          "transfer": true
+        },
+        "visibleText": [
+          "抽屉内容",
+          "详情"
+        ]
+      },
+      "fidelity": {
+        "reportId": "overlay.drawer.detail.open.figma-batch-0.2.8",
+        "reportSha256": "cf14f93aaeea3dece752c8bc100071c3a846c49e5ceb19d33c3234867ec10976",
+        "componentIrSha256": "d0ff27358b995fc667a7f32b7c7faf776209ada1bc26b7876ed941bc0997582e"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "data.upload.drag.empty": {
+      "componentType": "Upload",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "drag-empty-static"
+      ],
+      "defaultVariant": "drag-empty-static",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "action": "/upload",
+          "type": "drag",
+          "showUploadList": false,
+          "multiple": false,
+          "disabled": false
+        },
+        "visibleText": [
+          "上传文件"
+        ]
+      },
+      "fidelity": {
+        "reportId": "data.upload.drag.empty.figma-batch-0.2.8",
+        "reportSha256": "26a356c45aa5b04c10a35c92842debbe8ee13d641f3e61a22a55d2f7a5ba349e",
+        "componentIrSha256": "1a347724e0e6e088de584947190f02b526135d1e37fcf096bf8c5aa9312ef94a"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "form.cascader.region.selected": {
+      "componentType": "Cascader",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "region-selected-closed"
+      ],
+      "defaultVariant": "region-selected-closed",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "data": [
+            {
+              "value": "zhejiang",
+              "label": "浙江",
+              "children": [
+                {
+                  "value": "hangzhou",
+                  "label": "杭州"
+                }
+              ]
+            }
+          ],
+          "modelValue": [
+            "zhejiang",
+            "hangzhou"
+          ],
+          "placeholder": "请选择地区",
+          "clearable": false,
+          "transfer": false,
+          "disabled": false
+        },
+        "visibleText": [
+          "浙江 / 杭州"
+        ]
+      },
+      "fidelity": {
+        "reportId": "form.cascader.region.selected.figma-batch-0.2.8",
+        "reportSha256": "efdb2f9a17c8e37e01d128a0df7f65d409d4d9e535b7cbf6aa7e12097dcdc28b",
+        "componentIrSha256": "e6d748e4cfc858181ff72e5e2bb7751f2c7155e7dedeaec3bbd9823166181d03"
+      },
+      "sizingPolicy": {
+        "width": "intrinsic",
+        "height": "intrinsic"
+      }
+    },
+    "data.table.headed.b334d80b864ecaf53198737bffec5c2bc8d59d337667effacb16ea74dcd024b4": {
+      "componentType": "Table",
+      "tier": "base",
+      "status": "active",
+      "variants": [
+        "default"
+      ],
+      "defaultVariant": "default",
+      "slots": [],
+      "contentScope": {
+        "kind": "fixed-native-snapshot",
+        "props": {
+          "showHeader": true,
+          "border": false,
+          "stripe": false,
+          "columns": [
+            {
+              "key": "name",
+              "title": "姓名"
+            },
+            {
+              "key": "status",
+              "title": "状态"
+            },
+            {
+              "key": "role",
+              "title": "角色"
+            }
+          ],
+          "data": [
+            {
+              "name": "张三",
+              "status": "启用",
+              "role": "管理员"
+            },
+            {
+              "name": "李四",
+              "status": "启用",
+              "role": "编辑"
+            },
+            {
+              "name": "王五",
+              "status": "停用",
+              "role": "访客"
+            }
+          ]
+        },
+        "visibleText": [
+          "姓名",
+          "状态",
+          "角色",
+          "张三",
+          "启用",
+          "管理员",
+          "李四",
+          "启用",
+          "编辑",
+          "王五",
+          "停用",
+          "访客"
+        ],
+        "showHeader": true,
+        "border": false,
+        "stripe": false,
+        "columns": [
+          {
+            "key": "name",
+            "title": "姓名"
+          },
+          {
+            "key": "status",
+            "title": "状态"
+          },
+          {
+            "key": "role",
+            "title": "角色"
+          }
+        ],
+        "data": [
+          {
+            "name": "张三",
+            "status": "启用",
+            "role": "管理员"
+          },
+          {
+            "name": "李四",
+            "status": "启用",
+            "role": "编辑"
+          },
+          {
+            "name": "王五",
+            "status": "停用",
+            "role": "访客"
+          }
+        ]
+      },
+      "fidelity": {
+        "reportId": "data.table.headed.b334d80b864ecaf53198737bffec5c2bc8d59d337667effacb16ea74dcd024b4.figma-iview-0.2.8",
+        "reportSha256": "4562b320b04c98eec6b615e4224969218491c470cf9017abc9cc0e60d6dbb211",
+        "componentIrSha256": "e4184a2dc5ff5b19d2ce43ae7e43f6450c62d92bb996d4f8f173932cd020a5c0"
+      },
+      "sizingPolicy": {
+        "width": "fill-cell",
+        "height": "intrinsic"
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 """Logical component catalog. Platform references never enter this module."""
 from copy import deepcopy
+from functools import lru_cache
 import hashlib
 import json
 from pathlib import Path
@@ -34,6 +35,66 @@ def valid_figma_batch_report(report, entry):
                     ("sourceComponentIr", "sourceScreenshot", "figmaQa", "nativeRead", "nativePng", "nativeSvg"))
             and ("sourceBundleSha256" not in hashes or hash_ok(hashes["sourceBundleSha256"]))
             and report.get("componentIrSha256") == hashes.get("sourceComponentIr"))
+
+
+ADAPTIVE_TABLE = "data.table.headed.b334d80b864ecaf53198737bffec5c2bc8d59d337667effacb16ea74dcd024b4"
+
+
+@lru_cache(maxsize=1)
+def _adaptive_baseline():
+    folder = Path(__file__).resolve().parents[2] / "registries/components/v0.2.8"
+    return (json.loads((folder / "catalog.json").read_text(encoding="utf-8")),
+            json.loads((folder / "fidelity-reports.json").read_text(encoding="utf-8")))
+
+
+def valid_adaptive_size_report(report, entry, logical_id):
+    """Versioned content admission without treating sample dimensions as identity."""
+    baseline_catalog, baseline_reports = _adaptive_baseline()
+    baseline = baseline_reports.get(entry["fidelity"]["reportId"])
+    if not isinstance(baseline, dict):
+        return False
+    original_sha = digest(baseline)
+    baseline_entry = baseline_catalog["components"].get(logical_id)
+    if not isinstance(baseline_entry, dict):
+        return False
+    scope = deepcopy(baseline_entry["contentScope"])
+    scope.pop("width", None)
+    scope.pop("height", None)
+    for columns in (scope.get("columns"), scope.get("props", {}).get("columns")):
+        if columns:
+            for column in columns:
+                column.pop("width", None)
+    policy = {"width": "fill-cell" if logical_id == ADAPTIVE_TABLE else "intrinsic",
+              "height": "intrinsic"}
+    if entry.get("contentScope") != scope or entry.get("sizingPolicy") != policy:
+        return False
+    expected = deepcopy(baseline)
+    expected["contentScopeProposal"] = scope
+    expected["gateVersion"] = "0.2.9-figma-size-policy"
+    expected["sizingMigration"] = {"baseReportSha256": original_sha,
+                                   "baseGateVersion": baseline["gateVersion"],
+                                   "policy": policy}
+    if logical_id == ADAPTIVE_TABLE:
+        expected["platforms"]["figma"]["componentId"] = "299:3"
+        evidence_path = Path(__file__).resolve().parents[2] / ".dev/TASK-127_ADAPTIVE_TABLE_READBACK.json"
+        evidence_dir = evidence_path.parent / "task-127-evidence"
+        names = ("table-source-1840-native.png", "table-adaptive-1840-native.png",
+                 "table-1660-native.png")
+        if not evidence_path.is_file() or any(not (evidence_dir / name).is_file() for name in names):
+            return False
+        expected["sizingMigration"]["nativeResponsiveEvidenceSha256"] = hashlib.sha256(
+            evidence_path.read_bytes()).hexdigest()
+        expected["sizingMigration"]["nativePngSha256"] = {
+            name: hashlib.sha256((evidence_dir / name).read_bytes()).hexdigest() for name in names}
+        expected["sizingMigration"]["sourceSizeComparison"] = {
+            "changedPixels": 1926, "changedXBuckets100px": [6, 12],
+            "unchangedOutsideShiftedColumnText": True}
+        expected["sizingMigration"]["nativeResponsiveEvidence"] = {
+            "fileReference": "0vGWSRoLxBiVPXiZ8xJAX9", "masterId": "299:3",
+            "instanceId": "299:36", "testedWidth": 1660, "height": 182.875,
+            "rows": 4, "columns": 3, "rowWidths": [1660] * 4,
+            "borderWidths": [1660] * 4}
+    return report == expected
 
 
 TABLE_SCOPE = {
@@ -385,7 +446,7 @@ class ComponentError(ValueError):
 class ComponentRegistry:
     def __init__(self, data, evidence=None, *, allow_test_fixtures=False):
         version = data.get("registryVersion") if isinstance(data, dict) else None
-        schema_name = (f"component-registry-{version}.schema.json" if version in ("0.2.0", "0.2.1", "0.2.2", "0.2.3", "0.2.4", "0.2.5", "0.2.6", "0.2.7", "0.2.8")
+        schema_name = (f"component-registry-{version}.schema.json" if version in ("0.2.0", "0.2.1", "0.2.2", "0.2.3", "0.2.4", "0.2.5", "0.2.6", "0.2.7", "0.2.8", "0.2.9")
                        else "component-registry.schema.json")
         schema = json.loads((Path(__file__).resolve().parents[2] / "schemas" / schema_name).read_text(encoding="utf-8"))
         Draft202012Validator.check_schema(schema)
@@ -423,10 +484,17 @@ class ComponentRegistry:
                                  "0.2.5": ("0.2.2", "0.2.3", "0.2.4", "0.2.5", "0.2.6"),
                                  "0.2.6": ("0.2.2", "0.2.3", "0.2.4", "0.2.5", "0.2.6", "0.2.7"),
                                  "0.2.7": ("0.2.2", "0.2.3", "0.2.4", "0.2.5", "0.2.6", "0.2.7", "0.2.8-figma-batch"),
-                                 "0.2.8": ("0.2.2", "0.2.3", "0.2.4", "0.2.5", "0.2.6", "0.2.7", "0.2.8-figma-batch")}
+                                  "0.2.8": ("0.2.2", "0.2.3", "0.2.4", "0.2.5", "0.2.6", "0.2.7", "0.2.8-figma-batch"),
+                                  "0.2.9": ("0.2.9-figma-size-policy",)}
                 if version in allowed_gates and report.get("gateVersion") not in allowed_gates[version]:
                     raise ComponentError("invalid_fidelity_gate_report", logical_id, "V0.2 active components require the scoped default-font gate")
                 if data["scope"] == "production":
+                    if report.get("gateVersion") == "0.2.9-figma-size-policy":
+                        if (version != "0.2.9" or not valid_adaptive_size_report(report, entry, logical_id)
+                                or (logical_id == ADAPTIVE_TABLE and entry["slots"])):
+                            raise ComponentError("invalid_fidelity_gate_report", logical_id,
+                                                 "Adaptive size migration must preserve source content and native proof")
+                        continue
                     if report.get("gateVersion") == "0.2.8-figma-batch":
                         if (version not in ("0.2.7", "0.2.8") or not valid_figma_batch_report(report, entry)
                                 or entry["slots"]):

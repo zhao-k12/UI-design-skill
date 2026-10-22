@@ -144,7 +144,7 @@ def main():
                                           "component-qa", "fill-script", "fill-qa", "proofread"))
     parser.add_argument("--file-reference")
     parser.add_argument("--revision")
-    parser.add_argument("--profile", choices=("v0.2.7-figma", "v0.2.8-figma"),
+    parser.add_argument("--profile", choices=("v0.2.7-figma", "v0.2.8-figma", "v0.2.9-figma"),
                         default="v0.2.7-figma")
     parser.add_argument("--execution", type=Path)
     parser.add_argument("--readback", type=Path)

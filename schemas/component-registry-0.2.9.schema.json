@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ui-design-skill:component-registry:0.2.9",
+  "title": "Logical Component Registry V0.2.9 Figma adaptive sizing",
+  "type": "object",
+  "properties": {
+    "registryVersion": {
+      "const": "0.2.9"
+    },
+    "libraryVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "enum": [
+        "production",
+        "test-fixture"
+      ]
+    },
+    "components": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "componentType": {
+            "enum": [
+              "Button",
+              "Card",
+              "Cascader",
+              "Checkbox",
+              "DatePicker",
+              "Drawer",
+              "Form",
+              "FormItem",
+              "Input",
+              "Modal",
+              "Pagination",
+              "Radio",
+              "Select",
+              "Switch",
+              "Table",
+              "Tabs",
+              "Tag",
+              "Tree",
+              "Upload"
+            ]
+          },
+          "tier": {
+            "enum": [
+              "base",
+              "composite",
+              "block"
+            ]
+          },
+          "status": {
+            "enum": [
+              "planned",
+              "active",
+              "deprecated"
+            ]
+          },
+          "variants": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+            }
+          },
+          "defaultVariant": {
+            "type": "string",
+            "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+          },
+          "slots": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "leading-icon",
+                "trailing-icon",
+                "label",
+                "control",
+                "content",
+                "actions"
+              ]
+            }
+          },
+          "fidelity": {
+            "type": "object",
+            "properties": {
+              "reportId": {
+                "type": "string",
+                "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+              },
+              "reportSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "componentIrSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "reportId",
+              "reportSha256",
+              "componentIrSha256"
+            ],
+            "additionalProperties": false
+          },
+          "contentScope": {
+            "type": "object",
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "fixed-native-content",
+                  "fixed-native-snapshot"
+                ]
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "width"
+                  ]
+                },
+                {
+                  "required": [
+                    "height"
+                  ]
+                }
+              ]
+            }
+          },
+          "sizingPolicy": {
+            "type": "object",
+            "required": [
+              "width",
+              "height"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "width": {
+                "enum": [
+                  "intrinsic",
+                  "fill-cell"
+                ]
+              },
+              "height": {
+                "const": "intrinsic"
+              }
+            }
+          }
+        },
+        "required": [
+          "componentType",
+          "tier",
+          "status",
+          "variants",
+          "defaultVariant",
+          "slots"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "active"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            },
+            "then": {
+              "required": [
+                "fidelity"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "registryVersion",
+    "libraryVersion",
+    "sourceVersion",
+    "scope",
+    "components"
+  ],
+  "additionalProperties": false
+}

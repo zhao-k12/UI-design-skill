@@ -130,6 +130,8 @@ def generate(analysis, page_tree, source_root, review, plan, registry, *, allow_
             region_sources[role] = section['id']
         canvas_policy = '0.2.0-static-grow' if registry.version == '0.2.2' else '0.1.0'
         tree = instantiate(plan['pattern'], region_nodes, canvas_policy=canvas_policy)
+        if 'canvasWidth' in plan:
+            tree['page']['layout']['width'] = {'mode': 'fixed', 'value': plan['canvasWidth']}
         tree['page']['sourceIds'] = [page_tree['page']['id']]
         holders = tree['page']['children']
         if plan['pattern'] == 'sidebar-content':

@@ -172,6 +172,10 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                         raise ValueError('unsupported_component: fixed Table requires admitted source geometry and records')
                     source = source_geometry.source_component(row['componentId'], row['variant'])
                     expected = {key: scope[key] for key in ('showHeader', 'border', 'stripe', 'columns', 'data')}
+                    if registry.library_version == '0.2.9-figma-adaptive-size':
+                        for configuration in (source['props'], expected):
+                            for column in configuration.get('columns', []):
+                                column.pop('width', None)
                     if source['props'] != expected:
                         raise ValueError('unsupported_component: Table source configuration is outside admitted scope')
                     records = [{key: claim_value(claim, row) for key, claim in record.items()}
@@ -189,8 +193,9 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                 node = placement['instance']
             if row.get('primitive') != 'Text':
                 scope = registry.inspect(row['componentId']).get('contentScope')
-                if scope and (node['layout']['width'] != {'mode': 'fixed', 'value': scope['width']}
-                              or node['layout']['height'] != {'mode': 'fixed', 'value': scope['height']}):
+                if scope and 'width' in scope and (
+                        node['layout']['width'] != {'mode': 'fixed', 'value': scope['width']}
+                        or node['layout']['height'] != {'mode': 'fixed', 'value': scope['height']}):
                     raise ValueError('unsupported_component: geometry is outside the admitted fixed-native-content scope')
             issues = validate_document({'uiIrVersion': '0.1.0', 'documentId': 'assembly-validation',
                                         'pages': [{'id': 'assembly-page', 'type': 'Page', 'children': [node]}]})
