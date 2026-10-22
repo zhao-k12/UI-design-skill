@@ -18,8 +18,12 @@ def validate(core: Path, staged: Path, source: Path) -> None:
     default = load_json(staged / "default_component_page_ui_ir.json")
     final = load_json(core / "final_ui_ir.json")
     fill = load_json(staged / "prototype_content_fill.json")
-    tree_qa = load_json(staged / "page_content_tree_qa.json")
-    if tree_qa.get("status") != "PASS" or tree_qa.get("contentTreeSha256") != fingerprint(tree):
+    tree_gates = [load_json(staged / name) for name in
+                  ("page_content_tree_qa.json", "page_content_tree_review.json")
+                  if (staged / name).is_file()]
+    if not any(gate.get("status") == "PASS" and
+               gate.get("contentTreeSha256") == fingerprint(tree)
+               for gate in tree_gates):
         raise ValueError("Reviewed content Tree has changed")
     if skeleton.get("contentTreeSha256") != fingerprint(tree):
         raise ValueError("Skeleton belongs to another content Tree")

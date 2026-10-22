@@ -31,7 +31,8 @@ def _save_once(path, data):
 def advance(directory, stage, *, file_reference=None, revision=None,
             execution=None, readback=None, review=None, native_png=None,
             tokens=None, catalog=None, intent=None, plan=None,
-            layout_tree=None, layout_report=None, profile="v0.2.7-figma"):
+            layout_tree=None, layout_report=None, profile="v0.2.7-figma",
+            delivery_mode="native"):
     directory = Path(directory).resolve()
     if not directory.is_relative_to((ROOT / "artifacts").resolve()) or not directory.is_dir():
         raise ValueError("Use a prepared workflow directory under artifacts")
@@ -70,7 +71,8 @@ def advance(directory, stage, *, file_reference=None, revision=None,
         result = audit_iview(get("page_content_tree.json"),
             get("default_component_page_ui_ir.json"), load_json(tokens), load_json(catalog),
             load_json(ROOT / "registries/design-standards/iview-plus-1.3.24.json"),
-            load_json(ROOT / "component-builder/source-reader/source-lock.json"))
+            load_json(ROOT / "component-builder/source-reader/source-lock.json"),
+            delivery_mode=delivery_mode)
         _save_once(directory / "iview_conformance_qa.json", result)
         return result
     if stage == "skeleton-script":
@@ -152,6 +154,7 @@ def main():
     parser.add_argument("--native-png", type=Path)
     parser.add_argument("--tokens", type=Path)
     parser.add_argument("--catalog", type=Path)
+    parser.add_argument("--delivery-mode", choices=("native", "html-official-runtime"), default="native")
     parser.add_argument("--intent", type=Path)
     parser.add_argument("--plan", type=Path)
     parser.add_argument("--layout-tree", type=Path)
@@ -164,7 +167,7 @@ def main():
                          tokens=args.tokens, catalog=args.catalog,
                          intent=args.intent, plan=args.plan,
                          layout_tree=args.layout_tree, layout_report=args.layout_report,
-                         profile=args.profile)
+                         profile=args.profile, delivery_mode=args.delivery_mode)
     except (ValueError, OSError, KeyError, TypeError) as exc:
         parser.error(str(exc))
     print(result)

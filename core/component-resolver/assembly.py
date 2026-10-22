@@ -51,7 +51,10 @@ def normalize_fixed_native_content(node, scope, depth=0, *, table_records=None):
 
 def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, registry,
              token_registry, content, *, previous=None, icon_registry=None, source_geometry=None,
-             icon_sources=None, allow_text_primitives=False, allow_test_fixtures=False):
+              icon_sources=None, allow_text_primitives=False, allow_test_fixtures=False,
+              content_mode='native'):
+    if content_mode not in ('native', 'html-official-runtime'):
+        raise ValueError('Unknown content mode')
     mapping = primitive_mapping.resolve(analysis, page_tree, source_root, review, layout_plan, decisions,
                                registry, token_registry, allow_text_primitives=allow_text_primitives,
                                allow_test_fixtures=allow_test_fixtures)
@@ -133,7 +136,7 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                         nodes.append(payload(child['instance'], row, child_id, depth+1))
                 node['slots'][slot] = nodes
             scope = descriptor.get('contentScope')
-            if scope and 'data' not in scope:
+            if content_mode == 'native' and scope and 'data' not in scope:
                 # claim_value already verified the label against source evidence.
                 node = normalize_fixed_native_content(node, scope, depth)
             return node
@@ -170,17 +173,32 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                             raise ValueError('Table header composition needs source-bound header claims')
                     if source_geometry is None or 'tableRecords' not in entry:
                         raise ValueError('unsupported_component: fixed Table requires admitted source geometry and records')
-                    source = source_geometry.source_component(row['componentId'], row['variant'])
+                    source = copy.deepcopy(source_geometry.source_component(row['componentId'], row['variant']))
                     expected = {key: scope[key] for key in ('showHeader', 'border', 'stripe', 'columns', 'data')}
                     if registry.library_version == '0.2.9-figma-adaptive-size':
                         for configuration in (source['props'], expected):
                             for column in configuration.get('columns', []):
                                 column.pop('width', None)
-                    if source['props'] != expected:
+                    if content_mode == 'native' and source['props'] != expected:
                         raise ValueError('unsupported_component: Table source configuration is outside admitted scope')
+                    if content_mode != 'native' and (
+                            any(source['props'].get(key) != expected[key]
+                                for key in ('showHeader', 'border', 'stripe')) or
+                            [column['key'] for column in source['props'].get('columns', [])] !=
+                            [column['key'] for column in expected['columns']]):
+                        raise ValueError('unsupported_component: Table source structure is outside admitted scope')
                     records = [{key: claim_value(claim, row) for key, claim in record.items()}
                                for record in entry['tableRecords']]
-                    node = normalize_fixed_native_content(node, scope, table_records=records)
+                    if content_mode == 'native':
+                        node = normalize_fixed_native_content(node, scope, table_records=records)
+                    else:
+                        node['props'] = {'showHeader': bool(table_headers),
+                                         'border': expected['border'], 'stripe': expected['stripe'],
+                                         'columns': [{'key': column['key'], 'title': title}
+                                                     for column, title in zip(expected['columns'], table_headers or [])],
+                                         'data': records}
+                        if len(node['props']['columns']) != len(expected['columns']):
+                            raise ValueError('Table source headers do not match mapped column count')
             box = copy.deepcopy(boxes[row['cellId']])
             node['layout'] = {axis: {'mode': 'fixed', 'value': box[axis]} for axis in ('width', 'height')}
             if 'textSize' in entry:
@@ -193,7 +211,7 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                 node = placement['instance']
             if row.get('primitive') != 'Text':
                 scope = registry.inspect(row['componentId']).get('contentScope')
-                if scope and 'width' in scope and (
+                if content_mode == 'native' and scope and 'width' in scope and (
                         node['layout']['width'] != {'mode': 'fixed', 'value': scope['width']}
                         or node['layout']['height'] != {'mode': 'fixed', 'value': scope['height']}):
                     raise ValueError('unsupported_component: geometry is outside the admitted fixed-native-content scope')
@@ -241,7 +259,7 @@ def assemble(analysis, page_tree, source_root, review, layout_plan, decisions, r
                     # The admitted native Table already owns its header. Verify
                     # source claims, then preserve the linked instance unchanged.
                     expected_headers=[column['title'] for column in scope['columns']]
-                    if headers != expected_headers:
+                    if content_mode == 'native' and headers != expected_headers:
                         raise ValueError('Source header claims differ from the admitted native Table')
                 else:
                     replacement,offset=table_header.compose(row['cellId'],box,section[-1]['instance'],headers,

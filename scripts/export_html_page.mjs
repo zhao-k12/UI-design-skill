@@ -97,7 +97,7 @@ async function main() {
   const sourceLock = await verifySource();
   const coreQa = await read(join(core, 'qa_report.json'));
   assert(coreQa.status === 'PASS' && coreQa.readyForAdapter === true, 'Core QA must PASS');
-  for (const file of ['page_content_tree_qa.json', 'layout_quality_qa.json', 'iview_conformance_qa.json']) {
+  for (const file of ['layout_quality_qa.json', 'iview_conformance_qa.json']) {
     assert((await read(join(staged, file))).status === 'PASS', `${file} must PASS`);
   }
   const document = await read(join(core, 'final_ui_ir.json'));

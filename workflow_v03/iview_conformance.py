@@ -16,7 +16,10 @@ def _walk(node):
         yield from _walk(child)
 
 
-def audit(tree, final_document, tokens, catalog, standard, source_lock):
+def audit(tree, final_document, tokens, catalog, standard, source_lock,
+          delivery_mode="native"):
+    if delivery_mode not in ("native", "html-official-runtime"):
+        raise ValueError("Unknown delivery mode")
     issues = []
     source = standard["source"]
     if (source_lock.get("packageVersion") != standard["version"] or
@@ -49,21 +52,28 @@ def audit(tree, final_document, tokens, catalog, standard, source_lock):
             scope = catalog.get("components", {}).get(component_id, {}).get("contentScope", {})
             native = [node for node in nodes if node["type"] == "ComponentInstance" and
                       node.get("componentId") == component_id and source_id in node.get("sourceIds", [])]
-            if len(native) != 1 or scope.get("showHeader") is not True:
+            has_native_header = (scope.get("showHeader") is True if delivery_mode == "native"
+                                 else len(native) == 1 and native[0].get("props", {}).get("showHeader") is True)
+            if len(native) != 1 or not has_native_header:
                 issues.append({"code": "iview_native_table_header_required",
                                "sourceId": source_id, "componentId": component_id})
-            if scope.get("showHeader") is True and [c.get("title") for c in scope.get("columns", [])] != [h["text"] for h in headers]:
+            actual_columns = (scope.get("columns", []) if delivery_mode == "native"
+                              else native[0].get("props", {}).get("columns", []) if native else [])
+            if has_native_header and [c.get("title") for c in actual_columns] != [h["text"] for h in headers]:
                 issues.append({"code": "iview_table_header_content_mismatch", "sourceId": source_id})
             header_prefix = native[0]["id"].rsplit(".instance", 1)[0] + ".header" if native else None
             if header_prefix and any(node["id"].startswith(header_prefix) for node in nodes):
                 issues.append({"code": "iview_synthetic_table_header", "sourceId": source_id})
 
-    return {"status": "PASS" if not issues else "FAIL", "scope": "known-blocking-iview-rules",
+    result = {"status": "PASS" if not issues else "FAIL", "scope": "known-blocking-iview-rules",
             "standard": standard["standard"], "standardVersion": standard["version"],
             "standardSha256": sha256(json.dumps(standard, sort_keys=True, ensure_ascii=False,
                                               separators=(",", ":")).encode("utf-8")).hexdigest(),
             "checked": ["official-source-lock", "page-color-tokens", "native-table-header"],
             "issues": issues}
+    if delivery_mode != "native":
+        result["deliveryMode"] = delivery_mode
+    return result
 
 
 def main():

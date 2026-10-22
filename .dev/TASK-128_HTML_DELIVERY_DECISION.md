@@ -4,6 +4,6 @@
 
 当前设计：复用通过的语义 Tree、布局和 UI-IR，在独立 HTML Adapter 中读取正式组件映射，以官方 View UI Plus 1.3.24 运行包和 CSS 输出自包含 HTML。三个可见阶段各自保存文件、截图和浏览器 QA。最终 HTML 不宣称已导入 Figma，也不宣称生成了 Figma 组件实例。
 
-首版范围：用户管理列表页的 Input/Select/Button/带表头 Table、Text 和 Remix 图标实测；来源内容依旧受 Core 已锁定的固定配置约束。新原型文本和表格内容可配置化需要后续版本化契约，不能以 HTML 能动态渲染为由跳过 Core 限制。更多组件需逐类实测。
+已完成的版本化扩展：HTML Core 使用独立 `html-official-runtime` 模式，允许来源证据支持的组件文案和 Table 行内容变化；默认 `native` 模式保持历史 Figma 固定内容准入。1660px 用户管理列表页的 Input/Select/Button/带表头 Table、Text 和 Remix 图标已在 Chromium 中通过三阶段验收；Table 行内容变体通过 Core 来源检查。组件列结构、属性和页面布局仍以正式目录及 Core 契约为界，更多组件需逐类实测。不得以 HTML 能动态渲染为由跳过 Core 或分阶段 QA。
 
 风险与验收：官方 CSS/运行包字节需保持来源锁；HTML 阶段必须独立检查来源项、实际组件 DOM、逐 Cell 几何、表格填充、文本与溢出。浏览器截图由人工复核。未来 HTML→Figma 导入是否保持文字编辑及组件关联，另立验收，不属于本任务 PASS 范围。

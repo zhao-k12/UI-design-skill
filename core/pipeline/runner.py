@@ -31,7 +31,7 @@ def write(path,value):
 
 def run(observations, source_root, review, layout_plan, decisions, content, components, tokens,
         icons, assets, geometry, icon_sources, versions, output_dir, *, previous_assembly=None,
-        measurement_evidence=None, evidence_root=None):
+        measurement_evidence=None, evidence_root=None, delivery_mode='native'):
     """A resource PASS is never a native or final visual PASS; host evidence is separate."""
     output=Path(output_dir).resolve();source_root=Path(source_root).resolve()
     if not set(VERSION_KEYS)<=set(versions) or any(not isinstance(versions[k],str) or not versions[k] for k in VERSION_KEYS):
@@ -43,11 +43,14 @@ def run(observations, source_root, review, layout_plan, decisions, content, comp
     if versions['ui_ir_version']!='0.1.0' or versions['design_rule_version']!=RULES['version'] or versions['remix_icon_version']!=icons.snapshot['sourceVersion']:
         raise ValueError('Current contract, rules or icon source differ from declared versions')
     if components.scope!='production':raise ValueError('Production pipeline requires admitted production components')
+    if delivery_mode not in ('native', 'html-official-runtime'):
+        raise ValueError('Unknown delivery mode')
     source_files=[(source_root/s['path']).resolve() for s in observations['sources']]
     if output==source_root or any(p.is_relative_to(output) for p in source_files):raise ValueError('Pipeline output cannot contain or overwrite prototype inputs')
     output.mkdir(parents=True,exist_ok=True)
     lock={'version':'0.1.0','versions':deepcopy(versions),'registries':{'components':components.fingerprint,'tokens':tokens.fingerprint,
           'icons':icons.fingerprint,'assets':assets.fingerprint,'sourceGeometry':geometry.fingerprint},'rulesSha256':builder.fingerprint(RULES)}
+    if delivery_mode != 'native':lock['deliveryMode']=delivery_mode
     programs=[p for directory in ('core','schemas','validators') for p in (ROOT/directory).rglob('*')
               if p.is_file() and p.suffix in ('.py','.json')]
     # Python/JSON contracts use repository LF text. Normalize only CRLF line
@@ -131,7 +134,7 @@ def run(observations, source_root, review, layout_plan, decisions, content, comp
                             raise ValueError('Table records lack original prototype evidence')
                         values[key]=claim['text']
                     plain.append(values)
-                if plain!=source['resolvedProps']['data']:
+                if delivery_mode == 'native' and plain!=source['resolvedProps']['data']:
                     raise Blocked('component-mapping',{'status':'Unsupported','issues':['Table record override is not admitted; source Body cannot be silently substituted']})
         # Annotation is diagnostic and carries the same current mapping fingerprint.
         (output/'component_annotation.html').write_text(resolver_module.annotation(mapped),encoding='utf-8',newline='\n')
@@ -141,7 +144,7 @@ def run(observations, source_root, review, layout_plan, decisions, content, comp
             candidate=load_json(prior_path)
             if candidate.get('status')=='PASS' and candidate.get('pageTreeSha256')==builder.fingerprint(page_tree) and candidate.get('skeletonSha256')==builder.fingerprint(mapped['layoutReport']['engineReport']['skeleton']):
                 baseline=candidate
-        assembled=stage('component-assembly',{'mapping':mapped,'content':content,'icons':{k:sha256(v).hexdigest() for k,v in icon_sources.items()},'explicitPrevious':previous_assembly},lambda:assembly_module.assemble(analysis,page_tree,source_root,review,layout_plan,decisions,components,tokens,content,previous=baseline,icon_registry=icons,icon_sources=icon_sources,source_geometry=geometry,allow_text_primitives=True),'assembly.json')
+        assembled=stage('component-assembly',{'mapping':mapped,'content':content,'icons':{k:sha256(v).hexdigest() for k,v in icon_sources.items()},'explicitPrevious':previous_assembly,'deliveryMode':delivery_mode},lambda:assembly_module.assemble(analysis,page_tree,source_root,review,layout_plan,decisions,components,tokens,content,previous=baseline,icon_registry=icons,icon_sources=icon_sources,source_geometry=geometry,allow_text_primitives=True,content_mode=delivery_mode),'assembly.json')
         if not assembled['readyForAdapter']:raise Blocked('component-assembly',{'status':'Review','issues':['Assembly has no production readiness']})
         materialized=stage('content-injection',{'assembly':assembled,'layout':layout_tree},lambda:materialize_module.materialize(assembled,layout_tree,tokens,document_id=observations['documentId']),'materialized.json')
         resources=stage('resource-resolution',materialized,lambda:resources_module.resolve(materialized['document'],assets,components=components,icons=icons),'resource_report.json')
