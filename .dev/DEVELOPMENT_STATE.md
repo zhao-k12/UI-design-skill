@@ -1,6 +1,6 @@
 # Development State — public edition
 
-- TASK-128/129: 新增用户批准的 HTML 交付路线。它复用已通过的 Tree、布局、iView 规范门和 UI-IR，以锁定的 View UI Plus 1.3.24 官方运行包/CSS 生成独立彩色骨架、默认文案组件页及最终内容 HTML；三阶段浏览器几何、组件 DOM、表格占宽、来源文案与截图 QA 均 PASS。1660px 用户管理原型最终复验见 `artifacts/task-129/html-final`。新增独立 `html-official-runtime` Core 内容模式：来源支持的文案与 Table 行内容可改变，合成原型“赵六”变体在 `artifacts/task-129/dynamic-html-r1` 通过全流程；它不是用户审核的新原型。历史 Figma 原生内容模式不变。HTML→Figma 导入和更多组件类型的网页验收仍未执行。见 [TASK-128 架构决定](TASK-128_HTML_DELIVERY_DECISION.md) 和 [HTML 流程](../docs/HTML_WORKFLOW.md)。
+- TASK-128/129/130: 新增用户批准的 HTML 交付路线，复用 Tree、布局、iView 规范门和 UI-IR，以锁定的 View UI Plus 1.3.24 官方运行包/CSS 渲染。按用户最新决定只生成一个 `page.html`，同一页面依次显示彩色骨架、默认文案组件、最终内容；各状态独立浏览器 QA、截图与哈希均保存。1660px 用户管理原型单页实测见 `artifacts/task-130/single-page-r2`，合成原型“赵六”变体见 `artifacts/task-130/single-page-dynamic`，三状态均 PASS；变体不是用户审核的新原型。`html-official-runtime` Core 内容模式允许来源支持的文案与 Table 行内容变化；历史 Figma 原生内容模式不变。HTML→Figma 导入和更多组件类型的网页验收仍未执行。见 [TASK-128 架构决定](TASK-128_HTML_DELIVERY_DECISION.md) 和 [HTML 流程](../docs/HTML_WORKFLOW.md)。
 
 - Implemented baseline: Skill V0.1，有限范围静态列表双平台验收完成；显式组件库版本包含0.2.1和0.3.0。
 - Public snapshot: 完成基线 `6693e3e`，另加入公开文档和新的V0.2计划。

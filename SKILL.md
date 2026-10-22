@@ -9,7 +9,7 @@ description: Understand a UI prototype, normalize its layout against iView and p
 
 ## 主流程：原型 → 页面
 
-用户指定 HTML 交付时，优先使用 [HTML 执行说明](docs/HTML_WORKFLOW.md)：以官方 View UI Plus 运行包/CSS 输出自包含 `skeleton.html`、`default.html`、`final.html`，逐阶段浏览器截图和 QA。复用同一内容 Tree、布局决策与 iView 规范门；HTML 内容模式允许来源支持的组件文案与 Table 行内容变化，不为 HTML 交付等待 Figma 原生写入。用户指定 Figma 原生可编辑交付时继续下述 Figma 阶段。HTML→Figma 导入是后续独立验收，不把 HTML 页面当成已完成的 Figma 原生实例。组件结构和布局规则仍受正式契约约束；版本化迁移决定见 [TASK-128](.dev/TASK-128_HTML_DELIVERY_DECISION.md)。
+用户指定 HTML 交付时，优先使用 [HTML 执行说明](docs/HTML_WORKFLOW.md)：以官方 View UI Plus 运行包/CSS 只输出一个自包含 `page.html`，在同一页面内依次切换彩色骨架 → 默认组件 → 原型内容交付状态。逐状态进行浏览器截图和 QA，但不生成三张独立页面。复用同一内容 Tree、布局决策与 iView 规范门；HTML 内容模式允许来源支持的组件文案与 Table 行内容变化，不为 HTML 交付等待 Figma 原生写入。用户指定 Figma 原生可编辑交付时继续下述 Figma 阶段。HTML→Figma 导入是后续独立验收，不把 HTML 页面当成已完成的 Figma 原生实例。组件结构和布局规则仍受正式契约约束；版本化迁移决定见 [TASK-128](.dev/TASK-128_HTML_DELIVERY_DECISION.md)。
 
 当前新任务使用 [分阶段主流程](docs/WORKFLOW_V03.md)。Figma 原生路线与 HTML 路线都遵循相同阶段顺序；Penpot 全线按用户决定搁置。下文的原生页面要求适用于 Figma 路线，HTML 路线的浏览器 QA 细节见 [HTML 执行说明](docs/HTML_WORKFLOW.md)。
 

@@ -1,4 +1,4 @@
-import { createApp, h, nextTick } from 'vue';
+import { createApp, h, nextTick, ref } from 'vue';
 import {
   Button, Input, Select, Option, Table, Tag, Checkbox, Radio, Switch,
   Card, Page, Tabs, TabPane, Tree, DatePicker, Form, FormItem,
@@ -6,6 +6,9 @@ import {
 } from 'view-ui-plus';
 
 const payload = JSON.parse(document.getElementById('design-payload').textContent);
+const stages = ['skeleton', 'component', 'delivery'];
+const initialStage = location.hash.slice(1);
+const currentStage = ref(stages.includes(initialStage) ? initialStage : 'delivery');
 const token = name => {
   const entry = payload.tokens[name];
   if (!entry) throw new Error(`unknown_token:${name}`);
@@ -54,7 +57,7 @@ function component(node) {
   for (const key of ['kind', 'visibleText', 'text', 'selectedText', 'value', 'showHeader', 'border', 'stripe', 'columns', 'data']) {
     if (key in base && !['showHeader', 'border', 'stripe', 'columns', 'data'].includes(key)) delete base[key];
   }
-  const final = payload.stage === 'final';
+  const final = currentStage.value === 'delivery';
   const source = content(node);
   const attrs = { 'data-node-id': node.id, 'data-source-id': node.sourceIds?.[0] ?? '', 'data-component-type': kind,
     class: 'component-cell', style: { width: measure(node.layout?.width), minWidth: '0' } };
@@ -111,7 +114,7 @@ function renderNode(node) {
     const style = { ...boxStyle(node), fontFamily: 'Inter, Arial, sans-serif', fontSize: length(fontSize),
       fontWeight: typo.fontWeight ?? 400, lineHeight: length(lineHeight), whiteSpace: 'nowrap',
       color: node.style?.colorToken?.token ? token(node.style.colorToken.token) : token('color.text') };
-    return h('div', { 'data-node-id': node.id, 'data-source-id': node.sourceIds?.[0] ?? '', class: 'page-text', style }, payload.stage === 'default' ? '文本' : node.text);
+    return h('div', { 'data-node-id': node.id, 'data-source-id': node.sourceIds?.[0] ?? '', class: 'page-text', style }, currentStage.value === 'component' ? '文本' : node.text);
   }
   if (node.type === 'IconInstance') {
     const svg = payload.icons[node.iconId];
@@ -134,6 +137,20 @@ function renderSkeleton() {
       `${cell.componentType} · ${cell.label}`)));
 }
 
-createApp({ render: () => payload.stage === 'skeleton' ? renderSkeleton() : renderNode(payload.document.pages[0]) }).mount('#app');
+const labels = { skeleton: '彩色骨架', component: '默认组件', delivery: '交付页面' };
+createApp({ render: () => h('div', [
+  h('nav', { class: 'stage-nav', 'aria-label': '页面阶段' }, stages.map(stage =>
+    h('button', { type: 'button', class: currentStage.value === stage ? 'active' : '',
+      onClick: () => window.__setDesignStage(stage) }, labels[stage]))),
+  currentStage.value === 'skeleton' ? renderSkeleton() :
+    renderNode(payload.documents[currentStage.value].pages[0]),
+]) }).mount('#app');
+window.__setDesignStage = async stage => {
+  if (!stages.includes(stage)) throw new Error(`unknown_stage:${stage}`);
+  currentStage.value = stage;
+  location.hash = stage;
+  await nextTick();
+  await document.fonts.ready;
+};
 await nextTick();
 window.__designReady = true;

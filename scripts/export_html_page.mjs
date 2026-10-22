@@ -1,4 +1,4 @@
-// Export the verified prototype workflow to three self-contained HTML pages.
+// Export and audit three states of one source-bound HTML page.
 import { build } from 'esbuild';
 import { chromium } from 'playwright';
 import { createHash } from 'node:crypto';
@@ -36,17 +36,11 @@ async function officialCss() {
 
 function html(payload, js, css) {
   const json = JSON.stringify(payload).replaceAll('<', '\\u003c');
-  const title = payload.stage === 'skeleton' ? '彩色组件骨架' : payload.stage === 'default' ? '默认文案组件页' : '原型内容页面';
-  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>${css}</style><style>html,body{margin:0;min-width:320px;background:#f5f7f9}#app{width:max-content;min-width:100%}.component-cell{display:block}.component-cell>.ivu-table-wrapper{width:100%}.page-icon svg{width:100%;height:100%}.skeleton-cell{box-sizing:border-box;border:1px solid #64748b;border-radius:3px;overflow:hidden;padding:4px;color:#334155;font:12px/16px Inter,Arial,sans-serif;white-space:nowrap}</style></head><body><div id="app"></div><script type="application/json" id="design-payload">${json}</script><script type="module">${js.replaceAll('</script', '<\\/script')}</script></body></html>`;
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>原型页面</title><style>${css}</style><style>html,body{margin:0;min-width:320px;background:#f5f7f9}#app{width:max-content;min-width:100%}.stage-nav{box-sizing:border-box;display:flex;gap:8px;padding:12px 24px;background:white}.stage-nav button{border:1px solid #dcdee2;border-radius:4px;background:white;padding:5px 12px;cursor:pointer;color:#515a6e}.stage-nav button.active{border-color:#2d8cf0;color:#2d8cf0}.component-cell{display:block}.component-cell>.ivu-table-wrapper{width:100%}.page-icon svg{width:100%;height:100%}.skeleton-cell{box-sizing:border-box;border:1px solid #64748b;border-radius:3px;overflow:hidden;padding:4px;color:#334155;font:12px/16px Inter,Arial,sans-serif;white-space:nowrap}</style></head><body><div id="app"></div><script type="application/json" id="design-payload">${json}</script><script type="module">${js.replaceAll('</script', '<\\/script')}</script></body></html>`;
 }
 
-async function inspect(browser, file, payload) {
-  const page = await browser.newPage({ viewport: { width: Math.max(1280, payload.document.pages[0].layout.width.value), height: 1080 }, deviceScaleFactor: 1 });
-  const errors = [];
-  page.on('pageerror', error => errors.push(String(error)));
-  await page.goto(pathToFileURL(file).href, { waitUntil: 'load' });
-  await page.waitForFunction(() => window.__designReady === true, { timeout: 30000 });
-  await page.evaluate(() => document.fonts.ready);
+async function inspect(page, stage, payload, errors) {
+  await page.evaluate(stageName => window.__setDesignStage(stageName), stage);
   const findings = await page.evaluate(({ stage, expectedCells }) => {
     const all = [...document.querySelectorAll('[data-source-id]')];
     const cells = [...document.querySelectorAll('[data-cell-id]')];
@@ -65,7 +59,9 @@ async function inspect(browser, file, payload) {
       cellGeometry: Object.fromEntries(expectedCells.map(cell => {
         const node = document.querySelector(`[data-node-id="${cell.cellId}"],[data-cell-id="${cell.cellId}"]`);
         const box = node?.getBoundingClientRect();
-        return [cell.cellId, box ? { x: box.x, y: box.y, width: box.width, height: box.height } : null];
+        const pageBox = document.querySelector('.design-page,.skeleton-page')?.getBoundingClientRect();
+        return [cell.cellId, box && pageBox ? { x: box.x - pageBox.x, y: box.y - pageBox.y,
+          width: box.width, height: box.height } : null];
       })),
       nativeClasses: components.map(node => [node.dataset.componentType,
         ({ Input: '.ivu-input', Select: '.ivu-select', Button: '.ivu-btn', Table: '.ivu-table' }[node.dataset.componentType]
@@ -75,10 +71,9 @@ async function inspect(browser, file, payload) {
         const inputs = [...node.querySelectorAll('input')].map(input => `${input.value} ${input.placeholder}`).join(' ');
         return `${node.innerText ?? ''} ${inputs}`;
       }).join(' ')])) };
-  }, { stage: payload.stage, expectedCells: payload.skeleton.cells });
+  }, { stage, expectedCells: payload.skeleton.cells });
   const png = await page.locator('.design-page,.skeleton-page').screenshot({ animations: 'disabled' });
-  await page.close();
-  return { findings, png, errors };
+  return { findings, png, errors: [...errors] };
 }
 
 async function main() {
@@ -134,26 +129,34 @@ async function main() {
   const js = bundled.outputFiles[0].text;
   const css = await officialCss();
   await mkdir(output, { recursive: true });
+  const payload = { documents: { component: defaultDocument, delivery: document },
+    skeleton, catalog: catalog.components, content, icons, tokens,
+    minPageHeight: Number(tokens['size.page-min-height'].value) };
+  const file = join(output, 'page.html');
+  await writeFile(file, html(payload, js, css), 'utf8');
+  const pageSha256 = hash(await readFile(file));
   const browser = await chromium.launch({ headless: true });
   const report = { status: 'RUNNING', scope: 'html-prototype-workflow', sourceVersion: sourceLock.sourceVersion,
     officialCssSha256: sourceLock.files['node_modules/view-ui-plus/dist/styles/viewuiplus.css'],
     catalogSha256: hash(await readFile(catalogPath)), coreUiIrSha256: hash(await readFile(join(core, 'final_ui_ir.json'))),
-    contentTreeSha256: hash(await readFile(join(staged, 'page_content_tree.json'))), stages: {}, issues: [] };
+    contentTreeSha256: hash(await readFile(join(staged, 'page_content_tree.json'))),
+    page: 'page.html', pageSha256, stages: {}, issues: [] };
+  const page = await browser.newPage({ viewport: { width: Math.max(1280, document.pages[0].layout.width.value), height: 1080 }, deviceScaleFactor: 1 });
+  const errors = [];
+  page.on('pageerror', error => errors.push(String(error)));
   try {
-    for (const stage of ['skeleton', 'default', 'final']) {
-      const payload = { stage, document: stage === 'default' ? defaultDocument : document,
-        skeleton, catalog: catalog.components, content, icons, tokens, minPageHeight: Number(tokens['size.page-min-height'].value) };
-      const file = join(output, `${stage}.html`);
-      await writeFile(file, html(payload, js, css), 'utf8');
-      let findings, png, errors;
-      try { ({ findings, png, errors } = await inspect(browser, file, payload)); }
+    await page.goto(pathToFileURL(file).href, { waitUntil: 'load' });
+    await page.waitForFunction(() => window.__designReady === true, { timeout: 30000 });
+    for (const stage of ['skeleton', 'component', 'delivery']) {
+      let findings, png, stageErrors;
+      try { ({ findings, png, errors: stageErrors } = await inspect(page, stage, payload, errors)); }
       catch (error) {
         const issue = `browser_render_failed:${stage}:${String(error.message)}`;
-        report.stages[stage] = { status: 'FAIL', html: `${stage}.html`, htmlSha256: hash(await readFile(file)), issues: [issue] };
+        report.stages[stage] = { status: 'FAIL', page: 'page.html', pageSha256, issues: [issue] };
         report.issues.push(issue);
         break;
       }
-      const issues = [...errors];
+      const issues = [...stageErrors];
       if (stage === 'skeleton') {
         if (findings.cellCount !== skeleton.cells.length) issues.push('skeleton_cell_count_mismatch');
         for (const id of sourceIds) if (!findings.sourceIds.includes(id)) issues.push(`skeleton_missing_source:${id}`);
@@ -162,7 +165,7 @@ async function main() {
         for (const id of sourceIds) if (!findings.sourceIds.includes(id)) issues.push(`${stage}_missing_source:${id}`);
         if (findings.tableWidth !== null && Math.abs(findings.tableWidth - findings.tableCellWidth) > 2) issues.push('table_does_not_fill_cell');
         for (const [kind, found] of findings.nativeClasses) if (!found) issues.push(`official_component_dom_missing:${kind}`);
-        if (stage === 'final') for (const [id, value] of Object.entries(content))
+        if (stage === 'delivery') for (const [id, value] of Object.entries(content))
           for (const claim of claimTexts(value)) if (!findings.htmlBySource[id]?.includes(claim)) issues.push(`missing_prototype_text:${id}:${claim}`);
       }
       for (const cell of skeleton.cells) {
@@ -172,7 +175,7 @@ async function main() {
       }
       if (findings.horizontalOverflow) issues.push('horizontal_overflow');
       await writeFile(join(output, `${stage}.png`), png);
-      report.stages[stage] = { status: issues.length ? 'FAIL' : 'PASS', html: `${stage}.html`, htmlSha256: hash(await readFile(file)),
+      report.stages[stage] = { status: issues.length ? 'FAIL' : 'PASS', page: 'page.html', pageSha256,
         png: `${stage}.png`, pngSha256: hash(png), findings: { ...findings, text: undefined, htmlBySource: undefined }, issues };
       if (issues.length) { report.issues.push(...issues); break; }
     }
