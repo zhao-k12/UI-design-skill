@@ -11,14 +11,18 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from validators.ui_ir import load_json
-from scripts.run_figma_pipeline import FIGMA_ADAPTIVE_PROFILE_029
+HTML_PROFILE = {
+    "tokens": "registries/tokens/v0.2.3/default.json",
+    "components": "registries/components/v0.2.9/catalog.json",
+    "fidelity": "registries/components/v0.2.9/fidelity-reports.json",
+}
 
 
 def run(source_dir: Path, output_dir: Path) -> dict:
     source_dir, output_dir = source_dir.resolve(), output_dir.resolve()
     if not output_dir.is_relative_to((ROOT / "artifacts").resolve()):
         raise ValueError("Use an artifact task directory")
-    paths = FIGMA_ADAPTIVE_PROFILE_029
+    paths = HTML_PROFILE
     resolver = import_module("core.component-resolver.resolver")
     tokens = resolver.tokens.TokenRegistry(load_json(ROOT / paths["tokens"]))
     components = resolver.registry_module.ComponentRegistry(
