@@ -1,6 +1,6 @@
 ---
 name: ui-design-skill
-description: Read a UI prototype, normalize its layout against iView rules, and deliver one audited HTML page that progresses through a colored skeleton, official components, and final prototype content.
+description: Turn a UI prototype into one audited HTML page using source-verified View UI Plus rules, a reviewed colored skeleton, unmodified official components, and final prototype content.
 ---
 
 # UI Design Skill
@@ -9,16 +9,15 @@ description: Read a UI prototype, normalize its layout against iView rules, and 
 
 ## 原型 → 页面
 
-1. **理解原型，建立统一内容 Tree**：逐项记录原文、来源位置、内容层级、顺序和业务关系。Tree QA 核对内容正确、完整，缺失或不确定项标为 Review。原型的贴边、空白、控件尺寸和残缺画法不是最终布局依据。
-2. **按规范计算布局**：组件视觉来自锁定的 View UI Plus 官方源码、运行包和 CSS；页面级空间使用明确的项目规则。模型先决定容器、24 栅格、内边距、对齐、间距和表格占宽，再由 Core 计算 UI-IR。可补充展示所需容器和留白，不得补造业务字段、操作或记录。Tree、布局质量和 iView 规范检查必须 PASS。
-3. **同页骨架状态**：把每个 Cell 的位置、范围、组件类型和颜色标在页面上。核对组件选型、来源项覆盖、区域内边距、栅格、间距和占宽。检查失败时修正 Tree 或布局，并从受影响阶段重跑。
-4. **同页组件状态**：将骨架切换为正式组件实例，保留官方默认文案。核对真实组件 DOM、结构、位置、尺寸和默认内容。不得用普通图形模拟缺失组件。
-5. **同页交付状态**：将来源绑定的原型内容填入组件与文字区域。逐项对照原型，检查文案、表格数据、组件、布局、溢出和整体截图。只有所有状态 QA 均 PASS 才交付。
+1. **理解原型，建立统一内容 Tree**：逐项记录原文、来源位置、内容层级、顺序和业务关系。Tree QA 只核对内容正确、完整；缺失或不确定项标为 Review。原型只提供语义与关系，不提供可直接采用的尺寸、间距、颜色或组件外观。
+2. **核实官方依据，制作彩色组件骨架**：先从锁定的 View UI Plus 文档、源码、运行包和 CSS 核实本页所用组件、Layout/Grid、字体、颜色与空间规则；把规则及来源记录到本次任务。按这些依据决定组件选型、区域、对齐、留白和表格的可用宽度，再计算布局并在同一页面显示彩色骨架。骨架须直接标出每块对应的组件。骨架 QA 逐项核对 Tree 覆盖、组件选择、区域与间距、对齐、表格占宽及每项决定的官方依据；有误先修骨架，再进入组件状态。官方未定义的页面尺寸或模式记为规范缺口，使用官方组件的自然／自适应行为，不从截图测量或编造像素值。可补足展示容器与留白，不补造业务字段、操作或记录。
+3. **同页默认组件状态**：将已通过的骨架换成真实 View UI Plus 组件，保留组件默认文案。只通过官方组件 API 选择类型、尺寸和状态，并加载锁定的官方 CSS；禁止用自写 CSS、行内视觉样式或选择器覆盖官方组件的字体、颜色、圆角、高度、内边距、边框及状态外观。核对真实组件 DOM、选型、位置、默认内容与官方运行效果；不能用普通图形模拟组件。
+4. **同页交付状态**：只把来源绑定的原型文案与数据填入已验收的组件，不借填内容时改变骨架或组件样式。逐项对照原型核对文案、表格数据、来源覆盖和溢出，并复查官方样式与整体截图。Tree、骨架、默认组件、最终内容四类 QA 各自独立；仅全部 PASS 才交付。
 
 只生成一个 `page.html`；默认打开时显示交付状态，页面顶部可切换查看骨架和默认组件状态。各状态独立保存截图和结构化 QA，出现问题时以同一来源重新生成，不依赖被覆盖的页面内容。详细命令和验收边界见 [HTML 执行说明](docs/HTML_WORKFLOW.md)。
 
 ## 执行与恢复
 
-常规列表页按顺序运行 HTML Core、分阶段准备、`run_html_checks.py` 和 `export_html_page.mjs`。包含完整管理外壳、多列筛选和操作表格的截图，先独立建立来源 Tree 与布局意图，再使用已验收的复杂客户列表 HTML 模式；具体输入和适用范围见 [HTML 执行说明](docs/HTML_WORKFLOW.md)。不能为了使旧 Core 通过而删掉新原型中的字段、操作或记录。检查或渲染失败是待修复工作：读取具体 issue，找出最早受影响的来源、布局、组件或渲染阶段，修正后使用新 revision 重跑依赖阶段。不得复制旧页面、改写原型事实或虚构 PASS。所有任务保存来源指纹、截图和 QA；仅在实际浏览器校对通过后报告交付。
+按 [HTML 执行说明](docs/HTML_WORKFLOW.md) 运行可覆盖本次原型的 Core、分阶段准备、检查与导出。先完成本次 [官方依据清单](docs/IVIEW_OFFICIAL_EVIDENCE.md) 的适用项；未覆盖的组件或规则须先查证并补齐来源。复杂客户列表示例虽有历史三状态浏览器 PASS，其本地 CSS 覆盖官方组件且包含未经官方证实的页面视觉值，不能作为当前规范合格的模板或交付依据。不能为了使旧 Core 通过而删掉新原型中的字段、操作或记录。检查或渲染失败是待修复工作：读取具体 issue，找出最早受影响的来源、骨架、组件或渲染阶段，修正后使用新 revision 重跑依赖阶段。不得复制旧页面、改写原型事实或虚构 PASS。所有任务保存来源指纹、截图和 QA；仅在实际浏览器校对通过后报告交付。
 
 当前已实测简单用户列表和复杂客户管理列表；后者还覆盖 DatePicker、Breadcrumb、Badge、表格选择列与行内操作。新组件结构、属性或页面模式若超出已验收模式和规则，先补来源与验收契约，再生成。当前只处理静态页面，不增加交互或业务逻辑。

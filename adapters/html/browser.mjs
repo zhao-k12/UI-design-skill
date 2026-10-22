@@ -111,7 +111,7 @@ function renderNode(node) {
     const typo = node.style?.typographyToken?.token ? token(node.style.typographyToken.token) : {};
     const fontSize = typo.fontSize?.token ? token(typo.fontSize.token) : typo.fontSize ?? 14;
     const lineHeight = typo.lineHeight?.token ? token(typo.lineHeight.token) : typo.lineHeight ?? 22;
-    const style = { ...boxStyle(node), fontFamily: 'Inter, Arial, sans-serif', fontSize: length(fontSize),
+    const style = { ...boxStyle(node), fontSize: length(fontSize),
       fontWeight: typo.fontWeight ?? 400, lineHeight: length(lineHeight), whiteSpace: 'nowrap',
       color: node.style?.colorToken?.token ? token(node.style.colorToken.token) : token('color.text') };
     return h('div', { 'data-node-id': node.id, 'data-source-id': node.sourceIds?.[0] ?? '', class: 'page-text', style }, currentStage.value === 'component' ? '文本' : node.text);

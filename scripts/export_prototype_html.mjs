@@ -6,6 +6,7 @@ import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 import { resolve, join, dirname, extname } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { ROOT, verifySource } from '../component-builder/source-reader/source-lock.mjs';
+import { assertNoOfficialComponentOverrides } from '../adapters/html/official-style-guard.mjs';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const read = async path => JSON.parse(await readFile(path, 'utf8'));
@@ -93,6 +94,8 @@ async function main() {
     'Content Tree review must match the source screenshot');
   assert(layoutIntent.pattern === 'customer-list-page' && layoutIntent.decisions?.length >= 6,
     'Customer-list layout intent must be reviewed');
+  const local = await readFile(join(ROOT, 'adapters/html/prototype-layout.css'), 'utf8');
+  assertNoOfficialComponentOverrides(local, 'adapters/html/prototype-layout.css');
   const sourceLock = await verifySource();
   const current = await read(join(ROOT, 'registries/icons/current.json'));
   const registry = await read(join(ROOT, 'registries/icons/snapshots', current.snapshotSha256, 'registry.json'));
@@ -106,7 +109,6 @@ async function main() {
     svg[id] = bytes.toString('utf8');
   }
   const official = await officialCss();
-  const local = await readFile(join(ROOT, 'adapters/html/prototype-layout.css'), 'utf8');
   const bundled = await build({ entryPoints: [join(ROOT, 'adapters/html/prototype-layout.mjs')], bundle: true,
     write: false, platform: 'browser', format: 'esm', minify: true,
     define: { 'process.env.NODE_ENV': '"production"' } });

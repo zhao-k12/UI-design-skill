@@ -7,6 +7,7 @@ import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 import { resolve, join, dirname, extname } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { ROOT, verifySource } from '../component-builder/source-reader/source-lock.mjs';
+import { assertNoOfficialComponentOverrides } from '../adapters/html/official-style-guard.mjs';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const read = async path => JSON.parse(await readFile(path, 'utf8'));
@@ -36,7 +37,9 @@ async function officialCss() {
 
 function html(payload, js, css) {
   const json = JSON.stringify(payload).replaceAll('<', '\\u003c');
-  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>原型页面</title><style>${css}</style><style>html,body{margin:0;min-width:320px;background:#f5f7f9}#app{width:max-content;min-width:100%}.stage-nav{box-sizing:border-box;display:flex;gap:8px;padding:12px 24px;background:white}.stage-nav button{border:1px solid #dcdee2;border-radius:4px;background:white;padding:5px 12px;cursor:pointer;color:#515a6e}.stage-nav button.active{border-color:#2d8cf0;color:#2d8cf0}.component-cell{display:block}.component-cell>.ivu-table-wrapper{width:100%}.page-icon svg{width:100%;height:100%}.skeleton-cell{box-sizing:border-box;border:1px solid #64748b;border-radius:3px;overflow:hidden;padding:4px;color:#334155;font:12px/16px Inter,Arial,sans-serif;white-space:nowrap}</style></head><body><div id="app"></div><script type="application/json" id="design-payload">${json}</script><script type="module">${js.replaceAll('</script', '<\\/script')}</script></body></html>`;
+  const localCss = 'html,body{margin:0;min-width:320px;background:#f5f7f9}#app{width:max-content;min-width:100%}.stage-nav{box-sizing:border-box;display:flex;gap:8px;padding:12px 24px;background:white}.stage-nav button{border:1px solid #dcdee2;border-radius:4px;background:white;padding:5px 12px;cursor:pointer;color:#515a6e}.stage-nav button.active{border-color:#2d8cf0;color:#2d8cf0}.component-cell{display:block}.page-icon svg{width:100%;height:100%}.skeleton-cell{box-sizing:border-box;border:1px solid #64748b;border-radius:3px;overflow:hidden;padding:4px;color:#334155;font:12px/16px Inter,Arial,sans-serif;white-space:nowrap}';
+  assertNoOfficialComponentOverrides(localCss, 'scripts/export_html_page.mjs');
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>原型页面</title><style>${css}</style><style>${localCss}</style></head><body><div id="app"></div><script type="application/json" id="design-payload">${json}</script><script type="module">${js.replaceAll('</script', '<\\/script')}</script></body></html>`;
 }
 
 async function inspect(page, stage, payload, errors) {

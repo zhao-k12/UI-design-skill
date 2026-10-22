@@ -1,5 +1,7 @@
 # Development State — public edition
 
+- TASK-133: 根据用户讨论重订 HTML Skill：原型仅提取内容与关系；先核实锁定版 View UI Plus 来源并审核可见彩色组件骨架，再进入默认官方组件与最终内容；四类 QA 独立。新增 `docs/IVIEW_OFFICIAL_EVIDENCE.md`，禁止把截图测量、历史项目 Token 或自写 CSS 说成官方规范。导出器加入本地 `.ivu-*` 覆盖预检，历史 TASK-132 客户页 CSS 因覆盖官方组件被阻断并撤销其“规范交付”解释；主 HTML Adapter 移除显式 Inter 字体。旧 Core 的项目级几何和文字 Token 尚未逐项迁移核对，新的 iView 合规整页验收仍 NOT_RUN；历史三状态浏览器 PASS 只代表原检查项，不等于新规范 PASS。
+
 - TASK-132: 用户提供客户管理截图。独立记录原图、内容 Tree、布局意图和分阶段审核；新增复杂客户列表 HTML 模式，使用官方 View UI Plus 控件和来源锁定 Remix 图标，保留侧栏、顶栏、五项筛选、六个工具栏操作、九列表格、十条可见重复记录及浮动标签。列表页按项目规则使用 24 px 内边距并填满可用表格宽度。`artifacts/task-132/customer-management/html-final-r2` 的同页骨架、组件、交付三状态浏览器 QA 全 PASS，最后截图已与原型人工校对；不增加未见记录、分页总数或业务交互。此模式只验收当前结构，非任意截图通用能力。
 
 - TASK-131: 当前 Skill 主路线收敛为 HTML 单页交付。入口 `run_html_pipeline.py` 不再导入平台专用配置；新增 `prepare_html_workflow.py` 与 `run_html_checks.py`，独立执行来源 Tree、布局和 iView 规范门。当前 `SKILL.md` 与 `docs/HTML_WORKFLOW.md` 只描述 HTML 页面制作与三状态 QA。原用户管理原型按新入口从 Core 到单页重新跑通，见 `artifacts/task-131/html`，骨架、组件、交付均 PASS。历史任务资料保留作版本证据，不参与当前交付。
