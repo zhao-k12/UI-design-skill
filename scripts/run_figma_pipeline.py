@@ -55,6 +55,24 @@ def run(input_dir, output_dir, figma_file, profile="v0.2.6"):
         read("registries/assets/catalog.json"), ROOT / "registries/assets")
     geometry = importlib.import_module("core.component-resolver.placement").SourceGeometry(
         load_json(base / "source-geometry.json"), components)
+    binding = None
+    if profile == "v0.2.8-figma":
+        # Resolve deterministic resource gaps before the longer Core run and
+        # before creating any Figma page. This is diagnostic, not a QA bypass.
+        binding = ComponentBindings(read("adapters/figma/metadata/" + paths["componentBindings"]),
+                                    components, platform="figma")
+        from workflow_v03.readiness import audit as audit_readiness
+        readiness = audit_readiness(base, tokens, components, geometry, binding, figma_file)
+        output.mkdir(parents=True, exist_ok=True)
+        runner = importlib.import_module("core.pipeline.runner")
+        runner.write(output / "readiness_preflight.json", readiness)
+        if readiness["status"] != "READY":
+            qa = {"scope": "figma-resource-readiness", "status": readiness["status"],
+                  "blockedStage": "resource-readiness", "readyForAdapter": False,
+                  "nativeExecution": "NOT_RUN", "issues": readiness["issues"],
+                  "activePlatforms": ["figma"]}
+            runner.write(output / "qa_report.json", qa)
+            return qa
     content = load_json(base / "content.json")
     icon_ids = {node["iconId"] for item in content["items"]
                 for children in item.get("cellSlots", {}).values()
@@ -75,8 +93,9 @@ def run(input_dir, output_dir, figma_file, profile="v0.2.6"):
         runner.write(output / "qa_report.json", qa)
         return qa
 
-    binding = ComponentBindings(read("adapters/figma/metadata/" + paths["componentBindings"]),
-                                components, platform="figma")
+    binding = binding or ComponentBindings(
+        read("adapters/figma/metadata/" + paths["componentBindings"]),
+        components, platform="figma")
     common = [load_json(output / "final_ui_ir.json"), tokens, components, binding,
               icons, read("adapters/figma/metadata/icon-bindings.json"),
               read("adapters/figma/metadata/" + paths["fontBindings"])]

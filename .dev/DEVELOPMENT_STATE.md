@@ -82,6 +82,7 @@
 - TASK-124: 用户要求 skill 本身从原型提取内容后主动按规范补页面布局。已记录[架构冲突与批准方向](TASK-124_LAYOUT_INTENT_ARCHITECTURE_CONFLICT.md)，新增 V0.3.2 列表页项目布局规则、模型布局意图契约及独立质量门。TASK-122 冻结布局因页头／列表零内边距和 1392 px Table 无法填满内容区而 FAIL；合规计算样本 PASS；新原生骨架缺该门 PASS 时阻断。未修改 Figma 页面或旧锁，正式 1840 px Table 组件准入与新页面运行仍待后续任务。
 - TASK-125: 仅取 TASK-122 原型原文，在全新 `artifacts/task-125` 独立重建语义观察、Tree、布局意图与试算；语义和 Core 几何试算 PASS，V0.3.2 规范化布局门因正式 Table 1392 px 与所需 1840 px 不符而 FAIL，iView 资源预检另发现四项色彩 Token 与原生表头能力缺口；原生入口按门阻断，未创建新 Figma 页面。试算使用显式 test-fixture，非生产测量；详见 [TASK-125](TASK-125_INDEPENDENT_SKILL_TRIAL.md)。
 - TASK-125 恢复验收：按用户要求追查 FAIL 并继续，新版 1840 px 原生表头 Table、0.2.8 组件库、0.2.3 Token 和 Figma-only 绑定已完成；新任务原生测量替代试算尺寸，Core、Figma Adapter、iView 有界规则及 V0.3 全阶段 QA PASS。保留骨架页 `288:2`，最终页 `289:2`；乱码骨架候选已排除。详情见 [TASK-125 恢复验收](TASK-125_RECOVERY_ACCEPTANCE.md)。Penpot 仍搁置，旧版任务锁不迁移。
+- TASK-126: 新 Figma-only 路径在完整 Core 前检查已知组件和来源能力，骨架脚本前预编译默认组件页，生成脚本使用 ASCII/Unicode 转义；目标是把 TASK-125 中的可预见 FAIL 前移为资源/输入诊断，避免原生写入后返工。针对性 13 项测试与 Skill 格式校验 PASS；全仓旧证据依赖未齐，结果和边界见 [TASK-126](TASK-126_FAILURE_PREVENTION.md)。Penpot 与历史锁未迁移。
 - Historical validation: 本目录相应验收记录；公开快照检查见 `docs/PUBLICATION_VALIDATION.md`。
 
 保留V0.1来源和版本锁。V0.2使用新版本与新验收目录，不覆盖历史批准和失败。

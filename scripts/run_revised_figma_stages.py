@@ -7,7 +7,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from workflow_v03.figma import component_script, fill_script, skeleton_script
+from workflow_v03.figma import component_preflight, component_script, fill_script, skeleton_script
 from workflow_v03.core import write
 from workflow_v03.iview_conformance import audit as audit_iview
 from workflow_v03.layout_quality import audit as audit_layout_quality
@@ -31,7 +31,7 @@ def _save_once(path, data):
 def advance(directory, stage, *, file_reference=None, revision=None,
             execution=None, readback=None, review=None, native_png=None,
             tokens=None, catalog=None, intent=None, plan=None,
-            layout_tree=None, layout_report=None):
+            layout_tree=None, layout_report=None, profile="v0.2.7-figma"):
     directory = Path(directory).resolve()
     if not directory.is_relative_to((ROOT / "artifacts").resolve()) or not directory.is_dir():
         raise ValueError("Use a prepared workflow directory under artifacts")
@@ -78,6 +78,9 @@ def advance(directory, stage, *, file_reference=None, revision=None,
         if (tree_qa.get("status") != "PASS" or
             tree_qa.get("contentTreeSha256") != get("annotated_skeleton_page.json")["contentTreeSha256"]):
             raise ValueError("Reviewed complete content Tree is required before skeleton construction")
+        _, preflight = component_preflight(get("default_component_page_ui_ir.json"),
+                                           file_reference, revision, profile)
+        _save_once(directory / "figma-default-component-preflight.json", preflight)
         script = skeleton_script(get("annotated_skeleton_page.json"), file_reference, revision)
         _save_once(directory / "figma-skeleton.js", script)
         return {"status": "PREPARED", "scriptSha256": sha256(script.encode("utf-8")).hexdigest()}
@@ -89,7 +92,7 @@ def advance(directory, stage, *, file_reference=None, revision=None,
     if stage == "component-script":
         script, preflight = component_script(get("default_component_page_ui_ir.json"),
             get("annotated_skeleton_page.json"), file_reference, revision,
-            get("annotated_skeleton_native_qa.json"))
+            get("annotated_skeleton_native_qa.json"), profile=profile)
         _save_once(directory / "figma-default-component-preflight.json", preflight)
         _save_once(directory / "figma-default-component.js", script)
         return {"status": "PREPARED", "scriptSha256": sha256(script.encode("utf-8")).hexdigest()}
@@ -141,6 +144,8 @@ def main():
                                           "component-qa", "fill-script", "fill-qa", "proofread"))
     parser.add_argument("--file-reference")
     parser.add_argument("--revision")
+    parser.add_argument("--profile", choices=("v0.2.7-figma", "v0.2.8-figma"),
+                        default="v0.2.7-figma")
     parser.add_argument("--execution", type=Path)
     parser.add_argument("--readback", type=Path)
     parser.add_argument("--review", type=Path)
@@ -158,7 +163,8 @@ def main():
                          review=args.review, native_png=args.native_png,
                          tokens=args.tokens, catalog=args.catalog,
                          intent=args.intent, plan=args.plan,
-                         layout_tree=args.layout_tree, layout_report=args.layout_report)
+                         layout_tree=args.layout_tree, layout_report=args.layout_report,
+                         profile=args.profile)
     except (ValueError, OSError, KeyError, TypeError) as exc:
         parser.error(str(exc))
     print(result)

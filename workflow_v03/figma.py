@@ -12,10 +12,20 @@ from validators.ui_ir import load_json
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def _ascii_script(source):
+    """Keep generated JavaScript intact across Windows console code pages.
+
+    Non-ASCII characters in these runtimes occur only in JS strings/comments.
+    JSON escaping also handles astral code points as surrogate pairs.
+    """
+    return "".join(char if ord(char) < 128 else json.dumps(char, ensure_ascii=True)[1:-1]
+                   for char in source)
+
+
 def _embed(payload, runtime, call):
     source = (Path(__file__).parent / runtime).read_text(encoding="utf-8")
-    return ("const payload = " + json.dumps(payload, ensure_ascii=False, allow_nan=False) + ";\n"
-            + source + "\nreturn await " + call + "(figma, payload);\n")
+    return _ascii_script("const payload = " + json.dumps(payload, ensure_ascii=True, allow_nan=False) + ";\n"
+                         + source + "\nreturn await " + call + "(figma, payload);\n")
 
 
 def skeleton_script(skeleton, file_reference, revision):
@@ -44,6 +54,19 @@ def _resources(file_reference, profile="v0.2.7-figma"):
             read("adapters/figma/metadata/" + paths["fontBindings"]))
 
 
+def component_preflight(default_document, file_reference, revision,
+                        profile="v0.2.7-figma"):
+    """Compile the later component page before any skeleton write."""
+    if not file_reference or not revision:
+        raise ValueError("Figma file and revision are required")
+    document = deepcopy(default_document)
+    document["documentId"] += ".default." + revision
+    report = prepare(document, *_resources(file_reference, profile), file_reference=file_reference)
+    if report["status"] != "PASS":
+        raise ValueError("Default component page preflight failed: " + str(report["issues"]))
+    return _ascii_script(script_for_page(report["plan"])), report
+
+
 def component_script(default_document, skeleton, file_reference, revision, skeleton_qa,
                      profile="v0.2.7-figma"):
     if (skeleton_qa.get("status") != "PASS" or
@@ -51,12 +74,7 @@ def component_script(default_document, skeleton, file_reference, revision, skele
         not skeleton_qa.get("independentReadback") or
         not skeleton_qa.get("pageReference")):
         raise ValueError("Independent native skeleton QA must PASS before component construction")
-    document = deepcopy(default_document)
-    document["documentId"] += ".default." + revision
-    report = prepare(document, *_resources(file_reference, profile), file_reference=file_reference)
-    if report["status"] != "PASS":
-        raise ValueError("Default component page preflight failed: " + str(report["issues"]))
-    return script_for_page(report["plan"]), report
+    return component_preflight(default_document, file_reference, revision, profile)
 
 
 def fill_script(fill, file_reference, default_qa):

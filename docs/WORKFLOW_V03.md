@@ -32,6 +32,16 @@
 
 `sections` 使用本次 Tree 的 Section ID，`tableSizing` 使用本次 Tree 的 Table 来源 ID，不要求其它原型沿用示例名称。其它页面模式没有已登记项目规则时返回 Review，不套用列表页数值。
 
+## 生成前预检
+
+在完整 Core 和任何 Figma 写入之前，对新任务运行 `v0.2.8-figma` 资源预检。它检查当前任务的官方来源锁、iView Token、原型结构、布局可计算性、组件映射、目标文件绑定，以及 Table 所需的真实宽高、原生表头、来源配置与固定数据。只有 `readiness_preflight.json` 的 `status=READY` 才继续；`NEEDS_RESOURCE` 表示先补正式组件或绑定，`REVISE_INPUT` 表示先修原型解释或布局输入。此结果是早期诊断，不能替代完整 Core、规范审计或原生读回。
+
+```powershell
+rtk proxy .venv/Scripts/python.exe scripts/run_figma_pipeline.py <本次原型输入目录> --output-dir artifacts/<新任务>/core-run --figma-file <Figma文件Key> --profile v0.2.8-figma
+```
+
+若需配置新的官方组件，先完成来源提取、Figma 原生保真、Registry 与绑定准入，再以新任务输入版本重跑预检。不要先创建骨架、等待后续组件页失败才开始补组件。当前预检覆盖已知的静态 Table 能力缺口；其它组件或 Figma 服务异常仍由后续质量门定位。
+
 | 阶段 | 可检查产物 | 准入条件 | QA 要点 |
 | --- | --- | --- | --- |
 | 1. 页面内容 Tree | `page_content_tree.json` | 原型来源和语义人工复核通过 | 原型信息、层级、文案和布局关系正确完整；必须核对源图可能漏读的内容 |
@@ -53,10 +63,12 @@ rtk proxy .venv/Scripts/python.exe scripts/prepare_revised_workflow.py --run-dir
 rtk proxy .venv/Scripts/python.exe scripts/run_revised_figma_stages.py artifacts/<新任务>/staged tree-qa --review <逐项核对原型的Tree审核记录.json>
 rtk proxy .venv/Scripts/python.exe scripts/run_revised_figma_stages.py artifacts/<新任务>/staged layout-qa --intent <Core前建立的布局意图.json> --plan <本次输入/layout-plan.json> --layout-tree <本次Core/layout_tree.json> --layout-report <本次Core/layout_qa_report.json> --tokens <任务Token Registry.json> --catalog <任务组件Catalog.json>
 rtk proxy .venv/Scripts/python.exe scripts/run_revised_figma_stages.py artifacts/<新任务>/staged iview-qa --tokens <任务Token Registry.json> --catalog <任务组件Catalog.json>
-rtk proxy .venv/Scripts/python.exe scripts/run_revised_figma_stages.py artifacts/<新任务>/staged skeleton-script --file-reference <Figma文件Key> --revision r1
+rtk proxy .venv/Scripts/python.exe scripts/run_revised_figma_stages.py artifacts/<新任务>/staged skeleton-script --file-reference <Figma文件Key> --revision r1 --profile v0.2.8-figma
 ```
 
 运行 `figma-skeleton.js` 后，独立读取骨架页并保存执行回执、读取数据和逐 Cell 的选型／位置／间距／完整性复核，再运行 `skeleton-qa --execution ... --readback ... --review ...`。通过后依次使用 `component-script`、`component-qa`、`fill-script`、`fill-qa`、`proofread`。最终仅以含布局质量门和 iView 组件规范门的新版 `workflow_final_qa.json` 的 `deliverable=true` 作为交付判断。三个原生脚本分别只执行当前阶段；后阶段缺少前阶段 QA 时拒绝编译。骨架修订使用新任务目录和 revision，避免复用已通过的旧回执。当前两项规范审计仅覆盖已声明的阻断规则，不能将局部 PASS 宣称为全部 iView 规范已覆盖。
+
+`skeleton-script` 会先按同一 `--profile` 预编译默认组件页，保存 `figma-default-component-preflight.json`；若组件页编译失败，不生成骨架脚本，因此不会出现骨架已写入而后续组件页因已知资源缺口返工。`component-script` 使用相同 profile，并保持独立骨架 QA 门。所有新生成的 Figma 脚本均为 ASCII，中文以 JavaScript Unicode 转义保存，执行后仍显示原文。使用生成的 `.js` 文件，不手工重抄中文脚本。
 
 Figma 原生脚本分别在 `workflow_v03/skeleton_runtime.js`、现有 `adapters/figma/runtime.js` 和 `workflow_v03/fill_runtime.js`。新流程实现隔离在 `workflow_v03/`，不改变已锁定旧 Adapter 的源码集合。原生写入回执只能证明执行；QA 使用另一次读取的节点信息。骨架读取须提供每个 Cell 的类型、逻辑组件 ID、标签、颜色与几何；默认组件页读取须提供节点 ID、文字、真实主组件引用；文案填入读取须提供全部目标文字。最终校对须覆盖 Tree 的每个来源项，并绑定原始原型文件哈希与最终 PNG 字节哈希。
 
