@@ -3,11 +3,12 @@ import { build } from 'esbuild';
 import { chromium } from 'playwright';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
-import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir, unlink } from 'node:fs/promises';
 import { resolve, join, dirname, extname } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { ROOT, verifySource } from '../component-builder/source-reader/source-lock.mjs';
 import { assertNoOfficialComponentOverrides } from '../adapters/html/official-style-guard.mjs';
+import { staticSnapshot, inspectStaticDelivery } from '../adapters/html/static-snapshot.mjs';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const read = async path => JSON.parse(await readFile(path, 'utf8'));
@@ -135,27 +136,28 @@ async function main() {
   const payload = { documents: { component: defaultDocument, delivery: document },
     skeleton, catalog: catalog.components, content, icons, tokens,
     minPageHeight: Number(tokens['size.page-min-height'].value) };
+  const reviewFile = join(output, 'stage-preview.html');
   const file = join(output, 'page.html');
-  await writeFile(file, html(payload, js, css), 'utf8');
-  const pageSha256 = hash(await readFile(file));
+  await writeFile(reviewFile, html(payload, js, css), 'utf8');
+  const previewSha256 = hash(await readFile(reviewFile));
   const browser = await chromium.launch({ headless: true });
   const report = { status: 'RUNNING', scope: 'html-prototype-workflow', sourceVersion: sourceLock.sourceVersion,
     officialCssSha256: sourceLock.files['node_modules/view-ui-plus/dist/styles/viewuiplus.css'],
     catalogSha256: hash(await readFile(catalogPath)), coreUiIrSha256: hash(await readFile(join(core, 'final_ui_ir.json'))),
     contentTreeSha256: hash(await readFile(join(staged, 'page_content_tree.json'))),
-    page: 'page.html', pageSha256, stages: {}, issues: [] };
+    page: 'page.html', reviewPageSha256: previewSha256, stages: {}, issues: [] };
   const page = await browser.newPage({ viewport: { width: Math.max(1280, document.pages[0].layout.width.value), height: 1080 }, deviceScaleFactor: 1 });
   const errors = [];
   page.on('pageerror', error => errors.push(String(error)));
   try {
-    await page.goto(pathToFileURL(file).href, { waitUntil: 'load' });
+    await page.goto(pathToFileURL(reviewFile).href, { waitUntil: 'load' });
     await page.waitForFunction(() => window.__designReady === true, { timeout: 30000 });
     for (const stage of ['skeleton', 'component', 'delivery']) {
       let findings, png, stageErrors;
       try { ({ findings, png, errors: stageErrors } = await inspect(page, stage, payload, errors)); }
       catch (error) {
         const issue = `browser_render_failed:${stage}:${String(error.message)}`;
-        report.stages[stage] = { status: 'FAIL', page: 'page.html', pageSha256, issues: [issue] };
+        report.stages[stage] = { status: 'FAIL', reviewPageSha256: previewSha256, issues: [issue] };
         report.issues.push(issue);
         break;
       }
@@ -178,9 +180,28 @@ async function main() {
       }
       if (findings.horizontalOverflow) issues.push('horizontal_overflow');
       await writeFile(join(output, `${stage}.png`), png);
-      report.stages[stage] = { status: issues.length ? 'FAIL' : 'PASS', page: 'page.html', pageSha256,
+      report.stages[stage] = { status: issues.length ? 'FAIL' : 'PASS', reviewPageSha256: previewSha256,
         png: `${stage}.png`, pngSha256: hash(png), findings: { ...findings, text: undefined, htmlBySource: undefined }, issues };
-      if (issues.length) { report.issues.push(...issues); break; }
+      if (issues.length) report.issues.push(...issues);
+    }
+    if (!report.issues.length && Object.keys(report.stages).length === 3) {
+      try {
+        await writeFile(file, await staticSnapshot(page), 'utf8');
+        report.pageSha256 = hash(await readFile(file));
+        await page.goto(pathToFileURL(file).href, { waitUntil: 'load' });
+        const frozen = await inspectStaticDelivery(page);
+        if (!frozen.app || frozen.scripts || frozen.reviewControls || frozen.buttonPointerEvents !== 'none' ||
+            frozen.buttonTabIndex !== -1 || !frozen.textLength) throw new Error('static_delivery_not_frozen');
+        report.staticDelivery = frozen;
+        const image = await page.locator('[data-static-delivery]').screenshot({ animations: 'disabled' });
+        await writeFile(join(output, 'delivery.png'), image);
+        report.stages.delivery.pngSha256 = hash(image);
+        report.stages.delivery.static = true;
+        await unlink(reviewFile);
+      } catch (error) {
+        report.issues.push(`static_delivery_failed:${error.message}`);
+        await unlink(file).catch(() => {});
+      }
     }
   } finally { await browser.close(); }
   report.status = report.issues.length ? 'FAIL' : 'PASS';

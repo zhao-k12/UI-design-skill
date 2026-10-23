@@ -64,6 +64,10 @@ def audit(source: Path, observation: dict, independent_scan: dict,
         issues.append("independent_scan_coverage_mismatch")
     if set(observed) != set(reviewed):
         issues.append("review_coverage_mismatch")
+    batched = review.get("reviewMode") == "batched-v2"
+    if batched and any(review.get("stageChecks", {}).get(stage) != "PASS" for stage in STAGES):
+        issues.append("stage_review_incomplete")
+    variant_rules = indexed(review.get("variantRules"), "variant_rule", issues) if batched else {}
 
     for identifier, item in observed.items():
         source_traits = traits_of(item, "source", issues)
@@ -79,14 +83,16 @@ def audit(source: Path, observation: dict, independent_scan: dict,
         if decision == "include":
             if not item.get("treeRef"):
                 issues.append(f"tree_binding_missing:{identifier}")
-            if not result.get("component") or not result.get("variantReason") or not result.get("officialEvidence"):
+            variant = variant_rules.get(result.get("variantRef"), {}) if batched else result
+            if not variant.get("component") or not variant.get("variantReason") or not variant.get("officialEvidence"):
                 issues.append(f"component_variant_reason_missing:{identifier}")
             rendered = result.get("renderedTraits")
             if not isinstance(rendered, dict) or any(rendered.get(key) != source_traits.get(key) for key in TRAITS):
                 issues.append(f"rendered_variant_mismatch:{identifier}")
-            checks = result.get("checks")
-            if not isinstance(checks, dict) or any(checks.get(stage) != "PASS" for stage in STAGES):
-                issues.append(f"stage_review_incomplete:{identifier}")
+            if not batched:
+                checks = result.get("checks")
+                if not isinstance(checks, dict) or any(checks.get(stage) != "PASS" for stage in STAGES):
+                    issues.append(f"stage_review_incomplete:{identifier}")
         elif decision == "exclude":
             if not item.get("reason") or result.get("exclusionStatus") != "PASS":
                 issues.append(f"exclusion_unreviewed:{identifier}")
@@ -94,6 +100,26 @@ def audit(source: Path, observation: dict, independent_scan: dict,
             issues.append(f"source_unresolved:{identifier}")
         else:
             issues.append(f"decision_invalid:{identifier}")
+
+    if batched:
+        relations = indexed(observation.get("relations"), "relation", issues)
+        rescanned = indexed(independent_scan.get("relations"), "relation_scan", issues)
+        checked = indexed(review.get("relationChecks"), "relation_review", issues)
+        if set(relations) != set(rescanned) or set(relations) != set(checked):
+            issues.append("relation_coverage_mismatch")
+        for identifier, relation in relations.items():
+            ids = relation.get("sourceIds")
+            second = rescanned.get(identifier, {})
+            result = checked.get(identifier, {})
+            if (not isinstance(ids, list) or not ids or any(item not in observed for item in ids)
+                or not relation.get("kind") or not relation.get("sourceEvidence")):
+                issues.append(f"relation_source_invalid:{identifier}")
+            if (second.get("sourceIds") != ids or second.get("kind") != relation.get("kind")
+                or not second.get("visual")):
+                issues.append(f"relation_scan_disagrees:{identifier}")
+            if (result.get("status") != "PASS" or not result.get("officialEvidence")
+                or not result.get("renderedEvidence")):
+                issues.append(f"relation_unreviewed:{identifier}")
 
     recorded_hashes = review.get("screenshotSha256")
     if not isinstance(recorded_hashes, dict):
