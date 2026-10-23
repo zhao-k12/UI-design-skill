@@ -11,6 +11,12 @@
 | 表格 | 同文件的 `@table-thead-bg`、`@table-td-stripe-bg`；`src/styles/components/table.less` | 表头与条纹背景、文字、单元格样式由官方 CSS 决定；表格占用容器可用宽度，不由截图中的空白决定。 |
 | Layout / Grid | `src/styles/components/layout.less`、`grid.less` 及相应官方组件属性 | 优先用官方 Layout、Row、Col 表达区域和 24 栅格；不要把截图的侧栏、顶栏、间距像素伪称官方默认值。 |
 
+## 整页组合参考
+
+遇到侧栏、顶栏、内容区等组合页面时，先查[官方组件文档](https://iviewui.com/view-ui-plus)、[View UI Plus 官方仓库](https://github.com/view-design/ViewUIPlus)及其[官方 Vite 项目](https://github.com/view-design/view-ui-project-vite)。View Design 提供的 Admin Plus 是中后台产品参考，但不能未经核对就当成当前开源组件包的强制规范。记录参考的页面或源码链接、版本、所示组合、与本次 Tree 的相似和不适用之处；找不到对应范例时明确写“未找到”，再用已核实的组件规则布局。
+
+官方 `custom.less` 中 `@layout-sider-background` 默认引用 `@layout-header-background`；同时使用默认 Header 与 Sider 会得到相同背景。这是源码事实，不代表所有中后台页都应做成没有区域区分的视觉。检查官方可用的组件组合和主题变体，并在骨架截图上审查顶栏与侧栏的边界、品牌区与顶栏的高度关系；不能把不同组件拼在一起后只因各自样式“官方”就判整页 PASS。
+
 每次新原型先列出实际用到的组件和页面区域，再逐项核实对应官方文档、源码、运行 CSS 与 API。清单没有覆盖到的组件或属性须补充证据后再标为“官方”；官方没有规定的整页模式、侧栏宽度、内容卡片形态等记为**规范未定义**，采用官方组件自然／自适应行为，不借视觉测量补数字。若布局需要项目自定义视觉规则，等用户另行提出特殊要求；当前不作为规范交付。
 
 验收时记录：使用的官方组件与属性、源码或文档路径、骨架中对应区域、实际浏览器组件 DOM、是否存在本地 `.ivu-*` 覆盖、原型内容逐项校对。单纯检查官方组件类名存在，不足以证明页面符合规范。
