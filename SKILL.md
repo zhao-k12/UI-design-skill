@@ -18,6 +18,8 @@ description: Turn a UI prototype into one audited HTML page using source-verifie
 
 ## 执行与恢复
 
+按本次原型的组件范围选择版本化 Profile。侧栏分组／头像／Badge／树表须使用 `html-v1.0` 官方组件目录、Core 编译器与读取 UI-IR 的 HTML Adapter；旧列表 Profile 缺少这些角色，不能删减原型内容或绕过 Core。命令与证据边界见 [HTML 执行说明](docs/HTML_WORKFLOW.md)。
+
 按 [HTML 执行说明](docs/HTML_WORKFLOW.md) 运行可覆盖本次原型的 Core、分阶段准备、检查与导出。先完成本次 [官方依据清单](docs/IVIEW_OFFICIAL_EVIDENCE.md) 的适用项；未覆盖的组件或规则须先查证并补齐来源。复杂客户列表示例虽有历史三状态浏览器 PASS，其本地 CSS 覆盖官方组件且包含未经官方证实的页面视觉值，不能作为当前规范合格的模板或交付依据。不能为了使旧 Core 通过而删掉新原型中的字段、操作或记录。检查或渲染失败是待修复工作：读取具体 issue，找出最早受影响的来源、骨架、组件或渲染阶段，修正后使用新 revision 重跑依赖阶段。不得复制旧页面、改写原型事实或虚构 PASS。所有任务保存来源指纹、截图和 QA；仅在实际浏览器校对通过后报告交付。
 
 当前已实测简单用户列表和复杂客户管理列表；后者还覆盖 DatePicker、Breadcrumb、Badge、表格选择列与行内操作。新组件结构、属性或页面模式若超出已验收模式和规则，先补来源与验收契约，再生成。当前只处理静态页面，不增加交互或业务逻辑。

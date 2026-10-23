@@ -1,0 +1,37 @@
+{
+  "registryVersion": "html-v1.0",
+  "sourceVersion": "view-ui-plus@1.3.24",
+  "scope": "html-official-runtime",
+  "components": {
+    "shell.layout": {"componentType": "Layout", "source": "src/components/layout/layout.vue", "variant": "default"},
+    "shell.sider": {"componentType": "Sider", "source": "src/components/layout/sider.vue", "variant": "default"},
+    "shell.content": {"componentType": "Content", "source": "src/components/layout/content.vue", "variant": "default"},
+    "navigation.header": {"componentType": "Menu", "source": "src/components/menu/menu.vue", "variant": "horizontal-light"},
+    "navigation.sidebar": {"componentType": "Menu", "source": "src/components/menu/menu.vue", "variant": "vertical-dark"},
+    "navigation.parent": {"componentType": "Submenu", "source": "src/components/menu/submenu.vue", "variant": "title-chevron"},
+    "navigation.child": {"componentType": "MenuItem", "source": "src/components/menu/menu-item.vue", "variant": "default"},
+    "navigation.breadcrumb": {"componentType": "Breadcrumb", "source": "src/components/breadcrumb/breadcrumb.vue", "variant": "default"},
+    "navigation.breadcrumb-item": {"componentType": "BreadcrumbItem", "source": "src/components/breadcrumb/breadcrumb-item.vue", "variant": "default"},
+    "identity.avatar": {"componentType": "Avatar", "source": "src/components/avatar/avatar.vue", "variant": "circle"},
+    "identity.dropdown": {"componentType": "Dropdown", "source": "src/components/dropdown/dropdown.vue", "variant": "custom-trigger"},
+    "notification.badge-count": {"componentType": "Badge", "source": "src/components/badge/badge.vue", "variant": "count"},
+    "status.badge-success": {"componentType": "Badge", "source": "src/components/badge/badge.vue", "variant": "status-success"},
+    "action.button-primary": {"componentType": "Button", "source": "src/components/button/button.vue", "variant": "primary"},
+    "action.button-default": {"componentType": "Button", "source": "src/components/button/button.vue", "variant": "default"},
+    "action.button-text": {"componentType": "Button", "source": "src/components/button/button.vue", "variant": "text-small"},
+    "filter.radio-group": {"componentType": "RadioGroup", "source": "src/components/radio/radio-group.vue", "variant": "button-solid"},
+    "filter.radio": {"componentType": "Radio", "source": "src/components/radio/radio.vue", "variant": "button"},
+    "filter.date-picker": {"componentType": "DatePicker", "source": "src/components/date-picker/picker.vue", "variant": "date"},
+    "filter.search-input": {"componentType": "Input", "source": "src/components/input/input.vue", "variant": "search"},
+    "content.card": {"componentType": "Card", "source": "src/components/card/card.vue", "variant": "default"},
+    "content.divider": {"componentType": "Divider", "source": "src/components/divider/divider.vue", "variant": "vertical"},
+    "data.tree-table": {"componentType": "Table", "source": "src/components/table/table.vue", "variant": "tree-stripe"},
+    "data.tree-icon": {"componentType": "Icon", "source": "src/components/icon/icon.vue", "variant": "ios-arrow-forward"}
+  },
+  "staticProperties": {
+    "data.tree-table": ["columns[].tree", "children", "_showChildren", "stripe", "rowKey"],
+    "status.badge-success": ["status=success", "text"],
+    "filter.search-input": ["search=true"],
+    "filter.radio-group": ["type=button", "buttonStyle=solid"]
+  }
+}

@@ -13,6 +13,18 @@
 
 ## 执行
 
+### 树形列表 HTML v1 Profile
+
+当原型包含整页侧栏分组、通知 Badge、头像及树形表格时，旧 `v0.2.9` Profile 缺少这些角色。使用独立 `html-v1.0` 目录：`registries/components/html-v1/catalog.json`、`core/pipeline/html_page_v1.py`、`adapters/html/page-v1.mjs`。先从本次原图独立准备带同一 SHA-256 的 `content-tree.json`、`source-observations.json`、`independent-scan.json`，再运行：
+
+```powershell
+rtk proxy .venv/Scripts/python.exe -X utf8 core/pipeline/html_page_v1.py --source artifacts/<任务>/prototype.png --content artifacts/<任务>/content-tree.json --observation artifacts/<任务>/source-observations.json --independent-scan artifacts/<任务>/independent-scan.json --output-dir artifacts/<任务>/core-v1-r1
+```
+
+该命令将每条纳入观察绑定到 Page Tree 和组件角色，产出布局 Tree、UI-IR、官方源码哈希和 Core QA。HTML Adapter 只从 UI-IR 取组件变体与页面内容。TASK-140 的构建、三状态浏览器截图、菜单/状态/树表检查及原图复核见 `artifacts/task-140/product-types`；此构建脚本是当前树形列表示例，其他页面模式仍需新来源和相应验收契约，不能把旧 Profile 的 PASS 借给新页面。
+
+### 既有列表 Profile
+
 阅读本次原型并独立编写带原型哈希的来源观察清单，再不看初稿从原图重新扫描各区域和重复实例，解决两份观察的数量与特征差异。之后写纳入／排除／Review 决定、内容映射和 AI 初步布局意图。排除理由与待确认问题须保留在审核材料中，不能通过删掉观察项制造完整性 PASS。核查官方整页组合参考，记录“采用／不适用／未找到”及原因，再为实际组件和布局判断补齐官方依据。运行 HTML Core，逐条核对来源证据、组件映射、布局和 UI-IR。准备分阶段数据，保存骨架整页截图并完成 Tree 与骨架的独立审核；布局质量、iView 来源、整页组合审查和样式覆盖检查未 PASS 时不得进入默认组件状态，也不能沿用旧原型的审核指纹。
 
 ```powershell
