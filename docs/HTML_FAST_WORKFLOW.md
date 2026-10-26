@@ -72,6 +72,25 @@ editor.write_job(job_path, source=prototype_path, observation=observation, scan=
 
 `content-tree.json`保存完整树。检查不仅包含每条文案、编号、true/false状态和变体，还包含品牌、侧栏、顶栏、主内容的父子归属；不能因为文字齐全而随意移动区域。初读、独立复扫与一次综合复核保持原职责，不增加额外审核阶段。历史简写job须人工按来源核对后改为完整树才能重跑，既有HTML不改写。
 
+## 布局关系检查
+
+完整Tree顶层`layoutRelations`描述实际节点关系，随Core保存到UI-IR，由同一浏览器三态导出时测量。可用编辑工具`set_layout_relations([...])`记录，模型明确关系，工具不选择布局：
+
+```json
+[
+  {"id":"sidebar-fill","kind":"surface-cover","surface":"sidebar-surface","extent":"main-region","axis":"vertical","sourceEvidence":"侧栏背景应延伸至主内容区底部"},
+  {"id":"nav-start","kind":"edge-align","first":"top-navigation-region","second":"sidebar-region","firstEdge":"left","secondEdge":"right","sourceEvidence":"顶部导航从侧栏右边界开始"},
+  {"id":"brand-boundary","kind":"edge-align","first":"brand-region","second":"sidebar-region","firstEdge":"right","secondEdge":"right","sourceEvidence":"品牌区和侧栏共享列边界"},
+  {"id":"header-center","kind":"vertical-center","first":"top-navigation-region","second":"header-region","sourceEvidence":"顶部导航在顶栏中垂直居中"}
+]
+```
+
+`surface`是实际拥有不透明背景的区域节点；透明占位容器不算背景证据。`extent`指应延续到的布局区域，不能为通过检查改成菜单自身；`axis:vertical`只比较上下覆盖，可引用相邻主区；省略axis时比较完整矩形覆盖。`edge-align`比较指定左右边界，`vertical-center`可指定first/second检查其它图文组合。引用完整区域框，不用品牌文字的自然宽度代替品牌列。原型决定关系，官方规则决定布局实现；不读取原型像素或重新限制页面尺寸。
+
+Header加横向Menu和纵向Menu的组合缺少背景、边界或垂直中心契约会在Core拒绝；采用其它组件搭建的相同结构也须按适用关系显式记录。不是每张页面都要求侧栏或统一壳模板，无此关系不虚构节点。浏览器始终自动检查每个实际Card的extra按钮/选择器：相对标题栏垂直居中、未跨越头部或底部分隔线、未超出头部宽度。1 CSS px只容纳几何舍入，不是设计间距来源。
+
+结果在三态`qa.json.stages.<stage>.layoutRelations`，保留具体矩形、偏差和问题编号；静态快照后再确认最终交付结果。失败不能靠手填PASS绕过。复核原图与截图后，在同一review中填写`checkedLayoutRelations`，覆盖`review-plan.json.layoutRelationIds`列出的全部编号，卡片编号自动生成，不必逐项重复写PASS说明。数量/文字正确不代表这些关系通过。现有综合验收负责这一并确认，不增加关卡；机器只验证已声明的几何/背景及原生Card工具栏，不能自动发现所有错误的语义归属、遮挡或光学问题。
+
 ## 一次看三态，简记结论
 
 render返回`runId`、原图哈希、`reviewSheet`及三张原始截图路径，状态为`REVIEW_REQUIRED`。先取回`review-sheet.png`，对照原图做同一次综合校对；文字、间距或小图标看不清时放大原始截图，不能因缩略图不清而确认。运行PASS不代表已目视通过。

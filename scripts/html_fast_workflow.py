@@ -126,6 +126,7 @@ def review_plan(observed, content, rendered):
             evidence['wholeStageHashes']={stage:data['screenshotSha256'] for stage,data in rendered['stages'].items()}
         groups[key]={**evidence,'fingerprint':fingerprint(evidence)}
     return {'groups':groups,'reusableGroups':[], 'requiredStages':['tree','skeleton','component','delivery'],
+            'layoutRelationIds':sorted({row['id'] for stage in rendered['stages'].values() for row in stage.get('layoutRelations',{}).get('results',[])}),
             'relations':observed.get('relations',[]),'meaning':'Expected facts only. Confirm after viewing source, contact sheet and detail originals.'}
 
 def reusable_groups(previous, plan, rendered, source_hash):
@@ -137,7 +138,7 @@ def reusable_groups(previous, plan, rendered, source_hash):
         if receipt['sourceSha256']!=source_hash or receipt['planSha256']!=digest(old/'review-plan.json'):return []
         if receipt['reviewSha256']!=digest(old/'visual-review.json') or receipt['qaSha256']!=digest(old/'html/qa.json'):return []
         if any(digest(old/'html'/(stage+'.png'))!=qa['stages'][stage]['screenshotSha256'] for stage in ('skeleton','component','delivery')):return []
-        runtime=('adapterSha256','exporterSha256','officialSourceSha256','officialCssSha256','snapshotSha256','iconHashes')
+        runtime=('adapterSha256','exporterSha256','officialSourceSha256','officialCssSha256','snapshotSha256','relationCheckerSha256','iconHashes')
         if any(qa.get(key)!=rendered.get(key) for key in runtime):return []
         if read(old/'source-visual-qa.json').get('status')!='PASS':return []
         return [key for key,group in plan['groups'].items()
@@ -189,9 +190,13 @@ def finalize(review_path,task):
     rendered=read(run/'html/qa.json')
     if rendered['status']!='PASS' or any(digest(path)!=rendered['stages'][stage]['screenshotSha256'] for stage,path in shots.items()):
         raise ValueError('render_or_screenshot_changed')
+    if any(rendered['stages'][stage].get('layoutRelations',{}).get('status')!='PASS' for stage in shots):
+        raise ValueError('layout_relations_not_checked_or_failed')
     if active.get('planSha256')!=digest(run/'review-plan.json'):raise ValueError('review_plan_changed')
     if digest(run/'html/review-sheet.png')!=rendered['reviewSheetSha256']:raise ValueError('review_sheet_changed')
     plan=read(run/'review-plan.json')
+    if set(review.get('checkedLayoutRelations',[]))!=set(plan.get('layoutRelationIds',[])):
+        raise ValueError('layout_relation_visual_confirmation_required')
     if plan['reusableGroups'] and not set(plan['reusableGroups']).issubset(reusable_groups(plan['reuseFrom'],plan,rendered,active['sourceSha256'])):
         raise ValueError('prior_review_evidence_changed')
     observed=read(run/'source-observations.json');expanded=expand_review(delta_review(review,plan),observed,shots)

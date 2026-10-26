@@ -57,10 +57,13 @@ class FullTreeEditorTests(unittest.TestCase):
         editor=self.editor();editor.add('page','text',value='原文',sourceIds=['title'])
         observation={'sourceSha256':'source-hash','items':[{'id':'title','sourceEvidence':'初读'}]}
         scan={'sourceSha256':'source-hash','items':[{'id':'title','visual':'独立复扫'}]}
+        relations=[{'id':'center','kind':'vertical-center','first':'page','second':'node-0001','sourceEvidence':'测试关系'}]
+        editor.set_layout_relations(relations)
         with tempfile.TemporaryDirectory() as folder:
             path=editor.write_job(Path(folder)/'job.json',source='prototype.png',observation=observation,scan=scan)
             saved=json.loads(path.read_text(encoding='utf-8'))
         self.assertEqual(saved['content'],editor.content())
+        self.assertEqual(saved['content']['layoutRelations'],relations)
         self.assertEqual(saved['observation'],observation)
         self.assertEqual(saved['scan'],scan)
         self.assertEqual(saved['content']['root']['children'][0]['kind'],'text')

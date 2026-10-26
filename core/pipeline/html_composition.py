@@ -99,6 +99,32 @@ def compile_tree(source, content, observation, scan):
         for children in node.get('slots', {}).values():
             for child in children: visit(child)
     visit(content['root'])
+    relations = content.get('layoutRelations', [])
+    if not isinstance(relations, list): raise ValueError('layout_relations_must_be_list')
+    relation_ids = set()
+    for relation in relations:
+        if not isinstance(relation, dict) or not relation.get('id') or relation['id'] in relation_ids:
+            raise ValueError('layout_relation_id_invalid')
+        relation_ids.add(relation['id'])
+        kind = relation.get('kind')
+        keys = {'surface-cover': ('surface','extent'), 'edge-align': ('first','second'),
+                'vertical-center': ('first','second')}.get(kind)
+        if keys is None: raise ValueError('unknown_layout_relation_kind')
+        if not relation.get('sourceEvidence'): raise ValueError('layout_relation_source_required')
+        if any(relation.get(key) not in nodes for key in keys): raise ValueError('layout_relation_node_missing')
+        if kind == 'surface-cover' and relation.get('axis','both') not in ('both','vertical'):
+            raise ValueError('layout_relation_axis_invalid')
+        if kind == 'edge-align' and relation['first'] == relation['second']:
+            raise ValueError('boundary_requires_distinct_regions')
+        if kind == 'edge-align' and any(relation.get(key) not in ('left','right') for key in ('firstEdge','secondEdge')):
+            raise ValueError('layout_relation_edge_required')
+    # A recognizable header + horizontal navigation + side menu needs explicit
+    # surface/boundary contracts. This is component composition, not page naming.
+    menus = [n for n in nodes.values() if n.get('component') == 'Menu']
+    shell = ('Header' in components and any(n.get('props',{}).get('mode') == 'horizontal' for n in menus)
+             and any(n.get('props',{}).get('mode','vertical') == 'vertical' for n in menus))
+    if shell and not {'surface-cover','edge-align','vertical-center'}.issubset({r['kind'] for r in relations}):
+        raise ValueError('shell_surface_and_boundary_relations_required')
     included = {key for key, item in first.items() if item['decision'] == 'include'}
     if covered != included: raise ValueError(f'page_tree_source_coverage:{sorted(included-covered)}')
     mapping = {key: node.get('component', node['kind']) for key,node in nodes.items()}
@@ -106,7 +132,7 @@ def compile_tree(source, content, observation, scan):
                    'tableSizing': 'official-content-fit-before-screenshots'}
     ir = {'schemaVersion': VERSION, 'sourceSha256': source_hash, 'officialSource': catalog,
           'root': content['root'], 'layout': layout_tree, 'requiredIcons': sorted(icons),
-          'usedComponents': sorted(components), 'title': content.get('title','页面')}
+          'usedComponents': sorted(components), 'title': content.get('title','页面'), 'layoutRelations': relations}
     return {'page_tree': content, 'layout_tree': layout_tree, 'component_mapping': mapping, 'ui_ir': ir,
             'qa_report': {'status': 'PASS', 'sourceSha256': source_hash, 'nodeCount': len(nodes),
                           'mappedItemCount': len(covered), 'usedComponents': sorted(components)}}

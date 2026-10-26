@@ -123,6 +123,11 @@ class FullTreeEditor:
     def content(self):
         return require_full_tree(self._content)
 
+    def set_layout_relations(self, relations):
+        """Record caller-specified node relationships, without deciding geometry."""
+        if not isinstance(relations, list): raise ValueError('layout_relations_must_be_list')
+        self._content['layoutRelations'] = deepcopy(relations)
+
     def write_job(self, path, *, source, observation, scan, viewport=None):
         """Save the existing job format directly; observations remain caller-authored."""
         for document in (observation, scan):

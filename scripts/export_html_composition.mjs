@@ -5,6 +5,7 @@ import {readFile,writeFile,mkdir,unlink} from 'node:fs/promises';
 import {resolve,join,extname,relative} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {staticSnapshot,inspectStaticDelivery} from '../adapters/html/static-snapshot.mjs';
+import {measureLayoutRelations} from '../adapters/html/layout-relations.mjs';
 
 const root=resolve(import.meta.dirname,'..');
 const coreDir=resolve(process.argv[2]);
@@ -85,7 +86,9 @@ try{
       }
       return {groups,geometry:nodes.map(n=>[n.dataset.treeNode,rect(n)])};
     },`data:image/png;base64,${shot.toString('base64')}`);
-    stages[stage]={status:errors.length||metrics.overflow?'FAIL':'PASS',issues:[...errors,...(metrics.overflow?['viewport_overflow']:[])],...metrics,screenshotSha256:sha(shot),
+    const layoutRelations=await page.evaluate(measureLayoutRelations,ir.layoutRelations||[]);
+    const relationIssues=layoutRelations.results.flatMap(r=>r.issues.map(issue=>`${r.id}:${issue}`));
+    stages[stage]={status:errors.length||metrics.overflow||relationIssues.length?'FAIL':'PASS',issues:[...errors,...(metrics.overflow?['viewport_overflow']:[]),...relationIssues],...metrics,layoutRelations,screenshotSha256:sha(shot),
       geometrySha256:sha(JSON.stringify(signatures.geometry)),nodeSignatures:Object.fromEntries(Object.entries(signatures.groups).map(([id,value])=>[id,sha(JSON.stringify(value))]))};
   }
   if(Object.values(stages).every(s=>s.status==='PASS')){
@@ -94,6 +97,11 @@ try{
     if(!frozen.app||frozen.scripts||frozen.reviewControls||(frozen.buttonPointerEvents&&frozen.buttonPointerEvents!=='none'))throw Error('static_delivery_invalid');
     const shot=await page.screenshot({fullPage:true});await writeFile(join(out,'delivery.png'),shot);
     stages.delivery.screenshotSha256=sha(shot);stages.delivery.static=frozen;
+    const finalRelations=await page.evaluate(measureLayoutRelations,ir.layoutRelations||[]);
+    stages.delivery.layoutRelations=finalRelations;
+    if(finalRelations.status!=='PASS'){
+      stages.delivery.status='FAIL';stages.delivery.issues.push(...finalRelations.results.flatMap(r=>r.issues.map(issue=>`${r.id}:${issue}`)));
+    }
     await unlink(preview);
   }
   // A contact sheet saves viewer round trips; originals remain available for zoom.
@@ -107,8 +115,9 @@ const qa={status:Object.values(stages).length===3&&Object.values(stages).every(s
   sourceSha256:ir.sourceSha256,uiIrSha256:sha(irBytes),officialCssSha256:sha(await readFile(cssPath)),
   officialSourceSha256:sha(JSON.stringify(ir.officialSource)),
   snapshotSha256:sha(await readFile(join(root,'adapters/html/static-snapshot.mjs'))),
+  relationCheckerSha256:sha(await readFile(join(root,'adapters/html/layout-relations.mjs'))),
   adapterSha256:sha(await readFile(join(root,'adapters/html/composition.mjs'))),exporterSha256:sha(await readFile(new URL(import.meta.url))),iconHashes,layoutSizing,stages,reviewSheetSha256,
-  scope:'Runtime/structure checks only; original-image batched visual review required before delivery.'};
+  scope:'Runtime, declared layout geometry/surfaces and native Card toolbar checks; original-image batched visual review still required.'};
 if(qa.status==='PASS')qa.pageSha256=sha(await readFile(final));
 await writeFile(join(out,'qa.json'),JSON.stringify(qa,null,2));
 console.log(JSON.stringify({status:qa.status,issues:Object.values(stages).flatMap(s=>s.issues)}));

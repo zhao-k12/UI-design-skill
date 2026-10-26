@@ -41,4 +41,19 @@ class CompositionTests(unittest.TestCase):
         result=self.run_compile()
         self.assertEqual(result['layout_tree']['nodes']['shell']['minHeight'],'viewport')
 
+    def test_shell_cannot_skip_surface_and_boundary_contracts(self):
+        self.content['root']={'id':'page','kind':'component','component':'Layout','sourceIds':['action'],'children':[
+            {'id':'header','kind':'component','component':'Header','children':[
+                {'id':'nav','kind':'component','component':'Menu','props':{'mode':'horizontal'}}]},
+            {'id':'side','kind':'component','component':'Menu'},
+            {'id':'main','kind':'component','component':'Content'}]}
+        with self.assertRaisesRegex(ValueError,'shell_surface_and_boundary'):self.run_compile()
+        relations=[{'id':'paint','kind':'surface-cover','surface':'side','extent':'main','axis':'vertical','sourceEvidence':'侧栏背景延续到主区底部'},
+                   {'id':'edge','kind':'edge-align','first':'nav','second':'side','firstEdge':'left','secondEdge':'right','sourceEvidence':'顶部导航从侧栏右边界开始'},
+                   {'id':'center','kind':'vertical-center','first':'nav','second':'header','sourceEvidence':'顶栏导航在头部垂直居中'}]
+        self.content['layoutRelations']=relations
+        self.assertEqual(self.run_compile()['ui_ir']['layoutRelations'],relations)
+        relations[1]['second']='missing'
+        with self.assertRaisesRegex(ValueError,'layout_relation_node_missing'):self.run_compile()
+
 if __name__=='__main__':unittest.main()
