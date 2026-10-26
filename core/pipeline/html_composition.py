@@ -102,7 +102,8 @@ def compile_tree(source, content, observation, scan):
     included = {key for key, item in first.items() if item['decision'] == 'include'}
     if covered != included: raise ValueError(f'page_tree_source_coverage:{sorted(included-covered)}')
     mapping = {key: node.get('component', node['kind']) for key,node in nodes.items()}
-    layout_tree = {'gridColumns': 24, 'spacingSource': 'src/styles/custom.less @padding-*', 'nodes': layouts}
+    layout_tree = {'gridColumns': 24, 'spacingSource': 'src/styles/custom.less @padding-*', 'nodes': layouts,
+                   'tableSizing': 'official-content-fit-before-screenshots'}
     ir = {'schemaVersion': VERSION, 'sourceSha256': source_hash, 'officialSource': catalog,
           'root': content['root'], 'layout': layout_tree, 'requiredIcons': sorted(icons),
           'usedComponents': sorted(components), 'title': content.get('title','页面')}

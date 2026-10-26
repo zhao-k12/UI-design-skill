@@ -4,6 +4,7 @@ import * as Official from 'view-ui-plus';
 const ir=JSON.parse(document.getElementById('design-ir').textContent);
 if(ir.schemaVersion!=='html-composition-v1')throw Error('unsupported_ui_ir');
 const stage=ref('skeleton');
+const columnFits=ref({});
 const spacing={none:0,xs:8,sm:12,md:16,lg:24};
 function bound(value,scope){
   if(Array.isArray(value))return value.map(v=>bound(v,scope));
@@ -48,8 +49,9 @@ function render(node,scope={}){
   if(node.component==='Table'){
     // Column structure, cells, tree data and actions are configuration, never page-name branches.
     props.columns=(node.props?.columns||[]).map(col=>{
-      const {cell,...plain}=col;
-      return {...bound(plain,scope),...(stage.value==='component'?{title:'列标题'}:{}),
+      const {cell,fitContent,...plain}=col;
+      const fit=columnFits.value[node.id]?.[plain.key??plain.type];
+      return {...bound(plain,scope),...(fit?(plain.width?{width:Math.max(plain.width,fit)}:{minWidth:Math.max(plain.minWidth||0,fit)}):{}),...(stage.value==='component'?{title:'列标题'}:{}),
         ...(cell?{render:(_,params)=>render(cell,{...scope,...params})}:
           stage.value==='component'&&!col.type?{render:()=> '默认内容'}:{})};
     });
@@ -61,4 +63,43 @@ function render(node,scope={}){
 }
 createApp({render:()=>h('main',{'data-composition-root':'',class:stage.value==='skeleton'?'composition-skeleton':''},[render(ir.root)])}).mount('#app');
 window.__setStage=async value=>{stage.value=value;await nextTick();await document.fonts.ready;};
+window.__prepareLayout=async()=>{
+  await window.__setStage('delivery');
+  const fits={};const report=[];
+  const canvas=document.createElement('canvas'),context=canvas.getContext('2d');
+  for(const table of document.querySelectorAll('[data-component="Table"]')){
+    const id=table.dataset.treeNode;
+    const headers=[...table.querySelectorAll('.ivu-table-header thead tr:first-child th')];
+    const body=[...table.querySelectorAll('.ivu-table-body tbody tr')];
+    const entry={id,columns:[]};
+    // Obtain declared column metadata without adding business-page branches.
+    const find=node=>{
+      if(node.id===id)return node;
+      for(const child of [...(node.children||[]),...Object.values(node.slots||{}).flat(),...(node.template?[node.template]:[])]){const value=find(child);if(value)return value;}
+    };
+    const node=find(ir.root);if(!node||node.props?.columns?.some(col=>col.children))continue;
+    (node.props.columns||[]).forEach((col,index)=>{
+      if(col.fitContent===false)return;
+      const cell=headers[index]?.querySelector('.ivu-table-cell');if(!cell)return;
+      const style=getComputedStyle(cell);context.font=style.font;
+      let needed=Math.max(context.measureText(String(col.title||'')).width,context.measureText('列标题').width);
+      if(col.type==='selection')needed=cell.querySelector('.ivu-checkbox')?.getBoundingClientRect().width||needed;
+      for(const row of body){
+        const dataCell=row.children[index]?.querySelector('.ivu-table-cell');if(!dataCell)continue;
+        const buttons=[...dataCell.querySelectorAll('button')];
+        const avatar=dataCell.querySelector('.ivu-avatar');
+        if(buttons.length){
+          const gap=parseFloat(getComputedStyle(buttons[0].parentElement).gap)||0;
+          needed=Math.max(needed,buttons.reduce((n,b)=>n+b.getBoundingClientRect().width,0)+gap*Math.max(0,buttons.length-1));
+        }else if(avatar)needed=Math.max(needed,avatar.getBoundingClientRect().width);
+        else if(!col.ellipsis){context.font=getComputedStyle(dataCell).font;needed=Math.max(needed,context.measureText(dataCell.innerText.trim()).width);}
+      }
+      needed=Math.ceil(needed+parseFloat(style.paddingLeft)+parseFloat(style.paddingRight)+2);
+      const key=col.key??col.type;(fits[id]??={})[key]=Math.max(fits[id][key]||0,needed);
+      entry.columns.push({key,measuredMinimum:needed,declaredWidth:col.width??col.minWidth??null});
+    });
+    report.push(entry);
+  }
+  columnFits.value=fits;await nextTick();window.__sizingReport=report;
+};
 await nextTick();window.__ready=true;

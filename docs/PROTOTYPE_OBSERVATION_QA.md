@@ -35,6 +35,8 @@ QA 保存原型哈希、两次独立观察、每项编号及决定、Tree 绑定
 
 ## 新任务的结构化复核门
 
+常规任务采用[快速入口](HTML_FAST_WORKFLOW.md)的紧凑分组输入；逐项编号和以下完整文件由程序展开，AI不重复手写。独立复扫只简记自己从原图看到的组数量、特征、数据差异和例外，仍须实际重看原图，不能从初读自动生成确认。最终复核共同规则只写一次且明确实际检查证据；展开器不会自动判视觉PASS。下面是展开后的证据契约，亦兼容历史输入。
+
 为本次原型保存 `source-observations.json`、`independent-scan.json` 和 `visual-review.json`，三者都绑定原图 `sourceSha256`。前两份分别来自初读和不看初稿的原图复扫；每个可见实例有同一稳定 `id`、`region`，以及 `traits` 中的 `leading`、`trailing`、`surface`、`shape`、`role` 五项呈现类别。初读还记录 `sourceEvidence`、`decision`，纳入项有 `treeRef`，排除项有 `reason`。即使多个菜单共用规则，也要逐项编号。复扫材料只记从图上看到的内容，不复制初读结论。
 
 新任务采用 `reviewMode: "batched-v2"`：顶层 `variantRules` 为每类官方变体只记录一次 `id`、`component`、`variantReason`、`officialEvidence`（锁定版官方源码／文档路径）；每个纳入项只填 `variantRef` 和五项 `renderedTraits`，排除项填 `exclusionStatus`。顶层 `stageChecks` 对 Tree、骨架、组件、交付各给一次结论。初读的顶层 `relations` 每条含稳定 `id`、被覆盖实例的 `sourceIds`、`kind`、`sourceEvidence`；独立复扫的 `relations` 复核相同编号、实例、关系类别并写 `visual` 所见；最终 `relationChecks` 为每个关系记录 `status`、`officialEvidence`、`renderedEvidence`。例如图标与文字的共同间距只写一条关系及其覆盖的实例，例外另列。文件还须锁定三张截图 SHA-256。工具核对来源、实例、关系、综合结论和截图字节；旧任务逐项 `checks` 格式仍可读取，但新任务不用重复填写。

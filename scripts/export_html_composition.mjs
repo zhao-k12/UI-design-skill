@@ -45,9 +45,10 @@ const preview=join(out,'stage-preview.html'),final=join(out,'page.html');
 await writeFile(preview,`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>${css}</style><style>${base}${icons}${reviewCss}</style></head><body><div id="app"></div><script id="design-ir" type="application/json">${irBytes.toString().replaceAll('<','\\u003c')}</script><script type="module">${bundle.outputFiles[0].text.replaceAll('</script','<\\/script')}</script></body></html>`);
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:Number(process.argv[4])||1440,height:Number(process.argv[5])||1000}});
-const errors=[],stages={};page.on('pageerror',e=>errors.push(String(e)));
+const errors=[],stages={};let layoutSizing=[];page.on('pageerror',e=>errors.push(String(e)));
 try{
   await page.goto(pathToFileURL(preview).href);await page.waitForFunction(()=>window.__ready===true);
+  layoutSizing=await page.evaluate(async()=>{await window.__prepareLayout();return window.__sizingReport;});
   for(const stage of ['skeleton','component','delivery']){
     await page.evaluate(v=>window.__setStage(v),stage);
     await page.waitForTimeout(80);
@@ -72,7 +73,7 @@ try{
 }finally{await browser.close();}
 const qa={status:Object.values(stages).length===3&&Object.values(stages).every(s=>s.status==='PASS')?'PASS':'FAIL',
   sourceSha256:ir.sourceSha256,uiIrSha256:sha(irBytes),officialCssSha256:sha(await readFile(cssPath)),
-  adapterSha256:sha(await readFile(join(root,'adapters/html/composition.mjs'))),exporterSha256:sha(await readFile(new URL(import.meta.url))),iconHashes,stages,
+  adapterSha256:sha(await readFile(join(root,'adapters/html/composition.mjs'))),exporterSha256:sha(await readFile(new URL(import.meta.url))),iconHashes,layoutSizing,stages,
   scope:'Runtime/structure checks only; original-image batched visual review required before delivery.'};
 if(qa.status==='PASS')qa.pageSha256=sha(await readFile(final));
 await writeFile(join(out,'qa.json'),JSON.stringify(qa,null,2));

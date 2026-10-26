@@ -1,5 +1,7 @@
 # Development State — public edition
 
+- TASK-145: 用户批准常见页面5分钟目标。新增统一紧凑job/review入口，程序展开重复观察、实例、关系和复核材料，保留独立原图复扫；只有当前run的实际视觉复核通过才发布静态页。Table官方内容宽度预检前置，记录任务总时间与机器阶段耗时；漏start不宣称端到端达标。Skill与说明按快速入口收敛，详细决定及实测边界见 [TASK-145](TASK-145_FAST_HTML_WORKFLOW.md)。5分钟新原型完整实测尚未执行。
+
 - TASK-145: 常规静态页面以5分钟内交付为目标；新增单进程批量build/finalize及来源分组展开、PENDING分组审核草稿。普通页面不再逐页写准备/审核脚本、重复测试或开发提交；保留独立复扫和最终综合校对，缺少实际判断不能自动PASS。工具基准与模型分析/审核总时间明确区分，尚未以新原型证明5分钟端到端。见 [TASK-145](TASK-145_GENERATION_TIME_TARGET.md)。
 
 - TASK-144: 通过通用内容Tree生成员工管理静态HTML，无员工页专用生成器。238项本图观察中226项纳入；5筛选、10工具操作、11列表格、13记录/头像、14未选复选框、13在线圆点与52行操作图标完整。原图复核、三态运行、结构化来源/视觉门与静态hover冻结PASS。仅通过Tree修正窄列；补通用viewport最小高度和可配置截图视口。交付`artifacts/task-144/employee-management/html-r2/page.html`，详见 [TASK-144](TASK-144_EMPLOYEE_MANAGEMENT_HTML.md)。
