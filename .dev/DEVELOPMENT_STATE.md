@@ -1,5 +1,7 @@
 # Development State — public edition
 
+- TASK-145: 常规静态页面以5分钟内交付为目标；新增单进程批量build/finalize及来源分组展开、PENDING分组审核草稿。普通页面不再逐页写准备/审核脚本、重复测试或开发提交；保留独立复扫和最终综合校对，缺少实际判断不能自动PASS。工具基准与模型分析/审核总时间明确区分，尚未以新原型证明5分钟端到端。见 [TASK-145](TASK-145_GENERATION_TIME_TARGET.md)。
+
 - TASK-144: 通过通用内容Tree生成员工管理静态HTML，无员工页专用生成器。238项本图观察中226项纳入；5筛选、10工具操作、11列表格、13记录/头像、14未选复选框、13在线圆点与52行操作图标完整。原图复核、三态运行、结构化来源/视觉门与静态hover冻结PASS。仅通过Tree修正窄列；补通用viewport最小高度和可配置截图视口。交付`artifacts/task-144/employee-management/html-r2/page.html`，详见 [TASK-144](TASK-144_EMPLOYEE_MANAGEMENT_HTML.md)。
 
 - TASK-143: 用户批准内容Tree灵活组合、停止按页面开发生成器。新入口为通用`html_composition.py`与递归`composition.mjs`：结构、菜单、工具栏、列/行/动作由Tree配置，官方组件按锁定包导出与源码登记，不再按页面或尺寸准入；保留Core/UI-IR隔离、官方样式、原型复核和静态交付。旧专用脚本仅恢复历史任务。变更决定与验证边界见 [TASK-143](TASK-143_CONTENT_TREE_COMPOSITION.md)。

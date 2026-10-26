@@ -15,6 +15,32 @@
 
 ## 新任务执行：内容 Tree 组合
 
+### 五分钟目标与批量入口
+
+普通静态管理页以从接收原型到交付不超过5分钟为目标，不保证复杂歧义、资源异常或通用适配开发也能在此时限内完成。记录任务开始/结束时间及实际总耗时；工具报告只用于识别执行耗时，不能代表总时间。预算是执行方式约束，不是新的审批或超时后停止条件。
+
+常规任务集中写入四份输入：`prototype.png`、`content-tree.json`、`source-observations.json`、`independent-scan.json`。一次调用完成Core、渲染、三态截图和待审核草稿，不写每页的执行脚本：
+
+```powershell
+rtk proxy .venv/Scripts/python.exe -X utf8 scripts/composition_workflow.py build artifacts/<任务> --revision r1 --width 1912 --height 956
+```
+
+输出`r1/core`、`r1/html`、`r1/review-decisions.json`和`r1/timing.json`。计时文件明确仅覆盖工具阶段。三态截图集中目视校对后，在已有草稿中按组填写组件、官方依据、实际呈现traits、四类结论及关系核对；排除项逐个确认。只保存判断和例外，不再手写完整审核脚本。一次调用展开实例并执行原有来源/视觉复核：
+
+```powershell
+rtk proxy .venv/Scripts/python.exe -X utf8 scripts/composition_workflow.py finalize artifacts/<任务> --revision r1
+```
+
+所有草稿项初始为`PENDING`，实际呈现traits不预填。未审核、截图变化、来源或配置变化均不能定稿。发现配置问题只改受影响处，以新revision重建；不要重新理解整页或重查已锁定组件。运行代码未变时不为每页新增测试、修改开发状态或提交Git；这些是开发工作，不是静态页面生成的必需步骤。
+
+重复来源可写`groups`代替数百条重复叙述，每组含`count`、带`{i}`（从0开始）/`{n}`（从1开始）的`id`、共同`region/traits`、证据模板和初读所需的`decision/treeRef`；`overrides`按索引记录差异。程序展开稳定编号，逐项覆盖仍保留。初读和复扫须独立写各自的数量、图形特征及差异，不能由程序把初读变成复扫。
+
+```json
+{"groups":[{"count":13,"id":"row-{i}-avatar","region":"table","sourceEvidence":"第{n}行圆形人员头像","decision":"include","treeRef":"avatar-cell","traits":{"leading":"person","trailing":"none","surface":"filled","shape":"circle","role":"avatar"},"overrides":{}}]}
+```
+
+相同构成、不同数据只记录行数据与例外；页面Tree用repeat绑定，不逐项重新编写同一组件。通用组件已有实现时，不把选择字号、组件外观或写辅助工具重新夹入生成流程。
+
 新任务使用同一编译器和递归Adapter，结构与官方属性由本次`content-tree.json`决定。不要按页面名称或列数选择下面的历史Profile；菜单、工具栏、表格列和行操作变化只改Tree。输入契约、绑定、重复项与单元格插槽见 [通用组合](HTML_COMPOSITION.md)。
 
 ```powershell
