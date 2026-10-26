@@ -6,7 +6,7 @@ import {resolve} from 'node:path';
 import {access,readFile} from 'node:fs/promises';
 import {measureLayoutRelations} from '../adapters/html/layout-relations.mjs';
 
-test('same browser measurement rejects broken surfaces, shared edges and every misaligned Card toolbar',async()=>{
+test('same browser measurement rejects broken surfaces, shared edges and overflowing Card toolbars',async()=>{
  const browser=await chromium.launch({headless:true});
  try{
   const page=await browser.newPage({viewport:{width:1200,height:800}});
@@ -19,8 +19,19 @@ test('same browser measurement rejects broken surfaces, shared edges and every m
   assert.equal(broken.status,'FAIL');
   assert.ok(broken.results[0].issues.includes('background_does_not_cover_region'));
   assert.ok(broken.results[1].issues.includes('shared_boundary_misaligned'));
-  assert.ok(broken.results[2].issues.includes('card_toolbar_not_vertically_centered'));
+  assert.ok(broken.results[2].issues.includes('card_toolbar_crosses_header_boundary'));
   await page.setContent(fixture(false));assert.equal((await page.evaluate(measureLayoutRelations,rules)).status,'PASS');
+  // A contained toolbar need not share the header center. An explicit rule
+  // still rejects that same geometry when the selected combination requires it.
+  await page.locator('.ivu-card-extra').evaluate(n=>n.style.top='4px');
+  const contained=await page.evaluate(measureLayoutRelations,rules);
+  assert.equal(contained.status,'PASS');
+  assert.equal(contained.results.find(r=>r.kind==='card-toolbar').measurement.centerDelta,4);
+  await page.locator('.ivu-card-head').evaluate(n=>n.dataset.treeNode='card-head');
+  await page.locator('.ivu-card-extra').evaluate(n=>n.dataset.treeNode='card-extra');
+  const explicit=await page.evaluate(measureLayoutRelations,[{id:'chosen-center',kind:'vertical-center',first:'card-extra',second:'card-head'}]);
+  assert.equal(explicit.results[0].status,'FAIL');
+  assert.ok(explicit.results[0].issues.includes('vertical_centers_misaligned'));
   await page.locator('.sidebar').evaluate(n=>n.style.background='transparent');
   assert.equal((await page.evaluate(measureLayoutRelations,rules)).results[0].status,'FAIL');
   const missing=await page.evaluate(measureLayoutRelations,[{id:'missing',kind:'vertical-center',first:'absent',second:'nav'}]);
@@ -42,7 +53,11 @@ test('read-only regression detects the reported issues in the prior delivery wit
    {id:'nav-start',kind:'edge-align',first:'top-navigation',second:'sidebar-column',firstEdge:'left',secondEdge:'right'}
   ]);
   assert.equal(report.status,'FAIL');
-  assert.equal(report.results.filter(r=>r.kind==='card-toolbar'&&r.status==='FAIL').length,2);
+  // Historical screenshots exposed a visual alignment concern. Keep its
+  // measurement, without treating center differences alone as universal FAIL.
+  const toolbars=report.results.filter(r=>r.kind==='card-toolbar');
+  assert.equal(toolbars.length,2);
+  assert.ok(toolbars.every(r=>r.measurement.centerDelta>1));
   assert.equal(report.results.find(r=>r.id==='side-fill').status,'FAIL');
   assert.equal(report.results.find(r=>r.id==='nav-start').status,'FAIL');
   assert.deepEqual(await readFile(prior),before);

@@ -123,7 +123,9 @@ def compile_tree(source, content, observation, scan):
     menus = [n for n in nodes.values() if n.get('component') == 'Menu']
     shell = ('Header' in components and any(n.get('props',{}).get('mode') == 'horizontal' for n in menus)
              and any(n.get('props',{}).get('mode','vertical') == 'vertical' for n in menus))
-    if shell and not {'surface-cover','edge-align','vertical-center'}.issubset({r['kind'] for r in relations}):
+    # Alignment depends on the selected official combination. Equal centers
+    # are enforced only when explicitly declared, not inferred from components.
+    if shell and not {'surface-cover','edge-align'}.issubset({r['kind'] for r in relations}):
         raise ValueError('shell_surface_and_boundary_relations_required')
     included = {key for key, item in first.items() if item['decision'] == 'include'}
     if covered != included: raise ValueError(f'page_tree_source_coverage:{sorted(included-covered)}')

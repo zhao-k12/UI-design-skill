@@ -42,7 +42,8 @@ export function measureLayoutRelations(relations = []) {
     const hr=rect(head),boxes=controls.map(rect);
     const bounds={top:Math.min(...boxes.map(r=>r.top)),bottom:Math.max(...boxes.map(r=>r.bottom)),left:Math.min(...boxes.map(r=>r.left)),right:Math.max(...boxes.map(r=>r.right))};
     const delta=Math.abs((bounds.top+bounds.bottom-hr.top-hr.bottom)/2),issues=[];
-    if(delta>1)issues.push('card_toolbar_not_vertically_centered');
+    // Card slots can use top/baseline alignment. Only an explicit relation
+    // may require equal centers; automatic coverage guards containment.
     if(bounds.top<hr.top||bounds.bottom>hr.bottom-1)issues.push('card_toolbar_crosses_header_boundary');
     if(bounds.left<hr.left||bounds.right>hr.right)issues.push('card_toolbar_exceeds_header_width');
     emit(`card-toolbar:${card.dataset.treeNode||'card'}:${index}`,'card-toolbar',issues,{header:hr,controls:bounds,centerDelta:delta});

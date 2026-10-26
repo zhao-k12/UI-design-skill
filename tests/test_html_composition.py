@@ -53,6 +53,9 @@ class CompositionTests(unittest.TestCase):
                    {'id':'center','kind':'vertical-center','first':'nav','second':'header','sourceEvidence':'顶栏导航在头部垂直居中'}]
         self.content['layoutRelations']=relations
         self.assertEqual(self.run_compile()['ui_ir']['layoutRelations'],relations)
+        self.content['layoutRelations']=relations[:2]
+        self.assertEqual(self.run_compile()['ui_ir']['layoutRelations'],relations[:2])
+        self.content['layoutRelations']=relations
         relations[1]['second']='missing'
         with self.assertRaisesRegex(ValueError,'layout_relation_node_missing'):self.run_compile()
 
