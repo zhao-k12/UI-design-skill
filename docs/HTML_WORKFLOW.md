@@ -15,6 +15,17 @@
 
 ## 执行
 
+### 平级菜单与职务权限普通列表组合
+
+本次组合使用 `registries/components/html-v1/role-catalog.json`（`html-role-v1.0`），只登记锁定包已有的官方组件变体。适用平级MenuItem、方形品牌Avatar、Input search、创建/帮助/排序操作和五列普通表格。来源Tree仍须针对本次原型独立编写，不以旧树表Profile删改内容。实例和三态证据见 `artifacts/task-142/role-permissions`。
+
+```powershell
+rtk proxy .venv/Scripts/python.exe -X utf8 core/pipeline/html_role_page_v1.py --source artifacts/<任务>/prototype.png --content artifacts/<任务>/content-tree.json --observation artifacts/<任务>/source-observations.json --independent-scan artifacts/<任务>/independent-scan.json --output-dir artifacts/<任务>/core
+rtk proxy node scripts/export_role_page.mjs artifacts/<任务>
+```
+
+导出器读取Core UI-IR，统一生成三态截图、核对图标/文字的官方组合间距和完整记录，再提取静态 `page.html`。之后仍执行同一个来源与视觉综合复核门，不新增串行审核关卡。
+
 ### 树形列表 HTML v1 Profile
 
 当原型包含整页侧栏分组、通知 Badge、头像及树形表格时，旧 `v0.2.9` Profile 缺少这些角色。使用独立 `html-v1.0` 目录：`registries/components/html-v1/catalog.json`、`core/pipeline/html_page_v1.py`、`adapters/html/page-v1.mjs`。先从本次原图独立准备带同一 SHA-256 的 `content-tree.json`、`source-observations.json`、`independent-scan.json`，再运行：
