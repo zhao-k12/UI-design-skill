@@ -69,15 +69,19 @@ try{
         const w=Math.min(canvas.width-x,Math.ceil(r.right)-x),h=Math.min(canvas.height-y,Math.ceil(r.bottom)-y);
         if(w<=0||h<=0)return 'outside';const bytes=context.getImageData(x,y,w,h).data;
         return [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(b=>b.toString(16).padStart(2,'0')).join('');};
-      const rect=n=>{const r=n.getBoundingClientRect();return [r.x,r.y,r.width,r.height]};
-      const style=n=>{const s=getComputedStyle(n);return [...s].map(k=>[k,s.getPropertyValue(k)])};
+      const rectCache=new WeakMap(),styleCache=new WeakMap();
+      const rect=n=>{if(!rectCache.has(n)){const r=n.getBoundingClientRect();rectCache.set(n,[r.x,r.y,r.width,r.height]);}return rectCache.get(n);};
+      const style=n=>{if(!styleCache.has(n)){const s=getComputedStyle(n);styleCache.set(n,[...s].map(k=>[k,s.getPropertyValue(k)]));}return styleCache.get(n);};
+      const hash=async value=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(value))))].map(b=>b.toString(16).padStart(2,'0')).join('');
       const groups={};
       for(const n of nodes){
         const ancestors=[];for(let p=n.parentElement;p;p=p.parentElement)ancestors.push([p.tagName,p.className,rect(p),style(p)]);
         // Official tables generate random internal IDs/classes. Compare semantic
         // DOM, resolved styles and actual pixels instead of those unstable IDs.
         const detail=[n,...n.querySelectorAll('*')].map(e=>[e.tagName,e.textContent,e.getAttribute('role'),rect(e),style(e),e.value,e.checked,e.disabled,...['::before','::after'].map(p=>{const s=getComputedStyle(e,p);return [s.content,s.color,s.backgroundColor,s.width,s.height,s.margin,s.position]})]);
-        (groups[n.dataset.treeNode]??=[]).push([ancestors,detail,await pixelHash(n)]);
+        // Hash inside Chromium: transferring repeated full computed-style trees
+        // through Playwright can consume gigabytes on ordinary admin pages.
+        (groups[n.dataset.treeNode]??=[]).push(await hash([ancestors,detail,await pixelHash(n)]));
       }
       return {groups,geometry:nodes.map(n=>[n.dataset.treeNode,rect(n)])};
     },`data:image/png;base64,${shot.toString('base64')}`);
