@@ -44,6 +44,32 @@ rtk proxy .venv/Scripts/python.exe -X utf8 scripts/html_fast_workflow.py render 
 
 节点必须有`id`与`kind`，组件、属性、布局、文字分别使用`component/props/layout/value`等完整字段。`use/p/text/from/stack/default`简写、`definitions/ref`片段引用、隐式文字节点和缺省编号均拒绝输入。数据仍可用明确的`{"bind":"row.xxx"}`绑定标准组件重复模板，实际行集合必须完整列出。
 
+## 完整 Tree 辅助编写
+
+优先用共用的`scripts/html_tree_editor.py`，在一个Python执行批次中直接操作完整Tree，代替逐字书写重复JSON。Windows调用Python使用`-X utf8`，避免中文标准输入被系统编码误读。只调用工具，不为每张页面保存一份prepare/生成器程序。没有新的输入语言或简写转换：编辑器内部持有的就是标准Tree，`write_job`直接写现有job格式。
+
+```python
+from html_tree_editor import FullTreeEditor
+
+editor = FullTreeEditor(source_sha256, title, {
+    "id": "page", "kind": "container", "layout": {"direction": "horizontal"}
+})
+sidebar = editor.add("page", "container", id="sidebar", layout={"direction": "vertical"})
+main = editor.add("page", "container", id="main", layout={"direction": "vertical"})
+# 区域归属来自模型对本次原型的判断，工具不做决定。
+brand = editor.add(sidebar, "component", component="Avatar",
+                   props={"shape": "square"}, sourceIds=["brand"])
+header = editor.add(main, "component", component="Card", props={"padding": 16})
+editor.add(header, "text", value="本次原型标题", sourceIds=["page-title"])
+editor.write_job(job_path, source=prototype_path, observation=observation, scan=scan)
+```
+
+以上是工具API用法，不是固定页面模板；本次区域由原型决定。`add`需要明确父节点、kind及适用的完整字段，支持一次附带完整children、slots和Table列cell。可传`slot`或`index`明确位置；模型不必手写机械编号，工具在内存中生成唯一编号后作为真实`id`保存，手工输入的完整Tree仍不得缺id。动态图标允许在构造时传明确的`icons`名单，不自动选择图标。
+
+`set_properties(node_id, {...})`只填写指定组件属性；`set_rows(table_id, [逐条完整数据])`保留原文、相同业务编号、false/null和所有状态，不根据数量扩写记录；`move(node_id, parent_id, index=...)`只执行模型明确指定的移动，保留节点内容和来源，不自行合并区域。`content()`可直接取得完整结果用于检查。编号、括号、连接和格式交给工具；布局含义与内容准确性仍由模型负责。
+
+写入后按原有一次集中复核检查完整树及页面；不另加一轮人工确认或串行QA。编辑工具不生成独立复扫材料或视觉PASS，不代替Core结构、官方属性及来源完整性检查。
+
 `content-tree.json`保存完整树。检查不仅包含每条文案、编号、true/false状态和变体，还包含品牌、侧栏、顶栏、主内容的父子归属；不能因为文字齐全而随意移动区域。初读、独立复扫与一次综合复核保持原职责，不增加额外审核阶段。历史简写job须人工按来源核对后改为完整树才能重跑，既有HTML不改写。
 
 ## 一次看三态，简记结论

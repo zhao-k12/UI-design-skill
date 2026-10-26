@@ -19,7 +19,18 @@ test('compact input renders and finalizes with timing, intrinsic sizing, and sta
      {id:'action',ids:['action'],region:'footer',traits,decision:'include',treeRef:'unchanged',sourceEvidence:'固定操作'}]},
    scan:{sourceSha256,groups:[{id:'rows',prefix:'row-',count:2,region:'table',traits,visual:'独立开发样例计数为2，内容A/B'},
      {id:'action',ids:['action'],region:'footer',traits,visual:'固定操作按钮'}]}};
- const input=join(dir,'job.json');await writeFile(input,JSON.stringify(job));command('start');
+ const input=join(dir,'job.json');
+ // The shared editor writes the canonical job directly; there is no abbreviated IR.
+ execFileSync(python,['-X','utf8','-c',`import sys,json,copy
+sys.path.insert(0,'scripts')
+from html_tree_editor import FullTreeEditor
+job=json.load(sys.stdin)
+root=copy.deepcopy(job['content']['root']);children=root.pop('children')
+editor=FullTreeEditor(job['content']['sourceSha256'],job['content']['title'],root)
+for child in children:
+    kind=child.pop('kind');editor.add(root['id'],kind,**child)
+editor.write_job(sys.argv[1],source=job['source'],observation=job['observation'],scan=job['scan'],viewport=job['viewport'])
+`,input],{cwd:root,input:JSON.stringify(job),stdio:['pipe','pipe','pipe']});command('start');
  command('render',input);const active=JSON.parse(await readFile(join(dir,'active-run.json')));
  const qa=JSON.parse(await readFile(join(active.runDir,'html/qa.json')));
  assert.equal(qa.status,'PASS');assert.equal(qa.stages.delivery.tableRows,2);
