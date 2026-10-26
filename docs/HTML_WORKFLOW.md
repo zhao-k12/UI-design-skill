@@ -13,7 +13,20 @@
 
 官方无定义的页面级几何要记录为规范缺口，优先使用官方组件的自然或自适应布局。需要补充规范时，应找到锁定版本的官方文档、源码或运行 CSS 并记录具体路径；不得把旧项目 Token、原型测量或主观视觉判断写成“官方值”。骨架和流程切换控件可使用必要的演示样式，但不得进入交付组件外观。页面排布需要的样式只表达布局关系，不改写官方组件内部视觉。
 
-## 执行
+## 新任务执行：内容 Tree 组合
+
+新任务使用同一编译器和递归Adapter，结构与官方属性由本次`content-tree.json`决定。不要按页面名称或列数选择下面的历史Profile；菜单、工具栏、表格列和行操作变化只改Tree。输入契约、绑定、重复项与单元格插槽见 [通用组合](HTML_COMPOSITION.md)。
+
+```powershell
+rtk proxy .venv/Scripts/python.exe -X utf8 core/pipeline/html_composition.py --source artifacts/<任务>/prototype.png --content artifacts/<任务>/content-tree.json --observation artifacts/<任务>/source-observations.json --independent-scan artifacts/<任务>/independent-scan.json --output-dir artifacts/<任务>/core
+rtk proxy node scripts/export_html_composition.mjs artifacts/<任务>/core artifacts/<任务>/html
+```
+
+Core核对两次来源观察和覆盖、官方导出及源码，保存Tree、布局、映射与UI-IR；HTML Adapter递归调用官方组件，三态共用同一结构。只用实际需要的官方属性和槽位，不重写组件。新组合先变更配置；官方已有能力而本地翻译不足时补通用映射，不再创建“某页面专用生成器”。运行报告中的PASS只覆盖渲染与基础结构；仍须集中校对当前原型，并执行原有的`audit_prototype_observations.py`来源/视觉复核门。
+
+## 历史入口：仅用于恢复原任务
+
+下列页面专用编译器和Profile保留历史输入、回执与复现能力，不作为新任务路由，不把它们的固定结构约束带入新页面。
 
 ### 平级菜单与职务权限普通列表组合
 
@@ -58,7 +71,7 @@ rtk proxy node scripts/export_html_page.mjs --core-dir artifacts/<任务>/core -
 
 当前已在用户管理列表页实测 Input、Select、Button、带表头 Table、Remix 设置图标和静态 Text；这些控件由官方组件运行包渲染。其他现有组件虽已接入渲染映射，尚未逐类完成页面实测。原有浏览器 PASS 仅覆盖当时检查项，不自动证明新定义的官方依据与骨架视觉审核已完成。
 
-来源支持的组件文字与 Table 行内容可随新原型变化。组件类型、Table 列结构、可用属性、设计 Token 和已定义的布局模式仍由当前正式目录与 Core 规则决定。超出这些范围的新页面需要补充相应的组件或布局契约，不能仅凭浏览器能显示就宣称已验收。当前实测了 1660px 用户管理页和同一来源内的表格行内容变体；后者是开发验证，不是新的用户审核原型。
+这些旧Profile的组件范围、固定列结构和布局限制只解释历史证据，不约束通用组合入口。旧用户管理页和来源内数据变体的PASS不能借给新页面；新任务仍绑定自己的来源、Tree和截图，但不为尺寸、列数、菜单或操作名称单独准入。
 
 当前 Core 的部分页面间距、文字排版和固定几何仍来自历史项目 Token 或列表页规则，不能仅因其数值与官方变量相同就称为官方规定。迁移前须逐项核对来源；无法找到官方依据的视觉决定不进入新的合规交付。样式选择器阻断只覆盖直接 `.ivu-*` 改写，不代替页面规则的来源审核。
 

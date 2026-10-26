@@ -1,5 +1,7 @@
 # Development State — public edition
 
+- TASK-143: 用户批准内容Tree灵活组合、停止按页面开发生成器。新入口为通用`html_composition.py`与递归`composition.mjs`：结构、菜单、工具栏、列/行/动作由Tree配置，官方组件按锁定包导出与源码登记，不再按页面或尺寸准入；保留Core/UI-IR隔离、官方样式、原型复核和静态交付。旧专用脚本仅恢复历史任务。变更决定与验证边界见 [TASK-143](TASK-143_CONTENT_TREE_COMPOSITION.md)。
+
 - TASK-142: 按新职务权限原型独立执行静态HTML Skill；新增锁定官方运行包已有组件的普通列表版本化目录、Core及HTML Adapter，不改旧树表Profile。193项观察中176项纳入，11菜单、15行、90个图标操作与30个链接格完整；16个疑似原型工具浮标和浏览器滚动条记录后排除。官方图文间距、品牌/顶栏60px对齐、满宽表格、无溢出及静态冻结验证PASS；原图与三态截图集中复核。官方默认Avatar灰底与text按钮文字色替代原型自定义色，未覆盖组件视觉。详见 [TASK-142](TASK-142_ROLE_PERMISSIONS_HTML.md)。
 
 - TASK-141: 用户批准减少 Skill 检查耗时并只交付静态 HTML。四类质量结论保留，但新任务在一个浏览器会话中集中审查；`batched-v2` 关系按组审核，旧逐项格式兼容。静态快照移除 Vue 运行脚本和审核切换，冻结 hover／点击但保留真实文字与固定选中外观。TASK-131 旧列表 Profile 的静态导出回归 PASS；TASK-140 本地树表页也已静态化，未修复用户指出的四处组合视觉问题，旧结构 PASS 不升级为新视觉 PASS。架构决定、验收和边界见 [TASK-141](TASK-141_BATCH_QA_STATIC_HTML.md)。

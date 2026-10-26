@@ -1,21 +1,21 @@
 # UI Design Skill
 
-平台无关的静态 B 端 UI 设计 Skill。由 Codex 理解静态原型，再通过确定性布局、官方组件库和 UI-IR，生成 Figma 或 Penpot 原生可编辑设计稿。
+静态 B 端 UI 设计 Skill。由 Codex 理解原型，以内容Tree配置官方 View UI Plus 组件，经Core和UI-IR生成可离线打开、保留真实文字的静态HTML页面。
 
-**已实现：V0.1 有限范围的设计流水线；V0.2 正在按限定范围开发。** 当前并非任意截图、任意组件的一键生成工具。
+当前入口为 [SKILL.md](SKILL.md) 与 [HTML流程](docs/HTML_WORKFLOW.md)。新任务采用[通用内容组合](docs/HTML_COMPOSITION.md)，不按页面名称、列数、文案或尺寸选择专用生成器。官方组件通过属性、插槽和数据组合；仍需本次原型的内容和视觉复核，不能把通用渲染支持视为所有组合已验收。
 
 ## 工作方式
 
 ```text
-静态原型 → 语义分析 → Page Tree → 结构检查
-→ 布局模式 → Layout Skeleton → 布局检查
-→ 组件映射 → 正式组件组装 → 内容与资源注入
-→ 规则检查 → UI-IR → 目标平台 Adapter → 原生验收
+静态原型 → 内容Tree与布局关系 → Core / UI-IR → 官方HTML组件递归组合
+→ 同一结构的彩色骨架 / 默认组件 / 原型内容 → 一次综合校对 → 静态page.html
 ```
 
 AI 理解内容、选择规则和组件；程序计算布局与验证；官方源码、CSS 和真实运行结果提供视觉真值。Core 不依赖平台 SDK，实际平台引用保存在 Adapter Metadata。
 
-## 已有能力与边界
+## 历史原生链路能力与边界
+
+下述V0.1/V0.2原生平台与Profile资料保留用于历史追溯，不作为当前HTML任务入口或固定结构限制。
 
 | 能力 | 当前范围 |
 |---|---|
@@ -34,11 +34,11 @@ AI 理解内容、选择规则和组件；程序计算布局与验证；官方�
 
 ## 如何使用 Skill
 
-克隆仓库，在 Codex 项目对话中读取 [SKILL.md](SKILL.md)，提供静态原型。当前开发只走 Figma，例如：
+克隆仓库，在 Codex 项目对话中读取 [SKILL.md](SKILL.md)，提供静态原型，例如：
 
-> 读取 SKILL.md，分析我提供的静态原型，使用已准入组件生成 Figma 可编辑设计稿。先核对原型内容，保存分析、布局、UI-IR 和验收结果。
+> 读取 SKILL.md，理解我提供的原型，按iView官方组件和规范生成静态HTML页面。依据内容Tree灵活组合，保留来源、三态截图和集中复核结果。
 
-Skill依赖整个仓库的程序、Schema、Registry和证据，不能只复制SKILL.md。平台执行需要当前会话可用的连接器或公开插件SDK、目标文件权限和合法字体。历史平台ID仅供追溯原验收，不授予访问权限，也不能直接照搬到其他账号。
+Skill依赖仓库的程序、官方运行包和图标来源，不能只复制SKILL.md。当前HTML路线不需要Figma或Penpot连接。历史平台ID仅供追溯原验收，不授予访问权限。
 
 ## 安装与检查
 
@@ -57,7 +57,7 @@ node --test tests/*.test.mjs
 
 只验证平台无关基础能力可运行 `.\.venv\Scripts\python.exe -m unittest tests.test_architecture tests.test_ui_ir tests.test_tokens tests.test_layout tests.test_layout_builder tests.test_component_registry`。完整字体/原生保真检查还需要指定字体、固定FreeType诊断环境和实际平台证据，这些资源不会自动安装。公开版省略账号界面截图，因此部分历史Manifest检查也需要本机原证据。缺少环境或证据不能视作PASS；详见[公开快照说明](docs/PUBLICATION.md)与[本次检查结果](docs/PUBLICATION_VALIDATION.md)。
 
-## 开发中的 V0.2
+## 历史 V0.2 原生开发记录
 
 开发环境预检与分组测试入口已新增，见[开发检查说明](docs/DEVELOPMENT_CHECKS.md)。它们区分依赖缺失、证据变化和实际测试失败，不替代原生验收。
 
