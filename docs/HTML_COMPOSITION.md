@@ -26,6 +26,8 @@
 
 先按[官方区域组合参考](IVIEW_COMPOSITION_PATTERNS.md)选择容器职责及宽度策略，再确定组件、变体和插槽。查询工具条可在Card正文中独立排列；详情分区可用Card head，不按“右侧=extra”映射。状态按展示用途及填充/描边/圆点特征选Tag、Badge或文字；普通描述不自动变成禁用表单。完整Tree保存本次区域和数据，不从官方例页导入业务默认值。在线Admin Plus专用布局仅作参考，未取得源码不作为本地官方组件调用。
 
+遵循[项目默认主题与表单](IVIEW_COMPOSITION_PATTERNS.md#项目默认主题与表单)：不以Header/Sider默认值或适配便利决定双深色；先确定整页主题，再用已核实能力覆盖正确容器。桌面Form默认左右标签关系，项的横纵排列由Row/Col或inline独立表达，不默认top；例外理由写入现有证据。不得借新默认政策覆盖官方视觉CSS。
+
 Table直接配置官方`props.columns`、`props.data`、`stripe`、`border`、树字段等。列数、选中列、树列、行数、状态变体与操作均由本次原型决定。需要自定义单元格时给该列增加声明式`cell`子Tree，由Adapter转换为官方`render`接口；不在JSON中放函数或页面业务代码。例如：
 
 ```json
