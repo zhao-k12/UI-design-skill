@@ -13,8 +13,8 @@ test('compact input renders and finalizes with timing, intrinsic sizing, and sta
  const sourceSha256=createHash('sha256').update(await readFile(source)).digest('hex');
  const traits={leading:'none',trailing:'none',surface:'plain',shape:'rect',role:'record'};
  const job={source:'fixture.txt',viewport:{width:1440,height:1000},
-   content:{sourceSha256,title:'Compact workflow fixture',root:{id:'layout',stack:'vertical',children:[{id:'records',use:'Table',from:['rows'],
-     p:{columns:[{title:'名称',key:'name',width:40}],data:[{name:'A'},{name:'B'}]}},{id:'unchanged',use:'Button',text:'固定操作',from:['action']}] }},
+   content:{sourceSha256,title:'Full Tree workflow fixture',root:{id:'layout',kind:'container',layout:{direction:'vertical'},children:[{id:'records',kind:'component',component:'Table',sourceGroups:['rows'],
+     props:{columns:[{title:'名称',key:'name',width:40}],data:[{name:'A'},{name:'B'}]}},{id:'unchanged',kind:'component',component:'Button',children:[{id:'action-label',kind:'text',value:'固定操作'}],sourceGroups:['action']}] }},
    observation:{sourceSha256,groups:[{id:'rows',prefix:'row-',count:2,region:'table',traits,decision:'include',treeRef:'records',sourceEvidence:'两条记录A/B'},
      {id:'action',ids:['action'],region:'footer',traits,decision:'include',treeRef:'unchanged',sourceEvidence:'固定操作'}]},
    scan:{sourceSha256,groups:[{id:'rows',prefix:'row-',count:2,region:'table',traits,visual:'独立开发样例计数为2，内容A/B'},
@@ -47,7 +47,7 @@ test('compact input renders and finalizes with timing, intrinsic sizing, and sta
  await writeFile(sealedFile,Buffer.concat([sealedBytes,Buffer.from(' ')]));assert.throws(()=>command('finalize',deltaFile));
  await writeFile(sealedFile,sealedBytes);command('finalize',deltaFile);
  const revisedJob=JSON.parse(await readFile(join(revised.runDir,'job.json')));
- revisedJob.content.root.children[0].p.data[0].name='C';
+ revisedJob.content.root.children[0].props.data[0].name='C';
  await writeFile(patch,JSON.stringify({content:{root:{children:revisedJob.content.root.children}}}));command('revise',patch);
  const changed=JSON.parse(await readFile(join(dir,'active-run.json')));
  assert.deepEqual(JSON.parse(await readFile(join(changed.runDir,'review-plan.json'))).reusableGroups,['action']);

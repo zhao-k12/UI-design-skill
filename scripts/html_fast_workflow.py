@@ -16,7 +16,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'core/pipeline'))
 from html_composition import compile_tree, save, digest
 from audit_prototype_observations import audit
-from html_compact import expand_tree, delta_review, fingerprint, merge_patch
+from html_compact import require_full_tree, delta_review, fingerprint, merge_patch
 
 def now(): return datetime.now(timezone.utc).isoformat()
 def read(path): return json.loads(Path(path).read_text(encoding='utf-8'))
@@ -156,7 +156,7 @@ def render(job_path, task):
     run_id=uuid4().hex[:12];run=task/'runs'/run_id;run.mkdir(parents=True)
     shutil.copyfile(source,run/('prototype'+source.suffix))
     first=expand_observations(job['observation']);second=expand_observations(job['scan'],scan=True)
-    content=bind_groups(expand_tree(job['content']),first['_groupIds'])
+    content=bind_groups(require_full_tree(job['content']),first['_groupIds'])
     save(run/'job.json',{**job,'source':str(source)})
     for name,value in (('content-tree',content),('source-observations',first),('independent-scan',second)):
         save(run/(name+'.json'),value)

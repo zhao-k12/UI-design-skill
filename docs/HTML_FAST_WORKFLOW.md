@@ -27,24 +27,24 @@ rtk proxy .venv/Scripts/python.exe -X utf8 scripts/html_fast_workflow.py render 
 
 也可用`ids`显式列编号代替prefix/count。`exceptions`按实例id改写该实例的观察；不同状态、图标或操作数量必须作为例外，不能平均化。行文字仍逐条保存在Tree数据中，不因分组丢失。
 
-原型数据完全重复时，`props.data`也可紧凑写为`{"$repeat":{"count":13,"value":{"name":"李小明","online":"在线"},"exceptions":{"12":{"name":"赵六"}}}}`。程序展开成13条真实数据，第13条仅改姓名，其余字段保留。只有原图确实相同才能复用value，不把独立记录猜成重复；不同业务编号等字段必须依原图写例外或显式数据，不生成虚构编号。越界例外被拒绝，不静默丢弃。
+`props.data`逐行显式列出，即使原型各行内容相同也不使用`$repeat`。逐项保留实际文字、业务编号、选中／禁用状态及行操作，不生成虚构编号。观察材料仍可按共同特征分组；这不缩写内容Tree或行数据。
 
 `scan.groups`单独填写独立看见的`id/prefix/count/region/traits/visual`及例外，不复制完整初读文字，也不能让程序代替原图复扫。两份数量/特征不同会在Core被拒绝。Tree节点用`sourceGroups:["records"]`绑定整组；关系也可用sourceGroups。执行器展开真实逐项证据，旧完整性门继续核对，不让模型重复书写上百份记录。
 
-## 无损简写 Tree
+## 完整 Tree
 
-完整Tree格式继续兼容；新任务可缩短节点语法，程序先展开再送Core，不能省略来源事实：
+所有节点显式填写完整字段与稳定编号，直接表达父子归属，不再使用作者层简写：
 
 ```json
-{"root":{"id":"toolbar","stack":"horizontal","gap":"xs","children":[
-  {"use":"Input","p":{"placeholder":"请输入姓名"},"from":["name-filter"]},
-  {"use":"Button","p":{"type":"primary","disabled":false},"text":"查询","from":["query-action"]}
+{"root":{"id":"toolbar","kind":"container","layout":{"direction":"horizontal","gap":"xs"},"children":[
+  {"id":"name-input","kind":"component","component":"Input","props":{"placeholder":"请输入姓名"},"sourceIds":["name-filter"]},
+  {"id":"query-button","kind":"component","component":"Button","props":{"type":"primary","disabled":false},"sourceIds":["query-action"],"children":[{"id":"query-label","kind":"text","value":"查询"}]}
 ]}}
 ```
 
-`use`为官方组件，`p`为完整官方props，`text`为文字，`from`为来源组，`stack`为容器方向。缺省id按节点路径生成；有来源treeRef的节点应显式命名。`definitions`保存本任务共同节点，`{"ref":"片段名"}`展开共享结构；绑定行数据的文字、禁用属性等继续使用`{"bind":"row.xxx"}`。该引用不是固定业务页面模板，不替用户补状态。定义中的固定id不要用于多次实例，避免重复；需要稳定局部绑定时在引用处指定id。
+节点必须有`id`与`kind`，组件、属性、布局、文字分别使用`component/props/layout/value`等完整字段。`use/p/text/from/stack/default`简写、`definitions/ref`片段引用、隐式文字节点和缺省编号均拒绝输入。数据仍可用明确的`{"bind":"row.xxx"}`绑定标准组件重复模板，实际行集合必须完整列出。
 
-简写只压缩重复结构与键名。原型中的每条文案、业务编号、行状态、操作数量、disabled/checked的true和false、不同变体及例外必须保留；完全相同的数据才使用`$repeat`。`content-tree.json`保存展开结果，便于检查。Tree内容、初读、独立复扫仍是不同职责。
+`content-tree.json`保存完整树。检查不仅包含每条文案、编号、true/false状态和变体，还包含品牌、侧栏、顶栏、主内容的父子归属；不能因为文字齐全而随意移动区域。初读、独立复扫与一次综合复核保持原职责，不增加额外审核阶段。历史简写job须人工按来源核对后改为完整树才能重跑，既有HTML不改写。
 
 ## 一次看三态，简记结论
 
