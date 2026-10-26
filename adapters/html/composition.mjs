@@ -28,6 +28,7 @@ function layoutStyle(layout={}){
     flexWrap:layout.wrap?'wrap':'nowrap',justifyContent:({start:'flex-start',end:'flex-end',center:'center','space-between':'space-between'})[layout.justify||'start'],
     alignItems:({start:'flex-start',end:'flex-end',center:'center',stretch:'stretch'})[layout.align||'stretch']};
   if(layout.fill)style.flex='1 1 0%';
+  if(layout.minHeight==='viewport')style.minHeight='100vh';
   if(layout.span)style.flex=`0 1 ${layout.span/24*100}%`;
   return style;
 }

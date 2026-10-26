@@ -1,5 +1,7 @@
 # Development State — public edition
 
+- TASK-144: 通过通用内容Tree生成员工管理静态HTML，无员工页专用生成器。238项本图观察中226项纳入；5筛选、10工具操作、11列表格、13记录/头像、14未选复选框、13在线圆点与52行操作图标完整。原图复核、三态运行、结构化来源/视觉门与静态hover冻结PASS。仅通过Tree修正窄列；补通用viewport最小高度和可配置截图视口。交付`artifacts/task-144/employee-management/html-r2/page.html`，详见 [TASK-144](TASK-144_EMPLOYEE_MANAGEMENT_HTML.md)。
+
 - TASK-143: 用户批准内容Tree灵活组合、停止按页面开发生成器。新入口为通用`html_composition.py`与递归`composition.mjs`：结构、菜单、工具栏、列/行/动作由Tree配置，官方组件按锁定包导出与源码登记，不再按页面或尺寸准入；保留Core/UI-IR隔离、官方样式、原型复核和静态交付。旧专用脚本仅恢复历史任务。变更决定与验证边界见 [TASK-143](TASK-143_CONTENT_TREE_COMPOSITION.md)。
 
 - TASK-142: 按新职务权限原型独立执行静态HTML Skill；新增锁定官方运行包已有组件的普通列表版本化目录、Core及HTML Adapter，不改旧树表Profile。193项观察中176项纳入，11菜单、15行、90个图标操作与30个链接格完整；16个疑似原型工具浮标和浏览器滚动条记录后排除。官方图文间距、品牌/顶栏60px对齐、满宽表格、无溢出及静态冻结验证PASS；原图与三态截图集中复核。官方默认Avatar灰底与text按钮文字色替代原型自定义色，未覆盖组件视觉。详见 [TASK-142](TASK-142_ROLE_PERMISSIONS_HTML.md)。

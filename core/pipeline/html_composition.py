@@ -78,8 +78,9 @@ def compile_tree(source, content, observation, scan):
             if node.get('icon'): record_icon(node['icon'])
         elif kind == 'container':
             layout = node.get('layout', {})
-            allowed = {'direction','gap','padding','justify','align','wrap','fill','span'}
+            allowed = {'direction','gap','padding','justify','align','wrap','fill','span','minHeight'}
             if set(layout) - allowed: raise ValueError(f'unsupported_layout_property:{key}')
+            if 'minHeight' in layout and layout['minHeight'] != 'viewport': raise ValueError('unsupported_min_height')
             if layout.get('direction', 'vertical') not in ('horizontal','vertical'):
                 raise ValueError('invalid_layout_direction')
             for part in ('gap','padding'):

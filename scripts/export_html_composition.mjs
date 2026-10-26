@@ -44,7 +44,7 @@ const title=String(ir.title).replaceAll('&','&amp;').replaceAll('<','&lt;');
 const preview=join(out,'stage-preview.html'),final=join(out,'page.html');
 await writeFile(preview,`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>${css}</style><style>${base}${icons}${reviewCss}</style></head><body><div id="app"></div><script id="design-ir" type="application/json">${irBytes.toString().replaceAll('<','\\u003c')}</script><script type="module">${bundle.outputFiles[0].text.replaceAll('</script','<\\/script')}</script></body></html>`);
 const browser=await chromium.launch({headless:true});
-const page=await browser.newPage({viewport:{width:1440,height:1000}});
+const page=await browser.newPage({viewport:{width:Number(process.argv[4])||1440,height:Number(process.argv[5])||1000}});
 const errors=[],stages={};page.on('pageerror',e=>errors.push(String(e)));
 try{
   await page.goto(pathToFileURL(preview).href);await page.waitForFunction(()=>window.__ready===true);

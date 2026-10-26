@@ -16,7 +16,9 @@
 
 绑定写为 `{"bind":"item.label"}`。repeat模板可读`item`与`index`；Table单元格可读`row`、`column`、`index`；嵌套repeat保留外层row。缺失绑定报具体路径，不静默删内容。
 
-`container.layout`支持：`direction: horizontal|vertical`、`gap/padding: none|xs|sm|md|lg`、`justify: start|end|center|space-between`、`align: start|end|center|stretch`、`wrap`、`fill`、`span: 1..24`。间距引用锁定版官方变量，但某区域采用哪个值仍需说明适用关系。组件本身的布局优先使用Row/Col、Space、Layout等官方属性。容器布局不能覆盖组件颜色、字号、边框等视觉。
+`container.layout`支持：`direction: horizontal|vertical`、`gap/padding: none|xs|sm|md|lg`、`justify: start|end|center|space-between`、`align: start|end|center|stretch`、`wrap`、`fill`、`span: 1..24`、`minHeight: viewport`。后者用于至少占满当前视口的外壳，不定义固定画布高度；与Fill子容器组合可把退出等区域推至底部。间距引用锁定版官方变量，但某区域采用哪个值仍需说明适用关系。组件本身的布局优先使用Row/Col、Space、Layout等官方属性。容器布局不能覆盖组件颜色、字号、边框等视觉。
+
+导出器在Core目录和输出目录之后可传预览视口宽、高，例如`.../core .../html 1912 956`；仅决定浏览器截图视口，不向组件注入原型像素尺寸。省略时使用默认预览视口。
 
 ## 官方组件与Table
 

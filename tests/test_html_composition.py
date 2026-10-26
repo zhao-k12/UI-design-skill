@@ -34,5 +34,11 @@ class CompositionTests(unittest.TestCase):
     def test_official_visual_override_is_still_rejected(self):
         self.content['root']['props']['style']={'color':'red'}
         with self.assertRaisesRegex(ValueError,'component_visual_or_event_override'):self.run_compile()
+    def test_viewport_shell_and_fill_are_content_independent(self):
+        child=self.content['root'];child['sourceIds']=[]
+        self.content['root']={'id':'shell','kind':'container','sourceIds':['action'],
+            'layout':{'minHeight':'viewport','fill':True},'children':[child]}
+        result=self.run_compile()
+        self.assertEqual(result['layout_tree']['nodes']['shell']['minHeight'],'viewport')
 
 if __name__=='__main__':unittest.main()
