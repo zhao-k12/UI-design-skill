@@ -30,6 +30,15 @@ export function measureLayoutRelations(relations = []) {
       const delta=Math.abs((ar.top+ar.bottom-br.top-br.bottom)/2);
       if(delta>1)issues.push('vertical_centers_misaligned');
       emit(rule.id,rule.kind,issues,{first:ar,second:br,delta});
+    }else if(rule.kind==='minimum-gap'){
+      const tokens={none:0,xs:8,sm:12,md:16,lg:24};
+      const minimum=tokens[rule.minimum];
+      if(!Number.isFinite(minimum)||!['horizontal','vertical'].includes(rule.axis)){
+        emit(rule.id,rule.kind,['invalid_minimum_gap'],{});continue;
+      }
+      const gap=rule.axis==='vertical'?br.top-ar.bottom:br.left-ar.right;
+      if(gap<minimum-1)issues.push('minimum_gap_not_met');
+      emit(rule.id,rule.kind,issues,{first:ar,second:br,gap,minimum});
     }else emit(rule.id,rule.kind,['unknown_layout_relation_kind'],{});
   }
   // Always inspect every actual Card extra toolbar, including multiple cards.

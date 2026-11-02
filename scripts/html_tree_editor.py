@@ -16,6 +16,7 @@ def child_links(node):
     for children in node.get('slots', {}).values():
         for index, child in enumerate(children): yield children, index, child
     if 'template' in node: yield node, 'template', node['template']
+    if 'tabLabel' in node: yield node, 'tabLabel', node['tabLabel']
     for column in node.get('props', {}).get('columns', []):
         if 'cell' in column: yield column, 'cell', column['cell']
 

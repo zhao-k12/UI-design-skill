@@ -32,7 +32,7 @@ for child in children:
     kind=child.pop('kind');editor.add(root['id'],kind,**child)
 editor.write_job(sys.argv[1],source=job['source'],observation=job['observation'],scan=job['scan'],viewport=job['viewport'])
 `,input],{cwd:root,input:JSON.stringify(job),stdio:['pipe','pipe','pipe']});command('start');
- command('render',input);const active=JSON.parse(await readFile(join(dir,'active-run.json')));
+ command('render',input);let active=JSON.parse(await readFile(join(dir,'active-run.json')));
  const qa=JSON.parse(await readFile(join(active.runDir,'html/qa.json')));
  assert.equal(qa.status,'PASS');assert.equal(qa.stages.delivery.tableRows,2);
  assert.ok(qa.reviewSheetSha256);assert.ok((await readFile(join(active.runDir,'html/review-sheet.png'))).length>1000);
@@ -45,9 +45,24 @@ editor.write_job(sys.argv[1],source=job['source'],observation=job['observation']
      {sourceGroups:['action'],status:'PASS',variantRef:'button',renderedTraits:traits,renderedEvidence:'Developer fixture fixed action checked.'}],relationChecks:[]};
  const reviewFile=join(dir,'review.json');await writeFile(reviewFile,JSON.stringify(review));
  assert.throws(()=>command('finalize',reviewFile)); // A generic manual PASS cannot omit measured relationships.
- review.checkedLayoutRelations=['left-edge'];await writeFile(reviewFile,JSON.stringify(review));command('finalize',reviewFile);
+ review.checkedLayoutRelations=['left-edge'];await writeFile(reviewFile,JSON.stringify(review));
+ // New tasks cannot publish a flat titled table without source inventories.
+ assert.throws(()=>command('finalize',reviewFile),/flat_table_source_columns_unchecked:records/);
+ // A previously existing task without the policy remains compatible.
+ const timingFile=join(dir,'timing.json'), strictTiming=JSON.parse(await readFile(timingFile));
+ const legacyTiming={...strictTiming};delete legacyTiming.tableColumnReviewPolicy;
+ await writeFile(timingFile,JSON.stringify(legacyTiming));command('finalize',reviewFile);
+ // Restore the new-task policy and provide both source lists before re-rendering.
+ await writeFile(timingFile,JSON.stringify(strictTiming));
+ const inventoried=JSON.parse(await readFile(input));
+ inventoried.observation.tableColumns={records:['名称']};
+ inventoried.scan.tableColumns={records:['名称']};
+ await writeFile(input,JSON.stringify(inventoried));command('render',input);
+ active=JSON.parse(await readFile(join(dir,'active-run.json')));
+ review.runId=active.runId;await writeFile(reviewFile,JSON.stringify(review));command('finalize',reviewFile);
  const receipt=JSON.parse(await readFile(join(dir,'delivery-receipt.json')));
- assert.equal(receipt.status,'PASS');assert.equal(receipt.timing.scope,'request-start');
+ assert.equal(receipt.status,'PASS');assert.equal(receipt.timing.scope,'timer-start; request start not verified');
+ assert.equal(receipt.timing.scopeVerified,false);assert.equal(receipt.timing.targetMet,null);
  assert.ok(receipt.timing.elapsedSeconds>=receipt.timing.runs[0].machineSeconds);
  assert.ok(!(await readFile(join(dir,'page.html'),'utf8')).includes('<script'));
  // Configuration-only revision keeps all source facts and reuses sealed, unchanged groups.

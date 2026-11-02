@@ -47,6 +47,26 @@ def traits_of(row: dict, label: str, issues: list[str]) -> dict:
     return {key: traits[key] for key in TRAITS}
 
 
+def valid_substitution(source_item: dict, reviewed_item: dict) -> bool:
+    """Require a resolved noncritical source decision and independent review evidence."""
+    source = source_item.get("substitution")
+    review = reviewed_item.get("substitution")
+    if not isinstance(source, dict) or not isinstance(review, dict):
+        return False
+    if source_item.get("businessCritical") is True or source_item.get("exactRequired") is True:
+        return False
+    if (source.get("status") != "resolved" or source.get("importance") != "noncritical"
+        or source.get("businessCritical") is not False or source.get("exactRequired") is not False):
+        return False
+    for key in ("description", "reason"):
+        if not isinstance(source.get(key), str) or not source[key].strip():
+            return False
+    for key in ("description", "reason", "renderedEvidence"):
+        if not isinstance(review.get(key), str) or not review[key].strip():
+            return False
+    return review["description"] == source["description"]
+
+
 def audit(source: Path, observation: dict, independent_scan: dict,
           review: dict, screenshots: dict[str, Path]) -> dict:
     issues: list[str] = []
@@ -87,7 +107,12 @@ def audit(source: Path, observation: dict, independent_scan: dict,
             if not variant.get("component") or not variant.get("variantReason") or not variant.get("officialEvidence"):
                 issues.append(f"component_variant_reason_missing:{identifier}")
             rendered = result.get("renderedTraits")
-            if not isinstance(rendered, dict) or any(rendered.get(key) != source_traits.get(key) for key in TRAITS):
+            complete = isinstance(rendered, dict) and all(isinstance(rendered.get(key), str) and rendered[key] for key in TRAITS)
+            substitution_declared = "substitution" in item or "substitution" in result
+            if substitution_declared and not valid_substitution(item, result):
+                issues.append(f"substitution_unverified:{identifier}")
+            if not complete or (any(rendered.get(key) != source_traits.get(key) for key in TRAITS)
+                                and not (substitution_declared and valid_substitution(item, result))):
                 issues.append(f"rendered_variant_mismatch:{identifier}")
             if not batched:
                 checks = result.get("checks")

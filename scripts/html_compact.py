@@ -31,6 +31,7 @@ def require_full_tree(content):
         for children in value.get('slots', {}).values():
             for child in children: node(child)
         if 'template' in value: node(value['template'])
+        if 'tabLabel' in value: node(value['tabLabel'])
         for column in value.get('props', {}).get('columns', []):
             if 'cell' in column: node(column['cell'])
 
@@ -58,6 +59,14 @@ def delta_review(document, plan):
         raise ValueError('review_group_unknown_or_duplicate')
     reusable = set(plan.get('reusableGroups', []))
     if set(confirmed) | reusable != set(plan['groups']): raise ValueError('review_group_confirmation_required')
+    substitutions = document.get('substitutions', {})
+    if not isinstance(substitutions, dict):
+        raise ValueError('substitution_reviews_must_be_object')
+    known_items = {item['id']: item for group in plan['groups'].values() for item in group['items']}
+    if set(substitutions) - set(known_items):
+        raise ValueError('substitution_review_unknown')
+    if any(not known_items[key].get('substitution') for key in substitutions):
+        raise ValueError('substitution_source_not_declared')
     items = []; rules = []
     for key, group in plan['groups'].items():
         for item in group['items']:
@@ -65,7 +74,18 @@ def delta_review(document, plan):
             if item['decision'] == 'exclude': items.append({'id': identifier, 'exclusionStatus': 'PASS'})
             else:
                 rule = group['rules'][identifier]; rules.append(rule)
-                items.append({'id': identifier, 'variantRef': rule['id'], 'renderedTraits': item['traits']})
+                if item.get('substitution') is not None:
+                    actual = substitutions.get(identifier)
+                    if not isinstance(actual, dict) or not isinstance(actual.get('renderedTraits'), dict):
+                        raise ValueError('substitution_review_required:' + identifier)
+                    evidence = {name: actual.get(name) for name in ('description', 'reason', 'renderedEvidence')}
+                    if any(not isinstance(value, str) or not value.strip() for value in evidence.values()):
+                        raise ValueError('substitution_review_evidence_required:' + identifier)
+                    items.append({'id': identifier, 'variantRef': rule['id'],
+                                  'renderedTraits': deepcopy(actual['renderedTraits']),
+                                  'substitution': evidence})
+                else:
+                    items.append({'id': identifier, 'variantRef': rule['id'], 'renderedTraits': item['traits']})
     relations = document.get('relationChecks', [])
     return {**document, 'reviewMode': 'batched-v2', 'items': items, 'variantRules': rules,
             'stageChecks': {key: 'PASS' for key in document['checkedStages']}, 'relationChecks': relations,

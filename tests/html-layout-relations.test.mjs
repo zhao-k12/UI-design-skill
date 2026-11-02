@@ -6,6 +6,22 @@ import {resolve} from 'node:path';
 import {access,readFile} from 'node:fs/promises';
 import {measureLayoutRelations} from '../adapters/html/layout-relations.mjs';
 
+test('declared minimum spacing detects a toolbar touching its table',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage();
+  await page.setContent('<div data-tree-node="toolbar" style="height:32px"></div><div data-tree-node="table" style="height:40px"></div>');
+  const rule={id:'toolbar-spacing',kind:'minimum-gap',first:'toolbar',second:'table',axis:'vertical',minimum:'xs'};
+  const touching=await page.evaluate(measureLayoutRelations,[rule]);
+  assert.equal(touching.status,'FAIL');
+  assert.ok(touching.results[0].issues.includes('minimum_gap_not_met'));
+  await page.locator('[data-tree-node="table"]').evaluate(n=>n.style.marginTop='8px');
+  const spaced=await page.evaluate(measureLayoutRelations,[rule]);
+  assert.equal(spaced.status,'PASS');
+  assert.equal(spaced.results[0].measurement.gap,8);
+ }finally{await browser.close();}
+});
+
 test('same browser measurement rejects broken surfaces, shared edges and overflowing Card toolbars',async()=>{
  const browser=await chromium.launch({headless:true});
  try{

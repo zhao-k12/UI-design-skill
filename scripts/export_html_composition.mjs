@@ -28,7 +28,7 @@ for(const name of ir.requiredIcons){
   if(sha(bytes)!==item.svgSha256)throw Error(`icon_hash_mismatch:${name}`);
   iconHashes[name]=item.svgSha256;
   const url=`url("data:image/svg+xml;base64,${bytes.toString('base64')}")`;
-  icons+=`.remix-${name}{mask-image:${url};-webkit-mask-image:${url}}`;
+  icons+=`:root{--remix-${name}:${url}}.remix-${name}{mask-image:${url};-webkit-mask-image:${url}}`;
 }
 const bundle=await build({entryPoints:[join(root,'adapters/html/composition.mjs')],bundle:true,write:false,platform:'browser',format:'esm',minify:true,define:{'process.env.NODE_ENV':'"production"'}});
 const cssPath=join(root,'node_modules/view-ui-plus/dist/styles/viewuiplus.css');
@@ -39,11 +39,19 @@ for(const [,,asset] of [...css.matchAll(/url\((['"]?)([^)'"\s]+)\1\)/g)]){
   const mime={'.woff2':'font/woff2','.woff':'font/woff','.ttf':'font/ttf','.svg':'image/svg+xml'}[extname(file)]||'application/octet-stream';
   css=css.replaceAll(asset,`data:${mime};base64,${(await readFile(file)).toString('base64')}`);
 }
-const base=`html,body{margin:0}#app{min-height:100vh}.remix-custom{display:inline-block;width:1em;height:1em;background:currentColor;mask-size:contain;mask-repeat:no-repeat;-webkit-mask-size:contain;-webkit-mask-repeat:no-repeat}`;
+const moduleCss=await readFile(join(root,'adapters/html/confirmed-modules.css'),'utf8');
+const assets={},assetHashes={};
+for(const name of ir.requiredAssets||[]){
+  if(name!=='default-logo')throw Error(`unknown_design_asset:${name}`);
+  const bytes=await readFile(join(root,'assets/default-logo.svg'));
+  assetHashes[name]=sha(bytes);
+  assets[name]=`data:image/svg+xml;base64,${bytes.toString('base64')}`;
+}
+const base=`html,body{margin:0}#app{min-height:100vh}.remix-custom{display:inline-block;width:1em;height:1em;background:currentColor;mask-size:contain;mask-repeat:no-repeat;-webkit-mask-size:contain;-webkit-mask-repeat:no-repeat}${moduleCss}`;
 const reviewCss=`.composition-skeleton [data-tree-node]{outline:1px dashed #94a3b8;position:relative;background-color:#dbeafe}.composition-skeleton [data-component="Table"]{background-color:#bbf7d0}.composition-skeleton [data-component="Button"],.composition-skeleton [data-component="Input"],.composition-skeleton [data-component="Select"]{background-color:#fde68a}.composition-skeleton [data-tree-node]::before{content:attr(data-component);position:absolute;top:0;right:0;z-index:10;font-size:10px;line-height:12px;background:#e0e7ff;color:#17233d;pointer-events:none}`;
 const title=String(ir.title).replaceAll('&','&amp;').replaceAll('<','&lt;');
 const preview=join(out,'stage-preview.html'),final=join(out,'page.html');
-await writeFile(preview,`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>${css}</style><style>${base}${icons}${reviewCss}</style></head><body><div id="app"></div><script id="design-ir" type="application/json">${irBytes.toString().replaceAll('<','\\u003c')}</script><script type="module">${bundle.outputFiles[0].text.replaceAll('</script','<\\/script')}</script></body></html>`);
+await writeFile(preview,`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>${css}</style><style>${base}${icons}${reviewCss}</style></head><body><div id="app"></div><script>window.__designAssets=${JSON.stringify(assets).replaceAll('<','\\u003c')}</script><script id="design-ir" type="application/json">${irBytes.toString().replaceAll('<','\\u003c')}</script><script type="module">${bundle.outputFiles[0].text.replaceAll('</script','<\\/script')}</script></body></html>`);
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:Number(process.argv[4])||1440,height:Number(process.argv[5])||1000}});
 const errors=[],stages={};let layoutSizing=[],reviewSheetSha256;page.on('pageerror',e=>errors.push(String(e)));
@@ -116,7 +124,7 @@ const qa={status:Object.values(stages).length===3&&Object.values(stages).every(s
   officialSourceSha256:sha(JSON.stringify(ir.officialSource)),
   snapshotSha256:sha(await readFile(join(root,'adapters/html/static-snapshot.mjs'))),
   relationCheckerSha256:sha(await readFile(join(root,'adapters/html/layout-relations.mjs'))),
-  adapterSha256:sha(await readFile(join(root,'adapters/html/composition.mjs'))),exporterSha256:sha(await readFile(new URL(import.meta.url))),iconHashes,layoutSizing,stages,reviewSheetSha256,
+  adapterSha256:sha(await readFile(join(root,'adapters/html/composition.mjs'))),exporterSha256:sha(await readFile(new URL(import.meta.url))),moduleCssSha256:sha(moduleCss),assetHashes,iconHashes,layoutSizing,stages,reviewSheetSha256,
   scope:'Runtime, declared layout geometry/surfaces and native Card toolbar checks; original-image batched visual review still required.'};
 if(qa.status==='PASS')qa.pageSha256=sha(await readFile(final));
 await writeFile(join(out,'qa.json'),JSON.stringify(qa,null,2));

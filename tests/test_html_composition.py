@@ -41,6 +41,26 @@ class CompositionTests(unittest.TestCase):
         result=self.run_compile()
         self.assertEqual(result['layout_tree']['nodes']['shell']['minHeight'],'viewport')
 
+    def test_navigation_landmark_accepts_only_official_link_current(self):
+        self.content['root']={'id':'nav','kind':'container','semantic':'navigation','ariaLabel':'快捷导航',
+            'sourceIds':['action'],'children':[{'id':'link','kind':'component','component':'Link',
+            'current':True,'props':{'strong':True},'children':[{'id':'text','kind':'text','value':'首页'}]}]}
+        result=self.run_compile()
+        self.assertEqual(result['ui_ir']['root']['semantic'],'navigation')
+        self.assertTrue(result['ui_ir']['root']['children'][0]['current'])
+        self.content['root']['children'][0]['component']='Button'
+        with self.assertRaisesRegex(ValueError,'invalid_current_link'):self.run_compile()
+        self.content['root']['children'][0]['component']='Link'
+        self.content['root']['ariaLabel']=''
+        with self.assertRaisesRegex(ValueError,'invalid_navigation_label'):self.run_compile()
+
+    def test_minimum_gap_requires_valid_axis_and_spacing_token(self):
+        self.content['layoutRelations']=[{'id':'gap','kind':'minimum-gap','first':'page','second':'label',
+            'axis':'vertical','minimum':'xs','sourceEvidence':'操作区与表头留白'}]
+        self.assertEqual(self.run_compile()['ui_ir']['layoutRelations'][0]['minimum'],'xs')
+        self.content['layoutRelations'][0]['minimum']=8
+        with self.assertRaisesRegex(ValueError,'layout_relation_minimum_gap_invalid'):self.run_compile()
+
     def test_shell_cannot_skip_surface_and_boundary_contracts(self):
         self.content['root']={'id':'page','kind':'component','component':'Layout','sourceIds':['action'],'children':[
             {'id':'header','kind':'component','component':'Header','children':[

@@ -14,7 +14,7 @@ from uuid import uuid4
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'core/pipeline'))
-from html_composition import compile_tree, save, digest
+from html_composition import compile_tree, save, digest, table_column_coverage
 from audit_prototype_observations import audit
 from html_compact import require_full_tree, delta_review, fingerprint, merge_patch
 
@@ -89,8 +89,69 @@ def start(task):
     task.mkdir(parents=True,exist_ok=True)
     timing=task/'timing.json'
     if timing.exists():return read(timing)
-    value={'startedAt':now(),'scope':'request-start','targetSeconds':300,'runs':[]}
+    # Starting a timer does not prove it coincided with the user request.
+    value={'startedAt':now(),'scope':'timer-start; request start not verified','targetSeconds':300,'runs':[],
+           'tableColumnReviewPolicy':'flat-titled-v1'}
     save(timing,value);return value
+
+def require_flat_table_coverage(timing, root, observed, scanned):
+    """Require source inventories for new flat, titled tables at publication.
+
+    Old tasks lacking this policy retain compatibility. Untitled and grouped
+    tables need a separate visual review and are deliberately not claimed by
+    this simple column check.
+    """
+    if timing.get('tableColumnReviewPolicy') != 'flat-titled-v1':
+        return
+    nodes={}
+    def visit(node):
+        nodes[node['id']]=node
+        for child in node.get('children',[]): visit(child)
+        for children in node.get('slots',{}).values():
+            for child in children: visit(child)
+        if 'template' in node: visit(node['template'])
+        if node.get('component')=='Table':
+            for col in node.get('props',{}).get('columns',[]):
+                if isinstance(col,dict) and 'cell' in col: visit(col['cell'])
+    visit(root)
+    eligible=set()
+    for identifier,node in nodes.items():
+        if node.get('kind')!='component' or node.get('component')!='Table': continue
+        columns=node.get('props',{}).get('columns',[])
+        if (isinstance(columns,list) and all(isinstance(col,dict) for col in columns)
+            and not any('children' in col for col in columns)
+            and any(isinstance(col.get('title'),str) and col['title'].strip() for col in columns)):
+            eligible.add(identifier)
+    coverage=table_column_coverage(nodes,observed,scanned)
+    missing=sorted(eligible-set(coverage['checkedTables']))
+    if missing: raise ValueError('flat_table_source_columns_unchecked:'+','.join(missing))
+
+def complete_timing(timing, completed_at, rendered_at):
+    """Finish an unverified timer; preserve legacy scope labels for readers."""
+    timing['completedAt']=completed_at
+    timing['elapsedSeconds']=(datetime.fromisoformat(completed_at)-datetime.fromisoformat(timing['startedAt'])).total_seconds()
+    timing['reviewAndToolWaitSeconds']=(datetime.fromisoformat(completed_at)-datetime.fromisoformat(rendered_at)).total_seconds()
+    # Older files labelled request-start also lacked verification.
+    timing['scopeVerified']=False
+    timing['elapsedMeaning']='lower bound from timer start; request start not verified'
+    target=timing.get('targetSeconds',300)
+    # A lower bound above the target proves failure; a shorter one cannot
+    # establish success because work may have occurred before the timer.
+    timing['targetMet']=False if timing['elapsedSeconds']>target else None
+    return timing
+
+def record_timing_event(task, event_name):
+    """Record only an event explicitly reported by the caller, at call time."""
+    if not isinstance(event_name,str) or not event_name.strip() or len(event_name.strip())>120:
+        raise ValueError('timing_event_name_required')
+    timing_path=task/'timing.json'
+    if not timing_path.is_file():raise ValueError('timing_not_started')
+    timing=read(timing_path)
+    events=timing.setdefault('events',[])
+    if not isinstance(events,list):raise ValueError('timing_events_invalid')
+    event={'name':event_name.strip(),'at':now()}
+    events.append(event);save(timing_path,timing)
+    return event
 
 def review_plan(observed, content, rendered):
     nodes={}
@@ -138,7 +199,7 @@ def reusable_groups(previous, plan, rendered, source_hash):
         if receipt['sourceSha256']!=source_hash or receipt['planSha256']!=digest(old/'review-plan.json'):return []
         if receipt['reviewSha256']!=digest(old/'visual-review.json') or receipt['qaSha256']!=digest(old/'html/qa.json'):return []
         if any(digest(old/'html'/(stage+'.png'))!=qa['stages'][stage]['screenshotSha256'] for stage in ('skeleton','component','delivery')):return []
-        runtime=('adapterSha256','exporterSha256','officialSourceSha256','officialCssSha256','snapshotSha256','relationCheckerSha256','iconHashes')
+        runtime=('adapterSha256','exporterSha256','officialSourceSha256','officialCssSha256','snapshotSha256','relationCheckerSha256','moduleCssSha256','assetHashes','iconHashes')
         if any(qa.get(key)!=rendered.get(key) for key in runtime):return []
         if read(old/'source-visual-qa.json').get('status')!='PASS':return []
         return [key for key,group in plan['groups'].items()
@@ -199,30 +260,37 @@ def finalize(review_path,task):
         raise ValueError('layout_relation_visual_confirmation_required')
     if plan['reusableGroups'] and not set(plan['reusableGroups']).issubset(reusable_groups(plan['reuseFrom'],plan,rendered,active['sourceSha256'])):
         raise ValueError('prior_review_evidence_changed')
-    observed=read(run/'source-observations.json');expanded=expand_review(delta_review(review,plan),observed,shots)
+    observed=read(run/'source-observations.json');scanned=read(run/'independent-scan.json')
+    timing=read(task/'timing.json')
+    if timing.get('tableColumnReviewPolicy') == 'flat-titled-v1':
+        ir_path=run/'core/ui_ir.json'
+        if digest(ir_path)!=rendered.get('uiIrSha256'): raise ValueError('rendered_tree_changed')
+        require_flat_table_coverage(timing,read(ir_path)['root'],observed,scanned)
+    expanded=expand_review(delta_review(review,plan),observed,shots)
     save(run/'visual-review.json',expanded)
-    result=audit(Path(active['source']),observed,read(run/'independent-scan.json'),expanded,shots)
+    result=audit(Path(active['source']),observed,scanned,expanded,shots)
     save(run/'source-visual-qa.json',result)
     if result['status']!='PASS':raise ValueError('visual_review_failed:'+','.join(result['issues']))
     save(run/'review-receipt.json',{'sourceSha256':active['sourceSha256'],'planSha256':digest(run/'review-plan.json'),
          'reviewSha256':digest(run/'visual-review.json'),'qaSha256':digest(run/'html/qa.json')})
     shutil.copyfile(run/'html/page.html',task/'page.html')
     shutil.copyfile(run/'html/delivery.png',task/'delivery.png')
-    timing=read(task/'timing.json');timing['completedAt']=now()
-    timing['elapsedSeconds']=(datetime.fromisoformat(timing['completedAt'])-datetime.fromisoformat(timing['startedAt'])).total_seconds()
-    timing['reviewAndToolWaitSeconds']=(datetime.fromisoformat(timing['completedAt'])-datetime.fromisoformat(active['renderedAt'])).total_seconds()
-    timing['targetMet']=timing['elapsedSeconds']<=300 if timing['scope']=='request-start' else None
+    timing=complete_timing(read(task/'timing.json'),now(),active['renderedAt'])
     save(task/'timing.json',timing)
     save(task/'delivery-receipt.json',{'status':'PASS','runId':active['runId'],'sourceSha256':active['sourceSha256'],
          'reviewInputSha256':digest(review_path),'pageSha256':digest(task/'page.html'),'timing':timing})
     print(json.dumps({'status':'PASS','page':str(task/'page.html'),'timing':timing},ensure_ascii=False))
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('mode',choices=['start','render','revise','finalize'])
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('mode',choices=['start','event','render','revise','finalize'])
     parser.add_argument('--task-dir',type=Path,required=True);parser.add_argument('--input',type=Path)
+    parser.add_argument('--event-name')
     args=parser.parse_args();task=args.task_dir.resolve()
     if not task.is_relative_to((ROOT/'artifacts').resolve()):parser.error('task_directory_must_be_in_artifacts')
     if args.mode=='start':start(task);print('Timing started; target 300 seconds, no timeout delivery shortcut.')
+    elif args.mode=='event':
+        if not args.event_name:parser.error('--event-name required')
+        print(json.dumps(record_timing_event(task,args.event_name),ensure_ascii=False))
     else:
         if not args.input:parser.error('--input required')
         if args.mode=='render':render(args.input.resolve(),task)
