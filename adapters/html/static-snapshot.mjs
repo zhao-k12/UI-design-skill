@@ -28,6 +28,26 @@ export async function staticSnapshot(page) {
     const app = copy.querySelector('#app');
     if (!app) throw new Error('static_snapshot_app_missing');
     app.setAttribute('data-static-delivery', '');
+    // The live component synchronizes its separate header with JavaScript.
+    // A static snapshot has no runtime, so put the main header in the same
+    // scroll container as its body; official fixed-column overlays stay put.
+    const responsiveFixedRules = [];
+    for (const table of app.querySelectorAll('.ivu-table')) {
+      if (!table.querySelector(':scope > .ivu-table-fixed-right, :scope > .ivu-table-fixed')) continue;
+      const header=table.querySelector(':scope > .ivu-table-header');
+      const body=table.querySelector(':scope > .ivu-table-body');
+      if(header && body) {
+        const width = parseFloat(header.querySelector('table')?.style.width);
+        body.prepend(header);
+        const wrapper = table.parentElement;
+        if (wrapper && Number.isFinite(width) && width > 0) {
+          const id = responsiveFixedRules.length;
+          wrapper.setAttribute('data-static-table-wrapper', String(id));
+          const scope = `[data-static-table-wrapper="${id}"]`;
+          responsiveFixedRules.push(`${scope}{container:static-table-${id} / inline-size}${scope} .ivu-table-body>.ivu-table-header,${scope} .ivu-table-body>.ivu-table-header>table,${scope} .ivu-table-body>table{width:100%!important;min-width:${width}px}@container static-table-${id} (min-width:${width}px){${scope} .ivu-table-fixed-right{display:none!important}${scope} .ivu-table-body .ivu-table-hidden{visibility:visible!important}}`);
+        }
+      }
+    }
     for (const node of app.querySelectorAll('button,input,select,textarea,a,[tabindex]')) {
       node.setAttribute('tabindex', '-1');
       if (node.tagName === 'A') node.removeAttribute('href');
@@ -38,7 +58,7 @@ export async function staticSnapshot(page) {
     frozen.setAttribute('data-static-interaction-freeze', '');
     // Freeze hover states throughout the static page, while allowing the
     // table scroll container itself to receive wheel and scrollbar events.
-    frozen.textContent = '[data-static-delivery],[data-static-delivery] *{pointer-events:none!important}[data-static-delivery] .ivu-table{pointer-events:auto!important}';
+    frozen.textContent = '[data-static-delivery],[data-static-delivery] *{pointer-events:none!important}[data-static-delivery] [data-design-role="page-shell"],[data-static-delivery] .ivu-table,[data-static-delivery] .ivu-table-body{pointer-events:auto!important}[data-static-delivery] .ivu-table-body>.ivu-table-header{overflow:visible;width:max-content}' + responsiveFixedRules.join('');
     copy.querySelector('head').append(frozen);
     return '<!doctype html>\n' + copy.outerHTML;
   });

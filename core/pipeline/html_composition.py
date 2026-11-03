@@ -15,7 +15,7 @@ VERSION = 'html-composition-v1'
 SPACING = {'none': 0, 'xs': 8, 'sm': 12, 'md': 16, 'lg': 24}
 DESIGN_ROLES = {'page-shell', 'sidebar', 'brand', 'topbar', 'topbar-tool', 'topbar-tool-large', 'topbar-user',
                 'breadcrumb', 'search-panel', 'search-grid', 'search-field', 'search-label', 'search-actions',
-                'table-panel', 'table-toolbar', 'table-actions', 'row-actions', 'row-action', 'tab-label', 'tab-count', 'pagination'}
+                'table-panel', 'table-toolbar', 'table-actions', 'toolbar-notice', 'light-tag', 'row-actions', 'row-actions-left', 'row-action', 'tab-label', 'tab-count', 'pagination'}
 
 
 def validate_project_logo(uri):

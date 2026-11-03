@@ -102,7 +102,7 @@ window.__prepareLayout=async()=>{
         const dataCell=row.children[index]?.querySelector('.ivu-table-cell');if(!dataCell)continue;
         const buttons=[...dataCell.querySelectorAll('button')];
         const avatar=dataCell.querySelector('.ivu-avatar');
-        const actions=dataCell.querySelector('[data-design-role="row-actions"]');
+        const actions=dataCell.querySelector('[data-design-role="row-actions"],[data-design-role="row-actions-left"]');
         if(actions){
           const children=[...actions.children],gap=parseFloat(getComputedStyle(actions).gap)||0;
           needed=Math.max(needed,children.reduce((n,b)=>n+b.getBoundingClientRect().width,0)+gap*Math.max(0,children.length-1));
@@ -112,7 +112,7 @@ window.__prepareLayout=async()=>{
         }else if(avatar)needed=Math.max(needed,avatar.getBoundingClientRect().width);
         else if(!col.ellipsis){context.font=getComputedStyle(dataCell).font;needed=Math.max(needed,context.measureText(dataCell.innerText.trim()).width);}
       }
-      needed=Math.ceil(needed+parseFloat(style.paddingLeft)+parseFloat(style.paddingRight)+2+(singleAction&&index===node.props.columns.length-1?14:0));
+      needed=Math.ceil(needed+parseFloat(style.paddingLeft)+parseFloat(style.paddingRight)+(col.cell?.designRole==='row-actions-left'?0:2)+(singleAction&&index===node.props.columns.length-1?14:0));
       const key=col.key??col.type;(fits[id]??={})[key]=Math.max(fits[id][key]||0,needed);
       entry.columns.push({key,measuredMinimum:needed,declaredWidth:col.width??col.minWidth??null});
     });
@@ -132,7 +132,7 @@ window.__prepareLayout=async()=>{
   for(const entry of report){
     const table=document.querySelector(`[data-tree-node="${CSS.escape(entry.id)}"]`);
     if(!table?.closest('[data-design-role="table-panel"]'))continue;
-    const actionGroups=[...table.querySelectorAll('.ivu-table-body tr td:last-child [data-design-role="row-actions"]')];
+    const actionGroups=[...table.querySelectorAll('.ivu-table-body tr td:last-child [data-design-role="row-actions"],.ivu-table-body tr td:last-child [data-design-role="row-actions-left"]')];
     const actionWidth=Math.max(0,...actionGroups.map(actions=>{const children=[...actions.children];return children.reduce((n,e)=>n+e.getBoundingClientRect().width,0)+Math.max(0,children.length-1)*(parseFloat(getComputedStyle(actions).gap)||0)}));
     const q=`[data-tree-node="${CSS.escape(entry.id)}"]`;
     if(entry.singleAction)css+=`${q} .ivu-table-body td:last-child .ivu-table-cell,${q} .ivu-table-header th:last-child .ivu-table-cell{padding-right:32px}${q} .ivu-table-header th:last-child .ivu-table-cell{display:flex;justify-content:flex-end}${q} .ivu-table-header th:last-child .ivu-table-cell>span:first-child{width:${actionWidth}px;flex:none;text-align:center}`;
@@ -141,7 +141,7 @@ window.__prepareLayout=async()=>{
     const fixedLast=actionGroups.length>0&&mins.length>1;
     const tracks=mins.map((n,i)=>fixedLast&&i===mins.length-1?`${n}px`:`calc((100% - ${sum}px) / ${mins.length-(fixedLast?1:0)} + ${n}px)`).join(' ');
     css+=`${q} .ivu-table{overflow-x:auto}${q} .ivu-table-header,${q} .ivu-table-body{overflow:visible!important;min-width:${sum}px}${q} .ivu-table-header table,${q} .ivu-table-body table,${q} thead,${q} tbody{display:block!important;width:100%!important;min-width:${sum}px}${q} colgroup{display:none}${q} .ivu-table-header tr,${q} .ivu-table-body tr{display:grid;width:100%;grid-template-columns:${tracks}}${q} .ivu-table-header th,${q} .ivu-table-body td{min-width:0}${q} .ivu-table-body td{display:flex;align-items:center}${q} .ivu-table-body td>.ivu-table-cell{width:100%}${q} .ivu-table:before,${q} .ivu-table:after{display:none!important}`;
-    if(fixedLast)css+=`${q} .ivu-table-header th:last-child .ivu-table-cell{display:flex;justify-content:flex-end}${q} .ivu-table-header th:last-child .ivu-table-cell>span:first-child{width:${actionWidth}px;flex:none;text-align:center}`;
+    if(fixedLast)css+=`${q} .ivu-table-header th:last-child .ivu-table-cell{display:flex;justify-content:${entry.singleAction?'flex-end':'flex-start'}}${q} .ivu-table-header th:last-child .ivu-table-cell>span:first-child{width:${actionWidth}px;flex:none;text-align:center}`;
   }
   let dynamic=document.querySelector('style[data-responsive-tables]');if(!dynamic){dynamic=document.createElement('style');dynamic.dataset.responsiveTables='';document.head.append(dynamic)}dynamic.textContent=css;
   window.__sizingReport=report;

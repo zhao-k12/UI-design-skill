@@ -230,7 +230,7 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         actual=json.loads(out.stdout)
         assert actual['logo']==32 and actual['logoLoaded']
         assert actual['fieldCount']==field_count and label in actual['text']
-        assert (actual['crumbTop'],actual['searchTop'],actual['tableGap'])==(12,44,16)
+        assert (actual['crumbTop'],actual['searchTop'],actual['tableGap'])==(0,44,16)
         assert actual['prevMask'].startswith('url(') and actual['downMask'].startswith('url(')
         assert actual['dateMask'].startswith('url(') and actual['dateBefore']=='none'
         assert actual['initial']==actual['after']

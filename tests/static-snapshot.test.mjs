@@ -29,3 +29,37 @@ test('delivery snapshot keeps visible state and text but cannot hover or run scr
     await browser.close();
   }
 });
+
+test('fixed table snapshot shares horizontal scroll and fills wide containers', async () => {
+  const browser = await chromium.launch({ headless: true });
+  try {
+    const page = await browser.newPage({ viewport: { width: 500, height: 400 } });
+    await page.setContent(`<!doctype html><html><head><style>
+      .ivu-table-wrapper{width:100%}.ivu-table{position:relative}.ivu-table-body{overflow-x:auto}
+      .ivu-table-fixed-right{position:absolute;right:0;top:0;width:100px}
+      .ivu-table-hidden{visibility:hidden}table{table-layout:fixed}
+      </style></head><body><div id="app"><div class="ivu-table-wrapper"><div class="ivu-table">
+      <div class="ivu-table-header"><table style="width:800px"><tr><th>标题</th><th class="ivu-table-hidden">操作</th></tr></table></div>
+      <div class="ivu-table-body"><table style="width:800px"><tr><td>内容</td><td class="ivu-table-hidden">详情</td></tr></table></div>
+      <div class="ivu-table-fixed-right">操作</div></div></div></div></body></html>`);
+    await page.setContent(await staticSnapshot(page));
+    const read = () => page.evaluate(() => {
+      const body = document.querySelector('.ivu-table-body');
+      return { overflow: body.scrollWidth - body.clientWidth,
+        headerWidth: body.querySelector('.ivu-table-header table').getBoundingClientRect().width,
+        tableWidth: body.querySelector(':scope > table').getBoundingClientRect().width,
+        overlay: getComputedStyle(document.querySelector('.ivu-table-fixed-right')).display,
+        action: getComputedStyle(body.querySelector('td:last-child')).visibility };
+    });
+    let narrow = await read();
+    assert.ok(narrow.overflow > 0);
+    assert.equal(narrow.headerWidth, narrow.tableWidth);
+    assert.notEqual(narrow.overlay, 'none');
+    await page.setViewportSize({ width: 1000, height: 400 });
+    const wide = await read();
+    assert.equal(wide.overflow, 0);
+    assert.equal(wide.headerWidth, wide.tableWidth);
+    assert.equal(wide.overlay, 'none');
+    assert.equal(wide.action, 'visible');
+  } finally { await browser.close(); }
+});

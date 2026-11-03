@@ -49,13 +49,13 @@ def light_tag(identifier, label, *, color='blue', source_ids=()):
     """Official View UI Plus light palette; explicit custom variants remain available."""
     identifier = _id(identifier)
     palette = {'pink','magenta','red','volcano','orange','yellow','gold','cyan',
-               'lime','green','blue','geekblue','purple'}
+               'lime','green','blue','geekblue','purple','default'}
     if color not in palette: raise ValueError('unsupported_light_tag_color')
-    return {'id':identifier,'kind':'component','component':'Tag','props':{'color':color},
+    return {'id':identifier,'kind':'component','component':'Tag','designRole':'light-tag','props':{'color':color},
             'sourceIds':list(source_ids),'children':[_text(identifier+'-label',label)]}
 
 
-def sidebar(prefix, entries, *, source_ids=(), active_name=None, open_names=(), brand_node=None):
+def sidebar(prefix, entries, *, source_ids=(), active_name=None, open_names=None, brand_node=None):
     """Menu entries require explicit name, label, optional icon and children."""
     prefix = _id(prefix)
     if not isinstance(entries, list): raise ValueError('menu_entries_required')
@@ -73,6 +73,14 @@ def sidebar(prefix, entries, *, source_ids=(), active_name=None, open_names=(), 
         return {'id': path, 'kind': 'component', 'component': 'MenuItem', 'props': {'name': item['name']}, 'children': title, 'sourceIds': list(item.get('sourceIds',()))}
     brand = deepcopy(brand_node) if brand_node is not None else {'id': prefix+'-default-logo', 'kind': 'asset', 'name': 'default-logo'}
     logo = _box(prefix+'-brand', 'brand', [brand], layout={'direction': 'horizontal', 'align': 'center'})
+    def active_ancestors(items):
+        for item in items:
+            if item.get('name') == active_name: return []
+            children = item.get('children') or []
+            found = active_ancestors(children)
+            if found is not None: return [item['name'], *found]
+        return None
+    if open_names is None: open_names = active_ancestors(entries) or []
     props = {'theme': 'light', 'width': '100%', 'openNames': list(open_names)}
     if active_name is not None: props['activeName'] = active_name
     menu = {'id': prefix+'-menu', 'kind': 'component', 'component': 'Menu', 'props': props,
@@ -153,14 +161,26 @@ def action_column(prefix, *, title='操作', key='actions', source_ids=()):
     repeat={'id':prefix+'-repeat','kind':'repeat','items':{'bind':'row.'+key},'template':item}
     return {'title':title,'key':key,'align':'center','cell':_box(prefix+'-cell','row-actions',[repeat],source_ids)}
 
+def toolbar_notice(prefix, text, *, source_ids=()):
+    prefix = _id(prefix)
+    return _box(prefix, 'toolbar-notice', [{'id':prefix+'-icon','kind':'icon','name':'information-line'},
+                _text(prefix+'-text', text)], source_ids, layout={'direction':'horizontal','align':'center'})
 
-def table_panel(prefix, columns, rows, *, source_ids=(), table_source_ids=(), page_source_ids=(), tabs=None, active_tab=None, buttons=(), page=True, equal_gaps=None):
+
+def table_panel(prefix, columns, rows, *, source_ids=(), table_source_ids=(), page_source_ids=(), tabs=None, active_tab=None, buttons=(), notice=None, page=True, equal_gaps=None):
     prefix = _id(prefix)
     if not isinstance(columns,list) or not isinstance(rows,list): raise ValueError('explicit_columns_and_rows_required')
+    columns = deepcopy(columns)
+    for col in columns:
+        cell = col.get('cell', {}) if isinstance(col, dict) else {}
+        values = [row.get(col.get('key')) for row in rows if isinstance(row, dict)]
+        if cell.get('designRole') == 'row-actions' and any(isinstance(v, list) and len(v) > 1 for v in values):
+            cell['designRole'] = 'row-actions-left'
     if equal_gaps is None:
         equal_gaps=bool(columns) and all(isinstance(col,dict) and not (col.get('width') or col.get('minWidth') or col.get('fitContent') is False or col.get('children')) for col in columns)
     if not isinstance(equal_gaps,bool): raise ValueError('equal_gaps_must_be_boolean')
     toolbar=[]
+    if notice is not None: toolbar.append(deepcopy(notice))
     if tabs is not None:
         if not isinstance(tabs,list): raise ValueError('tabs_must_be_list')
         if active_tab is not None and active_tab not in [item['name'] for item in tabs]:
