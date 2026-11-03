@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'core/pipeline'))
 sys.path.insert(0, str(ROOT / 'scripts'))
 from html_composition import compile_tree
-from confirmed_modules import sidebar, topbar, breadcrumb, search_panel, table_panel, page_shell, action_column, project_logo
+from confirmed_modules import sidebar, topbar, breadcrumb, search_panel, table_panel, page_shell, action_column, project_logo, light_tag
 
 
 @pytest.fixture
@@ -72,6 +72,13 @@ def test_confirmed_header_default_is_overridable():
     assert user['children'][0]['name']=='default-avatar'
     assert user['children'][1]['value']=='钱多多'
     assert topbar('other',username=None)['children'][1]['children'][-1]['designRole']=='topbar-tool'
+
+
+def test_light_tag_uses_official_palette_and_rejects_other_values():
+    assert light_tag('tag','标签')['props']['color']=='blue'
+    assert light_tag('tag','标签',color='green')['props']['color']=='green'
+    with pytest.raises(ValueError,match='unsupported_light_tag_color'):
+        light_tag('tag','标签',color='primary')
 
 
 def test_project_logo_rejects_external_svg_content(source_case):
@@ -138,8 +145,9 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
     logo_path.write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 20"><rect width="40" height="20" fill="#36a"/></svg>',encoding='utf-8')
     project_brand=project_logo('custom-brand',logo_path) if field_count==3 else None
     menu=sidebar('side', [{'name':'closed','label':'其他','icon':'apps-line','expandable':True},
-                         {'name':'group','label':label+'管理','icon':'settings-3-line','children':[{'name':'list','label':label+'列表'}]}],
-                 active_name='list', open_names=['group'], brand_node=project_brand)
+                         {'name':'group','label':label+'管理','icon':'settings-3-line','children':[{'name':'list','label':label+'列表'}]},
+                         {'name':'leaf','label':'独立入口','icon':'apps-line'}],
+                 active_name='leaf' if field_count==2 else 'list', open_names=['group'], brand_node=project_brand)
     header=topbar('header',username='测试用户')
     query=search_panel('search',fields)
     columns=[{'title':'编号','key':'id'}, {'title':'名称','key':'name'},
@@ -147,6 +155,8 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
     rows=[{'id':'A-1','name':label+'项目','remark':'可用','actions':[{'label':'详情','icon':'eye-line','tone':''},
                                   {'label':'删除','icon':'delete-bin-line','tone':'danger'}]},
           {'id':'A-2','name':label+'测试','remark':'示例备注内容','actions':[{'label':'详情','icon':'eye-line','tone':''}]}]
+    if field_count==2:
+        rows[0]['actions']=rows[0]['actions'][:1]
     table=table_panel('result',columns,rows,
                       tabs=[{'name':'all','label':'全部','count':12}] if with_tabs else None,
                       active_tab='all' if with_tabs else None,
@@ -194,8 +204,9 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         crumbTop:c.top-h.bottom,searchTop:q.top-h.bottom,tableGap:t.top-q.bottom,
         prevMask:getComputedStyle(prev).maskImage,downMask:getComputedStyle(down).maskImage,
         downOffset:(arrow.top+arrow.bottom-box.top-box.bottom)/2,
-        actionCounts:actionRows.map(r=>r.length),actionGap:actions[1].left-actions[0].right,
-        dangerColor:getComputedStyle(actionRows[0][1]).color,
+        actionCounts:actionRows.map(r=>r.length),actionGap:actions[1]?actions[1].left-actions[0].right:null,
+        dangerColor:actionRows[0][1]?getComputedStyle(actionRows[0][1]).color:null,
+        actionRight:document.querySelector('.ivu-table-body table').getBoundingClientRect().right-actions.at(-1).right,
         tableHeader:headerCell.height,tableRows:bodyRows.map(r=>r.getBoundingClientRect().height),
         columnWidths:[...document.querySelectorAll('.ivu-table-header th')].map(e=>e.getBoundingClientRect().width),
         rowColors:bodyRows.map(r=>getComputedStyle(r.querySelector('td')).backgroundColor),
@@ -204,14 +215,16 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         dateWidth:date.getBoundingClientRect().width,fieldWidth:document.querySelector('[data-design-role=search-field] .ivu-input-wrapper').getBoundingClientRect().width,
         dateMask:getComputedStyle(dateIcon).maskImage,dateBefore:getComputedStyle(dateIcon,'::before').content,
         menuArrows,toolbarBorder:getComputedStyle(toolbar).borderBottomWidth,buttonIconWidth:btnI.width,
+        activeIconColor:document.querySelector('.ivu-menu-item-active .remix-custom')?getComputedStyle(document.querySelector('.ivu-menu-item-active .remix-custom')).color:null,
         buttonCenter:((btnI.top+btnI.bottom)-(btnR.top+btnR.bottom))/2,rowOffsets,
         actionHeaderOffset:((lastHeader.left+lastHeader.right)-(actions[0].left+actions.at(-1).right))/2,
         pagerRight:panel.right-pageWrap.right,
         tabs:document.querySelectorAll('[data-component=Tabs]').length,
         badge:document.querySelector('[data-design-role=tab-count]')?.innerText||null,text:document.body.innerText}});
+        let leaf=p.locator('[data-tree-node=side-entry-2]'),initial=await leaf.evaluate(e=>[getComputedStyle(e).color,getComputedStyle(e).backgroundColor]),r=await leaf.boundingBox();await p.mouse.move(r.x+r.width/2,r.y+r.height/2);let after=await leaf.evaluate(e=>[getComputedStyle(e).color,getComputedStyle(e).backgroundColor]);
         await p.setViewportSize({width:2400,height:900});let wide=await p.evaluate(()=>{let panel=document.querySelector('[data-component=Table]').getBoundingClientRect(),table=document.querySelector('.ivu-table-body table').getBoundingClientRect();return {panel:panel.width,table:table.width}});
-        await p.setViewportSize({width:500,height:900});let narrow=await p.evaluate(()=>{let t=document.querySelector('[data-component=Table] .ivu-table');t.scrollLeft=100;return {overflow:t.scrollWidth>t.clientWidth,scroll:t.scrollLeft,header:document.querySelector('.ivu-table-header table').getBoundingClientRect().left,body:document.querySelector('.ivu-table-body table').getBoundingClientRect().left}});
-        console.log(JSON.stringify({...actual,wide,narrow}));await b.close()})()'''
+        await p.setViewportSize({width:500,height:900});let tr=await p.locator('[data-component=Table] .ivu-table').boundingBox();await p.mouse.move(tr.x+Math.min(50,tr.width/2),tr.y+20);await p.mouse.wheel(120,0);await p.waitForTimeout(100);let narrow=await p.evaluate(()=>{let t=document.querySelector('[data-component=Table] .ivu-table');return {overflow:t.scrollWidth>t.clientWidth,scroll:t.scrollLeft,header:document.querySelector('.ivu-table-header table').getBoundingClientRect().left,body:document.querySelector('.ivu-table-body table').getBoundingClientRect().left}});
+        console.log(JSON.stringify({...actual,wide,narrow,initial,after}));await b.close()})()'''
         out=subprocess.run(['node','-e',code,(tmp/'html/page.html').as_uri()],cwd=ROOT,check=True,
                            capture_output=True,text=True,encoding='utf-8',timeout=60)
         actual=json.loads(out.stdout)
@@ -220,6 +233,8 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         assert (actual['crumbTop'],actual['searchTop'],actual['tableGap'])==(12,44,16)
         assert actual['prevMask'].startswith('url(') and actual['downMask'].startswith('url(')
         assert actual['dateMask'].startswith('url(') and actual['dateBefore']=='none'
+        assert actual['initial']==actual['after']
+        if field_count==2: assert actual['activeIconColor']=='rgb(45, 140, 240)'
         assert abs(actual['dateWidth']-actual['fieldWidth']) <= 1
         assert abs(actual['wide']['table']-actual['wide']['panel']) <= 2
         assert actual['narrow']['overflow'] and actual['narrow']['scroll'] > 0
@@ -230,8 +245,10 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         assert actual['buttonIconWidth']==14
         assert max(map(abs, actual['rowOffsets'])) <= 1 and abs(actual['actionHeaderOffset']) <= 1
         assert abs(actual['downOffset']) <= 1
-        assert actual['actionCounts']==[2,1] and actual['actionGap']==16
-        assert actual['dangerColor']=='rgb(237, 64, 20)'
+        assert actual['actionCounts']==([1,1] if field_count==2 else [2,1])
+        assert abs(actual['actionRight']-(32 if field_count==2 else 18)) <= 1
+        if field_count!=2:
+            assert actual['actionGap']==16 and actual['dangerColor']=='rgb(237, 64, 20)'
         assert actual['tableHeader']==40 and actual['tableRows']==[48,48]
         sizing=json.loads((tmp/'html/qa.json').read_text(encoding='utf-8'))['layoutSizing'][0]
         assert 'equalGap' in sizing

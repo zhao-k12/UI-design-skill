@@ -36,8 +36,9 @@ export async function staticSnapshot(page) {
     // typography, borders and selected appearance remain untouched.
     const frozen = copy.ownerDocument.createElement('style');
     frozen.setAttribute('data-static-interaction-freeze', '');
-    // Keep scroll containers usable while freezing only interactive controls.
-    frozen.textContent = '[data-static-delivery] :is(button,input,select,textarea,a,[tabindex]){pointer-events:none!important}';
+    // Freeze hover states throughout the static page, while allowing the
+    // table scroll container itself to receive wheel and scrollbar events.
+    frozen.textContent = '[data-static-delivery],[data-static-delivery] *{pointer-events:none!important}[data-static-delivery] .ivu-table{pointer-events:auto!important}';
     copy.querySelector('head').append(frozen);
     return '<!doctype html>\n' + copy.outerHTML;
   });

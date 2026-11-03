@@ -45,6 +45,16 @@ def _button(identifier, label, icon=None, primary=False, source_ids=()):
     return node
 
 
+def light_tag(identifier, label, *, color='blue', source_ids=()):
+    """Official View UI Plus light palette; explicit custom variants remain available."""
+    identifier = _id(identifier)
+    palette = {'pink','magenta','red','volcano','orange','yellow','gold','cyan',
+               'lime','green','blue','geekblue','purple'}
+    if color not in palette: raise ValueError('unsupported_light_tag_color')
+    return {'id':identifier,'kind':'component','component':'Tag','props':{'color':color},
+            'sourceIds':list(source_ids),'children':[_text(identifier+'-label',label)]}
+
+
 def sidebar(prefix, entries, *, source_ids=(), active_name=None, open_names=(), brand_node=None):
     """Menu entries require explicit name, label, optional icon and children."""
     prefix = _id(prefix)

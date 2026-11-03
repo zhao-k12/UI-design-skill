@@ -89,6 +89,9 @@ window.__prepareLayout=async()=>{
       for(const child of [...(node.children||[]),...Object.values(node.slots||{}).flat(),...(node.template?[node.template]:[])]){const value=find(child);if(value)return value;}
     };
     const node=find(ir.root);if(!node||node.props?.columns?.some(col=>col.children))continue;
+    const groups=body.map(row=>row.lastElementChild?.querySelector('[data-design-role="row-actions"]'));
+    const singleAction=groups.length>0&&groups.every(group=>group&&group.children.length<=1)&&groups.some(group=>group.children.length===1);
+    if(singleAction)entry.singleAction=true;
     (node.props.columns||[]).forEach((col,index)=>{
       if(col.fitContent===false)return;
       const cell=headers[index]?.querySelector('.ivu-table-cell');if(!cell)return;
@@ -109,7 +112,7 @@ window.__prepareLayout=async()=>{
         }else if(avatar)needed=Math.max(needed,avatar.getBoundingClientRect().width);
         else if(!col.ellipsis){context.font=getComputedStyle(dataCell).font;needed=Math.max(needed,context.measureText(dataCell.innerText.trim()).width);}
       }
-      needed=Math.ceil(needed+parseFloat(style.paddingLeft)+parseFloat(style.paddingRight)+2);
+      needed=Math.ceil(needed+parseFloat(style.paddingLeft)+parseFloat(style.paddingRight)+2+(singleAction&&index===node.props.columns.length-1?14:0));
       const key=col.key??col.type;(fits[id]??={})[key]=Math.max(fits[id][key]||0,needed);
       entry.columns.push({key,measuredMinimum:needed,declaredWidth:col.width??col.minWidth??null});
     });
@@ -127,15 +130,16 @@ window.__prepareLayout=async()=>{
   // without a resize script or the pixel widths frozen by the official table.
   let css='';
   for(const entry of report){
-    if(!entry.equalGap)continue;
     const table=document.querySelector(`[data-tree-node="${CSS.escape(entry.id)}"]`);
     if(!table?.closest('[data-design-role="table-panel"]'))continue;
-    const mins=entry.columns.map(c=>c.measuredMinimum), sum=mins.reduce((a,b)=>a+b,0);
     const actionGroups=[...table.querySelectorAll('.ivu-table-body tr td:last-child [data-design-role="row-actions"]')];
     const actionWidth=Math.max(0,...actionGroups.map(actions=>{const children=[...actions.children];return children.reduce((n,e)=>n+e.getBoundingClientRect().width,0)+Math.max(0,children.length-1)*(parseFloat(getComputedStyle(actions).gap)||0)}));
+    const q=`[data-tree-node="${CSS.escape(entry.id)}"]`;
+    if(entry.singleAction)css+=`${q} .ivu-table-body td:last-child .ivu-table-cell,${q} .ivu-table-header th:last-child .ivu-table-cell{padding-right:32px}${q} .ivu-table-header th:last-child .ivu-table-cell{display:flex;justify-content:flex-end}${q} .ivu-table-header th:last-child .ivu-table-cell>span:first-child{width:${actionWidth}px;flex:none;text-align:center}`;
+    if(!entry.equalGap)continue;
+    const mins=entry.columns.map(c=>c.measuredMinimum), sum=mins.reduce((a,b)=>a+b,0);
     const fixedLast=actionGroups.length>0&&mins.length>1;
     const tracks=mins.map((n,i)=>fixedLast&&i===mins.length-1?`${n}px`:`calc((100% - ${sum}px) / ${mins.length-(fixedLast?1:0)} + ${n}px)`).join(' ');
-    const q=`[data-tree-node="${CSS.escape(entry.id)}"]`;
     css+=`${q} .ivu-table{overflow-x:auto}${q} .ivu-table-header,${q} .ivu-table-body{overflow:visible!important;min-width:${sum}px}${q} .ivu-table-header table,${q} .ivu-table-body table,${q} thead,${q} tbody{display:block!important;width:100%!important;min-width:${sum}px}${q} colgroup{display:none}${q} .ivu-table-header tr,${q} .ivu-table-body tr{display:grid;width:100%;grid-template-columns:${tracks}}${q} .ivu-table-header th,${q} .ivu-table-body td{min-width:0}${q} .ivu-table-body td{display:flex;align-items:center}${q} .ivu-table-body td>.ivu-table-cell{width:100%}${q} .ivu-table:before,${q} .ivu-table:after{display:none!important}`;
     if(fixedLast)css+=`${q} .ivu-table-header th:last-child .ivu-table-cell{display:flex;justify-content:flex-end}${q} .ivu-table-header th:last-child .ivu-table-cell>span:first-child{width:${actionWidth}px;flex:none;text-align:center}`;
   }
