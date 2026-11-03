@@ -66,6 +66,14 @@ def test_selection_column_keeps_caller_width():
     assert table['props']['columns'][0]['width']==55
 
 
+def test_confirmed_header_default_is_overridable():
+    default=topbar('header')
+    user=default['children'][1]['children'][-1]
+    assert user['children'][0]['name']=='default-avatar'
+    assert user['children'][1]['value']=='钱多多'
+    assert topbar('other',username=None)['children'][1]['children'][-1]['designRole']=='topbar-tool'
+
+
 def test_project_logo_rejects_external_svg_content(source_case):
     source, sha, observation, scan = source_case
     path=source.parent/'unsafe.svg'
@@ -125,10 +133,12 @@ def test_roles_render_in_real_exporter(source_case, label, with_tabs):
 def test_module_builders_export_distinct_configurations(source_case, label, field_count, with_tabs):
     source, sha, observation, scan = source_case
     fields=[{'label':label+str(i), 'component':'Input', 'props':{'placeholder':'请输入'}} for i in range(field_count)]
+    fields[-1]={'label':label+'日期','component':'DatePicker','props':{'type':'daterange','placeholder':'请选择日期'}}
     logo_path=source.parent/'project.svg'
     logo_path.write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 20"><rect width="40" height="20" fill="#36a"/></svg>',encoding='utf-8')
     project_brand=project_logo('custom-brand',logo_path) if field_count==3 else None
-    menu=sidebar('side', [{'name':'group','label':label+'管理','children':[{'name':'list','label':label+'列表'}]}],
+    menu=sidebar('side', [{'name':'closed','label':'其他','icon':'apps-line','expandable':True},
+                         {'name':'group','label':label+'管理','icon':'settings-3-line','children':[{'name':'list','label':label+'列表'}]}],
                  active_name='list', open_names=['group'], brand_node=project_brand)
     header=topbar('header',username='测试用户')
     query=search_panel('search',fields)
@@ -140,13 +150,13 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
     table=table_panel('result',columns,rows,
                       tabs=[{'name':'all','label':'全部','count':12}] if with_tabs else None,
                       active_tab='all' if with_tabs else None,
-                      buttons=[{'label':'新增','icon':'add-line','primary':True}],
+                      buttons=[{'label':'新增','icon':'add-large-line','primary':True}],
                       page={'modelValue':1,'pageSize':10,'total':100,'showSizer':True})
     crumb=breadcrumb('crumb',[label+'管理',label+'列表'])
     content={'sourceSha256':sha,'icons':['eye-line','delete-bin-line'],'root':page_shell('region',sidebar_node=menu,topbar_node=header,
              breadcrumb_node=crumb,sections=[query,table],source_ids=['region'])}
     result=compile_tree(source,content,observation,scan)
-    assert result['ui_ir']['requiredAssets']==([] if field_count==3 else ['default-logo'])
+    assert result['ui_ir']['requiredAssets']==(['default-avatar'] if field_count==3 else ['default-avatar','default-logo'])
     with tempfile.TemporaryDirectory(prefix='confirmed-build-test-',dir=ROOT/'artifacts') as tmp:
         tmp=Path(tmp);core=tmp/'core';core.mkdir()
         ir=core/'ui_ir.json';ir.write_text(json.dumps(result['ui_ir'],ensure_ascii=False),encoding='utf-8')
@@ -156,7 +166,7 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
                        cwd=ROOT,check=True,capture_output=True,text=True,encoding='utf-8',timeout=180)
         code='''const {chromium}=require('playwright');(async()=>{const b=await chromium.launch();
         const p=await b.newPage({viewport:{width:1600,height:900}});await p.goto(process.argv[1]);
-        console.log(JSON.stringify(await p.evaluate(()=>{let l=document.querySelector('[data-component=asset]');
+        let actual=await p.evaluate(()=>{let l=document.querySelector('[data-component=asset]');
         let a=document.querySelector('[data-design-role=search-actions]').getBoundingClientRect();
         let fields=[...document.querySelectorAll('[data-design-role=search-field]')].map(e=>e.getBoundingClientRect());
         let h=document.querySelector('[data-design-role=topbar]').getBoundingClientRect();
@@ -170,7 +180,16 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         let actions=actionRows[0].map(e=>e.getBoundingClientRect());
         let headerCell=document.querySelector('.ivu-table-header th').getBoundingClientRect();
         let bodyRows=[...document.querySelectorAll('.ivu-table-body tbody tr')];
+        let lastHeader=document.querySelector('.ivu-table-header th:last-child .ivu-table-cell>span').getBoundingClientRect();
+        let rowCells=[...bodyRows[0].querySelectorAll('td')];
+        let rowOffsets=rowCells.map(td=>{let box=td.getBoundingClientRect(),cell=td.querySelector('.ivu-table-cell').getBoundingClientRect();return ((box.top+box.bottom)-(cell.top+cell.bottom))/2});
         let tab=document.querySelector('.ivu-tabs-tab');
+        let date=document.querySelector('[data-component=DatePicker]');
+        let dateIcon=date.querySelector('.ivu-input-suffix .ivu-icon');
+        let menuArrows=[...document.querySelectorAll('.ivu-menu-submenu-title-icon')].map(e=>e.getBoundingClientRect().right);
+        let toolbar=document.querySelector('[data-design-role=table-toolbar]');
+        let btn=toolbar.querySelector('button'),btnR=btn.getBoundingClientRect(),btnI=btn.querySelector('.remix-custom').getBoundingClientRect();
+        let pageWrap=pg.parentElement.getBoundingClientRect(),panel=t;
         return {logo:l.getBoundingClientRect().height,logoLoaded:l.complete&&l.naturalWidth>0,fieldCount:fields.length,
         crumbTop:c.top-h.bottom,searchTop:q.top-h.bottom,tableGap:t.top-q.bottom,
         prevMask:getComputedStyle(prev).maskImage,downMask:getComputedStyle(down).maskImage,
@@ -182,8 +201,17 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         rowColors:bodyRows.map(r=>getComputedStyle(r.querySelector('td')).backgroundColor),
         tabHeight:tab?.getBoundingClientRect().height||null,
         actionTop:a.top,firstRowTop:fields[0].top,lastRowTop:fields.at(-1).top,
+        dateWidth:date.getBoundingClientRect().width,fieldWidth:document.querySelector('[data-design-role=search-field] .ivu-input-wrapper').getBoundingClientRect().width,
+        dateMask:getComputedStyle(dateIcon).maskImage,dateBefore:getComputedStyle(dateIcon,'::before').content,
+        menuArrows,toolbarBorder:getComputedStyle(toolbar).borderBottomWidth,buttonIconWidth:btnI.width,
+        buttonCenter:((btnI.top+btnI.bottom)-(btnR.top+btnR.bottom))/2,rowOffsets,
+        actionHeaderOffset:((lastHeader.left+lastHeader.right)-(actions[0].left+actions.at(-1).right))/2,
+        pagerRight:panel.right-pageWrap.right,
         tabs:document.querySelectorAll('[data-component=Tabs]').length,
-        badge:document.querySelector('[data-design-role=tab-count]')?.innerText||null,text:document.body.innerText}})));await b.close()})()'''
+        badge:document.querySelector('[data-design-role=tab-count]')?.innerText||null,text:document.body.innerText}});
+        await p.setViewportSize({width:2400,height:900});let wide=await p.evaluate(()=>{let panel=document.querySelector('[data-component=Table]').getBoundingClientRect(),table=document.querySelector('.ivu-table-body table').getBoundingClientRect();return {panel:panel.width,table:table.width}});
+        await p.setViewportSize({width:500,height:900});let narrow=await p.evaluate(()=>{let t=document.querySelector('[data-component=Table] .ivu-table');t.scrollLeft=100;return {overflow:t.scrollWidth>t.clientWidth,scroll:t.scrollLeft,header:document.querySelector('.ivu-table-header table').getBoundingClientRect().left,body:document.querySelector('.ivu-table-body table').getBoundingClientRect().left}});
+        console.log(JSON.stringify({...actual,wide,narrow}));await b.close()})()'''
         out=subprocess.run(['node','-e',code,(tmp/'html/page.html').as_uri()],cwd=ROOT,check=True,
                            capture_output=True,text=True,encoding='utf-8',timeout=60)
         actual=json.loads(out.stdout)
@@ -191,6 +219,16 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         assert actual['fieldCount']==field_count and label in actual['text']
         assert (actual['crumbTop'],actual['searchTop'],actual['tableGap'])==(12,44,16)
         assert actual['prevMask'].startswith('url(') and actual['downMask'].startswith('url(')
+        assert actual['dateMask'].startswith('url(') and actual['dateBefore']=='none'
+        assert abs(actual['dateWidth']-actual['fieldWidth']) <= 1
+        assert abs(actual['wide']['table']-actual['wide']['panel']) <= 2
+        assert actual['narrow']['overflow'] and actual['narrow']['scroll'] > 0
+        assert abs(actual['narrow']['header']-actual['narrow']['body']) <= 1
+        assert len(actual['menuArrows'])==2 and abs(actual['menuArrows'][0]-actual['menuArrows'][1]) <= 1
+        assert actual['toolbarBorder']==('1px' if with_tabs else '0px')
+        assert abs(actual['buttonCenter']) <= 1 and actual['pagerRight']==16
+        assert actual['buttonIconWidth']==14
+        assert max(map(abs, actual['rowOffsets'])) <= 1 and abs(actual['actionHeaderOffset']) <= 1
         assert abs(actual['downOffset']) <= 1
         assert actual['actionCounts']==[2,1] and actual['actionGap']==16
         assert actual['dangerColor']=='rgb(237, 64, 20)'
@@ -198,7 +236,7 @@ def test_module_builders_export_distinct_configurations(source_case, label, fiel
         sizing=json.loads((tmp/'html/qa.json').read_text(encoding='utf-8'))['layoutSizing'][0]
         assert 'equalGap' in sizing
         extras=[width-col['measuredMinimum'] for width,col in zip(actual['columnWidths'],sizing['columns'])]
-        assert max(extras)-min(extras) <= 2
+        assert max(extras[:-1])-min(extras[:-1]) <= 2
         assert actual['rowColors'][1]=='rgb(248, 248, 249)'
         assert actual['tabHeight']==(37 if with_tabs else None)
         assert actual['tabs']==int(with_tabs)

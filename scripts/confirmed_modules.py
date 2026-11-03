@@ -55,7 +55,7 @@ def sidebar(prefix, entries, *, source_ids=(), active_name=None, open_names=(), 
         title = []
         if item.get('icon'): title.append({'id': path+'-icon', 'kind': 'icon', 'name': item['icon']})
         title.append(_text(path+'-label', item['label']))
-        kids = item.get('children')
+        kids = item.get('children', [] if item.get('expandable') else None)
         if kids is not None:
             if not isinstance(kids, list): raise ValueError('menu_children_must_be_list')
             return {'id': path, 'kind': 'component', 'component': 'Submenu', 'props': {'name': item['name']}, 'sourceIds': list(item.get('sourceIds',())),
@@ -70,7 +70,7 @@ def sidebar(prefix, entries, *, source_ids=(), active_name=None, open_names=(), 
     return _box(prefix, 'sidebar', [logo, menu], source_ids, layout={'direction':'vertical'})
 
 
-def topbar(prefix, *, source_ids=(), username='用户', avatar_node=None, tools=None):
+def topbar(prefix, *, source_ids=(), username='钱多多', avatar_node=None, tools=None):
     prefix = _id(prefix)
     if tools is None:
         tools = [('收起菜单','indent-decrease','left'), ('刷新','reset-right-line','left'),
@@ -90,8 +90,8 @@ def topbar(prefix, *, source_ids=(), username='用户', avatar_node=None, tools=
         for item in group: item.pop('ariaLabel', None)
     if username is not None:
         if not isinstance(username,str) or not username: raise ValueError('username_must_be_nonempty_text')
-        avatar = deepcopy(avatar_node) if avatar_node is not None else {'id':prefix+'-avatar','kind':'component',
-                 'component':'Avatar','children':[_text(prefix+'-avatar-text',username[:1])]}
+        avatar = deepcopy(avatar_node) if avatar_node is not None else {'id':prefix+'-avatar','kind':'asset',
+                 'name':'default-avatar','alt':'风景头像'}
         groups['right'].append(_box(prefix+'-user','topbar-user',[avatar,_text(prefix+'-username',username)],
                               layout={'direction':'horizontal','align':'center'}))
     left = {'id':prefix+'-left','kind':'container','layout':{'direction':'horizontal'},'children':groups['left']}
@@ -177,10 +177,10 @@ def table_panel(prefix, columns, rows, *, source_ids=(), table_source_ids=(), pa
     if toolbar: children.append(_box(prefix+'-toolbar','table-toolbar',toolbar,layout={'direction':'horizontal'}))
     children.append({'id':prefix+'-table','kind':'component','component':'Table','equalGapColumns':equal_gaps,'sourceIds':list(table_source_ids),
                      'props':{'stripe':True,'columns':deepcopy(columns),'data':deepcopy(rows)}})
-    if page is True: page={'modelValue':1,'pageSize':10,'total':100,'showSizer':True}
+    if page is True: page={'modelValue':1,'pageSize':10,'total':100,'showSizer':True,'showTotal':True}
     if page is not None:
         if not isinstance(page,dict): raise ValueError('page_must_be_mapping_or_none')
-        children.append({'id':prefix+'-page-wrap','kind':'container','layout':{'direction':'horizontal','justify':'end','padding':'md'},
+        children.append({'id':prefix+'-page-wrap','kind':'container','layout':{'direction':'horizontal','justify':'end'},
                          'children':[{'id':prefix+'-page','kind':'component','component':'Page','designRole':'pagination','sourceIds':list(page_source_ids),'props':deepcopy(page)}]})
     return _box(prefix,'table-panel',children,source_ids)
 

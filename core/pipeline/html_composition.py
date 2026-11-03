@@ -135,6 +135,8 @@ def compile_tree(source, content, observation, scan):
         if node.get('designRole') == 'pagination':
             if node.get('component') != 'Page': raise ValueError('pagination_role_requires_page')
             icons.update(('arrow-left-s-line', 'arrow-right-s-line', 'arrow-down-s-line'))
+        if node.get('designRole') == 'search-panel':
+            icons.update(('arrow-down-s-line', 'calendar-line'))
         if 'semantic' in node and (node.get('kind') != 'container' or node['semantic'] != 'navigation'):
             raise ValueError('unsupported_semantic_landmark')
         if 'ariaLabel' in node and (node.get('semantic') != 'navigation' or not isinstance(node['ariaLabel'], str) or not node['ariaLabel'].strip()):
@@ -187,7 +189,7 @@ def compile_tree(source, content, observation, scan):
             layouts[key] = layout
         elif kind == 'icon': record_icon(node['name'])
         elif kind == 'asset':
-            if node.get('name') == 'default-logo': assets.add(node['name'])
+            if node.get('name') in ('default-logo', 'default-avatar'): assets.add(node['name'])
             elif node.get('name') == 'project-logo': validate_project_logo(node.get('dataUri'))
             else: raise ValueError('unknown_design_asset')
         elif kind == 'repeat':

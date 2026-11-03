@@ -41,7 +41,7 @@ function render(node,scope={}){
   if(node.kind==='asset'){
     const src=node.name==='project-logo'?node.dataUri:window.__designAssets?.[node.name];
     if(!src)throw Error(`missing_design_asset:${node.name}`);
-    return h('img',{'data-tree-node':node.id,'data-component':'asset',src,alt:node.alt||'默认 Logo',style:{height:'32px',width:'auto',display:'block'}});
+    return h('img',{'data-tree-node':node.id,'data-component':'asset','data-asset-name':node.name,src,alt:node.alt||'默认 Logo',style:node.name==='default-avatar'?{height:'24px',width:'24px',objectFit:'cover',borderRadius:'50%',display:'block'}:{height:'32px',width:'auto',display:'block'}});
   }
   const attrs={'data-tree-node':node.id,'data-component':node.component||node.kind,...(node.designRole?{'data-design-role':node.designRole}:{})};
   if(node.kind==='container')return h(node.semantic==='navigation'?'nav':'div',{
@@ -122,6 +122,24 @@ window.__prepareLayout=async()=>{
     }
     report.push(entry);
   }
-  columnFits.value=fits;equalColumnWidths.value=equalWidths;await nextTick();window.__sizingReport=report;
+  columnFits.value=fits;equalColumnWidths.value=equalWidths;await nextTick();
+  // Persist content minima as CSS tracks. Static delivery must remain responsive
+  // without a resize script or the pixel widths frozen by the official table.
+  let css='';
+  for(const entry of report){
+    if(!entry.equalGap)continue;
+    const table=document.querySelector(`[data-tree-node="${CSS.escape(entry.id)}"]`);
+    if(!table?.closest('[data-design-role="table-panel"]'))continue;
+    const mins=entry.columns.map(c=>c.measuredMinimum), sum=mins.reduce((a,b)=>a+b,0);
+    const actionGroups=[...table.querySelectorAll('.ivu-table-body tr td:last-child [data-design-role="row-actions"]')];
+    const actionWidth=Math.max(0,...actionGroups.map(actions=>{const children=[...actions.children];return children.reduce((n,e)=>n+e.getBoundingClientRect().width,0)+Math.max(0,children.length-1)*(parseFloat(getComputedStyle(actions).gap)||0)}));
+    const fixedLast=actionGroups.length>0&&mins.length>1;
+    const tracks=mins.map((n,i)=>fixedLast&&i===mins.length-1?`${n}px`:`calc((100% - ${sum}px) / ${mins.length-(fixedLast?1:0)} + ${n}px)`).join(' ');
+    const q=`[data-tree-node="${CSS.escape(entry.id)}"]`;
+    css+=`${q} .ivu-table{overflow-x:auto}${q} .ivu-table-header,${q} .ivu-table-body{overflow:visible!important;min-width:${sum}px}${q} .ivu-table-header table,${q} .ivu-table-body table,${q} thead,${q} tbody{display:block!important;width:100%!important;min-width:${sum}px}${q} colgroup{display:none}${q} .ivu-table-header tr,${q} .ivu-table-body tr{display:grid;width:100%;grid-template-columns:${tracks}}${q} .ivu-table-header th,${q} .ivu-table-body td{min-width:0}${q} .ivu-table-body td{display:flex;align-items:center}${q} .ivu-table-body td>.ivu-table-cell{width:100%}${q} .ivu-table:before,${q} .ivu-table:after{display:none!important}`;
+    if(fixedLast)css+=`${q} .ivu-table-header th:last-child .ivu-table-cell{display:flex;justify-content:flex-end}${q} .ivu-table-header th:last-child .ivu-table-cell>span:first-child{width:${actionWidth}px;flex:none;text-align:center}`;
+  }
+  let dynamic=document.querySelector('style[data-responsive-tables]');if(!dynamic){dynamic=document.createElement('style');dynamic.dataset.responsiveTables='';document.head.append(dynamic)}dynamic.textContent=css;
+  window.__sizingReport=report;
 };
 await nextTick();window.__ready=true;

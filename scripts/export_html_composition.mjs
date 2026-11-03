@@ -42,10 +42,11 @@ for(const [,,asset] of [...css.matchAll(/url\((['"]?)([^)'"\s]+)\1\)/g)]){
 const moduleCss=await readFile(join(root,'adapters/html/confirmed-modules.css'),'utf8');
 const assets={},assetHashes={};
 for(const name of ir.requiredAssets||[]){
-  if(name!=='default-logo')throw Error(`unknown_design_asset:${name}`);
-  const bytes=await readFile(join(root,'assets/default-logo.svg'));
+  const files={'default-logo':['default-logo.svg','image/svg+xml'],'default-avatar':['default-avatar.png','image/png']};
+  if(!files[name])throw Error(`unknown_design_asset:${name}`);
+  const [filename,mime]=files[name];const bytes=await readFile(join(root,'assets',filename));
   assetHashes[name]=sha(bytes);
-  assets[name]=`data:image/svg+xml;base64,${bytes.toString('base64')}`;
+  assets[name]=`data:${mime};base64,${bytes.toString('base64')}`;
 }
 const base=`html,body{margin:0}#app{min-height:100vh}.remix-custom{display:inline-block;width:1em;height:1em;background:currentColor;mask-size:contain;mask-repeat:no-repeat;-webkit-mask-size:contain;-webkit-mask-repeat:no-repeat}${moduleCss}`;
 const reviewCss=`.composition-skeleton [data-tree-node]{outline:1px dashed #94a3b8;position:relative;background-color:#dbeafe}.composition-skeleton [data-component="Table"]{background-color:#bbf7d0}.composition-skeleton [data-component="Button"],.composition-skeleton [data-component="Input"],.composition-skeleton [data-component="Select"]{background-color:#fde68a}.composition-skeleton [data-tree-node]::before{content:attr(data-component);position:absolute;top:0;right:0;z-index:10;font-size:10px;line-height:12px;background:#e0e7ff;color:#17233d;pointer-events:none}`;
