@@ -15,7 +15,7 @@ VERSION = 'html-composition-v1'
 SPACING = {'none': 0, 'xs': 8, 'sm': 12, 'md': 16, 'lg': 24}
 DESIGN_ROLES = {'page-shell', 'sidebar', 'brand', 'topbar', 'topbar-tool', 'topbar-tool-large', 'topbar-user',
                 'breadcrumb', 'search-panel', 'search-grid', 'search-field', 'search-label', 'search-actions',
-                'table-panel', 'table-toolbar', 'table-actions', 'toolbar-notice', 'light-tag', 'row-actions', 'row-actions-left', 'row-action', 'tab-label', 'tab-count', 'pagination'}
+                'table-panel', 'table-toolbar', 'table-actions', 'toolbar-notice', 'light-tag', 'row-actions', 'row-actions-left', 'row-action', 'tab-label', 'tab-count', 'pagination', 'form-section', 'form-section-title', 'form-grid', 'form-grid-three', 'detail-add', 'detail-action', 'summary-header', 'summary-title', 'summary-meta', 'progress-steps', 'page-actions'}
 
 
 def validate_project_logo(uri):
@@ -135,7 +135,7 @@ def compile_tree(source, content, observation, scan):
         if node.get('designRole') == 'pagination':
             if node.get('component') != 'Page': raise ValueError('pagination_role_requires_page')
             icons.update(('arrow-left-s-line', 'arrow-right-s-line', 'arrow-down-s-line'))
-        if node.get('designRole') == 'search-panel':
+        if node.get('designRole') in ('search-panel', 'form-section'):
             icons.update(('arrow-down-s-line', 'calendar-line'))
         if 'semantic' in node and (node.get('kind') != 'container' or node['semantic'] != 'navigation'):
             raise ValueError('unsupported_semantic_landmark')

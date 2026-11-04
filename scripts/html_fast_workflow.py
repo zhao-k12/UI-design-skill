@@ -281,13 +281,58 @@ def finalize(review_path,task):
          'reviewInputSha256':digest(review_path),'pageSha256':digest(task/'page.html'),'timing':timing})
     print(json.dumps({'status':'PASS','page':str(task/'page.html'),'timing':timing},ensure_ascii=False))
 
+def verify_delivery(task):
+    """Check that the published page still matches a completed, reviewed run.
+
+    This checks recorded evidence and hashes, not whether a human review was
+    truthful, and cannot prevent files from being created outside this runner.
+    """
+    task=Path(task).resolve()
+    try:
+        receipt=read(task/'delivery-receipt.json')
+        active=read(task/'active-run.json')
+        if receipt.get('status')!='PASS' or receipt.get('runId')!=active.get('runId'):
+            raise ValueError('delivery_run_not_finalized')
+        run=Path(active['runDir']).resolve()
+        if not run.is_relative_to(task/'runs') or run.name!=active['runId']:
+            raise ValueError('delivery_run_path_invalid')
+        for name in ('job.json','content-tree.json','source-observations.json','independent-scan.json','core/ui_ir.json'):
+            if not (run/name).is_file(): raise ValueError('delivery_input_missing:'+name)
+        sealed=read(run/'review-receipt.json')
+        qa=read(run/'html/qa.json')
+        visual=read(run/'source-visual-qa.json')
+        if qa.get('status')!='PASS' or visual.get('status')!='PASS':
+            raise ValueError('delivery_checks_not_passed')
+        if receipt.get('sourceSha256')!=active.get('sourceSha256') or sealed.get('sourceSha256')!=active.get('sourceSha256'):
+            raise ValueError('delivery_source_mismatch')
+        sources=list(run.glob('prototype.*'))
+        if len(sources)!=1 or digest(sources[0])!=active['sourceSha256']:
+            raise ValueError('delivery_source_changed')
+        for key,path in (('planSha256',run/'review-plan.json'),('reviewSha256',run/'visual-review.json'),('qaSha256',run/'html/qa.json')):
+            if sealed.get(key)!=digest(path): raise ValueError('delivery_evidence_changed:'+key)
+        if active.get('planSha256')!=digest(run/'review-plan.json') or qa.get('uiIrSha256')!=digest(run/'core/ui_ir.json'):
+            raise ValueError('delivery_tree_or_plan_changed')
+        page_hash=digest(task/'page.html')
+        if page_hash!=receipt.get('pageSha256') or page_hash!=active.get('pageSha256') or page_hash!=digest(run/'html/page.html'):
+            raise ValueError('delivery_page_changed')
+        for stage in ('skeleton','component','delivery'):
+            if digest(run/'html'/(stage+'.png'))!=qa['stages'][stage]['screenshotSha256']:
+                raise ValueError('delivery_screenshot_changed:'+stage)
+        if digest(task/'delivery.png')!=qa['stages']['delivery']['screenshotSha256']:
+            raise ValueError('published_screenshot_changed')
+    except (OSError,KeyError,TypeError,json.JSONDecodeError) as exc:
+        raise ValueError('delivery_evidence_missing_or_invalid') from exc
+    return {'status':'PASS','page':str(task/'page.html'),'runId':active['runId'],
+            'meaning':'Recorded evidence and hashes match; visual judgment is not automated.'}
+
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('mode',choices=['start','event','render','revise','finalize'])
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('mode',choices=['start','event','render','revise','finalize','verify'])
     parser.add_argument('--task-dir',type=Path,required=True);parser.add_argument('--input',type=Path)
     parser.add_argument('--event-name')
     args=parser.parse_args();task=args.task_dir.resolve()
     if not task.is_relative_to((ROOT/'artifacts').resolve()):parser.error('task_directory_must_be_in_artifacts')
     if args.mode=='start':start(task);print('Timing started; target 300 seconds, no timeout delivery shortcut.')
+    elif args.mode=='verify':print(json.dumps(verify_delivery(task),ensure_ascii=False))
     elif args.mode=='event':
         if not args.event_name:parser.error('--event-name required')
         print(json.dumps(record_timing_event(task,args.event_name),ensure_ascii=False))

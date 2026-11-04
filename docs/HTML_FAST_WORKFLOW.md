@@ -145,6 +145,8 @@ rtk proxy .venv/Scripts/python.exe -X utf8 scripts/html_fast_workflow.py finaliz
 
 finalize运行原有综合来源/视觉门；通过后才把`page.html`与`delivery.png`发布到任务根目录，写交付回执。只有真实复核通过且 finalize 成功，才能将该页面作为正式结果交付。finalize失败须根据具体问题修正并重新渲染、复核、再次 finalize；计划、三态原图、合并图或页面被修改均使当前复核失效。
 
+交付前运行 `rtk proxy .venv/Scripts/python.exe -X utf8 scripts/html_fast_workflow.py verify --task-dir artifacts/<任务>`。该命令检查当前回执、原型副本、完整 Tree、审阅与截图证据及发布页的哈希；直接写入的页面、缺少回执或发布后被修改的页面不能通过。它不替代实际视觉复核，也不能防止其他程序直接写文件。核验失败时先恢复到正确的 `render` → 复核 → `finalize` 路径；禁止将手写页面或中间结果冒充 Skill 正式交付。
+
 实际视觉复核完成后，可将写入真实`review.json`与顺序执行`finalize`安排在一次工具调用中，减少额外启动等待；不要在复核前生成PASS，也不要让写入和发布并行。现有`render`已在一次调用中完成准备、编译和三态导出；不要声称它已跨调用复用进程或浏览器。仅在当前运行环境明确支持并实测有效时复用会话；否则维持现有流程并如实记录等待。
 
 ## 局部修正与失效

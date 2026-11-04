@@ -166,6 +166,23 @@ def toolbar_notice(prefix, text, *, source_ids=()):
     return _box(prefix, 'toolbar-notice', [{'id':prefix+'-icon','kind':'icon','name':'information-line'},
                 _text(prefix+'-text', text)], source_ids, layout={'direction':'horizontal','align':'center'})
 
+def form_section(prefix, title, fields, *, label_width=104, columns=4, source_ids=()):
+    """Compose a section from caller-supplied official FormItem nodes."""
+    prefix = _id(prefix)
+    if not isinstance(fields, list): raise ValueError('explicit_fields_required')
+    heading = _box(prefix+'-title', 'form-section-title', [_text(prefix+'-title-text', title)])
+    if columns not in (3, 4): raise ValueError('supported_form_columns_are_3_or_4')
+    grid = _box(prefix+'-grid', 'form-grid' if columns == 4 else 'form-grid-three', deepcopy(fields))
+    form = {'id':prefix+'-form','kind':'component','component':'Form',
+            'props':{'labelPosition':'right','labelWidth':label_width},'children':[grid]}
+    return _box(prefix, 'form-section', [heading, form], source_ids)
+
+def page_actions(prefix, buttons, *, source_ids=()):
+    prefix = _id(prefix)
+    return _box(prefix, 'page-actions', [_button(prefix+'-'+str(i), b['label'], b.get('icon'),
+                b.get('primary',False), b.get('sourceIds',())) for i,b in enumerate(buttons)], source_ids,
+                layout={'direction':'horizontal'})
+
 
 def table_panel(prefix, columns, rows, *, source_ids=(), table_source_ids=(), page_source_ids=(), tabs=None, active_tab=None, buttons=(), notice=None, page=True, equal_gaps=None):
     prefix = _id(prefix)
