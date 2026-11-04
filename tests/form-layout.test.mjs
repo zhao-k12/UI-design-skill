@@ -3,6 +3,18 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {chromium} from 'playwright';
 
+test('summary and steps align within the shared page frame', async()=>{
+  const css=await readFile(new URL('../adapters/html/confirmed-modules.css',import.meta.url),'utf8');
+  const viewCss=await readFile(new URL('../node_modules/view-ui-plus/dist/styles/viewuiplus.css',import.meta.url),'utf8');
+  const b=await chromium.launch();
+  try{
+    const p=await b.newPage({viewport:{width:1200,height:600}});
+    await p.setContent(`<style>body{margin:0}*{box-sizing:border-box}${viewCss}${css}</style><div data-design-role="breadcrumb">位置</div><div data-design-role="table-panel"><div data-design-role="summary-header"><div data-design-role="summary-title">商机标题</div><i class="remix-custom"></i></div></div><div class="ivu-steps ivu-steps-horizontal" data-design-role="progress-steps"><div class="ivu-steps-item"><div class="ivu-steps-tail"><i></i></div><div class="ivu-steps-head"><div class="ivu-steps-head-inner">1</div></div><div class="ivu-steps-main"><div class="ivu-steps-title">步骤名称</div><div class="ivu-steps-content">时间</div></div></div><div class="ivu-steps-item"><div class="ivu-steps-head"><div class="ivu-steps-head-inner">2</div></div><div class="ivu-steps-main"><div class="ivu-steps-title">下一步</div></div></div></div>`);
+    const r=await p.evaluate(()=>{const q=s=>document.querySelector(s),rect=s=>q(s).getBoundingClientRect(),center=x=>(x.top+x.bottom)/2;const panel=rect('[data-design-role=table-panel]'),close=rect('[data-design-role=summary-header]>.remix-custom'),head=rect('.ivu-steps-head-inner'),title=rect('.ivu-steps-title'),line=rect('.ivu-steps-tail i'),content=rect('.ivu-steps-content');return {margin:getComputedStyle(q('[data-design-role=table-panel]')).marginTop,closeTop:close.top-panel.top,titleDiff:Math.abs(center(head)-center(title)),lineDiff:Math.abs(center(head)-center(line)),contentDiff:Math.abs(content.left-title.left)}});
+    assert.equal(r.margin,'0px');assert.equal(r.closeTop,16);assert.ok(r.titleDiff<1);assert.ok(r.lineDiff<=0.5);assert.ok(r.contentDiff<1);
+  }finally{await b.close()}
+});
+
 test('form sections preserve spacing and fixed actions above scrollable content', async()=>{
   const css=await readFile(new URL('../adapters/html/confirmed-modules.css',import.meta.url),'utf8');
   const b=await chromium.launch();

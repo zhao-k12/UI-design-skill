@@ -58,7 +58,7 @@ export async function staticSnapshot(page) {
     frozen.setAttribute('data-static-interaction-freeze', '');
     // Freeze hover states throughout the static page, while allowing the
     // table scroll container itself to receive wheel and scrollbar events.
-    frozen.textContent = '[data-static-delivery],[data-static-delivery] *{pointer-events:none!important}[data-static-delivery] [data-design-role="page-shell"],[data-static-delivery] .ivu-table,[data-static-delivery] .ivu-table-body{pointer-events:auto!important}[data-static-delivery] .ivu-table-body>.ivu-table-header{overflow:visible;width:max-content}' + responsiveFixedRules.join('');
+    frozen.textContent = '[data-static-delivery],[data-static-delivery] *{pointer-events:none!important}[data-static-delivery] [data-design-role="page-shell"],[data-static-delivery] .ivu-table,[data-static-delivery] .ivu-table-body,[data-static-delivery] [data-design-role="uploaded-value"][data-hover-preview="true"],[data-static-delivery] [data-design-role="uploaded-value"][data-hover-preview="true"] *{pointer-events:auto!important}[data-static-delivery] .ivu-table-body>.ivu-table-header{overflow:visible;width:max-content}' + responsiveFixedRules.join('');
     copy.querySelector('head').append(frozen);
     return '<!doctype html>\n' + copy.outerHTML;
   });

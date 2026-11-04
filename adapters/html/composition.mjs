@@ -44,6 +44,12 @@ function render(node,scope={}){
     return h('img',{'data-tree-node':node.id,'data-component':'asset','data-asset-name':node.name,src,alt:node.alt||'默认 Logo',style:node.name==='default-avatar'?{height:'24px',width:'24px',objectFit:'cover',borderRadius:'50%',display:'block'}:{height:'32px',width:'auto',display:'block'}});
   }
   const attrs={'data-tree-node':node.id,'data-component':node.component||node.kind,...(node.designRole?{'data-design-role':node.designRole}:{})};
+  if(node.designRole==='uploaded-value'){
+    const previewState=bound(node.previewState??'default',scope);
+    if(!['default','hover'].includes(previewState))throw Error('invalid_preview_state');
+    attrs['data-preview-state']=previewState;
+    if(node.hoverPreview===true)attrs['data-hover-preview']='true';
+  }
   if(node.kind==='container')return h(node.semantic==='navigation'?'nav':'div',{
     ...attrs,...(node.ariaLabel?{'aria-label':node.ariaLabel}:{}),style:layoutStyle(node.layout)
   },(node.children||[]).map(n=>render(n,scope)));

@@ -34,6 +34,18 @@ class CompositionTests(unittest.TestCase):
     def test_official_visual_override_is_still_rejected(self):
         self.content['root']['props']['style']={'color':'red'}
         with self.assertRaisesRegex(ValueError,'component_visual_or_event_override'):self.run_compile()
+    def test_uploaded_value_preview_requires_explicit_valid_state(self):
+        self.content['root']={'id':'value','kind':'container','designRole':'uploaded-value',
+            'sourceIds':['action'],'previewState':{'bind':'row.preview'},'hoverPreview':True}
+        self.assertEqual(self.run_compile()['ui_ir']['root']['previewState'],{'bind':'row.preview'})
+        self.content['root']['previewState']='unknown'
+        with self.assertRaisesRegex(ValueError,'invalid_preview_state'):self.run_compile()
+        self.content['root']['previewState']='default'
+        self.content['root']['hoverPreview']='yes'
+        with self.assertRaisesRegex(ValueError,'invalid_hover_preview'):self.run_compile()
+        self.content['root']['hoverPreview']=True
+        self.content['root']['designRole']='form-section'
+        with self.assertRaisesRegex(ValueError,'preview_state_requires_uploaded_value'):self.run_compile()
     def test_viewport_shell_and_fill_are_content_independent(self):
         child=self.content['root'];child['sourceIds']=[]
         self.content['root']={'id':'shell','kind':'container','sourceIds':['action'],

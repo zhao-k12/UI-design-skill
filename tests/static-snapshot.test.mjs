@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
+import { readFile } from 'node:fs/promises';
 import { staticSnapshot, inspectStaticDelivery } from '../adapters/html/static-snapshot.mjs';
 
 test('delivery snapshot keeps visible state and text but cannot hover or run scripts', async () => {
@@ -28,6 +29,29 @@ test('delivery snapshot keeps visible state and text but cannot hover or run scr
   } finally {
     await browser.close();
   }
+});
+
+test('uploaded values have explicit row states and hover only when requested', async () => {
+  const css=await readFile(new URL('../adapters/html/confirmed-modules.css',import.meta.url),'utf8');
+  const browser=await chromium.launch({headless:true});
+  try {
+    const page=await browser.newPage();
+    await page.setContent(`<!doctype html><html><head><style>${css}.remix-delete-bin-line{display:inline-block}</style></head><body><div id="app"><table><tbody>
+      <tr><td><div data-design-role="uploaded-value" data-preview-state="default"><span>默认</span><i class="remix-delete-bin-line"></i></div></td></tr>
+      <tr><td><div data-design-role="uploaded-value" data-preview-state="hover"><span>展示</span><i class="remix-delete-bin-line"></i></div></td></tr>
+      <tr><td><div data-design-role="uploaded-value" data-preview-state="default" data-hover-preview="true"><span>经过</span><i class="remix-delete-bin-line"></i></div></td></tr>
+      </tbody></table><input placeholder="静态"></div></body></html>`);
+    await page.setContent(await staticSnapshot(page));
+    const cells=page.locator('[data-design-role="uploaded-value"]');
+    const visibility=i=>cells.nth(i).locator('i').evaluate(e=>getComputedStyle(e).visibility);
+    assert.deepEqual(await Promise.all([visibility(0),visibility(1),visibility(2)]),['hidden','visible','hidden']);
+    const first=await cells.nth(0).boundingBox();await page.mouse.move(first.x+first.width/2,first.y+first.height/2);
+    assert.equal(await visibility(0),'hidden');
+    await cells.nth(2).hover();assert.equal(await visibility(2),'visible');
+    await page.mouse.move(0,0);assert.equal(await visibility(2),'hidden');
+    assert.equal(await page.locator('input').evaluate(e=>getComputedStyle(e).pointerEvents),'none');
+    assert.equal(await page.locator('input').evaluate(e=>e.tabIndex),-1);
+  } finally {await browser.close()}
 });
 
 test('fixed table snapshot shares horizontal scroll and fills wide containers', async () => {

@@ -15,7 +15,7 @@ VERSION = 'html-composition-v1'
 SPACING = {'none': 0, 'xs': 8, 'sm': 12, 'md': 16, 'lg': 24}
 DESIGN_ROLES = {'page-shell', 'sidebar', 'brand', 'topbar', 'topbar-tool', 'topbar-tool-large', 'topbar-user',
                 'breadcrumb', 'search-panel', 'search-grid', 'search-field', 'search-label', 'search-actions',
-                'table-panel', 'table-toolbar', 'table-actions', 'toolbar-notice', 'light-tag', 'row-actions', 'row-actions-left', 'row-action', 'tab-label', 'tab-count', 'pagination', 'form-section', 'form-section-title', 'form-grid', 'form-grid-three', 'detail-add', 'detail-action', 'summary-header', 'summary-title', 'summary-meta', 'progress-steps', 'page-actions'}
+                'table-panel', 'table-toolbar', 'table-actions', 'toolbar-notice', 'light-tag', 'row-actions', 'row-actions-left', 'row-action', 'tab-label', 'tab-count', 'pagination', 'form-section', 'form-section-title', 'form-grid', 'form-grid-three', 'detail-add', 'detail-action', 'summary-header', 'summary-title', 'summary-meta', 'progress-steps', 'page-actions', 'upload-icon-large', 'upload-copy', 'success-icon', 'uploaded-value', 'muted-cell'}
 
 
 def validate_project_logo(uri):
@@ -132,6 +132,15 @@ def compile_tree(source, content, observation, scan):
         key = node['id']
         if 'designRole' in node and (node.get('kind') not in ('container', 'component') or not isinstance(node['designRole'], str) or node['designRole'] not in DESIGN_ROLES):
             raise ValueError('unsupported_design_role')
+        if 'previewState' in node or 'hoverPreview' in node:
+            if node.get('kind') != 'container' or node.get('designRole') != 'uploaded-value':
+                raise ValueError('preview_state_requires_uploaded_value')
+            state = node.get('previewState', 'default')
+            binding = isinstance(state, dict) and set(state) == {'bind'} and isinstance(state['bind'], str) and bool(state['bind'])
+            if not binding and state not in ('default', 'hover'):
+                raise ValueError('invalid_preview_state')
+            if not isinstance(node.get('hoverPreview', False), bool):
+                raise ValueError('invalid_hover_preview')
         if node.get('designRole') == 'pagination':
             if node.get('component') != 'Page': raise ValueError('pagination_role_requires_page')
             icons.update(('arrow-left-s-line', 'arrow-right-s-line', 'arrow-down-s-line'))

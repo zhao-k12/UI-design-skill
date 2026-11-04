@@ -27,6 +27,7 @@
 [data-design-role="search-panel"]{margin-top:24px}
 [data-design-role="breadcrumb"]+[data-design-role="search-panel"]{margin-top:0}
 [data-design-role="table-panel"]{margin-top:16px}
+[data-design-role="breadcrumb"]+[data-design-role="table-panel"]{margin-top:0}
 [data-design-role="search-panel"] .ivu-input,[data-design-role="search-panel"] .ivu-select-selection{height:34px}
 [data-design-role="search-panel"] .ivu-input::placeholder,[data-design-role="search-panel"] .ivu-select-placeholder{color:#ccc!important}
 [data-design-role="search-panel"] .ivu-select-single .ivu-select-placeholder{height:32px;line-height:32px}
@@ -43,6 +44,7 @@
 [data-design-role="search-panel"] .ivu-input-suffix .ivu-icon-ios-calendar-outline{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
 [data-design-role="search-panel"] .ivu-select-arrow:before,[data-design-role="search-panel"] .ivu-input-suffix .ivu-icon-ios-calendar-outline:before{content:none}
 [data-design-role="form-section"]{background:#fff;border-radius:4px;padding:16px!important;margin:0 24px 16px;box-sizing:border-box}
+[data-design-role="table-panel"]+[data-design-role="form-section"]{margin-top:16px}
 [data-design-role="form-section-title"]{display:flex!important;flex-direction:row!important;align-items:center!important;gap:6px!important;color:#17233d;font-size:16px;font-weight:600;margin-bottom:24px}
 [data-design-role="form-section-title"]::before{content:"";display:block;width:3px;height:16px;background:#2d8cf0;flex:none}
 [data-design-role="form-grid"]{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:24px!important;row-gap:24px!important}
@@ -52,14 +54,25 @@
 [data-design-role="form-grid-three"] .ivu-form-item{margin-bottom:0}
 [data-design-role="form-grid-three"] .ivu-date-picker{width:100%}
 [data-design-role="form-section"] .ivu-input,[data-design-role="form-section"] .ivu-select-selection{height:34px}
-[data-design-role="summary-header"]{display:flex!important;align-items:center;justify-content:space-between!important}
+[data-design-role="summary-header"]{display:flex!important;align-items:flex-start!important;justify-content:space-between!important}
+[data-design-role="summary-header"]>.remix-custom{width:16px;height:16px;font-size:16px;line-height:16px;color:#808695;flex:none}
 [data-design-role="summary-title"]{display:flex!important;align-items:center;gap:12px!important;font-size:20px;font-weight:600;color:#17233d}
 [data-design-role="summary-meta"]{display:flex!important;gap:32px!important;margin-top:16px}
 [data-design-role="progress-steps"].ivu-steps{display:flex;align-items:flex-start}
 [data-design-role="progress-steps"] .ivu-steps-item{flex:1 1 0;min-width:0;width:auto!important}
 [data-design-role="progress-steps"] .ivu-steps-item:last-child{flex:0 0 150px}
 [data-design-role="progress-steps"] .ivu-steps-item:last-child .ivu-steps-tail{display:none}
-[data-design-role="progress-steps"] .ivu-steps-content{max-width:100%;overflow-wrap:anywhere}
+[data-design-role="progress-steps"] .ivu-steps-main{display:inline-block;vertical-align:top;margin-top:0}
+[data-design-role="progress-steps"] .ivu-steps-title{display:inline-flex;align-items:center;min-height:26px;margin-bottom:0}
+[data-design-role="progress-steps"] .ivu-steps-status-finish .ivu-steps-title{color:#515a6e}
+[data-design-role="progress-steps"] .ivu-steps-content{max-width:100%;overflow-wrap:anywhere;padding-left:0}
+[data-design-role="upload-icon-large"]>.remix-custom{width:52px;height:52px;font-size:52px;line-height:52px;color:#2d8cf0}
+[data-design-role="upload-copy"]{gap:6px!important}
+[data-design-role="success-icon"]>.remix-custom{width:16px;height:16px;font-size:16px;line-height:16px;color:#19be6b}
+[data-design-role="uploaded-value"]{align-items:center!important;gap:4px!important}
+[data-design-role="muted-cell"]{color:#c5c8ce}
+[data-design-role="uploaded-value"]>.remix-delete-bin-line{width:16px;height:16px;font-size:16px;line-height:16px;color:#808695;visibility:hidden}
+[data-design-role="uploaded-value"][data-preview-state="hover"]>.remix-delete-bin-line,[data-design-role="uploaded-value"][data-hover-preview="true"]:hover>.remix-delete-bin-line{visibility:visible}
 [data-design-role="form-section"] .ivu-form-item-content:has(> .ivu-btn){display:flex;align-items:center;gap:8px}
 [data-design-role="form-section"] .ivu-form-item-content:has(> .ivu-btn) > .ivu-select{flex:1;min-width:0}
 [data-design-role="form-section"] .ivu-table table{min-width:100%}

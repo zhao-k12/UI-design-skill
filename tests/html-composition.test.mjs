@@ -70,3 +70,26 @@ test('same compiler and renderer handle different ordering, menus, columns, rows
     }
   }finally{await browser.close();}
 });
+
+test('uploaded value preview state follows row data instead of row position',async()=>{
+  const dir=join(base,'explicit-preview');await mkdir(dir,{recursive:true});
+  const source=join(dir,'source.txt');await writeFile(source,'Developer fixture');
+  const sourceSha256=createHash('sha256').update(await readFile(source)).digest('hex');
+  const traits={leading:'none',trailing:'none',surface:'plain',shape:'rect',role:'fixture'};
+  const observation={sourceSha256,items:[{id:'fixture',region:'page',traits,decision:'include',sourceEvidence:'Fixture',treeRef:'records'}]};
+  const scan={sourceSha256,items:[{id:'fixture',region:'page',traits,visual:'Fixture'}]};
+  const cell={id:'uploaded',kind:'container',designRole:'uploaded-value',previewState:{bind:'row.preview'},
+    layout:{direction:'horizontal'},children:[text('amount',{bind:'row.amount'}),{id:'delete',kind:'icon',name:'delete-bin-line'}]};
+  const content={sourceSha256,title:'fixture',root:{...component('records','Table',{columns:[{title:'值',key:'amount',cell}],data:[
+    {amount:'A',preview:'default'},{amount:'B',preview:'hover'}]}),sourceIds:['fixture']}};
+  for(const [name,value] of Object.entries({'content-tree':content,observation,scan}))await writeFile(join(dir,name+'.json'),JSON.stringify(value));
+  execFileSync(join(root,'.venv/Scripts/python.exe'),['-X','utf8','core/pipeline/html_composition.py','--source',source,'--content',join(dir,'content-tree.json'),'--observation',join(dir,'observation.json'),'--independent-scan',join(dir,'scan.json'),'--output-dir',join(dir,'core')],{cwd:root,stdio:'pipe'});
+  execFileSync(process.execPath,['scripts/export_html_composition.mjs',join(dir,'core'),join(dir,'html')],{cwd:root,stdio:'pipe'});
+  const browser=await chromium.launch({headless:true});
+  try{
+    const page=await browser.newPage();await page.goto(pathToFileURL(join(dir,'html/page.html')).href);
+    const values=page.locator('[data-design-role="uploaded-value"]');
+    assert.deepEqual(await values.evaluateAll(es=>es.map(e=>({state:e.dataset.previewState,visible:getComputedStyle(e.querySelector('.remix-delete-bin-line')).visibility}))),
+      [{state:'default',visible:'hidden'},{state:'hover',visible:'visible'}]);
+  }finally{await browser.close()}
+});
