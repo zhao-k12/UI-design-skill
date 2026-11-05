@@ -5,14 +5,16 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT/'scripts'), str(ROOT/'core/pipeline')]
-from confirmed_modules import summary_panel, steps_panel, form_section, page_actions, page_shell, light_tag
+from confirmed_modules import summary_panel, steps_panel, form_section, page_actions, page_shell, light_tag, sidebar
 from html_composition import compile_tree
 
 
-def test_reusable_summary_and_fluid_fields_at_two_viewports():
+@pytest.mark.parametrize('brand_text',[None,'CRM系统'])
+def test_reusable_summary_and_fluid_fields_at_two_viewports(brand_text):
     with tempfile.TemporaryDirectory(dir=ROOT/'artifacts', prefix='module-quality-') as directory:
         folder=Path(directory);source=folder/'source.txt';source.write_text('synthetic geometry fixture')
         sha=hashlib.sha256(source.read_bytes()).hexdigest()
@@ -23,7 +25,9 @@ def test_reusable_summary_and_fluid_fields_at_two_viewports():
         field=dict(id='field',kind='component',component='FormItem',props={'label':'Field label'},children=[
             dict(id='input',kind='component',component='Input',props={'disabled':True,'placeholder':'Complete placeholder'},slots={'append':[text('suffix','kWh')]})])
         form=form_section('form','Section',[field],label_width=104,columns='auto')
-        root=page_shell('page',sections=[summary,steps,form,page_actions('actions',[{'label':'Submit','primary':True}])],source_ids=['fixture'])
+        side=sidebar('side',[{'name':'home','label':'Home','icon':'home-4-line'}],active_name='home',
+                     brand_node=text('brand-label',brand_text) if brand_text is not None else None)
+        root=page_shell('page',sidebar_node=side,sections=[summary,steps,form,page_actions('actions',[{'label':'Submit','primary':True}])],source_ids=['fixture'])
         traits=dict(leading='none',trailing='none',surface='plain',shape='rect',role='developer-fixture')
         observation=dict(sourceSha256=sha,items=[dict(id='fixture',region='fixture',traits=traits,decision='include',treeRef='page',sourceEvidence='Synthetic fixture only')])
         scan=dict(sourceSha256=sha,items=[dict(id='fixture',region='fixture',traits=traits,visual='Synthetic fixture only')])
@@ -38,6 +42,9 @@ def test_reusable_summary_and_fluid_fields_at_two_viewports():
         qa=json.loads((folder/'html/qa.json').read_text(encoding='utf-8'))
         assert qa['status']=='PASS'
         assert qa['responsiveQuality']['status']=='PASS'
+        html=(folder/'html/page.html').read_text(encoding='utf-8')
+        assert ('data-asset-name="default-logo"' in html)==(brand_text is None)
+        if brand_text is not None: assert brand_text in html
         assert (folder/'html/small-viewport.png').is_file()
         for stage in qa['stages'].values():
             checks=stage['layoutQuality']['results']

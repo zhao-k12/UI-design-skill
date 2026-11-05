@@ -254,7 +254,33 @@ def reusable_groups(previous, plan, rendered, source_hash):
                 and all(all(value is not None for value in stage['nodes'].values()) for stage in group['render'].values())]
     except (OSError,KeyError,ValueError):return []
 
+def require_current_attempt(task, run_id):
+    path=task/'latest-attempt.json'
+    if not path.exists(): return  # Published legacy tasks have no attempt ledger.
+    attempt=read(path)
+    if attempt.get('status')!='ready' or attempt.get('runId')!=run_id:
+        raise ValueError('latest_attempt_not_ready_or_current')
+
 def render(job_path, task):
+    task.mkdir(parents=True,exist_ok=True)
+    run_id=uuid4().hex[:12]
+    attempt={'runId':run_id,'input':str(job_path),'startedAt':now(),'status':'running'}
+    save(task/'latest-attempt.json',attempt)
+    try:
+        _render(job_path,task,run_id)
+    except Exception as exc:
+        attempt.update(status='failed',finishedAt=now(),errorType=type(exc).__name__,error=str(exc))
+        run=task/'runs'/run_id;run.mkdir(parents=True,exist_ok=True)
+        if job_path.is_file():
+            try: shutil.copyfile(job_path,run/'submitted-job.json')
+            except OSError as snapshot_error: attempt['inputSnapshotError']=str(snapshot_error)
+        save(run/'failure.json',attempt)
+        save(task/'latest-attempt.json',attempt)
+        raise
+    attempt.update(status='ready',finishedAt=now())
+    save(task/'latest-attempt.json',attempt)
+
+def _render(job_path, task, run_id):
     if not (task/'timing.json').exists():
         start(task);timing=read(task/'timing.json');timing['scope']='render-start; analysis time not measured';save(task/'timing.json',timing)
     begin=time.perf_counter();job=read(job_path)
@@ -262,7 +288,8 @@ def render(job_path, task):
     # Both independently authored scans must lock the same actual input.
     for part in ('content','observation','scan'):
         if job[part].get('sourceSha256')!=source_hash:raise ValueError('source_hash_mismatch')
-    run_id=uuid4().hex[:12];run=task/'runs'/run_id;run.mkdir(parents=True)
+    run=task/'runs'/run_id;run.mkdir(parents=True)
+    save(run/'job.json',{**job,'source':str(source)})
     shutil.copyfile(source,run/('prototype'+source.suffix))
     first=expand_observations(job['observation']);second=expand_observations(job['scan'],scan=True)
     content=bind_groups(require_full_tree(job['content']),first['_groupIds'])
@@ -294,6 +321,7 @@ def render(job_path, task):
 
 def finalize(review_path,task):
     active=read(task/'active-run.json');run=Path(active['runDir']);review=read(review_path)
+    require_current_attempt(task,active['runId'])
     if review.get('runId')!=active['runId'] or review.get('sourceSha256')!=active['sourceSha256']:
         raise ValueError('review_not_bound_to_current_run')
     if digest(run/'html/page.html')!=active['pageSha256']:raise ValueError('render_changed_after_review')
@@ -345,6 +373,7 @@ def verify_delivery(task):
     try:
         receipt=read(task/'delivery-receipt.json')
         active=read(task/'active-run.json')
+        require_current_attempt(task,active.get('runId'))
         if receipt.get('status')!='PASS' or receipt.get('runId')!=active.get('runId'):
             raise ValueError('delivery_run_not_finalized')
         run=Path(active['runDir']).resolve()

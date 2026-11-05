@@ -60,6 +60,22 @@ editor.write_job(sys.argv[1],source=job['source'],observation=job['observation']
  await writeFile(input,JSON.stringify(inventoried));command('render',input);
  active=JSON.parse(await readFile(join(dir,'active-run.json')));
  review.runId=active.runId;await writeFile(reviewFile,JSON.stringify(review));command('finalize',reviewFile);
+ // A failed new revision must not silently fall back to the prior PASS.
+ const publishedBeforeFailure=await readFile(join(dir,'page.html'));
+ const malformed=structuredClone(inventoried);delete malformed.observation.groups[0].traits.leading;
+ const badInput=join(dir,'bad-job.json');await writeFile(badInput,JSON.stringify(malformed));
+ assert.throws(()=>command('render',badInput),/source_traits_incomplete/);
+ const failed=JSON.parse(await readFile(join(dir,'latest-attempt.json')));
+ assert.equal(failed.status,'failed');
+ const failureDir=join(dir,'runs',failed.runId);
+ assert.ok((await readFile(join(failureDir,'job.json'))).length>0);
+ assert.match(JSON.parse(await readFile(join(failureDir,'failure.json'))).error,/source_traits_incomplete/);
+ assert.deepEqual(await readFile(join(dir,'page.html')),publishedBeforeFailure);
+ assert.throws(()=>command('finalize',reviewFile),/latest_attempt_not_ready_or_current/);
+ assert.throws(()=>command('verify'),/latest_attempt_not_ready_or_current/);
+ // Recovery requires a successful current render, then a bound review.
+ command('render',input);active=JSON.parse(await readFile(join(dir,'active-run.json')));
+ review.runId=active.runId;await writeFile(reviewFile,JSON.stringify(review));command('finalize',reviewFile);
  const receipt=JSON.parse(await readFile(join(dir,'delivery-receipt.json')));
  assert.equal(receipt.status,'PASS');assert.equal(receipt.timing.scope,'timer-start; request start not verified');
  const smallFile=join(active.runDir,'html/small-viewport.png'),smallBytes=await readFile(smallFile);
