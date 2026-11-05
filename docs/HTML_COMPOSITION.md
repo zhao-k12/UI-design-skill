@@ -20,7 +20,7 @@
 
 绑定写为 `{"bind":"item.label"}`。repeat模板可读`item`与`index`；Table单元格可读`row`、`column`、`index`；嵌套repeat保留外层row。缺失绑定报具体路径，不静默删内容。
 
-`container.layout`支持：`direction: horizontal|vertical`、`gap/padding: none|xs|sm|md|lg`、`justify: start|end|center|space-between`、`align: start|end|center|stretch`、`wrap`、`fill`、`span: 1..24`、`minHeight: viewport`。后者用于至少占满当前视口的外壳，不定义固定画布高度；与Fill子容器组合可把退出等区域推至底部。间距引用锁定版官方变量，但某区域采用哪个值仍需说明适用关系。组件本身的布局优先使用Row/Col、Space、Layout等官方属性。容器布局不能覆盖组件颜色、字号、边框等视觉。
+`container.layout`支持：`direction: horizontal|vertical`、`gap/padding/paddingX/paddingY: none|xs|sm|md|lg`、`justify: start|end|center|space-between`、`align: start|end|center|stretch`、`wrap`、`fill`、`span: 1..24`、`minHeight: viewport`。其中 `paddingX` 和 `paddingY` 分别覆盖横向和纵向的 `padding`；未指定方向沿用 `padding`，都未指定则为零。`minHeight` 用于至少占满当前视口的外壳，不定义固定画布高度；与Fill子容器组合可把退出等区域推至底部。间距引用锁定版官方变量，但某区域采用哪个值仍需说明适用关系。组件本身的布局优先使用Row/Col、Space、Layout等官方属性。容器布局不能覆盖组件颜色、字号、边框等视觉。
 
 跨模块快捷导航需要浅色顶栏、选中项可辨且不采用页内Tabs式下划线时，可用 `semantic: "navigation"` 的容器包裹官方 `Link`；容器可设置非空 `ariaLabel`。当前项的 Link 设置 `current: true` 和官方 `strong: true`，其他项可使用官方 `type: "secondary"`；运行时输出 `nav` 和 `aria-current="page"`，静态快照保留这两项语义且不执行跳转。水平间距通过容器中已核实的间距 token 配置，不覆盖官方组件样式。这个组合仅用于无须下拉菜单的平级入口；多级、下拉和其他导航应依据原型另选官方组合。当前选项的显示必须对截图复核，不能仅凭 aria 元数据认定视觉通过。
 

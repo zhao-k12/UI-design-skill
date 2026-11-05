@@ -29,6 +29,8 @@ function layoutStyle(layout={}){
     gap:`${spacing[layout.gap||'none']}px`,padding:`${spacing[layout.padding||'none']}px`,
     flexWrap:layout.wrap?'wrap':'nowrap',justifyContent:({start:'flex-start',end:'flex-end',center:'center','space-between':'space-between'})[layout.justify||'start'],
     alignItems:({start:'flex-start',end:'flex-end',center:'center',stretch:'stretch'})[layout.align||'stretch']};
+  if(layout.paddingX!==undefined){style.paddingLeft=`${spacing[layout.paddingX]}px`;style.paddingRight=`${spacing[layout.paddingX]}px`;}
+  if(layout.paddingY!==undefined){style.paddingTop=`${spacing[layout.paddingY]}px`;style.paddingBottom=`${spacing[layout.paddingY]}px`;}
   if(layout.fill)style.flex='1 1 0%';
   if(layout.minHeight==='viewport')style.minHeight='100vh';
   if(layout.span)style.flex=`0 1 ${layout.span/24*100}%`;

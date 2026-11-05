@@ -184,12 +184,12 @@ def compile_tree(source, content, observation, scan):
             if node.get('icon'): record_icon(node['icon'])
         elif kind == 'container':
             layout = node.get('layout', {})
-            allowed = {'direction','gap','padding','justify','align','wrap','fill','span','minHeight'}
+            allowed = {'direction','gap','padding','paddingX','paddingY','justify','align','wrap','fill','span','minHeight'}
             if set(layout) - allowed: raise ValueError(f'unsupported_layout_property:{key}')
             if 'minHeight' in layout and layout['minHeight'] != 'viewport': raise ValueError('unsupported_min_height')
             if layout.get('direction', 'vertical') not in ('horizontal','vertical'):
                 raise ValueError('invalid_layout_direction')
-            for part in ('gap','padding'):
+            for part in ('gap','padding','paddingX','paddingY'):
                 if layout.get(part, 'none') not in SPACING: raise ValueError('use_official_spacing_token')
             if layout.get('justify', 'start') not in ('start','end','center','space-between') or layout.get('align', 'stretch') not in ('start','end','center','stretch'):
                 raise ValueError('invalid_layout_alignment')

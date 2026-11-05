@@ -53,6 +53,15 @@ class CompositionTests(unittest.TestCase):
         result=self.run_compile()
         self.assertEqual(result['layout_tree']['nodes']['shell']['minHeight'],'viewport')
 
+    def test_independent_padding_axes_accept_only_spacing_tokens(self):
+        self.content['root']={'id':'shell','kind':'container','sourceIds':['action'],
+            'layout':{'paddingX':'lg','paddingY':'xs'}}
+        result=self.run_compile()
+        self.assertEqual(result['ui_ir']['root']['layout']['paddingX'],'lg')
+        self.assertEqual(result['ui_ir']['root']['layout']['paddingY'],'xs')
+        self.content['root']['layout']['paddingX']=24
+        with self.assertRaisesRegex(ValueError,'use_official_spacing_token'):self.run_compile()
+
     def test_navigation_landmark_accepts_only_official_link_current(self):
         self.content['root']={'id':'nav','kind':'container','semantic':'navigation','ariaLabel':'快捷导航',
             'sourceIds':['action'],'children':[{'id':'link','kind':'component','component':'Link',

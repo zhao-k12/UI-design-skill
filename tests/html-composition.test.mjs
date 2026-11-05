@@ -28,7 +28,7 @@ function input(grouped){
     {...component('search','Input',{search:true,placeholder:'来源搜索'}),defaultProps:{placeholder:'默认搜索'}}]};
   const detail=component('detail','Card',{},[component('form','Form',{},[
     component('field','FormItem',{label:'名称'},[component('value','Input',{modelValue:'开发样例'})])])]);
-  const page=grouped?{id:'page',kind:'container',layout:{gap:'md',padding:'lg'},children:[detail,nav,table,toolbar]}:
+  const page=grouped?{id:'page',kind:'container',layout:{gap:'md',paddingX:'lg',paddingY:'xs'},children:[detail,nav,table,toolbar]}:
     component('page','Layout',{},[component('side','Sider',{},[nav]),component('content','Content',{},[
       {id:'body',kind:'container',layout:{padding:'lg',gap:'md'},children:[toolbar,table]}])]);
   page.sourceIds=['fixture'];
@@ -65,6 +65,8 @@ test('same compiler and renderer handle different ordering, menus, columns, rows
       if(grouped){
         const order=await page.locator('[data-tree-node="page"] > [data-tree-node]').evaluateAll(nodes=>nodes.map(n=>n.dataset.treeNode));
         assert.deepEqual(order,['detail','nav','records','tools']);
+        const padding=await page.locator('[data-tree-node="page"]').evaluate(n=>{const s=getComputedStyle(n);return [s.paddingTop,s.paddingRight,s.paddingBottom,s.paddingLeft]});
+        assert.deepEqual(padding,['8px','24px','8px','24px']);
       }
       await page.close();
     }
