@@ -8,7 +8,7 @@
 
 容器或组件可以显式指定 `designRole` 选择已接入的共享样式，例如 `"designRole":"search-panel"`；角色清单、能力边界和验证范围见[已确认的页面模块](CONFIRMED_REUSABLE_MODULES.md#已接入的样式角色)。此属性不生成内容或省略完整 Tree；未实现的模块装配和样式不得标记已实现。
 
-用户提供的默认 Logo 可用 `{"id":"logo","kind":"asset","name":"default-logo"}` 插入完整 Tree；项目 Logo 使用 `project_logo` 构造已嵌入且经过编译器校验的资源节点。`TabPane.tabLabel` 可保存完整标签子树以显示数量徽标，必须具有显式节点 id，适配器通过官方标签渲染能力呈现。两者均不读取历史业务内容。
+用户提供的默认 Logo 可用 `{"id":"logo","kind":"asset","name":"default-logo"}` 插入完整 Tree；仅用户明确要求其他 Logo 时，项目 Logo 使用 `project_logo` 构造已嵌入且经过编译器校验的资源节点。`TabPane.tabLabel` 可保存完整标签子树以显示数量徽标，必须具有显式节点 id，适配器通过官方标签渲染能力呈现。两者均不读取历史业务内容。
 
 | kind | 内容与用途 |
 | --- | --- |

@@ -6,6 +6,7 @@ import {resolve,join,extname,relative} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {staticSnapshot,inspectStaticDelivery} from '../adapters/html/static-snapshot.mjs';
 import {measureLayoutRelations} from '../adapters/html/layout-relations.mjs';
+import {measureLayoutQuality} from '../adapters/html/layout-quality.mjs';
 
 const root=resolve(import.meta.dirname,'..');
 const coreDir=resolve(process.argv[2]);
@@ -55,13 +56,21 @@ const preview=join(out,'stage-preview.html'),final=join(out,'page.html');
 await writeFile(preview,`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>${css}</style><style>${base}${icons}${reviewCss}</style></head><body><div id="app"></div><script>window.__designAssets=${JSON.stringify(assets).replaceAll('<','\\u003c')}</script><script id="design-ir" type="application/json">${irBytes.toString().replaceAll('<','\\u003c')}</script><script type="module">${bundle.outputFiles[0].text.replaceAll('</script','<\\/script')}</script></body></html>`);
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:Number(process.argv[4])||1440,height:Number(process.argv[5])||1000}});
-const errors=[],stages={};let layoutSizing=[],reviewSheetSha256;page.on('pageerror',e=>errors.push(String(e)));
+const errors=[],stages={};let layoutSizing=[],reviewSheetSha256,responsiveQuality;page.on('pageerror',e=>errors.push(String(e)));
 try{
   await page.goto(pathToFileURL(preview).href);await page.waitForFunction(()=>window.__ready===true);
   layoutSizing=await page.evaluate(async()=>{await window.__prepareLayout();return window.__sizingReport;});
   for(const stage of ['skeleton','component','delivery']){
     await page.evaluate(v=>window.__setStage(v),stage);
     await page.waitForTimeout(80);
+    // Settle finite CSS transitions before both pixels and computed signatures.
+    // screenshot(animations:'disabled') alone restores animations afterwards,
+    // which otherwise makes an unchanged node acquire different style hashes.
+    await page.evaluate(()=>{for(const animation of document.getAnimations()){
+      if(Number.isFinite(animation.effect?.getComputedTiming().endTime)){
+        try{animation.finish();}catch{/* Unresolved timelines are sampled as-is. */}
+      }
+    }});
     const shot=await page.screenshot({fullPage:true,animations:'disabled'});
     await writeFile(join(out,stage+'.png'),shot);
     const metrics=await page.evaluate(()=>({nodeIds:[...document.querySelectorAll('[data-tree-node]')].map(n=>n.dataset.treeNode),
@@ -97,7 +106,9 @@ try{
     },`data:image/png;base64,${shot.toString('base64')}`);
     const layoutRelations=await page.evaluate(measureLayoutRelations,ir.layoutRelations||[]);
     const relationIssues=layoutRelations.results.flatMap(r=>r.issues.map(issue=>`${r.id}:${issue}`));
-    stages[stage]={status:errors.length||metrics.overflow||relationIssues.length?'FAIL':'PASS',issues:[...errors,...(metrics.overflow?['viewport_overflow']:[]),...relationIssues],...metrics,layoutRelations,screenshotSha256:sha(shot),
+    const layoutQuality=await page.evaluate(measureLayoutQuality);
+    const qualityIssues=ir.layoutQualityPolicy?layoutQuality.results.flatMap(r=>r.issues.map(issue=>`${r.id}:${issue}`)):[];
+    stages[stage]={status:errors.length||metrics.overflow||relationIssues.length||qualityIssues.length?'FAIL':'PASS',issues:[...errors,...(metrics.overflow?['viewport_overflow']:[]),...relationIssues,...qualityIssues],...metrics,layoutRelations,layoutQuality,screenshotSha256:sha(shot),
       geometrySha256:sha(JSON.stringify(signatures.geometry)),nodeSignatures:Object.fromEntries(Object.entries(signatures.groups).map(([id,value])=>[id,sha(JSON.stringify(value))]))};
   }
   if(Object.values(stages).every(s=>s.status==='PASS')){
@@ -108,8 +119,32 @@ try{
     stages.delivery.screenshotSha256=sha(shot);stages.delivery.static=frozen;
     const finalRelations=await page.evaluate(measureLayoutRelations,ir.layoutRelations||[]);
     stages.delivery.layoutRelations=finalRelations;
+    stages.delivery.layoutQuality=await page.evaluate(measureLayoutQuality);
+    if(ir.layoutQualityPolicy&&stages.delivery.layoutQuality.status!=='PASS'){
+      stages.delivery.status='FAIL';stages.delivery.issues.push(...stages.delivery.layoutQuality.results.flatMap(r=>r.issues.map(issue=>`${r.id}:${issue}`)));
+    }
     if(finalRelations.status!=='PASS'){
       stages.delivery.status='FAIL';stages.delivery.issues.push(...finalRelations.results.flatMap(r=>r.issues.map(issue=>`${r.id}:${issue}`)));
+    }
+    if(ir.layoutQualityPolicy){
+      const viewport={width:Math.min(Number(process.argv[4])||1440,1100),height:Math.min(Number(process.argv[5])||1000,700)};
+      await page.setViewportSize(viewport);
+      await page.evaluate(()=>{window.scrollTo(0,document.documentElement.scrollHeight);for(const e of document.querySelectorAll('[data-tree-node]'))if(['auto','scroll'].includes(getComputedStyle(e).overflowY))e.scrollTop=e.scrollHeight;});
+      await page.waitForTimeout(50);
+      responsiveQuality={viewport,...await page.evaluate(measureLayoutQuality)};
+      const footer=await page.evaluate(()=>{
+        const bar=document.querySelector('[data-design-role="page-actions"]');if(!bar)return null;
+        const panels=[...document.querySelectorAll('[data-design-role="module-panel"],[data-design-role="summary-panel"],[data-design-role="steps-panel"],[data-design-role="form-section"]')];
+        const last=panels.at(-1);if(!last)return null;
+        const bottom=last.getBoundingClientRect().bottom,top=bar.getBoundingClientRect().top;
+        return {gap:top-bottom,issues:bottom>top+1?['footer_overlaps_last_module']:[]};
+      });
+      responsiveQuality.footer=footer;
+      const issues=[...responsiveQuality.results.flatMap(r=>r.issues.map(issue=>`small:${r.id}:${issue}`)),...(footer?.issues||[])];
+      if(issues.length){responsiveQuality.status='FAIL';stages.delivery.status='FAIL';stages.delivery.issues.push(...issues);}
+      const smallShot=await page.screenshot({fullPage:true});
+      await writeFile(join(out,'small-viewport.png'),smallShot);
+      responsiveQuality.screenshotSha256=sha(smallShot);
     }
     await unlink(preview);
   }
@@ -125,7 +160,8 @@ const qa={status:Object.values(stages).length===3&&Object.values(stages).every(s
   officialSourceSha256:sha(JSON.stringify(ir.officialSource)),
   snapshotSha256:sha(await readFile(join(root,'adapters/html/static-snapshot.mjs'))),
   relationCheckerSha256:sha(await readFile(join(root,'adapters/html/layout-relations.mjs'))),
-  adapterSha256:sha(await readFile(join(root,'adapters/html/composition.mjs'))),exporterSha256:sha(await readFile(new URL(import.meta.url))),moduleCssSha256:sha(moduleCss),assetHashes,iconHashes,layoutSizing,stages,reviewSheetSha256,
+  qualityCheckerSha256:sha(await readFile(join(root,'adapters/html/layout-quality.mjs'))),
+  adapterSha256:sha(await readFile(join(root,'adapters/html/composition.mjs'))),exporterSha256:sha(await readFile(new URL(import.meta.url))),moduleCssSha256:sha(moduleCss),assetHashes,iconHashes,layoutSizing,stages,reviewSheetSha256,responsiveQuality,
   scope:'Runtime, declared layout geometry/surfaces and native Card toolbar checks; original-image batched visual review still required.'};
 if(qa.status==='PASS')qa.pageSha256=sha(await readFile(final));
 await writeFile(join(out,'qa.json'),JSON.stringify(qa,null,2));

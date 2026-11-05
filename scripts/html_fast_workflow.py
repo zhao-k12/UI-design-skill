@@ -91,8 +91,55 @@ def start(task):
     if timing.exists():return read(timing)
     # Starting a timer does not prove it coincided with the user request.
     value={'startedAt':now(),'scope':'timer-start; request start not verified','targetSeconds':300,'runs':[],
-           'tableColumnReviewPolicy':'flat-titled-v1'}
+           'tableColumnReviewPolicy':'flat-titled-v1', 'sourceEvidencePolicy':'complete-traits-v1', 'layoutQualityPolicy':'form-and-modules-v1'}
     save(timing,value);return value
+
+def require_source_preflight(timing, root, observed, scanned):
+    """Validate authored completeness and bindings, never semantic source truth."""
+    if timing.get('sourceEvidencePolicy') != 'complete-traits-v1': return
+    nodes={}
+    def visit(node):
+        nodes[node['id']]=node
+        for child in node.get('children',[]): visit(child)
+        for children in node.get('slots',{}).values():
+            for child in children: visit(child)
+        if 'template' in node: visit(node['template'])
+        for col in node.get('props',{}).get('columns',[]):
+            if isinstance(col,dict) and 'cell' in col: visit(col['cell'])
+    visit(root)
+    for document in (observed,scanned):
+        for item in document.get('items',[]):
+            traits=item.get('traits')
+            if not isinstance(traits,dict) or any(not isinstance(traits.get(key),str) or not traits[key].strip() for key in ('leading','trailing','surface','shape','role')):
+                raise ValueError('source_traits_incomplete:'+item['id'])
+    included={item['id']:item for item in observed.get('items',[]) if item.get('decision')=='include'}
+    for identifier,item in included.items():
+        ref=item.get('treeRef')
+        if ref not in nodes or identifier not in nodes[ref].get('sourceIds',[]):
+            raise ValueError('source_binding_missing:'+identifier)
+        leading=item['traits']['leading'].strip().lower()
+        if leading in ('icon','图标') or leading.startswith(('icon:', 'icon ', '图标：', '图标:')) or leading.endswith(('-outline','-filled','-icon')):
+            def has_icon(node):
+                return bool(node.get('kind')=='icon' or node.get('icon') or node.get('props',{}).get('icon') or
+                    any(has_icon(child) for child in node.get('children',[])) or
+                    any(has_icon(child) for children in node.get('slots',{}).values() for child in children))
+            if not has_icon(nodes[ref]):
+                raise ValueError('source_icon_binding_missing:'+identifier)
+    menu_sources={}
+    def assign_menu_source(node,seen):
+        for source_id in set(node.get('sourceIds',[])).intersection(included):
+            if source_id in seen: continue
+            seen.add(source_id)
+            previous=menu_sources.get(source_id)
+            if previous is None or assign_menu_source(previous,seen):
+                menu_sources[source_id]=node
+                return True
+        return False
+    for node in nodes.values():
+        if node.get('component') in ('MenuItem','Submenu') and not set(node.get('sourceIds',[])).intersection(included):
+            raise ValueError('menu_instance_source_missing:'+node['id'])
+        if node.get('component') in ('MenuItem','Submenu') and not assign_menu_source(node,set()):
+            raise ValueError('menu_instance_source_not_distinct:'+node['id'])
 
 def require_flat_table_coverage(timing, root, observed, scanned):
     """Require source inventories for new flat, titled tables at publication.
@@ -199,7 +246,7 @@ def reusable_groups(previous, plan, rendered, source_hash):
         if receipt['sourceSha256']!=source_hash or receipt['planSha256']!=digest(old/'review-plan.json'):return []
         if receipt['reviewSha256']!=digest(old/'visual-review.json') or receipt['qaSha256']!=digest(old/'html/qa.json'):return []
         if any(digest(old/'html'/(stage+'.png'))!=qa['stages'][stage]['screenshotSha256'] for stage in ('skeleton','component','delivery')):return []
-        runtime=('adapterSha256','exporterSha256','officialSourceSha256','officialCssSha256','snapshotSha256','relationCheckerSha256','moduleCssSha256','assetHashes','iconHashes')
+        runtime=('adapterSha256','exporterSha256','officialSourceSha256','officialCssSha256','snapshotSha256','relationCheckerSha256','moduleCssSha256','qualityCheckerSha256','assetHashes','iconHashes')
         if any(qa.get(key)!=rendered.get(key) for key in runtime):return []
         if read(old/'source-visual-qa.json').get('status')!='PASS':return []
         return [key for key,group in plan['groups'].items()
@@ -219,6 +266,9 @@ def render(job_path, task):
     shutil.copyfile(source,run/('prototype'+source.suffix))
     first=expand_observations(job['observation']);second=expand_observations(job['scan'],scan=True)
     content=bind_groups(require_full_tree(job['content']),first['_groupIds'])
+    timing=read(task/'timing.json')
+    require_source_preflight(timing,content['root'],first,second)
+    if timing.get('layoutQualityPolicy'): content['layoutQualityPolicy']=timing['layoutQualityPolicy']
     save(run/'job.json',{**job,'source':str(source)})
     for name,value in (('content-tree',content),('source-observations',first),('independent-scan',second)):
         save(run/(name+'.json'),value)
@@ -249,6 +299,10 @@ def finalize(review_path,task):
     if digest(run/'html/page.html')!=active['pageSha256']:raise ValueError('render_changed_after_review')
     shots={stage:run/'html'/(stage+'.png') for stage in ('skeleton','component','delivery')}
     rendered=read(run/'html/qa.json')
+    if read(task/'timing.json').get('layoutQualityPolicy'):
+        responsive=rendered.get('responsiveQuality',{})
+        if responsive.get('status')!='PASS' or not (run/'html/small-viewport.png').is_file() or digest(run/'html/small-viewport.png')!=responsive.get('screenshotSha256'):
+            raise ValueError('responsive_quality_not_passed_or_changed')
     if rendered['status']!='PASS' or any(digest(path)!=rendered['stages'][stage]['screenshotSha256'] for stage,path in shots.items()):
         raise ValueError('render_or_screenshot_changed')
     if any(rendered['stages'][stage].get('layoutRelations',{}).get('status')!='PASS' for stage in shots):
@@ -300,6 +354,10 @@ def verify_delivery(task):
             if not (run/name).is_file(): raise ValueError('delivery_input_missing:'+name)
         sealed=read(run/'review-receipt.json')
         qa=read(run/'html/qa.json')
+        if qa.get('responsiveQuality'):
+            responsive=qa['responsiveQuality']
+            if responsive.get('status')!='PASS' or digest(run/'html/small-viewport.png')!=responsive.get('screenshotSha256'):
+                raise ValueError('delivery_responsive_evidence_changed')
         visual=read(run/'source-visual-qa.json')
         if qa.get('status')!='PASS' or visual.get('status')!='PASS':
             raise ValueError('delivery_checks_not_passed')

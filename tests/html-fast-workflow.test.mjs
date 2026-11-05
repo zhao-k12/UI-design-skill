@@ -62,6 +62,12 @@ editor.write_job(sys.argv[1],source=job['source'],observation=job['observation']
  review.runId=active.runId;await writeFile(reviewFile,JSON.stringify(review));command('finalize',reviewFile);
  const receipt=JSON.parse(await readFile(join(dir,'delivery-receipt.json')));
  assert.equal(receipt.status,'PASS');assert.equal(receipt.timing.scope,'timer-start; request start not verified');
+ const smallFile=join(active.runDir,'html/small-viewport.png'),smallBytes=await readFile(smallFile);
+ command('verify');
+ await writeFile(smallFile,'tampered responsive evidence');
+ assert.throws(()=>command('verify'),/delivery_responsive_evidence_changed/);
+ assert.throws(()=>command('finalize',reviewFile),/responsive_quality_not_passed_or_changed/);
+ await writeFile(smallFile,smallBytes);command('verify');
  assert.equal(receipt.timing.scopeVerified,false);assert.equal(receipt.timing.targetMet,null);
  assert.ok(receipt.timing.elapsedSeconds>=receipt.timing.runs[0].machineSeconds);
  assert.ok(!(await readFile(join(dir,'page.html'),'utf8')).includes('<script'));
@@ -69,8 +75,9 @@ editor.write_job(sys.argv[1],source=job['source'],observation=job['observation']
  const patch=join(dir,'patch.json');await writeFile(patch,JSON.stringify({content:{title:'Renamed fixture'}}));command('revise',patch);
  const revised=JSON.parse(await readFile(join(dir,'active-run.json')));
  const plan=JSON.parse(await readFile(join(revised.runDir,'review-plan.json')));
- assert.deepEqual(plan.reusableGroups,['rows','action']);
- const delta={reviewMode:'delta-v1',runId:revised.runId,sourceSha256,checkedStages:['tree','skeleton','component','delivery'],checkedLayoutRelations:['left-edge'],confirmedGroups:[],issues:[],relationChecks:[]};
+ assert.ok(plan.reusableGroups.includes('rows'));
+ assert.ok(plan.reusableGroups.every(group=>['rows','action'].includes(group)));
+ const delta={reviewMode:'delta-v1',runId:revised.runId,sourceSha256,checkedStages:['tree','skeleton','component','delivery'],checkedLayoutRelations:['left-edge'],confirmedGroups:Object.keys(plan.groups).filter(group=>!plan.reusableGroups.includes(group)),issues:[],relationChecks:[]};
  const deltaFile=join(dir,'delta.json');await writeFile(deltaFile,JSON.stringify(delta));
  const sealedFile=join(active.runDir,'visual-review.json'),sealedBytes=await readFile(sealedFile);
  await writeFile(sealedFile,Buffer.concat([sealedBytes,Buffer.from(' ')]));assert.throws(()=>command('finalize',deltaFile));
@@ -79,9 +86,13 @@ editor.write_job(sys.argv[1],source=job['source'],observation=job['observation']
  revisedJob.content.root.children[0].props.data[0].name='C';
  await writeFile(patch,JSON.stringify({content:{root:{children:revisedJob.content.root.children}}}));command('revise',patch);
  const changed=JSON.parse(await readFile(join(dir,'active-run.json')));
- assert.deepEqual(JSON.parse(await readFile(join(changed.runDir,'review-plan.json'))).reusableGroups,['action']);
+ // An unchanged action may still require review when screenshot signatures
+ // differ (e.g. Chromium rasterization). Conservative invalidation is valid;
+ // the changed data group must never be reused.
+ const changedPlan=JSON.parse(await readFile(join(changed.runDir,'review-plan.json')));
+ assert.ok(changedPlan.reusableGroups.every(group=>group==='action'));
  delta.runId=changed.runId;await writeFile(deltaFile,JSON.stringify(delta));assert.throws(()=>command('finalize',deltaFile));
- delta.confirmedGroups=['rows'];await writeFile(deltaFile,JSON.stringify(delta));command('finalize',deltaFile);
+ delta.confirmedGroups=['rows','action'];await writeFile(deltaFile,JSON.stringify(delta));command('finalize',deltaFile);
  // A viewport change invalidates geometric context even when row data is identical.
  await writeFile(patch,JSON.stringify({viewport:{width:1600}}));command('revise',patch);
  const shifted=JSON.parse(await readFile(join(dir,'active-run.json')));

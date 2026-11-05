@@ -16,6 +16,7 @@ SPACING = {'none': 0, 'xs': 8, 'sm': 12, 'md': 16, 'lg': 24}
 DESIGN_ROLES = {'page-shell', 'sidebar', 'brand', 'topbar', 'topbar-tool', 'topbar-tool-large', 'topbar-user',
                 'breadcrumb', 'search-panel', 'search-grid', 'search-field', 'search-label', 'search-actions',
                 'table-panel', 'table-toolbar', 'table-actions', 'toolbar-notice', 'light-tag', 'row-actions', 'row-actions-left', 'row-action', 'tab-label', 'tab-count', 'pagination', 'form-section', 'form-section-title', 'form-grid', 'form-grid-three', 'detail-add', 'detail-action', 'summary-header', 'summary-title', 'summary-meta', 'progress-steps', 'page-actions', 'upload-icon-large', 'upload-copy', 'success-icon', 'uploaded-value', 'muted-cell'}
+DESIGN_ROLES.update({'module-panel','summary-panel','summary-heading','module-close','steps-panel','form-grid-fluid'})
 
 
 def validate_project_logo(uri):
@@ -105,6 +106,9 @@ def official_catalog():
 
 def compile_tree(source, content, observation, scan):
     source_hash = digest(source)
+    quality_policy = content.get('layoutQualityPolicy')
+    if quality_policy not in (None, 'form-and-modules-v1'):
+        raise ValueError('unsupported_layout_quality_policy')
     if any(value.get('sourceSha256') != source_hash for value in (content, observation, scan)):
         raise ValueError('source_hash_mismatch')
     first = {item['id']: item for item in observation['items']}
@@ -154,6 +158,8 @@ def compile_tree(source, content, observation, scan):
             raise ValueError('invalid_current_link')
         if key in nodes: raise ValueError(f'duplicate_node_id:{key}')
         nodes[key] = node
+        if 'allowLabelWrap' in node and (node.get('component') != 'FormItem' or not isinstance(node['allowLabelWrap'], bool)):
+            raise ValueError('allow_label_wrap_requires_form_item_boolean')
         for source_id in node.get('sourceIds', []):
             if source_id not in first or first[source_id]['decision'] != 'include':
                 raise ValueError(f'unknown_source_id:{source_id}')
@@ -251,6 +257,7 @@ def compile_tree(source, content, observation, scan):
     ir = {'schemaVersion': VERSION, 'sourceSha256': source_hash, 'officialSource': catalog,
           'root': content['root'], 'layout': layout_tree, 'requiredIcons': sorted(icons),
           'usedComponents': sorted(components), 'requiredAssets': sorted(assets), 'title': content.get('title','页面'), 'layoutRelations': relations}
+    if quality_policy is not None: ir['layoutQualityPolicy'] = quality_policy
     return {'page_tree': content, 'layout_tree': layout_tree, 'component_mapping': mapping, 'ui_ir': ir,
             'qa_report': {'status': 'PASS', 'statusMeaning': 'structural compile only; not source completeness or visual acceptance',
                           'sourceSha256': source_hash, 'nodeCount': len(nodes),

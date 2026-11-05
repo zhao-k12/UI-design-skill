@@ -171,11 +171,43 @@ def form_section(prefix, title, fields, *, label_width=104, columns=4, source_id
     prefix = _id(prefix)
     if not isinstance(fields, list): raise ValueError('explicit_fields_required')
     heading = _box(prefix+'-title', 'form-section-title', [_text(prefix+'-title-text', title)])
-    if columns not in (3, 4): raise ValueError('supported_form_columns_are_3_or_4')
-    grid = _box(prefix+'-grid', 'form-grid' if columns == 4 else 'form-grid-three', deepcopy(fields))
+    if columns not in (3, 4, 'auto'): raise ValueError('supported_form_columns_are_3_or_4_or_auto')
+    grid = _box(prefix+'-grid', {'auto':'form-grid-fluid',4:'form-grid',3:'form-grid-three'}[columns], deepcopy(fields))
     form = {'id':prefix+'-form','kind':'component','component':'Form',
             'props':{'labelPosition':'right','labelWidth':label_width},'children':[grid]}
     return _box(prefix, 'form-section', [heading, form], source_ids)
+
+
+def module_panel(prefix, children, *, source_ids=()):
+    """Independent module: owns the 24px side and 16px following spacing."""
+    return _box(_id(prefix), 'module-panel', deepcopy(list(children)), source_ids)
+
+
+def summary_panel(prefix, title, *, tag_node=None, metadata=(), close=True, source_ids=()):
+    """Static summary with explicit content; close is a visual affordance only."""
+    prefix = _id(prefix)
+    title_nodes = [_text(prefix+'-title-text', title)]
+    if tag_node is not None: title_nodes.append(deepcopy(tag_node))
+    heading = _box(prefix+'-heading', 'summary-heading', [
+        _box(prefix+'-title', 'summary-title', title_nodes, layout={'direction':'horizontal','align':'center'})])
+    children = [heading]
+    if close:
+        children.append(_box(prefix+'-close', 'module-close', [
+            {'id':prefix+'-close-icon','kind':'icon','name':'close-line'}]))
+    if metadata:
+        children.append(_box(prefix+'-meta', 'summary-meta', deepcopy(list(metadata)),
+                             layout={'direction':'horizontal'}))
+    return _box(prefix, 'summary-panel', children, source_ids)
+
+
+def steps_panel(prefix, steps_node, *, source_ids=()):
+    """Keep the caller's official Steps component in its own sibling module."""
+    prefix = _id(prefix)
+    if not isinstance(steps_node, dict) or steps_node.get('component') != 'Steps':
+        raise ValueError('official_steps_node_required')
+    steps = deepcopy(steps_node)
+    steps['designRole'] = 'progress-steps'
+    return _box(prefix, 'steps-panel', [steps], source_ids)
 
 def page_actions(prefix, buttons, *, source_ids=()):
     prefix = _id(prefix)

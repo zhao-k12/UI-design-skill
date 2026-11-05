@@ -1,5 +1,11 @@
 # 已确认的页面模块与复用边界
 
+## 独立模块组装能力
+
+`module_panel`、`summary_panel`、`steps_panel` 接收显式完整节点，模块自身持有左右 24px、后方 16px 外边距和内部 16px 留白，不再套外层 gap。摘要标题和可选 Tag 横排；静态 Remix close-line 为 16px，距顶部及右侧 16px；摘要元信息仅由 summary-meta 持有一次顶部 16px。步骤必须传入官方 Steps，作为独立平级模块，不附加业务状态或交互。
+
+`form_section(..., columns='auto')` 可选共享 form-grid-fluid，按最小 340px 字段宽度自适应换行；不足一列时以容器宽度为准。统一 24px 网格行距并归零 FormItem 底部 margin，避免重复行距。调用者仍须依据实际标签、占位文案、图标与 labelWidth 检查可读宽度；任意更长文案不保证自动适配。原有三列、四列行为保持不变。
+
 本规范归纳用户确认的设计，不包含风电场页面的业务数据。下列数值是用户确认的设计目标；实际支持范围以下方已接入能力为准，不能仅凭阅读此文档宣称生成结果已达到。
 
 ## 已接入的样式角色
@@ -8,7 +14,7 @@
 
 表单及详情还可按需选择 `form-section`、`form-section-title`、`form-grid`、`form-grid-three`、`detail-add`、`detail-action`、`summary-header`、`summary-title`、`summary-meta`、`progress-steps`、`page-actions`。以下为显式选择的设计覆盖，不自动套用到其他内容：`upload-icon-large`（图标 52px、#2d8cf0）、`upload-copy`（两行间距 6px）、`success-icon`（16px 绿色状态图标）、`muted-cell`（#c5c8ce）、`uploaded-value`（状态图标、数值和删除图标的组合）。这些值来自已确认页面；只在新任务适用或用户明确要求时使用，不据此虚构内容或状态。
 
-`scripts/confirmed_modules.py` 提供 `sidebar`、`topbar`、`breadcrumb`、`search_panel`、`table_panel`、`action_column`、`light_tag`、`project_logo`、`page_shell`，接受调用者明确给出的菜单、字段、行数据、操作与状态，直接返回标准完整 Tree，既不读取历史页面也不保存引用。侧栏默认注入用户提供的默认 Logo；用户提供项目素材时用 `brand_node=project_logo('project-brand', path)` 替换，支持 PNG、JPEG、WebP 和通过安全校验的 SVG，默认按比例高 32px 并嵌入离线页面。SVG 中脚本、外部资源和不安全标记会被拒绝。顶部栏默认复用五个工具、已确认风景头像和“钱多多”；明确传入姓名或头像时覆盖，`username=None` 移除用户区。折叠的父菜单在没有可见子项数据时用 `expandable=True`，不推测其子项；其他一级项按实际结构配置。`table_panel` 默认演示分页总数100、每页10条、第一页；明确配置优先，`page=None` 可移除。Tabs 可配置数量徽标；字段、按钮和菜单项可传 `sourceIds`，其余来源仍须由调用者逐项绑定。
+`scripts/confirmed_modules.py` 提供 `sidebar`、`topbar`、`breadcrumb`、`search_panel`、`table_panel`、`action_column`、`light_tag`、`project_logo`、`page_shell`，接受调用者明确给出的菜单、字段、行数据、操作与状态，直接返回标准完整 Tree，既不读取历史页面也不保存引用。侧栏始终使用默认 Logo，除非用户明确要求其他 Logo 或文字替代；仅用户明确要求项目素材时用 `brand_node=project_logo('project-brand', path)` 替换，支持 PNG、JPEG、WebP 和通过安全校验的 SVG，默认按比例高 32px 并嵌入离线页面。SVG 中脚本、外部资源和不安全标记会被拒绝。顶部栏默认复用五个工具、已确认风景头像和“钱多多”；明确传入姓名或头像时覆盖，`username=None` 移除用户区。折叠的父菜单在没有可见子项数据时用 `expandable=True`，不推测其子项；其他一级项按实际结构配置。`table_panel` 默认演示分页总数100、每页10条、第一页；明确配置优先，`page=None` 可移除。Tabs 可配置数量徽标；字段、按钮和菜单项可传 `sourceIds`，其余来源仍须由调用者逐项绑定。
 
 在读取入口与当前原型后，使用这些函数一次组装标准 Tree，再交给现有 `html_fast_workflow.py render` 和 `finalize`；不要把配置作为新的替代 Tree 输入。典型调用（演示变量均为本次任务实际识别的数据）：
 
@@ -35,7 +41,7 @@ root = page_shell('page', sidebar_node=side, topbar_node=header, breadcrumb_node
 
 普通后台页面默认同时使用侧栏和顶部导航，即使原型未绘制顶栏；弹窗默认不附加全局侧栏和顶栏。本次用户明确要求优先。菜单业务内容仍以当前原型为依据，不能从其他页面带入。
 
-默认背景 `#f8f8f9`；有侧栏时宽 256px，白色背景至少铺满视口或内容高度，右侧柔和外阴影；Logo 与菜单属于同一侧栏，Logo 区高 64px，Logo 左侧 24px、整体高 32px 并按比例缩放。项目素材或明确品牌文字优先；无两者且页面需要标识时使用 `assets/default-logo.svg`，不要重复添加其中已有的文字。一级与二级菜单行高 52px；一级左图标 16px、`#808695`，箭头 `#b5b5b5`；无子菜单的一级菜单选中时图标与文字同为蓝色。菜单项、图标、层级、展开与选中状态均由本次原型配置，不固定数量或展开项。
+默认背景 `#f8f8f9`；有侧栏时宽 256px，白色背景至少铺满视口或内容高度，右侧柔和外阴影；Logo 与菜单属于同一侧栏，Logo 区高 64px，Logo 左侧 24px、整体高 32px 并按比例缩放。除非用户明确要求其他 Logo 或文字替代，否则始终使用 `assets/default-logo.svg`，不要重复添加其中已有的文字。一级与二级菜单行高 52px；一级左图标 16px、`#808695`，箭头 `#b5b5b5`；无子菜单的一级菜单选中时图标与文字同为蓝色。菜单项、图标、层级、展开与选中状态均由本次原型配置，不固定数量或展开项。
 
 可展开与不可展开的一级菜单，左侧图标与菜单名称间距均为 8px；图标及文字在行内垂直居中。
 

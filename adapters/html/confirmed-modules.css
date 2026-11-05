@@ -1,4 +1,13 @@
 /* Opt-in shared layout roles; content remains in the current full Tree. */
+[data-design-role="module-panel"],[data-design-role="summary-panel"],[data-design-role="steps-panel"]{position:relative;background:#fff;border-radius:4px;box-sizing:border-box;padding:16px!important;margin:0 24px 16px;gap:0!important}
+[data-design-role="summary-heading"]{padding-right:32px!important}
+[data-design-role="summary-panel"] [data-design-role="summary-title"]{flex-direction:row!important}
+[data-design-role="summary-panel"]>[data-design-role="summary-meta"]{margin-top:16px;margin-bottom:0}
+[data-design-role="module-close"]{position:absolute;right:16px;top:16px;width:16px;height:16px;padding:0!important}
+[data-design-role="module-close"]>.remix-custom{display:block;width:16px;height:16px;font-size:16px;line-height:16px;color:#808695}
+[data-design-role="form-grid-fluid"]{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:24px!important}
+[data-design-role="form-grid-fluid"] .ivu-form-item{margin-bottom:0}
+[data-design-role="form-grid-fluid"] .ivu-date-picker{width:100%}
 [data-design-role="page-shell"]{min-height:100vh;background:#f8f8f9}
 [data-design-role="page-shell"]>[data-tree-node$="-main"]{padding-bottom:24px!important}
 [data-design-role="sidebar"]{width:256px;min-width:256px;min-height:100vh;background:#fff;box-shadow:2px 0 10px rgba(0,0,0,.09);position:sticky;top:0;z-index:13;align-self:flex-start;height:100vh;overflow-y:auto}
