@@ -32,19 +32,26 @@ export async function staticSnapshot(page) {
     // A static snapshot has no runtime, so put the main header in the same
     // scroll container as its body; official fixed-column overlays stay put.
     const responsiveFixedRules = [];
-    for (const table of app.querySelectorAll('.ivu-table')) {
-      if (!table.querySelector(':scope > .ivu-table-fixed-right, :scope > .ivu-table-fixed')) continue;
+    const liveTables=[...document.querySelectorAll('#app .ivu-table')];
+    for (const [tableIndex,table] of [...app.querySelectorAll('.ivu-table')].entries()) {
+      // Content-fit grid tables already use one outer scroll container.
+      if (table.closest('[data-shared-table-scroll="true"]')) continue;
       const header=table.querySelector(':scope > .ivu-table-header');
       const body=table.querySelector(':scope > .ivu-table-body');
       if(header && body) {
         const width = parseFloat(header.querySelector('table')?.style.width);
+        const headerHeight=liveTables[tableIndex]?.querySelector(':scope > .ivu-table-header')?.getBoundingClientRect().height||0;
+        for(const property of ['height','maxHeight']){
+          const value=body.style[property];
+          if(value?.endsWith('px'))body.style[property]=`${parseFloat(value)+headerHeight}px`;
+        }
         body.prepend(header);
         const wrapper = table.parentElement;
         if (wrapper && Number.isFinite(width) && width > 0) {
           const id = responsiveFixedRules.length;
           wrapper.setAttribute('data-static-table-wrapper', String(id));
           const scope = `[data-static-table-wrapper="${id}"]`;
-          responsiveFixedRules.push(`${scope}{container:static-table-${id} / inline-size}${scope} .ivu-table-body>.ivu-table-header,${scope} .ivu-table-body>.ivu-table-header>table,${scope} .ivu-table-body>table{width:100%!important;min-width:${width}px}@container static-table-${id} (min-width:${width}px){${scope} .ivu-table-fixed-right{display:none!important}${scope} .ivu-table-body .ivu-table-hidden{visibility:visible!important}}`);
+          responsiveFixedRules.push(`${scope}{container:static-table-${id} / inline-size}${scope} .ivu-table-body>.ivu-table-header,${scope} .ivu-table-body>.ivu-table-header>table,${scope} .ivu-table-body>table{width:100%!important;min-width:${width}px}${scope} .ivu-table-body>.ivu-table-header{position:sticky;top:0;z-index:1}@container static-table-${id} (min-width:${width}px){${scope} .ivu-table-fixed-right{display:none!important}${scope} .ivu-table-body .ivu-table-hidden{visibility:visible!important}}`);
         }
       }
     }

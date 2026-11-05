@@ -51,3 +51,17 @@ test('smaller viewport rejects page overflow even without form controls or modul
   assert.ok((await page.evaluate(measureLayoutQuality)).results.some(r=>r.issues.includes('viewport_overflow')));
  }finally{await browser.close();}
 });
+
+test('inactive or hidden detail modules are not reported as malformed visible geometry',async()=>{
+ const browser=await chromium.launch();
+ try{
+  const page=await browser.newPage();
+  await page.setContent(`<div style="display:none"><div data-tree-node="inactive" data-design-role="summary-panel">
+   <div data-design-role="summary-heading">Title</div><div data-design-role="summary-meta">Metadata</div>
+   <div data-design-role="module-close"></div></div></div>
+   <div style="visibility:hidden"><div data-tree-node="hidden" data-design-role="module-panel">Hidden section</div></div>`);
+  const result=await page.evaluate(measureLayoutQuality);
+  assert.equal(result.status,'PASS');
+  assert.equal(result.results.length,0);
+ }finally{await browser.close();}
+});

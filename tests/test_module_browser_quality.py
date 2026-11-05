@@ -42,6 +42,14 @@ def test_reusable_summary_and_fluid_fields_at_two_viewports(brand_text):
         qa=json.loads((folder/'html/qa.json').read_text(encoding='utf-8'))
         assert qa['status']=='PASS'
         assert qa['responsiveQuality']['status']=='PASS'
+        timing=qa['machineTiming']
+        for phase in ('bundleAndAssetsSeconds','browserLaunchSeconds','layoutPreparationSeconds','staticAndResponsiveSeconds','contactSheetSeconds','browserCloseSeconds','totalSeconds'):
+            assert timing[phase]>=0
+        assert set(timing['stages'])=={'skeleton','component','delivery'}
+        assert timing['totalSeconds']>=sum(stage['totalSeconds'] for stage in timing['stages'].values())
+        for stage in timing['stages'].values():
+            assert stage['totalSeconds']>=stage['captureAndWriteSeconds']>=0
+            assert stage['totalSeconds']>=stage['metricsAndSignaturesSeconds']>=0
         html=(folder/'html/page.html').read_text(encoding='utf-8')
         assert ('data-asset-name="default-logo"' in html)==(brand_text is None)
         if brand_text is not None: assert brand_text in html

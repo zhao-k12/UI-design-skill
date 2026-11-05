@@ -6,6 +6,30 @@ import {resolve} from 'node:path';
 import {access,readFile} from 'node:fs/promises';
 import {measureLayoutRelations} from '../adapters/html/layout-relations.mjs';
 
+test('a tall page keeps the entire sidebar column white while navigation stays viewport-sticky',async()=>{
+ const browser=await chromium.launch();
+ try{
+  const page=await browser.newPage({viewport:{width:1100,height:700}});
+  const css=await readFile(resolve('adapters/html/confirmed-modules.css'),'utf8');
+  await page.setContent(`<style>html,body{margin:0}${css}</style><div data-tree-node="page" data-design-role="page-shell" style="display:flex">
+   <aside data-tree-node="side" data-design-role="sidebar">Navigation</aside>
+   <div data-tree-node="page-main" style="flex:1;height:1600px">Long content</div></div>`);
+  const rule={id:'paint',kind:'surface-cover',surface:'page',extent:'page-main',axis:'vertical'};
+  assert.equal((await page.evaluate(measureLayoutRelations,[rule])).status,'PASS');
+  assert.equal(await page.locator('[data-tree-node=side]').evaluate(e=>e.getBoundingClientRect().height),700);
+  const shot=await page.screenshot({fullPage:true});
+  const colors=await page.evaluate(async data=>{
+   const img=new Image();img.src=data;await img.decode();const canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;
+   const context=canvas.getContext('2d');context.drawImage(img,0,0);
+   return [Array.from(context.getImageData(128,1200,1,1).data),Array.from(context.getImageData(400,1200,1,1).data)];
+  },`data:image/png;base64,${shot.toString('base64')}`);
+  assert.deepEqual(colors,[[255,255,255,255],[248,248,249,255]]);
+  await page.evaluate(()=>window.scrollTo(0,document.documentElement.scrollHeight));
+  const side=await page.locator('[data-tree-node=side]').boundingBox();
+  assert.equal(side.y,0);assert.equal(side.height,700);
+ }finally{await browser.close();}
+});
+
 test('declared minimum spacing detects a toolbar touching its table',async()=>{
  const browser=await chromium.launch({headless:true});
  try{

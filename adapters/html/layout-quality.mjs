@@ -5,6 +5,7 @@ export function measureLayoutQuality() {
   if(documentWidth>innerWidth+1)results.push({id:'viewport',kind:'page-overflow',status:'FAIL',issues:['viewport_overflow'],measurement:{documentWidth,viewportWidth:innerWidth}});
   const canvas = document.createElement('canvas'), context = canvas.getContext('2d');
   const rect = e => { const r=e.getBoundingClientRect(); return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height}; };
+  const visible = e => {const r=e.getBoundingClientRect(),s=getComputedStyle(e);return r.width>0&&r.height>0&&!['hidden','collapse'].includes(s.visibility)&&s.display!=='none';};
   const id = e => e.closest('[data-tree-node]')?.dataset.treeNode || 'unbound';
   const emit = (element, kind, issues, measurement) => results.push({id:id(element),kind,status:issues.length?'FAIL':'PASS',issues,measurement});
   for (const input of document.querySelectorAll('input.ivu-input')) {
@@ -26,7 +27,7 @@ export function measureLayoutQuality() {
   }
   for (const label of document.querySelectorAll('.ivu-form-item-label')) {
     const form=label.closest('.ivu-form'), item=label.closest('[data-component="FormItem"]');
-    if (!label.textContent.trim() || !label.getBoundingClientRect().width || form?.classList.contains('ivu-form-label-top') || item?.dataset.allowLabelWrap==='true') continue;
+    if (!label.textContent.trim() || !visible(label) || form?.classList.contains('ivu-form-label-top') || item?.dataset.allowLabelWrap==='true') continue;
     const range=document.createRange();range.selectNodeContents(label);
     const lines=[...range.getClientRects()].filter(r=>r.width>0&&r.height>0);
     const tops=[];for(const line of lines)if(!tops.some(y=>Math.abs(y-line.top)<=1))tops.push(line.top);
@@ -44,22 +45,25 @@ export function measureLayoutQuality() {
   const modules=[...document.querySelectorAll('[data-design-role]')].filter(e=>roles.includes(e.dataset.designRole)||
     (e.dataset.designRole==='form-section'&&e.parentElement.dataset.treeNode?.endsWith('-main')));
   for(const panel of modules){
+    if(!visible(panel))continue;
     const r=rect(panel), parent=rect(panel.parentElement), issues=[];
     const left=r.left-parent.left,right=parent.right-r.right;
     if(Math.abs(left-24)>1||Math.abs(right-24)>1)issues.push('module_outer_spacing_mismatch');
     const previous=panel.previousElementSibling;
     let gap=null;
-    if(previous&&(roles.includes(previous.dataset.designRole)||previous.dataset.designRole==='form-section')){
+    if(previous&&visible(previous)&&(roles.includes(previous.dataset.designRole)||previous.dataset.designRole==='form-section')){
       gap=r.top-rect(previous).bottom;if(Math.abs(gap-16)>1)issues.push('module_gap_mismatch');
     }
     emit(panel,'module-spacing',issues,{left,right,gap,panel:r,parent});
   }
   for(const close of document.querySelectorAll('[data-design-role="module-close"]')){
+    if(!visible(close))continue;
     const panel=close.closest('[data-design-role="summary-panel"]');if(!panel)continue;
     const r=rect(close),p=rect(panel),top=r.top-p.top,right=p.right-r.right;
     emit(close,'summary-close',Math.abs(top-16)>1||Math.abs(right-16)>1||Math.abs(r.width-16)>1||Math.abs(r.height-16)>1?['summary_close_geometry_mismatch']:[],{top,right,width:r.width,height:r.height});
   }
   for(const meta of document.querySelectorAll('[data-design-role="summary-panel"] [data-design-role="summary-meta"]')){
+    if(!visible(meta))continue;
     const heading=meta.parentElement.querySelector(':scope > [data-design-role="summary-heading"]');if(!heading)continue;
     const gap=rect(meta).top-rect(heading).bottom;
     emit(meta,'summary-meta-gap',Math.abs(gap-16)>1?['summary_meta_gap_mismatch']:[],{gap});

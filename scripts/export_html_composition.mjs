@@ -8,6 +8,10 @@ import {staticSnapshot,inspectStaticDelivery} from '../adapters/html/static-snap
 import {measureLayoutRelations} from '../adapters/html/layout-relations.mjs';
 import {measureLayoutQuality} from '../adapters/html/layout-quality.mjs';
 
+const exporterStarted=performance.now();
+const elapsed=start=>(performance.now()-start)/1000;
+const machineTiming={scope:'Exporter wall time after module imports; excludes agent work and Python preparation/compile.',stages:{}};
+
 const root=resolve(import.meta.dirname,'..');
 const coreDir=resolve(process.argv[2]);
 const out=resolve(process.argv[3]);
@@ -54,13 +58,19 @@ const reviewCss=`.composition-skeleton [data-tree-node]{outline:1px dashed #94a3
 const title=String(ir.title).replaceAll('&','&amp;').replaceAll('<','&lt;');
 const preview=join(out,'stage-preview.html'),final=join(out,'page.html');
 await writeFile(preview,`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>${css}</style><style>${base}${icons}${reviewCss}</style></head><body><div id="app"></div><script>window.__designAssets=${JSON.stringify(assets).replaceAll('<','\\u003c')}</script><script id="design-ir" type="application/json">${irBytes.toString().replaceAll('<','\\u003c')}</script><script type="module">${bundle.outputFiles[0].text.replaceAll('</script','<\\/script')}</script></body></html>`);
+machineTiming.bundleAndAssetsSeconds=elapsed(exporterStarted);
+const browserStarted=performance.now();
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:Number(process.argv[4])||1440,height:Number(process.argv[5])||1000}});
+machineTiming.browserLaunchSeconds=elapsed(browserStarted);
 const errors=[],stages={};let layoutSizing=[],reviewSheetSha256,responsiveQuality;page.on('pageerror',e=>errors.push(String(e)));
 try{
+  const layoutStarted=performance.now();
   await page.goto(pathToFileURL(preview).href);await page.waitForFunction(()=>window.__ready===true);
   layoutSizing=await page.evaluate(async()=>{await window.__prepareLayout();return window.__sizingReport;});
+  machineTiming.layoutPreparationSeconds=elapsed(layoutStarted);
   for(const stage of ['skeleton','component','delivery']){
+    const stageStarted=performance.now();
     await page.evaluate(v=>window.__setStage(v),stage);
     await page.waitForTimeout(80);
     // Settle finite CSS transitions before both pixels and computed signatures.
@@ -71,8 +81,10 @@ try{
         try{animation.finish();}catch{/* Unresolved timelines are sampled as-is. */}
       }
     }});
+    const captureStarted=performance.now();
     const shot=await page.screenshot({fullPage:true,animations:'disabled'});
     await writeFile(join(out,stage+'.png'),shot);
+    const captureAndWriteSeconds=elapsed(captureStarted),auditStarted=performance.now();
     const metrics=await page.evaluate(()=>({nodeIds:[...document.querySelectorAll('[data-tree-node]')].map(n=>n.dataset.treeNode),
       tableColumnCounts:[...document.querySelectorAll('.ivu-table-header thead tr')].map(tr=>tr.children.length),
       tableRows:document.querySelectorAll('.ivu-table-body .ivu-table-row').length,
@@ -110,7 +122,9 @@ try{
     const qualityIssues=ir.layoutQualityPolicy?layoutQuality.results.flatMap(r=>r.issues.map(issue=>`${r.id}:${issue}`)):[];
     stages[stage]={status:errors.length||metrics.overflow||relationIssues.length||qualityIssues.length?'FAIL':'PASS',issues:[...errors,...(metrics.overflow?['viewport_overflow']:[]),...relationIssues,...qualityIssues],...metrics,layoutRelations,layoutQuality,screenshotSha256:sha(shot),
       geometrySha256:sha(JSON.stringify(signatures.geometry)),nodeSignatures:Object.fromEntries(Object.entries(signatures.groups).map(([id,value])=>[id,sha(JSON.stringify(value))]))};
+    machineTiming.stages[stage]={totalSeconds:elapsed(stageStarted),captureAndWriteSeconds,metricsAndSignaturesSeconds:elapsed(auditStarted)};
   }
+  const staticStarted=performance.now();
   if(Object.values(stages).every(s=>s.status==='PASS')){
     await writeFile(final,await staticSnapshot(page));await page.goto(pathToFileURL(final).href);
     const frozen=await inspectStaticDelivery(page);
@@ -148,13 +162,16 @@ try{
     }
     await unlink(preview);
   }
+  machineTiming.staticAndResponsiveSeconds=elapsed(staticStarted);
   // A contact sheet saves viewer round trips; originals remain available for zoom.
+  const sheetStarted=performance.now();
   const panels=await Promise.all(['skeleton','component','delivery'].map(async stage=>`<section><h2>${stage}</h2><img src="data:image/png;base64,${(await readFile(join(out,stage+'.png'))).toString('base64')}" /></section>`));
   await page.setViewportSize({width:1800,height:1000});
   await page.setContent(`<style>body{margin:0;background:#eef1f5;font:16px sans-serif;display:flex;align-items:flex-start;gap:12px;padding:12px}section{width:584px;background:white}h2{margin:12px}img{width:100%;display:block}</style>${panels.join('')}`);
   await page.locator('img').evaluateAll(imgs=>Promise.all(imgs.map(img=>img.decode())));
   const sheet=await page.screenshot({fullPage:true});await writeFile(join(out,'review-sheet.png'),sheet);reviewSheetSha256=sha(sheet);
-}finally{await browser.close();}
+  machineTiming.contactSheetSeconds=elapsed(sheetStarted);
+}finally{const closeStarted=performance.now();await browser.close();machineTiming.browserCloseSeconds=elapsed(closeStarted);}
 const qa={status:Object.values(stages).length===3&&Object.values(stages).every(s=>s.status==='PASS')?'PASS':'FAIL',
   sourceSha256:ir.sourceSha256,uiIrSha256:sha(irBytes),officialCssSha256:sha(await readFile(cssPath)),
   officialSourceSha256:sha(JSON.stringify(ir.officialSource)),
@@ -162,6 +179,7 @@ const qa={status:Object.values(stages).length===3&&Object.values(stages).every(s
   relationCheckerSha256:sha(await readFile(join(root,'adapters/html/layout-relations.mjs'))),
   qualityCheckerSha256:sha(await readFile(join(root,'adapters/html/layout-quality.mjs'))),
   adapterSha256:sha(await readFile(join(root,'adapters/html/composition.mjs'))),exporterSha256:sha(await readFile(new URL(import.meta.url))),moduleCssSha256:sha(moduleCss),assetHashes,iconHashes,layoutSizing,stages,reviewSheetSha256,responsiveQuality,
+  machineTiming:{...machineTiming,totalSeconds:elapsed(exporterStarted)},
   scope:'Runtime, declared layout geometry/surfaces and native Card toolbar checks; original-image batched visual review still required.'};
 if(qa.status==='PASS')qa.pageSha256=sha(await readFile(final));
 await writeFile(join(out,'qa.json'),JSON.stringify(qa,null,2));

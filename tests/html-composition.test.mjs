@@ -95,3 +95,41 @@ test('uploaded value preview state follows row data instead of row position',asy
       [{state:'default',visible:'hidden'},{state:'hover',visible:'visible'}]);
   }finally{await browser.close()}
 });
+
+test('ordinary and fixed-column static tables keep header/body tracks aligned after resize and scroll',async()=>{
+ const browser=await chromium.launch();
+ try{
+  for(const fixed of [false,true]){
+   const dir=join(base,'shared-scroll-'+fixed);await mkdir(dir,{recursive:true});
+   const source=join(dir,'source.txt');await writeFile(source,'Synthetic table-scroll regression fixture');
+   const sourceSha256=createHash('sha256').update(await readFile(source)).digest('hex');
+   const content={sourceSha256,...input(true)};
+   const table=content.root.children.find(n=>n.id==='records');
+   table.props.columns.forEach(col=>col.minWidth=300);
+   if(fixed)table.props.columns.at(-1).fixed='right';
+   const traits={leading:'none',trailing:'none',surface:'plain',shape:'rect',role:'developer-fixture'};
+   const observation={sourceSha256,items:[{id:'fixture',region:'page',traits,decision:'include',treeRef:'page',sourceEvidence:'Synthetic fixture only'}]};
+   const scan={sourceSha256,items:[{id:'fixture',region:'page',traits,visual:'Synthetic fixture only'}]};
+   for(const [name,value] of Object.entries({content,observation,scan}))await writeFile(join(dir,name+'.json'),JSON.stringify(value));
+   execFileSync(join(root,'.venv/Scripts/python.exe'),['-X','utf8','core/pipeline/html_composition.py','--source',source,'--content',join(dir,'content.json'),'--observation',join(dir,'observation.json'),'--independent-scan',join(dir,'scan.json'),'--output-dir',join(dir,'core')],{cwd:root,stdio:'pipe'});
+   execFileSync(process.execPath,['scripts/export_html_composition.mjs',join(dir,'core'),join(dir,'html')],{cwd:root,stdio:'pipe'});
+   const page=await browser.newPage();await page.goto(pathToFileURL(join(dir,'html/page.html')).href);
+   for(const width of [1100,2000]){
+    await page.setViewportSize({width,height:800});
+    const measured=await page.locator('[data-tree-node=records] .ivu-table-body').evaluate(body=>{
+     body.scrollLeft=body.scrollWidth;
+     const header=body.querySelector(':scope > .ivu-table-header table');
+     const data=body.querySelector(':scope > table');
+     if(!header||!data)return {shared:false};
+     const h=[...header.querySelectorAll('thead tr:first-child th')].map(e=>e.getBoundingClientRect());
+     const d=[...data.querySelectorAll('tbody tr:first-child td')].map(e=>e.getBoundingClientRect());
+     return {shared:true,scroll:body.scrollLeft,overflow:body.scrollWidth>body.clientWidth,
+      deltas:h.map((r,i)=>Math.max(Math.abs(r.left-d[i].left),Math.abs(r.right-d[i].right)))};
+    });
+    assert.equal(measured.shared,true);assert.ok(measured.deltas.every(delta=>delta<=1));
+    if(width===1100){assert.equal(measured.overflow,true);assert.ok(measured.scroll>0);}
+   }
+   await page.close();
+  }
+ }finally{await browser.close();}
+});

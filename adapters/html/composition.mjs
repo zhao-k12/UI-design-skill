@@ -146,6 +146,7 @@ window.__prepareLayout=async()=>{
     const q=`[data-tree-node="${CSS.escape(entry.id)}"]`;
     if(entry.singleAction)css+=`${q} .ivu-table-body td:last-child .ivu-table-cell,${q} .ivu-table-header th:last-child .ivu-table-cell{padding-right:32px}${q} .ivu-table-header th:last-child .ivu-table-cell{display:flex;justify-content:flex-end}${q} .ivu-table-header th:last-child .ivu-table-cell>span:first-child{width:${actionWidth}px;flex:none;text-align:center}`;
     if(!entry.equalGap)continue;
+    table.setAttribute('data-shared-table-scroll','true');
     const mins=entry.columns.map(c=>c.measuredMinimum), sum=mins.reduce((a,b)=>a+b,0);
     const fixedLast=actionGroups.length>0&&mins.length>1;
     const tracks=mins.map((n,i)=>fixedLast&&i===mins.length-1?`${n}px`:`calc((100% - ${sum}px) / ${mins.length-(fixedLast?1:0)} + ${n}px)`).join(' ');
