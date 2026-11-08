@@ -90,13 +90,23 @@ def start(task):
     timing=task/'timing.json'
     if timing.exists():return read(timing)
     # Starting a timer does not prove it coincided with the user request.
-    value={'startedAt':now(),'scope':'timer-start; request start not verified','targetSeconds':300,'runs':[],
+    value={'startedAt':now(),'scope':'timer-start; request start not verified','targetSeconds':300,'runs':[],'newTask':True,
            'tableColumnReviewPolicy':'flat-titled-v1', 'sourceEvidencePolicy':'complete-traits-v1', 'layoutQualityPolicy':'form-and-modules-v1'}
     save(timing,value);return value
 
 def require_source_preflight(timing, root, observed, scanned):
     """Validate authored completeness and bindings, never semantic source truth."""
     if timing.get('sourceEvidencePolicy') != 'complete-traits-v1': return
+    if not observed.get('items') or not scanned.get('items'):
+        raise ValueError('source_observation_items_required_before_render')
+    if {item.get('id') for item in observed.get('items', [])} != {item.get('id') for item in scanned.get('items', [])}:
+        raise ValueError('independent_scan_item_coverage_mismatch_before_render')
+    for item in observed.get('items', []):
+        if item.get('decision') == 'include' and (not item.get('region') or not item.get('sourceEvidence') or not item.get('treeRef')):
+            raise ValueError('source_include_requires_region_evidence_and_tree_binding:'+str(item.get('id')))
+    for item in scanned.get('items', []):
+        if item.get('decision') == 'include' and not item.get('visual'):
+            raise ValueError('independent_scan_visual_evidence_required:'+str(item.get('id')))
     nodes={}
     def visit(node):
         nodes[node['id']]=node
@@ -284,6 +294,9 @@ def _render(job_path, task, run_id):
     if not (task/'timing.json').exists():
         start(task);timing=read(task/'timing.json');timing['scope']='render-start; analysis time not measured';save(task/'timing.json',timing)
     begin=time.perf_counter();job=read(job_path)
+    timing=read(task/'timing.json')
+    if timing.get('newTask') and (timing.get('sourceEvidencePolicy') != 'complete-traits-v1' or timing.get('tableColumnReviewPolicy') != 'flat-titled-v1' or timing.get('layoutQualityPolicy') != 'form-and-modules-v1'):
+        raise ValueError('new_task_quality_policies_cannot_be_downgraded')
     source=(job_path.parent/job['source']).resolve();source_hash=digest(source)
     # Both independently authored scans must lock the same actual input.
     for part in ('content','observation','scan'):
@@ -293,7 +306,6 @@ def _render(job_path, task, run_id):
     shutil.copyfile(source,run/('prototype'+source.suffix))
     first=expand_observations(job['observation']);second=expand_observations(job['scan'],scan=True)
     content=bind_groups(require_full_tree(job['content']),first['_groupIds'])
-    timing=read(task/'timing.json')
     require_source_preflight(timing,content['root'],first,second)
     if timing.get('layoutQualityPolicy'): content['layoutQualityPolicy']=timing['layoutQualityPolicy']
     save(run/'job.json',{**job,'source':str(source)})
@@ -355,11 +367,15 @@ def finalize(review_path,task):
     if result['status']!='PASS':raise ValueError('visual_review_failed:'+','.join(result['issues']))
     save(run/'review-receipt.json',{'sourceSha256':active['sourceSha256'],'planSha256':digest(run/'review-plan.json'),
          'reviewSha256':digest(run/'visual-review.json'),'qaSha256':digest(run/'html/qa.json')})
+    delivery_name=read(run/'job.json').get('deliveryName')
+    if not delivery_name or '/' in delivery_name or '\\' in delivery_name or not delivery_name.endswith('.html'):
+        raise ValueError('delivery_name_must_be_breadcrumb_based_html_filename')
+    shutil.copyfile(run/'html/page.html',task/delivery_name)
     shutil.copyfile(run/'html/page.html',task/'page.html')
     shutil.copyfile(run/'html/delivery.png',task/'delivery.png')
     timing=complete_timing(read(task/'timing.json'),now(),active['renderedAt'])
     save(task/'timing.json',timing)
-    save(task/'delivery-receipt.json',{'status':'PASS','runId':active['runId'],'sourceSha256':active['sourceSha256'],
+    save(task/'delivery-receipt.json',{'status':'PASS','runId':active['runId'],'deliveryPage':str(task/delivery_name),'sourceSha256':active['sourceSha256'],
          'reviewInputSha256':digest(review_path),'pageSha256':digest(task/'page.html'),'timing':timing})
     print(json.dumps({'status':'PASS','page':str(task/'page.html'),'timing':timing},ensure_ascii=False))
 

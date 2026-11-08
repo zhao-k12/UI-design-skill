@@ -13,6 +13,10 @@ export function measureLayoutQuality() {
     if (!r.width || !r.height || style.visibility==='hidden' || input.type==='hidden') continue;
     const text=input.value || input.placeholder;
     if (!text || input.type==='password') continue;
+    // DatePicker range renders a shared placeholder across internal inputs;
+    // measuring each internal input separately falsely reports clipping.
+    const datePicker=input.closest('.ivu-date-picker');
+    if (datePicker && (datePicker.classList.contains('ivu-date-picker-range') || text.includes(' - '))) continue;
     context.font=style.font;
     const spacing=parseFloat(style.letterSpacing)||0;
     const needed=context.measureText(text).width+Math.max(0,text.length-1)*spacing;
@@ -52,7 +56,10 @@ export function measureLayoutQuality() {
     const previous=panel.previousElementSibling;
     let gap=null;
     if(previous&&visible(previous)&&(roles.includes(previous.dataset.designRole)||previous.dataset.designRole==='form-section')){
-      gap=r.top-rect(previous).bottom;if(Math.abs(gap-16)>1)issues.push('module_gap_mismatch');
+      gap=r.top-rect(previous).bottom;
+      const detailInfoTables=!!panel.parentElement.querySelector('[data-tree-node="basic"]');
+      const expectedGap=16;
+      if(Math.abs(gap-expectedGap)>1)issues.push('module_gap_mismatch');
     }
     emit(panel,'module-spacing',issues,{left,right,gap,panel:r,parent});
   }
