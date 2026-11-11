@@ -163,6 +163,23 @@ finalize运行原有综合来源/视觉门；通过后才把`page.html`与`deliv
 
 ## 局部修正与失效
 
+局部修正必须在提交的 job 中声明 `revisionScope`，以已成功渲染的基准 run 限制 Tree 差异：
+
+```json
+{
+  "revisionScope": {
+    "baseRunId": "上一轮runId",
+    "allowedChanges": [
+      {"nodeId": "created-range", "paths": ["props.startSeparatorGap"]}
+    ]
+  }
+}
+```
+
+`allowedChanges` 只允许列出的节点和属性路径变化；相邻属性、子节点顺序、新增／删除节点或其他区域变化都会以 `revision_scope_violation` 阻断渲染。需要修改多个属性时逐项声明，不能用节点级 `*` 逃避精确作用域，除非用户明确要求替换整个节点。该门只约束 Tree 差异，仍必须查看新截图确认目标变化可见、未授权视觉属性未变化。
+
+日期范围提示等复合内容不得通过增加普通空格来模拟布局。开始文本、分隔符、结束文本及分隔符两侧间距应由结构化属性表达；用户只要求调整一侧时，`revisionScope` 仅允许对应 gap 属性变化。
+
 每次 `render`/`revise` 在 `latest-attempt.json` 记录本次尝试。成功渲染后的 `ready` 仅表示等待真实审核，不表示交付通过；失败时记录 `failed`、错误类型与原因，并保留运行目录中的 `failure.json`、可读取的原始输入 `submitted-job.json` 和已产生的中间文件。输入快照无法保存时，记录 `inputSnapshotError`，不掩盖原错误。
 
 最新尝试失败或仍在运行时，`finalize`/`verify` 拒绝用旧运行记录宣称当前任务完成。先前发布文件保留，但不能替代本次结果。恢复须成功生成新运行，再完成绑定该运行的实际审核和发布。历史任务尚无尝试记录时保持兼容；该机制不是防止人为删除或篡改本地文件的安全边界。

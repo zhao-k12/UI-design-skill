@@ -6,7 +6,30 @@ import tempfile
 import unittest
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from html_fast_workflow import expand_observations,bind_groups,expand_review,record_timing_event,start,complete_timing,require_flat_table_coverage
+from html_fast_workflow import expand_observations,bind_groups,expand_review,record_timing_event,start,complete_timing,require_flat_table_coverage,require_revision_scope
+
+class RevisionScopeTests(unittest.TestCase):
+    def _base(self, task):
+        run=task/'runs'/'base';run.mkdir(parents=True)
+        root={'id':'page','kind':'container','children':[{'id':'date','kind':'component','component':'DatePicker','props':{'placeholder':'开始时间 - 结束时间'}}]}
+        (run/'job.json').write_text(json.dumps({'content':{'root':root}},ensure_ascii=False),encoding='utf8')
+        return root
+
+    def test_allows_only_declared_property(self):
+        with tempfile.TemporaryDirectory() as directory:
+            task=Path(directory);root=copy.deepcopy(self._base(task))
+            root['children'][0]['props']['placeholder']='开始时间    - 结束时间'
+            job={'content':{'root':root},'revisionScope':{'baseRunId':'base','allowedChanges':[{'nodeId':'date','paths':['props.placeholder']}]}}
+            require_revision_scope(task,job)
+
+    def test_rejects_undeclared_neighbor_change(self):
+        with tempfile.TemporaryDirectory() as directory:
+            task=Path(directory);root=copy.deepcopy(self._base(task))
+            root['children'][0]['props']['placeholder']='开始时间    - 结束时间'
+            root['children'][0]['props']['size']='large'
+            job={'content':{'root':root},'revisionScope':{'baseRunId':'base','allowedChanges':[{'nodeId':'date','paths':['props.placeholder']}]}}
+            with self.assertRaisesRegex(ValueError,'revision_scope_violation:date:props.size'):
+                require_revision_scope(task,job)
 
 class TimingEventTests(unittest.TestCase):
     def test_explicit_events_append_without_changing_existing_timing(self):

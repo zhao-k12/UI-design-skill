@@ -271,6 +271,55 @@ def require_current_attempt(task, run_id):
     if attempt.get('status')!='ready' or attempt.get('runId')!=run_id:
         raise ValueError('latest_attempt_not_ready_or_current')
 
+def _tree_nodes(node, out=None):
+    out = {} if out is None else out
+    if isinstance(node, dict):
+        if isinstance(node.get('id'), str): out[node['id']] = node
+        for child in node.get('children', []): _tree_nodes(child, out)
+    return out
+
+def _value_changes(before, after, prefix=''):
+    if type(before) is not type(after): return [prefix or '*']
+    if isinstance(before, dict):
+        changes=[]
+        for key in sorted(set(before)|set(after)):
+            if key == 'children': continue
+            path=f'{prefix}.{key}' if prefix else key
+            if key not in before or key not in after: changes.append(path)
+            else: changes.extend(_value_changes(before[key],after[key],path))
+        return changes
+    if isinstance(before, list): return [] if before==after else [prefix or '*']
+    return [] if before==after else [prefix or '*']
+
+def require_revision_scope(task, job):
+    """Reject local revisions that change nodes or properties outside the declared scope."""
+    scope=job.get('revisionScope')
+    if not scope: return
+    run_id=scope.get('baseRunId'); allowed=scope.get('allowedChanges')
+    if not isinstance(run_id,str) or not isinstance(allowed,list) or not allowed:
+        raise ValueError('revision_scope_invalid')
+    base_path=task/'runs'/run_id/'job.json'
+    if not base_path.is_file(): raise ValueError('revision_scope_base_run_missing')
+    base=read(base_path)
+    old_nodes=_tree_nodes(base.get('content',{}).get('root'))
+    new_nodes=_tree_nodes(job.get('content',{}).get('root'))
+    permission={item.get('nodeId'):set(item.get('paths',[])) for item in allowed
+                if isinstance(item,dict) and isinstance(item.get('nodeId'),str) and isinstance(item.get('paths'),list)}
+    violations=[]
+    for node_id in sorted(set(old_nodes)|set(new_nodes)):
+        if node_id not in old_nodes or node_id not in new_nodes:
+            changes=['*']
+        else:
+            changes=_value_changes(old_nodes[node_id],new_nodes[node_id])
+            old_children=[c.get('id') for c in old_nodes[node_id].get('children',[]) if isinstance(c,dict)]
+            new_children=[c.get('id') for c in new_nodes[node_id].get('children',[]) if isinstance(c,dict)]
+            if old_children!=new_children: changes.append('children')
+        allowed_paths=permission.get(node_id,set())
+        for path in changes:
+            if not any(rule=='*' or path==rule or path.startswith(rule+'.') for rule in allowed_paths):
+                violations.append(f'{node_id}:{path}')
+    if violations: raise ValueError('revision_scope_violation:'+','.join(violations[:20]))
+
 def render(job_path, task):
     task.mkdir(parents=True,exist_ok=True)
     run_id=uuid4().hex[:12]
@@ -294,6 +343,7 @@ def _render(job_path, task, run_id):
     if not (task/'timing.json').exists():
         start(task);timing=read(task/'timing.json');timing['scope']='render-start; analysis time not measured';save(task/'timing.json',timing)
     begin=time.perf_counter();job=read(job_path)
+    require_revision_scope(task,job)
     timing=read(task/'timing.json')
     if timing.get('newTask') and (timing.get('sourceEvidencePolicy') != 'complete-traits-v1' or timing.get('tableColumnReviewPolicy') != 'flat-titled-v1' or timing.get('layoutQualityPolicy') != 'form-and-modules-v1'):
         raise ValueError('new_task_quality_policies_cannot_be_downgraded')
