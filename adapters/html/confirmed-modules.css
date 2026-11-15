@@ -172,6 +172,7 @@
 [data-design-role="row-actions"]{display:flex!important;flex-direction:row!important;justify-content:flex-end!important;gap:16px!important}
 [data-design-role="row-actions-left"]{display:flex!important;flex-direction:row!important;justify-content:flex-start!important;gap:16px!important}
 [data-design-role="row-actions-center"]{display:flex!important;flex-direction:row!important;justify-content:center!important;gap:16px!important;width:100%!important}
+[data-design-role="inline-icon-text"]{display:flex!important;align-items:center!important;gap:4px!important}
 [data-design-role="row-action"]{display:inline-flex;align-items:center;gap:4px;color:#2d8cf0;white-space:nowrap}
 [data-design-role="row-action"].ivu-typography-danger{color:#ed4014}
 [data-design-role="row-action"] .remix-custom{width:16px;height:16px;font-size:16px;flex:0 0 16px}

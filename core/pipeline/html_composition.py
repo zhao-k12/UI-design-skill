@@ -16,7 +16,7 @@ SPACING = {'none': 0, 'xs': 8, 'sm': 12, 'md': 16, 'lg': 24}
 DESIGN_ROLES = {'page-shell', 'sidebar', 'brand', 'topbar', 'topbar-tool', 'topbar-tool-large', 'topbar-user',
                 'breadcrumb', 'search-panel', 'search-grid', 'search-field', 'search-label', 'search-actions',
                 'table-panel', 'table-toolbar', 'table-actions', 'toolbar-notice', 'light-tag', 'row-actions', 'row-actions-left', 'row-actions-center', 'row-action', 'tab-label', 'tab-count', 'pagination', 'form-section', 'form-section-title', 'form-grid', 'form-grid-three', 'detail-add', 'detail-action', 'summary-header', 'summary-title', 'summary-meta', 'progress-steps', 'page-actions', 'upload-icon-large', 'upload-copy', 'success-icon', 'uploaded-value', 'muted-cell'}
-DESIGN_ROLES.update({'module-panel','summary-panel','summary-heading','module-close','steps-panel','form-grid-fluid'})
+DESIGN_ROLES.update({'module-panel','summary-panel','summary-heading','module-close','steps-panel','form-grid-fluid','inline-icon-text'})
 
 
 def validate_project_logo(uri):
