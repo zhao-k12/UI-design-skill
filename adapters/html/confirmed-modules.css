@@ -189,3 +189,26 @@
 [data-design-role="pagination"] .ivu-page-prev .ivu-icon:before,[data-design-role="pagination"] .ivu-page-next .ivu-icon:before,[data-design-role="pagination"] .ivu-select-arrow:before{content:none}
 @media(max-width:850px){[data-design-role="search-grid"],[data-design-role="form-grid"]{grid-template-columns:repeat(2,minmax(0,1fr))}[data-design-role="search-actions"]{grid-column:2}}
 @media(max-width:850px){[data-design-role="form-grid-three"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
+[data-design-role="input-affix-control"] {
+  position: relative;
+  display: block !important;
+  width: 100%;
+}
+
+[data-design-role="input-affix-control"] .ivu-input-wrapper {
+  width: 100%;
+}
+
+[data-design-role="input-affix-control"] .ivu-input {
+  padding-right: 48px;
+}
+
+[data-design-role="input-affix-unit"] {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #515a6e;
+  line-height: 20px;
+  pointer-events: none;
+}

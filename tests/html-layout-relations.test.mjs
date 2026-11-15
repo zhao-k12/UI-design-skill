@@ -46,6 +46,20 @@ test('declared minimum spacing detects a toolbar touching its table',async()=>{
  }finally{await browser.close();}
 });
 
+test('contained-by verifies an affix remains inside its input boundary',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage();
+  await page.setContent('<div data-tree-node="input" style="position:relative;width:200px;height:32px"><span data-tree-node="unit" style="position:absolute;right:12px;top:6px">万元</span></div>');
+  const rule={id:'unit-inside',kind:'contained-by',first:'unit',second:'input'};
+  assert.equal((await page.evaluate(measureLayoutRelations,[rule])).status,'PASS');
+  await page.locator('[data-tree-node="unit"]').evaluate(n=>{n.style.right='-40px';});
+  const fail=await page.evaluate(measureLayoutRelations,[rule]);
+  assert.equal(fail.status,'FAIL');
+  assert.deepEqual(fail.results[0].issues,['node_outside_container_bounds']);
+ }finally{await browser.close();}
+});
+
 test('same browser measurement rejects broken surfaces, shared edges and overflowing Card toolbars',async()=>{
  const browser=await chromium.launch({headless:true});
  try{

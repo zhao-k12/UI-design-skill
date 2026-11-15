@@ -30,6 +30,9 @@ export function measureLayoutRelations(relations = []) {
       const delta=Math.abs((ar.top+ar.bottom-br.top-br.bottom)/2);
       if(delta>1)issues.push('vertical_centers_misaligned');
       emit(rule.id,rule.kind,issues,{first:ar,second:br,delta});
+    }else if(rule.kind==='contained-by'){
+      if(ar.left<br.left-1||ar.right>br.right+1||ar.top<br.top-1||ar.bottom>br.bottom+1)issues.push('node_outside_container_bounds');
+      emit(rule.id,rule.kind,issues,{content:ar,container:br});
     }else if(rule.kind==='minimum-gap'){
       const tokens={none:0,xs:8,sm:12,md:16,lg:24};
       const minimum=tokens[rule.minimum];

@@ -111,6 +111,8 @@ editor.write_job(job_path, source=prototype_path, observation=observation, scan=
 
 相邻区域有明确最小间距时，可声明 `{"id":"toolbar-gap","kind":"minimum-gap","first":"toolbar","second":"table","axis":"vertical","minimum":"xs","sourceEvidence":"操作区和表头应有间距"}`；按实际顺序测量，`horizontal` 测右边到左边，`vertical` 测下边到上边；`minimum` 使用现有 `none/xs/sm/md/lg` token，不自动改变布局。它只验证声明的最小距离，不验证语义、居中、头像组内距离是否过大或边距是否合理；这些仍需视觉复核。只在页面确有相应区域且token适用时声明。
 
+输入框内单位、图标或其他附属内容可声明 `{"id":"capital-unit-inside","kind":"contained-by","first":"capital-unit","second":"capital-input","sourceEvidence":"单位位于输入框边框内部"}`。`first` 是附属节点，`second` 是拥有可见控件边界的节点；检查要求附属节点完整落在控件矩形内。附属文字必须有带 `data-tree-node` 的容器，不能使用无法测量的裸文本节点。
+
 Header加横向Menu和纵向Menu的组合缺少背景或边界契约会在Core拒绝；不再根据组件名强制要求居中契约。其它组合按实际关系声明，不要求侧栏或统一壳模板。浏览器自动检查每个实际Card的extra按钮/选择器是否跨越头部/底部分隔线或超出宽度；不再把所有extra强制居中。确有官方组合依据才显式声明`vertical-center`；顶对齐或基线关系在现有关系复核中核对，不假称机器已测。1 CSS px只容纳已声明几何关系的舍入，不是设计间距来源。
 
 结果在三态`qa.json.stages.<stage>.layoutRelations`，保留具体矩形、偏差和问题编号；静态快照后再确认最终交付结果。失败不能靠手填PASS绕过。复核原图与截图后，在同一review中填写`checkedLayoutRelations`，覆盖`review-plan.json.layoutRelationIds`列出的全部编号，卡片编号自动生成，不必逐项重复写PASS说明。数量/文字正确不代表这些关系通过。现有综合验收负责这一并确认，不增加关卡；机器只验证已声明的几何/背景及原生Card工具栏，不能自动发现所有错误的语义归属、遮挡或光学问题。
